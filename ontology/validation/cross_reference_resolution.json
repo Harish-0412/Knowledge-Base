@@ -1,0 +1,3165 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "total_references": 369,
+  "resolved_count": 188,
+  "unresolved_count": 181,
+  "ambiguous_count": 0,
+  "invalid_count": 0,
+  "self_reference_count": 0,
+  "resolution_rate": 50.95,
+  "resolved_references": [
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Chipset Driver",
+      "target_entity_id": "DRV-003",
+      "target_canonical_name": "Chipset Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "WDDM",
+      "target_entity_id": "DRV-007",
+      "target_canonical_name": "WDDM",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Chipset Driver",
+      "target_entity_id": "DRV-003",
+      "target_canonical_name": "Chipset Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "ACPI",
+      "target_entity_id": "FW-006",
+      "target_canonical_name": "ACPI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Audio Driver",
+      "target_entity_id": "DRV-002",
+      "target_canonical_name": "Audio Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Graphics Driver",
+      "target_entity_id": "DRV-001",
+      "target_canonical_name": "Graphics Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Network Driver",
+      "target_entity_id": "DRV-004",
+      "target_canonical_name": "Network Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Storage Driver",
+      "target_entity_id": "DRV-005",
+      "target_canonical_name": "Storage Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Chipset Driver",
+      "target_entity_id": "DRV-003",
+      "target_canonical_name": "Chipset Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "NDIS",
+      "target_entity_id": "DRV-008",
+      "target_canonical_name": "NDIS",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Network Firmware",
+      "target_entity_id": "FW-005",
+      "target_canonical_name": "Network Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "PXE Boot",
+      "target_entity_id": "FW-012",
+      "target_canonical_name": "PXE Boot",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "BitLocker",
+      "target_entity_id": "SEC-009",
+      "target_canonical_name": "BitLocker",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Chipset Driver",
+      "target_entity_id": "DRV-003",
+      "target_canonical_name": "Chipset Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Storage Firmware",
+      "target_entity_id": "FW-004",
+      "target_canonical_name": "Storage Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-006",
+      "source_entity_name": "Driver Signing",
+      "source_file": "drivers.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-007",
+      "source_entity_name": "WDDM",
+      "source_file": "drivers.json",
+      "reference_value": "Graphics Driver",
+      "target_entity_id": "DRV-001",
+      "target_canonical_name": "Graphics Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-007",
+      "source_entity_name": "WDDM",
+      "source_file": "drivers.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-008",
+      "source_entity_name": "NDIS",
+      "source_file": "drivers.json",
+      "reference_value": "Network Driver",
+      "target_entity_id": "DRV-004",
+      "target_canonical_name": "Network Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-008",
+      "source_entity_name": "NDIS",
+      "source_file": "drivers.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "target_entity_id": "FW-003",
+      "target_canonical_name": "Embedded Controller Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "Firmware Update Utility",
+      "target_entity_id": "FW-007",
+      "target_canonical_name": "Firmware Update Utility",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "OS Bootloader",
+      "target_entity_id": "FW-011",
+      "target_canonical_name": "OS Bootloader",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "ACPI",
+      "target_entity_id": "FW-006",
+      "target_canonical_name": "ACPI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "target_entity_id": "FW-001",
+      "target_canonical_name": "BIOS",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "EFI System Partition",
+      "target_entity_id": "FW-008",
+      "target_canonical_name": "EFI System Partition",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "target_entity_id": "FW-003",
+      "target_canonical_name": "Embedded Controller Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "Firmware Update Utility",
+      "target_entity_id": "FW-007",
+      "target_canonical_name": "Firmware Update Utility",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "GPT",
+      "target_entity_id": "FW-009",
+      "target_canonical_name": "GPT",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "Measured Boot",
+      "target_entity_id": "FW-010",
+      "target_canonical_name": "Measured Boot",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "OS Bootloader",
+      "target_entity_id": "FW-011",
+      "target_canonical_name": "OS Bootloader",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "ACPI",
+      "target_entity_id": "FW-006",
+      "target_canonical_name": "ACPI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "target_entity_id": "FW-001",
+      "target_canonical_name": "BIOS",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Firmware Update Utility",
+      "target_entity_id": "FW-007",
+      "target_canonical_name": "Firmware Update Utility",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "BitLocker",
+      "target_entity_id": "SEC-009",
+      "target_canonical_name": "BitLocker",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Firmware Update Utility",
+      "target_entity_id": "FW-007",
+      "target_canonical_name": "Firmware Update Utility",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "NVMe Driver",
+      "target_entity_id": "DRV-005",
+      "target_canonical_name": "Storage Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_alias"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Firmware Update Utility",
+      "target_entity_id": "FW-007",
+      "target_canonical_name": "Firmware Update Utility",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "NDIS",
+      "target_entity_id": "DRV-008",
+      "target_canonical_name": "NDIS",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Network Driver",
+      "target_entity_id": "DRV-004",
+      "target_canonical_name": "Network Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "PXE Boot",
+      "target_entity_id": "FW-012",
+      "target_canonical_name": "PXE Boot",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Wireless Driver",
+      "target_entity_id": "DRV-004",
+      "target_canonical_name": "Network Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_alias"
+    },
+    {
+      "source_entity_id": "FW-006",
+      "source_entity_name": "ACPI",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "target_entity_id": "FW-001",
+      "target_canonical_name": "BIOS",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-006",
+      "source_entity_name": "ACPI",
+      "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "target_entity_id": "FW-003",
+      "target_canonical_name": "Embedded Controller Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-006",
+      "source_entity_name": "ACPI",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_entity_name": "Firmware Update Utility",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "target_entity_id": "FW-001",
+      "target_canonical_name": "BIOS",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_entity_name": "Firmware Update Utility",
+      "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "target_entity_id": "FW-003",
+      "target_canonical_name": "Embedded Controller Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_entity_name": "Firmware Update Utility",
+      "source_file": "firmware.json",
+      "reference_value": "Network Firmware",
+      "target_entity_id": "FW-005",
+      "target_canonical_name": "Network Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_entity_name": "Firmware Update Utility",
+      "source_file": "firmware.json",
+      "reference_value": "Storage Firmware",
+      "target_entity_id": "FW-004",
+      "target_canonical_name": "Storage Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_entity_name": "Firmware Update Utility",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-008",
+      "source_entity_name": "EFI System Partition",
+      "source_file": "firmware.json",
+      "reference_value": "GPT",
+      "target_entity_id": "FW-009",
+      "target_canonical_name": "GPT",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-008",
+      "source_entity_name": "EFI System Partition",
+      "source_file": "firmware.json",
+      "reference_value": "OS Bootloader",
+      "target_entity_id": "FW-011",
+      "target_canonical_name": "OS Bootloader",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-008",
+      "source_entity_name": "EFI System Partition",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-009",
+      "source_entity_name": "GPT",
+      "source_file": "firmware.json",
+      "reference_value": "EFI System Partition",
+      "target_entity_id": "FW-008",
+      "target_canonical_name": "EFI System Partition",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-009",
+      "source_entity_name": "GPT",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-010",
+      "source_entity_name": "Measured Boot",
+      "source_file": "firmware.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-010",
+      "source_entity_name": "Measured Boot",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-011",
+      "source_entity_name": "OS Bootloader",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "target_entity_id": "FW-001",
+      "target_canonical_name": "BIOS",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-011",
+      "source_entity_name": "OS Bootloader",
+      "source_file": "firmware.json",
+      "reference_value": "EFI System Partition",
+      "target_entity_id": "FW-008",
+      "target_canonical_name": "EFI System Partition",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-011",
+      "source_entity_name": "OS Bootloader",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-012",
+      "source_entity_name": "PXE Boot",
+      "source_file": "firmware.json",
+      "reference_value": "Network Driver",
+      "target_entity_id": "DRV-004",
+      "target_canonical_name": "Network Driver",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-012",
+      "source_entity_name": "PXE Boot",
+      "source_file": "firmware.json",
+      "reference_value": "Network Firmware",
+      "target_entity_id": "FW-005",
+      "target_canonical_name": "Network Firmware",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "FW-012",
+      "source_entity_name": "PXE Boot",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Active Directory",
+      "target_entity_id": "MGT-004",
+      "target_canonical_name": "Active Directory",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Group Policy",
+      "target_entity_id": "MGT-005",
+      "target_canonical_name": "Group Policy",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Monitoring Agent",
+      "target_entity_id": "MGT-002",
+      "target_canonical_name": "Monitoring Agent",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "target_entity_id": "MGT-003",
+      "target_canonical_name": "Patch Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "EDR Agent",
+      "target_entity_id": "SEC-004",
+      "target_canonical_name": "EDR Agent",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "target_entity_id": "MGT-001",
+      "target_canonical_name": "Endpoint Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "target_entity_id": "MGT-003",
+      "target_canonical_name": "Patch Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "SIEM",
+      "target_entity_id": "MGT-008",
+      "target_canonical_name": "SIEM",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "target_entity_id": "MGT-001",
+      "target_canonical_name": "Endpoint Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Firmware Update Utility",
+      "target_entity_id": "FW-007",
+      "target_canonical_name": "Firmware Update Utility",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Monitoring Agent",
+      "target_entity_id": "MGT-002",
+      "target_canonical_name": "Monitoring Agent",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "SIEM",
+      "target_entity_id": "MGT-008",
+      "target_canonical_name": "SIEM",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "WSUS",
+      "target_entity_id": "MGT-006",
+      "target_canonical_name": "WSUS",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Windows Update",
+      "target_entity_id": "MGT-007",
+      "target_canonical_name": "Windows Update",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-004",
+      "source_entity_name": "Active Directory",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "target_entity_id": "MGT-001",
+      "target_canonical_name": "Endpoint Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-004",
+      "source_entity_name": "Active Directory",
+      "source_file": "management.json",
+      "reference_value": "Group Policy",
+      "target_entity_id": "MGT-005",
+      "target_canonical_name": "Group Policy",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-004",
+      "source_entity_name": "Active Directory",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-005",
+      "source_entity_name": "Group Policy",
+      "source_file": "management.json",
+      "reference_value": "Active Directory",
+      "target_entity_id": "MGT-004",
+      "target_canonical_name": "Active Directory",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-005",
+      "source_entity_name": "Group Policy",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "target_entity_id": "MGT-001",
+      "target_canonical_name": "Endpoint Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-005",
+      "source_entity_name": "Group Policy",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-006",
+      "source_entity_name": "WSUS",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "target_entity_id": "MGT-003",
+      "target_canonical_name": "Patch Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-006",
+      "source_entity_name": "WSUS",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-006",
+      "source_entity_name": "WSUS",
+      "source_file": "management.json",
+      "reference_value": "Windows Update",
+      "target_entity_id": "MGT-007",
+      "target_canonical_name": "Windows Update",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-007",
+      "source_entity_name": "Windows Update",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "target_entity_id": "MGT-003",
+      "target_canonical_name": "Patch Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-007",
+      "source_entity_name": "Windows Update",
+      "source_file": "management.json",
+      "reference_value": "WSUS",
+      "target_entity_id": "MGT-006",
+      "target_canonical_name": "WSUS",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-007",
+      "source_entity_name": "Windows Update",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_entity_name": "SIEM",
+      "source_file": "management.json",
+      "reference_value": "EDR Agent",
+      "target_entity_id": "SEC-004",
+      "target_canonical_name": "EDR Agent",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_entity_name": "SIEM",
+      "source_file": "management.json",
+      "reference_value": "Monitoring Agent",
+      "target_entity_id": "MGT-002",
+      "target_canonical_name": "Monitoring Agent",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_entity_name": "SIEM",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "target_entity_id": "MGT-003",
+      "target_canonical_name": "Patch Manager",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Active Directory",
+      "target_entity_id": "MGT-004",
+      "target_canonical_name": "Active Directory",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "BitLocker",
+      "target_entity_id": "SEC-009",
+      "target_canonical_name": "BitLocker",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Group Policy",
+      "target_entity_id": "MGT-005",
+      "target_canonical_name": "Group Policy",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "WHQL Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_alias"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 10",
+      "target_entity_id": "OS-002",
+      "target_canonical_name": "Windows 10",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 11",
+      "target_entity_id": "OS-003",
+      "target_canonical_name": "Windows 11",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows NT Kernel",
+      "target_entity_id": "OS-009",
+      "target_canonical_name": "Windows NT Kernel",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows Update",
+      "target_entity_id": "MGT-007",
+      "target_canonical_name": "Windows Update",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "BitLocker",
+      "target_entity_id": "SEC-009",
+      "target_canonical_name": "BitLocker",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Group Policy",
+      "target_entity_id": "MGT-005",
+      "target_canonical_name": "Group Policy",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "WHQL Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_alias"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "WSUS",
+      "target_entity_id": "MGT-006",
+      "target_canonical_name": "WSUS",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 11",
+      "target_entity_id": "OS-003",
+      "target_canonical_name": "Windows 11",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows NT Kernel",
+      "target_entity_id": "OS-009",
+      "target_canonical_name": "Windows NT Kernel",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows Update",
+      "target_entity_id": "MGT-007",
+      "target_canonical_name": "Windows Update",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "BitLocker",
+      "target_entity_id": "SEC-009",
+      "target_canonical_name": "BitLocker",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Group Policy",
+      "target_entity_id": "MGT-005",
+      "target_canonical_name": "Group Policy",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "WHQL Driver Signing",
+      "target_entity_id": "DRV-006",
+      "target_canonical_name": "Driver Signing",
+      "target_source_file": "drivers.json",
+      "matched_by": "exact_alias"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 10",
+      "target_entity_id": "OS-002",
+      "target_canonical_name": "Windows 10",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows NT Kernel",
+      "target_entity_id": "OS-009",
+      "target_canonical_name": "Windows NT Kernel",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows Update",
+      "target_entity_id": "MGT-007",
+      "target_canonical_name": "Windows Update",
+      "target_source_file": "management.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "AppArmor",
+      "target_entity_id": "SEC-011",
+      "target_canonical_name": "AppArmor",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "LUKS",
+      "target_entity_id": "SEC-012",
+      "target_canonical_name": "LUKS",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux Kernel",
+      "target_entity_id": "OS-008",
+      "target_canonical_name": "Linux Kernel",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "RHEL",
+      "target_entity_id": "OS-006",
+      "target_canonical_name": "RHEL",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "SELinux",
+      "target_entity_id": "SEC-010",
+      "target_canonical_name": "SELinux",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "Ubuntu",
+      "target_entity_id": "OS-005",
+      "target_canonical_name": "Ubuntu",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "AppArmor",
+      "target_entity_id": "SEC-011",
+      "target_canonical_name": "AppArmor",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Debian",
+      "target_entity_id": "OS-011",
+      "target_canonical_name": "Debian",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "LUKS",
+      "target_entity_id": "SEC-012",
+      "target_canonical_name": "LUKS",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux",
+      "target_entity_id": "OS-004",
+      "target_canonical_name": "Linux",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux Kernel",
+      "target_entity_id": "OS-008",
+      "target_canonical_name": "Linux Kernel",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Ubuntu Pro",
+      "target_entity_id": "OS-010",
+      "target_canonical_name": "Ubuntu Pro",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "LUKS",
+      "target_entity_id": "SEC-012",
+      "target_canonical_name": "LUKS",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux",
+      "target_entity_id": "OS-004",
+      "target_canonical_name": "Linux",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux Kernel",
+      "target_entity_id": "OS-008",
+      "target_canonical_name": "Linux Kernel",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "SELinux",
+      "target_entity_id": "SEC-010",
+      "target_canonical_name": "SELinux",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "FileVault",
+      "target_entity_id": "SEC-008",
+      "target_canonical_name": "FileVault",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "Gatekeeper",
+      "target_entity_id": "SEC-007",
+      "target_canonical_name": "Gatekeeper",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Enclave",
+      "target_entity_id": "SEC-005",
+      "target_canonical_name": "Secure Enclave",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "System Integrity Protection",
+      "target_entity_id": "SEC-006",
+      "target_canonical_name": "System Integrity Protection",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "target_entity_id": "FW-002",
+      "target_canonical_name": "UEFI",
+      "target_source_file": "firmware.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "XNU Kernel",
+      "target_entity_id": "OS-012",
+      "target_canonical_name": "XNU Kernel",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-008",
+      "source_entity_name": "Linux Kernel",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux",
+      "target_entity_id": "OS-004",
+      "target_canonical_name": "Linux",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-009",
+      "source_entity_name": "Windows NT Kernel",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-010",
+      "source_entity_name": "Ubuntu Pro",
+      "source_file": "operating_system.json",
+      "reference_value": "Ubuntu",
+      "target_entity_id": "OS-005",
+      "target_canonical_name": "Ubuntu",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-011",
+      "source_entity_name": "Debian",
+      "source_file": "operating_system.json",
+      "reference_value": "Ubuntu",
+      "target_entity_id": "OS-005",
+      "target_canonical_name": "Ubuntu",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "OS-012",
+      "source_entity_name": "XNU Kernel",
+      "source_file": "operating_system.json",
+      "reference_value": "macOS",
+      "target_entity_id": "OS-007",
+      "target_canonical_name": "macOS",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_entity_name": "TPM",
+      "source_file": "security.json",
+      "reference_value": "Secure Boot",
+      "target_entity_id": "SEC-002",
+      "target_canonical_name": "Secure Boot",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_entity_name": "TPM",
+      "source_file": "security.json",
+      "reference_value": "Secure Enclave",
+      "target_entity_id": "SEC-005",
+      "target_canonical_name": "Secure Enclave",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_entity_name": "Secure Boot",
+      "source_file": "security.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-003",
+      "source_entity_name": "Antivirus",
+      "source_file": "security.json",
+      "reference_value": "EDR Agent",
+      "target_entity_id": "SEC-004",
+      "target_canonical_name": "EDR Agent",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-004",
+      "source_entity_name": "EDR Agent",
+      "source_file": "security.json",
+      "reference_value": "Antivirus",
+      "target_entity_id": "SEC-003",
+      "target_canonical_name": "Antivirus",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-005",
+      "source_entity_name": "Secure Enclave",
+      "source_file": "security.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-005",
+      "source_entity_name": "Secure Enclave",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "target_entity_id": "OS-007",
+      "target_canonical_name": "macOS",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-006",
+      "source_entity_name": "System Integrity Protection",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "target_entity_id": "OS-007",
+      "target_canonical_name": "macOS",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-007",
+      "source_entity_name": "Gatekeeper",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "target_entity_id": "OS-007",
+      "target_canonical_name": "macOS",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-008",
+      "source_entity_name": "FileVault",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "target_entity_id": "OS-007",
+      "target_canonical_name": "macOS",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-009",
+      "source_entity_name": "BitLocker",
+      "source_file": "security.json",
+      "reference_value": "TPM",
+      "target_entity_id": "SEC-001",
+      "target_canonical_name": "TPM",
+      "target_source_file": "security.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-009",
+      "source_entity_name": "BitLocker",
+      "source_file": "security.json",
+      "reference_value": "Windows",
+      "target_entity_id": "OS-001",
+      "target_canonical_name": "Windows",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-010",
+      "source_entity_name": "SELinux",
+      "source_file": "security.json",
+      "reference_value": "Linux",
+      "target_entity_id": "OS-004",
+      "target_canonical_name": "Linux",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-011",
+      "source_entity_name": "AppArmor",
+      "source_file": "security.json",
+      "reference_value": "Linux",
+      "target_entity_id": "OS-004",
+      "target_canonical_name": "Linux",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-012",
+      "source_entity_name": "LUKS",
+      "source_file": "security.json",
+      "reference_value": "Linux",
+      "target_entity_id": "OS-004",
+      "target_canonical_name": "Linux",
+      "target_source_file": "operating_system.json",
+      "matched_by": "exact_canonical_name"
+    }
+  ],
+  "unresolved_references": [
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "DirectX Runtime",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Display Manager",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "GPU Firmware",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Kernel Mode Setting",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "OS Graphics Subsystem",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "PCI Express Interface",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "UEFI GOP",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-001",
+      "source_entity_name": "Graphics Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Vulkan Runtime",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Audio DSP Firmware",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Audio Endpoint Manager",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "HD Audio Controller",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Kernel Streaming",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "OS Audio Subsystem",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "PCI Express Interface",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "USB Audio Class",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_entity_name": "Audio Driver",
+      "source_file": "drivers.json",
+      "reference_value": "WASAPI",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "IOMMU",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Management Engine Interface",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "PCI Express Interface",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Power Management Subsystem",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_entity_name": "Chipset Driver",
+      "source_file": "drivers.json",
+      "reference_value": "USB Controller Driver",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Firewall Driver",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Network Access Control Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "OS Network Stack",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "PCI Express Interface",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "USB Controller Driver",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "VPN Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_entity_name": "Network Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Wake-on-LAN",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Boot Critical Driver",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "File System Driver",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Full Disk Encryption",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "OS Storage Stack",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "PCI Express Interface",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "RAID Controller",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "SCSI",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "StorPort",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "TCG Opal",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "USB Controller Driver",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_entity_name": "Storage Driver",
+      "source_file": "drivers.json",
+      "reference_value": "Volume Manager",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "DRV-006",
+      "source_entity_name": "Driver Signing",
+      "source_file": "drivers.json",
+      "reference_value": "WHQL",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "CMOS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "CSM",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "Hardware Abstraction Layer",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "MBR",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_entity_name": "BIOS",
+      "source_file": "firmware.json",
+      "reference_value": "POST",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "CSM",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_entity_name": "UEFI",
+      "source_file": "firmware.json",
+      "reference_value": "SMBIOS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Battery Management System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Platform Power Management",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Thermal Management Subsystem",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_entity_name": "Embedded Controller Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "USB Power Delivery Controller",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Full Disk Encryption",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "RAID Controller",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "SATA Controller",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Self-Encrypting Drive",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Storage Controller Driver",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_entity_name": "Storage Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "TCG Opal",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "BMC",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "IPMI",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Network Access Control",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "Out-of-Band Management",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "VPN Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_entity_name": "Network Firmware",
+      "source_file": "firmware.json",
+      "reference_value": "WoL",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Asset Inventory System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "CMDB",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Certificate Management System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Compliance Policy Engine",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Conditional Access Policy",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Configuration Baseline",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Identity Provider",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "MDM Policy Engine",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "OS Deployment Service",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "PKI",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Remote Control Service",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_entity_name": "Endpoint Manager",
+      "source_file": "management.json",
+      "reference_value": "Software Distribution System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "Alerting Engine",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "Application Performance Monitoring",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "BMC",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "ETW",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "Hardware Sensor Interface",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "IPMI",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "Log Aggregation Platform",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "OS Event Log",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "OpenTelemetry",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "Time Series Database",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "WMI",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "eBPF",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_entity_name": "Monitoring Agent",
+      "source_file": "management.json",
+      "reference_value": "syslog",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Asset Inventory System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "CVE Database",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Change Management System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Deployment Ring Policy",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Driver Update Service",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Maintenance Window Policy",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "OS Update Service",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Patch Compliance Reporting",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Software Distribution System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_entity_name": "Patch Manager",
+      "source_file": "management.json",
+      "reference_value": "Vulnerability Management Platform",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-004",
+      "source_entity_name": "Active Directory",
+      "source_file": "management.json",
+      "reference_value": "Identity Provider",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_entity_name": "SIEM",
+      "source_file": "management.json",
+      "reference_value": "Log Aggregation Platform",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Credential Guard",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "LSASS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "MDM Policy Engine",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "NTFS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Virtualization Based Security",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_entity_name": "Windows",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows Defender",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Credential Guard",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "LTSC",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "MDM Policy Engine",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "WDAC",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_entity_name": "Windows 10",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows Defender",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Credential Guard",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "HVCI",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "MDM Policy Engine",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Microsoft Pluton",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Secured-core PC",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM 2.0",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "VBS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "WDAC",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_entity_name": "Windows 11",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows Defender",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "Container Runtime",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "GRUB Bootloader",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "Kernel Module Signing",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "PAM",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "cgroups",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "eBPF",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_entity_name": "Linux",
+      "source_file": "operating_system.json",
+      "reference_value": "systemd",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "APT Package Manager",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "DKMS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "GRUB Bootloader",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Hardware Enablement Stack",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Kernel Live Patching",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "Snap Package Manager",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_entity_name": "Ubuntu",
+      "source_file": "operating_system.json",
+      "reference_value": "systemd",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "Ansible Automation",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "DKMS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "FIPS 140",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "GRUB Bootloader",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "Kernel Live Patching",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "OpenSCAP",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "RPM Package Manager",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "Red Hat Satellite",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_entity_name": "RHEL",
+      "source_file": "operating_system.json",
+      "reference_value": "systemd",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "APFS",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "Apple Business Manager",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "Code Signing",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "DriverKit",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "EndpointSecurity Framework",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "Kernel Extension",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "MDM Configuration Profile",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "System Extension",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "TCC",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_entity_name": "macOS",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM Equivalent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-008",
+      "source_entity_name": "Linux Kernel",
+      "source_file": "operating_system.json",
+      "reference_value": "Loadable Kernel Module",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-008",
+      "source_entity_name": "Linux Kernel",
+      "source_file": "operating_system.json",
+      "reference_value": "eBPF",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "OS-009",
+      "source_entity_name": "Windows NT Kernel",
+      "source_file": "operating_system.json",
+      "reference_value": "HAL",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_entity_name": "TPM",
+      "source_file": "security.json",
+      "reference_value": "Hardware Root of Trust",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_entity_name": "TPM",
+      "source_file": "security.json",
+      "reference_value": "Hardware Security Key",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_entity_name": "TPM",
+      "source_file": "security.json",
+      "reference_value": "Memory Encryption",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_entity_name": "TPM",
+      "source_file": "security.json",
+      "reference_value": "Physical Unclonable Function",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_entity_name": "Secure Boot",
+      "source_file": "security.json",
+      "reference_value": "Boot Guard",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_entity_name": "Secure Boot",
+      "source_file": "security.json",
+      "reference_value": "Early Launch Anti-Malware",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_entity_name": "Secure Boot",
+      "source_file": "security.json",
+      "reference_value": "Firmware Integrity Verification",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_entity_name": "Secure Boot",
+      "source_file": "security.json",
+      "reference_value": "Platform Key Management",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_entity_name": "Secure Boot",
+      "source_file": "security.json",
+      "reference_value": "TPM Measured Boot",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_entity_name": "Secure Boot",
+      "source_file": "security.json",
+      "reference_value": "UEFI Signature Database",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-003",
+      "source_entity_name": "Antivirus",
+      "source_file": "security.json",
+      "reference_value": "Anti-Malware Engine",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-003",
+      "source_entity_name": "Antivirus",
+      "source_file": "security.json",
+      "reference_value": "Application Whitelisting Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-003",
+      "source_entity_name": "Antivirus",
+      "source_file": "security.json",
+      "reference_value": "Data Loss Prevention Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-003",
+      "source_entity_name": "Antivirus",
+      "source_file": "security.json",
+      "reference_value": "File Integrity Monitoring Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-003",
+      "source_entity_name": "Antivirus",
+      "source_file": "security.json",
+      "reference_value": "Host Intrusion Prevention System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-004",
+      "source_entity_name": "EDR Agent",
+      "source_file": "security.json",
+      "reference_value": "Extended Detection and Response Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-004",
+      "source_entity_name": "EDR Agent",
+      "source_file": "security.json",
+      "reference_value": "File Integrity Monitoring Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-004",
+      "source_entity_name": "EDR Agent",
+      "source_file": "security.json",
+      "reference_value": "Host Intrusion Detection System",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-004",
+      "source_entity_name": "EDR Agent",
+      "source_file": "security.json",
+      "reference_value": "Security Information and Event Management Forwarder",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-004",
+      "source_entity_name": "EDR Agent",
+      "source_file": "security.json",
+      "reference_value": "User and Entity Behavior Analytics Agent",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-007",
+      "source_entity_name": "Gatekeeper",
+      "source_file": "security.json",
+      "reference_value": "Notarization",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-008",
+      "source_entity_name": "FileVault",
+      "source_file": "security.json",
+      "reference_value": "Full Disk Encryption",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-009",
+      "source_entity_name": "BitLocker",
+      "source_file": "security.json",
+      "reference_value": "Full Disk Encryption",
+      "reason": "No canonical name or alias matched"
+    },
+    {
+      "source_entity_id": "SEC-012",
+      "source_entity_name": "LUKS",
+      "source_file": "security.json",
+      "reference_value": "Full Disk Encryption",
+      "reason": "No canonical name or alias matched"
+    }
+  ],
+  "ambiguous_references": [],
+  "invalid_references": [],
+  "self_references": [],
+  "summary": "Processed 369 references. Resolved: 188, Unresolved: 181, Ambiguous: 0, Invalid: 0, Self-references: 0. Resolution rate: 50.95%"
+}
