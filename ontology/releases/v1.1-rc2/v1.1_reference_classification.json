@@ -1,0 +1,2466 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "unique_unresolved_reference_count": 142,
+  "references": [
+    {
+      "reference_value": "Alerting Engine",
+      "normalized_reference": "alerting engine",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Alert evaluation capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A generic capability/component phrase without a stable product-neutral identity; it is not suitable as a related entity."
+    },
+    {
+      "reference_value": "Ansible Automation",
+      "normalized_reference": "ansible automation",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Anti-Malware Engine",
+      "normalized_reference": "anti malware engine",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Malware detection engine component. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful implementation component of anti-malware products, but the existing Antivirus entity is the governed Domain Layer concept. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "APFS",
+      "normalized_reference": "apfs",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Apple Business Manager",
+      "normalized_reference": "apple business manager",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Cloud Services",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Cloud Services domain."
+    },
+    {
+      "reference_value": "Application Performance Monitoring",
+      "normalized_reference": "application performance monitoring",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Observability",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Application telemetry and performance monitoring capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A recognized monitoring discipline/platform category that belongs in a future observability domain. Provisional interpretation was deferred for Observability, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Application Whitelisting Agent",
+      "normalized_reference": "application whitelisting agent",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Endpoint Security",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Application-control security agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful endpoint security-agent role, but no unique product-neutral identity is established for a core node. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "APT Package Manager",
+      "normalized_reference": "apt package manager",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-005"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Asset Inventory System",
+      "normalized_reference": "asset inventory system",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "MGT-001",
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Asset and Configuration Management",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Asset discovery and inventory platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A distinct asset-inventory system belongs in a future asset/configuration-management domain rather than being folded into Endpoint Manager. Provisional interpretation was deferred for Asset and Configuration Management, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Audio DSP Firmware",
+      "normalized_reference": "audio dsp firmware",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Audio Endpoint Manager",
+      "normalized_reference": "audio endpoint manager",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Battery Management System",
+      "normalized_reference": "battery management system",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-003"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "BMC",
+      "normalized_reference": "bmc",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "FW-005",
+        "MGT-002"
+      ],
+      "source_files": [
+        "firmware.json",
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Boot Critical Driver",
+      "normalized_reference": "boot critical driver",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Boot Guard",
+      "normalized_reference": "boot guard",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Certificate Management System",
+      "normalized_reference": "certificate management system",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Identity and Access",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Identity and Access domain."
+    },
+    {
+      "reference_value": "cgroups",
+      "normalized_reference": "cgroups",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-004"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Change Management System",
+      "normalized_reference": "change management system",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "IT Service Management",
+      "review_status": "automatic",
+      "reason": "Appears to represent: IT change-control platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A change-control platform belongs to a future IT service-management domain. Provisional interpretation was deferred for IT Service Management, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "CMDB",
+      "normalized_reference": "cmdb",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "CMOS",
+      "normalized_reference": "cmos",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-001"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Code Signing",
+      "normalized_reference": "code signing",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "overly_broad_reference",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "The reference is too broad for a stable staging edge."
+    },
+    {
+      "reference_value": "Compliance Policy Engine",
+      "normalized_reference": "compliance policy engine",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Configuration-compliance evaluation component. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a policy evaluation component essential to some compliance implementations, but the source does not establish whether it is a standalone entity or an Endpoint Manager capability. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Conditional Access Policy",
+      "normalized_reference": "conditional access policy",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Identity and Access",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Identity and Access domain."
+    },
+    {
+      "reference_value": "Container Runtime",
+      "normalized_reference": "container runtime",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-004"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Credential Guard",
+      "normalized_reference": "credential guard",
+      "occurrence_count": 3,
+      "source_entity_ids": [
+        "OS-001",
+        "OS-002",
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Identity and Access",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Identity and Access domain."
+    },
+    {
+      "reference_value": "CSM",
+      "normalized_reference": "csm",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "FW-001",
+        "FW-002"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "CVE Database",
+      "normalized_reference": "cve database",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Vulnerability identifier data source. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An external vulnerability-information data source, not an endpoint Domain Layer entity. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Data Loss Prevention Agent",
+      "normalized_reference": "data loss prevention agent",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Endpoint Security",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Endpoint data-loss-prevention agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful endpoint security-agent role but not required as a standalone current-scope node. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Deployment Ring Policy",
+      "normalized_reference": "deployment ring policy",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Policy and Compliance",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Phased deployment policy object. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a rollout policy/configuration object. More evidence is needed to decide whether policies are first-class entities or relationship attributes. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "DirectX Runtime",
+      "normalized_reference": "directx runtime",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Display Manager",
+      "normalized_reference": "display manager",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "DKMS",
+      "normalized_reference": "dkms",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "OS-005",
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Driver Update Service",
+      "normalized_reference": "driver update service",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Driver delivery/update service. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful external operating-system or vendor service that distributes driver updates; it need not become a Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "DriverKit",
+      "normalized_reference": "driverkit",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Early Launch Anti-Malware",
+      "normalized_reference": "early launch anti malware",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "eBPF",
+      "normalized_reference": "ebpf",
+      "occurrence_count": 3,
+      "source_entity_ids": [
+        "MGT-002",
+        "OS-004",
+        "OS-008"
+      ],
+      "source_files": [
+        "management.json",
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "EndpointSecurity Framework",
+      "normalized_reference": "endpointsecurity framework",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Vendor endpoint-security API framework. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to refer to an Apple platform API/framework; it is meaningful compatibility context but not an operating-system entity. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "ETW",
+      "normalized_reference": "etw",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Extended Detection and Response Agent",
+      "normalized_reference": "extended detection and response agent",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Security Operations",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Extended detection and response endpoint agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security product/agent category, but not required as a core compatibility node in this release. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "File Integrity Monitoring Agent",
+      "normalized_reference": "file integrity monitoring agent",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "SEC-003",
+        "SEC-004"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Endpoint Security",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Host file-integrity security agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security-agent role, but not essential as a canonical node for the current compatibility and compliance scope. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "File System Driver",
+      "normalized_reference": "file system driver",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "FIPS 140",
+      "normalized_reference": "fips 140",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Firewall Driver",
+      "normalized_reference": "firewall driver",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-004"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Firmware Integrity Verification",
+      "normalized_reference": "firmware integrity verification",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Full Disk Encryption",
+      "normalized_reference": "full disk encryption",
+      "occurrence_count": 5,
+      "source_entity_ids": [
+        "DRV-005",
+        "FW-004",
+        "SEC-008",
+        "SEC-009",
+        "SEC-012"
+      ],
+      "source_files": [
+        "drivers.json",
+        "firmware.json",
+        "security.json"
+      ],
+      "classification": "overly_broad_reference",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "The reference is too broad for a stable staging edge."
+    },
+    {
+      "reference_value": "GPU Firmware",
+      "normalized_reference": "gpu firmware",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "GRUB Bootloader",
+      "normalized_reference": "grub bootloader",
+      "occurrence_count": 3,
+      "source_entity_ids": [
+        "OS-004",
+        "OS-005",
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "HAL",
+      "normalized_reference": "hal",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-009"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Hardware Abstraction Layer",
+      "normalized_reference": "hardware abstraction layer",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-001"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Hardware Enablement Stack",
+      "normalized_reference": "hardware enablement stack",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-005"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Hardware Root of Trust",
+      "normalized_reference": "hardware root of trust",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-001"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Hardware Security Key",
+      "normalized_reference": "hardware security key",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-001"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Hardware Sensor Interface",
+      "normalized_reference": "hardware sensor interface",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "HD Audio Controller",
+      "normalized_reference": "hd audio controller",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Host Intrusion Detection System",
+      "normalized_reference": "host intrusion detection system",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Endpoint Security",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Host-based intrusion detection system. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security-system category outside the minimum current Domain Layer node set. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Host Intrusion Prevention System",
+      "normalized_reference": "host intrusion prevention system",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Endpoint Security",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Host-based intrusion prevention system. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security-system category outside the minimum current Domain Layer node set. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "HVCI",
+      "normalized_reference": "hvci",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Identity Provider",
+      "normalized_reference": "identity provider",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "MGT-001",
+        "MGT-004"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Identity and Access",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Identity and Access domain."
+    },
+    {
+      "reference_value": "IOMMU",
+      "normalized_reference": "iommu",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-003"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "IPMI",
+      "normalized_reference": "ipmi",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "FW-005",
+        "MGT-002"
+      ],
+      "source_files": [
+        "firmware.json",
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Kernel Extension",
+      "normalized_reference": "kernel extension",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Kernel Live Patching",
+      "normalized_reference": "kernel live patching",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "OS-005",
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Kernel Mode Setting",
+      "normalized_reference": "kernel mode setting",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Kernel Module Signing",
+      "normalized_reference": "kernel module signing",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-004"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Kernel Streaming",
+      "normalized_reference": "kernel streaming",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Loadable Kernel Module",
+      "normalized_reference": "loadable kernel module",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-008"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Log Aggregation Platform",
+      "normalized_reference": "log aggregation platform",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "MGT-002",
+        "MGT-008"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Observability",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Centralized log collection platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A log collection and aggregation platform is a coherent future observability concept, separate from the current endpoint management entities. Provisional interpretation was deferred for Observability, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "LSASS",
+      "normalized_reference": "lsass",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-001"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Identity and Access",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Identity and Access domain."
+    },
+    {
+      "reference_value": "LTSC",
+      "normalized_reference": "ltsc",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-002"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Maintenance Window Policy",
+      "normalized_reference": "maintenance window policy",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Policy and Compliance",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Patch/deployment scheduling policy. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a scheduling policy object. Evidence and modeling rules are needed before treating policies as entities rather than attributes. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Management Engine Interface",
+      "normalized_reference": "management engine interface",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-003"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Hardware management interface. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a hardware/platform management interface used by chipset drivers; it is meaningful but outside the five-domain node scope. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "MBR",
+      "normalized_reference": "mbr",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-001"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "MDM Configuration Profile",
+      "normalized_reference": "mdm configuration profile",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "MDM Policy Engine",
+      "normalized_reference": "mdm policy engine",
+      "occurrence_count": 4,
+      "source_entity_ids": [
+        "MGT-001",
+        "OS-001",
+        "OS-002",
+        "OS-003"
+      ],
+      "source_files": [
+        "management.json",
+        "operating_system.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Management policy-processing component. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to mean the policy-evaluation component of mobile device management. It could overlap Endpoint Manager or merit a governed management component, but the intended identity is not established. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Memory Encryption",
+      "normalized_reference": "memory encryption",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-001"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "overly_broad_reference",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "The reference is too broad for a stable staging edge."
+    },
+    {
+      "reference_value": "Microsoft Pluton",
+      "normalized_reference": "microsoft pluton",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Network Access Control",
+      "normalized_reference": "network access control",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-005"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Networking",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Networking domain."
+    },
+    {
+      "reference_value": "Network Access Control Agent",
+      "normalized_reference": "network access control agent",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-004"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Networking",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Networking domain."
+    },
+    {
+      "reference_value": "Notarization",
+      "normalized_reference": "notarization",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-007"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "overly_broad_reference",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "The reference is too broad for a stable staging edge."
+    },
+    {
+      "reference_value": "NTFS",
+      "normalized_reference": "ntfs",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-001"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "OpenSCAP",
+      "normalized_reference": "openscap",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "OpenTelemetry",
+      "normalized_reference": "opentelemetry",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "OS Audio Subsystem",
+      "normalized_reference": "os audio subsystem",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Broad operating-system audio capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An overly broad architectural phrase rather than a stable entity; retain the concrete Audio Driver relationship instead."
+    },
+    {
+      "reference_value": "OS Deployment Service",
+      "normalized_reference": "os deployment service",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Lifecycle Management",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Operating-system provisioning service. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Could denote a standalone deployment service or an Endpoint Manager capability; the source does not establish a unique identity. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "OS Event Log",
+      "normalized_reference": "os event log",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "OS Graphics Subsystem",
+      "normalized_reference": "os graphics subsystem",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Broad operating-system graphics capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An overly broad architectural phrase rather than a stable entity; retain concrete driver and OS entities."
+    },
+    {
+      "reference_value": "OS Network Stack",
+      "normalized_reference": "os network stack",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-004"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "OS Storage Stack",
+      "normalized_reference": "os storage stack",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "OS Update Service",
+      "normalized_reference": "os update service",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Generic operating-system update capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A generic phrase that can refer to several vendor services and cannot identify one stable entity."
+    },
+    {
+      "reference_value": "Out-of-Band Management",
+      "normalized_reference": "out of band management",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-005"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Platform Management",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Remote management capability independent of host OS. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A management capability/mode rather than a uniquely identifiable entity."
+    },
+    {
+      "reference_value": "PAM",
+      "normalized_reference": "pam",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-004"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Identity and Access",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Identity and Access domain."
+    },
+    {
+      "reference_value": "Patch Compliance Reporting",
+      "normalized_reference": "patch compliance reporting",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Patch-status reporting capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A reporting capability or output, not a standalone entity."
+    },
+    {
+      "reference_value": "PCI Express Interface",
+      "normalized_reference": "pci express interface",
+      "occurrence_count": 5,
+      "source_entity_ids": [
+        "DRV-001",
+        "DRV-002",
+        "DRV-003",
+        "DRV-004",
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Industry interface / bus standard. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An industry interface referenced by several driver categories; it is meaningful context but does not require a Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Physical Unclonable Function",
+      "normalized_reference": "physical unclonable function",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-001"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "PKI",
+      "normalized_reference": "pki",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Identity and Access",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Identity and Access domain."
+    },
+    {
+      "reference_value": "Platform Key Management",
+      "normalized_reference": "platform key management",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Platform cryptographic-key management capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A broad security capability phrase, not a stable entity or uniquely named standard in this context."
+    },
+    {
+      "reference_value": "Platform Power Management",
+      "normalized_reference": "platform power management",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-003"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Platform-level power-control capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A broad platform capability rather than a discrete entity."
+    },
+    {
+      "reference_value": "POST",
+      "normalized_reference": "post",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-001"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Power Management Subsystem",
+      "normalized_reference": "power management subsystem",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-003"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "invalid_related_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Hardware/OS power-control subsystem. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A broad architectural component phrase without a stable identity."
+    },
+    {
+      "reference_value": "RAID Controller",
+      "normalized_reference": "raid controller",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "DRV-005",
+        "FW-004"
+      ],
+      "source_files": [
+        "drivers.json",
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Red Hat Satellite",
+      "normalized_reference": "red hat satellite",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Remote Control Service",
+      "normalized_reference": "remote control service",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Endpoint Management",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Remote endpoint-control service. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful management service category, but not necessary as a standalone current Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "RPM Package Manager",
+      "normalized_reference": "rpm package manager",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "SATA Controller",
+      "normalized_reference": "sata controller",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-004"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "SCSI",
+      "normalized_reference": "scsi",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Secured-core PC",
+      "normalized_reference": "secured core pc",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Security Information and Event Management Forwarder",
+      "normalized_reference": "security information and event management forwarder",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Security-event forwarding agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful log-forwarding agent role associated with SIEM, but not a core entity for current endpoint reasoning. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Self-Encrypting Drive",
+      "normalized_reference": "self encrypting drive",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-004"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "SMBIOS",
+      "normalized_reference": "smbios",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-002"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Snap Package Manager",
+      "normalized_reference": "snap package manager",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-005"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Software Distribution System",
+      "normalized_reference": "software distribution system",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "MGT-001",
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Lifecycle Management",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Software deployment and distribution platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A software distribution platform is a coherent management capability, but its product-neutral identity and boundary require a future software-lifecycle domain. Provisional interpretation was deferred for Software Lifecycle Management, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Storage Controller Driver",
+      "normalized_reference": "storage controller driver",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-004"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "StorPort",
+      "normalized_reference": "storport",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "syslog",
+      "normalized_reference": "syslog",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "System Extension",
+      "normalized_reference": "system extension",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "systemd",
+      "normalized_reference": "systemd",
+      "occurrence_count": 3,
+      "source_entity_ids": [
+        "OS-004",
+        "OS-005",
+        "OS-006"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "TCC",
+      "normalized_reference": "tcc",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "TCG Opal",
+      "normalized_reference": "tcg opal",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "DRV-005",
+        "FW-004"
+      ],
+      "source_files": [
+        "drivers.json",
+        "firmware.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Thermal Management Subsystem",
+      "normalized_reference": "thermal management subsystem",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-003"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "Time Series Database",
+      "normalized_reference": "time series database",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Data Platform",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Time-indexed metrics data store. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A coherent data-storage platform category belonging to a future data/observability domain. Provisional interpretation was deferred for Data Platform, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "TPM 2.0",
+      "normalized_reference": "tpm 2.0",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "TPM Equivalent",
+      "normalized_reference": "tpm equivalent",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "TPM Measured Boot",
+      "normalized_reference": "tpm measured boot",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "UEFI GOP",
+      "normalized_reference": "uefi gop",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "UEFI Signature Database",
+      "normalized_reference": "uefi signature database",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Appears to represent: Secure Boot signature database. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful UEFI platform data structure, not a standalone firmware entity in the current model. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "USB Audio Class",
+      "normalized_reference": "usb audio class",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "USB Controller Driver",
+      "normalized_reference": "usb controller driver",
+      "occurrence_count": 3,
+      "source_entity_ids": [
+        "DRV-003",
+        "DRV-004",
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "USB Power Delivery Controller",
+      "normalized_reference": "usb power delivery controller",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-003"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Hardware",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Hardware domain."
+    },
+    {
+      "reference_value": "User and Entity Behavior Analytics Agent",
+      "normalized_reference": "user and entity behavior analytics agent",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "source_files": [
+        "security.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Security Analytics",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Behavior-analytics collection agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security analytics agent role, but not necessary as a standalone current Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "VBS",
+      "normalized_reference": "vbs",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Virtualization Based Security",
+      "normalized_reference": "virtualization based security",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "OS-001"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "Volume Manager",
+      "normalized_reference": "volume manager",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-005"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "VPN Agent",
+      "normalized_reference": "vpn agent",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "DRV-004",
+        "FW-005"
+      ],
+      "source_files": [
+        "drivers.json",
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Networking",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Networking domain."
+    },
+    {
+      "reference_value": "Vulkan Runtime",
+      "normalized_reference": "vulkan runtime",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Software Runtime",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Software Runtime domain."
+    },
+    {
+      "reference_value": "Vulnerability Management Platform",
+      "normalized_reference": "vulnerability management platform",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Human-approved ontology-scope decision.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Security Operations",
+      "review_status": "automatic",
+      "reason": "Appears to represent: Vulnerability discovery and remediation platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A coherent security-operations platform category that should be modeled in a future domain rather than as an endpoint component. Provisional interpretation was deferred for Security Operations, but it cannot be recommended without authoritative verification."
+    },
+    {
+      "reference_value": "Wake-on-LAN",
+      "normalized_reference": "wake on lan",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-004"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Networking",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Networking domain."
+    },
+    {
+      "reference_value": "WASAPI",
+      "normalized_reference": "wasapi",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "WDAC",
+      "normalized_reference": "wdac",
+      "occurrence_count": 2,
+      "source_entity_ids": [
+        "OS-002",
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "WHQL",
+      "normalized_reference": "whql",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "DRV-006"
+      ],
+      "source_files": [
+        "drivers.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "Windows Defender",
+      "normalized_reference": "windows defender",
+      "occurrence_count": 3,
+      "source_entity_ids": [
+        "OS-001",
+        "OS-002",
+        "OS-003"
+      ],
+      "source_files": [
+        "operating_system.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity."
+    },
+    {
+      "reference_value": "WMI",
+      "normalized_reference": "wmi",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "source_files": [
+        "management.json"
+      ],
+      "classification": "valid_external_concept",
+      "recommended_action": "Retain as a documented external concept.",
+      "candidate_entity_id": null,
+      "deferred_domain": null,
+      "review_status": "automatic",
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains."
+    },
+    {
+      "reference_value": "WoL",
+      "normalized_reference": "wol",
+      "occurrence_count": 1,
+      "source_entity_ids": [
+        "FW-005"
+      ],
+      "source_files": [
+        "firmware.json"
+      ],
+      "classification": "future_domain_entity",
+      "recommended_action": "Model in the deferred domain after domain governance review.",
+      "candidate_entity_id": null,
+      "deferred_domain": "Networking",
+      "review_status": "automatic",
+      "reason": "Concept belongs to the planned Networking domain."
+    }
+  ]
+}

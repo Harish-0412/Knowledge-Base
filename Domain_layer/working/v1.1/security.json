@@ -34,7 +34,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-002",
@@ -70,7 +75,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-003",
@@ -105,7 +115,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-004",
@@ -138,7 +153,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-005",
@@ -160,7 +180,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-006",
@@ -183,7 +208,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-007",
@@ -205,7 +235,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-008",
@@ -226,7 +261,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-009",
@@ -249,7 +289,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-010",
@@ -271,7 +316,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-011",
@@ -291,7 +341,12 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "SEC-012",
@@ -312,6 +367,11 @@
     ],
     "knowledge_category": "Security",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   }
 ]

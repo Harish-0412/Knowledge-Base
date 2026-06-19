@@ -52,7 +52,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-002",
@@ -122,7 +127,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-003",
@@ -182,7 +192,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-004",
@@ -251,7 +266,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-005",
@@ -327,7 +347,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-006",
@@ -352,7 +377,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "IndustryStandard",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-007",
@@ -378,7 +408,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-008",
@@ -404,7 +439,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "IndustryStandard",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-009",
@@ -428,7 +468,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "IndustryStandard",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-010",
@@ -450,7 +495,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-011",
@@ -474,7 +524,12 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "FW-012",
@@ -498,6 +553,11 @@
     ],
     "knowledge_category": "Firmware",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   }
 ]

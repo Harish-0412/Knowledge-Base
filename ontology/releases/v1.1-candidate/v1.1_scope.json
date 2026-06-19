@@ -1,0 +1,25 @@
+{
+  "release": "1.1-candidate",
+  "included_domains": [
+    "Firmware",
+    "Operating System",
+    "Driver",
+    "Security",
+    "Management"
+  ],
+  "in_scope_when_required_for": [
+    "endpoint compatibility reasoning",
+    "configuration compliance reasoning",
+    "boot and platform compatibility",
+    "security requirement reasoning",
+    "driver and operating-system compatibility",
+    "endpoint management reasoning"
+  ],
+  "other_classifications": [
+    "shared_platform_concept",
+    "valid_external_concept",
+    "future_domain_entity",
+    "out_of_scope",
+    "requires_human_review"
+  ]
+}

@@ -1,0 +1,189 @@
+:START_ID(Entity),:END_ID(Entity),reference_value,resolution_method,:TYPE
+DRV-001,DRV-003,Chipset Driver,canonical_name,RELATED_TO
+DRV-001,DRV-006,Driver Signing,canonical_name,RELATED_TO
+DRV-001,DRV-007,WDDM,canonical_name,RELATED_TO
+DRV-002,DRV-003,Chipset Driver,canonical_name,RELATED_TO
+DRV-002,DRV-006,Driver Signing,canonical_name,RELATED_TO
+DRV-003,FW-002,UEFI,canonical_name,RELATED_TO
+DRV-003,FW-006,ACPI,canonical_name,RELATED_TO
+DRV-003,DRV-005,Storage Driver,canonical_name,RELATED_TO
+DRV-003,DRV-004,Network Driver,canonical_name,RELATED_TO
+DRV-003,DRV-001,Graphics Driver,canonical_name,RELATED_TO
+DRV-003,DRV-002,Audio Driver,canonical_name,RELATED_TO
+DRV-003,DRV-006,Driver Signing,canonical_name,RELATED_TO
+DRV-004,FW-005,Network Firmware,canonical_name,RELATED_TO
+DRV-004,DRV-003,Chipset Driver,canonical_name,RELATED_TO
+DRV-004,DRV-008,NDIS,canonical_name,RELATED_TO
+DRV-004,FW-012,PXE Boot,canonical_name,RELATED_TO
+DRV-004,DRV-006,Driver Signing,canonical_name,RELATED_TO
+DRV-005,FW-004,Storage Firmware,canonical_name,RELATED_TO
+DRV-005,DRV-003,Chipset Driver,canonical_name,RELATED_TO
+DRV-005,SEC-009,BitLocker,canonical_name,RELATED_TO
+DRV-005,DRV-006,Driver Signing,canonical_name,RELATED_TO
+DRV-006,OS-001,Windows,canonical_name,RELATED_TO
+DRV-007,OS-001,Windows,canonical_name,RELATED_TO
+DRV-007,DRV-001,Graphics Driver,canonical_name,RELATED_TO
+DRV-008,OS-001,Windows,canonical_name,RELATED_TO
+DRV-008,DRV-004,Network Driver,canonical_name,RELATED_TO
+FW-001,FW-002,UEFI,canonical_name,RELATED_TO
+FW-001,FW-003,Embedded Controller Firmware,canonical_name,RELATED_TO
+FW-001,FW-011,OS Bootloader,canonical_name,RELATED_TO
+FW-001,SEC-002,Secure Boot,canonical_name,RELATED_TO
+FW-001,FW-007,Firmware Update Utility,canonical_name,RELATED_TO
+FW-002,FW-001,BIOS,canonical_name,RELATED_TO
+FW-002,SEC-002,Secure Boot,canonical_name,RELATED_TO
+FW-002,SEC-001,TPM,canonical_name,RELATED_TO
+FW-002,FW-009,GPT,canonical_name,RELATED_TO
+FW-002,FW-008,EFI System Partition,canonical_name,RELATED_TO
+FW-002,FW-011,OS Bootloader,canonical_name,RELATED_TO
+FW-002,FW-010,Measured Boot,canonical_name,RELATED_TO
+FW-002,FW-006,ACPI,canonical_name,RELATED_TO
+FW-002,FW-003,Embedded Controller Firmware,canonical_name,RELATED_TO
+FW-002,FW-007,Firmware Update Utility,canonical_name,RELATED_TO
+FW-003,FW-002,UEFI,canonical_name,RELATED_TO
+FW-003,FW-001,BIOS,canonical_name,RELATED_TO
+FW-003,FW-006,ACPI,canonical_name,RELATED_TO
+FW-003,SEC-001,TPM,canonical_name,RELATED_TO
+FW-003,FW-007,Firmware Update Utility,canonical_name,RELATED_TO
+FW-004,FW-002,UEFI,canonical_name,RELATED_TO
+FW-004,DRV-005,NVMe Driver,alias,RELATED_TO
+FW-004,SEC-009,BitLocker,canonical_name,RELATED_TO
+FW-004,FW-007,Firmware Update Utility,canonical_name,RELATED_TO
+FW-005,FW-002,UEFI,canonical_name,RELATED_TO
+FW-005,FW-012,PXE Boot,canonical_name,RELATED_TO
+FW-005,DRV-004,Network Driver,canonical_name,RELATED_TO
+FW-005,DRV-008,NDIS,canonical_name,RELATED_TO
+FW-005,DRV-004,Wireless Driver,alias,RELATED_TO
+FW-005,FW-007,Firmware Update Utility,canonical_name,RELATED_TO
+FW-006,FW-002,UEFI,canonical_name,RELATED_TO
+FW-006,FW-001,BIOS,canonical_name,RELATED_TO
+FW-006,FW-003,Embedded Controller Firmware,canonical_name,RELATED_TO
+FW-007,FW-001,BIOS,canonical_name,RELATED_TO
+FW-007,FW-002,UEFI,canonical_name,RELATED_TO
+FW-007,FW-003,Embedded Controller Firmware,canonical_name,RELATED_TO
+FW-007,FW-004,Storage Firmware,canonical_name,RELATED_TO
+FW-007,FW-005,Network Firmware,canonical_name,RELATED_TO
+FW-008,FW-002,UEFI,canonical_name,RELATED_TO
+FW-008,FW-011,OS Bootloader,canonical_name,RELATED_TO
+FW-008,FW-009,GPT,canonical_name,RELATED_TO
+FW-009,FW-002,UEFI,canonical_name,RELATED_TO
+FW-009,FW-008,EFI System Partition,canonical_name,RELATED_TO
+FW-010,FW-002,UEFI,canonical_name,RELATED_TO
+FW-010,SEC-001,TPM,canonical_name,RELATED_TO
+FW-011,FW-001,BIOS,canonical_name,RELATED_TO
+FW-011,FW-002,UEFI,canonical_name,RELATED_TO
+FW-011,FW-008,EFI System Partition,canonical_name,RELATED_TO
+FW-012,FW-002,UEFI,canonical_name,RELATED_TO
+FW-012,FW-005,Network Firmware,canonical_name,RELATED_TO
+FW-012,DRV-004,Network Driver,canonical_name,RELATED_TO
+MGT-001,MGT-002,Monitoring Agent,canonical_name,RELATED_TO
+MGT-001,MGT-003,Patch Manager,canonical_name,RELATED_TO
+MGT-001,MGT-005,Group Policy,canonical_name,RELATED_TO
+MGT-001,MGT-004,Active Directory,canonical_name,RELATED_TO
+MGT-002,MGT-001,Endpoint Manager,canonical_name,RELATED_TO
+MGT-002,MGT-003,Patch Manager,canonical_name,RELATED_TO
+MGT-002,MGT-008,SIEM,canonical_name,RELATED_TO
+MGT-002,SEC-004,EDR Agent,canonical_name,RELATED_TO
+MGT-003,MGT-001,Endpoint Manager,canonical_name,RELATED_TO
+MGT-003,MGT-002,Monitoring Agent,canonical_name,RELATED_TO
+MGT-003,MGT-006,WSUS,canonical_name,RELATED_TO
+MGT-003,MGT-007,Windows Update,canonical_name,RELATED_TO
+MGT-003,FW-007,Firmware Update Utility,canonical_name,RELATED_TO
+MGT-003,MGT-008,SIEM,canonical_name,RELATED_TO
+MGT-004,MGT-001,Endpoint Manager,canonical_name,RELATED_TO
+MGT-004,MGT-005,Group Policy,canonical_name,RELATED_TO
+MGT-004,OS-001,Windows,canonical_name,RELATED_TO
+MGT-005,MGT-001,Endpoint Manager,canonical_name,RELATED_TO
+MGT-005,MGT-004,Active Directory,canonical_name,RELATED_TO
+MGT-005,OS-001,Windows,canonical_name,RELATED_TO
+MGT-006,MGT-003,Patch Manager,canonical_name,RELATED_TO
+MGT-006,OS-001,Windows,canonical_name,RELATED_TO
+MGT-006,MGT-007,Windows Update,canonical_name,RELATED_TO
+MGT-007,MGT-003,Patch Manager,canonical_name,RELATED_TO
+MGT-007,MGT-006,WSUS,canonical_name,RELATED_TO
+MGT-007,OS-001,Windows,canonical_name,RELATED_TO
+MGT-008,MGT-002,Monitoring Agent,canonical_name,RELATED_TO
+MGT-008,SEC-004,EDR Agent,canonical_name,RELATED_TO
+MGT-008,MGT-003,Patch Manager,canonical_name,RELATED_TO
+OS-001,OS-002,Windows 10,canonical_name,RELATED_TO
+OS-001,OS-003,Windows 11,canonical_name,RELATED_TO
+OS-001,OS-009,Windows NT Kernel,canonical_name,RELATED_TO
+OS-001,MGT-004,Active Directory,canonical_name,RELATED_TO
+OS-001,MGT-005,Group Policy,canonical_name,RELATED_TO
+OS-001,SEC-009,BitLocker,canonical_name,RELATED_TO
+OS-001,FW-002,UEFI,canonical_name,RELATED_TO
+OS-001,SEC-002,Secure Boot,canonical_name,RELATED_TO
+OS-001,SEC-001,TPM,canonical_name,RELATED_TO
+OS-001,DRV-006,WHQL Driver Signing,alias,RELATED_TO
+OS-001,MGT-007,Windows Update,canonical_name,RELATED_TO
+OS-002,OS-001,Windows,canonical_name,RELATED_TO
+OS-002,OS-003,Windows 11,canonical_name,RELATED_TO
+OS-002,OS-009,Windows NT Kernel,canonical_name,RELATED_TO
+OS-002,MGT-007,Windows Update,canonical_name,RELATED_TO
+OS-002,MGT-006,WSUS,canonical_name,RELATED_TO
+OS-002,MGT-005,Group Policy,canonical_name,RELATED_TO
+OS-002,SEC-009,BitLocker,canonical_name,RELATED_TO
+OS-002,SEC-001,TPM,canonical_name,RELATED_TO
+OS-002,SEC-002,Secure Boot,canonical_name,RELATED_TO
+OS-002,FW-002,UEFI,canonical_name,RELATED_TO
+OS-002,DRV-006,WHQL Driver Signing,alias,RELATED_TO
+OS-003,OS-001,Windows,canonical_name,RELATED_TO
+OS-003,OS-002,Windows 10,canonical_name,RELATED_TO
+OS-003,OS-009,Windows NT Kernel,canonical_name,RELATED_TO
+OS-003,SEC-002,Secure Boot,canonical_name,RELATED_TO
+OS-003,FW-002,UEFI,canonical_name,RELATED_TO
+OS-003,MGT-005,Group Policy,canonical_name,RELATED_TO
+OS-003,SEC-009,BitLocker,canonical_name,RELATED_TO
+OS-003,DRV-006,WHQL Driver Signing,alias,RELATED_TO
+OS-003,MGT-007,Windows Update,canonical_name,RELATED_TO
+OS-004,OS-005,Ubuntu,canonical_name,RELATED_TO
+OS-004,OS-006,RHEL,canonical_name,RELATED_TO
+OS-004,OS-008,Linux Kernel,canonical_name,RELATED_TO
+OS-004,SEC-010,SELinux,canonical_name,RELATED_TO
+OS-004,SEC-011,AppArmor,canonical_name,RELATED_TO
+OS-004,FW-002,UEFI,canonical_name,RELATED_TO
+OS-004,SEC-002,Secure Boot,canonical_name,RELATED_TO
+OS-004,SEC-012,LUKS,canonical_name,RELATED_TO
+OS-004,SEC-001,TPM,canonical_name,RELATED_TO
+OS-005,OS-004,Linux,canonical_name,RELATED_TO
+OS-005,OS-011,Debian,canonical_name,RELATED_TO
+OS-005,OS-008,Linux Kernel,canonical_name,RELATED_TO
+OS-005,SEC-011,AppArmor,canonical_name,RELATED_TO
+OS-005,SEC-012,LUKS,canonical_name,RELATED_TO
+OS-005,FW-002,UEFI,canonical_name,RELATED_TO
+OS-005,SEC-002,Secure Boot,canonical_name,RELATED_TO
+OS-005,OS-010,Ubuntu Pro,canonical_name,RELATED_TO
+OS-006,OS-004,Linux,canonical_name,RELATED_TO
+OS-006,OS-008,Linux Kernel,canonical_name,RELATED_TO
+OS-006,SEC-010,SELinux,canonical_name,RELATED_TO
+OS-006,SEC-012,LUKS,canonical_name,RELATED_TO
+OS-006,FW-002,UEFI,canonical_name,RELATED_TO
+OS-006,SEC-002,Secure Boot,canonical_name,RELATED_TO
+OS-006,SEC-001,TPM,canonical_name,RELATED_TO
+OS-007,OS-012,XNU Kernel,canonical_name,RELATED_TO
+OS-007,SEC-005,Secure Enclave,canonical_name,RELATED_TO
+OS-007,SEC-006,System Integrity Protection,canonical_name,RELATED_TO
+OS-007,SEC-007,Gatekeeper,canonical_name,RELATED_TO
+OS-007,SEC-008,FileVault,canonical_name,RELATED_TO
+OS-007,FW-002,UEFI,canonical_name,RELATED_TO
+OS-007,SEC-002,Secure Boot,canonical_name,RELATED_TO
+OS-008,OS-004,Linux,canonical_name,RELATED_TO
+OS-009,OS-001,Windows,canonical_name,RELATED_TO
+OS-010,OS-005,Ubuntu,canonical_name,RELATED_TO
+OS-011,OS-005,Ubuntu,canonical_name,RELATED_TO
+OS-012,OS-007,macOS,canonical_name,RELATED_TO
+SEC-001,SEC-002,Secure Boot,canonical_name,RELATED_TO
+SEC-001,SEC-005,Secure Enclave,canonical_name,RELATED_TO
+SEC-002,SEC-001,TPM,canonical_name,RELATED_TO
+SEC-003,SEC-004,EDR Agent,canonical_name,RELATED_TO
+SEC-004,SEC-003,Antivirus,canonical_name,RELATED_TO
+SEC-005,OS-007,macOS,canonical_name,RELATED_TO
+SEC-005,SEC-001,TPM,canonical_name,RELATED_TO
+SEC-006,OS-007,macOS,canonical_name,RELATED_TO
+SEC-007,OS-007,macOS,canonical_name,RELATED_TO
+SEC-008,OS-007,macOS,canonical_name,RELATED_TO
+SEC-009,OS-001,Windows,canonical_name,RELATED_TO
+SEC-009,SEC-001,TPM,canonical_name,RELATED_TO
+SEC-010,OS-004,Linux,canonical_name,RELATED_TO
+SEC-011,OS-004,Linux,canonical_name,RELATED_TO
+SEC-012,OS-004,Linux,canonical_name,RELATED_TO

@@ -1,0 +1,1473 @@
+{
+  "from_version": "1.0.0",
+  "to_version": "1.1.0-candidate",
+  "added_entities": [
+    "DRV-006",
+    "DRV-007",
+    "DRV-008",
+    "FW-006",
+    "FW-007",
+    "FW-008",
+    "FW-009",
+    "FW-010",
+    "FW-011",
+    "FW-012",
+    "MGT-004",
+    "MGT-005",
+    "MGT-006",
+    "MGT-007",
+    "MGT-008",
+    "MGT-009",
+    "MGT-010",
+    "OS-008",
+    "OS-009",
+    "OS-010",
+    "OS-011",
+    "OS-012",
+    "SEC-005",
+    "SEC-006",
+    "SEC-007",
+    "SEC-008",
+    "SEC-009",
+    "SEC-010",
+    "SEC-011",
+    "SEC-012"
+  ],
+  "removed_entities": [],
+  "changed_entity_ids": [],
+  "modified_entities": [
+    {
+      "entity_id": "DRV-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-004",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-005",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "FW-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "FW-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "FW-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "FW-004",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "description": {
+          "old": "Firmware embedded within storage devices including HDDs, SSDs, NVMe drives, and storage controllers that manages media access, error correction, wear leveling, encryption operations, and interface protocol compliance. Executes on the device's internal processor, independent of the host operating system.",
+          "new": "Firmware embedded within storage devices including HDDs, SSDs, SSDs, NVMe drives, and storage controllers that manages media access, error correction, wear leveling, encryption operations, and interface protocol compliance. Executes on the device's internal processor, independent of the host operating system."
+        },
+        "keywords": {
+          "old": [
+            "NVMe",
+            "SATA",
+            "SAS",
+            "ATA",
+            "ATA Security",
+            "Self-Encrypting Drive",
+            "SED",
+            "TCG Opal",
+            "TCG Enterprise",
+            "eDrive",
+            "IEEE 1667",
+            "S.M.A.R.T",
+            "wear leveling",
+            "bad block management",
+            "ECC",
+            "error correction code",
+            "NAND flash",
+            "FTL",
+            "Flash Translation Layer",
+            "drive firmware update",
+            "DRAM cache",
+            "over-provisioning",
+            "sanitize command",
+            "secure erase",
+            "TRIM",
+            "UNMAP",
+            "storage encryption",
+            "storage controller",
+            "host-managed SMR",
+            "device-managed SMR",
+            "ZNS"
+          ],
+          "new": [
+            "NVMe",
+            "Non-Volatile Memory Express",
+            "SATA",
+            "Serial ATA",
+            "SAS",
+            "Serial Attached SCSI",
+            "ATA",
+            "ATA Security",
+            "Self-Encrypting Drive",
+            "SED",
+            "TCG Opal",
+            "TCG Enterprise",
+            "eDrive",
+            "IEEE 1667",
+            "S.M.A.R.T",
+            "wear leveling",
+            "bad block management",
+            "ECC",
+            "error correction code",
+            "NAND flash",
+            "FTL",
+            "Flash Translation Layer",
+            "drive firmware update",
+            "DRAM cache",
+            "over-provisioning",
+            "sanitize command",
+            "secure erase",
+            "TRIM",
+            "UNMAP",
+            "storage encryption",
+            "storage controller",
+            "host-managed SMR",
+            "device-managed SMR",
+            "ZNS"
+          ]
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "FW-005",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "MGT-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "MGT-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "MGT-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "keywords": {
+          "old": [
+            "patch management",
+            "software update",
+            "OS patch",
+            "security patch",
+            "cumulative update",
+            "hotfix",
+            "service pack",
+            "patch Tuesday",
+            "out-of-band patch",
+            "zero-day patch",
+            "firmware update",
+            "driver update",
+            "BIOS update",
+            "UEFI update",
+            "patch catalog",
+            "WSUS",
+            "Windows Server Update Services",
+            "Windows Update",
+            "Windows Update for Business",
+            "WUfB",
+            "SUG",
+            "software update group",
+            "patch baseline",
+            "patch ring",
+            "deployment ring",
+            "phased deployment",
+            "patch testing",
+            "pilot group",
+            "staging environment",
+            "patch scheduling",
+            "maintenance window",
+            "reboot management",
+            "forced reboot",
+            "reboot suppression",
+            "patch compliance",
+            "missing patch",
+            "patch gap",
+            "patch SLA",
+            "CVE",
+            "Common Vulnerabilities and Exposures",
+            "CVSS",
+            "vulnerability severity",
+            "patch prioritization",
+            "vulnerability scanner integration",
+            "patch verification",
+            "patch rollback",
+            "uninstall patch",
+            "patch history",
+            "patch audit",
+            "patch report",
+            "third party patching",
+            "application patching",
+            "Linux patching",
+            "RPM update",
+            "APT update",
+            "YUM update",
+            "DNF update",
+            "macOS update",
+            "softwareupdate",
+            "delta patch",
+            "full patch",
+            "patch download",
+            "patch cache",
+            "content distribution",
+            "BranchCache",
+            "delivery optimization",
+            "peer-to-peer patching",
+            "patch agent",
+            "patch scan",
+            "patch detection"
+          ],
+          "new": [
+            "patch management",
+            "software update",
+            "OS patch",
+            "security patch",
+            "cumulative update",
+            "hotfix",
+            "service pack",
+            "patch Tuesday",
+            "out-of-band patch",
+            "zero-day patch",
+            "firmware update",
+            "driver update",
+            "BIOS update",
+            "UEFI update",
+            "patch catalog",
+            "WSUS",
+            "Windows Server Update Services",
+            "Windows Update",
+            "Windows Update for Business",
+            "WUfB",
+            "SUG",
+            "software update group",
+            "patch baseline",
+            "patch ring",
+            "deployment ring",
+            "phased deployment",
+            "patch testing",
+            "pilot group",
+            "staging environment",
+            "patch scheduling",
+            "maintenance window",
+            "reboot management",
+            "forced reboot",
+            "reboot suppression",
+            "patch compliance",
+            "missing patch",
+            "patch gap",
+            "patch SLA",
+            "CVE",
+            "Common Vulnerabilities and Exposures",
+            "CVSS",
+            "vulnerability severity",
+            "patch prioritization",
+            "vulnerability scanner integration",
+            "patch verification",
+            "patch rollback",
+            "uninstall patch",
+            "patch history",
+            "patch audit",
+            "patch report",
+            "third party patching",
+            "application patching",
+            "Linux patching",
+            "RPM update",
+            "APT update",
+            "YUM update",
+            "DNF update",
+            "macOS update",
+            "softwareupdate",
+            "delta patch",
+            "full patch",
+            "patch download",
+            "patch cache",
+            "content delivery",
+            "BranchCache",
+            "delivery optimization",
+            "peer-to-peer patching",
+            "patch agent",
+            "patch scan",
+            "patch detection"
+          ]
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "OS-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "vendor": {
+          "old": null,
+          "new": "Microsoft"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "OS-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "vendor": {
+          "old": null,
+          "new": "Microsoft"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "OS-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "vendor": {
+          "old": null,
+          "new": "Microsoft"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "OS-004",
+      "fields_changed": {
+        "aliases": {
+          "old": [
+            "Linux OS",
+            "GNU/Linux",
+            "Linux Kernel",
+            "Linux Platform",
+            "Linux Distribution",
+            "Linux Distro",
+            "Open Source OS"
+          ],
+          "new": [
+            "Linux OS",
+            "GNU/Linux",
+            "Linux Platform",
+            "Linux Distribution",
+            "Linux Distro",
+            "Open Source OS"
+          ]
+        },
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "OS-005",
+      "fields_changed": {
+        "aliases": {
+          "old": [
+            "Ubuntu Linux",
+            "Ubuntu LTS",
+            "Ubuntu Desktop",
+            "Ubuntu Server",
+            "Ubuntu Pro",
+            "Canonical Ubuntu",
+            "Ubuntu Focal",
+            "Ubuntu Jammy",
+            "Ubuntu Noble"
+          ],
+          "new": [
+            "Ubuntu Linux",
+            "Ubuntu LTS",
+            "Ubuntu Desktop",
+            "Ubuntu Server",
+            "Canonical Ubuntu",
+            "Ubuntu Focal",
+            "Ubuntu Jammy",
+            "Ubuntu Noble"
+          ]
+        },
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "keywords": {
+          "old": [
+            "Ubuntu",
+            "Debian",
+            "APT",
+            "Advanced Package Tool",
+            "dpkg",
+            "deb package",
+            "LTS",
+            "Long Term Support",
+            "Ubuntu Pro",
+            "Snap",
+            "snapd",
+            "Snapcraft",
+            "systemd",
+            "GNOME",
+            "Wayland",
+            "X11",
+            "linux-image",
+            "linux-headers",
+            "kernel version",
+            "HWE",
+            "Hardware Enablement Stack",
+            "DKMS",
+            "AppArmor",
+            "UFW",
+            "Uncomplicated Firewall",
+            "LUKS",
+            "Ubuntu Security Notices",
+            "USN",
+            "Livepatch",
+            "kernel live patching",
+            "landscape",
+            "ubuntu-advantage",
+            "pro-client",
+            "cloud-init",
+            "netplan",
+            "Ubuntu release codename",
+            "focal",
+            "jammy",
+            "noble",
+            "EOL",
+            "end of life",
+            "MAAS",
+            "Juju",
+            "multipass",
+            "WSL",
+            "container",
+            "LXC",
+            "LXD"
+          ],
+          "new": [
+            "Ubuntu",
+            "Debian",
+            "APT",
+            "Advanced Package Tool",
+            "dpkg",
+            "deb package",
+            "LTS",
+            "Long Term Support",
+            "Snap",
+            "snapd",
+            "Snapcraft",
+            "systemd",
+            "GNOME",
+            "Wayland",
+            "X11",
+            "linux-image",
+            "linux-headers",
+            "kernel version",
+            "HWE",
+            "Hardware Enablement Stack",
+            "DKMS",
+            "AppArmor",
+            "UFW",
+            "Uncomplicated Firewall",
+            "LUKS",
+            "Ubuntu Security Notices",
+            "USN",
+            "Livepatch",
+            "kernel live patching",
+            "landscape",
+            "ubuntu-advantage",
+            "pro-client",
+            "cloud-init",
+            "netplan",
+            "Ubuntu release codename",
+            "focal",
+            "jammy",
+            "noble",
+            "EOL",
+            "end of life",
+            "MAAS",
+            "Juju",
+            "multipass",
+            "WSL",
+            "container",
+            "LXC",
+            "LXD"
+          ]
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "vendor": {
+          "old": null,
+          "new": "Canonical"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "OS-006",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "vendor": {
+          "old": null,
+          "new": "Red Hat"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "OS-007",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "vendor": {
+          "old": null,
+          "new": "Apple"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-004",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        }
+      }
+    }
+  ],
+  "reclassified_entities": [],
+  "alias_changes": [],
+  "resolved_self_references": [],
+  "metadata_changes": [
+    {
+      "entity_id": "DRV-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-004",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "DRV-005",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "FW-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "FW-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "FW-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "FW-004",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "FW-005",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "MGT-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "MGT-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "MGT-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "OS-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "vendor": {
+          "old": null,
+          "new": "Microsoft"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "OS-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "vendor": {
+          "old": null,
+          "new": "Microsoft"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "OS-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "vendor": {
+          "old": null,
+          "new": "Microsoft"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "OS-004",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "OS-005",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "vendor": {
+          "old": null,
+          "new": "Canonical"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "OS-006",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "vendor": {
+          "old": null,
+          "new": "Red Hat"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "OS-007",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "VendorSpecific"
+        },
+        "vendor": {
+          "old": null,
+          "new": "Apple"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-001",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-002",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-003",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    },
+    {
+      "entity_id": "SEC-004",
+      "fields_changed": {
+        "concept_scope": {
+          "old": null,
+          "new": "Generic"
+        },
+        "verification_status": {
+          "old": null,
+          "new": "review_required"
+        },
+        "provenance": {
+          "old": null,
+          "new": []
+        },
+        "review_notes": {
+          "old": null,
+          "new": ""
+        }
+      }
+    }
+  ],
+  "resolution_before": 22.77,
+  "resolution_after": 52.39,
+  "breaking_changes": [],
+  "migration_notes": [
+    "Existing v1.0 entity IDs remain stable.",
+    "RELATED_TO edges are provisional staging relationships."
+  ],
+  "summary": "Added 30 entities, removed 0, modified 24, changed 0 existing IDs."
+}

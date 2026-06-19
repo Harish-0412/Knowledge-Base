@@ -1,0 +1,28 @@
+{
+  "registry_file": "canonical_entity_registry.json",
+  "status": "PASS",
+  "source_entity_count": 54,
+  "registry_entity_count": 54,
+  "source_file_counts": {
+    "firmware.json": 12,
+    "operating_system.json": 12,
+    "drivers.json": 8,
+    "security.json": 12,
+    "management.json": 10
+  },
+  "errors": [],
+  "warnings": [],
+  "duplicate_entity_ids": [],
+  "duplicate_canonical_names": [],
+  "missing_required_fields": [],
+  "count_mismatch": false,
+  "summary": "Processed 54 entities; registry validation is PASS.",
+  "frozen_v1_0_unchanged": true,
+  "frozen_v1_0_checksums": {
+    "firmware.json": "a39b3febe4148cf871b4f0536ca94b611d81c828bc3c49326853babcacdb7b9c",
+    "operating_system.json": "bf454de83bf4cfd97d384127aa5a38b8aba176ebbf9c15a6ff30a99e58703f5e",
+    "drivers.json": "0c66a2095a31ce8a6f83e291cfe1a02ee17c386c5a85a63646b4dd2ffebdcc9d",
+    "security.json": "b8f209e30b69300ddf1ddd2b247c1ba9e4a4dda647d74dce25d9697460bff2ce",
+    "management.json": "35e93f1f695843f1792f09d0f3473970f993043b280058c737f21fe56850d717"
+  }
+}

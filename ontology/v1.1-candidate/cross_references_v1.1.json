@@ -1,13 +1,6 @@
 {
-  "status": "PASS_WITH_WARNINGS",
-  "total_references": 303,
-  "resolved_count": 67,
-  "unresolved_count": 217,
-  "ambiguous_count": 0,
-  "invalid_count": 19,
-  "self_reference_count": 2,
-  "resolution_rate": 23.59,
-  "resolved_references": [
+  "total_references": 376,
+  "references": [
     {
       "source_entity_id": "DRV-001",
       "source_file": "drivers.json",
@@ -15,671 +8,20 @@
       "occurrence_index": 0,
       "status": "resolved",
       "target_entity_id": "DRV-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
+      "resolution_method": "canonical_name"
     },
     {
-      "source_entity_id": "DRV-002",
+      "source_entity_id": "DRV-001",
       "source_file": "drivers.json",
-      "reference_value": "Chipset Driver",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "DRV-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-003",
-      "source_file": "drivers.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-003",
-      "source_file": "drivers.json",
-      "reference_value": "Storage Driver",
-      "occurrence_index": 3,
-      "status": "resolved",
-      "target_entity_id": "DRV-005",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-003",
-      "source_file": "drivers.json",
-      "reference_value": "Network Driver",
-      "occurrence_index": 4,
-      "status": "resolved",
-      "target_entity_id": "DRV-004",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-003",
-      "source_file": "drivers.json",
-      "reference_value": "Graphics Driver",
-      "occurrence_index": 5,
-      "status": "resolved",
-      "target_entity_id": "DRV-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-003",
-      "source_file": "drivers.json",
-      "reference_value": "Audio Driver",
-      "occurrence_index": 6,
-      "status": "resolved",
-      "target_entity_id": "DRV-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-004",
-      "source_file": "drivers.json",
-      "reference_value": "Network Firmware",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-005",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-004",
-      "source_file": "drivers.json",
-      "reference_value": "Chipset Driver",
+      "reference_value": "OS Graphics Subsystem",
       "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "DRV-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Overly broad architectural phrase",
+      "recommended_action": "Reject as related entity"
     },
-    {
-      "source_entity_id": "DRV-005",
-      "source_file": "drivers.json",
-      "reference_value": "Storage Firmware",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-004",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "DRV-005",
-      "source_file": "drivers.json",
-      "reference_value": "Chipset Driver",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "DRV-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-001",
-      "source_file": "firmware.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-001",
-      "source_file": "firmware.json",
-      "reference_value": "Embedded Controller Firmware",
-      "occurrence_index": 5,
-      "status": "resolved",
-      "target_entity_id": "FW-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-001",
-      "source_file": "firmware.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 8,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-002",
-      "source_file": "firmware.json",
-      "reference_value": "BIOS",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-002",
-      "source_file": "firmware.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-002",
-      "source_file": "firmware.json",
-      "reference_value": "TPM",
-      "occurrence_index": 2,
-      "status": "resolved",
-      "target_entity_id": "SEC-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-002",
-      "source_file": "firmware.json",
-      "reference_value": "Embedded Controller Firmware",
-      "occurrence_index": 9,
-      "status": "resolved",
-      "target_entity_id": "FW-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-003",
-      "source_file": "firmware.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-003",
-      "source_file": "firmware.json",
-      "reference_value": "BIOS",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "FW-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-003",
-      "source_file": "firmware.json",
-      "reference_value": "TPM",
-      "occurrence_index": 3,
-      "status": "resolved",
-      "target_entity_id": "SEC-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-004",
-      "source_file": "firmware.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-004",
-      "source_file": "firmware.json",
-      "reference_value": "NVMe Driver",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "DRV-005",
-      "resolution_method": "alias",
-      "matched_by": "alias"
-    },
-    {
-      "source_entity_id": "FW-005",
-      "source_file": "firmware.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-005",
-      "source_file": "firmware.json",
-      "reference_value": "Network Driver",
-      "occurrence_index": 2,
-      "status": "resolved",
-      "target_entity_id": "DRV-004",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "FW-005",
-      "source_file": "firmware.json",
-      "reference_value": "Wireless Driver",
-      "occurrence_index": 8,
-      "status": "resolved",
-      "target_entity_id": "DRV-004",
-      "resolution_method": "alias",
-      "matched_by": "alias"
-    },
-    {
-      "source_entity_id": "MGT-001",
-      "source_file": "management.json",
-      "reference_value": "Monitoring Agent",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "MGT-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "MGT-001",
-      "source_file": "management.json",
-      "reference_value": "Patch Manager",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "MGT-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "MGT-002",
-      "source_file": "management.json",
-      "reference_value": "Endpoint Manager",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "MGT-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "MGT-002",
-      "source_file": "management.json",
-      "reference_value": "Patch Manager",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "MGT-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "MGT-002",
-      "source_file": "management.json",
-      "reference_value": "EDR Agent",
-      "occurrence_index": 15,
-      "status": "resolved",
-      "target_entity_id": "SEC-004",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "MGT-003",
-      "source_file": "management.json",
-      "reference_value": "Endpoint Manager",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "MGT-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "MGT-003",
-      "source_file": "management.json",
-      "reference_value": "Monitoring Agent",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "MGT-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-001",
-      "source_file": "operating_system.json",
-      "reference_value": "Windows 10",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "OS-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-001",
-      "source_file": "operating_system.json",
-      "reference_value": "Windows 11",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "OS-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-001",
-      "source_file": "operating_system.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 8,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-001",
-      "source_file": "operating_system.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 9,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-001",
-      "source_file": "operating_system.json",
-      "reference_value": "TPM",
-      "occurrence_index": 10,
-      "status": "resolved",
-      "target_entity_id": "SEC-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-002",
-      "source_file": "operating_system.json",
-      "reference_value": "Windows",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "OS-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-002",
-      "source_file": "operating_system.json",
-      "reference_value": "Windows 11",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "OS-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-002",
-      "source_file": "operating_system.json",
-      "reference_value": "TPM",
-      "occurrence_index": 11,
-      "status": "resolved",
-      "target_entity_id": "SEC-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-002",
-      "source_file": "operating_system.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 12,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-002",
-      "source_file": "operating_system.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 13,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-003",
-      "source_file": "operating_system.json",
-      "reference_value": "Windows",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "OS-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-003",
-      "source_file": "operating_system.json",
-      "reference_value": "Windows 10",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "OS-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-003",
-      "source_file": "operating_system.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 4,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-003",
-      "source_file": "operating_system.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 5,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-004",
-      "source_file": "operating_system.json",
-      "reference_value": "Ubuntu",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "OS-005",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-004",
-      "source_file": "operating_system.json",
-      "reference_value": "RHEL",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "OS-006",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-004",
-      "source_file": "operating_system.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 5,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-004",
-      "source_file": "operating_system.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 7,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-004",
-      "source_file": "operating_system.json",
-      "reference_value": "TPM",
-      "occurrence_index": 15,
-      "status": "resolved",
-      "target_entity_id": "SEC-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-005",
-      "source_file": "operating_system.json",
-      "reference_value": "Linux",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "OS-004",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-005",
-      "source_file": "operating_system.json",
-      "reference_value": "Linux Kernel",
-      "occurrence_index": 2,
-      "status": "resolved",
-      "target_entity_id": "OS-004",
-      "resolution_method": "alias",
-      "matched_by": "alias"
-    },
-    {
-      "source_entity_id": "OS-005",
-      "source_file": "operating_system.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 7,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-005",
-      "source_file": "operating_system.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 8,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-006",
-      "source_file": "operating_system.json",
-      "reference_value": "Linux",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "OS-004",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-006",
-      "source_file": "operating_system.json",
-      "reference_value": "Linux Kernel",
-      "occurrence_index": 1,
-      "status": "resolved",
-      "target_entity_id": "OS-004",
-      "resolution_method": "alias",
-      "matched_by": "alias"
-    },
-    {
-      "source_entity_id": "OS-006",
-      "source_file": "operating_system.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 7,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-006",
-      "source_file": "operating_system.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 8,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-006",
-      "source_file": "operating_system.json",
-      "reference_value": "TPM",
-      "occurrence_index": 15,
-      "status": "resolved",
-      "target_entity_id": "SEC-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-007",
-      "source_file": "operating_system.json",
-      "reference_value": "UEFI",
-      "occurrence_index": 10,
-      "status": "resolved",
-      "target_entity_id": "FW-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "OS-007",
-      "source_file": "operating_system.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 11,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "SEC-001",
-      "source_file": "security.json",
-      "reference_value": "Secure Boot",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "SEC-002",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "SEC-002",
-      "source_file": "security.json",
-      "reference_value": "TPM",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "SEC-001",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "SEC-003",
-      "source_file": "security.json",
-      "reference_value": "EDR Agent",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "SEC-004",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    },
-    {
-      "source_entity_id": "SEC-004",
-      "source_file": "security.json",
-      "reference_value": "Antivirus",
-      "occurrence_index": 0,
-      "status": "resolved",
-      "target_entity_id": "SEC-003",
-      "resolution_method": "canonical_name",
-      "matched_by": "canonical_name"
-    }
-  ],
-  "unresolved_references": [
     {
       "source_entity_id": "DRV-001",
       "source_file": "drivers.json",
@@ -769,24 +111,39 @@
       "source_file": "drivers.json",
       "reference_value": "Driver Signing",
       "occurrence_index": 9,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-001",
       "source_file": "drivers.json",
       "reference_value": "WDDM",
       "occurrence_index": 10,
-      "status": "external",
+      "status": "resolved",
+      "target_entity_id": "DRV-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_file": "drivers.json",
+      "reference_value": "Chipset Driver",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "DRV-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-002",
+      "source_file": "drivers.json",
+      "reference_value": "OS Audio Subsystem",
+      "occurrence_index": 1,
+      "status": "rejected",
       "target_entity_id": null,
-      "classification": "valid_external_concept",
+      "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "reason": "Overly broad architectural phrase",
+      "recommended_action": "Reject as related entity"
     },
     {
       "source_entity_id": "DRV-002",
@@ -829,12 +186,9 @@
       "source_file": "drivers.json",
       "reference_value": "Driver Signing",
       "occurrence_index": 5,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-002",
@@ -887,14 +241,20 @@
     {
       "source_entity_id": "DRV-003",
       "source_file": "drivers.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_file": "drivers.json",
       "reference_value": "ACPI",
       "occurrence_index": 1,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-003",
@@ -907,6 +267,42 @@
       "deferred_domain": null,
       "reason": "Meaningful concept without creating v1.1 nodes",
       "recommended_action": "Keep as external"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_file": "drivers.json",
+      "reference_value": "Storage Driver",
+      "occurrence_index": 3,
+      "status": "resolved",
+      "target_entity_id": "DRV-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_file": "drivers.json",
+      "reference_value": "Network Driver",
+      "occurrence_index": 4,
+      "status": "resolved",
+      "target_entity_id": "DRV-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_file": "drivers.json",
+      "reference_value": "Graphics Driver",
+      "occurrence_index": 5,
+      "status": "resolved",
+      "target_entity_id": "DRV-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_file": "drivers.json",
+      "reference_value": "Audio Driver",
+      "occurrence_index": 6,
+      "status": "resolved",
+      "target_entity_id": "DRV-002",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-003",
@@ -947,14 +343,41 @@
     {
       "source_entity_id": "DRV-003",
       "source_file": "drivers.json",
+      "reference_value": "Power Management Subsystem",
+      "occurrence_index": 10,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Broad architectural phrase",
+      "recommended_action": "Reject as related entity"
+    },
+    {
+      "source_entity_id": "DRV-003",
+      "source_file": "drivers.json",
       "reference_value": "Driver Signing",
       "occurrence_index": 11,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_file": "drivers.json",
+      "reference_value": "Network Firmware",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-004",
+      "source_file": "drivers.json",
+      "reference_value": "Chipset Driver",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "DRV-003",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-004",
@@ -973,24 +396,18 @@
       "source_file": "drivers.json",
       "reference_value": "NDIS",
       "occurrence_index": 3,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-004",
       "source_file": "drivers.json",
       "reference_value": "PXE Boot",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-012",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-004",
@@ -1033,12 +450,9 @@
       "source_file": "drivers.json",
       "reference_value": "Driver Signing",
       "occurrence_index": 8,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-004",
@@ -1079,6 +493,24 @@
     {
       "source_entity_id": "DRV-005",
       "source_file": "drivers.json",
+      "reference_value": "Storage Firmware",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_file": "drivers.json",
+      "reference_value": "Chipset Driver",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "DRV-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_file": "drivers.json",
       "reference_value": "OS Storage Stack",
       "occurrence_index": 2,
       "status": "external",
@@ -1103,14 +535,23 @@
     {
       "source_entity_id": "DRV-005",
       "source_file": "drivers.json",
+      "reference_value": "Full Disk Encryption",
+      "occurrence_index": 4,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "The reference is too broad for a stable staging edge.",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
+    },
+    {
+      "source_entity_id": "DRV-005",
+      "source_file": "drivers.json",
       "reference_value": "BitLocker",
       "occurrence_index": 5,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-005",
@@ -1189,12 +630,9 @@
       "source_file": "drivers.json",
       "reference_value": "Driver Signing",
       "occurrence_index": 12,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "DRV-005",
@@ -1219,6 +657,72 @@
       "deferred_domain": null,
       "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
       "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "DRV-006",
+      "source_file": "drivers.json",
+      "reference_value": "Windows",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-006",
+      "source_file": "drivers.json",
+      "reference_value": "WHQL",
+      "occurrence_index": 1,
+      "status": "external",
+      "target_entity_id": null,
+      "classification": "valid_external_concept",
+      "deferred_domain": null,
+      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains.",
+      "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "DRV-007",
+      "source_file": "drivers.json",
+      "reference_value": "Windows",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-007",
+      "source_file": "drivers.json",
+      "reference_value": "Graphics Driver",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "DRV-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-008",
+      "source_file": "drivers.json",
+      "reference_value": "Windows",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "DRV-008",
+      "source_file": "drivers.json",
+      "reference_value": "Network Driver",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "DRV-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-001",
@@ -1271,14 +775,20 @@
     {
       "source_entity_id": "FW-001",
       "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "occurrence_index": 5,
+      "status": "resolved",
+      "target_entity_id": "FW-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_file": "firmware.json",
       "reference_value": "OS Bootloader",
       "occurrence_index": 6,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-011",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-001",
@@ -1295,74 +805,92 @@
     {
       "source_entity_id": "FW-001",
       "source_file": "firmware.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 8,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-001",
+      "source_file": "firmware.json",
       "reference_value": "Firmware Update Utility",
       "occurrence_index": 9,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_file": "firmware.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_file": "firmware.json",
+      "reference_value": "TPM",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-002",
       "source_file": "firmware.json",
       "reference_value": "GPT",
       "occurrence_index": 3,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-002",
       "source_file": "firmware.json",
       "reference_value": "EFI System Partition",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-002",
       "source_file": "firmware.json",
       "reference_value": "OS Bootloader",
       "occurrence_index": 5,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-011",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-002",
       "source_file": "firmware.json",
       "reference_value": "Measured Boot",
       "occurrence_index": 6,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-010",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-002",
       "source_file": "firmware.json",
       "reference_value": "ACPI",
       "occurrence_index": 7,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-002",
@@ -1379,14 +907,20 @@
     {
       "source_entity_id": "FW-002",
       "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "occurrence_index": 9,
+      "status": "resolved",
+      "target_entity_id": "FW-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-002",
+      "source_file": "firmware.json",
       "reference_value": "Firmware Update Utility",
       "occurrence_index": 10,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-007",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-002",
@@ -1403,14 +937,38 @@
     {
       "source_entity_id": "FW-003",
       "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "FW-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_file": "firmware.json",
       "reference_value": "ACPI",
       "occurrence_index": 2,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-006",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_file": "firmware.json",
+      "reference_value": "TPM",
+      "occurrence_index": 3,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-003",
@@ -1451,14 +1009,41 @@
     {
       "source_entity_id": "FW-003",
       "source_file": "firmware.json",
+      "reference_value": "Platform Power Management",
+      "occurrence_index": 7,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Broad capability phrase",
+      "recommended_action": "Reject as related entity"
+    },
+    {
+      "source_entity_id": "FW-003",
+      "source_file": "firmware.json",
       "reference_value": "Firmware Update Utility",
       "occurrence_index": 8,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_file": "firmware.json",
+      "reference_value": "NVMe Driver",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "DRV-005",
+      "resolution_method": "alias"
     },
     {
       "source_entity_id": "FW-004",
@@ -1513,24 +1098,30 @@
       "source_file": "firmware.json",
       "reference_value": "BitLocker",
       "occurrence_index": 6,
-      "status": "external",
+      "status": "resolved",
+      "target_entity_id": "SEC-009",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-004",
+      "source_file": "firmware.json",
+      "reference_value": "Full Disk Encryption",
+      "occurrence_index": 7,
+      "status": "rejected",
       "target_entity_id": null,
-      "classification": "valid_external_concept",
+      "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "reason": "The reference is too broad for a stable staging edge.",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
     },
     {
       "source_entity_id": "FW-004",
       "source_file": "firmware.json",
       "reference_value": "Firmware Update Utility",
       "occurrence_index": 8,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-007",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-004",
@@ -1547,26 +1138,38 @@
     {
       "source_entity_id": "FW-005",
       "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_file": "firmware.json",
       "reference_value": "PXE Boot",
       "occurrence_index": 1,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-012",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_file": "firmware.json",
+      "reference_value": "Network Driver",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "DRV-004",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-005",
       "source_file": "firmware.json",
       "reference_value": "NDIS",
       "occurrence_index": 3,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-005",
@@ -1619,14 +1222,20 @@
     {
       "source_entity_id": "FW-005",
       "source_file": "firmware.json",
+      "reference_value": "Wireless Driver",
+      "occurrence_index": 8,
+      "status": "resolved",
+      "target_entity_id": "DRV-004",
+      "resolution_method": "alias"
+    },
+    {
+      "source_entity_id": "FW-005",
+      "source_file": "firmware.json",
       "reference_value": "Firmware Update Utility",
       "occurrence_index": 9,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-007",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "FW-005",
@@ -1653,28 +1262,241 @@
       "recommended_action": "Model in the deferred domain after domain governance review."
     },
     {
+      "source_entity_id": "FW-006",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-006",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "FW-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-006",
+      "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "FW-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_file": "firmware.json",
+      "reference_value": "Embedded Controller Firmware",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "FW-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_file": "firmware.json",
+      "reference_value": "Storage Firmware",
+      "occurrence_index": 3,
+      "status": "resolved",
+      "target_entity_id": "FW-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-007",
+      "source_file": "firmware.json",
+      "reference_value": "Network Firmware",
+      "occurrence_index": 4,
+      "status": "resolved",
+      "target_entity_id": "FW-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-008",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-008",
+      "source_file": "firmware.json",
+      "reference_value": "OS Bootloader",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "FW-011",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-008",
+      "source_file": "firmware.json",
+      "reference_value": "GPT",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "FW-009",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-009",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-009",
+      "source_file": "firmware.json",
+      "reference_value": "EFI System Partition",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "FW-008",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-010",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-010",
+      "source_file": "firmware.json",
+      "reference_value": "TPM",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-011",
+      "source_file": "firmware.json",
+      "reference_value": "BIOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-011",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-011",
+      "source_file": "firmware.json",
+      "reference_value": "EFI System Partition",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "FW-008",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-012",
+      "source_file": "firmware.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-012",
+      "source_file": "firmware.json",
+      "reference_value": "Network Firmware",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "FW-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "FW-012",
+      "source_file": "firmware.json",
+      "reference_value": "Network Driver",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "DRV-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_file": "management.json",
+      "reference_value": "Monitoring Agent",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_file": "management.json",
+      "reference_value": "MDM Policy Engine",
+      "occurrence_index": 2,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Generic implementation component",
+      "recommended_action": "Reject as related entity"
+    },
+    {
       "source_entity_id": "MGT-001",
       "source_file": "management.json",
       "reference_value": "Group Policy",
       "occurrence_index": 3,
-      "status": "requires_human_review",
-      "target_entity_id": null,
-      "classification": "requires_human_review",
-      "deferred_domain": null,
-      "reason": "The value is meaningful but may represent a capability, relationship phrase, or future entity.",
-      "recommended_action": "Review whether this phrase should become a governed entity or be removed."
+      "status": "resolved",
+      "target_entity_id": "MGT-005",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-001",
       "source_file": "management.json",
       "reference_value": "Active Directory",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-004",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-001",
@@ -1717,24 +1539,30 @@
       "source_file": "management.json",
       "reference_value": "Configuration Baseline",
       "occurrence_index": 8,
-      "status": "requires_human_review",
+      "status": "resolved",
+      "target_entity_id": "MGT-009",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-001",
+      "source_file": "management.json",
+      "reference_value": "Compliance Policy Engine",
+      "occurrence_index": 9,
+      "status": "rejected",
       "target_entity_id": null,
-      "classification": "create_core_entity",
+      "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Directly relevant to configuration compliance",
-      "recommended_action": "Create as core entity"
+      "reason": "Project component, not stable domain concept",
+      "recommended_action": "Reject as related entity"
     },
     {
       "source_entity_id": "MGT-001",
       "source_file": "management.json",
       "reference_value": "Endpoint Agent",
       "occurrence_index": 10,
-      "status": "requires_human_review",
-      "target_entity_id": null,
-      "classification": "create_core_entity",
-      "deferred_domain": null,
-      "reason": "Directly relevant to endpoint management",
-      "recommended_action": "Create as core entity"
+      "status": "resolved",
+      "target_entity_id": "MGT-010",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-001",
@@ -1811,14 +1639,29 @@
     {
       "source_entity_id": "MGT-002",
       "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_file": "management.json",
       "reference_value": "SIEM",
       "occurrence_index": 2,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-002",
@@ -1831,6 +1674,18 @@
       "deferred_domain": "Observability",
       "reason": "Concept belongs to the planned Observability domain",
       "recommended_action": "Defer to future domain"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_file": "management.json",
+      "reference_value": "Alerting Engine",
+      "occurrence_index": 4,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Capability/component phrase",
+      "recommended_action": "Reject as related entity"
     },
     {
       "source_entity_id": "MGT-002",
@@ -1955,6 +1810,15 @@
     {
       "source_entity_id": "MGT-002",
       "source_file": "management.json",
+      "reference_value": "EDR Agent",
+      "occurrence_index": 15,
+      "status": "resolved",
+      "target_entity_id": "SEC-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-002",
+      "source_file": "management.json",
       "reference_value": "OS Event Log",
       "occurrence_index": 16,
       "status": "external",
@@ -1963,6 +1827,24 @@
       "deferred_domain": null,
       "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
       "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_file": "management.json",
+      "reference_value": "Monitoring Agent",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-002",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-003",
@@ -1993,36 +1875,39 @@
       "source_file": "management.json",
       "reference_value": "WSUS",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-003",
       "source_file": "management.json",
       "reference_value": "Windows Update",
       "occurrence_index": 5,
-      "status": "external",
+      "status": "resolved",
+      "target_entity_id": "MGT-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_file": "management.json",
+      "reference_value": "OS Update Service",
+      "occurrence_index": 6,
+      "status": "rejected",
       "target_entity_id": null,
-      "classification": "valid_external_concept",
+      "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "reason": "Ambiguous generic service",
+      "recommended_action": "Reject as related entity"
     },
     {
       "source_entity_id": "MGT-003",
       "source_file": "management.json",
       "reference_value": "Firmware Update Utility",
       "occurrence_index": 7,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "FW-007",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-003",
@@ -2063,14 +1948,23 @@
     {
       "source_entity_id": "MGT-003",
       "source_file": "management.json",
+      "reference_value": "Patch Compliance Reporting",
+      "occurrence_index": 11,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Reporting capability",
+      "recommended_action": "Reject as related entity"
+    },
+    {
+      "source_entity_id": "MGT-003",
+      "source_file": "management.json",
       "reference_value": "SIEM",
       "occurrence_index": 12,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "MGT-003",
@@ -2109,40 +2003,271 @@
       "recommended_action": "Defer to future domain"
     },
     {
+      "source_entity_id": "MGT-004",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-004",
+      "source_file": "management.json",
+      "reference_value": "Group Policy",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-004",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-004",
+      "source_file": "management.json",
+      "reference_value": "Identity Provider",
+      "occurrence_index": 3,
+      "status": "deferred",
+      "target_entity_id": null,
+      "classification": "future_domain_entity",
+      "deferred_domain": "Identity and Access",
+      "reason": "Concept belongs to the planned Identity and Access domain.",
+      "recommended_action": "Model in the deferred domain after domain governance review."
+    },
+    {
+      "source_entity_id": "MGT-005",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-005",
+      "source_file": "management.json",
+      "reference_value": "Active Directory",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-005",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-006",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-006",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-006",
+      "source_file": "management.json",
+      "reference_value": "Windows Update",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "MGT-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-007",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-007",
+      "source_file": "management.json",
+      "reference_value": "WSUS",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-006",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-007",
+      "source_file": "management.json",
+      "reference_value": "Windows",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_file": "management.json",
+      "reference_value": "Monitoring Agent",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_file": "management.json",
+      "reference_value": "EDR Agent",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "SEC-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "MGT-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-008",
+      "source_file": "management.json",
+      "reference_value": "Log Aggregation Platform",
+      "occurrence_index": 3,
+      "status": "deferred",
+      "target_entity_id": null,
+      "classification": "future_domain_entity",
+      "deferred_domain": "Observability",
+      "reason": "Concept belongs to the planned Observability domain",
+      "recommended_action": "Defer to future domain"
+    },
+    {
+      "source_entity_id": "MGT-009",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-009",
+      "source_file": "management.json",
+      "reference_value": "Group Policy",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-009",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Agent",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "MGT-010",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-010",
+      "source_file": "management.json",
+      "reference_value": "Endpoint Manager",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "MGT-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-010",
+      "source_file": "management.json",
+      "reference_value": "Monitoring Agent",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "MGT-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-010",
+      "source_file": "management.json",
+      "reference_value": "Patch Manager",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "MGT-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "MGT-010",
+      "source_file": "management.json",
+      "reference_value": "Configuration Baseline",
+      "occurrence_index": 3,
+      "status": "resolved",
+      "target_entity_id": "MGT-009",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 10",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 11",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "OS-003",
+      "resolution_method": "canonical_name"
+    },
+    {
       "source_entity_id": "OS-001",
       "source_file": "operating_system.json",
       "reference_value": "Windows NT Kernel",
       "occurrence_index": 2,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "OS-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-001",
       "source_file": "operating_system.json",
       "reference_value": "Active Directory",
       "occurrence_index": 3,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-004",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-001",
       "source_file": "operating_system.json",
       "reference_value": "Group Policy",
       "occurrence_index": 4,
-      "status": "requires_human_review",
-      "target_entity_id": null,
-      "classification": "requires_human_review",
-      "deferred_domain": null,
-      "reason": "The value is meaningful but may represent a capability, relationship phrase, or future entity.",
-      "recommended_action": "Review whether this phrase should become a governed entity or be removed."
+      "status": "resolved",
+      "target_entity_id": "MGT-005",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-001",
@@ -2161,12 +2286,9 @@
       "source_file": "operating_system.json",
       "reference_value": "BitLocker",
       "occurrence_index": 6,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-001",
@@ -2179,6 +2301,33 @@
       "deferred_domain": null,
       "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
       "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 8,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 9,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "occurrence_index": 10,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-001",
@@ -2197,24 +2346,30 @@
       "source_file": "operating_system.json",
       "reference_value": "WHQL Driver Signing",
       "occurrence_index": 12,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "alias"
     },
     {
       "source_entity_id": "OS-001",
       "source_file": "operating_system.json",
       "reference_value": "Windows Update",
       "occurrence_index": 13,
-      "status": "external",
+      "status": "resolved",
+      "target_entity_id": "MGT-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-001",
+      "source_file": "operating_system.json",
+      "reference_value": "MDM Policy Engine",
+      "occurrence_index": 14,
+      "status": "rejected",
       "target_entity_id": null,
-      "classification": "valid_external_concept",
+      "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "reason": "Generic implementation component",
+      "recommended_action": "Reject as related entity"
     },
     {
       "source_entity_id": "OS-001",
@@ -2243,38 +2398,47 @@
     {
       "source_entity_id": "OS-002",
       "source_file": "operating_system.json",
+      "reference_value": "Windows",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 11",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "OS-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_file": "operating_system.json",
       "reference_value": "Windows NT Kernel",
       "occurrence_index": 2,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "OS-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-002",
       "source_file": "operating_system.json",
       "reference_value": "Windows Update",
       "occurrence_index": 3,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-007",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-002",
       "source_file": "operating_system.json",
       "reference_value": "WSUS",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-002",
@@ -2291,26 +2455,32 @@
     {
       "source_entity_id": "OS-002",
       "source_file": "operating_system.json",
+      "reference_value": "MDM Policy Engine",
+      "occurrence_index": 6,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Generic implementation component",
+      "recommended_action": "Reject as related entity"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_file": "operating_system.json",
       "reference_value": "Group Policy",
       "occurrence_index": 7,
-      "status": "requires_human_review",
-      "target_entity_id": null,
-      "classification": "requires_human_review",
-      "deferred_domain": null,
-      "reason": "The value is meaningful but may represent a capability, relationship phrase, or future entity.",
-      "recommended_action": "Review whether this phrase should become a governed entity or be removed."
+      "status": "resolved",
+      "target_entity_id": "MGT-005",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-002",
       "source_file": "operating_system.json",
       "reference_value": "BitLocker",
       "occurrence_index": 8,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-002",
@@ -2339,14 +2509,38 @@
     {
       "source_entity_id": "OS-002",
       "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "occurrence_index": 11,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 12,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 13,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-002",
+      "source_file": "operating_system.json",
       "reference_value": "WHQL Driver Signing",
       "occurrence_index": 14,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "alias"
     },
     {
       "source_entity_id": "OS-002",
@@ -2363,14 +2557,29 @@
     {
       "source_entity_id": "OS-003",
       "source_file": "operating_system.json",
+      "reference_value": "Windows",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows 10",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "OS-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_file": "operating_system.json",
       "reference_value": "Windows NT Kernel",
       "occurrence_index": 2,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "OS-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-003",
@@ -2383,6 +2592,24 @@
       "deferred_domain": null,
       "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
       "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 4,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 5,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-003",
@@ -2471,74 +2698,104 @@
     {
       "source_entity_id": "OS-003",
       "source_file": "operating_system.json",
+      "reference_value": "MDM Policy Engine",
+      "occurrence_index": 13,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Generic implementation component",
+      "recommended_action": "Reject as related entity"
+    },
+    {
+      "source_entity_id": "OS-003",
+      "source_file": "operating_system.json",
       "reference_value": "Group Policy",
       "occurrence_index": 14,
-      "status": "requires_human_review",
-      "target_entity_id": null,
-      "classification": "requires_human_review",
-      "deferred_domain": null,
-      "reason": "The value is meaningful but may represent a capability, relationship phrase, or future entity.",
-      "recommended_action": "Review whether this phrase should become a governed entity or be removed."
+      "status": "resolved",
+      "target_entity_id": "MGT-005",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-003",
       "source_file": "operating_system.json",
       "reference_value": "BitLocker",
       "occurrence_index": 15,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-009",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-003",
       "source_file": "operating_system.json",
       "reference_value": "WHQL Driver Signing",
       "occurrence_index": 16,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "DRV-006",
+      "resolution_method": "alias"
     },
     {
       "source_entity_id": "OS-003",
       "source_file": "operating_system.json",
       "reference_value": "Windows Update",
       "occurrence_index": 17,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "MGT-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_file": "operating_system.json",
+      "reference_value": "Ubuntu",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_file": "operating_system.json",
+      "reference_value": "RHEL",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "OS-006",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux Kernel",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "OS-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-004",
       "source_file": "operating_system.json",
       "reference_value": "SELinux",
       "occurrence_index": 3,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-010",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-004",
       "source_file": "operating_system.json",
       "reference_value": "AppArmor",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-011",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 5,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-004",
@@ -2555,14 +2812,20 @@
     {
       "source_entity_id": "OS-004",
       "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 7,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-004",
+      "source_file": "operating_system.json",
       "reference_value": "LUKS",
       "occurrence_index": 8,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-012",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-004",
@@ -2637,16 +2900,40 @@
       "recommended_action": "Model in the deferred domain after domain governance review."
     },
     {
+      "source_entity_id": "OS-004",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "occurrence_index": 15,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-004",
+      "resolution_method": "canonical_name"
+    },
+    {
       "source_entity_id": "OS-005",
       "source_file": "operating_system.json",
       "reference_value": "Debian",
       "occurrence_index": 1,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "OS-011",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux Kernel",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "OS-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-005",
@@ -2665,24 +2952,18 @@
       "source_file": "operating_system.json",
       "reference_value": "AppArmor",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-011",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-005",
       "source_file": "operating_system.json",
       "reference_value": "LUKS",
       "occurrence_index": 5,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-012",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-005",
@@ -2695,6 +2976,24 @@
       "deferred_domain": "Software Runtime",
       "reason": "Concept belongs to the planned Software Runtime domain.",
       "recommended_action": "Model in the deferred domain after domain governance review."
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 7,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 8,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-005",
@@ -2735,6 +3034,15 @@
     {
       "source_entity_id": "OS-005",
       "source_file": "operating_system.json",
+      "reference_value": "Ubuntu Pro",
+      "occurrence_index": 12,
+      "status": "resolved",
+      "target_entity_id": "OS-010",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-005",
+      "source_file": "operating_system.json",
       "reference_value": "Kernel Live Patching",
       "occurrence_index": 13,
       "status": "external",
@@ -2759,14 +3067,29 @@
     {
       "source_entity_id": "OS-006",
       "source_file": "operating_system.json",
+      "reference_value": "Linux",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux Kernel",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "OS-008",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_file": "operating_system.json",
       "reference_value": "SELinux",
       "occurrence_index": 2,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-010",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-006",
@@ -2809,12 +3132,27 @@
       "source_file": "operating_system.json",
       "reference_value": "LUKS",
       "occurrence_index": 6,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-012",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 7,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-006",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 8,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-006",
@@ -2889,64 +3227,58 @@
       "recommended_action": "Retain as a documented external concept."
     },
     {
+      "source_entity_id": "OS-006",
+      "source_file": "operating_system.json",
+      "reference_value": "TPM",
+      "occurrence_index": 15,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
+    },
+    {
       "source_entity_id": "OS-007",
       "source_file": "operating_system.json",
       "reference_value": "XNU Kernel",
       "occurrence_index": 0,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "OS-012",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-007",
       "source_file": "operating_system.json",
       "reference_value": "Secure Enclave",
       "occurrence_index": 1,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-005",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-007",
       "source_file": "operating_system.json",
       "reference_value": "System Integrity Protection",
       "occurrence_index": 2,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-006",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-007",
       "source_file": "operating_system.json",
       "reference_value": "Gatekeeper",
       "occurrence_index": 3,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-007",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-007",
       "source_file": "operating_system.json",
       "reference_value": "FileVault",
       "occurrence_index": 4,
-      "status": "external",
-      "target_entity_id": null,
-      "classification": "valid_external_concept",
-      "deferred_domain": null,
-      "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
-      "recommended_action": "Retain as a documented external concept."
+      "status": "resolved",
+      "target_entity_id": "SEC-008",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "OS-007",
@@ -3011,6 +3343,24 @@
     {
       "source_entity_id": "OS-007",
       "source_file": "operating_system.json",
+      "reference_value": "UEFI",
+      "occurrence_index": 10,
+      "status": "resolved",
+      "target_entity_id": "FW-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_file": "operating_system.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 11,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_file": "operating_system.json",
       "reference_value": "TPM Equivalent",
       "occurrence_index": 12,
       "status": "external",
@@ -3031,6 +3381,18 @@
       "deferred_domain": null,
       "reason": "Meaningful standard, interface, format, or platform facility outside the five entity domains.",
       "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "OS-007",
+      "source_file": "operating_system.json",
+      "reference_value": "Code Signing",
+      "occurrence_index": 14,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "The reference is too broad for a stable staging edge.",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
     },
     {
       "source_entity_id": "OS-007",
@@ -3057,9 +3419,51 @@
       "recommended_action": "Retain as a documented external concept."
     },
     {
-      "source_entity_id": "SEC-001",
-      "source_file": "security.json",
-      "reference_value": "Secure Enclave",
+      "source_entity_id": "OS-008",
+      "source_file": "operating_system.json",
+      "reference_value": "Linux",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-008",
+      "source_file": "operating_system.json",
+      "reference_value": "Loadable Kernel Module",
+      "occurrence_index": 1,
+      "status": "deferred",
+      "target_entity_id": null,
+      "classification": "future_domain_entity",
+      "deferred_domain": "Software Runtime",
+      "reason": "Concept belongs to the planned Software Runtime domain.",
+      "recommended_action": "Model in the deferred domain after domain governance review."
+    },
+    {
+      "source_entity_id": "OS-008",
+      "source_file": "operating_system.json",
+      "reference_value": "eBPF",
+      "occurrence_index": 2,
+      "status": "deferred",
+      "target_entity_id": null,
+      "classification": "future_domain_entity",
+      "deferred_domain": "Software Runtime",
+      "reason": "Concept belongs to the planned Software Runtime domain.",
+      "recommended_action": "Model in the deferred domain after domain governance review."
+    },
+    {
+      "source_entity_id": "OS-009",
+      "source_file": "operating_system.json",
+      "reference_value": "Windows",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-009",
+      "source_file": "operating_system.json",
+      "reference_value": "HAL",
       "occurrence_index": 1,
       "status": "external",
       "target_entity_id": null,
@@ -3067,6 +3471,51 @@
       "deferred_domain": null,
       "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
       "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "OS-010",
+      "source_file": "operating_system.json",
+      "reference_value": "Ubuntu",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-011",
+      "source_file": "operating_system.json",
+      "reference_value": "Ubuntu",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-005",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "OS-012",
+      "source_file": "operating_system.json",
+      "reference_value": "macOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_file": "security.json",
+      "reference_value": "Secure Boot",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "SEC-002",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_file": "security.json",
+      "reference_value": "Secure Enclave",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "SEC-005",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "SEC-001",
@@ -3079,6 +3528,18 @@
       "deferred_domain": "Hardware",
       "reason": "Concept belongs to the planned Hardware domain.",
       "recommended_action": "Model in the deferred domain after domain governance review."
+    },
+    {
+      "source_entity_id": "SEC-001",
+      "source_file": "security.json",
+      "reference_value": "Memory Encryption",
+      "occurrence_index": 3,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "The reference is too broad for a stable staging edge.",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
     },
     {
       "source_entity_id": "SEC-001",
@@ -3103,6 +3564,15 @@
       "deferred_domain": "Hardware",
       "reason": "Concept belongs to the planned Hardware domain.",
       "recommended_action": "Model in the deferred domain after domain governance review."
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_file": "security.json",
+      "reference_value": "TPM",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "SEC-002",
@@ -3155,6 +3625,18 @@
     {
       "source_entity_id": "SEC-002",
       "source_file": "security.json",
+      "reference_value": "Platform Key Management",
+      "occurrence_index": 5,
+      "status": "rejected",
+      "target_entity_id": null,
+      "classification": "overly_broad_reference",
+      "deferred_domain": null,
+      "reason": "Broad capability phrase",
+      "recommended_action": "Reject as related entity"
+    },
+    {
+      "source_entity_id": "SEC-002",
+      "source_file": "security.json",
       "reference_value": "Early Launch Anti-Malware",
       "occurrence_index": 6,
       "status": "external",
@@ -3163,6 +3645,15 @@
       "deferred_domain": null,
       "reason": "Valid technical concept not required as a Domain Layer v1.1 entity.",
       "recommended_action": "Retain as a documented external concept."
+    },
+    {
+      "source_entity_id": "SEC-003",
+      "source_file": "security.json",
+      "reference_value": "EDR Agent",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "SEC-004",
+      "resolution_method": "canonical_name"
     },
     {
       "source_entity_id": "SEC-003",
@@ -3227,6 +3718,15 @@
     {
       "source_entity_id": "SEC-004",
       "source_file": "security.json",
+      "reference_value": "Antivirus",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "SEC-003",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-004",
+      "source_file": "security.json",
       "reference_value": "Host Intrusion Detection System",
       "occurrence_index": 1,
       "status": "deferred",
@@ -3283,215 +3783,90 @@
       "deferred_domain": "Endpoint Security",
       "reason": "Concept belongs to the planned Endpoint Security domain",
       "recommended_action": "Defer to future domain"
-    }
-  ],
-  "ambiguous_references": [],
-  "invalid_references": [
+    },
     {
-      "source_entity_id": "DRV-001",
-      "source_file": "drivers.json",
-      "reference_value": "OS Graphics Subsystem",
+      "source_entity_id": "SEC-005",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-005",
+      "source_file": "security.json",
+      "reference_value": "TPM",
+      "occurrence_index": 1,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-006",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-007",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-007",
+      "source_file": "security.json",
+      "reference_value": "Notarization",
       "occurrence_index": 1,
       "status": "rejected",
       "target_entity_id": null,
       "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Overly broad architectural phrase",
-      "recommended_action": "Reject as related entity"
+      "reason": "The reference is too broad for a stable staging edge.",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
     },
     {
-      "source_entity_id": "DRV-002",
-      "source_file": "drivers.json",
-      "reference_value": "OS Audio Subsystem",
+      "source_entity_id": "SEC-008",
+      "source_file": "security.json",
+      "reference_value": "macOS",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-007",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-008",
+      "source_file": "security.json",
+      "reference_value": "Full Disk Encryption",
       "occurrence_index": 1,
       "status": "rejected",
       "target_entity_id": null,
       "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Overly broad architectural phrase",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "DRV-003",
-      "source_file": "drivers.json",
-      "reference_value": "Power Management Subsystem",
-      "occurrence_index": 10,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Broad architectural phrase",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "DRV-005",
-      "source_file": "drivers.json",
-      "reference_value": "Full Disk Encryption",
-      "occurrence_index": 4,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
       "reason": "The reference is too broad for a stable staging edge.",
       "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
     },
     {
-      "source_entity_id": "FW-003",
-      "source_file": "firmware.json",
-      "reference_value": "Platform Power Management",
-      "occurrence_index": 7,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Broad capability phrase",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "FW-004",
-      "source_file": "firmware.json",
-      "reference_value": "Full Disk Encryption",
-      "occurrence_index": 7,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "The reference is too broad for a stable staging edge.",
-      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
-    },
-    {
-      "source_entity_id": "MGT-001",
-      "source_file": "management.json",
-      "reference_value": "MDM Policy Engine",
-      "occurrence_index": 2,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Generic implementation component",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "MGT-001",
-      "source_file": "management.json",
-      "reference_value": "Compliance Policy Engine",
-      "occurrence_index": 9,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Project component, not stable domain concept",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "MGT-002",
-      "source_file": "management.json",
-      "reference_value": "Alerting Engine",
-      "occurrence_index": 4,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Capability/component phrase",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "MGT-003",
-      "source_file": "management.json",
-      "reference_value": "OS Update Service",
-      "occurrence_index": 6,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Ambiguous generic service",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "MGT-003",
-      "source_file": "management.json",
-      "reference_value": "Patch Compliance Reporting",
-      "occurrence_index": 11,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Reporting capability",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "OS-001",
-      "source_file": "operating_system.json",
-      "reference_value": "MDM Policy Engine",
-      "occurrence_index": 14,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Generic implementation component",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "OS-002",
-      "source_file": "operating_system.json",
-      "reference_value": "MDM Policy Engine",
-      "occurrence_index": 6,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Generic implementation component",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "OS-003",
-      "source_file": "operating_system.json",
-      "reference_value": "MDM Policy Engine",
-      "occurrence_index": 13,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "Generic implementation component",
-      "recommended_action": "Reject as related entity"
-    },
-    {
-      "source_entity_id": "OS-004",
-      "source_file": "operating_system.json",
-      "reference_value": "Linux Kernel",
-      "occurrence_index": 2,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "invalid_related_entity",
-      "reason": "Self-reference is not permitted."
-    },
-    {
-      "source_entity_id": "OS-005",
-      "source_file": "operating_system.json",
-      "reference_value": "Ubuntu Pro",
-      "occurrence_index": 12,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "invalid_related_entity",
-      "reason": "Self-reference is not permitted."
-    },
-    {
-      "source_entity_id": "OS-007",
-      "source_file": "operating_system.json",
-      "reference_value": "Code Signing",
-      "occurrence_index": 14,
-      "status": "rejected",
-      "target_entity_id": null,
-      "classification": "overly_broad_reference",
-      "deferred_domain": null,
-      "reason": "The reference is too broad for a stable staging edge.",
-      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
-    },
-    {
-      "source_entity_id": "SEC-001",
+      "source_entity_id": "SEC-009",
       "source_file": "security.json",
-      "reference_value": "Memory Encryption",
-      "occurrence_index": 3,
+      "reference_value": "Windows",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-009",
+      "source_file": "security.json",
+      "reference_value": "Full Disk Encryption",
+      "occurrence_index": 1,
       "status": "rejected",
       "target_entity_id": null,
       "classification": "overly_broad_reference",
@@ -3500,32 +3875,52 @@
       "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
     },
     {
-      "source_entity_id": "SEC-002",
+      "source_entity_id": "SEC-009",
       "source_file": "security.json",
-      "reference_value": "Platform Key Management",
-      "occurrence_index": 5,
+      "reference_value": "TPM",
+      "occurrence_index": 2,
+      "status": "resolved",
+      "target_entity_id": "SEC-001",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-010",
+      "source_file": "security.json",
+      "reference_value": "Linux",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-011",
+      "source_file": "security.json",
+      "reference_value": "Linux",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-012",
+      "source_file": "security.json",
+      "reference_value": "Linux",
+      "occurrence_index": 0,
+      "status": "resolved",
+      "target_entity_id": "OS-004",
+      "resolution_method": "canonical_name"
+    },
+    {
+      "source_entity_id": "SEC-012",
+      "source_file": "security.json",
+      "reference_value": "Full Disk Encryption",
+      "occurrence_index": 1,
       "status": "rejected",
       "target_entity_id": null,
       "classification": "overly_broad_reference",
       "deferred_domain": null,
-      "reason": "Broad capability phrase",
-      "recommended_action": "Reject as related entity"
-    }
-  ],
-  "self_references": [
-    {
-      "source_entity_id": "OS-004",
-      "source_file": "operating_system.json",
-      "reference_value": "Linux Kernel",
-      "occurrence_index": 2,
-      "target_entity_id": "OS-004"
-    },
-    {
-      "source_entity_id": "OS-005",
-      "source_file": "operating_system.json",
-      "reference_value": "Ubuntu Pro",
-      "occurrence_index": 12,
-      "target_entity_id": "OS-005"
+      "reason": "The reference is too broad for a stable staging edge.",
+      "recommended_action": "Replace with a specific governed concept when relationship semantics are defined."
     }
   ],
   "duplicate_occurrences": []
