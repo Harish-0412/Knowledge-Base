@@ -1,0 +1,106 @@
+{
+  "file": "security.json",
+  "category": "Security",
+  "status": "PASS",
+  "entity_count": 4,
+  "errors": [],
+  "warnings": [],
+  "duplicate_entity_ids": [],
+  "duplicate_or_overlapping_entities": [],
+  "missing_required_fields": [],
+  "invalid_controlled_values": [],
+  "invalid_array_fields": [],
+  "unresolved_related_entities": [
+    {
+      "entity_id": "SEC-001",
+      "related_entity": "Secure Enclave"
+    },
+    {
+      "entity_id": "SEC-001",
+      "related_entity": "Hardware Root of Trust"
+    },
+    {
+      "entity_id": "SEC-001",
+      "related_entity": "Memory Encryption"
+    },
+    {
+      "entity_id": "SEC-001",
+      "related_entity": "Physical Unclonable Function"
+    },
+    {
+      "entity_id": "SEC-001",
+      "related_entity": "Hardware Security Key"
+    },
+    {
+      "entity_id": "SEC-002",
+      "related_entity": "TPM Measured Boot"
+    },
+    {
+      "entity_id": "SEC-002",
+      "related_entity": "Boot Guard"
+    },
+    {
+      "entity_id": "SEC-002",
+      "related_entity": "UEFI Signature Database"
+    },
+    {
+      "entity_id": "SEC-002",
+      "related_entity": "Firmware Integrity Verification"
+    },
+    {
+      "entity_id": "SEC-002",
+      "related_entity": "Platform Key Management"
+    },
+    {
+      "entity_id": "SEC-002",
+      "related_entity": "Early Launch Anti-Malware"
+    },
+    {
+      "entity_id": "SEC-003",
+      "related_entity": "Anti-Malware Engine"
+    },
+    {
+      "entity_id": "SEC-003",
+      "related_entity": "Host Intrusion Prevention System"
+    },
+    {
+      "entity_id": "SEC-003",
+      "related_entity": "Application Whitelisting Agent"
+    },
+    {
+      "entity_id": "SEC-003",
+      "related_entity": "File Integrity Monitoring Agent"
+    },
+    {
+      "entity_id": "SEC-003",
+      "related_entity": "Data Loss Prevention Agent"
+    },
+    {
+      "entity_id": "SEC-004",
+      "related_entity": "Host Intrusion Detection System"
+    },
+    {
+      "entity_id": "SEC-004",
+      "related_entity": "Extended Detection and Response Agent"
+    },
+    {
+      "entity_id": "SEC-004",
+      "related_entity": "User and Entity Behavior Analytics Agent"
+    },
+    {
+      "entity_id": "SEC-004",
+      "related_entity": "Security Information and Event Management Forwarder"
+    },
+    {
+      "entity_id": "SEC-004",
+      "related_entity": "File Integrity Monitoring Agent"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "entity_id": "SEC-002",
+      "claim_fragment": "certif"
+    }
+  ],
+  "summary": "Validation passed."
+}

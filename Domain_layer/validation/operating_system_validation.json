@@ -1,0 +1,499 @@
+{
+  "file": "operating_system.json",
+  "category": "Operating System",
+  "status": "PASS",
+  "entity_count": 7,
+  "errors": [],
+  "warnings": [
+    {
+      "entity_id": "OS-002",
+      "issue": "description mentions other OS",
+      "mentioned": "Windows"
+    },
+    {
+      "entity_id": "OS-003",
+      "issue": "description mentions other OS",
+      "mentioned": "Windows"
+    },
+    {
+      "entity_id": "OS-005",
+      "issue": "description mentions other OS",
+      "mentioned": "Windows"
+    },
+    {
+      "entity_id": "OS-005",
+      "issue": "description mentions other OS",
+      "mentioned": "Linux"
+    },
+    {
+      "entity_id": "OS-006",
+      "issue": "description mentions other OS",
+      "mentioned": "Linux"
+    }
+  ],
+  "duplicate_entity_ids": [],
+  "duplicate_or_overlapping_entities": [
+    {
+      "entity_id_1": "OS-001",
+      "entity_id_2": "OS-002",
+      "reason": "name substring match"
+    },
+    {
+      "entity_id_1": "OS-001",
+      "entity_id_2": "OS-003",
+      "reason": "name substring match"
+    }
+  ],
+  "missing_required_fields": [],
+  "invalid_controlled_values": [],
+  "invalid_array_fields": [],
+  "unresolved_related_entities": [
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Windows NT Kernel"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Active Directory"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Group Policy"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "NTFS"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "BitLocker"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Windows Defender"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "TPM"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Virtualization Based Security"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "WHQL Driver Signing"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Windows Update"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "MDM Policy Engine"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "LSASS"
+    },
+    {
+      "entity_id": "OS-001",
+      "related_entity": "Credential Guard"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "Windows NT Kernel"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "Windows Update"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "WSUS"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "LTSC"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "MDM Policy Engine"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "Group Policy"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "BitLocker"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "Credential Guard"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "WDAC"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "TPM"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "WHQL Driver Signing"
+    },
+    {
+      "entity_id": "OS-002",
+      "related_entity": "Windows Defender"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Windows NT Kernel"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "TPM 2.0"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "VBS"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "HVCI"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Credential Guard"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Microsoft Pluton"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Secured-core PC"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "WDAC"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Windows Defender"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "MDM Policy Engine"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Group Policy"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "BitLocker"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "WHQL Driver Signing"
+    },
+    {
+      "entity_id": "OS-003",
+      "related_entity": "Windows Update"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "Linux Kernel"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "SELinux"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "AppArmor"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "GRUB Bootloader"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "LUKS"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "systemd"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "eBPF"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "Kernel Module Signing"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "PAM"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "cgroups"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "Container Runtime"
+    },
+    {
+      "entity_id": "OS-004",
+      "related_entity": "TPM"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "Debian"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "Linux Kernel"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "APT Package Manager"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "AppArmor"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "LUKS"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "systemd"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "GRUB Bootloader"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "Snap Package Manager"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "DKMS"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "Ubuntu Pro"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "Kernel Live Patching"
+    },
+    {
+      "entity_id": "OS-005",
+      "related_entity": "Hardware Enablement Stack"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "Linux Kernel"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "SELinux"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "FIPS 140"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "RPM Package Manager"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "systemd"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "LUKS"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "GRUB Bootloader"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "DKMS"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "OpenSCAP"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "Kernel Live Patching"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "Red Hat Satellite"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "Ansible Automation"
+    },
+    {
+      "entity_id": "OS-006",
+      "related_entity": "TPM"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "XNU Kernel"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "Secure Enclave"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "System Integrity Protection"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "Gatekeeper"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "FileVault"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "DriverKit"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "EndpointSecurity Framework"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "TCC"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "MDM Configuration Profile"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "Apple Business Manager"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "TPM Equivalent"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "APFS"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "Code Signing"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "Kernel Extension"
+    },
+    {
+      "entity_id": "OS-007",
+      "related_entity": "System Extension"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "entity_id": "OS-003",
+      "claim_fragment": "require"
+    },
+    {
+      "entity_id": "OS-003",
+      "claim_fragment": "mandatory"
+    },
+    {
+      "entity_id": "OS-003",
+      "claim_fragment": "TPM 2.0"
+    },
+    {
+      "entity_id": "OS-003",
+      "claim_fragment": "CPU generation"
+    },
+    {
+      "entity_id": "OS-006",
+      "claim_fragment": "mandatory"
+    },
+    {
+      "entity_id": "OS-007",
+      "claim_fragment": "mandatory"
+    }
+  ],
+  "summary": "Validation passed."
+}

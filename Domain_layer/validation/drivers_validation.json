@@ -1,0 +1,238 @@
+{
+  "file": "drivers.json",
+  "category": "Driver",
+  "status": "PASS",
+  "entity_count": 5,
+  "errors": [],
+  "warnings": [],
+  "duplicate_entity_ids": [],
+  "duplicate_or_overlapping_entities": [],
+  "missing_required_fields": [],
+  "invalid_controlled_values": [],
+  "invalid_array_fields": [],
+  "unresolved_related_entities": [
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "OS Graphics Subsystem"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "DirectX Runtime"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "Vulkan Runtime"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "PCI Express Interface"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "UEFI GOP"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "Display Manager"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "GPU Firmware"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "Kernel Mode Setting"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "Driver Signing"
+    },
+    {
+      "entity_id": "DRV-001",
+      "related_entity": "WDDM"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "OS Audio Subsystem"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "HD Audio Controller"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "USB Audio Class"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "Audio DSP Firmware"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "Driver Signing"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "PCI Express Interface"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "Kernel Streaming"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "WASAPI"
+    },
+    {
+      "entity_id": "DRV-002",
+      "related_entity": "Audio Endpoint Manager"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "UEFI"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "ACPI"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "PCI Express Interface"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "USB Controller Driver"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "Management Engine Interface"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "IOMMU"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "Power Management Subsystem"
+    },
+    {
+      "entity_id": "DRV-003",
+      "related_entity": "Driver Signing"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "Network Firmware"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "OS Network Stack"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "NDIS"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "PXE Boot"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "Network Access Control Agent"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "VPN Agent"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "Firewall Driver"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "Driver Signing"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "PCI Express Interface"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "USB Controller Driver"
+    },
+    {
+      "entity_id": "DRV-004",
+      "related_entity": "Wake-on-LAN"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "Storage Firmware"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "OS Storage Stack"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "Volume Manager"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "Full Disk Encryption"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "BitLocker"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "TCG Opal"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "RAID Controller"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "StorPort"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "SCSI"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "PCI Express Interface"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "USB Controller Driver"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "Driver Signing"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "Boot Critical Driver"
+    },
+    {
+      "entity_id": "DRV-005",
+      "related_entity": "File System Driver"
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "entity_id": "DRV-003",
+      "claim_fragment": "require"
+    },
+    {
+      "entity_id": "DRV-003",
+      "claim_fragment": "device id"
+    },
+    {
+      "entity_id": "DRV-003",
+      "claim_fragment": "support for"
+    }
+  ],
+  "summary": "Validation passed."
+}

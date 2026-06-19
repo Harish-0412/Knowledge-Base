@@ -1,0 +1,112 @@
+[
+  {
+    "entity": "TPM",
+    "layer": "Hardware Security Layer",
+    "parent_category": "Hardware Security Module",
+    "siblings": [
+      "Secure Boot",
+      "Hardware Root of Trust",
+      "Memory Encryption",
+      "Physical Unclonable Function",
+      "Secure Enclave",
+      "Hardware Security Key"
+    ],
+    "subcategories": [
+      "TPM 1.2",
+      "TPM 2.0",
+      "Discrete TPM",
+      "Firmware TPM",
+      "Integrated TPM",
+      "Virtual TPM",
+      "Platform Configuration Register",
+      "Endorsement Key",
+      "Storage Root Key",
+      "Attestation Identity Key",
+      "TPM Key Hierarchy",
+      "TPM NV Storage"
+    ]
+  },
+  {
+    "entity": "Secure Boot",
+    "layer": "Firmware Security Layer",
+    "parent_category": "Pre-Boot Integrity Enforcement",
+    "siblings": [
+      "TPM Measured Boot",
+      "Boot Guard",
+      "UEFI Signature Database",
+      "Firmware Integrity Verification",
+      "Platform Key Management",
+      "Early Launch Anti-Malware"
+    ],
+    "subcategories": [
+      "Platform Key",
+      "Key Exchange Key",
+      "Authorized Signature Database",
+      "Forbidden Signature Database",
+      "Machine Owner Key",
+      "Secure Boot Policy",
+      "Secure Boot Audit Mode",
+      "Secure Boot Setup Mode",
+      "Bootloader Signing",
+      "Kernel Module Signing",
+      "Option ROM Validation",
+      "Secure Boot Certificate Management"
+    ]
+  },
+  {
+    "entity": "Antivirus",
+    "layer": "OS Security Agent Layer",
+    "parent_category": "Endpoint Threat Prevention",
+    "siblings": [
+      "EDR Agent",
+      "Anti-Malware Engine",
+      "Host Intrusion Prevention System",
+      "Application Whitelisting Agent",
+      "File Integrity Monitoring Agent",
+      "Data Loss Prevention Agent"
+    ],
+    "subcategories": [
+      "Signature-Based Detection Engine",
+      "Heuristic Analysis Engine",
+      "Behavioral Detection Engine",
+      "Real-Time File System Scanner",
+      "On-Demand Scanner",
+      "Quarantine Manager",
+      "Threat Definition Update Service",
+      "Boot Sector Scanner",
+      "Email Attachment Scanner",
+      "Web Content Scanner",
+      "Script Execution Monitor",
+      "Exploit Prevention Module"
+    ]
+  },
+  {
+    "entity": "EDR Agent",
+    "layer": "OS Security Agent Layer",
+    "parent_category": "Endpoint Detection and Response",
+    "siblings": [
+      "Antivirus",
+      "Host Intrusion Detection System",
+      "Extended Detection and Response Agent",
+      "User and Entity Behavior Analytics Agent",
+      "Security Information and Event Management Forwarder",
+      "File Integrity Monitoring Agent"
+    ],
+    "subcategories": [
+      "Kernel Sensor",
+      "Process Telemetry Collector",
+      "File System Activity Monitor",
+      "Network Activity Monitor",
+      "Registry Activity Monitor",
+      "Memory Forensics Module",
+      "Threat Intelligence Integration",
+      "Automated Response Engine",
+      "Behavioral Analytics Engine",
+      "Indicator of Compromise Scanner",
+      "Attack Surface Reduction Module",
+      "Forensic Data Recorder",
+      "Threat Hunting Query Interface",
+      "Isolation and Containment Module"
+    ]
+  }
+]
