@@ -1,0 +1,251 @@
+[
+  {
+    "entity_id": "FW-FIRMWARE-001",
+    "name": "Firmware",
+    "type": "Firmware",
+    "subtype": "Firmware Category",
+    "layer": "Firmware Layer",
+    "description": "System software executing on dedicated hardware processors that provides low-level control, hardware initialization, and runtime services independent of the main operating system.",
+    "purpose": "Enable platform hardware initialization, boot sequence orchestration, device management, and provision of low-level runtime services across enterprise endpoints.",
+    "aliases": [
+      "System Firmware",
+      "Platform Firmware",
+      "Device Firmware",
+      "Firmware Layer"
+    ],
+    "keywords": [
+      "firmware",
+      "low-level software",
+      "hardware control",
+      "boot management",
+      "pre-OS environment",
+      "non-volatile memory",
+      "firmware update",
+      "firmware image",
+      "firmware version",
+      "firmware security"
+    ],
+    "related_entities": [
+      "BIOS",
+      "UEFI",
+      "Embedded Controller Firmware",
+      "Storage Firmware",
+      "Network Firmware"
+    ],
+    "knowledge_category": "Firmware",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical"
+  },
+  {
+    "entity_id": "FW-BIOS-001",
+    "name": "BIOS",
+    "type": "Firmware",
+    "subtype": "Pre-Boot Firmware",
+    "layer": "Firmware Layer",
+    "description": "Legacy pre-boot firmware stored in non-volatile memory that executes during system power-on to initialize hardware components, perform Power-On Self-Test (POST), enumerate boot devices, and provide interrupt-based runtime services to the operating system bootloader.",
+    "purpose": "Perform platform initialization during boot sequence, execute hardware diagnostics, identify bootable storage devices, and provide low-level runtime services via interrupt handlers.",
+    "aliases": [
+      "Basic Input/Output System",
+      "Legacy BIOS",
+      "ROM BIOS",
+      "System BIOS",
+      "PC BIOS"
+    ],
+    "keywords": [
+      "POST",
+      "Power-On Self-Test",
+      "MBR",
+      "Master Boot Record",
+      "16-bit real mode",
+      "CMOS",
+      "boot device enumeration",
+      "interrupt handlers",
+      "legacy boot",
+      "firmware setup utility",
+      "BIOS version",
+      "BIOS password",
+      "boot order"
+    ],
+    "related_entities": [
+      "Firmware",
+      "UEFI",
+      "Embedded Controller Firmware",
+      "Operating System Bootloader"
+    ],
+    "knowledge_category": "Firmware",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical"
+  },
+  {
+    "entity_id": "FW-UEFI-001",
+    "name": "UEFI",
+    "type": "Firmware",
+    "subtype": "Pre-Boot Firmware",
+    "layer": "Firmware Layer",
+    "description": "Modern pre-boot firmware specification providing 32-bit and 64-bit protected mode operation, support for GPT partition tables, embedded network stack, Secure Boot enforcement, and extensible driver model for platform initialization and runtime services.",
+    "purpose": "Provide modern boot environment with enhanced security controls, support GPT-based disk partitioning, enable network-based boot, enforce Secure Boot policies, and deliver extensible pre-OS platform services.",
+    "aliases": [
+      "Unified Extensible Firmware Interface",
+      "EFI",
+      "Extensible Firmware Interface",
+      "UEFI Firmware",
+      "UEFI BIOS"
+    ],
+    "keywords": [
+      "Secure Boot",
+      "GPT",
+      "GUID Partition Table",
+      "EFI System Partition",
+      "UEFI Shell",
+      "Boot Manager",
+      "firmware update",
+      "capsule update",
+      "measured boot",
+      "TPM integration",
+      "network boot",
+      "PXE",
+      "HTTP Boot",
+      "UEFI variable"
+    ],
+    "related_entities": [
+      "Firmware",
+      "BIOS",
+      "Embedded Controller Firmware",
+      "Storage Firmware",
+      "Network Firmware",
+      "Secure Boot"
+    ],
+    "knowledge_category": "Firmware",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical"
+  },
+  {
+    "entity_id": "FW-EC-001",
+    "name": "Embedded Controller Firmware",
+    "type": "Firmware",
+    "subtype": "Board Management Firmware",
+    "layer": "Firmware Layer",
+    "description": "Low-level firmware executing on a dedicated embedded microcontroller that manages board-level hardware functions including power sequencing, thermal regulation, battery charging control, keyboard matrix scanning, and fan operation independent of the main CPU.",
+    "purpose": "Autonomously manage hardware power delivery, thermal policy enforcement, battery state monitoring, keyboard input processing, and generate events for the main platform firmware.",
+    "aliases": [
+      "EC Firmware",
+      "Embedded Controller",
+      "EC",
+      "Board Management Firmware",
+      "System Management Controller Firmware"
+    ],
+    "keywords": [
+      "embedded controller",
+      "EC",
+      "power sequencing",
+      "thermal management",
+      "battery management",
+      "fan control",
+      "keyboard controller",
+      "lid switch",
+      "wake events",
+      "power button",
+      "SMBus",
+      "I2C",
+      "SPI",
+      "LPC",
+      "ACPI"
+    ],
+    "related_entities": [
+      "Firmware",
+      "UEFI",
+      "BIOS",
+      "ACPI"
+    ],
+    "knowledge_category": "Firmware",
+    "compatibility_relevance": "High",
+    "validation_priority": "High"
+  },
+  {
+    "entity_id": "FW-STORAGE-001",
+    "name": "Storage Firmware",
+    "type": "Firmware",
+    "subtype": "Device Firmware",
+    "layer": "Firmware Layer",
+    "description": "Firmware embedded within storage devices including hard disk drives, solid-state drives, and NVMe devices that manages media access operations, error correction, wear leveling algorithms, encryption operations, and interface protocol compliance independent of the host operating system.",
+    "purpose": "Manage storage media access, execute hardware-based encryption, perform error correction and wear leveling, enforce protocol compliance, and optimize device performance.",
+    "aliases": [
+      "Drive Firmware",
+      "HDD Firmware",
+      "SSD Firmware",
+      "NVMe Firmware",
+      "Storage Controller Firmware",
+      "Disk Firmware"
+    ],
+    "keywords": [
+      "NVMe",
+      "SATA",
+      "SAS",
+      "ATA",
+      "Self-Encrypting Drive",
+      "SED",
+      "TCG Opal",
+      "S.M.A.R.T",
+      "wear leveling",
+      "ECC",
+      "bad block management",
+      "firmware update",
+      "secure erase",
+      "TRIM",
+      "storage encryption"
+    ],
+    "related_entities": [
+      "Firmware",
+      "UEFI",
+      "Full Disk Encryption",
+      "Hardware-Based Encryption"
+    ],
+    "knowledge_category": "Firmware",
+    "compatibility_relevance": "High",
+    "validation_priority": "High"
+  },
+  {
+    "entity_id": "FW-NETWORK-001",
+    "name": "Network Firmware",
+    "type": "Firmware",
+    "subtype": "Device Firmware",
+    "layer": "Firmware Layer",
+    "description": "Firmware embedded within network interface controllers, wireless adapters, and out-of-band management controllers that governs packet processing, PHY layer operations, protocol offload functions, remote management capabilities, and preboot network services independent of host operating system.",
+    "purpose": "Manage network packet processing and transmission, execute protocol offload operations, enable out-of-band platform management, support network-based boot services, and provide wireless connectivity controls.",
+    "aliases": [
+      "NIC Firmware",
+      "Network Interface Controller Firmware",
+      "LAN Firmware",
+      "WLAN Firmware",
+      "Network Adapter Firmware",
+      "Wireless Firmware"
+    ],
+    "keywords": [
+      "NIC",
+      "Network Interface Controller",
+      "PXE",
+      "Preboot Execution Environment",
+      "out-of-band management",
+      "BMC",
+      "Baseboard Management Controller",
+      "Wake-on-LAN",
+      "WoL",
+      "wireless firmware",
+      "Bluetooth firmware",
+      "IEEE 802.11",
+      "PHY layer",
+      "MAC layer",
+      "network boot"
+    ],
+    "related_entities": [
+      "Firmware",
+      "UEFI",
+      "Out-of-Band Management",
+      "BMC",
+      "PXE Boot"
+    ],
+    "knowledge_category": "Firmware",
+    "compatibility_relevance": "High",
+    "validation_priority": "High"
+  }
+]

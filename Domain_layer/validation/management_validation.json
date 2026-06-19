@@ -1,0 +1,193 @@
+{
+  "file": "management.json",
+  "category": "Management",
+  "status": "PASS",
+  "entity_count": 3,
+  "errors": [],
+  "warnings": [],
+  "duplicate_entity_ids": [],
+  "duplicate_or_overlapping_entities": [],
+  "missing_required_fields": [],
+  "invalid_controlled_values": [],
+  "invalid_array_fields": [],
+  "unresolved_related_entities": [
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "MDM Policy Engine"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Group Policy"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Active Directory"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "PKI"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "OS Deployment Service"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Software Distribution System"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Configuration Baseline"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Compliance Policy Engine"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Endpoint Agent"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Identity Provider"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Conditional Access Policy"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Asset Inventory System"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "CMDB"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Remote Control Service"
+    },
+    {
+      "entity_name": "Endpoint Manager",
+      "related_entity": "Certificate Management System"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "SIEM"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "Log Aggregation Platform"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "Alerting Engine"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "Time Series Database"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "WMI"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "ETW"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "eBPF"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "syslog"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "Hardware Sensor Interface"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "IPMI"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "BMC"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "Application Performance Monitoring"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "OpenTelemetry"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "EDR Agent"
+    },
+    {
+      "entity_name": "Monitoring Agent",
+      "related_entity": "OS Event Log"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Vulnerability Management Platform"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "CVE Database"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "WSUS"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Windows Update"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "OS Update Service"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Firmware Update Utility"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Driver Update Service"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Deployment Ring Policy"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Maintenance Window Policy"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Patch Compliance Reporting"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "SIEM"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Change Management System"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Software Distribution System"
+    },
+    {
+      "entity_name": "Patch Manager",
+      "related_entity": "Asset Inventory System"
+    }
+  ],
+  "unsupported_claims": [],
+  "summary": "Validation passed."
+}

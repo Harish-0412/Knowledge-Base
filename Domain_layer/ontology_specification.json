@@ -1,0 +1,71 @@
+    {
+  "schema_version": "1.0.0",
+  "required_fields": [
+    "entity_id",
+    "name",
+    "type",
+    "subtype",
+    "layer",
+    "description",
+    "purpose",
+    "aliases",
+    "keywords",
+    "related_entities",
+    "knowledge_category",
+    "compatibility_relevance",
+    "validation_priority"
+  ],
+  "allowed_types": [
+    "Firmware",
+    "OperatingSystem",
+    "Driver",
+    "SecurityComponent",
+    "ManagementTool"
+  ],
+  "allowed_layers": [
+    "Firmware Layer",
+    "Operating System Layer",
+    "Driver Layer",
+    "Security Layer",
+    "Management Layer"
+  ],
+  "allowed_relevance_values": [
+    "Critical",
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "allowed_priority_values": [
+    "Critical",
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "category_configuration": {
+    "Firmware": {
+      "id_prefix": "FW",
+      "type": "Firmware",
+      "layer": "Firmware Layer"
+    },
+    "Operating System": {
+      "id_prefix": "OS",
+      "type": "OperatingSystem",
+      "layer": "Operating System Layer"
+    },
+    "Driver": {
+      "id_prefix": "DRV",
+      "type": "Driver",
+      "layer": "Driver Layer"
+    },
+    "Security": {
+      "id_prefix": "SEC",
+      "type": "SecurityComponent",
+      "layer": "Security Layer"
+    },
+    "Management": {
+      "id_prefix": "MGT",
+      "type": "ManagementTool",
+      "layer": "Management Layer"
+    }
+  }
+}

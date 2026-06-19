@@ -1,0 +1,193 @@
+{
+  "file": "firmware.json",
+  "status": "PASS",
+  "entity_count": 5,
+  "errors": [],
+  "warnings": [],
+  "duplicate_entity_ids": [],
+  "missing_required_fields": [],
+  "invalid_controlled_values": [],
+  "unresolved_related_entities": [
+    {
+      "entity_id": "FW-001",
+      "related_entity": "MBR"
+    },
+    {
+      "entity_id": "FW-001",
+      "related_entity": "POST"
+    },
+    {
+      "entity_id": "FW-001",
+      "related_entity": "CMOS"
+    },
+    {
+      "entity_id": "FW-001",
+      "related_entity": "CSM"
+    },
+    {
+      "entity_id": "FW-001",
+      "related_entity": "OS Bootloader"
+    },
+    {
+      "entity_id": "FW-001",
+      "related_entity": "Hardware Abstraction Layer"
+    },
+    {
+      "entity_id": "FW-001",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "FW-001",
+      "related_entity": "Firmware Update Utility"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "Secure Boot"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "TPM"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "GPT"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "EFI System Partition"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "OS Bootloader"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "Measured Boot"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "ACPI"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "SMBIOS"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "Firmware Update Utility"
+    },
+    {
+      "entity_id": "FW-002",
+      "related_entity": "CSM"
+    },
+    {
+      "entity_id": "FW-003",
+      "related_entity": "ACPI"
+    },
+    {
+      "entity_id": "FW-003",
+      "related_entity": "TPM"
+    },
+    {
+      "entity_id": "FW-003",
+      "related_entity": "Battery Management System"
+    },
+    {
+      "entity_id": "FW-003",
+      "related_entity": "Thermal Management Subsystem"
+    },
+    {
+      "entity_id": "FW-003",
+      "related_entity": "USB Power Delivery Controller"
+    },
+    {
+      "entity_id": "FW-003",
+      "related_entity": "Platform Power Management"
+    },
+    {
+      "entity_id": "FW-003",
+      "related_entity": "Firmware Update Utility"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "NVMe Driver"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "SATA Controller"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "Storage Controller Driver"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "Self-Encrypting Drive"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "TCG Opal"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "BitLocker"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "Full Disk Encryption"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "Firmware Update Utility"
+    },
+    {
+      "entity_id": "FW-004",
+      "related_entity": "RAID Controller"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "PXE Boot"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "Network Driver"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "NDIS"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "BMC"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "IPMI"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "Out-of-Band Management"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "WoL"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "Wireless Driver"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "Firmware Update Utility"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "Network Access Control"
+    },
+    {
+      "entity_id": "FW-005",
+      "related_entity": "VPN Agent"
+    }
+  ],
+  "summary": "Validation passed with no errors."
+}
