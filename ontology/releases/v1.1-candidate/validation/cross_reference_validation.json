@@ -1,0 +1,17 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "total_references": 369,
+  "classified_references": 369,
+  "unclassified_references": 0,
+  "resolved_references": 188,
+  "external_references": 66,
+  "deferred_references": 57,
+  "rejected_references": 8,
+  "ambiguous_references": 0,
+  "human_review_references": 50,
+  "self_reference_count": 0,
+  "missing_source_or_target": [],
+  "overall_resolution_percentage": 50.95,
+  "core_resolution_percentage": 100.0,
+  "errors": []
+}

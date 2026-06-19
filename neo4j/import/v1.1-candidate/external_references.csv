@@ -1,0 +1,182 @@
+source_entity_id,reference_value,status,classification,deferred_domain,reason
+DRV-001,OS Graphics Subsystem,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-001,DirectX Runtime,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+DRV-001,Vulkan Runtime,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+DRV-001,PCI Express Interface,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-001,UEFI GOP,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-001,Display Manager,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-001,GPU Firmware,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-001,Kernel Mode Setting,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-002,OS Audio Subsystem,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-002,HD Audio Controller,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+DRV-002,USB Audio Class,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-002,Audio DSP Firmware,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-002,PCI Express Interface,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-002,Kernel Streaming,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-002,WASAPI,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+DRV-002,Audio Endpoint Manager,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-003,PCI Express Interface,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-003,USB Controller Driver,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+DRV-003,Management Engine Interface,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-003,IOMMU,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+DRV-003,Power Management Subsystem,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-004,OS Network Stack,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+DRV-004,Network Access Control Agent,deferred,future_domain_entity,Networking,Concept belongs to the planned Networking domain.
+DRV-004,VPN Agent,deferred,future_domain_entity,Networking,Concept belongs to the planned Networking domain.
+DRV-004,Firewall Driver,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-004,PCI Express Interface,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-004,USB Controller Driver,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+DRV-004,Wake-on-LAN,deferred,future_domain_entity,Networking,Concept belongs to the planned Networking domain.
+DRV-005,OS Storage Stack,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-005,Volume Manager,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-005,Full Disk Encryption,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.
+DRV-005,TCG Opal,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+DRV-005,RAID Controller,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+DRV-005,StorPort,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-005,SCSI,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+DRV-005,PCI Express Interface,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+DRV-005,USB Controller Driver,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+DRV-005,Boot Critical Driver,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-005,File System Driver,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+DRV-006,WHQL,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+FW-001,MBR,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+FW-001,POST,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+FW-001,CMOS,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-001,CSM,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+FW-001,Hardware Abstraction Layer,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-002,SMBIOS,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+FW-002,CSM,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+FW-003,Battery Management System,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-003,Thermal Management Subsystem,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-003,USB Power Delivery Controller,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-003,Platform Power Management,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+FW-004,SATA Controller,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-004,Storage Controller Driver,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-004,Self-Encrypting Drive,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-004,TCG Opal,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+FW-004,Full Disk Encryption,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.
+FW-004,RAID Controller,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-005,BMC,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-005,IPMI,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+FW-005,Out-of-Band Management,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+FW-005,WoL,deferred,future_domain_entity,Networking,Concept belongs to the planned Networking domain.
+FW-005,Network Access Control,deferred,future_domain_entity,Networking,Concept belongs to the planned Networking domain.
+FW-005,VPN Agent,deferred,future_domain_entity,Networking,Concept belongs to the planned Networking domain.
+MGT-001,MDM Policy Engine,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,PKI,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+MGT-001,OS Deployment Service,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,Software Distribution System,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,Configuration Baseline,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,Compliance Policy Engine,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,Endpoint Agent,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,Identity Provider,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+MGT-001,Conditional Access Policy,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+MGT-001,Asset Inventory System,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,CMDB,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+MGT-001,Remote Control Service,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-001,Certificate Management System,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+MGT-002,Log Aggregation Platform,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-002,Alerting Engine,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-002,Time Series Database,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-002,WMI,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+MGT-002,ETW,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+MGT-002,eBPF,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+MGT-002,syslog,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+MGT-002,Hardware Sensor Interface,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+MGT-002,IPMI,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+MGT-002,BMC,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+MGT-002,Application Performance Monitoring,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-002,OpenTelemetry,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+MGT-002,OS Event Log,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+MGT-003,Vulnerability Management Platform,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,CVE Database,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,OS Update Service,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,Driver Update Service,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,Deployment Ring Policy,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,Maintenance Window Policy,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,Patch Compliance Reporting,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,Change Management System,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,Software Distribution System,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-003,Asset Inventory System,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+MGT-004,Identity Provider,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+MGT-008,Log Aggregation Platform,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+OS-001,NTFS,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+OS-001,Windows Defender,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-001,Virtualization Based Security,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-001,MDM Policy Engine,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+OS-001,LSASS,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+OS-001,Credential Guard,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+OS-002,LTSC,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-002,MDM Policy Engine,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+OS-002,Credential Guard,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+OS-002,WDAC,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-002,Windows Defender,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,TPM 2.0,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,VBS,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,HVCI,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,Credential Guard,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+OS-003,Microsoft Pluton,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,Secured-core PC,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,WDAC,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,Windows Defender,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-003,MDM Policy Engine,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+OS-004,GRUB Bootloader,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-004,systemd,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-004,eBPF,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-004,Kernel Module Signing,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-004,PAM,deferred,future_domain_entity,Identity and Access,Concept belongs to the planned Identity and Access domain.
+OS-004,cgroups,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-004,Container Runtime,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-005,APT Package Manager,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-005,systemd,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-005,GRUB Bootloader,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-005,Snap Package Manager,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-005,DKMS,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-005,Kernel Live Patching,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-005,Hardware Enablement Stack,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+OS-006,FIPS 140,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+OS-006,RPM Package Manager,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-006,systemd,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-006,GRUB Bootloader,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-006,DKMS,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-006,OpenSCAP,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-006,Kernel Live Patching,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-006,Red Hat Satellite,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-006,Ansible Automation,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-007,DriverKit,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-007,EndpointSecurity Framework,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+OS-007,TCC,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-007,MDM Configuration Profile,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-007,Apple Business Manager,deferred,future_domain_entity,Cloud Services,Concept belongs to the planned Cloud Services domain.
+OS-007,TPM Equivalent,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-007,APFS,external,valid_external_concept,,"Meaningful standard, interface, format, or platform facility outside the five entity domains."
+OS-007,Code Signing,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.
+OS-007,Kernel Extension,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-007,System Extension,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+OS-008,Loadable Kernel Module,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-008,eBPF,deferred,future_domain_entity,Software Runtime,Concept belongs to the planned Software Runtime domain.
+OS-009,HAL,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+SEC-001,Hardware Root of Trust,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+SEC-001,Memory Encryption,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.
+SEC-001,Physical Unclonable Function,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+SEC-001,Hardware Security Key,deferred,future_domain_entity,Hardware,Concept belongs to the planned Hardware domain.
+SEC-002,TPM Measured Boot,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+SEC-002,Boot Guard,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+SEC-002,UEFI Signature Database,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-002,Firmware Integrity Verification,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+SEC-002,Platform Key Management,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-002,Early Launch Anti-Malware,external,valid_external_concept,,Valid technical concept not required as a Domain Layer v1.1 entity.
+SEC-003,Anti-Malware Engine,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-003,Host Intrusion Prevention System,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-003,Application Whitelisting Agent,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-003,File Integrity Monitoring Agent,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-003,Data Loss Prevention Agent,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-004,Host Intrusion Detection System,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-004,Extended Detection and Response Agent,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-004,User and Entity Behavior Analytics Agent,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-004,Security Information and Event Management Forwarder,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-004,File Integrity Monitoring Agent,requires_human_review,requires_human_review,,"The value is meaningful but may represent a capability, relationship phrase, or future entity."
+SEC-007,Notarization,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.
+SEC-008,Full Disk Encryption,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.
+SEC-009,Full Disk Encryption,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.
+SEC-012,Full Disk Encryption,rejected,overly_broad_reference,,The reference is too broad for a stable staging edge.

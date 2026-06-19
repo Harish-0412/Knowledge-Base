@@ -1,0 +1,34 @@
+{
+  "release_version": "1.1.0",
+  "schema_version": "1.1.0",
+  "entity_count": 52,
+  "resolved_staging_relationship_count": 188,
+  "external_reference_count": 66,
+  "deferred_reference_count": 57,
+  "rejected_reference_count": 8,
+  "ambiguous_count": 0,
+  "human_review_count": 50,
+  "source_file_names": [
+    "firmware.json",
+    "operating_system.json",
+    "drivers.json",
+    "security.json",
+    "management.json"
+  ],
+  "import_files": [
+    "entities.csv",
+    "resolved_references.csv",
+    "external_references.csv",
+    "neo4j_constraints.cypher",
+    "README.md",
+    "import_manifest.json"
+  ],
+  "checksums": {
+    "entities.csv": "f75b79c064240877e30aff9c8d93000e1adbc26c5a65f4c431dc42ce09c96722",
+    "resolved_references.csv": "8bd5af148fc8f269c0eec99f8ccc5129c7d2a40c2f3947da38df50db694205cf",
+    "external_references.csv": "e304850c6df4783f96b0c3c3c003163a380d293afdf3b4d6aabd7050af24ab21",
+    "neo4j_constraints.cypher": "dabe7aadec9e54d5c440c050947c4626ba6694bb1351842a4f319f68a544446f",
+    "README.md": "007666cdaed8e16524b0e9d9e35b60f0a94dc28b836463125478743b5a0d5a8d"
+  },
+  "generation_status": "READY_WITH_WARNINGS"
+}

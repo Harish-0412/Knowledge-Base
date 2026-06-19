@@ -1,0 +1,608 @@
+{
+  "release": "1.1-rc1",
+  "status": "approved",
+  "decisions": [
+    {
+      "reference_value": "PCI Express Interface",
+      "source_entity_ids": [
+        "DRV-001",
+        "DRV-002",
+        "DRV-003",
+        "DRV-004",
+        "DRV-005"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Industry interface / bus standard. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An industry interface referenced by several driver categories; it is meaningful context but does not require a Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "MDM Policy Engine",
+      "source_entity_ids": [
+        "MGT-001",
+        "OS-001",
+        "OS-002",
+        "OS-003"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Management policy-processing component. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to mean the policy-evaluation component of mobile device management. It could overlap Endpoint Manager or merit a governed management component, but the intended identity is not established. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Asset Inventory System",
+      "source_entity_ids": [
+        "MGT-001",
+        "MGT-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Asset and Configuration Management",
+      "reason": "Appears to represent: Asset discovery and inventory platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A distinct asset-inventory system belongs in a future asset/configuration-management domain rather than being folded into Endpoint Manager. Provisional interpretation was deferred for Asset and Configuration Management, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "File Integrity Monitoring Agent",
+      "source_entity_ids": [
+        "SEC-003",
+        "SEC-004"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Endpoint Security",
+      "reason": "Appears to represent: Host file-integrity security agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security-agent role, but not essential as a canonical node for the current compatibility and compliance scope. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Log Aggregation Platform",
+      "source_entity_ids": [
+        "MGT-002",
+        "MGT-008"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Observability",
+      "reason": "Appears to represent: Centralized log collection platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A log collection and aggregation platform is a coherent future observability concept, separate from the current endpoint management entities. Provisional interpretation was deferred for Observability, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Software Distribution System",
+      "source_entity_ids": [
+        "MGT-001",
+        "MGT-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Software Lifecycle Management",
+      "reason": "Appears to represent: Software deployment and distribution platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A software distribution platform is a coherent management capability, but its product-neutral identity and boundary require a future software-lifecycle domain. Provisional interpretation was deferred for Software Lifecycle Management, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Alerting Engine",
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Alert evaluation capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A generic capability/component phrase without a stable product-neutral identity; it is not suitable as a related entity.",
+      "evidence": [],
+      "confidence": 0.88,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Anti-Malware Engine",
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Malware detection engine component. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful implementation component of anti-malware products, but the existing Antivirus entity is the governed Domain Layer concept. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Application Performance Monitoring",
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Observability",
+      "reason": "Appears to represent: Application telemetry and performance monitoring capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A recognized monitoring discipline/platform category that belongs in a future observability domain. Provisional interpretation was deferred for Observability, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Application Whitelisting Agent",
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Endpoint Security",
+      "reason": "Appears to represent: Application-control security agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful endpoint security-agent role, but no unique product-neutral identity is established for a core node. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "CVE Database",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Vulnerability identifier data source. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An external vulnerability-information data source, not an endpoint Domain Layer entity. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Change Management System",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "IT Service Management",
+      "reason": "Appears to represent: IT change-control platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A change-control platform belongs to a future IT service-management domain. Provisional interpretation was deferred for IT Service Management, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Compliance Policy Engine",
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Configuration-compliance evaluation component. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a policy evaluation component essential to some compliance implementations, but the source does not establish whether it is a standalone entity or an Endpoint Manager capability. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Configuration Baseline",
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "recommended_decision": "create_core_entity",
+      "target_entity_id": "MGT-009",
+      "future_domain": null,
+      "reason": "Appears to represent: Governed desired-configuration specification. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A configuration baseline is directly required to express desired-state and configuration-compliance reasoning; create only after governance approves its type, ID, and evidence. Provisional interpretation was create_core_entity, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19",
+      "proposed_category": "Management",
+      "proposed_type": "ManagementTool",
+      "proposed_subtype": "Configuration Policy Object"
+    },
+    {
+      "reference_value": "Data Loss Prevention Agent",
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Endpoint Security",
+      "reason": "Appears to represent: Endpoint data-loss-prevention agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful endpoint security-agent role but not required as a standalone current-scope node. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Deployment Ring Policy",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Policy and Compliance",
+      "reason": "Appears to represent: Phased deployment policy object. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a rollout policy/configuration object. More evidence is needed to decide whether policies are first-class entities or relationship attributes. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Driver Update Service",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Driver delivery/update service. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful external operating-system or vendor service that distributes driver updates; it need not become a Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Endpoint Agent",
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "recommended_decision": "create_core_entity",
+      "target_entity_id": "MGT-010",
+      "future_domain": null,
+      "reason": "Appears to represent: Generic endpoint-management agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Too generic to identify a unique agent type; it may refer to the agent component of Endpoint Manager or another product. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.35,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19",
+      "proposed_category": "Management",
+      "proposed_type": "ManagementTool",
+      "proposed_subtype": "Management Agent"
+    },
+    {
+      "reference_value": "EndpointSecurity Framework",
+      "source_entity_ids": [
+        "OS-007"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Vendor endpoint-security API framework. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to refer to an Apple platform API/framework; it is meaningful compatibility context but not an operating-system entity. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Extended Detection and Response Agent",
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Security Operations",
+      "reason": "Appears to represent: Extended detection and response endpoint agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security product/agent category, but not required as a core compatibility node in this release. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Host Intrusion Detection System",
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Endpoint Security",
+      "reason": "Appears to represent: Host-based intrusion detection system. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security-system category outside the minimum current Domain Layer node set. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Host Intrusion Prevention System",
+      "source_entity_ids": [
+        "SEC-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Endpoint Security",
+      "reason": "Appears to represent: Host-based intrusion prevention system. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security-system category outside the minimum current Domain Layer node set. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Maintenance Window Policy",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Policy and Compliance",
+      "reason": "Appears to represent: Patch/deployment scheduling policy. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a scheduling policy object. Evidence and modeling rules are needed before treating policies as entities rather than attributes. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Management Engine Interface",
+      "source_entity_ids": [
+        "DRV-003"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Hardware management interface. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Appears to be a hardware/platform management interface used by chipset drivers; it is meaningful but outside the five-domain node scope. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "OS Audio Subsystem",
+      "source_entity_ids": [
+        "DRV-002"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Broad operating-system audio capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An overly broad architectural phrase rather than a stable entity; retain the concrete Audio Driver relationship instead.",
+      "evidence": [],
+      "confidence": 0.92,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "OS Deployment Service",
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Software Lifecycle Management",
+      "reason": "Appears to represent: Operating-system provisioning service. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. Could denote a standalone deployment service or an Endpoint Manager capability; the source does not establish a unique identity. Provisional interpretation was requires_more_evidence, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "OS Graphics Subsystem",
+      "source_entity_ids": [
+        "DRV-001"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Broad operating-system graphics capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. An overly broad architectural phrase rather than a stable entity; retain concrete driver and OS entities.",
+      "evidence": [],
+      "confidence": 0.92,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "OS Update Service",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Generic operating-system update capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A generic phrase that can refer to several vendor services and cannot identify one stable entity.",
+      "evidence": [],
+      "confidence": 0.9,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Out-of-Band Management",
+      "source_entity_ids": [
+        "FW-005"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Platform Management",
+      "reason": "Appears to represent: Remote management capability independent of host OS. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A management capability/mode rather than a uniquely identifiable entity.",
+      "evidence": [],
+      "confidence": 0.92,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Patch Compliance Reporting",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Patch-status reporting capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A reporting capability or output, not a standalone entity.",
+      "evidence": [],
+      "confidence": 0.94,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Platform Key Management",
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Platform cryptographic-key management capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A broad security capability phrase, not a stable entity or uniquely named standard in this context.",
+      "evidence": [],
+      "confidence": 0.88,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Platform Power Management",
+      "source_entity_ids": [
+        "FW-003"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Platform-level power-control capability. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A broad platform capability rather than a discrete entity.",
+      "evidence": [],
+      "confidence": 0.92,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Power Management Subsystem",
+      "source_entity_ids": [
+        "DRV-003"
+      ],
+      "recommended_decision": "rejected",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Hardware/OS power-control subsystem. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A broad architectural component phrase without a stable identity.",
+      "evidence": [],
+      "confidence": 0.9,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Remote Control Service",
+      "source_entity_ids": [
+        "MGT-001"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Endpoint Management",
+      "reason": "Appears to represent: Remote endpoint-control service. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful management service category, but not necessary as a standalone current Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Security Information and Event Management Forwarder",
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Security-event forwarding agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful log-forwarding agent role associated with SIEM, but not a core entity for current endpoint reasoning. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Time Series Database",
+      "source_entity_ids": [
+        "MGT-002"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Data Platform",
+      "reason": "Appears to represent: Time-indexed metrics data store. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A coherent data-storage platform category belonging to a future data/observability domain. Provisional interpretation was deferred for Data Platform, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "UEFI Signature Database",
+      "source_entity_ids": [
+        "SEC-002"
+      ],
+      "recommended_decision": "external",
+      "target_entity_id": null,
+      "future_domain": null,
+      "reason": "Appears to represent: Secure Boot signature database. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful UEFI platform data structure, not a standalone firmware entity in the current model. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "User and Entity Behavior Analytics Agent",
+      "source_entity_ids": [
+        "SEC-004"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Security Analytics",
+      "reason": "Appears to represent: Behavior-analytics collection agent. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A meaningful security analytics agent role, but not necessary as a standalone current Domain Layer node. Provisional interpretation was external, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    },
+    {
+      "reference_value": "Vulnerability Management Platform",
+      "source_entity_ids": [
+        "MGT-003"
+      ],
+      "recommended_decision": "deferred",
+      "target_entity_id": null,
+      "future_domain": "Security Operations",
+      "reason": "Appears to represent: Vulnerability discovery and remediation platform. Registry search: No exact canonical, normalized canonical, exact alias, or normalized alias match. A coherent security-operations platform category that should be modeled in a future domain rather than as an endpoint component. Provisional interpretation was deferred for Security Operations, but it cannot be recommended without authoritative verification.",
+      "evidence": [],
+      "confidence": 0.45,
+      "approval_status": "approved",
+      "approved_by": "Harish Karthikeyan",
+      "approval_date": "2026-06-19"
+    }
+  ]
+}

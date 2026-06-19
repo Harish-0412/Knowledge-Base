@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "node_count": 52,
+  "relationship_count": 188,
+  "registry_count_match": true,
+  "reference_count_match": true,
+  "manifest_checksums_match": true,
+  "controlled_labels_only": true,
+  "cypher_non_destructive": true,
+  "errors": []
+}

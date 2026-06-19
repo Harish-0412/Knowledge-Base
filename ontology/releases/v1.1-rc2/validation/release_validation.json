@@ -1,0 +1,16 @@
+{
+  "status": "READY_WITH_WARNINGS",
+  "release_version": "1.1.0-rc2",
+  "schema_version": "1.1.0",
+  "blockers": [],
+  "warnings": [
+    "8 entity reclassification proposals require human approval.",
+    "0 reference occurrences require human review.",
+    "80 reference occurrences are deferred to future domains."
+  ],
+  "source_entity_count": 54,
+  "registry_entity_count": 54,
+  "frozen_v1_0_unchanged": true,
+  "existing_id_stability_percentage": 100.0,
+  "all_outputs_versioned": true
+}

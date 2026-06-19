@@ -114,7 +114,12 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "MGT-002",
@@ -224,7 +229,12 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "MGT-003",
@@ -337,7 +347,12 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "MGT-004",
@@ -363,7 +378,12 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "MGT-005",
@@ -388,7 +408,12 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "MGT-006",
@@ -412,7 +437,12 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "MGT-007",
@@ -435,7 +465,12 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "MGT-008",
@@ -461,6 +496,71 @@
     ],
     "knowledge_category": "Management",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "MGT-009",
+    "name": "Configuration Baseline",
+    "type": "ManagementTool",
+    "subtype": "Configuration Policy Object",
+    "layer": "Management Layer",
+    "description": "Documented and approved collection of configuration settings that represents the desired state for managed endpoints.",
+    "purpose": "Define an approved desired configuration state for evaluation and management workflows.",
+    "aliases": [],
+    "keywords": [
+      "configuration",
+      "baseline",
+      "compliance",
+      "standardization"
+    ],
+    "related_entities": [
+      "Endpoint Manager",
+      "Group Policy",
+      "Endpoint Agent"
+    ],
+    "knowledge_category": "Management",
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "MGT-010",
+    "name": "Endpoint Agent",
+    "type": "ManagementTool",
+    "subtype": "Management Agent",
+    "layer": "Management Layer",
+    "description": "Software installed on an endpoint that communicates with a management or security platform to collect information and enforce approved operations.",
+    "purpose": "Provide an endpoint-resident communication and execution component for approved management or security operations.",
+    "aliases": [
+      "Management Agent",
+      "Client Agent"
+    ],
+    "keywords": [
+      "agent",
+      "endpoint management",
+      "monitoring",
+      "compliance"
+    ],
+    "related_entities": [
+      "Endpoint Manager",
+      "Monitoring Agent",
+      "Patch Manager",
+      "Configuration Baseline"
+    ],
+    "knowledge_category": "Management",
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   }
 ]

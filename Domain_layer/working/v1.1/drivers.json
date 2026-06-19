@@ -75,7 +75,12 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "DRV-002",
@@ -151,7 +156,12 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "Medium",
-    "validation_priority": "Medium"
+    "validation_priority": "Medium",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "DRV-003",
@@ -228,7 +238,12 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "DRV-004",
@@ -311,7 +326,12 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "DRV-005",
@@ -403,7 +423,12 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "Critical",
-    "validation_priority": "Critical"
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "DRV-006",
@@ -428,7 +453,12 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "IndustryStandard",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "DRV-007",
@@ -452,7 +482,12 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   },
   {
     "entity_id": "DRV-008",
@@ -476,6 +511,11 @@
     ],
     "knowledge_category": "Driver",
     "compatibility_relevance": "High",
-    "validation_priority": "High"
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
   }
 ]

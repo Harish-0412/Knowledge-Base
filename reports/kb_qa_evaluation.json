@@ -1,0 +1,1959 @@
+{
+  "summary": {
+    "total": 54,
+    "answered": 50,
+    "partially_answered": 0,
+    "ambiguous": 0,
+    "not_found": 1,
+    "unsupported": 3,
+    "entity_id_correct": 48,
+    "status_correct": 54,
+    "required_terms_missing": [
+      {
+        "test_id": "test-007",
+        "terms": [
+          "Measured Boot"
+        ]
+      },
+      {
+        "test_id": "test-009",
+        "terms": [
+          "Security"
+        ]
+      },
+      {
+        "test_id": "test-029",
+        "terms": [
+          "Secure Boot"
+        ]
+      },
+      {
+        "test_id": "test-030",
+        "terms": [
+          "TPM"
+        ]
+      },
+      {
+        "test_id": "test-036",
+        "terms": [
+          "Security Enhanced Linux"
+        ]
+      },
+      {
+        "test_id": "test-044",
+        "terms": [
+          "Canonical"
+        ]
+      },
+      {
+        "test_id": "test-045",
+        "terms": [
+          "Red Hat Enterprise Linux"
+        ]
+      }
+    ],
+    "forbidden_terms_found": [],
+    "hallucination_failures": [],
+    "per_domain": {
+      "Firmware": {
+        "total": 12,
+        "correct": 12
+      },
+      "Security": {
+        "total": 10,
+        "correct": 10
+      },
+      "Operating_system": {
+        "total": 9,
+        "correct": 9
+      },
+      "Drivers": {
+        "total": 4,
+        "correct": 4
+      },
+      "Management": {
+        "total": 6,
+        "correct": 6
+      }
+    },
+    "per_category": {
+      "entity_definition": {
+        "total": 27,
+        "correct": 24
+      },
+      "purpose": {
+        "total": 2,
+        "correct": 2
+      },
+      "classification": {
+        "total": 3,
+        "correct": 3
+      },
+      "type_subtype": {
+        "total": 4,
+        "correct": 4
+      },
+      "alias_lookup": {
+        "total": 5,
+        "correct": 5
+      },
+      "keyword_lookup": {
+        "total": 3,
+        "correct": 0
+      },
+      "related_entities": {
+        "total": 3,
+        "correct": 3
+      },
+      "cross_domain": {
+        "total": 1,
+        "correct": 0
+      },
+      "negative_lookup": {
+        "total": 3,
+        "correct": 3
+      },
+      "unsupported_compatibility": {
+        "total": 3,
+        "correct": 3
+      }
+    },
+    "entity_identification_accuracy": 88.88888888888889,
+    "expected_status_accuracy": 100.0
+  },
+  "results": [
+    {
+      "test_id": "test-001",
+      "expected": {
+        "test_id": "test-001",
+        "category": "entity_definition",
+        "question": "What is BIOS?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-001"
+        ],
+        "required_answer_terms": [
+          "BIOS",
+          "pre-boot firmware",
+          "POST"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Basic entity definition test"
+      },
+      "actual": {
+        "question": "What is BIOS?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "BIOS: Legacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.",
+        "matched_entity_id": "FW-001",
+        "canonical_name": "BIOS",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-002",
+      "expected": {
+        "test_id": "test-002",
+        "category": "entity_definition",
+        "question": "Define UEFI",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-002"
+        ],
+        "required_answer_terms": [
+          "UEFI",
+          "pre-boot firmware",
+          "BIOS"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Another entity definition test"
+      },
+      "actual": {
+        "question": "Define UEFI",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "UEFI: Modern pre-boot firmware specification and runtime environment that replaces legacy BIOS, operating in 32-bit or 64-bit protected mode with support for GPT partition tables, network stack, cryptographic services, and a modular driver model. Provides a standardized interface between platform firmware and operating systems.",
+        "matched_entity_id": "FW-002",
+        "canonical_name": "UEFI",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-003",
+      "expected": {
+        "test_id": "test-003",
+        "category": "purpose",
+        "question": "What is the purpose of UEFI?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-002"
+        ],
+        "required_answer_terms": [
+          "purpose",
+          "hardware initialization"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Purpose lookup test"
+      },
+      "actual": {
+        "question": "What is the purpose of UEFI?",
+        "category": "purpose",
+        "answer_status": "answered",
+        "answer": "The purpose of UEFI is Platform hardware initialization, Secure Boot enforcement, GPT-based boot management, provision of UEFI runtime services, and extensible pre-OS execution environment for drivers and applications.",
+        "matched_entity_id": "FW-002",
+        "canonical_name": "UEFI",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "purpose"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-004",
+      "expected": {
+        "test_id": "test-004",
+        "category": "classification",
+        "question": "Which layer contains Secure Boot?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-002"
+        ],
+        "required_answer_terms": [
+          "Security Layer"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Layer classification test"
+      },
+      "actual": {
+        "question": "Which layer contains Secure Boot?",
+        "category": "classification",
+        "answer_status": "answered",
+        "answer": "Secure Boot is in the Security Layer.",
+        "matched_entity_id": "SEC-002",
+        "canonical_name": "Secure Boot",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "layer"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-005",
+      "expected": {
+        "test_id": "test-005",
+        "category": "type_subtype",
+        "question": "What type of entity is Linux Kernel?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-008"
+        ],
+        "required_answer_terms": [
+          "OperatingSystem",
+          "Kernel"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Type/subtype test"
+      },
+      "actual": {
+        "question": "What type of entity is Linux Kernel?",
+        "category": "type_subtype",
+        "answer_status": "answered",
+        "answer": "Linux Kernel has type 'OperatingSystem' and subtype 'Kernel'.",
+        "matched_entity_id": "OS-008",
+        "canonical_name": "Linux Kernel",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "type",
+          "subtype"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-006",
+      "expected": {
+        "test_id": "test-006",
+        "category": "alias_lookup",
+        "question": "What does Basic Input/Output System refer to?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-001"
+        ],
+        "required_answer_terms": [
+          "BIOS"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Alias lookup test"
+      },
+      "actual": {
+        "question": "What does Basic Input/Output System refer to?",
+        "category": "alias_lookup",
+        "answer_status": "answered",
+        "answer": "Basic Input/Output System refers to BIOS. Other aliases include: Basic Input/Output System, Legacy BIOS, PC BIOS, ROM BIOS, System BIOS, Traditional BIOS.",
+        "matched_entity_id": "FW-001",
+        "canonical_name": "BIOS",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "aliases",
+          "canonical_name"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-007",
+      "expected": {
+        "test_id": "test-007",
+        "category": "keyword_lookup",
+        "question": "Which entities relate to measured boot?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-010"
+        ],
+        "required_answer_terms": [
+          "Measured Boot"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Keyword lookup test"
+      },
+      "actual": {
+        "question": "Which entities relate to measured boot?",
+        "category": "keyword_lookup",
+        "answer_status": "answered",
+        "answer": "UEFI",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [
+          "keywords"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": [
+          "FW-002"
+        ]
+      },
+      "pass": false,
+      "failures": [
+        "Missing required terms: Measured Boot"
+      ]
+    },
+    {
+      "test_id": "test-008",
+      "expected": {
+        "test_id": "test-008",
+        "category": "related_entities",
+        "question": "Which concepts are related to UEFI?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-002"
+        ],
+        "required_answer_terms": [
+          "BIOS",
+          "GPT",
+          "Secure Boot"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Related entities test"
+      },
+      "actual": {
+        "question": "Which concepts are related to UEFI?",
+        "category": "related_entities",
+        "answer_status": "answered",
+        "answer": "Related concepts for UEFI: BIOS, Secure Boot, TPM, GPT, EFI System Partition, OS Bootloader, Measured Boot, ACPI, SMBIOS, Embedded Controller Firmware, Firmware Update Utility, CSM",
+        "matched_entity_id": "FW-002",
+        "canonical_name": "UEFI",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "related_entities"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-009",
+      "expected": {
+        "test_id": "test-009",
+        "category": "cross_domain",
+        "question": "Which security concepts are referenced by firmware entities?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-001",
+          "SEC-002"
+        ],
+        "required_answer_terms": [
+          "Security",
+          "TPM",
+          "Secure Boot"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Cross-domain lookup test"
+      },
+      "actual": {
+        "question": "Which security concepts are referenced by firmware entities?",
+        "category": "cross_domain",
+        "answer_status": "answered",
+        "answer": "BitLocker, Secure Boot, TPM",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [
+          "related_entities",
+          "knowledge_category"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": false,
+      "failures": [
+        "Missing required terms: Security"
+      ]
+    },
+    {
+      "test_id": "test-010",
+      "expected": {
+        "test_id": "test-010",
+        "category": "negative_lookup",
+        "question": "What is an entity that does not exist in the KB?",
+        "expected_status": "answered",
+        "expected_entity_ids": [],
+        "required_answer_terms": [
+          "does not exist"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Negative lookup test"
+      },
+      "actual": {
+        "question": "What is an entity that does not exist in the KB?",
+        "category": "negative_lookup",
+        "answer_status": "answered",
+        "answer": "The entity 'an entity that does not exist in the KB' does not exist in the current knowledge base.",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-011",
+      "expected": {
+        "test_id": "test-011",
+        "category": "unsupported_compatibility",
+        "question": "Does BIOS version 1.2 support Windows 11?",
+        "expected_status": "unsupported_by_current_kb",
+        "expected_entity_ids": [],
+        "required_answer_terms": [
+          "not explicitly stored"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Unsupported compatibility test"
+      },
+      "actual": {
+        "question": "Does BIOS version 1.2 support Windows 11?",
+        "category": "unsupported_compatibility",
+        "answer_status": "unsupported_by_current_kb",
+        "answer": "Compatibility relationships are not explicitly stored in the current knowledge base.",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [],
+        "confidence": 0.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-012",
+      "expected": {
+        "test_id": "test-012",
+        "category": "entity_definition",
+        "question": "What is Windows?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-001"
+        ],
+        "required_answer_terms": [
+          "Windows",
+          "operating system"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Windows OS definition"
+      },
+      "actual": {
+        "question": "What is Windows?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Windows: Microsoft-developed proprietary general-purpose operating system family built on the Windows NT kernel architecture, providing a hardware abstraction layer, Win32/Win64 subsystem, NTFS file system, and integrated security subsystems including access control, code integrity enforcement, and virtualization-based security. Serves as the dominant enterprise endpoint and server OS platform.",
+        "matched_entity_id": "OS-001",
+        "canonical_name": "Windows",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-013",
+      "expected": {
+        "test_id": "test-013",
+        "category": "entity_definition",
+        "question": "What is Linux?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-004"
+        ],
+        "required_answer_terms": [
+          "Linux",
+          "operating system"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Linux OS definition"
+      },
+      "actual": {
+        "question": "What is Linux?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Linux: Open-source, POSIX-compliant operating system kernel and ecosystem built on the monolithic Linux kernel with loadable module support, providing hardware abstraction, process scheduling, memory management, virtual file system, and networking subsystems. Distributed in numerous vendor-maintained and community-maintained distributions targeting enterprise servers, cloud workloads, developer endpoints, and embedded systems.",
+        "matched_entity_id": "OS-004",
+        "canonical_name": "Linux",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-014",
+      "expected": {
+        "test_id": "test-014",
+        "category": "entity_definition",
+        "question": "What is Driver Signing?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "DRV-006"
+        ],
+        "required_answer_terms": [
+          "Driver Signing"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Driver signing test"
+      },
+      "actual": {
+        "question": "What is Driver Signing?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Driver Signing: Process of digitally signing driver packages to ensure their authenticity and integrity.",
+        "matched_entity_id": "DRV-006",
+        "canonical_name": "Driver Signing",
+        "source_file": "drivers.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-015",
+      "expected": {
+        "test_id": "test-015",
+        "category": "entity_definition",
+        "question": "What is TPM?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-001"
+        ],
+        "required_answer_terms": [
+          "TPM",
+          "Trusted Platform Module"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "TPM definition test"
+      },
+      "actual": {
+        "question": "What is TPM?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "TPM: Trusted Platform Module (TPM) hardware component providing a platform root of trust, secure key storage, attestation capabilities, and platform configuration registers. Variants include discrete, firmware (fTPM), integrated, and virtual TPM implementations.",
+        "matched_entity_id": "SEC-001",
+        "canonical_name": "TPM",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-016",
+      "expected": {
+        "test_id": "test-016",
+        "category": "entity_definition",
+        "question": "What is BitLocker?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-009"
+        ],
+        "required_answer_terms": [
+          "encryption"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "BitLocker test"
+      },
+      "actual": {
+        "question": "What is BitLocker?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "BitLocker: Full-disk encryption feature in Windows that protects data by encrypting entire volumes.",
+        "matched_entity_id": "SEC-009",
+        "canonical_name": "BitLocker",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-017",
+      "expected": {
+        "test_id": "test-017",
+        "category": "entity_definition",
+        "question": "What is FileVault?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-008"
+        ],
+        "required_answer_terms": [
+          "encryption"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "FileVault test"
+      },
+      "actual": {
+        "question": "What is FileVault?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "FileVault: Full-disk encryption feature in macOS that protects data on startup disks.",
+        "matched_entity_id": "SEC-008",
+        "canonical_name": "FileVault",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-018",
+      "expected": {
+        "test_id": "test-018",
+        "category": "entity_definition",
+        "question": "What is Endpoint Manager?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "MGT-001"
+        ],
+        "required_answer_terms": [
+          "Endpoint Manager",
+          "management"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Endpoint manager test"
+      },
+      "actual": {
+        "question": "What is Endpoint Manager?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Endpoint Manager: Centralized enterprise management platform that provides unified lifecycle management of endpoint devices including inventory discovery, OS deployment, application distribution, configuration enforcement, compliance assessment, patch management, remote control, and policy-based management across heterogeneous endpoint estates. Operates through a combination of agent-based and agentless communication channels integrating with directory services, PKI, and cloud management backends.",
+        "matched_entity_id": "MGT-001",
+        "canonical_name": "Endpoint Manager",
+        "source_file": "management.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-019",
+      "expected": {
+        "test_id": "test-019",
+        "category": "alias_lookup",
+        "question": "What does EFI refer to?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-002"
+        ],
+        "required_answer_terms": [
+          "UEFI"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "EFI alias test"
+      },
+      "actual": {
+        "question": "What does EFI refer to?",
+        "category": "alias_lookup",
+        "answer_status": "answered",
+        "answer": "EFI refers to UEFI. Other aliases include: EFI, Extensible Firmware Interface, UEFI BIOS, UEFI Firmware, UEFI Platform Firmware, Unified Extensible Firmware Interface.",
+        "matched_entity_id": "FW-002",
+        "canonical_name": "UEFI",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "aliases",
+          "canonical_name"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-020",
+      "expected": {
+        "test_id": "test-020",
+        "category": "alias_lookup",
+        "question": "What does AD refer to?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "MGT-004"
+        ],
+        "required_answer_terms": [
+          "Active Directory"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "AD alias test"
+      },
+      "actual": {
+        "question": "What does AD refer to?",
+        "category": "alias_lookup",
+        "answer_status": "answered",
+        "answer": "AD refers to Active Directory. Other aliases include: AD.",
+        "matched_entity_id": "MGT-004",
+        "canonical_name": "Active Directory",
+        "source_file": "management.json",
+        "evidence_fields": [
+          "aliases",
+          "canonical_name"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-021",
+      "expected": {
+        "test_id": "test-021",
+        "category": "alias_lookup",
+        "question": "What does GPO refer to?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "MGT-005"
+        ],
+        "required_answer_terms": [
+          "Group Policy"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "GPO alias test"
+      },
+      "actual": {
+        "question": "What does GPO refer to?",
+        "category": "alias_lookup",
+        "answer_status": "answered",
+        "answer": "GPO refers to Group Policy. Other aliases include: GPO.",
+        "matched_entity_id": "MGT-005",
+        "canonical_name": "Group Policy",
+        "source_file": "management.json",
+        "evidence_fields": [
+          "aliases",
+          "canonical_name"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-022",
+      "expected": {
+        "test_id": "test-022",
+        "category": "alias_lookup",
+        "question": "What does WSUS refer to?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "MGT-006"
+        ],
+        "required_answer_terms": [
+          "Windows Server Update Services"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "WSUS alias test"
+      },
+      "actual": {
+        "question": "What does WSUS refer to?",
+        "category": "alias_lookup",
+        "answer_status": "answered",
+        "answer": "WSUS refers to WSUS. Other aliases include: Windows Server Update Services.",
+        "matched_entity_id": "MGT-006",
+        "canonical_name": "WSUS",
+        "source_file": "management.json",
+        "evidence_fields": [
+          "aliases",
+          "canonical_name"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-023",
+      "expected": {
+        "test_id": "test-023",
+        "category": "purpose",
+        "question": "What is the purpose of BIOS?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-001"
+        ],
+        "required_answer_terms": [
+          "hardware initialization"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "BIOS purpose test"
+      },
+      "actual": {
+        "question": "What is the purpose of BIOS?",
+        "category": "purpose",
+        "answer_status": "answered",
+        "answer": "The purpose of BIOS is Hardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.",
+        "matched_entity_id": "FW-001",
+        "canonical_name": "BIOS",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "purpose"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-024",
+      "expected": {
+        "test_id": "test-024",
+        "category": "classification",
+        "question": "Which layer contains Windows 11?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-003"
+        ],
+        "required_answer_terms": [
+          "Operating System Layer"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Windows 11 layer test"
+      },
+      "actual": {
+        "question": "Which layer contains Windows 11?",
+        "category": "classification",
+        "answer_status": "answered",
+        "answer": "Windows 11 is in the Operating System Layer.",
+        "matched_entity_id": "OS-003",
+        "canonical_name": "Windows 11",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "layer"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-025",
+      "expected": {
+        "test_id": "test-025",
+        "category": "classification",
+        "question": "Which layer contains Graphics Driver?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "DRV-001"
+        ],
+        "required_answer_terms": [
+          "Driver Layer"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Driver layer test"
+      },
+      "actual": {
+        "question": "Which layer contains Graphics Driver?",
+        "category": "classification",
+        "answer_status": "answered",
+        "answer": "Graphics Driver is in the Driver Layer.",
+        "matched_entity_id": "DRV-001",
+        "canonical_name": "Graphics Driver",
+        "source_file": "drivers.json",
+        "evidence_fields": [
+          "layer"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-026",
+      "expected": {
+        "test_id": "test-026",
+        "category": "type_subtype",
+        "question": "What type of entity is Windows?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-001"
+        ],
+        "required_answer_terms": [
+          "OperatingSystem"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Windows type test"
+      },
+      "actual": {
+        "question": "What type of entity is Windows?",
+        "category": "type_subtype",
+        "answer_status": "answered",
+        "answer": "Windows has type 'OperatingSystem' and subtype 'Operating System Family'.",
+        "matched_entity_id": "OS-001",
+        "canonical_name": "Windows",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "type",
+          "subtype"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-027",
+      "expected": {
+        "test_id": "test-027",
+        "category": "type_subtype",
+        "question": "What type of entity is Secure Boot?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-002"
+        ],
+        "required_answer_terms": [
+          "SecurityComponent"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Secure Boot type test"
+      },
+      "actual": {
+        "question": "What type of entity is Secure Boot?",
+        "category": "type_subtype",
+        "answer_status": "answered",
+        "answer": "Secure Boot has type 'SecurityComponent' and subtype 'Boot Security Feature'.",
+        "matched_entity_id": "SEC-002",
+        "canonical_name": "Secure Boot",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "type",
+          "subtype"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-028",
+      "expected": {
+        "test_id": "test-028",
+        "category": "type_subtype",
+        "question": "What type of entity is Patch Manager?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "MGT-003"
+        ],
+        "required_answer_terms": [
+          "ManagementTool"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Patch manager type test"
+      },
+      "actual": {
+        "question": "What type of entity is Patch Manager?",
+        "category": "type_subtype",
+        "answer_status": "answered",
+        "answer": "Patch Manager has type 'ManagementTool' and subtype 'Patch Management Tool'.",
+        "matched_entity_id": "MGT-003",
+        "canonical_name": "Patch Manager",
+        "source_file": "management.json",
+        "evidence_fields": [
+          "type",
+          "subtype"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-029",
+      "expected": {
+        "test_id": "test-029",
+        "category": "keyword_lookup",
+        "question": "Which entities relate to Secure Boot?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-002",
+          "SEC-002"
+        ],
+        "required_answer_terms": [
+          "Secure Boot"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Secure Boot keyword test"
+      },
+      "actual": {
+        "question": "Which entities relate to Secure Boot?",
+        "category": "keyword_lookup",
+        "answer_status": "answered",
+        "answer": "UEFI, Windows 10",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [
+          "keywords"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": [
+          "FW-002",
+          "OS-002"
+        ]
+      },
+      "pass": false,
+      "failures": [
+        "Missing required terms: Secure Boot"
+      ]
+    },
+    {
+      "test_id": "test-030",
+      "expected": {
+        "test_id": "test-030",
+        "category": "keyword_lookup",
+        "question": "Which entities relate to TPM?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-001"
+        ],
+        "required_answer_terms": [
+          "TPM"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "TPM keyword test"
+      },
+      "actual": {
+        "question": "Which entities relate to TPM?",
+        "category": "keyword_lookup",
+        "answer_status": "answered",
+        "answer": "BitLocker, Measured Boot",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [
+          "keywords"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": [
+          "FW-010",
+          "SEC-009"
+        ]
+      },
+      "pass": false,
+      "failures": [
+        "Missing required terms: TPM"
+      ]
+    },
+    {
+      "test_id": "test-031",
+      "expected": {
+        "test_id": "test-031",
+        "category": "related_entities",
+        "question": "Which concepts are related to BIOS?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-001"
+        ],
+        "required_answer_terms": [
+          "UEFI",
+          "CSM"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "BIOS related entities test"
+      },
+      "actual": {
+        "question": "Which concepts are related to BIOS?",
+        "category": "related_entities",
+        "answer_status": "answered",
+        "answer": "Related concepts for BIOS: UEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility",
+        "matched_entity_id": "FW-001",
+        "canonical_name": "BIOS",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "related_entities"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-032",
+      "expected": {
+        "test_id": "test-032",
+        "category": "related_entities",
+        "question": "Which concepts are related to TPM?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-001"
+        ],
+        "required_answer_terms": [
+          "Secure Boot"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "TPM related entities test"
+      },
+      "actual": {
+        "question": "Which concepts are related to TPM?",
+        "category": "related_entities",
+        "answer_status": "answered",
+        "answer": "Related concepts for TPM: Secure Boot, Secure Enclave, Hardware Root of Trust, Memory Encryption, Physical Unclonable Function, Hardware Security Key",
+        "matched_entity_id": "SEC-001",
+        "canonical_name": "TPM",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "related_entities"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-033",
+      "expected": {
+        "test_id": "test-033",
+        "category": "negative_lookup",
+        "question": "What is a made-up entity that doesn't exist?",
+        "expected_status": "answered",
+        "expected_entity_ids": [],
+        "required_answer_terms": [
+          "does not exist"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Negative lookup test 2"
+      },
+      "actual": {
+        "question": "What is a made-up entity that doesn't exist?",
+        "category": "negative_lookup",
+        "answer_status": "answered",
+        "answer": "The entity 'a made-up entity that doesn't exist' does not exist in the current knowledge base.",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-034",
+      "expected": {
+        "test_id": "test-034",
+        "category": "unsupported_compatibility",
+        "question": "Is Linux compatible with macOS?",
+        "expected_status": "unsupported_by_current_kb",
+        "expected_entity_ids": [],
+        "required_answer_terms": [
+          "not explicitly stored"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Unsupported compatibility test 2"
+      },
+      "actual": {
+        "question": "Is Linux compatible with macOS?",
+        "category": "unsupported_compatibility",
+        "answer_status": "unsupported_by_current_kb",
+        "answer": "Compatibility relationships are not explicitly stored in the current knowledge base.",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [],
+        "confidence": 0.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-035",
+      "expected": {
+        "test_id": "test-035",
+        "category": "unsupported_compatibility",
+        "question": "Does Windows 11 support TPM 2.0?",
+        "expected_status": "unsupported_by_current_kb",
+        "expected_entity_ids": [],
+        "required_answer_terms": [
+          "not explicitly stored"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Unsupported compatibility test 3"
+      },
+      "actual": {
+        "question": "Does Windows 11 support TPM 2.0?",
+        "category": "unsupported_compatibility",
+        "answer_status": "unsupported_by_current_kb",
+        "answer": "Compatibility relationships are not explicitly stored in the current knowledge base.",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [],
+        "confidence": 0.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-036",
+      "expected": {
+        "test_id": "test-036",
+        "category": "entity_definition",
+        "question": "What is SELinux?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-010"
+        ],
+        "required_answer_terms": [
+          "Security Enhanced Linux"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "SELinux test"
+      },
+      "actual": {
+        "question": "What is SELinux?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "SELinux: Security-enhanced Linux module providing mandatory access control policies.",
+        "matched_entity_id": "SEC-010",
+        "canonical_name": "SELinux",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": false,
+      "failures": [
+        "Missing required terms: Security Enhanced Linux"
+      ]
+    },
+    {
+      "test_id": "test-037",
+      "expected": {
+        "test_id": "test-037",
+        "category": "entity_definition",
+        "question": "What is AppArmor?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-011"
+        ],
+        "required_answer_terms": [
+          "AppArmor"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "AppArmor test"
+      },
+      "actual": {
+        "question": "What is AppArmor?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "AppArmor: Linux security module that provides mandatory access control using program profiles.",
+        "matched_entity_id": "SEC-011",
+        "canonical_name": "AppArmor",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-038",
+      "expected": {
+        "test_id": "test-038",
+        "category": "entity_definition",
+        "question": "What is LUKS?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-012"
+        ],
+        "required_answer_terms": [
+          "encryption"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "LUKS test"
+      },
+      "actual": {
+        "question": "What is LUKS?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "LUKS: Linux Unified Key Setup for full-disk encryption.",
+        "matched_entity_id": "SEC-012",
+        "canonical_name": "LUKS",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-039",
+      "expected": {
+        "test_id": "test-039",
+        "category": "entity_definition",
+        "question": "What is WDDM?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "DRV-007"
+        ],
+        "required_answer_terms": [
+          "Windows Display Driver Model"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "WDDM test"
+      },
+      "actual": {
+        "question": "What is WDDM?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "WDDM: Windows Display Driver Model, a graphics driver architecture for Windows.",
+        "matched_entity_id": "DRV-007",
+        "canonical_name": "WDDM",
+        "source_file": "drivers.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-040",
+      "expected": {
+        "test_id": "test-040",
+        "category": "entity_definition",
+        "question": "What is NDIS?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "DRV-008"
+        ],
+        "required_answer_terms": [
+          "Network Driver Interface Specification"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "NDIS test"
+      },
+      "actual": {
+        "question": "What is NDIS?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "NDIS: Network Driver Interface Specification, a network driver architecture for Windows.",
+        "matched_entity_id": "DRV-008",
+        "canonical_name": "NDIS",
+        "source_file": "drivers.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-041",
+      "expected": {
+        "test_id": "test-041",
+        "category": "entity_definition",
+        "question": "What is ACPI?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-006"
+        ],
+        "required_answer_terms": [
+          "Advanced Configuration and Power Interface"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "ACPI test"
+      },
+      "actual": {
+        "question": "What is ACPI?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "ACPI: Advanced Configuration and Power Interface, an open standard for device configuration and power management.",
+        "matched_entity_id": "FW-006",
+        "canonical_name": "ACPI",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-042",
+      "expected": {
+        "test_id": "test-042",
+        "category": "entity_definition",
+        "question": "What is GPT?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-009"
+        ],
+        "required_answer_terms": [
+          "GUID Partition Table"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "GPT test"
+      },
+      "actual": {
+        "question": "What is GPT?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "GPT: GUID Partition Table, a standard for partitioning disks.",
+        "matched_entity_id": "FW-009",
+        "canonical_name": "GPT",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-043",
+      "expected": {
+        "test_id": "test-043",
+        "category": "entity_definition",
+        "question": "What is macOS?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-007"
+        ],
+        "required_answer_terms": [
+          "macOS",
+          "Apple"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "macOS test"
+      },
+      "actual": {
+        "question": "What is macOS?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "macOS: Apple-developed proprietary Unix-based operating system built on the XNU hybrid kernel combining Mach microkernel and BSD subsystems, providing a POSIX-compliant execution environment with a hardware-integrated security architecture including Apple Silicon Secure Enclave, System Integrity Protection, Gatekeeper, Transparency Consent and Control, FileVault full-disk encryption, and a signed kernel extension and system extension model.",
+        "matched_entity_id": "OS-007",
+        "canonical_name": "macOS",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-044",
+      "expected": {
+        "test_id": "test-044",
+        "category": "entity_definition",
+        "question": "What is Ubuntu?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-005"
+        ],
+        "required_answer_terms": [
+          "Canonical"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Ubuntu test"
+      },
+      "actual": {
+        "question": "What is Ubuntu?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Ubuntu: Debian-derived Linux distribution following a time-based release model with regular releases every six months and Long Term Support releases every two years providing five-year maintenance windows. Packages the Linux kernel with APT package management, systemd init system, Snap application delivery, and default desktop and server configurations targeting developer, enterprise endpoint, and cloud deployments.",
+        "matched_entity_id": "OS-005",
+        "canonical_name": "Ubuntu",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": false,
+      "failures": [
+        "Missing required terms: Canonical"
+      ]
+    },
+    {
+      "test_id": "test-045",
+      "expected": {
+        "test_id": "test-045",
+        "category": "entity_definition",
+        "question": "What is RHEL?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-006"
+        ],
+        "required_answer_terms": [
+          "Red Hat Enterprise Linux"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "RHEL test"
+      },
+      "actual": {
+        "question": "What is RHEL?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "RHEL: Commercially supported, RPM-based enterprise Linux distribution derived from Fedora upstream, providing a stable ABI-compatible kernel with backported security patches, extended ten-year lifecycle support, SELinux enforcing mode by default, FIPS 140 validated cryptographic modules, and certified compatibility across enterprise hardware platforms, ISV software stacks, and regulated industry workloads.",
+        "matched_entity_id": "OS-006",
+        "canonical_name": "RHEL",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": false,
+      "failures": [
+        "Missing required terms: Red Hat Enterprise Linux"
+      ]
+    },
+    {
+      "test_id": "test-046",
+      "expected": {
+        "test_id": "test-046",
+        "category": "entity_definition",
+        "question": "What is SIEM?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "MGT-008"
+        ],
+        "required_answer_terms": [
+          "Security Information and Event Management"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "SIEM test"
+      },
+      "actual": {
+        "question": "What is SIEM?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "SIEM: Security Information and Event Management, combines SIM (security information management) and SEM (security event management) functions into one security management system.",
+        "matched_entity_id": "MGT-008",
+        "canonical_name": "SIEM",
+        "source_file": "management.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-047",
+      "expected": {
+        "test_id": "test-047",
+        "category": "entity_definition",
+        "question": "What is EDR Agent?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-004"
+        ],
+        "required_answer_terms": [
+          "EDR Agent"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "EDR test"
+      },
+      "actual": {
+        "question": "What is EDR Agent?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "EDR Agent: Endpoint Detection and Response (EDR) agent that collects telemetry (process, file, network, registry, and memory activity) and provides analysis, hunting, and containment capabilities.",
+        "matched_entity_id": "SEC-004",
+        "canonical_name": "EDR Agent",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-048",
+      "expected": {
+        "test_id": "test-048",
+        "category": "entity_definition",
+        "question": "What is Antivirus?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "SEC-003"
+        ],
+        "required_answer_terms": [
+          "Antivirus"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Antivirus test"
+      },
+      "actual": {
+        "question": "What is Antivirus?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Antivirus: Endpoint security agent that performs signature-based and heuristic scanning, and other detection techniques to identify and mitigate known malware and suspicious files.",
+        "matched_entity_id": "SEC-003",
+        "canonical_name": "Antivirus",
+        "source_file": "security.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-049",
+      "expected": {
+        "test_id": "test-049",
+        "category": "entity_definition",
+        "question": "What is Network Firmware?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-005"
+        ],
+        "required_answer_terms": [
+          "Network Firmware"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Network firmware test"
+      },
+      "actual": {
+        "question": "What is Network Firmware?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Network Firmware: Firmware embedded within network interface controllers, wireless adapters, Bluetooth modules, and network management controllers that governs packet processing, PHY layer operations, protocol offload engines, out-of-band management capabilities, and PXE boot services. Executes autonomously on the device's dedicated processor.",
+        "matched_entity_id": "FW-005",
+        "canonical_name": "Network Firmware",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-050",
+      "expected": {
+        "test_id": "test-050",
+        "category": "entity_definition",
+        "question": "What is Storage Firmware?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "FW-004"
+        ],
+        "required_answer_terms": [
+          "Storage Firmware"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Storage firmware test"
+      },
+      "actual": {
+        "question": "What is Storage Firmware?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Storage Firmware: Firmware embedded within storage devices including HDDs, SSDs, SSDs, NVMe drives, and storage controllers that manages media access, error correction, wear leveling, encryption operations, and interface protocol compliance. Executes on the device's internal processor, independent of the host operating system.",
+        "matched_entity_id": "FW-004",
+        "canonical_name": "Storage Firmware",
+        "source_file": "firmware.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-051",
+      "expected": {
+        "test_id": "test-051",
+        "category": "entity_definition",
+        "question": "What is Windows NT Kernel?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-009"
+        ],
+        "required_answer_terms": [
+          "Windows NT Kernel"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Windows NT Kernel test"
+      },
+      "actual": {
+        "question": "What is Windows NT Kernel?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Windows NT Kernel: Hybrid kernel architecture that forms the core of modern Windows operating systems.",
+        "matched_entity_id": "OS-009",
+        "canonical_name": "Windows NT Kernel",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-052",
+      "expected": {
+        "test_id": "test-052",
+        "category": "entity_definition",
+        "question": "What is XNU Kernel?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-012"
+        ],
+        "required_answer_terms": [
+          "XNU Kernel"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "XNU Kernel test"
+      },
+      "actual": {
+        "question": "What is XNU Kernel?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "XNU Kernel: Hybrid kernel used in macOS and iOS.",
+        "matched_entity_id": "OS-012",
+        "canonical_name": "XNU Kernel",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-053",
+      "expected": {
+        "test_id": "test-053",
+        "category": "entity_definition",
+        "question": "What is Debian?",
+        "expected_status": "answered",
+        "expected_entity_ids": [
+          "OS-011"
+        ],
+        "required_answer_terms": [
+          "Debian"
+        ],
+        "forbidden_answer_terms": [],
+        "notes": "Debian test"
+      },
+      "actual": {
+        "question": "What is Debian?",
+        "category": "entity_definition",
+        "answer_status": "answered",
+        "answer": "Debian: Stable, community-driven Linux distribution known for reliability and wide package availability.",
+        "matched_entity_id": "OS-011",
+        "canonical_name": "Debian",
+        "source_file": "operating_system.json",
+        "evidence_fields": [
+          "canonical_name",
+          "description"
+        ],
+        "confidence": 1.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "test_id": "test-054",
+      "expected": {
+        "test_id": "test-054",
+        "category": "negative_lookup",
+        "question": "What is FakeEntityThatDoesNotExist?",
+        "expected_status": "not_found",
+        "expected_entity_ids": [],
+        "required_answer_terms": [],
+        "forbidden_answer_terms": [],
+        "notes": "Negative lookup test with fake entity"
+      },
+      "actual": {
+        "question": "What is FakeEntityThatDoesNotExist?",
+        "category": "entity_definition",
+        "answer_status": "not_found",
+        "answer": "No matching entity found for 'FakeEntityThatDoesNotExist' in the current knowledge base.",
+        "matched_entity_id": null,
+        "canonical_name": null,
+        "source_file": null,
+        "evidence_fields": [],
+        "confidence": 0.0,
+        "candidate_entity_ids": []
+      },
+      "pass": true,
+      "failures": []
+    }
+  ]
+}
