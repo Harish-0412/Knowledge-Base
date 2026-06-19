@@ -289,7 +289,7 @@ class KnowledgeBaseQA:
 
         elif category == "purpose":
             if domain_entity and "purpose" in domain_entity:
-                answer = f"{entity['canonical_name']} purpose: {domain_entity['purpose']}"
+                answer = f"The purpose of {entity['canonical_name']} is {domain_entity['purpose']}"
                 evidence_fields = ["purpose"]
             else:
                 answer = f"Purpose information not available for {entity['canonical_name']}."
