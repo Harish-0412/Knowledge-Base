@@ -1,0 +1,16 @@
+{
+  "phase": 11,
+  "status": "BLOCKED",
+  "release_version": null,
+  "approved_rule_count": 0,
+  "live_database_modified": false,
+  "production_import_allowed": false,
+  "blocking_issues": [
+    "Phase 10 release manifest is missing",
+    "Phase 10 release is not approved for production import",
+    "Approved compatibility rule artifact is missing",
+    "Approved Phase 10 release contains no rules"
+  ],
+  "required_action": "Complete Phase 9 human decisions and build Phase 10 first",
+  "generated_at": "2026-06-21T00:00:00+05:30"
+}

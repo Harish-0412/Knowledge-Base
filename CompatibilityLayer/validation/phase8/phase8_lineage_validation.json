@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_candidate_count": 42,
+  "accounted_source_candidate_count": 42,
+  "generated_rule_count": 11,
+  "generation_trace_count": 11,
+  "all_generated_rules_traced": true,
+  "errors": []
+}

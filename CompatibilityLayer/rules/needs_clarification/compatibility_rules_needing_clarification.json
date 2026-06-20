@@ -1,0 +1,687 @@
+{
+  "status": "requires_human_review",
+  "source_candidate_count": 32,
+  "generated_at": "2026-06-20T00:00:00+00:00",
+  "items": [
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000361",
+      "source_candidate_ids": [
+        "RCAND-000361"
+      ],
+      "provisional_rule_id": "CRULE-41FE024782708129-001",
+      "reason_codes": [
+        "evidence_unverified",
+        "inconsistent_version_logic",
+        "missing_product_identity",
+        "missing_subject"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Separately, field reports indicate that ProBook and Enterprise Laptop Series units shipped with System Firmware versions"
+      ],
+      "missing_facts": [
+        "evidence_unverified",
+        "inconsistent_version_logic",
+        "missing_product_identity",
+        "missing_subject"
+      ],
+      "source_excerpt": "Separately, field reports indicate that ProBook and Enterprise Laptop Series units shipped with System Firmware versions in the 8.1.x line may report inaccurate battery health percentages following extended sleep cycles. While this does not affect charging safety, IT administrators managing large laptop fleets may wish to prioritize the firmware refresh for these device classes during the v6.4.2 maintenance cycle rather than treating it as a routine, lower-priority update.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000365-SPLIT-01",
+      "source_candidate_ids": [
+        "RCAND-000365-SPLIT-01"
+      ],
+      "provisional_rule_id": "CRULE-4D02B322A3CB9809-001",
+      "reason_codes": [
+        "low_confidence_below_threshold",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Platform Driver Pack 12.5.0 supports Enterprise OS 2025.2 and 2026.1."
+      ],
+      "missing_facts": [
+        "low_confidence_below_threshold",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "source_excerpt": "Platform Driver Pack 12.5.0 supports Enterprise OS 2025.2 and 2026.1.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000365-SPLIT-02",
+      "source_candidate_ids": [
+        "RCAND-000365-SPLIT-02"
+      ],
+      "provisional_rule_id": "CRULE-F77A340BA30BF7E6-001",
+      "reason_codes": [
+        "low_confidence_below_threshold",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Platform Driver Pack 12.5.0 supports Enterprise OS 2025.2 and 2026.1."
+      ],
+      "missing_facts": [
+        "low_confidence_below_threshold",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "source_excerpt": "Platform Driver Pack 12.5.0 supports Enterprise OS 2025.2 and 2026.1.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000367",
+      "source_candidate_ids": [
+        "RCAND-000367"
+      ],
+      "provisional_rule_id": "CRULE-096F192E3CD13927-001",
+      "reason_codes": [
+        "missing_exception_resolution",
+        "missing_product_identity"
+      ],
+      "questions": [],
+      "known_facts": [
+        "EdgeStation Workstations require NIC Firmware 4.2.0 or later when deployed with Platform Driver Pack 12.5.0. This requir"
+      ],
+      "missing_facts": [
+        "missing_exception_resolution",
+        "missing_product_identity"
+      ],
+      "source_excerpt": "EdgeStation Workstations require NIC Firmware 4.2.0 or later when deployed with Platform Driver Pack 12.5.0. This requirement does not apply to ProBook Series, Enterprise Laptop Series, or ComputeNode Servers, which do not ship with the same onboard NIC controller and are exempt from this requirement.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000368",
+      "source_candidate_ids": [
+        "RCAND-000368"
+      ],
+      "provisional_rule_id": "CRULE-B1CF1AB5DEFB1EDB-001",
+      "reason_codes": [
+        "missing_product_identity",
+        "missing_target",
+        "optionality_unclear"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Endpoint Management Agent 3.7.1 supports integration with third-party SIEM connectors certified under the ACME Partner P"
+      ],
+      "missing_facts": [
+        "missing_product_identity",
+        "missing_target",
+        "optionality_unclear"
+      ],
+      "source_excerpt": "Endpoint Management Agent 3.7.1 supports integration with third-party SIEM connectors certified under the ACME Partner Program. This is a tested-but-optional configuration and is not required for standard compliance.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000369",
+      "source_candidate_ids": [
+        "RCAND-000369"
+      ],
+      "provisional_rule_id": "CRULE-3CE148017154304C-001",
+      "reason_codes": [
+        "evidence_unverified",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Field Note (Engineering): Several EdgeStation fleets running Enterprise OS 2025.2 have continued operating on Driver Pac"
+      ],
+      "missing_facts": [
+        "evidence_unverified",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "source_excerpt": "Field Note (Engineering): Several EdgeStation fleets running Enterprise OS 2025.2 have continued operating on Driver Pack 12.4.2 without reported incident and may defer the 12.5.0 upgrade until their next scheduled maintenance window, pending formal certification.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000370",
+      "source_candidate_ids": [
+        "RCAND-000370"
+      ],
+      "provisional_rule_id": "CRULE-6DE6997621D46D9C-001",
+      "reason_codes": [
+        "missing_target"
+      ],
+      "questions": [],
+      "known_facts": [
+        "UNSUP-001 Firmware versions earlier than 8.0.0 are not supported with BIOS 6.4.2."
+      ],
+      "missing_facts": [
+        "missing_target"
+      ],
+      "source_excerpt": "UNSUP-001 Firmware versions earlier than 8.0.0 are not supported with BIOS 6.4.2.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000374",
+      "source_candidate_ids": [
+        "RCAND-000374"
+      ],
+      "provisional_rule_id": "CRULE-BB6E3011E0474E5B-001",
+      "reason_codes": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Workaround: Upgrade System Firmware to version 8.2.1 or later."
+      ],
+      "missing_facts": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "source_excerpt": "Workaround: Upgrade System Firmware to version 8.2.1 or later.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000375",
+      "source_candidate_ids": [
+        "RCAND-000375"
+      ],
+      "provisional_rule_id": "CRULE-1B1541E40B2270C3-001",
+      "reason_codes": [
+        "missing_target"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Devices running Driver Pack 12.3.0 may experience network adapter instability on Enterprise OS 2026.1."
+      ],
+      "missing_facts": [
+        "missing_target"
+      ],
+      "source_excerpt": "Devices running Driver Pack 12.3.0 may experience network adapter instability on Enterprise OS 2026.1.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000376",
+      "source_candidate_ids": [
+        "RCAND-000376"
+      ],
+      "provisional_rule_id": "CRULE-2A9844DAD6ED64E8-001",
+      "reason_codes": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Upgrade Driver Pack to version 12.5.0 or later."
+      ],
+      "missing_facts": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "source_excerpt": "Upgrade Driver Pack to version 12.5.0 or later.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000377",
+      "source_candidate_ids": [
+        "RCAND-000377"
+      ],
+      "provisional_rule_id": "CRULE-CFFCED730286DE12-001",
+      "reason_codes": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Upgrade Security Agent to version 4.8.3."
+      ],
+      "missing_facts": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "source_excerpt": "Upgrade Security Agent to version 4.8.3.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000378",
+      "source_candidate_ids": [
+        "RCAND-000378"
+      ],
+      "provisional_rule_id": "CRULE-EFFE1D4FEB4F4439-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Lifecycle Notice: Security Agent 4.7.x reaches end-of-support on 31 July 2026. After this date, security patches and sig"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Lifecycle Notice: Security Agent 4.7.x reaches end-of-support on 31 July 2026. After this date, security patches and signature updates will no longer be provided for that branch, independent of any compatibility status described elsewhere in this document.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000379",
+      "source_candidate_ids": [
+        "RCAND-000379"
+      ],
+      "provisional_rule_id": "CRULE-EBBD190FE2B41439-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Upgrade BIOS versions earlier than 6.2.0 directly to version 6.4.2."
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Upgrade BIOS versions earlier than 6.2.0 directly to version 6.4.2.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000380",
+      "source_candidate_ids": [
+        "RCAND-000380"
+      ],
+      "provisional_rule_id": "CRULE-CB9D3C05A6473A43-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Upgrade Firmware versions earlier than 8.0.0 to version 8.2.1 before upgrading BIOS."
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Upgrade Firmware versions earlier than 8.0.0 to version 8.2.1 before upgrading BIOS.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000382",
+      "source_candidate_ids": [
+        "RCAND-000382"
+      ],
+      "provisional_rule_id": "CRULE-E676AFB021CC126B-001",
+      "reason_codes": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "questions": [],
+      "known_facts": [
+        "CVE / ID: SEC-2026-001 | Description: Privilege Escalation Vulnerability | Fixed In: BIOS Version 6.4.2"
+      ],
+      "missing_facts": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "source_excerpt": "CVE / ID: SEC-2026-001 | Description: Privilege Escalation Vulnerability | Fixed In: BIOS Version 6.4.2",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000383",
+      "source_candidate_ids": [
+        "RCAND-000383"
+      ],
+      "provisional_rule_id": "CRULE-89E2ED8930C07EF0-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "CVE / ID: SEC-2026-002 | Description: Firmware Authentication Validation Issue | Fixed In: Firmware Version 8.2.1"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "CVE / ID: SEC-2026-002 | Description: Firmware Authentication Validation Issue | Fixed In: Firmware Version 8.2.1",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000384",
+      "source_candidate_ids": [
+        "RCAND-000384"
+      ],
+      "provisional_rule_id": "CRULE-B522705FEA096070-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "CVE / ID: SEC-2026-003 | Description: Endpoint Agent Token Exposure | Fixed In: Security Agent Version 4.8.3"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "CVE / ID: SEC-2026-003 | Description: Endpoint Agent Token Exposure | Fixed In: Security Agent Version 4.8.3",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000385",
+      "source_candidate_ids": [
+        "RCAND-000385"
+      ],
+      "provisional_rule_id": "CRULE-C25DDC072B7406B8-001",
+      "reason_codes": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Component: BIOS | Minimum Version: 6.4.2 | Current Release: 6.4.2"
+      ],
+      "missing_facts": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "source_excerpt": "Component: BIOS | Minimum Version: 6.4.2 | Current Release: 6.4.2",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000386",
+      "source_candidate_ids": [
+        "RCAND-000386"
+      ],
+      "provisional_rule_id": "CRULE-571C9C80B4629243-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Component: Firmware | Minimum Version: 8.2.0 | Current Release: 8.2.1"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Component: Firmware | Minimum Version: 8.2.0 | Current Release: 8.2.1",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000387",
+      "source_candidate_ids": [
+        "RCAND-000387"
+      ],
+      "provisional_rule_id": "CRULE-0341187976A0BFCB-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Component: Driver Pack | Minimum Version: 12.5.0 | Current Release: 12.5.0"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Component: Driver Pack | Minimum Version: 12.5.0 | Current Release: 12.5.0",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000388",
+      "source_candidate_ids": [
+        "RCAND-000388"
+      ],
+      "provisional_rule_id": "CRULE-ABD4CBEDE76146F6-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Component: Security Agent | Minimum Version: 4.8.3 | Current Release: 4.8.3"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Component: Security Agent | Minimum Version: 4.8.3 | Current Release: 4.8.3",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000389",
+      "source_candidate_ids": [
+        "RCAND-000389"
+      ],
+      "provisional_rule_id": "CRULE-FDC3955A78A312AD-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Component: Endpoint Management Agent | Minimum Version: 3.7.0 | Current Release: 3.7.1"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Component: Endpoint Management Agent | Minimum Version: 3.7.0 | Current Release: 3.7.1",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000390",
+      "source_candidate_ids": [
+        "RCAND-000390"
+      ],
+      "provisional_rule_id": "CRULE-A51F0F20391C043B-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Component: Enterprise OS | Minimum Version: 2025.2 | Current Release: 2026.1"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Component: Enterprise OS | Minimum Version: 2025.2 | Current Release: 2026.1",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000391",
+      "source_candidate_ids": [
+        "RCAND-000391"
+      ],
+      "provisional_rule_id": "CRULE-38BEB1EB17B97501-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Condition: BIOS version below 6.4.2 | Action Required: Upgrade BIOS to version 6.4.2"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Condition: BIOS version below 6.4.2 | Action Required: Upgrade BIOS to version 6.4.2",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000392",
+      "source_candidate_ids": [
+        "RCAND-000392"
+      ],
+      "provisional_rule_id": "CRULE-59809E8B573F65FC-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Condition: Firmware version below 8.2.0 | Action Required: Upgrade Firmware to version 8.2.1"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Condition: Firmware version below 8.2.0 | Action Required: Upgrade Firmware to version 8.2.1",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000393",
+      "source_candidate_ids": [
+        "RCAND-000393"
+      ],
+      "provisional_rule_id": "CRULE-D5EFF09B80637142-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Condition: Driver Pack version below 12.5.0 | Action Required: Upgrade Driver Pack to version 12.5.0"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Condition: Driver Pack version below 12.5.0 | Action Required: Upgrade Driver Pack to version 12.5.0",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000394",
+      "source_candidate_ids": [
+        "RCAND-000394"
+      ],
+      "provisional_rule_id": "CRULE-BB1900BEBC8768C5-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Condition: Security Agent version below 4.8.3 | Action Required: Upgrade Security Agent to version 4.8.3"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Condition: Security Agent version below 4.8.3 | Action Required: Upgrade Security Agent to version 4.8.3",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000395",
+      "source_candidate_ids": [
+        "RCAND-000395"
+      ],
+      "provisional_rule_id": "CRULE-96246FE375C0C414-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Condition: Endpoint Mgmt Agent below 3.7.0 | Action Required: Upgrade Endpoint Management Agent to version 3.7.1"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Condition: Endpoint Mgmt Agent below 3.7.0 | Action Required: Upgrade Endpoint Management Agent to version 3.7.1",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000396",
+      "source_candidate_ids": [
+        "RCAND-000396"
+      ],
+      "provisional_rule_id": "CRULE-A70DD8A00A9B7F31-001",
+      "reason_codes": [
+        "schema_gap"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Condition: Enterprise OS below 2025.2 | Action Required: Upgrade Enterprise OS to version 2026.1"
+      ],
+      "missing_facts": [
+        "schema_gap"
+      ],
+      "source_excerpt": "Condition: Enterprise OS below 2025.2 | Action Required: Upgrade Enterprise OS to version 2026.1",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000398",
+      "source_candidate_ids": [
+        "RCAND-000398"
+      ],
+      "provisional_rule_id": "CRULE-90E17364770EA43B-001",
+      "reason_codes": [
+        "missing_target",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Validation checkpoint: confirm firmware reports version 8.2.1 and the device completes a full reboot cycle without exhib"
+      ],
+      "missing_facts": [
+        "missing_target",
+        "rule_type_ambiguous",
+        "source_context_incomplete"
+      ],
+      "source_excerpt": "Validation checkpoint: confirm firmware reports version 8.2.1 and the device completes a full reboot cycle without exhibiting the boot-delay symptoms described in KI-001.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000400",
+      "source_candidate_ids": [
+        "RCAND-000400"
+      ],
+      "provisional_rule_id": "CRULE-9E41E096B973633E-001",
+      "reason_codes": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Validation checkpoint: confirm Driver Pack reports version 12.5.0 and the absence of the network adapter instability des"
+      ],
+      "missing_facts": [
+        "missing_subject",
+        "unknown_applicability"
+      ],
+      "source_excerpt": "Validation checkpoint: confirm Driver Pack reports version 12.5.0 and the absence of the network adapter instability described in KI-002.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    },
+    {
+      "clarification_id": "CLARIF-RULE-RCAND-000401",
+      "source_candidate_ids": [
+        "RCAND-000401"
+      ],
+      "provisional_rule_id": "CRULE-911384630EA08252-001",
+      "reason_codes": [
+        "missing_target"
+      ],
+      "questions": [],
+      "known_facts": [
+        "Devices that skip Step 1 and attempt the BIOS upgrade directly against Firmware 7.9.0 may encounter installation failure"
+      ],
+      "missing_facts": [
+        "missing_target"
+      ],
+      "source_excerpt": "Devices that skip Step 1 and attempt the BIOS upgrade directly against Firmware 7.9.0 may encounter installation failures or the boot-delay condition described in KI-001.",
+      "recommended_action": "Phase 9 human review required before rule can progress to validated state",
+      "review_status": "pending"
+    }
+  ]
+}

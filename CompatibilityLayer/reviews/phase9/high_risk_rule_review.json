@@ -1,0 +1,149 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "high_risk_rule_count": 11,
+  "rules": [
+    {
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "source_candidate_ids": [
+        "RCAND-000360"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "source_candidate_ids": [
+        "RCAND-000362"
+      ],
+      "predicate": "FIXED_BY",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "source_candidate_ids": [
+        "RCAND-000363"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "source_candidate_ids": [
+        "RCAND-000364"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-8C74D7E72507C9FD-001",
+      "source_candidate_ids": [
+        "RCAND-000366"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "source_candidate_ids": [
+        "RCAND-000371"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "source_candidate_ids": [
+        "RCAND-000372"
+      ],
+      "predicate": "CONFLICTS_WITH",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "source_candidate_ids": [
+        "RCAND-000373"
+      ],
+      "predicate": "CONFLICTS_WITH",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "source_candidate_ids": [
+        "RCAND-000381"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "source_candidate_ids": [
+        "RCAND-000397"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    },
+    {
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "source_candidate_ids": [
+        "RCAND-000399"
+      ],
+      "predicate": "REQUIRES",
+      "risk_level": "high",
+      "evidence_policy": "authoritative_required",
+      "evidence_status": "review_required",
+      "recommended_decision": "needs_clarification",
+      "approval_status": "pending",
+      "blocking_review_requirement": "Authoritative evidence and semantic direction must be confirmed by a human reviewer."
+    }
+  ]
+}

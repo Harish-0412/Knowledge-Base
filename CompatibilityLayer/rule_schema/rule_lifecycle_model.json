@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "initial_state": "candidate",
+  "terminal_states": [
+    "rejected",
+    "archived"
+  ],
+  "production_eligible_states": [
+    "approved"
+  ],
+  "gate_states": [
+    "validated",
+    "approved"
+  ],
+  "states": [
+    {
+      "state": "candidate",
+      "display_name": "Candidate",
+      "description": "Extracted or drafted rule awaiting validation. May contain artifacts, low-confidence values, or unresolved references.",
+      "semantic_meaning": "Provisional hypothesis not yet validated.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_next_states": [
+        "validated",
+        "rejected"
+      ],
+      "forbidden_operations": [
+        "Approve without prior validation",
+        "Use in compliance evaluation",
+        "Import to production stores"
+      ],
+      "field_requirements": {
+        "required": [
+          "rule_id",
+          "rule_type",
+          "status",
+          "subject",
+          "predicate",
+          "object",
+          "conditions",
+          "confidence",
+          "severity",
+          "condition_logic",
+          "source_document",
+          "created_timestamp",
+          "updated_timestamp"
+        ],
+        "conditionally_required": []
+      },
+      "validation_requirements": {
+        "automated_validation_required": false,
+        "evidence_required": false
+      },
+      "approval_requirements": {
+        "human_approval_required": false
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": false,
+        "require_justification": false
+      },
+      "retention_policy": "Max 90 days in candidate before mandatory review for rejection"
+    },
+    {
+      "state": "validated",
+      "display_name": "Validated",
+      "description": "Rule has passed automated validation checks. Structurally sound, entity references resolved, version syntax valid, no exact duplicates in approved set.",
+      "semantic_meaning": "Machine-validated awaiting human review.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_next_states": [
+        "approved",
+        "rejected",
+        "candidate"
+      ],
+      "field_requirements": {
+        "required": [
+          "rule_id",
+          "rule_type",
+          "status",
+          "subject",
+          "predicate",
+          "object",
+          "conditions",
+          "evidence",
+          "remediations",
+          "confidence",
+          "severity",
+          "condition_logic",
+          "source_document",
+          "created_timestamp",
+          "updated_timestamp"
+        ],
+        "conditionally_required": []
+      },
+      "validation_requirements": {
+        "automated_validation_required": true,
+        "checks": [
+          "all_required_fields_present",
+          "entity_references_resolvable",
+          "version_syntax_valid",
+          "no_exact_duplicate_in_approved_set",
+          "condition_logic_consistent",
+          "confidence_meets_rule_type_minimum",
+          "source_document_registered"
+        ],
+        "evidence_required": false
+      },
+      "approval_requirements": {
+        "human_approval_required": false
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": false,
+        "require_justification": false,
+        "store_validation_report_ref": true
+      }
+    },
+    {
+      "state": "approved",
+      "display_name": "Approved",
+      "description": "Formally approved by authorized human reviewer. Eligible for production import and compliance evaluation. Immutable after approval.",
+      "semantic_meaning": "Authoritative production rule. Single production-eligible state.",
+      "production_eligible": true,
+      "import_to_neo4j": true,
+      "import_to_qdrant": true,
+      "allowed_next_states": [
+        "deprecated",
+        "superseded"
+      ],
+      "forbidden_operations": [
+        "Modify rule logic or conditions without creating superseding rule",
+        "Demote to candidate"
+      ],
+      "field_requirements": {
+        "required": [
+          "rule_id",
+          "rule_type",
+          "status",
+          "subject",
+          "predicate",
+          "object",
+          "conditions",
+          "evidence",
+          "remediations",
+          "confidence",
+          "severity",
+          "condition_logic",
+          "source_document",
+          "created_timestamp",
+          "updated_timestamp",
+          "approved_by",
+          "approved_at"
+        ],
+        "conditionally_required": [
+          "approved_by",
+          "approved_at"
+        ]
+      },
+      "validation_requirements": {
+        "automated_validation_required": true,
+        "evidence_required": true,
+        "minimum_evidence_count": 1
+      },
+      "approval_requirements": {
+        "human_approval_required": true,
+        "approved_by_field_required": true,
+        "approved_at_field_required": true,
+        "verification_status_required": "human_approved"
+      },
+      "release_requirements": [
+        "All required fields populated",
+        "Automated validation PASS",
+        "At least 1 evidence record",
+        "No unverified_value tags unless cleared",
+        "approved_by and approved_at non-null",
+        "confidence >= rule_type minimum threshold"
+      ],
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "store_approval_record": true
+      }
+    },
+    {
+      "state": "deprecated",
+      "display_name": "Deprecated",
+      "description": "Previously approved rule being phased out. Retained for audit continuity but not evaluated in compliance scans.",
+      "semantic_meaning": "Phased-out rule retained for audit.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_next_states": [
+        "archived",
+        "approved"
+      ],
+      "approval_requirements": {
+        "human_approval_required": true,
+        "requires_deprecation_reason": true,
+        "deprecation_reason_values": [
+          "superseded_by_new_rule",
+          "vendor_advisory_withdrawn",
+          "component_end_of_life",
+          "policy_change",
+          "scope_change",
+          "incorrect_extraction"
+        ],
+        "reinstatement_requires_escalation": true
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "require_deprecation_reason": true
+      },
+      "retention_policy": "24 months post-deprecation before archival"
+    },
+    {
+      "state": "rejected",
+      "display_name": "Rejected",
+      "description": "Rule determined invalid, duplicate, or unsupported. Not used in compliance evaluations. May return to candidate if rejection reason is resolved.",
+      "semantic_meaning": "Invalid rule retained for audit. Soft terminal state.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_next_states": [
+        "candidate"
+      ],
+      "approval_requirements": {
+        "human_approval_required": false,
+        "requires_rejection_reason": true,
+        "rejection_reason_values": [
+          "duplicate_of_existing_approved_rule",
+          "insufficient_evidence",
+          "low_confidence_below_threshold",
+          "contradicts_existing_approved_rule",
+          "component_reference_unresolvable",
+          "source_document_unreliable",
+          "extraction_artifact_not_a_real_rule",
+          "out_of_scope"
+        ]
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "require_rejection_reason": true
+      },
+      "retention_policy": "Never deleted; retained permanently for audit purposes"
+    },
+    {
+      "state": "superseded",
+      "display_name": "Superseded",
+      "description": "Rule formally replaced by a successor rule via SUPERSEDES relationship. Preserved for provenance chain integrity. Cannot be reinstated.",
+      "semantic_meaning": "Replaced rule preserved for provenance. Not evaluated in production.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_next_states": [
+        "archived"
+      ],
+      "approval_requirements": {
+        "human_approval_required": false,
+        "requires_superseding_rule_id": true,
+        "superseding_rule_must_be_approved": true
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": false,
+        "require_justification": false,
+        "record_superseding_rule_id": true
+      },
+      "retention_policy": "12 months post-supersession before archival"
+    },
+    {
+      "state": "archived",
+      "display_name": "Archived",
+      "description": "Permanently retired rule. Read-only historical record. Terminal state - no further transitions permitted without governance escalation.",
+      "semantic_meaning": "Permanently retired. Hard terminal state.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_next_states": [],
+      "approval_requirements": {
+        "human_approval_required": true,
+        "requires_archive_reason": true,
+        "archive_reason_values": [
+          "retention_period_expired",
+          "component_decommissioned",
+          "document_source_withdrawn",
+          "superseding_rule_has_full_coverage",
+          "governance_decision"
+        ]
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "require_archive_reason": true,
+        "retain_record_permanently": true
+      }
+    }
+  ],
+  "allowed_transitions": [
+    {
+      "from": "candidate",
+      "to": "validated",
+      "trigger": "Automated validation pipeline completes without errors."
+    },
+    {
+      "from": "candidate",
+      "to": "rejected",
+      "trigger": "Manual review determines rule is invalid, duplicate, or unextractable."
+    },
+    {
+      "from": "validated",
+      "to": "approved",
+      "trigger": "Human reviewer confirms accuracy, source traceability, and operational appropriateness."
+    },
+    {
+      "from": "validated",
+      "to": "rejected",
+      "trigger": "Human reviewer determines rule is incorrect or conflicts with existing approved rules."
+    },
+    {
+      "from": "validated",
+      "to": "candidate",
+      "trigger": "Human reviewer identifies rework needed (missing evidence, ambiguous conditions)."
+    },
+    {
+      "from": "approved",
+      "to": "deprecated",
+      "trigger": "Policy change, vendor withdrawal, or new release renders rule obsolete."
+    },
+    {
+      "from": "approved",
+      "to": "superseded",
+      "trigger": "New approved rule explicitly supersedes this one via SUPERSEDES relationship."
+    },
+    {
+      "from": "deprecated",
+      "to": "archived",
+      "trigger": "Retention period expires or rule has no remaining audit value."
+    },
+    {
+      "from": "deprecated",
+      "to": "approved",
+      "trigger": "Governance escalation reverses deprecation decision (exceptional path)."
+    },
+    {
+      "from": "superseded",
+      "to": "archived",
+      "trigger": "Retention period expires or provenance reference no longer needed."
+    },
+    {
+      "from": "rejected",
+      "to": "candidate",
+      "trigger": "Rejection reason resolved and rule is ready for re-validation."
+    }
+  ],
+  "forbidden_transitions": [
+    {
+      "from": "archived",
+      "to": "any",
+      "reason": "Archived is a hard terminal state. Rules cannot be reactivated from archive."
+    },
+    {
+      "from": "approved",
+      "to": "candidate",
+      "reason": "Approved rules cannot be demoted to candidate directly. Must be deprecated first."
+    },
+    {
+      "from": "superseded",
+      "to": "approved",
+      "reason": "Superseded rules cannot be re-approved. A new rule must be created as successor."
+    },
+    {
+      "from": "rejected",
+      "to": "approved",
+      "reason": "Rejected rules cannot be directly approved. Must re-enter validation pipeline via candidate."
+    },
+    {
+      "from": "rejected",
+      "to": "validated",
+      "reason": "Rejected rules must return to candidate before re-validation."
+    }
+  ]
+}

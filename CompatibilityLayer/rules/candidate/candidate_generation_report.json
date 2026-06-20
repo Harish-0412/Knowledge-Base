@@ -1,0 +1,26 @@
+{
+  "source_candidate_count": 42,
+  "corrected_candidate_count": 43,
+  "generated_rule_count": 11,
+  "clarification_count": 32,
+  "eligible_used": 11,
+  "rules_by_type": {
+    "min_version_constraint": 4,
+    "known_issue_fixed": 1,
+    "readiness_requirement": 4,
+    "incompatible_combination": 2
+  },
+  "rules_by_predicate": {
+    "REQUIRES": 8,
+    "FIXED_BY": 1,
+    "CONFLICTS_WITH": 2
+  },
+  "rules_by_outcome": {
+    "conditional": 9,
+    "prohibited": 2
+  },
+  "collision_count": 0,
+  "deterministic": true,
+  "production_import_allowed": false,
+  "generated_at": "2026-06-20T00:00:00+00:00"
+}

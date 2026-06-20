@@ -23,23 +23,26 @@
       "name": "rule_id",
       "datatype": "string",
       "required": true,
-      "description": "Globally unique, stable identifier for this compatibility rule. Immutable after creation. Used as the primary key in Neo4j nodes, Qdrant payloads, and all cross-system references.",
+      "description": "Globally unique, stable, immutable identifier. Primary key in Neo4j nodes and Qdrant payloads.",
       "pattern": "^CRULE-[A-Z0-9]+-[0-9]{3,}$",
-      "examples": ["CRULE-FW-BIOS-001", "CRULE-DRV-OS-042", "CRULE-SEC-MGT-007"],
+      "examples": [
+        "CRULE-FW-BIOS-001",
+        "CRULE-DRV-OS-042"
+      ],
       "validation_constraints": [
         "Must match pattern ^CRULE-[A-Z0-9]+-[0-9]{3,}$",
-        "Must be unique across all rules in all lifecycle states",
-        "Must not be recycled or reassigned after any lifecycle transition",
+        "Must be globally unique across all lifecycle states",
+        "Must not be recycled after any lifecycle transition",
         "Must not contain spaces or lowercase characters"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {rule_id}",
-      "qdrant_mapping": "Payload field rule_id (keyword, filterable)"
+      "qdrant_mapping": "Payload field rule_id (keyword, filterable, primary key)"
     },
     "rule_type": {
       "name": "rule_type",
-      "datatype": "string (enum)",
+      "datatype": "string",
       "required": true,
-      "description": "Classification of the rule semantic type. Determines which validation logic, evaluation model, and required fields apply. Sourced from the compatibility_rule_types.json ontology.",
+      "description": "Semantic classification determining validation logic, evaluation model, and required field set.",
       "allowed_values": [
         "min_version_constraint",
         "known_issue_fixed",
@@ -48,20 +51,23 @@
         "incompatible_combination",
         "update_order_constraint"
       ],
-      "examples": ["min_version_constraint", "known_issue_fixed", "update_order_constraint"],
+      "examples": [
+        "min_version_constraint",
+        "known_issue_fixed"
+      ],
       "validation_constraints": [
         "Must be one of the 6 registered rule types",
-        "Must not be null or empty",
-        "Determines minimum confidence threshold for the validation gate"
+        "Determines minimum confidence threshold for validation gate",
+        "Must not be null or empty"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {rule_type}",
       "qdrant_mapping": "Payload field rule_type (keyword, filterable)"
     },
     "status": {
       "name": "status",
-      "datatype": "string (enum)",
+      "datatype": "string",
       "required": true,
-      "description": "Current lifecycle state of the rule. Controls production eligibility, import permissions, and allowed operations. Maps to the lifecycle state machine in compatibility_lifecycle.json.",
+      "description": "Current lifecycle state. Controls production eligibility, import permissions, and allowed operations.",
       "allowed_values": [
         "candidate",
         "validated",
@@ -72,12 +78,14 @@
         "archived"
       ],
       "default_value": "candidate",
-      "examples": ["candidate", "approved", "deprecated"],
+      "examples": [
+        "candidate",
+        "approved"
+      ],
       "validation_constraints": [
         "Must be one of the 7 defined lifecycle states",
-        "Only approved rules are eligible for Neo4j and Qdrant import",
-        "State transitions must follow the allowed transition matrix",
-        "Must not be null"
+        "Only 'approved' rules are eligible for Neo4j and Qdrant import",
+        "Transitions must follow the allowed transition matrix"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {status}",
       "qdrant_mapping": "Payload field status (keyword, filterable)"
@@ -86,300 +94,680 @@
       "name": "subject",
       "datatype": "object",
       "required": true,
-      "description": "The primary entity the rule applies to. Represents the component being evaluated or constrained by this rule. Must reference a valid RC2 entity_id from the canonical entity registry.",
+      "description": "The primary entity the rule applies to. References a Layer 1 RC2 canonical entity.",
       "object_schema": {
         "entity_id": {
           "datatype": "string",
           "required": true,
-          "description": "RC2 canonical entity identifier. Must match pattern ^[A-Z]{2,3}-[0-9]{3}$.",
-          "pattern": "^[A-Z]{2,3}-[0-9]{3}$"
+          "pattern": "^[A-Z]{2,3}-[0-9]{3}$",
+          "description": "RC2 canonical entity ID"
         },
         "component_name": {
           "datatype": "string",
           "required": true,
-          "description": "Human-readable canonical name of the subject entity (e.g., BIOS, Driver Pack)."
+          "description": "Human-readable component name matching RC2 canonical_name or alias"
+        },
+        "knowledge_category": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "Driver",
+            "Firmware",
+            "Operating System",
+            "Security",
+            "Management"
+          ]
         },
         "version_constraint": {
           "datatype": "object",
-          "required": false,
-          "description": "Version constraint applied to the subject entity during rule evaluation.",
-          "properties": {
-            "operator": {"datatype": "string", "description": "Comparison operator: >=, ==, >, <, <=, !=, in, exists"},
-            "version_normalized": {"datatype": "string", "description": "Normalized version string (e.g., 6.4.2, 2026.1, 12.5.0)"},
-            "version_scheme": {"datatype": "string", "description": "Version scheme: semantic, wildcard, named_release, calendar, unknown"},
-            "requirement_kind": {"datatype": "string", "description": "Kind: min_version, max_version, exact_version, version_range, required_present, must_not_be_present, readiness"}
+          "required": true,
+          "fields": {
+            "operator": {
+              "datatype": "string",
+              "required": true,
+              "allowed_values": [
+                "==",
+                "!=",
+                ">=",
+                "<=",
+                ">",
+                "<",
+                "in",
+                "not_in",
+                "exists",
+                "matches"
+              ]
+            },
+            "version_normalized": {
+              "datatype": "string",
+              "required": true,
+              "description": "Normalized version string e.g. 12.4.0"
+            },
+            "version_scheme": {
+              "datatype": "string",
+              "required": true,
+              "allowed_values": [
+                "semantic",
+                "wildcard",
+                "named_release",
+                "calendar",
+                "unknown"
+              ]
+            },
+            "requirement_kind": {
+              "datatype": "string",
+              "required": true,
+              "allowed_values": [
+                "min_version",
+                "max_version",
+                "exact_version",
+                "version_range",
+                "required_present",
+                "must_not_be_present",
+                "readiness"
+              ]
+            }
           }
         }
       },
       "examples": [
-        {"entity_id": "FW-001", "component_name": "BIOS", "version_constraint": {"operator": ">=", "version_normalized": "6.4.2", "version_scheme": "semantic", "requirement_kind": "min_version"}},
-        {"entity_id": "DRV-009", "component_name": "Driver Pack", "version_constraint": {"operator": "==", "version_normalized": "12.5.0", "version_scheme": "semantic", "requirement_kind": "exact_version"}},
-        {"entity_id": "OS-013", "component_name": "Enterprise OS", "version_constraint": {"operator": ">=", "version_normalized": "2025.2", "version_scheme": "calendar", "requirement_kind": "min_version"}}
+        {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        }
       ],
       "validation_constraints": [
-        "entity_id must exist in the RC2 canonical entity registry",
-        "entity_id must match pattern ^[A-Z]{2,3}-[0-9]{3}$",
-        "component_name must not be null or empty",
-        "version_constraint.operator must be from the allowed operators for the rule_type",
-        "version_constraint.version_scheme must be one of: semantic, wildcard, named_release, calendar, unknown"
+        "entity_id must exist in RC2 canonical_entity_registry v1.1.0-rc2",
+        "version_normalized must be valid for the declared version_scheme",
+        "operator must be from the allowed operator set"
       ],
-      "neo4j_mapping": "Resolved via TARGETS relationship to :Entity node with matching entity_id",
-      "qdrant_mapping": "Payload fields subject_entity_id (keyword), subject_component_name (keyword)"
+      "neo4j_mapping": "Connected via :TARGETS edge to Layer 1 entity node",
+      "qdrant_mapping": "Payload fields subject_entity_id, subject_component_name, subject_version (keyword, filterable)"
     },
     "predicate": {
       "name": "predicate",
-      "datatype": "string (enum)",
+      "datatype": "string",
       "required": true,
-      "description": "The semantic relationship being asserted between the subject and object entities. Must be drawn from the 20-term controlled vocabulary defined in compatibility_relationships.json.",
+      "description": "Semantic relationship being asserted between subject and object. Must be from the controlled vocabulary.",
       "allowed_values": [
-        "REQUIRES", "SUPPORTS", "CONFLICTS_WITH", "FIXED_BY", "UPGRADE_TO",
-        "DEPENDS_ON", "REMEDIATES", "BLOCKS", "SUPERSEDES", "REFERENCES",
-        "HAS_CONDITION", "HAS_EXCEPTION", "HAS_EVIDENCE", "HAS_REMEDIATION",
-        "VALIDATED_BY", "APPROVED_BY", "DERIVED_FROM", "REPLACES", "TARGETS",
+        "REQUIRES",
+        "SUPPORTS",
+        "CONFLICTS_WITH",
+        "FIXED_BY",
+        "UPGRADE_TO",
+        "DEPENDS_ON",
+        "REMEDIATES",
+        "BLOCKS",
+        "SUPERSEDES",
+        "REFERENCES",
+        "HAS_CONDITION",
+        "HAS_EXCEPTION",
+        "HAS_EVIDENCE",
+        "HAS_REMEDIATION",
+        "VALIDATED_BY",
+        "APPROVED_BY",
+        "DERIVED_FROM",
+        "REPLACES",
+        "TARGETS",
         "SUPPORTED_BY"
       ],
-      "examples": ["REQUIRES", "CONFLICTS_WITH", "FIXED_BY"],
-      "validation_constraints": [
-        "Must be one of the 20 registered relationship names",
-        "Must not be null or empty",
-        "Must be semantically consistent with the rule_type (e.g., FIXED_BY for known_issue_fixed)"
+      "examples": [
+        "REQUIRES",
+        "CONFLICTS_WITH",
+        "FIXED_BY"
       ],
-      "neo4j_mapping": "Relationship type on the primary edge :CompatibilityRule -[PREDICATE]-> :Entity",
+      "validation_constraints": [
+        "Must be one of the 20 registered relationship predicates",
+        "Must not be null or empty",
+        "Directionality is always source (subject) to target (object)"
+      ],
+      "neo4j_mapping": "Neo4j relationship type between subject and object nodes",
       "qdrant_mapping": "Payload field predicate (keyword, filterable)"
     },
     "object": {
       "name": "object",
       "datatype": "object",
       "required": true,
-      "description": "The secondary entity the rule asserts a relationship to. Same structure as subject. Represents the component that the predicate points to.",
+      "description": "The secondary entity the rule constrains or relates. Same structure as subject field.",
       "object_schema": {
         "entity_id": {
           "datatype": "string",
           "required": true,
-          "description": "RC2 canonical entity identifier. Must match pattern ^[A-Z]{2,3}-[0-9]{3}$.",
           "pattern": "^[A-Z]{2,3}-[0-9]{3}$"
         },
         "component_name": {
           "datatype": "string",
+          "required": true
+        },
+        "knowledge_category": {
+          "datatype": "string",
           "required": true,
-          "description": "Human-readable canonical name of the object entity."
+          "allowed_values": [
+            "Driver",
+            "Firmware",
+            "Operating System",
+            "Security",
+            "Management"
+          ]
         },
         "version_constraint": {
           "datatype": "object",
-          "required": false,
-          "description": "Version constraint applied to the object entity.",
-          "properties": {
-            "operator": {"datatype": "string", "description": "Comparison operator"},
-            "version_normalized": {"datatype": "string", "description": "Normalized version string"},
-            "version_scheme": {"datatype": "string", "description": "Version scheme"},
-            "requirement_kind": {"datatype": "string", "description": "Requirement kind"}
+          "required": true,
+          "fields": {
+            "operator": {
+              "datatype": "string",
+              "required": true
+            },
+            "version_normalized": {
+              "datatype": "string",
+              "required": true
+            },
+            "version_scheme": {
+              "datatype": "string",
+              "required": true
+            },
+            "requirement_kind": {
+              "datatype": "string",
+              "required": true
+            }
           }
         }
       },
       "examples": [
-        {"entity_id": "FW-013", "component_name": "System Firmware", "version_constraint": {"operator": ">=", "version_normalized": "8.2.1", "version_scheme": "semantic", "requirement_kind": "min_version"}},
-        {"entity_id": "SEC-004", "component_name": "EDR Agent", "version_constraint": {"operator": ">=", "version_normalized": "4.8.3", "version_scheme": "semantic", "requirement_kind": "min_version"}},
-        {"entity_id": "MGT-010", "component_name": "Endpoint Agent", "version_constraint": {"operator": ">=", "version_normalized": "3.7.1", "version_scheme": "semantic", "requirement_kind": "min_version"}}
+        {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        }
       ],
       "validation_constraints": [
-        "entity_id must exist in the RC2 canonical entity registry",
-        "entity_id must match pattern ^[A-Z]{2,3}-[0-9]{3}$",
-        "component_name must not be null or empty",
-        "object.entity_id must be different from subject.entity_id"
+        "entity_id must exist in RC2 canonical_entity_registry v1.1.0-rc2",
+        "Must not be identical to subject (self-referential rules forbidden)",
+        "version_normalized must be valid for the declared version_scheme"
       ],
-      "neo4j_mapping": "Target :Entity node referenced by the primary relationship edge",
-      "qdrant_mapping": "Payload fields object_entity_id (keyword), object_component_name (keyword)"
+      "neo4j_mapping": "Connected via predicate edge to target Layer 1 entity node",
+      "qdrant_mapping": "Payload fields object_entity_id, object_component_name, object_version (keyword, filterable)"
     },
     "conditions": {
       "name": "conditions",
-      "datatype": "array of objects",
+      "datatype": "array",
       "required": true,
-      "description": "Array of conditions that must be satisfied (per condition_logic) for this rule to fire. Universal rules (applying to all contexts) use an empty array. Each condition scopes the rule to a specific system state. Minimum 2 conditions required for incompatible_combination rules.",
+      "description": "Applicability gates. Each condition is a predicate that must be satisfied for the rule to fire. Empty array means rule applies universally.",
       "item_schema": {
-        "condition_id": {"datatype": "string", "required": true, "description": "Unique identifier within this rule, e.g. COND-001"},
-        "entity_id": {"datatype": "string", "required": true, "description": "RC2 entity_id of the entity being checked"},
-        "component_name": {"datatype": "string", "required": true, "description": "Human-readable name of the entity"},
-        "operator": {"datatype": "string", "required": true, "description": "Comparison operator: >=, ==, <, >, <=, !=, in, exists"},
-        "version_normalized": {"datatype": "string", "required": false, "description": "Version value to test against"},
-        "version_scheme": {"datatype": "string", "required": true, "description": "Version scheme: semantic, wildcard, named_release, calendar, unknown"},
-        "condition_context": {"datatype": "string", "required": false, "description": "Optional context label such as planned_migration_target, installed_state"}
+        "condition_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^COND-[0-9]+$"
+        },
+        "entity_id": {
+          "datatype": "string",
+          "required": false,
+          "pattern": "^[A-Z]{2,3}-[0-9]{3}$"
+        },
+        "component_name": {
+          "datatype": "string",
+          "required": true
+        },
+        "operator": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "==",
+            "!=",
+            ">=",
+            "<=",
+            ">",
+            "<",
+            "in",
+            "not_in",
+            "exists",
+            "matches",
+            "installed",
+            "not_installed"
+          ]
+        },
+        "version_normalized": {
+          "datatype": "string",
+          "required": false
+        },
+        "version_scheme": {
+          "datatype": "string",
+          "required": false,
+          "allowed_values": [
+            "semantic",
+            "wildcard",
+            "named_release",
+            "calendar",
+            "unknown"
+          ]
+        },
+        "condition_context": {
+          "datatype": "string",
+          "required": false,
+          "description": "Optional context hint e.g. planned_migration_target, currently_installed"
+        }
       },
       "examples": [
-        [{"condition_id": "COND-001", "entity_id": "OS-013", "component_name": "Enterprise OS", "operator": "==", "version_normalized": "2026.1", "version_scheme": "calendar", "condition_context": "installed_state"}],
-        [{"condition_id": "COND-001", "entity_id": "FW-001", "component_name": "BIOS", "operator": "==", "version_normalized": "6.4.2", "version_scheme": "semantic"}, {"condition_id": "COND-002", "entity_id": "FW-013", "component_name": "System Firmware", "operator": "<", "version_normalized": "8.0.0", "version_scheme": "semantic"}],
-        []
+        [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic"
+          }
+        ]
       ],
       "validation_constraints": [
-        "Can be empty array for universal rules (rule fires regardless of system context)",
-        "incompatible_combination rules must have at least 2 condition entries",
-        "Each condition_id must be unique within the conditions array",
-        "Each entity_id must exist in the RC2 registry",
-        "operator must be from the allowed set for the rule_type"
+        "incompatible_combination rules require at least 2 conditions",
+        "Each condition_id must be unique within the rule",
+        "operator must be from the allowed set",
+        "If version_normalized is present, version_scheme must also be present"
       ],
-      "neo4j_mapping": "Array serialized as :Condition nodes connected via HAS_CONDITION relationships",
-      "qdrant_mapping": "Serialized as JSON string in payload field conditions_json; entity IDs extracted as conditions_entity_ids (keyword array)"
+      "neo4j_mapping": "Stored as :HAS_CONDITION edge properties or separate Condition nodes",
+      "qdrant_mapping": "Serialized as condition_summary string in payload for semantic search"
     },
     "exceptions": {
       "name": "exceptions",
-      "datatype": "array of objects",
+      "datatype": "array",
       "required": false,
-      "description": "Optional list of exceptions that suppress rule evaluation for specific device families, entities, or scope contexts. When a system matches an exception, the rule does not fire even if conditions are met.",
+      "description": "Scoped exclusions from this rule. Defines device families, platforms, or entity configurations for which the rule does not apply.",
       "item_schema": {
-        "exception_id": {"datatype": "string", "required": true, "description": "Unique exception identifier within this rule"},
-        "scope_type": {"datatype": "string", "required": true, "description": "Type of scope: device_family, entity_id, platform_tag"},
-        "excluded_entity_ids": {"datatype": "array of strings", "required": false, "description": "RC2 entity IDs excluded from rule evaluation"},
-        "excluded_device_families": {"datatype": "array of strings", "required": false, "description": "Device family names or tags excluded from evaluation"},
-        "justification": {"datatype": "string", "required": true, "description": "Human-readable explanation of why the exception was granted"}
+        "exception_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^EXC-[A-Z0-9]+-[0-9]+$"
+        },
+        "scope_type": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "device_family",
+            "component_version",
+            "platform",
+            "vendor",
+            "environment",
+            "time_bounded"
+          ]
+        },
+        "excluded_entity_ids": {
+          "datatype": "array",
+          "required": false,
+          "item_type": "string"
+        },
+        "excluded_device_families": {
+          "datatype": "array",
+          "required": false,
+          "item_type": "string"
+        },
+        "justification": {
+          "datatype": "string",
+          "required": true
+        },
+        "approved_by": {
+          "datatype": "string",
+          "required": false
+        },
+        "expiry_date": {
+          "datatype": "string",
+          "required": false,
+          "format": "ISO-8601 date"
+        }
       },
       "examples": [
-        [{"exception_id": "EXC-001", "scope_type": "device_family", "excluded_device_families": ["legacy-rack-server"], "justification": "Legacy rack servers are decommissioned and excluded from compliance policy."}],
-        []
+        [
+          {
+            "exception_id": "EXC-NICFW-001",
+            "scope_type": "device_family",
+            "excluded_device_families": [
+              "ProBook Series",
+              "Enterprise Laptop Series"
+            ],
+            "justification": "These device families do not include the affected NIC controller."
+          }
+        ]
       ],
       "validation_constraints": [
-        "exception_id must be unique within the exceptions array",
-        "excluded_entity_ids values must exist in the RC2 registry if provided",
-        "justification must not be null or empty",
-        "scope_type must be one of: device_family, entity_id, platform_tag"
+        "exception_id must match pattern ^EXC-[A-Z0-9]+-[0-9]+$",
+        "scope_type must be from the allowed set",
+        "justification must be non-empty",
+        "Exceptions must reference specific, verifiable scope — blanket exclusions are invalid"
       ],
-      "neo4j_mapping": "Connected via HAS_EXCEPTION relationship to :Exception nodes",
-      "qdrant_mapping": "Not indexed in Qdrant by default; referenced in payload field has_exceptions (boolean)"
+      "neo4j_mapping": "Stored as :HAS_EXCEPTION edge to Exception node",
+      "qdrant_mapping": "Not embedded; stored as structured payload metadata"
     },
     "dependencies": {
       "name": "dependencies",
-      "datatype": "array of objects",
+      "datatype": "array",
       "required": false,
-      "description": "Optional list of other components or rules that must be in a certain state for this rule to be evaluable. Dependencies are soft prerequisites; missing dependencies generate a warning, not an evaluation failure.",
+      "description": "Operational dependencies this rule asserts between components. Captures runtime or install-time coupling not expressible as a single subject-predicate-object triple.",
       "item_schema": {
-        "dependency_id": {"datatype": "string", "required": true, "description": "Unique dependency identifier within this rule"},
-        "entity_id": {"datatype": "string", "required": true, "description": "RC2 entity_id of the dependency entity"},
-        "component_name": {"datatype": "string", "required": true, "description": "Human-readable name of the dependency"},
-        "operator": {"datatype": "string", "required": true, "description": "Version comparison operator"},
-        "version_normalized": {"datatype": "string", "required": false, "description": "Version value for the dependency check"},
-        "dependency_type": {"datatype": "string", "required": true, "description": "Type of dependency: requires_present, requires_version, prerequisite_rule"}
+        "dependency_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^DC-[A-Z0-9]+-[0-9]+$"
+        },
+        "entity_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Z]{2,3}-[0-9]{3}$"
+        },
+        "component_name": {
+          "datatype": "string",
+          "required": true
+        },
+        "operator": {
+          "datatype": "string",
+          "required": true
+        },
+        "version_normalized": {
+          "datatype": "string",
+          "required": true
+        },
+        "dependency_type": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "runtime_dependency",
+            "install_prerequisite",
+            "co_installation_requirement",
+            "functional_dependency",
+            "security_dependency"
+          ]
+        }
       },
       "examples": [
-        [{"dependency_id": "DEP-001", "entity_id": "DRV-010", "component_name": "Platform Driver Pack", "operator": ">=", "version_normalized": "12.5.0", "dependency_type": "requires_version"}],
-        []
+        [
+          {
+            "dependency_id": "DC-SEC-MGT-001",
+            "entity_id": "MGT-010",
+            "component_name": "Endpoint Management Agent",
+            "operator": ">=",
+            "version_normalized": "3.7.0",
+            "dependency_type": "co_installation_requirement"
+          }
+        ]
       ],
       "validation_constraints": [
-        "dependency_id must be unique within the dependencies array",
-        "entity_id must exist in the RC2 registry",
-        "dependency_type must be one of: requires_present, requires_version, prerequisite_rule"
+        "entity_id must exist in RC2 registry",
+        "dependency_type must be from the allowed set",
+        "version_normalized must be valid for its scheme"
       ],
-      "neo4j_mapping": "Connected via DEPENDS_ON relationship to :Entity or :CompatibilityRule nodes",
-      "qdrant_mapping": "Not directly indexed; referenced in payload as dependency_count (integer)"
+      "neo4j_mapping": "Stored as :DEPENDS_ON edges between entity nodes",
+      "qdrant_mapping": "Payload field dependency_summary (string)"
     },
     "conflicts": {
       "name": "conflicts",
-      "datatype": "array of objects",
+      "datatype": "array",
       "required": false,
-      "description": "Optional list of known conflict entries associated with this rule. Conflicts document specific component versions or states that directly conflict with the rule subject. Distinct from incompatible_combination rule_type in that these are supplemental annotations to any rule type.",
+      "description": "Documented conflict assertions. Explicitly lists component-version combinations that conflict with the rule's subject.",
       "item_schema": {
-        "conflict_id": {"datatype": "string", "required": true, "description": "Unique conflict identifier within this rule"},
-        "entity_id": {"datatype": "string", "required": true, "description": "RC2 entity_id of the conflicting entity"},
-        "component_name": {"datatype": "string", "required": true, "description": "Human-readable name of the conflicting component"},
-        "operator": {"datatype": "string", "required": true, "description": "Version comparison operator for the conflict range"},
-        "version_normalized": {"datatype": "string", "required": false, "description": "Version boundary for the conflict"},
-        "conflict_symptom": {"datatype": "string", "required": true, "description": "Description of the failure mode or symptom if the conflict is present"},
-        "severity": {"datatype": "string", "required": true, "description": "Conflict severity: critical, warning, info"}
+        "conflict_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^CC-[A-Z0-9]+-[0-9]+$"
+        },
+        "entity_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Z]{2,3}-[0-9]{3}$"
+        },
+        "component_name": {
+          "datatype": "string",
+          "required": true
+        },
+        "operator": {
+          "datatype": "string",
+          "required": true
+        },
+        "version_normalized": {
+          "datatype": "string",
+          "required": true
+        },
+        "conflict_symptom": {
+          "datatype": "string",
+          "required": true,
+          "description": "Human-readable description of the failure mode"
+        },
+        "severity": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "critical",
+            "warning",
+            "info"
+          ]
+        }
       },
       "examples": [
-        [{"conflict_id": "CONF-001", "entity_id": "FW-013", "component_name": "System Firmware", "operator": "<", "version_normalized": "8.0.0", "conflict_symptom": "Boot failure or system hang when firmware is below 8.0.0", "severity": "critical"}],
-        []
+        [
+          {
+            "conflict_id": "CC-FW-BIOS-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "conflict_symptom": "Unsupported combination causing boot failure risk.",
+            "severity": "critical"
+          }
+        ]
       ],
       "validation_constraints": [
-        "conflict_id must be unique within the conflicts array",
-        "entity_id must exist in the RC2 registry",
-        "severity must be one of: critical, warning, info",
-        "conflict_symptom must not be null or empty"
+        "entity_id must exist in RC2 registry",
+        "conflict_symptom must be non-empty",
+        "severity must be critical or warning for conflict assertions"
       ],
-      "neo4j_mapping": "Connected via CONFLICTS_WITH relationship to :ConflictConstraint nodes",
-      "qdrant_mapping": "Payload field conflict_count (integer); conflict entity IDs as conflict_entity_ids (keyword array)"
+      "neo4j_mapping": "Stored as :CONFLICTS_WITH edges with symptom properties",
+      "qdrant_mapping": "Payload field conflict_summary (string, embeddable for semantic conflict search)"
     },
     "evidence": {
       "name": "evidence",
-      "datatype": "array of objects",
-      "required": "conditionally required — required when status = approved",
-      "description": "Array of evidence records that provide source traceability for this rule. Required when status is approved. Each evidence entry links the rule to the source document chunk from which the rule was extracted.",
+      "datatype": "array",
+      "required": true,
+      "description": "Traceable source references that substantiate this rule. At least one evidence record is required before a rule can enter the approved state.",
       "item_schema": {
-        "evidence_id": {"datatype": "string", "required": true, "description": "Unique evidence identifier, pattern EV-[rule_id]-[NNN]"},
-        "source_type": {"datatype": "string", "required": true, "description": "Source evidence type: extracted_text, advisory, cve_record, test_result, manual_entry"},
-        "source_document_id": {"datatype": "string", "required": true, "description": "Document identifier, pattern DOC-*"},
-        "source_chunk_id": {"datatype": "string", "required": false, "description": "Chunk identifier within the source document, pattern CHUNK-*"},
-        "source_excerpt": {"datatype": "string", "required": true, "description": "Verbatim or near-verbatim excerpt from the source document supporting this rule"},
-        "confidence_score": {"datatype": "number", "required": true, "description": "Confidence score for this evidence item, 0.0 to 1.0"},
-        "extraction_method": {"datatype": "string", "required": true, "description": "Method used: llm_extraction, regex_pattern, manual_entry, advisory_parse"}
+        "evidence_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^EVID-[A-Z0-9]+-[0-9]+$"
+        },
+        "source_type": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "official_documentation",
+            "vendor_documentation",
+            "industry_standard",
+            "internal_policy",
+            "user_provided_document",
+            "ingested_document",
+            "knowledge_base_source",
+            "manual_review",
+            "automated_extraction"
+          ]
+        },
+        "source_document_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^DOC-[A-Z0-9]+$"
+        },
+        "source_chunk_id": {
+          "datatype": "string",
+          "required": false,
+          "pattern": "^CHUNK-[0-9]+$"
+        },
+        "source_excerpt": {
+          "datatype": "string",
+          "required": true,
+          "description": "Verbatim or near-verbatim text from the source document supporting the rule"
+        },
+        "confidence_score": {
+          "datatype": "number",
+          "required": true,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "extraction_method": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "nlp_extraction",
+            "structured_parsing",
+            "manual_review",
+            "hybrid"
+          ]
+        }
       },
       "examples": [
-        [{"evidence_id": "EV-CRULE-FW-001-001", "source_type": "extracted_text", "source_document_id": "DOC-CA114A84AE60", "source_chunk_id": "CHUNK-000373", "source_excerpt": "BIOS version 6.4.2 requires System Firmware 8.2.1 or later.", "confidence_score": 0.95, "extraction_method": "llm_extraction"}],
-        [{"evidence_id": "EV-CRULE-SEC-001-001", "source_type": "cve_record", "source_document_id": "DOC-CA114A84AE60", "source_chunk_id": "CHUNK-000377", "source_excerpt": "CVE / ID: SEC-2026-001 | Fixed In: BIOS Version 6.4.2", "confidence_score": 0.98, "extraction_method": "advisory_parse"}]
+        [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ]
       ],
       "validation_constraints": [
-        "Required when status = approved (minimum 1 evidence entry)",
-        "evidence_id must match pattern EV-[A-Z0-9-]+-[0-9]{3}",
-        "source_type must be one of: extracted_text, advisory, cve_record, test_result, manual_entry",
-        "source_document_id must match pattern DOC-[A-Z0-9]+",
-        "confidence_score must be in range 0.0 to 1.0",
-        "source_excerpt must not be null or empty for approved rules",
-        "extraction_method must be one of: llm_extraction, regex_pattern, manual_entry, advisory_parse"
+        "At least 1 evidence record required when status=approved",
+        "evidence_id must match pattern ^EVID-[A-Z0-9]+-[0-9]+$",
+        "source_document_id must match ^DOC-[A-Z0-9]+$",
+        "source_excerpt must be non-empty",
+        "confidence_score must be between 0.0 and 1.0"
       ],
-      "neo4j_mapping": "Connected via HAS_EVIDENCE relationship to :Evidence nodes with source_document_id linking to :CompatibilityDocument",
-      "qdrant_mapping": "source_excerpt is the primary embedding payload text for semantic search; evidence_count (integer) in payload metadata"
+      "neo4j_mapping": "Stored as :HAS_EVIDENCE edges to Evidence nodes",
+      "qdrant_mapping": "source_excerpt is the primary embedding payload for semantic search"
     },
     "remediations": {
       "name": "remediations",
-      "datatype": "array of objects",
+      "datatype": "array",
       "required": true,
-      "description": "Array of remediation steps that resolve the rule violation. Required for all rules. Provides actionable upgrade paths and fix instructions for the recommendation engine.",
+      "description": "Prescribed corrective actions for compliance violations. At least one remediation must be present for rules that can produce violations.",
       "item_schema": {
-        "remediation_id": {"datatype": "string", "required": true, "description": "Unique remediation identifier within this rule, e.g. REM-001"},
-        "remediation_type": {"datatype": "string", "required": true, "description": "Type: upgrade_component, remove_component, configuration_change, install_component, manual_action"},
-        "target_entity_id": {"datatype": "string", "required": true, "description": "RC2 entity_id of the component to remediate"},
-        "target_component_name": {"datatype": "string", "required": true, "description": "Human-readable name of the target component"},
-        "target_version": {"datatype": "string", "required": false, "description": "Target version to upgrade to or install"},
-        "operator": {"datatype": "string", "required": false, "description": "Version operator for the remediation target (>=, ==)"},
-        "sequence_order": {"datatype": "integer", "required": false, "description": "Order of this remediation step within a multi-step remediation plan"},
-        "remediation_hint": {"datatype": "string", "required": true, "description": "Human-readable instruction for executing this remediation step"}
+        "remediation_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^REM-[A-Z0-9]+-[0-9]+$"
+        },
+        "remediation_type": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            "version_upgrade",
+            "version_downgrade",
+            "configuration_change",
+            "component_removal",
+            "component_install",
+            "sequenced_update",
+            "policy_exception"
+          ]
+        },
+        "target_entity_id": {
+          "datatype": "string",
+          "required": true,
+          "pattern": "^[A-Z]{2,3}-[0-9]{3}$"
+        },
+        "target_component_name": {
+          "datatype": "string",
+          "required": true
+        },
+        "target_version": {
+          "datatype": "string",
+          "required": true,
+          "description": "Target version to upgrade to"
+        },
+        "operator": {
+          "datatype": "string",
+          "required": true,
+          "allowed_values": [
+            ">=",
+            "==",
+            ">"
+          ]
+        },
+        "sequence_order": {
+          "datatype": "integer",
+          "required": false,
+          "minimum": 1,
+          "description": "Order within a multi-step remediation plan"
+        },
+        "remediation_hint": {
+          "datatype": "string",
+          "required": true,
+          "description": "Human-readable remediation instruction for IT administrators"
+        }
       },
       "examples": [
-        [{"remediation_id": "REM-001", "remediation_type": "upgrade_component", "target_entity_id": "FW-013", "target_component_name": "System Firmware", "target_version": "8.2.1", "operator": ">=", "sequence_order": 1, "remediation_hint": "Upgrade System Firmware to version 8.2.1 or later before applying BIOS update."}],
-        [{"remediation_id": "REM-001", "remediation_type": "upgrade_component", "target_entity_id": "DRV-009", "target_component_name": "Driver Pack", "target_version": "12.5.0", "operator": ">=", "sequence_order": 1, "remediation_hint": "Upgrade Driver Pack to 12.5.0 to satisfy Enterprise OS 2026.1 readiness requirement."}]
+        [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to version 12.4.0 or later before migrating to Enterprise OS 2026.1."
+          }
+        ]
       ],
       "validation_constraints": [
-        "At least 1 remediation entry required",
-        "remediation_id must be unique within the remediations array",
-        "target_entity_id must exist in the RC2 registry",
-        "remediation_type must be one of: upgrade_component, remove_component, configuration_change, install_component, manual_action",
-        "remediation_hint must not be null or empty",
-        "sequence_order must be a positive integer if provided"
+        "target_entity_id must exist in RC2 registry",
+        "remediation_id must match ^REM-[A-Z0-9]+-[0-9]+$",
+        "remediation_hint must be non-empty",
+        "sequence_order values must be unique within the rule if multiple remediations present",
+        "target_version must be a valid version string"
       ],
-      "neo4j_mapping": "Connected via HAS_REMEDIATION relationship to :Remediation nodes",
-      "qdrant_mapping": "remediation_hint text included in document payload for semantic matching; remediation_count (integer) in metadata"
+      "neo4j_mapping": "Stored as :HAS_REMEDIATION edges to Remediation nodes",
+      "qdrant_mapping": "remediation_hint stored as payload field for recommendation generation"
     },
     "source_document": {
       "name": "source_document",
       "datatype": "string",
       "required": true,
-      "description": "Document identifier of the source compatibility document from which this rule was extracted. Must match the DOC-* pattern used in the compatibility document registry.",
+      "description": "Document ID of the authoritative source compatibility document from which this rule was extracted.",
       "pattern": "^DOC-[A-Z0-9]+$",
-      "examples": ["DOC-CA114A84AE60", "DOC-B3F7A2C91D44", "DOC-E8D5F0A23B67"],
+      "examples": [
+        "DOC-CA114A84AE60"
+      ],
       "validation_constraints": [
         "Must match pattern ^DOC-[A-Z0-9]+$",
-        "Must reference a registered source document in the document registry",
-        "Must not be null or empty"
+        "Must be a registered CompatibilityDocument",
+        "Must match the source_document_id in at least one evidence record"
       ],
-      "neo4j_mapping": "Node property :CompatibilityRule {source_document}; REFERENCES relationship to :CompatibilityDocument node",
+      "neo4j_mapping": "Node property :CompatibilityRule {source_document}",
       "qdrant_mapping": "Payload field source_document (keyword, filterable)"
     },
     "source_section": {
       "name": "source_section",
       "datatype": "string",
       "required": false,
-      "description": "Optional reference to the specific section, chunk, page, or heading within the source document where this rule was found. Improves traceability for human review and audit.",
-      "examples": ["CHUNK-000373", "Section 4.2 - Upgrade Prerequisites", "Page 12"],
+      "description": "Section, chunk, or page reference within the source document for precise traceability.",
+      "examples": [
+        "CHUNK-000377",
+        "Page 1, Section 3.2",
+        "CHUNK-000385"
+      ],
       "validation_constraints": [
-        "If provided, must not be an empty string",
-        "Recommended format: CHUNK-NNNNNN, Section X.Y, or Page N"
+        "If present, must be non-empty",
+        "Should reference a valid chunk ID or human-readable section reference"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {source_section}",
       "qdrant_mapping": "Payload field source_section (keyword)"
@@ -388,62 +776,91 @@
       "name": "confidence",
       "datatype": "number",
       "required": true,
-      "description": "Overall confidence score for this rule, representing the extraction and validation certainty. Minimum thresholds vary by rule_type: min_version_constraint >= 0.70, known_issue_fixed >= 0.80, readiness_requirement >= 0.70, feature_support_added >= 0.70, incompatible_combination >= 0.85, update_order_constraint >= 0.85.",
-      "range": {"minimum": 0.0, "maximum": 1.0},
+      "description": "Overall confidence score for this rule, synthesized from evidence quality and extraction reliability. Must meet the minimum threshold for the declared rule_type to pass validation gate.",
+      "minimum": 0.0,
+      "maximum": 1.0,
       "minimum_thresholds_by_rule_type": {
-        "min_version_constraint": 0.70,
-        "known_issue_fixed": 0.80,
-        "readiness_requirement": 0.70,
-        "feature_support_added": 0.70,
+        "min_version_constraint": 0.7,
+        "known_issue_fixed": 0.8,
+        "readiness_requirement": 0.7,
+        "feature_support_added": 0.7,
         "incompatible_combination": 0.85,
         "update_order_constraint": 0.85
       },
-      "examples": [0.95, 0.82, 0.71],
+      "examples": [
+        0.9,
+        0.95,
+        0.75
+      ],
       "validation_constraints": [
-        "Must be a decimal number in range 0.0 to 1.0 inclusive",
-        "Must meet the minimum threshold for the declared rule_type",
-        "Must not be null"
+        "Must be a number between 0.0 and 1.0 inclusive",
+        "Must meet or exceed the minimum threshold for rule_type to pass the validation gate",
+        "Rules with confidence < minimum threshold are rejected with reason low_confidence_below_threshold"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {confidence}",
       "qdrant_mapping": "Payload field confidence (float, filterable)"
     },
     "severity": {
       "name": "severity",
-      "datatype": "string (enum)",
+      "datatype": "string",
       "required": true,
-      "description": "Business impact severity of a rule violation. Drives alert priority and remediation urgency in the compliance engine. Allowed values depend on rule_type.",
-      "allowed_values": ["critical", "warning", "info"],
-      "severity_by_rule_type": {
-        "min_version_constraint": ["critical", "warning", "info"],
-        "known_issue_fixed": ["critical", "warning", "info"],
-        "readiness_requirement": ["critical", "warning", "info"],
-        "feature_support_added": ["info", "warning"],
-        "incompatible_combination": ["critical", "warning"],
-        "update_order_constraint": ["critical", "warning"]
+      "description": "Impact level of a compliance violation produced by this rule. Drives alert priority and remediation urgency in the compliance engine.",
+      "allowed_values": [
+        "critical",
+        "warning",
+        "info"
+      ],
+      "severity_definitions": {
+        "critical": "Immediate risk to system stability, security, or data integrity. Remediation urgency: immediate.",
+        "warning": "Degraded operation, reduced stability, or non-compliance with baseline. Remediation urgency: scheduled.",
+        "info": "Informational capability availability or optional configuration state. No blocking action."
       },
-      "examples": ["critical", "warning", "info"],
+      "rule_type_severity_restrictions": {
+        "feature_support_added": [
+          "info",
+          "warning"
+        ],
+        "incompatible_combination": [
+          "critical",
+          "warning"
+        ],
+        "update_order_constraint": [
+          "critical",
+          "warning"
+        ]
+      },
+      "examples": [
+        "critical",
+        "warning",
+        "info"
+      ],
       "validation_constraints": [
-        "Must be one of: critical, warning, info",
-        "feature_support_added rules must not use severity critical",
-        "incompatible_combination and update_order_constraint rules must not use severity info",
-        "Must not be null"
+        "Must be one of critical, warning, or info",
+        "feature_support_added rules are restricted to info and warning",
+        "incompatible_combination rules are restricted to critical and warning",
+        "update_order_constraint rules are restricted to critical and warning"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {severity}",
       "qdrant_mapping": "Payload field severity (keyword, filterable)"
     },
     "condition_logic": {
       "name": "condition_logic",
-      "datatype": "string (enum)",
+      "datatype": "string",
       "required": true,
-      "description": "Logical operator applied across all entries in the conditions array. AND means all conditions must be true for the rule to fire. OR means any one condition being true causes the rule to fire.",
-      "allowed_values": ["AND", "OR"],
+      "description": "Boolean operator applied across the conditions array. AND requires all conditions to be true; OR requires at least one to be true.",
+      "allowed_values": [
+        "AND",
+        "OR"
+      ],
       "default_value": "AND",
-      "examples": ["AND", "OR"],
+      "examples": [
+        "AND",
+        "OR"
+      ],
       "validation_constraints": [
         "Must be AND or OR",
-        "Must not be null",
-        "Default value is AND",
-        "Must be AND or OR in uppercase"
+        "Must not be null or empty",
+        "Default is AND for all rule types"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {condition_logic}",
       "qdrant_mapping": "Payload field condition_logic (keyword)"
@@ -451,15 +868,19 @@
     "sequence_step": {
       "name": "sequence_step",
       "datatype": "integer",
-      "required": "conditionally required — required when rule_type = update_order_constraint",
-      "description": "The step number of this rule within a sequenced upgrade chain. Must be >= 1. Required when rule_type is update_order_constraint.",
+      "required": false,
+      "description": "Position of this rule within a multi-step update sequence. Required for update_order_constraint rules.",
       "minimum": 1,
-      "examples": [1, 2, 3],
+      "conditional_requirement": "required when rule_type == update_order_constraint",
+      "examples": [
+        1,
+        2,
+        3
+      ],
       "validation_constraints": [
-        "Required when rule_type = update_order_constraint",
-        "Must be an integer >= 1",
-        "Must be less than or equal to sequence_total_steps if that field is present",
-        "Must not be null for update_order_constraint rules"
+        "Required when rule_type is update_order_constraint",
+        "Must be a positive integer >= 1",
+        "Must be null or absent for all other rule types"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {sequence_step}",
       "qdrant_mapping": "Payload field sequence_step (integer)"
@@ -468,13 +889,16 @@
       "name": "sequence_total_steps",
       "datatype": "integer",
       "required": false,
-      "description": "Optional total number of steps in the sequenced upgrade chain. Helps compliance engines and UIs present the full sequence to the operator. Must be >= 2 if provided.",
+      "description": "Total number of steps in the update sequence chain this rule belongs to.",
       "minimum": 2,
-      "examples": [2, 3, 4],
+      "examples": [
+        2,
+        3
+      ],
       "validation_constraints": [
-        "Must be an integer >= 2 if provided",
+        "If present, must be >= 2",
         "Must be >= sequence_step if both are present",
-        "Applicable primarily to update_order_constraint rules"
+        "Only meaningful for update_order_constraint rules"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {sequence_total_steps}",
       "qdrant_mapping": "Payload field sequence_total_steps (integer)"
@@ -482,80 +906,105 @@
     "sequence_prerequisite_ref": {
       "name": "sequence_prerequisite_ref",
       "datatype": "string",
-      "required": "conditionally required — required when rule_type = update_order_constraint and sequence_step > 1",
-      "description": "The rule_id of the preceding rule in the sequence chain. Enables chain traversal for root cause analysis. Must reference an existing rule_id. Required for update_order_constraint rules where sequence_step > 1.",
+      "required": false,
+      "description": "rule_id of the preceding step in a multi-step update sequence. Required for update_order_constraint rules with sequence_step >= 2.",
       "pattern": "^CRULE-[A-Z0-9]+-[0-9]{3,}$",
-      "examples": ["CRULE-FW-BIOS-SEQ-001", "CRULE-DRV-OS-SEQ-002"],
-      "validation_constraints": [
-        "Required when rule_type = update_order_constraint and sequence_step > 1",
-        "Must match the CRULE-* rule_id pattern",
-        "Must reference an existing rule_id in the registry",
-        "Circular references are forbidden",
-        "Must not self-reference"
+      "conditional_requirement": "required when rule_type == update_order_constraint AND sequence_step >= 2",
+      "examples": [
+        "CRULE-FW-BIOS-001"
       ],
-      "neo4j_mapping": "REFERENCES relationship pointing to preceding :CompatibilityRule node in the sequence chain",
+      "validation_constraints": [
+        "Must match the rule_id pattern",
+        "Referenced rule must exist in the rule store",
+        "Must not create a circular reference chain",
+        "Chains cannot form cycles"
+      ],
+      "neo4j_mapping": "Stored as :BLOCKS edge to the prerequisite rule node",
       "qdrant_mapping": "Payload field sequence_prerequisite_ref (keyword)"
     },
     "issue_id": {
       "name": "issue_id",
       "datatype": "string",
       "required": false,
-      "description": "Issue or CVE identifier associated with a known_issue_fixed rule. Provides a direct link to the security advisory, bug report, or known issue record. Optional for other rule types but recommended for security-related rules.",
-      "examples": ["SEC-2026-001", "CVE-2026-12345", "KI-001", "BUG-0042"],
+      "description": "Issue or CVE identifier for known_issue_fixed rules. Links the rule to a specific security advisory or defect record.",
+      "examples": [
+        "SEC-2026-001",
+        "SEC-2026-002",
+        "CVE-2026-12345"
+      ],
       "validation_constraints": [
-        "If provided, must be a non-empty string",
-        "Recommended for all known_issue_fixed rules",
-        "Format: SEC-YYYY-NNN, CVE-YYYY-NNNNN, KI-NNN, or BUG-NNNN"
+        "If present, must be non-empty",
+        "Should follow the format: SEC-YYYY-NNN or CVE-YYYY-NNNNN",
+        "Recommended for all known_issue_fixed rules with security severity"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {issue_id}",
       "qdrant_mapping": "Payload field issue_id (keyword, filterable)"
     },
     "tags": {
       "name": "tags",
-      "datatype": "array of strings",
+      "datatype": "array",
       "required": false,
-      "description": "Optional classification tags for the rule. Used to filter, group, and prioritize rules in the compliance engine and dashboards. Common tag values include unverified_value, security_critical, eol_component, pending_vendor_confirmation, high_impact.",
+      "description": "Classification and quality tags for rule categorization, filtering, and review workflow management.",
+      "item_type": "string",
+      "allowed_tag_values": [
+        "unverified_value",
+        "security_critical",
+        "eol_component",
+        "field_reported",
+        "low_confidence",
+        "needs_clarification",
+        "hardware_scoped",
+        "third_party",
+        "sequence_member"
+      ],
       "examples": [
-        ["security_critical", "unverified_value"],
-        ["eol_component", "pending_vendor_confirmation"],
-        ["high_impact", "multi_component"]
+        [
+          "security_critical"
+        ],
+        [
+          "unverified_value",
+          "needs_clarification"
+        ]
       ],
       "validation_constraints": [
+        "Must be an array (can be empty)",
         "Each tag must be a non-empty string",
-        "Tags must not contain spaces (use underscores)",
-        "Maximum 10 tags per rule recommended"
+        "Rules with unverified_value tag cannot be approved without human review clearance"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {tags} as string array",
       "qdrant_mapping": "Payload field tags (keyword array, filterable)"
     },
     "created_timestamp": {
       "name": "created_timestamp",
-      "datatype": "string (ISO-8601)",
+      "datatype": "string",
       "required": true,
-      "description": "UTC timestamp when this rule was first created in the system. Set automatically by the extraction pipeline. Must not be modified after creation.",
-      "format": "ISO-8601 UTC, e.g., 2026-06-20T10:00:00Z",
-      "examples": ["2026-06-20T10:00:00Z", "2026-06-21T14:32:00Z"],
+      "description": "ISO-8601 UTC timestamp when this rule record was first created in the system.",
+      "format": "date-time (ISO-8601 UTC)",
+      "examples": [
+        "2026-06-20T14:18:31.317312+00:00"
+      ],
       "validation_constraints": [
-        "Must be a valid ISO-8601 datetime string",
-        "Must include timezone designator (Z for UTC or +HH:MM offset)",
+        "Must be a valid ISO-8601 datetime string with timezone offset",
         "Must not be null",
-        "Must not be modified after initial creation"
+        "Must not be modified after initial creation",
+        "Must be earlier than or equal to updated_timestamp"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {created_timestamp}",
       "qdrant_mapping": "Payload field created_timestamp (keyword)"
     },
     "updated_timestamp": {
       "name": "updated_timestamp",
-      "datatype": "string (ISO-8601)",
+      "datatype": "string",
       "required": true,
-      "description": "UTC timestamp when this rule was last modified. Updated automatically on every field change. Used for change tracking and audit trail continuity.",
-      "format": "ISO-8601 UTC, e.g., 2026-06-20T12:00:00Z",
-      "examples": ["2026-06-20T12:00:00Z", "2026-06-22T09:15:00Z"],
+      "description": "ISO-8601 UTC timestamp of the most recent update to this rule record.",
+      "format": "date-time (ISO-8601 UTC)",
+      "examples": [
+        "2026-06-20T15:30:00.000000+00:00"
+      ],
       "validation_constraints": [
         "Must be a valid ISO-8601 datetime string",
-        "Must include timezone designator",
-        "Must not be null",
-        "Must be >= created_timestamp"
+        "Must be >= created_timestamp",
+        "Must be updated on every field modification"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {updated_timestamp}",
       "qdrant_mapping": "Payload field updated_timestamp (keyword)"
@@ -563,31 +1012,35 @@
     "approved_by": {
       "name": "approved_by",
       "datatype": "string",
-      "required": "conditionally required — required when status = approved",
-      "description": "Identifier of the human reviewer who approved this rule for production use. Must be populated before a rule can enter the approved state. Format is reviewer ID or username.",
-      "examples": ["tech_lead_001", "compliance_officer_007", "senior_engineer_42"],
-      "validation_constraints": [
-        "Required when status = approved",
-        "Must be a non-empty string when required",
-        "Must be null or absent when status is not approved",
-        "Must be set simultaneously with approved_at"
+      "required": false,
+      "description": "Identifier of the human reviewer who approved this rule. Required when status is approved.",
+      "conditional_requirement": "required when status == approved",
+      "examples": [
+        "tech_lead_001",
+        "compliance_officer_002"
       ],
-      "neo4j_mapping": "Node property :CompatibilityRule {approved_by}; APPROVED_BY relationship to :Reviewer node",
+      "validation_constraints": [
+        "Must be non-empty when status is approved",
+        "Must be null when status is candidate or validated",
+        "Must be a valid reviewer identifier"
+      ],
+      "neo4j_mapping": "Stored as :APPROVED_BY edge to ApprovalRecord node",
       "qdrant_mapping": "Payload field approved_by (keyword)"
     },
     "approved_at": {
       "name": "approved_at",
-      "datatype": "string (ISO-8601)",
-      "required": "conditionally required — required when status = approved",
-      "description": "UTC timestamp when this rule was formally approved. Must be populated simultaneously with approved_by. Required when status is approved.",
-      "format": "ISO-8601 UTC",
-      "examples": ["2026-06-20T15:00:00Z", "2026-06-23T11:45:00Z"],
+      "datatype": "string",
+      "required": false,
+      "description": "ISO-8601 UTC timestamp when this rule was formally approved. Required when status is approved.",
+      "format": "date-time (ISO-8601 UTC)",
+      "conditional_requirement": "required when status == approved",
+      "examples": [
+        "2026-06-20T15:00:00.000000+00:00"
+      ],
       "validation_constraints": [
-        "Required when status = approved",
-        "Must be a valid ISO-8601 datetime string when required",
-        "Must include timezone designator",
-        "Must be >= created_timestamp",
-        "Must be set simultaneously with approved_by"
+        "Must be a valid ISO-8601 datetime when status is approved",
+        "Must be null when status is candidate or validated",
+        "Must be >= created_timestamp"
       ],
       "neo4j_mapping": "Node property :CompatibilityRule {approved_at}",
       "qdrant_mapping": "Payload field approved_at (keyword)"

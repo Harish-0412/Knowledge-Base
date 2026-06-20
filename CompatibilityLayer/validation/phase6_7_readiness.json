@@ -1,0 +1,117 @@
+{
+  "status": "READY_FOR_PHASE_8_AND_9",
+  "source_candidate_count": 42,
+  "accounted_source_candidates": 42,
+  "corrected_candidate_count": 43,
+  "generated_rule_count": 11,
+  "clarification_count": 32,
+  "rejected_extraction_count": 0,
+  "lineage_complete": true,
+  "raw_input_unchanged": true,
+  "source_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+  "schema_conformance": "all generated rules contain required fields; approval_status=candidate; verification_status=review_required",
+  "entity_resolution_summary": {
+    "total_unique_entity_names": 12,
+    "resolved_to_rc2": 9,
+    "unresolved_hardware_platforms": 3,
+    "unresolved_third_party": 1,
+    "registry_version": "1.1.0-rc2"
+  },
+  "version_resolution_summary": {
+    "semantic_versions_normalized": true,
+    "v_prefix_stripped": true,
+    "wildcard_preserved": true,
+    "named_release_preserved": true
+  },
+  "evidence_summary": {
+    "source_document": "DOC-CA114A84AE60",
+    "source_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+    "document_verification_status": "unverified_source_document_not_separately_loaded",
+    "all_source_excerpts_preserved": true,
+    "evidence_records_generated": 11
+  },
+  "special_case_results": {
+    "RCAND-000361": "version_logic_inconsistency_detected; routed to clarification; source excerpt preserved",
+    "RCAND-000365": "split into 2 lineage-linked feature_support_added candidates; both in clarification queue",
+    "RCAND-000367": "3 explicit exceptions recovered from source excerpt; device family IDs unresolved; in clarification",
+    "RCAND-000368": "optional SIEM integration preserved as SUPPORTS; routed to clarification (optionality_unclear)",
+    "RCAND-000369": "advisory deferral preserved; routed to clarification; not converted to mandatory requirement",
+    "RCAND-000374": "unknown applicability; routed to clarification; requirement preserved",
+    "RCAND-000376": "unknown applicability; routed to clarification; requirement preserved",
+    "RCAND-000377": "unknown applicability; routed to clarification; requirement preserved",
+    "RCAND-000382": "unknown applicability; routed to clarification; requirement preserved",
+    "RCAND-000385": "unknown applicability; routed to clarification; requirement preserved",
+    "RCAND-000398": "Reboot Cycle classified as validation checkpoint; not modeled as firmware entity; in clarification",
+    "RCAND-000400": "unknown applicability; routed to clarification; requirement preserved",
+    "RCAND-000401": "Step 1 is procedural reference; not modeled as component; requirement routed to clarification"
+  },
+  "tests": {
+    "phase6": {
+      "planned": 25,
+      "passed": 25,
+      "status": "passing",
+      "file": "tests/test_compatibility_candidate_correction.py"
+    },
+    "phase7": {
+      "planned": 27,
+      "passed": 27,
+      "status": "passing",
+      "file": "tests/test_compatibility_rule_generation.py"
+    },
+    "full_suite": {
+      "status": "passing",
+      "passed": 185,
+      "failed": 0
+    }
+  },
+  "deterministic_output": true,
+  "production_import_allowed": false,
+  "blocking_issues": [],
+  "warnings": [
+    "Source document not separately loaded - evidence marked review_required not source_verified",
+    "EdgeStation Workstations and hardware platform device families have no Layer 2 product registry IDs",
+    "RCAND-000365 has unverified_value tag and low confidence (0.3) - human review mandatory",
+    "RCAND-000398 requires schema guidance on validation checkpoint modeling"
+  ],
+  "phase8_inputs": [
+    "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+    "CompatibilityLayer\\rules\\candidate\\candidate_rule_manifest.json",
+    "CompatibilityLayer\\rules\\candidate\\candidate_generation_trace.json"
+  ],
+  "phase9_review_items": [
+    "CLARIF-RCAND-000361",
+    "CLARIF-RCAND-000365-SPLIT-01",
+    "CLARIF-RCAND-000365-SPLIT-02",
+    "CLARIF-RCAND-000367",
+    "CLARIF-RCAND-000368",
+    "CLARIF-RCAND-000369",
+    "CLARIF-RCAND-000370",
+    "CLARIF-RCAND-000374",
+    "CLARIF-RCAND-000375",
+    "CLARIF-RCAND-000376",
+    "CLARIF-RCAND-000377",
+    "CLARIF-RCAND-000378",
+    "CLARIF-RCAND-000379",
+    "CLARIF-RCAND-000380",
+    "CLARIF-RCAND-000382",
+    "CLARIF-RCAND-000383",
+    "CLARIF-RCAND-000384",
+    "CLARIF-RCAND-000385",
+    "CLARIF-RCAND-000386",
+    "CLARIF-RCAND-000387",
+    "CLARIF-RCAND-000388",
+    "CLARIF-RCAND-000389",
+    "CLARIF-RCAND-000390",
+    "CLARIF-RCAND-000391",
+    "CLARIF-RCAND-000392",
+    "CLARIF-RCAND-000393",
+    "CLARIF-RCAND-000394",
+    "CLARIF-RCAND-000395",
+    "CLARIF-RCAND-000396",
+    "CLARIF-RCAND-000398",
+    "CLARIF-RCAND-000400",
+    "CLARIF-RCAND-000401"
+  ],
+  "summary": "Phase 6-7 complete. 42/42 source candidates accounted for. 43 corrected candidates produced (including 2 splits from RCAND-000365). 11 candidate rules generated. 32 rules routed to clarification. Raw input unchanged (SHA256 verified). No rules approved. No graph import performed.",
+  "generated_at": "2026-06-20T00:00:00+00:00"
+}

@@ -1,0 +1,127 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "evidence_record_count": 11,
+  "records": [
+    {
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "evidence_id": "EVID-RCAND000360-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000377",
+      "source_excerpt": "Customers upgrading to Enterprise OS 2026.1 should be aware that Driver Pack versions prior to 12.4.0 were not validated against this release and may exhibit reduced peripheral stability, particularly with USB-C docking accessories and external display adapters. Fleets that have not yet standardized on the current Driver Pack baseline are encouraged to complete that upgrade ahead of any OS migration work.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "evidence_id": "EVID-RCAND000362-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000379",
+      "source_excerpt": "It has also been observed that Security Agent deployments paired with Enterprise OS builds older than 2025.2 can produce inconsistent telemetry reporting to centralized management consoles, even when all other components meet published minimums. Affected environments should treat this as a signal to revisit their OS upgrade timeline rather than assuming the Security Agent installation itself is at fault.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "evidence_id": "EVID-RCAND000363-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000385",
+      "source_excerpt": "System BIOS 6.4.2 requires System Firmware 8.2.0 or later.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "evidence_id": "EVID-RCAND000364-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000386",
+      "source_excerpt": "System Firmware 8.2.1 supports Platform Driver Pack 12.5.0 and later.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-8C74D7E72507C9FD-001",
+      "evidence_id": "EVID-RCAND000366-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000388",
+      "source_excerpt": "Security Agent 4.8.3 requires Endpoint Management Agent 3.7.0 or later.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "evidence_id": "EVID-RCAND000371-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000396",
+      "source_excerpt": "UNSUP-002 Driver Pack versions earlier than 12.0.0 are not supported on Enterprise OS 2026.1.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "evidence_id": "EVID-RCAND000372-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000397",
+      "source_excerpt": "UNSUP-003 Security Agent 4.8.3 is not supported with Endpoint Management Agent versions earlier than 3.7.0.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "evidence_id": "EVID-RCAND000373-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000398",
+      "source_excerpt": "Systems running BIOS 6.4.2 with Firmware earlier than 8.2.0 may experience intermittent boot delays.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "evidence_id": "EVID-RCAND000381-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000407",
+      "source_excerpt": "Upgrade Driver Pack versions earlier than 12.5.0 before migrating to Enterprise OS 2026.1.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "evidence_id": "EVID-RCAND000397-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000426",
+      "source_excerpt": "Because BIOS 6.4.2 requires Firmware 8.2.0 or later (COMP-001), firmware must be brought current before the BIOS upgrade is attempted.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "evidence_id": "EVID-RCAND000399-001",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_id": "CHUNK-000430",
+      "source_excerpt": "Per REC-003, the driver pack must be current before any Enterprise OS migration is attempted.",
+      "verification_status": "review_required",
+      "authoritative_evidence_required": true,
+      "review_decision": "pending",
+      "review_notes": ""
+    }
+  ]
+}

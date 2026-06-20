@@ -1,0 +1,204 @@
+{
+  "status": "PASSED_WITH_WARNINGS",
+  "rule_count": 11,
+  "results": [
+    {
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "source_candidate_ids": [
+        "RCAND-000360"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-FBAB6E52A6005CC3-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "source_candidate_ids": [
+        "RCAND-000362"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-55ADFDEDAD3CD919-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "source_candidate_ids": [
+        "RCAND-000363"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-AEADF7F483FE03B6-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "source_candidate_ids": [
+        "RCAND-000364"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-38D745D2F59A2285-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-8C74D7E72507C9FD-001",
+      "source_candidate_ids": [
+        "RCAND-000366"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-8C74D7E72507C9FD-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "source_candidate_ids": [
+        "RCAND-000371"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-14AFEDA269990CAD-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "source_candidate_ids": [
+        "RCAND-000372"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-26AF9B5E643E194B-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "source_candidate_ids": [
+        "RCAND-000373"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-279369EA931D9982-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "source_candidate_ids": [
+        "RCAND-000381"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-6C513DB9B0A7D3CB-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "source_candidate_ids": [
+        "RCAND-000397"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-F51505E338E8B1D0-001: authoritative source verification pending"
+        }
+      ]
+    },
+    {
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "source_candidate_ids": [
+        "RCAND-000399"
+      ],
+      "validation_status": "PASS",
+      "error_count": 0,
+      "warning_count": 1,
+      "errors": [],
+      "warnings": [
+        {
+          "validation_rule_id": "EVIDENCE-UNVERIFIED",
+          "severity": "warning",
+          "field": "evidence[0]",
+          "message": "CRULE-A93082DE51586EFE-001: authoritative source verification pending"
+        }
+      ]
+    }
+  ]
+}

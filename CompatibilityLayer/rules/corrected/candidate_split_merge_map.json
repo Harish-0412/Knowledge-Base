@@ -1,0 +1,105 @@
+{
+  "splits": [
+    {
+      "source_candidate_id": "RCAND-000365",
+      "generated_candidate_ids": [
+        "RCAND-000365-SPLIT-01",
+        "RCAND-000365-SPLIT-02"
+      ],
+      "reason": "OR condition across two incompatible OS versions; split into two lineage-linked feature_support_added candidates per phase 6 spec",
+      "lineage_preserved": true
+    }
+  ],
+  "merges": [],
+  "one_to_one": [
+    {
+      "source_candidate_id": "RCAND-000360",
+      "corrected_candidate_id": "RCAND-000360",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000362",
+      "corrected_candidate_id": "RCAND-000362",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000363",
+      "corrected_candidate_id": "RCAND-000363",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000364",
+      "corrected_candidate_id": "RCAND-000364",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000366",
+      "corrected_candidate_id": "RCAND-000366",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000371",
+      "corrected_candidate_id": "RCAND-000371",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000372",
+      "corrected_candidate_id": "RCAND-000372",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000373",
+      "corrected_candidate_id": "RCAND-000373",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000381",
+      "corrected_candidate_id": "RCAND-000381",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000397",
+      "corrected_candidate_id": "RCAND-000397",
+      "lineage_preserved": true
+    },
+    {
+      "source_candidate_id": "RCAND-000399",
+      "corrected_candidate_id": "RCAND-000399",
+      "lineage_preserved": true
+    }
+  ],
+  "unconverted": [
+    "RCAND-000361",
+    "RCAND-000367",
+    "RCAND-000368",
+    "RCAND-000369",
+    "RCAND-000370",
+    "RCAND-000374",
+    "RCAND-000375",
+    "RCAND-000376",
+    "RCAND-000377",
+    "RCAND-000378",
+    "RCAND-000379",
+    "RCAND-000380",
+    "RCAND-000382",
+    "RCAND-000383",
+    "RCAND-000384",
+    "RCAND-000385",
+    "RCAND-000386",
+    "RCAND-000387",
+    "RCAND-000388",
+    "RCAND-000389",
+    "RCAND-000390",
+    "RCAND-000391",
+    "RCAND-000392",
+    "RCAND-000393",
+    "RCAND-000394",
+    "RCAND-000395",
+    "RCAND-000396",
+    "RCAND-000398",
+    "RCAND-000400",
+    "RCAND-000401"
+  ],
+  "source_candidate_count": 42,
+  "generated_corrected_candidate_count": 43
+}

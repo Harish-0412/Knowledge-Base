@@ -1,0 +1,83 @@
+{
+  "report_id": "VAL-SCHEMA-RPT-001",
+  "report_type": "schema_validation_report",
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "overall_status": "PASS",
+  "checks_total": 10,
+  "checks_passed": 10,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check_id": "SC-001",
+      "check_name": "No duplicate field names",
+      "status": "PASS",
+      "detail": "26 unique field names confirmed."
+    },
+    {
+      "check_id": "SC-002",
+      "check_name": "No duplicate rule type names",
+      "status": "PASS",
+      "detail": "6 unique rule type names confirmed."
+    },
+    {
+      "check_id": "SC-003",
+      "check_name": "All templates reference valid schema fields",
+      "status": "PASS",
+      "detail": "All template fields validated against schema."
+    },
+    {
+      "check_id": "SC-004",
+      "check_name": "All lifecycle states valid",
+      "status": "PASS",
+      "detail": "7 lifecycle states confirmed: ['candidate', 'validated', 'approved', 'deprecated', 'rejected', 'superseded', 'archived']"
+    },
+    {
+      "check_id": "SC-005",
+      "check_name": "All validation rules reference existing fields",
+      "status": "PASS",
+      "detail": "40 validation rules checked; all reference valid schema fields or cross-field combinations."
+    },
+    {
+      "check_id": "SC-006",
+      "check_name": "All valid test cases conform to schema",
+      "status": "PASS",
+      "detail": "20 valid test cases checked.",
+      "valid_cases_checked": 20
+    },
+    {
+      "check_id": "SC-007",
+      "check_name": "All invalid test cases reference valid error codes",
+      "status": "PASS",
+      "detail": "24 invalid test cases checked; all reference VR-* codes.",
+      "invalid_cases_checked": 24
+    },
+    {
+      "check_id": "SC-008",
+      "check_name": "All entity IDs in examples exist in RC2 registry",
+      "status": "PASS",
+      "detail": "All 9 entity IDs confirmed in RC2 v1.1.0-rc2."
+    },
+    {
+      "check_id": "SC-009",
+      "check_name": "All predicates in examples from registered vocabulary",
+      "status": "PASS",
+      "detail": "All predicates validated against 20-item vocabulary."
+    },
+    {
+      "check_id": "SC-010",
+      "check_name": "All version strings valid for declared version_scheme",
+      "status": "PASS",
+      "detail": "Version strings checked: 12.4.0, 12.5.0, 8.2.0, 8.2.1, 8.0.0, 6.4.2, 2026.1, 4.8.3, 3.7.0 all valid semver. 4.7.x valid wildcard."
+    }
+  ],
+  "summary": {
+    "field_count": 26,
+    "rule_types_defined": 6,
+    "lifecycle_states_defined": 7,
+    "validation_rules_count": 40,
+    "valid_test_cases": 20,
+    "invalid_test_cases": 24,
+    "total_test_cases": 44
+  }
+}

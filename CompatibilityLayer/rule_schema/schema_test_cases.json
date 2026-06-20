@@ -1,0 +1,3562 @@
+{
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "total_test_cases": 44,
+  "valid_count": 20,
+  "invalid_count": 24,
+  "test_cases": [
+    {
+      "test_case_id": "TC-VALID-001",
+      "test_case_type": "valid",
+      "description": "min_version_constraint: Driver Pack >= 12.4.0 when Enterprise OS 2026.1 installed",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-001",
+        "rule_type": "min_version_constraint",
+        "severity": "warning",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.9
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-002",
+      "test_case_type": "valid",
+      "description": "known_issue_fixed: BIOS >= 6.4.2 fixes SEC-2026-001",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-SEC-CVE001",
+        "rule_type": "known_issue_fixed",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "FIXED_BY",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95,
+        "issue_id": "SEC-2026-001"
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-003",
+      "test_case_type": "valid",
+      "description": "readiness_requirement: Driver Pack >= 12.5.0 before Enterprise OS 2026.1 migration",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-READY-001",
+        "rule_type": "readiness_requirement",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "DRV-010",
+          "component_name": "Platform Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.5.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-004",
+      "test_case_type": "valid",
+      "description": "feature_support_added: Endpoint Management Agent 3.7.1 supports SIEM integration",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "MGT-010",
+            "component_name": "Endpoint Management Agent",
+            "operator": "==",
+            "version_normalized": "3.7.1",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-MGT-SIEM-001",
+        "rule_type": "feature_support_added",
+        "severity": "info",
+        "subject": {
+          "entity_id": "MGT-010",
+          "component_name": "Endpoint Management Agent",
+          "knowledge_category": "Management",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "3.7.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "SUPPORTS",
+        "object": {
+          "entity_id": "MGT-008",
+          "component_name": "SIEM",
+          "knowledge_category": "Management",
+          "version_constraint": {
+            "operator": "exists",
+            "version_normalized": "any",
+            "version_scheme": "named_release",
+            "requirement_kind": "required_present"
+          }
+        },
+        "confidence": 0.9
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-005",
+      "test_case_type": "valid",
+      "description": "incompatible_combination: BIOS 6.4.2 with Firmware < 8.0.0",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic"
+          },
+          {
+            "condition_id": "COND-002",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-INCOMPAT-001",
+        "rule_type": "incompatible_combination",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "CONFLICTS_WITH",
+        "object": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-006",
+      "test_case_type": "valid",
+      "description": "update_order_constraint: Firmware to 8.2.1 before BIOS upgrade",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-SEQ-001",
+        "rule_type": "update_order_constraint",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "BLOCKS",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95,
+        "sequence_step": 1,
+        "sequence_total_steps": 2
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-007",
+      "test_case_type": "valid",
+      "description": "min_version_constraint: System Firmware >= 8.2.0 when BIOS 6.4.2 installed",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-001",
+        "rule_type": "min_version_constraint",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-008",
+      "test_case_type": "valid",
+      "description": "known_issue_fixed: System Firmware >= 8.2.1 fixes SEC-2026-002",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-SEC-CVE002",
+        "rule_type": "known_issue_fixed",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "FIXED_BY",
+        "object": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "confidence": 0.95,
+        "issue_id": "SEC-2026-002"
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-009",
+      "test_case_type": "valid",
+      "description": "min_version_constraint: Security Agent >= 4.8.3 when Enterprise OS < 2025.2",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "SEC-004",
+            "component_name": "Security Agent",
+            "operator": "<",
+            "version_normalized": "2025.2",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-SEC-OS-001",
+        "rule_type": "min_version_constraint",
+        "severity": "warning",
+        "subject": {
+          "entity_id": "SEC-004",
+          "component_name": "Security Agent",
+          "knowledge_category": "Security",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "4.8.3",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.9
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-010",
+      "test_case_type": "valid",
+      "description": "incompatible_combination: BIOS 6.4.2 with Firmware < 8.2.0 causes boot delay",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic"
+          },
+          {
+            "condition_id": "COND-002",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-INCOMPAT-002",
+        "rule_type": "incompatible_combination",
+        "severity": "warning",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "CONFLICTS_WITH",
+        "object": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-011",
+      "test_case_type": "valid",
+      "description": "readiness_requirement: System Firmware must be current before BIOS upgrade",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-READY-001",
+        "rule_type": "readiness_requirement",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-012",
+      "test_case_type": "valid",
+      "description": "min_version_constraint: NIC Firmware >= 4.2.0 for EdgeStation with Platform Driver Pack 12.5.0",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "DRV-010",
+            "component_name": "Platform Driver Pack",
+            "operator": "==",
+            "version_normalized": "12.5.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-DRV-NIC-001",
+        "rule_type": "min_version_constraint",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-005",
+          "component_name": "Network Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "4.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "DRV-010",
+          "component_name": "Platform Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.5.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "confidence": 1.0
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-013",
+      "test_case_type": "valid",
+      "description": "known_issue_fixed: Security Agent >= 4.8.3 fixes SEC-2026-003",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-SEC-CVE003",
+        "rule_type": "known_issue_fixed",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "SEC-004",
+          "component_name": "Security Agent",
+          "knowledge_category": "Security",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "4.8.3",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "FIXED_BY",
+        "object": {
+          "entity_id": "SEC-004",
+          "component_name": "Security Agent",
+          "knowledge_category": "Security",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "4.8.3",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "confidence": 0.95,
+        "issue_id": "SEC-2026-003"
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-014",
+      "test_case_type": "valid",
+      "description": "min_version_constraint: Endpoint Management Agent >= 3.7.0 when Security Agent 4.8.3 installed",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "SEC-004",
+            "component_name": "Security Agent",
+            "operator": "==",
+            "version_normalized": "4.8.3",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-MGT-SEC-001",
+        "rule_type": "min_version_constraint",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "MGT-010",
+          "component_name": "Endpoint Management Agent",
+          "knowledge_category": "Management",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "3.7.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "SEC-004",
+          "component_name": "Security Agent",
+          "knowledge_category": "Security",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "4.8.3",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "confidence": 1.0
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-015",
+      "test_case_type": "valid",
+      "description": "update_order_constraint: BIOS direct jump from < 6.2.0 to 6.4.2",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "<",
+            "version_normalized": "6.2.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-SEQ-002",
+        "rule_type": "update_order_constraint",
+        "severity": "warning",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "UPGRADE_TO",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95,
+        "sequence_step": 1
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-016",
+      "test_case_type": "valid",
+      "description": "min_version_constraint: Platform Driver Pack >= 12.5.0 supports Enterprise OS 2025.2",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2025.2",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-025",
+        "rule_type": "min_version_constraint",
+        "severity": "info",
+        "subject": {
+          "entity_id": "DRV-010",
+          "component_name": "Platform Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.5.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "SUPPORTS",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.9
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-017",
+      "test_case_type": "valid",
+      "description": "feature_support_added: System Firmware 8.2.1 supports Platform Driver Pack >= 12.5.0",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "==",
+            "version_normalized": "8.2.1",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-DRV-001",
+        "rule_type": "feature_support_added",
+        "severity": "info",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "SUPPORTS",
+        "object": {
+          "entity_id": "DRV-010",
+          "component_name": "Platform Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.5.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-018",
+      "test_case_type": "valid",
+      "description": "min_version_constraint: Driver Pack >= 12.0.0 required for Enterprise OS 2026.1 (UNSUP-002)",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-UNSUP002",
+        "rule_type": "min_version_constraint",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.0.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-019",
+      "test_case_type": "valid",
+      "description": "readiness_requirement: Firmware >= 8.2.0 before BIOS upgrade (co-requirement COMP-001)",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-READY-002",
+        "rule_type": "readiness_requirement",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.95
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-VALID-020",
+      "test_case_type": "valid",
+      "description": "update_order_constraint: Firmware < 8.0.0 must upgrade to 8.2.1 before BIOS step 2",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "==",
+            "version_normalized": "7.9.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-SEQ-003",
+        "rule_type": "update_order_constraint",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "BLOCKS",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "confidence": 0.9,
+        "sequence_step": 1,
+        "sequence_total_steps": 2
+      },
+      "expected_result": "PASS",
+      "expected_error_code": null,
+      "failing_field": null
+    },
+    {
+      "test_case_id": "TC-INVALID-001",
+      "test_case_type": "invalid",
+      "description": "Missing rule_id",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-024",
+      "failing_field": "rule_id"
+    },
+    {
+      "test_case_id": "TC-INVALID-002",
+      "test_case_type": "invalid",
+      "description": "Invalid rule_type value",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-999",
+        "rule_type": "unsupported_type",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-025",
+      "failing_field": "rule_type"
+    },
+    {
+      "test_case_id": "TC-INVALID-003",
+      "test_case_type": "invalid",
+      "description": "Invalid lifecycle state",
+      "rule": {
+        "status": "pending",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-998",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-021",
+      "failing_field": "status"
+    },
+    {
+      "test_case_id": "TC-INVALID-004",
+      "test_case_type": "invalid",
+      "description": "Invalid predicate not in vocabulary",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-997",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "NEEDS",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-020",
+      "failing_field": "predicate"
+    },
+    {
+      "test_case_id": "TC-INVALID-005",
+      "test_case_type": "invalid",
+      "description": "Invalid version syntax for semantic scheme",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-OS-996",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "twelve.4",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-008",
+      "failing_field": "subject.version_constraint.version_normalized"
+    },
+    {
+      "test_case_id": "TC-INVALID-006",
+      "test_case_type": "invalid",
+      "description": "confidence below 0",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-995",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": -0.1
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-012",
+      "failing_field": "confidence"
+    },
+    {
+      "test_case_id": "TC-INVALID-007",
+      "test_case_type": "invalid",
+      "description": "confidence above 1",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-994",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 1.5
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-012",
+      "failing_field": "confidence"
+    },
+    {
+      "test_case_id": "TC-INVALID-008",
+      "test_case_type": "invalid",
+      "description": "feature_support_added with severity=critical (forbidden)",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-MGT-SIEM-993",
+        "rule_type": "feature_support_added",
+        "subject": {
+          "entity_id": "MGT-010",
+          "component_name": "Endpoint Management Agent",
+          "knowledge_category": "Management",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "3.7.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "SUPPORTS",
+        "object": {
+          "entity_id": "MGT-008",
+          "component_name": "SIEM",
+          "knowledge_category": "Management",
+          "version_constraint": {
+            "operator": "exists",
+            "version_normalized": "any",
+            "version_scheme": "named_release",
+            "requirement_kind": "required_present"
+          }
+        },
+        "severity": "critical",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-032",
+      "failing_field": "severity"
+    },
+    {
+      "test_case_id": "TC-INVALID-009",
+      "test_case_type": "invalid",
+      "description": "incompatible_combination with only 1 condition",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-992",
+        "rule_type": "incompatible_combination",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "CONFLICTS_WITH",
+        "object": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "severity": "critical",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-038",
+      "failing_field": "conditions"
+    },
+    {
+      "test_case_id": "TC-INVALID-010",
+      "test_case_type": "invalid",
+      "description": "approved status without approved_by",
+      "rule": {
+        "status": "approved",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": "2026-06-20T15:00:00+00:00",
+        "rule_id": "CRULE-DRV-OS-991",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-023",
+      "failing_field": "approved_by"
+    },
+    {
+      "test_case_id": "TC-INVALID-011",
+      "test_case_type": "invalid",
+      "description": "approved status without approved_at",
+      "rule": {
+        "status": "approved",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": "tech_lead_001",
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-990",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-023",
+      "failing_field": "approved_at"
+    },
+    {
+      "test_case_id": "TC-INVALID-012",
+      "test_case_type": "invalid",
+      "description": "update_order_constraint without sequence_step",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-989",
+        "rule_type": "update_order_constraint",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "BLOCKS",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "critical",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-035",
+      "failing_field": "sequence_step"
+    },
+    {
+      "test_case_id": "TC-INVALID-013",
+      "test_case_type": "invalid",
+      "description": "entity_id not matching RC2 pattern",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-988",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRIVER-001",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-001",
+      "failing_field": "subject.entity_id"
+    },
+    {
+      "test_case_id": "TC-INVALID-014",
+      "test_case_type": "invalid",
+      "description": "self-referential rule (subject == object)",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-DRV-987",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-007",
+      "failing_field": "subject/object"
+    },
+    {
+      "test_case_id": "TC-INVALID-015",
+      "test_case_type": "invalid",
+      "description": "Invalid condition_logic value",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "BOTH",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-986",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-033",
+      "failing_field": "condition_logic"
+    },
+    {
+      "test_case_id": "TC-INVALID-016",
+      "test_case_type": "invalid",
+      "description": "Invalid operator in version_constraint",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-985",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": "LIKE",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-008",
+      "failing_field": "subject.version_constraint.operator"
+    },
+    {
+      "test_case_id": "TC-INVALID-017",
+      "test_case_type": "invalid",
+      "description": "Invalid version_scheme",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-984",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "floating_point",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-008",
+      "failing_field": "subject.version_constraint.version_scheme"
+    },
+    {
+      "test_case_id": "TC-INVALID-018",
+      "test_case_type": "invalid",
+      "description": "known_issue_fixed with wrong operator !=",
+      "rule": {
+        "status": "candidate",
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-SEC-983",
+        "rule_type": "known_issue_fixed",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "!=",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "FIXED_BY",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "critical",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-008",
+      "failing_field": "subject.version_constraint.operator"
+    },
+    {
+      "test_case_id": "TC-INVALID-019",
+      "test_case_type": "invalid",
+      "description": "confidence below rule_type minimum threshold (incompatible_combination needs >= 0.85)",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic"
+          },
+          {
+            "condition_id": "COND-002",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-982",
+        "rule_type": "incompatible_combination",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "CONFLICTS_WITH",
+        "object": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "severity": "critical",
+        "confidence": 0.7
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-013",
+      "failing_field": "confidence"
+    },
+    {
+      "test_case_id": "TC-INVALID-020",
+      "test_case_type": "invalid",
+      "description": "Missing subject field entirely",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-981",
+        "rule_type": "min_version_constraint",
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-026",
+      "failing_field": "subject"
+    },
+    {
+      "test_case_id": "TC-INVALID-021",
+      "test_case_type": "invalid",
+      "description": "evidence source_excerpt is empty",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_excerpt": "",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-980",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-017",
+      "failing_field": "evidence[0].source_excerpt"
+    },
+    {
+      "test_case_id": "TC-INVALID-022",
+      "test_case_type": "invalid",
+      "description": "source_document pattern mismatch",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOCUMENT-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-DRV-OS-979",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-039",
+      "failing_field": "source_document"
+    },
+    {
+      "test_case_id": "TC-INVALID-023",
+      "test_case_type": "invalid",
+      "description": "update_order_constraint sequence_step=2 without sequence_prerequisite_ref",
+      "rule": {
+        "status": "candidate",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "rule_id": "CRULE-FW-BIOS-978",
+        "rule_type": "update_order_constraint",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "BLOCKS",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "critical",
+        "confidence": 0.9,
+        "sequence_step": 2,
+        "sequence_total_steps": 2
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-036",
+      "failing_field": "sequence_prerequisite_ref"
+    },
+    {
+      "test_case_id": "TC-INVALID-024",
+      "test_case_type": "invalid",
+      "description": "No evidence records when status=approved",
+      "rule": {
+        "status": "approved",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": "reviewer_001",
+        "approved_at": "2026-06-20T15:00:00+00:00",
+        "rule_id": "CRULE-DRV-OS-977",
+        "rule_type": "min_version_constraint",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "severity": "warning",
+        "confidence": 0.9
+      },
+      "expected_result": "FAIL",
+      "expected_error_code": "VR-019",
+      "failing_field": "evidence"
+    }
+  ]
+}

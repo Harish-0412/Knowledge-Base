@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "schema_id": "COMPAT-RULE-SCHEMA-1.0.0",
+  "schema_version": "1.0.0",
+  "rule_count": 11,
+  "passed_rule_count": 11,
+  "failed_rule_count": 0,
+  "error_count": 0,
+  "errors": []
+}

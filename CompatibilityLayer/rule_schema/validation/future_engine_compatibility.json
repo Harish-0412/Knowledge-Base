@@ -1,0 +1,115 @@
+{
+  "report_id": "COMPAT-ENGINE-FUTURE-001",
+  "report_type": "future_engine_compatibility",
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "overall_status": "PASS",
+  "future_engine_compatibility": "PASS",
+  "engines": [
+    {
+      "engine_name": "Neo4j Node Generation",
+      "compatibility_status": "COMPATIBLE",
+      "description": "Every scalar field in the schema maps directly to a Neo4j node property. Arrays (conditions, exceptions, dependencies, conflicts, evidence, remediations, tags) map to relationship edges or sub-nodes.",
+      "field_mappings": [
+        "rule_id -> :CompatibilityRule node primary key property",
+        "rule_type, status, severity, confidence, condition_logic -> node scalar properties",
+        "subject.entity_id -> :TARGETS edge to Layer 1 entity node (source node)",
+        "object.entity_id -> :TARGETS edge to Layer 1 entity node (target node)",
+        "predicate -> edge label between subject and object Layer 1 nodes",
+        "created_timestamp, updated_timestamp, approved_by, approved_at -> node properties",
+        "source_document -> :REFERENCES edge to CompatibilityDocument node",
+        "tags -> string array property on CompatibilityRule node"
+      ],
+      "gaps": [
+        "Arrays (conditions, remediations, evidence) require sub-nodes or relationship properties — no gap in schema support, implementation detail only"
+      ],
+      "recommendation": "Use :HAS_CONDITION, :HAS_EVIDENCE, :HAS_REMEDIATION edge types from the relationships ontology for array fields."
+    },
+    {
+      "engine_name": "Neo4j Relationship Generation",
+      "compatibility_status": "COMPATIBLE",
+      "description": "The predicate field directly maps to Neo4j relationship type. subject.entity_id and object.entity_id provide the source and target node references for the edge.",
+      "field_mappings": [
+        "predicate -> Neo4j relationship type label (e.g., REQUIRES, CONFLICTS_WITH, FIXED_BY)",
+        "subject.entity_id -> source node :CompatibilityRule or Layer 1 entity",
+        "object.entity_id -> target node Layer 1 entity",
+        "conditions[] -> edge property conditions_fingerprint or :HAS_CONDITION sub-edges",
+        "confidence -> edge property confidence",
+        "severity -> edge property severity"
+      ],
+      "gaps": [],
+      "recommendation": "Store conditions as edge properties for simple rules; use :HAS_CONDITION sub-nodes for complex multi-condition rules."
+    },
+    {
+      "engine_name": "Qdrant Document Generation",
+      "compatibility_status": "COMPATIBLE",
+      "description": "The evidence[].source_excerpt field is the primary embedding payload. Rule metadata fields are filterable Qdrant payload attributes enabling faceted search and similarity queries.",
+      "field_mappings": [
+        "evidence[].source_excerpt -> primary embedding text payload",
+        "rule_id -> payload field (keyword filter, primary key)",
+        "rule_type -> payload field (keyword filter)",
+        "status -> payload field (keyword filter — approved only imported)",
+        "severity -> payload field (keyword filter)",
+        "confidence -> payload field (float filter)",
+        "subject.entity_id -> payload field subject_entity_id (keyword filter)",
+        "object.entity_id -> payload field object_entity_id (keyword filter)",
+        "source_document -> payload field (keyword filter)",
+        "remediations[].remediation_hint -> secondary text payload for recommendation similarity"
+      ],
+      "embedding_payload": "evidence[].source_excerpt (concatenated if multiple evidence records)",
+      "deterministic_payload": "Payload is deterministic: sorted evidence source_excerpts joined with newline separator",
+      "gaps": [],
+      "recommendation": "Embed source_excerpt as primary vector. Store remediation_hint as secondary vector or metadata for recommendation retrieval."
+    },
+    {
+      "engine_name": "Compliance Execution Engine",
+      "compatibility_status": "COMPATIBLE",
+      "description": "The conditions[] array provides machine-evaluable predicates with entity_id, operator, and version_normalized enabling deterministic version comparison against system inventory. The remediations[] array provides actionable fix paths. severity drives alert priority.",
+      "field_mappings": [
+        "conditions[] -> evaluable predicates (entity_id resolved against inventory, operator + version_normalized for comparison)",
+        "condition_logic -> AND/OR combinator for condition evaluation",
+        "subject.version_constraint -> primary compliance threshold being enforced",
+        "object.version_constraint -> environmental applicability scope",
+        "severity -> alert priority mapping (critical=P1, warning=P2, info=P3)",
+        "status -> gate check (only approved rules evaluated)",
+        "exceptions[] -> suppression rules for exempt device families"
+      ],
+      "gaps": [
+        "Inventory integration is an implementation concern; schema provides all required fields"
+      ],
+      "recommendation": "Index rules by subject.entity_id for O(1) compliance scan lookup. Cache exceptions[] by scope_type for fast suppression checking."
+    },
+    {
+      "engine_name": "Root Cause Analysis Engine",
+      "compatibility_status": "COMPATIBLE",
+      "description": "The evidence[] field provides document-level traceability enabling root cause navigation. sequence_prerequisite_ref enables chain traversal for sequencing violations. The subject-predicate-object structure enables causal graph traversal.",
+      "field_mappings": [
+        "evidence[].source_document_id -> traces violation to source document",
+        "evidence[].source_excerpt -> exact textual evidence for the rule",
+        "sequence_prerequisite_ref -> links to blocking prerequisite rule for chain traversal",
+        "sequence_step + sequence_total_steps -> indicates position in dependency chain",
+        "subject.entity_id + object.entity_id -> graph nodes for causal path traversal",
+        "dependencies[] -> additional dependency context for multi-hop root cause analysis",
+        "source_section -> precise document location for evidence review"
+      ],
+      "gaps": [],
+      "recommendation": "Build Neo4j traversal queries using :BLOCKS and :DEPENDS_ON edges derived from sequence_prerequisite_ref and dependencies[] for root cause chain construction."
+    },
+    {
+      "engine_name": "Recommendation Engine",
+      "compatibility_status": "COMPATIBLE",
+      "description": "The remediations[].remediation_hint provides human-readable action instructions. target_version and operator enable precise upgrade targeting. sequence_order enables ordered multi-step remediation plans.",
+      "field_mappings": [
+        "remediations[].remediation_hint -> human-readable remediation instruction text",
+        "remediations[].target_entity_id -> identifies which component to upgrade",
+        "remediations[].target_version + operator -> precise upgrade target (e.g., >= 12.5.0)",
+        "remediations[].sequence_order -> ordering for multi-step remediation plans",
+        "remediations[].remediation_type -> categorizes action (version_upgrade, sequenced_update, etc.)",
+        "severity -> urgency weighting for recommendation prioritization",
+        "rule_type -> recommendation template selection (update_order_constraint -> sequenced plan)"
+      ],
+      "gaps": [],
+      "recommendation": "Sort remediations by sequence_order for ordered upgrade plans. Use severity + confidence as prioritization weights for recommendation ranking."
+    }
+  ]
+}

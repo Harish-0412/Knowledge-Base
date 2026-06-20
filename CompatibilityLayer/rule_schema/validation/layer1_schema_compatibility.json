@@ -1,0 +1,110 @@
+{
+  "report_id": "COMPAT-L1-SCHEMA-001",
+  "report_type": "layer1_schema_compatibility",
+  "schema_version": "1.0.0",
+  "rc2_registry_version": "1.1.0-rc2",
+  "created_date": "2026-06-20",
+  "layer1_connection": "PASS",
+  "cross_layer_status": "COMPATIBLE",
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "check_id": "L1-001",
+      "check_name": "Entity ID field pattern matches RC2 pattern",
+      "status": "PASS",
+      "detail": "subject.entity_id and object.entity_id both enforce pattern ^[A-Z]{2,3}-[0-9]{3}$ which matches all RC2 entity IDs (DRV-001 through DRV-010, FW-001 through FW-013, OS-001 through OS-013, SEC-001 through SEC-012, MGT-001 through MGT-010).",
+      "schema_pattern": "^[A-Z]{2,3}-[0-9]{3}$",
+      "rc2_pattern": "^[A-Z]{2,3}-[0-9]{3}$",
+      "patterns_match": true
+    },
+    {
+      "check_id": "L1-002",
+      "check_name": "All 9 resolved entity IDs are storable in entity_id fields",
+      "status": "PASS",
+      "detail": "All 9 resolved entity IDs (FW-001, FW-005, FW-013, OS-013, DRV-009, DRV-010, SEC-004, MGT-008, MGT-010) match the entity_id pattern and are confirmed present in RC2 v1.1.0-rc2.",
+      "verified_entity_ids": [
+        "FW-001",
+        "FW-005",
+        "FW-013",
+        "OS-013",
+        "DRV-009",
+        "DRV-010",
+        "SEC-004",
+        "MGT-008",
+        "MGT-010"
+      ]
+    },
+    {
+      "check_id": "L1-003",
+      "check_name": "knowledge_category values align with RC2 categories",
+      "status": "PASS",
+      "detail": "Schema allows knowledge_category values: Driver, Firmware, Operating System, Security, Management. RC2 registry uses identical category labels.",
+      "schema_categories": [
+        "Driver",
+        "Firmware",
+        "Operating System",
+        "Security",
+        "Management"
+      ],
+      "rc2_categories": [
+        "Driver",
+        "Firmware",
+        "Operating System",
+        "Security",
+        "Management"
+      ],
+      "categories_match": true
+    },
+    {
+      "check_id": "L1-004",
+      "check_name": "component_name field can store all RC2 canonical_names",
+      "status": "PASS",
+      "detail": "component_name is typed as string with no length restriction. All RC2 canonical names (max length observed: 'Embedded Controller Firmware' = 29 chars) are storable.",
+      "max_rc2_canonical_name_length": 29,
+      "schema_field_type": "string (unrestricted length)"
+    },
+    {
+      "check_id": "L1-005",
+      "check_name": "Version constraint operators cover all operators in RC2 entity version data",
+      "status": "PASS",
+      "detail": "Schema operator set (==, !=, >=, <=, >, <, in, not_in, exists, matches, installed, not_installed) is a superset of all version operators observed in the raw compatibility candidates.",
+      "schema_operators": [
+        "==",
+        "!=",
+        ">=",
+        "<=",
+        ">",
+        "<",
+        "in",
+        "not_in",
+        "exists",
+        "matches",
+        "installed",
+        "not_installed"
+      ],
+      "operators_observed_in_candidates": [
+        "==",
+        "!=",
+        ">=",
+        "<",
+        "installed",
+        "exists"
+      ]
+    },
+    {
+      "check_id": "L1-006",
+      "check_name": "All 5 RC2 knowledge categories are representable as subject/object entity types",
+      "status": "PASS",
+      "detail": "subject.knowledge_category and object.knowledge_category both enumerate all 5 RC2 categories. Every entity in RC2 v1.1.0-rc2 belongs to one of these 5 categories and is therefore referenceable from any rule.",
+      "rc2_entity_count": 58,
+      "categories_covered": 5
+    }
+  ],
+  "cross_layer_linkage": {
+    "description": "The TARGETS relationship defined in the compatibility_relationships.json ontology connects CompatibilityRule subject and object entity_ids to Layer 1 canonical entity nodes. This schema enforces the same ID pattern as RC2, making every subject/object a first-class cross-layer reference.",
+    "layer3_to_layer1_id_field": "subject.entity_id and object.entity_id",
+    "layer1_registry_path": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+    "linkage_relationship": "TARGETS",
+    "linkage_status": "CONNECTED"
+  }
+}

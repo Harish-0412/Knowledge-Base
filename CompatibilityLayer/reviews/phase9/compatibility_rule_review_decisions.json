@@ -1,0 +1,423 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "generated_at": "2026-06-20T00:00:00+00:00",
+  "allowed_decisions": [
+    "approve",
+    "approve_with_corrections",
+    "reject",
+    "defer",
+    "needs_clarification",
+    "split",
+    "merge"
+  ],
+  "decision_record_count": 11,
+  "decisions": [
+    {
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "source_candidate_ids": [
+        "RCAND-000360"
+      ],
+      "rule_type": "min_version_constraint",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "Customers upgrading to Enterprise OS 2026.1 should be aware that Driver Pack versions prior to 12.4.0 were not validated against this release and may exhibit reduced peripheral stability, particularly with USB-C docking accessories and external display adapters. Fleets that have not yet standardized on the current Driver Pack baseline are encouraged to complete that upgrade ahead of any OS migration work.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000377"
+      ],
+      "confidence": 0.9,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "source_candidate_ids": [
+        "RCAND-000362"
+      ],
+      "rule_type": "known_issue_fixed",
+      "predicate": "FIXED_BY",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "It has also been observed that Security Agent deployments paired with Enterprise OS builds older than 2025.2 can produce inconsistent telemetry reporting to centralized management consoles, even when all other components meet published minimums. Affected environments should treat this as a signal to revisit their OS upgrade timeline rather than assuming the Security Agent installation itself is at fault.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000379"
+      ],
+      "confidence": 0.9,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "source_candidate_ids": [
+        "RCAND-000363"
+      ],
+      "rule_type": "min_version_constraint",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "System BIOS 6.4.2 requires System Firmware 8.2.0 or later.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000385"
+      ],
+      "confidence": 1.0,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "source_candidate_ids": [
+        "RCAND-000364"
+      ],
+      "rule_type": "readiness_requirement",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "System Firmware 8.2.1 supports Platform Driver Pack 12.5.0 and later.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000386"
+      ],
+      "confidence": 0.95,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-8C74D7E72507C9FD-001",
+      "source_candidate_ids": [
+        "RCAND-000366"
+      ],
+      "rule_type": "min_version_constraint",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "Security Agent 4.8.3 requires Endpoint Management Agent 3.7.0 or later.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000388"
+      ],
+      "confidence": 1.0,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "source_candidate_ids": [
+        "RCAND-000371"
+      ],
+      "rule_type": "min_version_constraint",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "UNSUP-002 Driver Pack versions earlier than 12.0.0 are not supported on Enterprise OS 2026.1.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000396"
+      ],
+      "confidence": 0.95,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "source_candidate_ids": [
+        "RCAND-000372"
+      ],
+      "rule_type": "incompatible_combination",
+      "predicate": "CONFLICTS_WITH",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "UNSUP-003 Security Agent 4.8.3 is not supported with Endpoint Management Agent versions earlier than 3.7.0.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000397"
+      ],
+      "confidence": 0.95,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "source_candidate_ids": [
+        "RCAND-000373"
+      ],
+      "rule_type": "incompatible_combination",
+      "predicate": "CONFLICTS_WITH",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "Systems running BIOS 6.4.2 with Firmware earlier than 8.2.0 may experience intermittent boot delays.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000398"
+      ],
+      "confidence": 0.95,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "source_candidate_ids": [
+        "RCAND-000381"
+      ],
+      "rule_type": "readiness_requirement",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "Upgrade Driver Pack versions earlier than 12.5.0 before migrating to Enterprise OS 2026.1.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000407"
+      ],
+      "confidence": 0.95,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "source_candidate_ids": [
+        "RCAND-000397"
+      ],
+      "rule_type": "readiness_requirement",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "Because BIOS 6.4.2 requires Firmware 8.2.0 or later (COMP-001), firmware must be brought current before the BIOS upgrade is attempted.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000426"
+      ],
+      "confidence": 0.95,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    },
+    {
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "source_candidate_ids": [
+        "RCAND-000399"
+      ],
+      "rule_type": "readiness_requirement",
+      "predicate": "REQUIRES",
+      "current_status": "candidate",
+      "phase8_validation_status": "PASS",
+      "recommended_decision": "needs_clarification",
+      "recommendation_reason": "Authoritative source evidence has not been independently verified; semantic approval must wait for human source review.",
+      "risk_level": "high",
+      "subject_resolution": "resolved_domain_entity",
+      "object_resolution": "resolved_domain_entity",
+      "version_validation": "passed",
+      "condition_validation": "passed",
+      "exception_validation": "passed",
+      "evidence_validation": "review_required",
+      "remediation_validation": "human_modality_review_required",
+      "required_corrections": [
+        "Verify the excerpt against the authoritative source document and record the evidence location."
+      ],
+      "questions_for_reviewer": [
+        "Does the source text explicitly support the predicate, direction, applicability, and stated version threshold?",
+        "Does the remediation preserve the source modality without strengthening it?"
+      ],
+      "source_excerpt": "Per REC-003, the driver pack must be current before any Enterprise OS migration is attempted.",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000430"
+      ],
+      "confidence": 0.9,
+      "approval_status": "pending",
+      "approved_by": null,
+      "approval_date": null,
+      "review_notes": ""
+    }
+  ]
+}
