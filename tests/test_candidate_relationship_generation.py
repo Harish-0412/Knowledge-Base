@@ -104,7 +104,7 @@ class TestCandidateGeneration(unittest.TestCase):
                 "python",
                 str(PROJECT_ROOT / "scripts" / "generate_candidate_relationships.py"),
                 "generate",
-                "--domain-dir", str(PROJECT_ROOT / "Domain_layer" / "working" / "v1.1"),
+                "--domain-dir", str(PROJECT_ROOT / "Domain_layer" / "working" / "v1.1-rc2"),
                 "--registry", str(PROJECT_ROOT / "ontology" / "releases" / "v1.1-rc2" / "canonical_entity_registry.json"),
                 "--cross-references", str(PROJECT_ROOT / "ontology" / "releases" / "v1.1-rc2" / "cross_references_v1.1.json"),
                 "--relationship-ontology", str(PROJECT_ROOT / "ontology" / "relationship_ontology" / "v1.0"),
@@ -118,7 +118,15 @@ class TestCandidateGeneration(unittest.TestCase):
     def test_03_all_candidates_present(self):
         """Test 3: All candidates are present."""
         self.assertGreater(len(self.all_candidates), 0)
-        self.assertEqual(len(self.all_candidates), 197)
+        cross_refs = self._load_json(
+            PROJECT_ROOT / "ontology" / "releases" / "v1.1-rc2" / "cross_references_v1.1.json"
+        )
+        expected_pairs = {
+            (ref["source_entity_id"], ref["target_entity_id"])
+            for ref in cross_refs["references"]
+            if ref.get("status") == "resolved"
+        }
+        self.assertEqual(len(self.all_candidates), len(expected_pairs))
 
     def test_04_every_candidate_has_required_fields(self):
         """Test 4: Every candidate has required fields."""

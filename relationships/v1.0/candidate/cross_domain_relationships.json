@@ -3,7 +3,7 @@
   "entity_registry_version": "1.1.0-rc2",
   "status": "candidate",
   "domain": "Cross Domain",
-  "relationship_count": 77,
+  "relationship_count": 94,
   "relationships": [
     {
       "relationship_id": "REL-CAND-7D7B118A1BD5",
@@ -321,6 +321,41 @@
       }
     },
     {
+      "relationship_id": "REL-CAND-EFDEFBC19229",
+      "source_id": "FW-001",
+      "relationship_type": "USES",
+      "target_id": "FW-011",
+      "statement": "BIOS uses OS Bootloader.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C7A5D47D085B",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-001",
+          "title": "RC2 Cross-Reference: OS Bootloader",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-001; target_entity_id=FW-011; reference=OS Bootloader",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
       "relationship_id": "REL-CAND-86DC1B3C01CB",
       "source_id": "FW-001",
       "relationship_type": "USES",
@@ -337,6 +372,41 @@
           "title": "RC2 Cross-Reference: Secure Boot",
           "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
           "locator": "source_entity_id=FW-001; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3DFAEF3C9C00",
+      "source_id": "FW-001",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "BIOS uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0AC1503DB174",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-001",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-001; target_entity_id=FW-007; reference=Firmware Update Utility",
           "notes": "Candidate relationship from approved cross-reference resolution"
         }
       ],
@@ -426,6 +496,76 @@
       }
     },
     {
+      "relationship_id": "REL-CAND-D47C4B012562",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-011",
+      "statement": "UEFI uses OS Bootloader.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A8B6C8BDD444",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: OS Bootloader",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-011; reference=OS Bootloader",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CDBCC690963E",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "UEFI uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-EF9EC3EA03CA",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
       "relationship_id": "REL-CAND-B687835AB80C",
       "source_id": "FW-003",
       "relationship_type": "USES",
@@ -442,6 +582,41 @@
           "title": "RC2 Cross-Reference: TPM",
           "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
           "locator": "source_entity_id=FW-003; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-08DD1281754D",
+      "source_id": "FW-003",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "Embedded Controller Firmware uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-8D91FBD1D08C",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-003",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-003; target_entity_id=FW-007; reference=Firmware Update Utility",
           "notes": "Candidate relationship from approved cross-reference resolution"
         }
       ],
@@ -531,6 +706,41 @@
       }
     },
     {
+      "relationship_id": "REL-CAND-2FB199AD6E74",
+      "source_id": "FW-004",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "Storage Firmware uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6074FCC50D16",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-004",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-004; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
       "relationship_id": "REL-CAND-F71930C18257",
       "source_id": "FW-005",
       "relationship_type": "USES",
@@ -601,6 +811,251 @@
       }
     },
     {
+      "relationship_id": "REL-CAND-F1B11D5476D7",
+      "source_id": "FW-005",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "Network Firmware uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-609BBD500E10",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-005",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-005; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-420A33E34E00",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-001",
+      "statement": "Firmware Update Utility uses BIOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F18AB765952F",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: BIOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-001; reference=BIOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-25CA512B00BF",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Firmware Update Utility uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7C0B57DBDD27",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-03E438368952",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-003",
+      "statement": "Firmware Update Utility uses Embedded Controller Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-134BD303872A",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: Embedded Controller Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-003; reference=Embedded Controller Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-F034DBDB11AD",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-004",
+      "statement": "Firmware Update Utility uses Storage Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3A5D1D4E4D36",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: Storage Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-004; reference=Storage Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2C4291CBEAEC",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-005",
+      "statement": "Firmware Update Utility uses Network Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F18A4950E649",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: Network Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-005; reference=Network Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-897799F9FA26",
+      "source_id": "FW-008",
+      "relationship_type": "USES",
+      "target_id": "FW-011",
+      "statement": "EFI System Partition uses OS Bootloader.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0454E29606BE",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-008",
+          "title": "RC2 Cross-Reference: OS Bootloader",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-008; target_entity_id=FW-011; reference=OS Bootloader",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
       "relationship_id": "REL-CAND-717A23886DF3",
       "source_id": "FW-010",
       "relationship_type": "USES",
@@ -617,6 +1072,111 @@
           "title": "RC2 Cross-Reference: TPM",
           "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
           "locator": "source_entity_id=FW-010; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EEF66F747158",
+      "source_id": "FW-011",
+      "relationship_type": "USES",
+      "target_id": "FW-001",
+      "statement": "OS Bootloader uses BIOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-09A907C7898C",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-011",
+          "title": "RC2 Cross-Reference: BIOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-011; target_entity_id=FW-001; reference=BIOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-37013D84B40E",
+      "source_id": "FW-011",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "OS Bootloader uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6819B2028053",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-011",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-011; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-E9571B6304BC",
+      "source_id": "FW-011",
+      "relationship_type": "USES",
+      "target_id": "FW-008",
+      "statement": "OS Bootloader uses EFI System Partition.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5F7920568EFE",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-011",
+          "title": "RC2 Cross-Reference: EFI System Partition",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-011; target_entity_id=FW-008; reference=EFI System Partition",
           "notes": "Candidate relationship from approved cross-reference resolution"
         }
       ],
@@ -687,41 +1247,6 @@
           "title": "RC2 Cross-Reference: EDR Agent",
           "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
           "locator": "source_entity_id=MGT-002; target_entity_id=SEC-004; reference=EDR Agent",
-          "notes": "Candidate relationship from approved cross-reference resolution"
-        }
-      ],
-      "confidence": 0.7,
-      "verification_status": "review_required",
-      "approval_status": "candidate",
-      "approved_by": null,
-      "approved_at": null,
-      "source_release": "1.1.0-rc2",
-      "relationship_ontology_version": "1.0.0",
-      "metadata": {
-        "extraction_method": "approved_cross_reference",
-        "source_field": "cross_references",
-        "cross_reference_status": "resolved",
-        "reference_resolution_method": "canonical_name",
-        "routing_domain": "cross_domain"
-      }
-    },
-    {
-      "relationship_id": "REL-CAND-AB20F8BAF2AC",
-      "source_id": "MGT-003",
-      "relationship_type": "USES",
-      "target_id": "FW-007",
-      "statement": "Patch Manager uses Firmware Update Utility.",
-      "assertion_scope": "universal",
-      "condition_logic": "ALL",
-      "conditions": [],
-      "evidence": [
-        {
-          "evidence_id": "EVID-CAND-B4E471DFC11D",
-          "source_type": "knowledge_base_source",
-          "source_id": "MGT-003",
-          "title": "RC2 Cross-Reference: Firmware Update Utility",
-          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
-          "locator": "source_entity_id=MGT-003; target_entity_id=FW-007; reference=Firmware Update Utility",
           "notes": "Candidate relationship from approved cross-reference resolution"
         }
       ],
@@ -2036,6 +2561,41 @@
       }
     },
     {
+      "relationship_id": "REL-CAND-12C6C612D77D",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "OS-010",
+      "statement": "Ubuntu uses Ubuntu Pro.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C7FB1B5B14FA",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: Ubuntu Pro",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=OS-010; reference=Ubuntu Pro",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
       "relationship_id": "REL-CAND-9460E7B8DC7E",
       "source_id": "OS-006",
       "relationship_type": "USES",
@@ -2402,6 +2962,41 @@
           "title": "RC2 Cross-Reference: Secure Boot",
           "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
           "locator": "source_entity_id=OS-007; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-62477DE391A0",
+      "source_id": "OS-010",
+      "relationship_type": "USES",
+      "target_id": "OS-005",
+      "statement": "Ubuntu Pro uses Ubuntu.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6CC29A7622FC",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-010",
+          "title": "RC2 Cross-Reference: Ubuntu",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-010; target_entity_id=OS-005; reference=Ubuntu",
           "notes": "Candidate relationship from approved cross-reference resolution"
         }
       ],

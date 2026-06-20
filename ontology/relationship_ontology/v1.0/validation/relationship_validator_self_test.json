@@ -1,0 +1,33 @@
+{
+  "mode": "ontology",
+  "status": "PASS",
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "registered_relationship_type_count": 20,
+  "relationship_rule_count": 20,
+  "checks": [
+    {
+      "check": "draft_2020_12_schema",
+      "status": "PASS"
+    },
+    {
+      "check": "registered_relationship_types",
+      "actual": 20,
+      "expected": 20,
+      "status": "PASS"
+    },
+    {
+      "check": "type_rule_alignment",
+      "status": "PASS"
+    },
+    {
+      "check": "schema_examples",
+      "count": 3,
+      "errors": 0,
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "summary": "Relationship ontology self-test passed."
+}

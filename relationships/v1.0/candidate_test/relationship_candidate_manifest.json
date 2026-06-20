@@ -7,10 +7,10 @@
   "relationship_counts": {
     "total": 196,
     "Driver": 17,
-    "Cross Domain": 77,
-    "Firmware": 40,
-    "Management": 31,
-    "Operating System": 24,
+    "Cross Domain": 94,
+    "Firmware": 24,
+    "Management": 32,
+    "Operating System": 22,
     "Security": 7
   },
   "counts_by_predicate": {

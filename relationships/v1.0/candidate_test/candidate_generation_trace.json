@@ -79,7 +79,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "management_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-0888686BD99C",
@@ -365,7 +365,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "management_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-268D850F88DB",
@@ -430,7 +430,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "management_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-2CA251A0A89D",
@@ -612,7 +612,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "operating_system_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-393B5B04A377",
@@ -755,7 +755,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "management_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-42FC4DE38E97",
@@ -976,7 +976,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "operating_system_relationships.json"
+      "routing_file": "management_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-632068F2927B",
@@ -2302,7 +2302,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "operating_system_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-EAE4499EB808",
@@ -2406,7 +2406,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "operating_system_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-EFDEFBC19229",
@@ -2432,7 +2432,7 @@
       "cross_reference_status": "resolved",
       "extraction_method": "approved_cross_reference",
       "confidence_reason": "Extracted from approved cross-reference with resolution",
-      "routing_file": "firmware_relationships.json"
+      "routing_file": "management_relationships.json"
     },
     {
       "relationship_id": "REL-CAND-F1B11D5476D7",

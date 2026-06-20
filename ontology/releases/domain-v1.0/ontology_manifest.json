@@ -1,0 +1,52 @@
+{
+  "release_id": "domain-v1.0",
+  "ontology_version": "1.0.0",
+  "release_date": "2026-06-20",
+  "entity_count": 54,
+  "relationship_type_count": 20,
+  "release_status": "APPROVED",
+  "approval_status": "APPROVED",
+  "layer": "Layer 1 - Domain Knowledge Layer",
+  "source_versions": {
+    "entity_registry": "1.1.0-rc2",
+    "entity_schema": "1.1.0",
+    "relationship_ontology": "1.0.0"
+  },
+  "source_status": {
+    "entity_registry_dependency": "READY_WITH_NONBLOCKING_WARNINGS",
+    "relationship_ontology": "READY"
+  },
+  "semantic_change_in_this_package": false,
+  "contains_production_relationship_instances": false,
+  "governance_files": [
+    "ontology/governance/ontology_governance.json",
+    "ontology/governance/ontology_lifecycle_policy.json",
+    "ontology/governance/ontology_version_policy.json"
+  ],
+  "source_files": [
+    "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+    "ontology/releases/v1.1-rc2/rc2_dependency_readiness.json",
+    "ontology/relationship_ontology/v1.0/relationship_ontology_manifest.json",
+    "ontology/relationship_ontology/v1.0/relationship_types.json",
+    "ontology/relationship_ontology/v1.0/relationship_rules.json"
+  ],
+  "documentation_files": [
+    "docs/EntityModelGuide.md",
+    "docs/RelationshipGuide.md",
+    "docs/VersioningGuide.md",
+    "docs/Neo4jIntegrationGuide.md",
+    "docs/FutureExtensionGuide.md"
+  ],
+  "release_files": [
+    "ontology/releases/domain-v1.0/ontology_manifest.json",
+    "ontology/releases/domain-v1.0/ontology_change_report.json",
+    "ontology/releases/domain-v1.0/ontology_release_notes.md",
+    "ontology/releases/domain-v1.0/final_validation_report.json",
+    "ontology/releases/domain-v1.0/completion_report.md"
+  ],
+  "immutable_identity_rules": [
+    "Existing entity IDs cannot change.",
+    "Released canonical names cannot change.",
+    "Deprecated entities remain traceable."
+  ]
+}

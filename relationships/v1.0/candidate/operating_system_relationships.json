@@ -3,7 +3,7 @@
   "entity_registry_version": "1.1.0-rc2",
   "status": "candidate",
   "domain": "Operating System",
-  "relationship_count": 24,
+  "relationship_count": 22,
   "relationships": [
     {
       "relationship_id": "REL-CAND-B02D0B0779F6",
@@ -531,41 +531,6 @@
       }
     },
     {
-      "relationship_id": "REL-CAND-12C6C612D77D",
-      "source_id": "OS-005",
-      "relationship_type": "USES",
-      "target_id": "OS-010",
-      "statement": "Ubuntu uses Ubuntu Pro.",
-      "assertion_scope": "universal",
-      "condition_logic": "ALL",
-      "conditions": [],
-      "evidence": [
-        {
-          "evidence_id": "EVID-CAND-C7FB1B5B14FA",
-          "source_type": "knowledge_base_source",
-          "source_id": "OS-005",
-          "title": "RC2 Cross-Reference: Ubuntu Pro",
-          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
-          "locator": "source_entity_id=OS-005; target_entity_id=OS-010; reference=Ubuntu Pro",
-          "notes": "Candidate relationship from approved cross-reference resolution"
-        }
-      ],
-      "confidence": 0.7,
-      "verification_status": "review_required",
-      "approval_status": "candidate",
-      "approved_by": null,
-      "approved_at": null,
-      "source_release": "1.1.0-rc2",
-      "relationship_ontology_version": "1.0.0",
-      "metadata": {
-        "extraction_method": "approved_cross_reference",
-        "source_field": "cross_references",
-        "cross_reference_status": "resolved",
-        "reference_resolution_method": "canonical_name",
-        "routing_domain": "Operating System"
-      }
-    },
-    {
       "relationship_id": "REL-CAND-22393831E135",
       "source_id": "OS-006",
       "relationship_type": "USES",
@@ -722,41 +687,6 @@
           "title": "RC2 Cross-Reference: Windows",
           "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
           "locator": "source_entity_id=OS-009; target_entity_id=OS-001; reference=Windows",
-          "notes": "Candidate relationship from approved cross-reference resolution"
-        }
-      ],
-      "confidence": 0.7,
-      "verification_status": "review_required",
-      "approval_status": "candidate",
-      "approved_by": null,
-      "approved_at": null,
-      "source_release": "1.1.0-rc2",
-      "relationship_ontology_version": "1.0.0",
-      "metadata": {
-        "extraction_method": "approved_cross_reference",
-        "source_field": "cross_references",
-        "cross_reference_status": "resolved",
-        "reference_resolution_method": "canonical_name",
-        "routing_domain": "Operating System"
-      }
-    },
-    {
-      "relationship_id": "REL-CAND-62477DE391A0",
-      "source_id": "OS-010",
-      "relationship_type": "USES",
-      "target_id": "OS-005",
-      "statement": "Ubuntu Pro uses Ubuntu.",
-      "assertion_scope": "universal",
-      "condition_logic": "ALL",
-      "conditions": [],
-      "evidence": [
-        {
-          "evidence_id": "EVID-CAND-6CC29A7622FC",
-          "source_type": "knowledge_base_source",
-          "source_id": "OS-010",
-          "title": "RC2 Cross-Reference: Ubuntu",
-          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
-          "locator": "source_entity_id=OS-010; target_entity_id=OS-005; reference=Ubuntu",
           "notes": "Candidate relationship from approved cross-reference resolution"
         }
       ],

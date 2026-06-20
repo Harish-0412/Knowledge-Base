@@ -1,0 +1,94 @@
+{
+  "release_id": "domain-v1.0",
+  "ontology_version": "1.0.0",
+  "validation_status": "PASS",
+  "validation_date": "2026-06-20",
+  "checks": [
+    {
+      "check_id": "DLV-001",
+      "name": "Referenced files exist",
+      "status": "PASS",
+      "expected": "All governance, source, documentation and release files exist",
+      "actual": "18 of 18 referenced files exist"
+    },
+    {
+      "check_id": "DLV-002",
+      "name": "JSON parsing",
+      "status": "PASS",
+      "expected": "All referenced JSON artifacts parse",
+      "actual": "11 of 11 referenced JSON artifacts parsed"
+    },
+    {
+      "check_id": "DLV-003",
+      "name": "Entity ID uniqueness",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check_id": "DLV-004",
+      "name": "Canonical name uniqueness",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check_id": "DLV-005",
+      "name": "Relationship type uniqueness",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "check_id": "DLV-006",
+      "name": "Manifest entity count",
+      "status": "PASS",
+      "expected": 54,
+      "actual": 54
+    },
+    {
+      "check_id": "DLV-007",
+      "name": "Manifest relationship type count",
+      "status": "PASS",
+      "expected": 20,
+      "actual": 20
+    },
+    {
+      "check_id": "DLV-008",
+      "name": "Entity identity stability",
+      "status": "PASS",
+      "expected": "No changed entity IDs or canonical names",
+      "actual": "0 changed entity IDs; 0 changed canonical names"
+    },
+    {
+      "check_id": "DLV-009",
+      "name": "Source release readiness",
+      "status": "PASS",
+      "expected": "Stable entity dependency and released relationship ontology",
+      "actual": "Entity registry READY_WITH_NONBLOCKING_WARNINGS; Relationship Ontology READY"
+    },
+    {
+      "check_id": "DLV-010",
+      "name": "Semantic-change boundary",
+      "status": "PASS",
+      "expected": "Packaging, governance, validation and documentation only",
+      "actual": "No entities regenerated; no ontology semantics changed"
+    }
+  ],
+  "counts": {
+    "files_checked": 18,
+    "json_files_parsed": 11,
+    "entities": 54,
+    "duplicate_entity_ids": 0,
+    "duplicate_canonical_names": 0,
+    "relationship_types": 20,
+    "duplicate_relationship_types": 0,
+    "failed_checks": 0
+  },
+  "errors": [],
+  "warnings": [
+    "The entity source release retains documented nonblocking namespace, external, deferred, rejected-reference, provenance and Shared Platform modeling warnings.",
+    "No approved production relationship instances are included in Layer 1."
+  ],
+  "summary": "Domain Knowledge Layer v1.0 packaging validation passed. Counts match authoritative sources, identities are stable, relationship types are unique, and every required package artifact is present and parseable."
+}

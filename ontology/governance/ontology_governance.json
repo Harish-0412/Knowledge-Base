@@ -1,0 +1,66 @@
+{
+  "governance_version": "1.0.0",
+  "governed_layer": "Domain Knowledge Layer",
+  "governance_status": "APPROVED",
+  "purpose": "Control ontology identity, semantics, relationships, approvals, releases, deprecation and retirement.",
+  "release_states": [
+    {
+      "state": "DRAFT",
+      "definition": "Work in progress that may change and is not an approved dependency."
+    },
+    {
+      "state": "CANDIDATE",
+      "definition": "Complete proposal undergoing validation and governance review."
+    },
+    {
+      "state": "APPROVED",
+      "definition": "Validated release approved for governed downstream use."
+    },
+    {
+      "state": "DEPRECATED",
+      "definition": "Supported for traceability but discouraged for new use; a migration path is required."
+    },
+    {
+      "state": "RETIRED",
+      "definition": "No longer active for new use but retained in release history and identity records."
+    }
+  ],
+  "approval_rules": {
+    "entity_addition": {
+      "required_reviewers": ["Ontology Engineer", "Ontology Lead"],
+      "requirements": ["Unique unused entity ID", "Unique canonical name", "Defined category, type and subtype", "Source evidence or review_required status", "Validation PASS"]
+    },
+    "entity_modification": {
+      "required_reviewers": ["Ontology Engineer", "Ontology Lead"],
+      "requirements": ["Stable entity ID", "Documented semantic rationale", "Impact analysis", "Validation PASS"]
+    },
+    "relationship_addition": {
+      "required_reviewers": ["Ontology Engineer", "Knowledge Graph Architect"],
+      "requirements": ["Registered predicate", "Valid domain and range", "Required evidence and conditions", "No prohibited cycle or contradiction", "Validation PASS"]
+    },
+    "relationship_modification": {
+      "required_reviewers": ["Ontology Engineer", "Knowledge Graph Architect", "Ontology Lead"],
+      "requirements": ["Backward-compatibility analysis", "Direction and meaning preserved or major version proposed", "Rule and fixture updates", "Validation PASS"]
+    },
+    "release_approval": {
+      "required_reviewers": ["Ontology Lead", "Release Owner"],
+      "requirements": ["All mandatory artifacts present", "All JSON valid", "Identity stable", "Tests PASS", "Checksums verified", "Blocking issues empty"]
+    }
+  },
+  "immutable_rules": [
+    "Existing entity IDs cannot change.",
+    "Released canonical names cannot change.",
+    "Released relationship predicate direction and meaning cannot change within the same major version.",
+    "Deprecated and retired entities must remain traceable to their original IDs and release history.",
+    "Frozen releases cannot be edited in place; corrections require a new version."
+  ],
+  "separation_of_duties": {
+    "author_may_self_approve_release": false,
+    "semantic_review_required": true,
+    "automated_validation_required": true
+  },
+  "authoritative_sources": [
+    "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+    "ontology/relationship_ontology/v1.0/relationship_ontology_manifest.json"
+  ]
+}
