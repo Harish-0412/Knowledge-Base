@@ -1,0 +1,14 @@
+{
+  "gap_count": 0,
+  "gaps_by_predicate": {},
+  "gaps_by_reason": {},
+  "high_risk_gaps": [],
+  "recommended_research_priorities": [
+    "REQUIRES relationships require strong authoritative evidence",
+    "SUPPORTS relationships require explicit conditional support",
+    "COMPATIBLE_WITH relationships require tested compatibility evidence",
+    "CONFLICTS_WITH relationships require explicit conflict evidence",
+    "REPLACES relationships require formal replacement evidence"
+  ],
+  "summary": "0 gaps identified; prioritize high-risk predicates"
+}

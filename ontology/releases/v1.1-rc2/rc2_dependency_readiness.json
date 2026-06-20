@@ -1,0 +1,142 @@
+{
+  "release": "v1.1-rc2",
+  "current_status": "READY_WITH_WARNINGS",
+  "registry_dependency_status": "READY_WITH_NONBLOCKING_WARNINGS",
+  "audit_date": "2026-06-20",
+  "entity_count": 54,
+  "identity_stable": true,
+  "core_resolution": 100.0,
+  "blocking_warnings": [],
+  "nonblocking_warnings": [
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "0 entity reclassification proposals require human approval.",
+      "count": 0,
+      "reason": "The eight governance decisions are approved and reflected in RC2 source metadata."
+    },
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "3 stable legacy ID namespace exceptions are documented.",
+      "count": 3,
+      "namespace_exceptions": [
+        {
+          "entity_id": "FW-007",
+          "canonical_name": "Firmware Update Utility",
+          "legacy_namespace": "Firmware",
+          "owning_category": "Management"
+        },
+        {
+          "entity_id": "FW-011",
+          "canonical_name": "OS Bootloader",
+          "legacy_namespace": "Firmware",
+          "owning_category": "Operating System"
+        },
+        {
+          "entity_id": "OS-010",
+          "canonical_name": "Ubuntu Pro",
+          "legacy_namespace": "Operating System",
+          "owning_category": "Management"
+        }
+      ],
+      "reason": "Entity IDs are preserved by governance decision even when owning category changes."
+    },
+    {
+      "classification": "nonblocking_external_reference",
+      "warning": "78 reference occurrences are classified as external.",
+      "count": 78
+    },
+    {
+      "classification": "nonblocking_deferred_reference",
+      "warning": "80 reference occurrences are deferred to future domains.",
+      "count": 80
+    },
+    {
+      "classification": "nonblocking_rejected_reference",
+      "warning": "21 reference occurrences are rejected.",
+      "count": 21
+    },
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "54 entities have verification_status=review_required and empty provenance.",
+      "count": 54
+    },
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "Shared Platform concepts remain modeled in current v1.1 owning domains until a Shared Platform domain is introduced.",
+      "affected_entity_ids": [
+        "FW-006",
+        "FW-008",
+        "FW-009"
+      ]
+    }
+  ],
+  "pending_human_decisions": [],
+  "tests": {
+    "executed": 0,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "status": "not_run_in_this_file_yet"
+  },
+  "requirements": {
+    "duplicate_entity_ids": {
+      "required": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "duplicate_canonical_names": {
+      "required": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "changed_existing_ids": {
+      "required": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "ambiguous_references": {
+      "required": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "unclassified_references": {
+      "required": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "self_references": {
+      "required": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "core_resolution": {
+      "required": 100.0,
+      "actual": 100.0,
+      "status": "PASS"
+    },
+    "registry_validation": {
+      "required": "PASS",
+      "actual": "PASS",
+      "status": "PASS"
+    },
+    "source_and_registry_entity_counts_match": {
+      "required": true,
+      "actual": true,
+      "status": "PASS",
+      "source_entity_count": 54,
+      "registry_entity_count": 54
+    },
+    "no_pending_human_approval_affecting_entity_identity": {
+      "required": true,
+      "actual": true,
+      "status": "PASS",
+      "pending_count": 0
+    },
+    "frozen_v1_0_inputs_unchanged": {
+      "required": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  },
+  "summary": "RC2 dependency is no longer blocked by identity/category governance decisions. The eight decisions are approved, entity IDs remain stable, registry validation passes, and remaining warnings are nonblocking external/deferred/rejected reference and documentation warnings."
+}

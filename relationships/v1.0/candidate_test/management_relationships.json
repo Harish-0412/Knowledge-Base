@@ -1,0 +1,1094 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "candidate",
+  "domain": "Management",
+  "relationship_count": 31,
+  "relationships": [
+    {
+      "relationship_id": "REL-CAND-0058152468FF",
+      "source_id": "MGT-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-002",
+      "statement": "Endpoint Manager uses Monitoring Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-817B8EB67180",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-001",
+          "title": "RC2 Cross-Reference: Monitoring Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-001; target_entity_id=MGT-002; reference=Monitoring Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-9FB96E3BFC7F",
+      "source_id": "MGT-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-003",
+      "statement": "Endpoint Manager uses Patch Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A4A8A73C57BA",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-001",
+          "title": "RC2 Cross-Reference: Patch Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-001; target_entity_id=MGT-003; reference=Patch Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2FBB1D08FA49",
+      "source_id": "MGT-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-005",
+      "statement": "Endpoint Manager uses Group Policy.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A7469D1EF800",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-001",
+          "title": "RC2 Cross-Reference: Group Policy",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-001; target_entity_id=MGT-005; reference=Group Policy",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-017F022D64BD",
+      "source_id": "MGT-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-004",
+      "statement": "Endpoint Manager uses Active Directory.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B2FDCCE1EA57",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-001",
+          "title": "RC2 Cross-Reference: Active Directory",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-001; target_entity_id=MGT-004; reference=Active Directory",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-4BF25D74C00C",
+      "source_id": "MGT-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-009",
+      "statement": "Endpoint Manager uses Configuration Baseline.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C0F586E8A978",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-001",
+          "title": "RC2 Cross-Reference: Configuration Baseline",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-001; target_entity_id=MGT-009; reference=Configuration Baseline",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-848551CE09EB",
+      "source_id": "MGT-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-010",
+      "statement": "Endpoint Manager uses Endpoint Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-787A38E14311",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-001",
+          "title": "RC2 Cross-Reference: Endpoint Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-001; target_entity_id=MGT-010; reference=Endpoint Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-952AC188EB06",
+      "source_id": "MGT-002",
+      "relationship_type": "USES",
+      "target_id": "MGT-001",
+      "statement": "Monitoring Agent uses Endpoint Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-63EF0F1CFE19",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-002",
+          "title": "RC2 Cross-Reference: Endpoint Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-002; target_entity_id=MGT-001; reference=Endpoint Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-F8FE30D42088",
+      "source_id": "MGT-002",
+      "relationship_type": "USES",
+      "target_id": "MGT-003",
+      "statement": "Monitoring Agent uses Patch Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B9B0CBC6B612",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-002",
+          "title": "RC2 Cross-Reference: Patch Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-002; target_entity_id=MGT-003; reference=Patch Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-121CA27E8B1A",
+      "source_id": "MGT-002",
+      "relationship_type": "USES",
+      "target_id": "MGT-008",
+      "statement": "Monitoring Agent uses SIEM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-17F8E00A6F4C",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-002",
+          "title": "RC2 Cross-Reference: SIEM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-002; target_entity_id=MGT-008; reference=SIEM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-398980B5148E",
+      "source_id": "MGT-003",
+      "relationship_type": "USES",
+      "target_id": "MGT-001",
+      "statement": "Patch Manager uses Endpoint Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-2A5CDF6240ED",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-003",
+          "title": "RC2 Cross-Reference: Endpoint Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-003; target_entity_id=MGT-001; reference=Endpoint Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-297EE0AD224D",
+      "source_id": "MGT-003",
+      "relationship_type": "USES",
+      "target_id": "MGT-002",
+      "statement": "Patch Manager uses Monitoring Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F42F38B993EC",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-003",
+          "title": "RC2 Cross-Reference: Monitoring Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-003; target_entity_id=MGT-002; reference=Monitoring Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-7EE6AC9D13CC",
+      "source_id": "MGT-003",
+      "relationship_type": "USES",
+      "target_id": "MGT-006",
+      "statement": "Patch Manager uses WSUS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C0454FF82A0F",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-003",
+          "title": "RC2 Cross-Reference: WSUS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-003; target_entity_id=MGT-006; reference=WSUS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-8C781C886561",
+      "source_id": "MGT-003",
+      "relationship_type": "USES",
+      "target_id": "MGT-007",
+      "statement": "Patch Manager uses Windows Update.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7D51CBAEC11D",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-003",
+          "title": "RC2 Cross-Reference: Windows Update",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-003; target_entity_id=MGT-007; reference=Windows Update",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-42FC4DE38E97",
+      "source_id": "MGT-003",
+      "relationship_type": "USES",
+      "target_id": "MGT-008",
+      "statement": "Patch Manager uses SIEM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-26CF00B6B5EA",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-003",
+          "title": "RC2 Cross-Reference: SIEM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-003; target_entity_id=MGT-008; reference=SIEM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-1DB8A6EA66D9",
+      "source_id": "MGT-004",
+      "relationship_type": "USES",
+      "target_id": "MGT-001",
+      "statement": "Active Directory uses Endpoint Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-8B709898D5CA",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-004",
+          "title": "RC2 Cross-Reference: Endpoint Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-004; target_entity_id=MGT-001; reference=Endpoint Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EB7B041BA978",
+      "source_id": "MGT-004",
+      "relationship_type": "USES",
+      "target_id": "MGT-005",
+      "statement": "Active Directory uses Group Policy.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D54250BA5AC1",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-004",
+          "title": "RC2 Cross-Reference: Group Policy",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-004; target_entity_id=MGT-005; reference=Group Policy",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EDB17C570BA0",
+      "source_id": "MGT-005",
+      "relationship_type": "USES",
+      "target_id": "MGT-001",
+      "statement": "Group Policy uses Endpoint Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D26F425E175B",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-005",
+          "title": "RC2 Cross-Reference: Endpoint Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-005; target_entity_id=MGT-001; reference=Endpoint Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-A8012E98A294",
+      "source_id": "MGT-005",
+      "relationship_type": "USES",
+      "target_id": "MGT-004",
+      "statement": "Group Policy uses Active Directory.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5929D6D0004F",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-005",
+          "title": "RC2 Cross-Reference: Active Directory",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-005; target_entity_id=MGT-004; reference=Active Directory",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-5194613CA6FE",
+      "source_id": "MGT-006",
+      "relationship_type": "USES",
+      "target_id": "MGT-003",
+      "statement": "WSUS uses Patch Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C8115CB2B3E2",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-006",
+          "title": "RC2 Cross-Reference: Patch Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-006; target_entity_id=MGT-003; reference=Patch Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CF4B27B4FE86",
+      "source_id": "MGT-006",
+      "relationship_type": "USES",
+      "target_id": "MGT-007",
+      "statement": "WSUS uses Windows Update.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-70ED4A59E074",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-006",
+          "title": "RC2 Cross-Reference: Windows Update",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-006; target_entity_id=MGT-007; reference=Windows Update",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-67FE594A8724",
+      "source_id": "MGT-007",
+      "relationship_type": "USES",
+      "target_id": "MGT-003",
+      "statement": "Windows Update uses Patch Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-29D4EC1E7DFD",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-007",
+          "title": "RC2 Cross-Reference: Patch Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-007; target_entity_id=MGT-003; reference=Patch Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-6CC333FBC7ED",
+      "source_id": "MGT-007",
+      "relationship_type": "USES",
+      "target_id": "MGT-006",
+      "statement": "Windows Update uses WSUS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-CAD08258D5CE",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-007",
+          "title": "RC2 Cross-Reference: WSUS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-007; target_entity_id=MGT-006; reference=WSUS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-5AD01477D12A",
+      "source_id": "MGT-008",
+      "relationship_type": "USES",
+      "target_id": "MGT-002",
+      "statement": "SIEM uses Monitoring Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4FF0179191DC",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-008",
+          "title": "RC2 Cross-Reference: Monitoring Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-008; target_entity_id=MGT-002; reference=Monitoring Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0BEB8D8E25E0",
+      "source_id": "MGT-008",
+      "relationship_type": "USES",
+      "target_id": "MGT-003",
+      "statement": "SIEM uses Patch Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-826EAEA26500",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-008",
+          "title": "RC2 Cross-Reference: Patch Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-008; target_entity_id=MGT-003; reference=Patch Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-BA03EB997C4F",
+      "source_id": "MGT-009",
+      "relationship_type": "USES",
+      "target_id": "MGT-001",
+      "statement": "Configuration Baseline uses Endpoint Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B350956583C7",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-009",
+          "title": "RC2 Cross-Reference: Endpoint Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-009; target_entity_id=MGT-001; reference=Endpoint Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-A6C1EF2E42E6",
+      "source_id": "MGT-009",
+      "relationship_type": "USES",
+      "target_id": "MGT-005",
+      "statement": "Configuration Baseline uses Group Policy.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E564FE1A1ED7",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-009",
+          "title": "RC2 Cross-Reference: Group Policy",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-009; target_entity_id=MGT-005; reference=Group Policy",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0DD8DE11A7CC",
+      "source_id": "MGT-009",
+      "relationship_type": "USES",
+      "target_id": "MGT-010",
+      "statement": "Configuration Baseline uses Endpoint Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-01A4B7FDD98D",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-009",
+          "title": "RC2 Cross-Reference: Endpoint Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-009; target_entity_id=MGT-010; reference=Endpoint Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-6D1A64454D3A",
+      "source_id": "MGT-010",
+      "relationship_type": "USES",
+      "target_id": "MGT-001",
+      "statement": "Endpoint Agent uses Endpoint Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D04D83BD1C6F",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-010",
+          "title": "RC2 Cross-Reference: Endpoint Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-010; target_entity_id=MGT-001; reference=Endpoint Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D3DE9B7F5F0E",
+      "source_id": "MGT-010",
+      "relationship_type": "USES",
+      "target_id": "MGT-002",
+      "statement": "Endpoint Agent uses Monitoring Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-2966FE2A7D17",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-010",
+          "title": "RC2 Cross-Reference: Monitoring Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-010; target_entity_id=MGT-002; reference=Monitoring Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-02B21E1AA371",
+      "source_id": "MGT-010",
+      "relationship_type": "USES",
+      "target_id": "MGT-003",
+      "statement": "Endpoint Agent uses Patch Manager.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F0CE36D67897",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-010",
+          "title": "RC2 Cross-Reference: Patch Manager",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-010; target_entity_id=MGT-003; reference=Patch Manager",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-AAF3B888A600",
+      "source_id": "MGT-010",
+      "relationship_type": "USES",
+      "target_id": "MGT-009",
+      "statement": "Endpoint Agent uses Configuration Baseline.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F73B5E95B896",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-010",
+          "title": "RC2 Cross-Reference: Configuration Baseline",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-010; target_entity_id=MGT-009; reference=Configuration Baseline",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Management"
+      }
+    }
+  ]
+}

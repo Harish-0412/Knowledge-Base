@@ -1,0 +1,3751 @@
+{
+  "fixture_set": "relationship-ontology-v1.0-invalid-examples",
+  "fixture_status": "test_only",
+  "relationship_ontology_version": "1.0.0",
+  "registry_version": "1.1.0-rc2",
+  "case_count": 67,
+  "error_codes_covered": [
+    "CONFIDENCE_BELOW_MINIMUM",
+    "CONFIDENCE_OUT_OF_RANGE",
+    "CONTRADICTORY_RELATIONSHIPS",
+    "EXACT_DUPLICATE_RELATIONSHIP",
+    "FORBIDDEN_CROSS_CATEGORY",
+    "FORBIDDEN_CYCLE",
+    "FORBIDDEN_SAME_CATEGORY",
+    "INVALID_CONDITION_OPERATOR",
+    "INVALID_EVIDENCE_SOURCE",
+    "INVALID_SOURCE_CATEGORY",
+    "INVALID_TARGET_CATEGORY",
+    "MISSING_REQUIRED_CONDITIONS",
+    "MISSING_REQUIRED_EVIDENCE",
+    "PRODUCTION_APPROVAL_REQUIRED",
+    "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP",
+    "RELATIONSHIP_ID_DUPLICATE",
+    "REVIEW_REQUIRED_CYCLE",
+    "SCHEMA_ADDITIONAL_PROPERTY",
+    "SCHEMA_APPROVAL_DATE_REQUIRED",
+    "SCHEMA_APPROVAL_VERIFICATION_INVALID",
+    "SCHEMA_APPROVER_REQUIRED",
+    "SCHEMA_CONDITIONS_REQUIRED",
+    "SCHEMA_INVALID_ENUM",
+    "SCHEMA_INVALID_PATTERN",
+    "SCHEMA_INVALID_VALUE",
+    "SCHEMA_REQUIRED_FIELD_MISSING",
+    "SELF_RELATIONSHIP",
+    "SOURCE_ENTITY_NOT_FOUND",
+    "TARGET_ENTITY_NOT_FOUND",
+    "UNKNOWN_RELATIONSHIP_TYPE",
+    "VIRTUAL_INVERSE_MATERIALIZATION_FORBIDDEN"
+  ],
+  "cases": [
+    {
+      "case_id": "INVALID-CASE-001",
+      "title": "Missing relationship_id",
+      "description": "Synthetic invalid fixture for Missing relationship_id.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_REQUIRED_FIELD_MISSING"
+      ],
+      "records": [
+        {
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-028",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-028",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:028",
+              "locator": "Synthetic test section 28",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-002",
+      "title": "Missing source_id",
+      "description": "Synthetic invalid fixture for Missing source_id.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_REQUIRED_FIELD_MISSING"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-002-01",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-029",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-029",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:029",
+              "locator": "Synthetic test section 29",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-003",
+      "title": "Missing target_id",
+      "description": "Synthetic invalid fixture for Missing target_id.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_REQUIRED_FIELD_MISSING"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-003-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-030",
+              "source_type": "internal_policy",
+              "source_id": "TEST-EVIDENCE-SOURCE-030",
+              "title": "Synthetic internal policy evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:030",
+              "locator": "Synthetic test section 30",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-004",
+      "title": "Empty statement",
+      "description": "Synthetic invalid fixture for Empty statement.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_VALUE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-004-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-031",
+              "source_type": "user_provided_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-031",
+              "title": "Synthetic user provided document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:031",
+              "locator": "Synthetic test section 31",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-005",
+      "title": "Additional top-level property",
+      "description": "Synthetic invalid fixture for Additional top-level property.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_ADDITIONAL_PROPERTY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-005-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-032",
+              "source_type": "ingested_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-032",
+              "title": "Synthetic ingested document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:032",
+              "locator": "Synthetic test section 32",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          },
+          "unexpected_property": true
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-006",
+      "title": "Invalid relationship ID pattern",
+      "description": "Synthetic invalid fixture for Invalid relationship ID pattern.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_PATTERN"
+      ],
+      "records": [
+        {
+          "relationship_id": "invalid id",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-033",
+              "source_type": "knowledge_base_source",
+              "source_id": "TEST-EVIDENCE-SOURCE-033",
+              "title": "Synthetic knowledge base source evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:033",
+              "locator": "Synthetic test section 33",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-007",
+      "title": "Invalid relationship type pattern",
+      "description": "Synthetic invalid fixture for Invalid relationship type pattern.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_PATTERN"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-007-01",
+          "source_id": "FW-002",
+          "relationship_type": "uses-lower",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-034",
+              "source_type": "manual_review",
+              "source_id": "TEST-EVIDENCE-SOURCE-034",
+              "title": "Synthetic manual review evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:034",
+              "locator": "Synthetic test section 34",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-008",
+      "title": "Invalid assertion scope",
+      "description": "Synthetic invalid fixture for Invalid assertion scope.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_ENUM"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-008-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "sometimes",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-035",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-035",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:035",
+              "locator": "Synthetic test section 35",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-009",
+      "title": "Invalid condition logic",
+      "description": "Synthetic invalid fixture for Invalid condition logic.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_ENUM"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-009-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "SOME",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-036",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-036",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:036",
+              "locator": "Synthetic test section 36",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-010",
+      "title": "Invalid verification status",
+      "description": "Synthetic invalid fixture for Invalid verification status.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_ENUM"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-010-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-037",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-037",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:037",
+              "locator": "Synthetic test section 37",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "verified_enough",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-011",
+      "title": "Invalid approval status",
+      "description": "Synthetic invalid fixture for Invalid approval status.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_ENUM"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-011-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-038",
+              "source_type": "internal_policy",
+              "source_id": "TEST-EVIDENCE-SOURCE-038",
+              "title": "Synthetic internal policy evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:038",
+              "locator": "Synthetic test section 38",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "ready",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-012",
+      "title": "Confidence greater than one",
+      "description": "Synthetic invalid fixture for Confidence greater than one.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONFIDENCE_OUT_OF_RANGE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-012-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-039",
+              "source_type": "user_provided_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-039",
+              "title": "Synthetic user provided document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:039",
+              "locator": "Synthetic test section 39",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.1,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-013",
+      "title": "Confidence less than zero",
+      "description": "Synthetic invalid fixture for Confidence less than zero.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONFIDENCE_OUT_OF_RANGE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-013-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-040",
+              "source_type": "ingested_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-040",
+              "title": "Synthetic ingested document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:040",
+              "locator": "Synthetic test section 40",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": -0.1,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-014",
+      "title": "Conditional scope without conditions",
+      "description": "Synthetic invalid fixture for Conditional scope without conditions.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_CONDITIONS_REQUIRED"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-014-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-041",
+              "source_type": "knowledge_base_source",
+              "source_id": "TEST-EVIDENCE-SOURCE-041",
+              "title": "Synthetic knowledge base source evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:041",
+              "locator": "Synthetic test section 41",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-015",
+      "title": "Invalid condition operator",
+      "description": "Synthetic invalid fixture for Invalid condition operator.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_CONDITION_OPERATOR"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-015-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute",
+              "operator": "execute",
+              "value": "x"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-042",
+              "source_type": "manual_review",
+              "source_id": "TEST-EVIDENCE-SOURCE-042",
+              "title": "Synthetic manual review evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:042",
+              "locator": "Synthetic test section 42",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-016",
+      "title": "Object condition value",
+      "description": "Synthetic invalid fixture for Object condition value.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_VALUE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-016-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute",
+              "operator": "equals",
+              "value": {
+                "bad": "object"
+              }
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-043",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-043",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:043",
+              "locator": "Synthetic test section 43",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-017",
+      "title": "Evidence title missing",
+      "description": "Synthetic invalid fixture for Evidence title missing.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_REQUIRED_FIELD_MISSING"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-017-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "source_type": "manual_review"
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-018",
+      "title": "Approved with null approver",
+      "description": "Synthetic invalid fixture for Approved with null approver.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_APPROVER_REQUIRED"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-018-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-045",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-045",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:045",
+              "locator": "Synthetic test section 45",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": null,
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-019",
+      "title": "Approved with null approval date",
+      "description": "Synthetic invalid fixture for Approved with null approval date.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_APPROVAL_DATE_REQUIRED"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-019-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-046",
+              "source_type": "internal_policy",
+              "source_id": "TEST-EVIDENCE-SOURCE-046",
+              "title": "Synthetic internal policy evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:046",
+              "locator": "Synthetic test section 46",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-020",
+      "title": "Approved with invalid verification",
+      "description": "Synthetic invalid fixture for Approved with invalid verification.",
+      "validation_layer": "json_schema",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_APPROVAL_VERIFICATION_INVALID"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-020-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-047",
+              "source_type": "user_provided_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-047",
+              "title": "Synthetic user provided document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:047",
+              "locator": "Synthetic test section 47",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-021",
+      "title": "Missing source entity",
+      "description": "Synthetic invalid fixture for Missing source entity.",
+      "validation_layer": "registry",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SOURCE_ENTITY_NOT_FOUND"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-021-01",
+          "source_id": "TEST-MISSING-SOURCE-001",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-048",
+              "source_type": "ingested_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-048",
+              "title": "Synthetic ingested document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:048",
+              "locator": "Synthetic test section 48",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-022",
+      "title": "Missing target entity",
+      "description": "Synthetic invalid fixture for Missing target entity.",
+      "validation_layer": "registry",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "TARGET_ENTITY_NOT_FOUND"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-022-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "TEST-MISSING-TARGET-001",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-049",
+              "source_type": "knowledge_base_source",
+              "source_id": "TEST-EVIDENCE-SOURCE-049",
+              "title": "Synthetic knowledge base source evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:049",
+              "locator": "Synthetic test section 49",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-023",
+      "title": "Self relationship",
+      "description": "Synthetic invalid fixture for Self relationship.",
+      "validation_layer": "registry",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SELF_RELATIONSHIP"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-023-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-002",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-050",
+              "source_type": "manual_review",
+              "source_id": "TEST-EVIDENCE-SOURCE-050",
+              "title": "Synthetic manual review evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:050",
+              "locator": "Synthetic test section 50",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-024",
+      "title": "Duplicate relationship ID",
+      "description": "Synthetic invalid fixture for Duplicate relationship ID.",
+      "validation_layer": "collection",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "RELATIONSHIP_ID_DUPLICATE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-DUPLICATE-001",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-051",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-051",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:051",
+              "locator": "Synthetic test section 51",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-DUPLICATE-001",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-052",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-052",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:052",
+              "locator": "Synthetic test section 52",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-025",
+      "title": "Unknown uppercase relationship type",
+      "description": "Synthetic invalid fixture for Unknown uppercase relationship type.",
+      "validation_layer": "relationship_type",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "UNKNOWN_RELATIONSHIP_TYPE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-025-01",
+          "source_id": "FW-002",
+          "relationship_type": "UNKNOWN_PREDICATE",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-053",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-053",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:053",
+              "locator": "Synthetic test section 53",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-026",
+      "title": "RELATED_TO semantic type",
+      "description": "Synthetic invalid fixture for RELATED_TO semantic type.",
+      "validation_layer": "relationship_type",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "UNKNOWN_RELATIONSHIP_TYPE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-026-01",
+          "source_id": "FW-002",
+          "relationship_type": "RELATED_TO",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-054",
+              "source_type": "internal_policy",
+              "source_id": "TEST-EVIDENCE-SOURCE-054",
+              "title": "Synthetic internal policy evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:054",
+              "locator": "Synthetic test section 54",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-027",
+      "title": "Virtual inverse ENABLED_BY stored",
+      "description": "Synthetic invalid fixture for Virtual inverse ENABLED_BY stored.",
+      "validation_layer": "relationship_type",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "UNKNOWN_RELATIONSHIP_TYPE",
+        "VIRTUAL_INVERSE_MATERIALIZATION_FORBIDDEN"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-027-01",
+          "source_id": "FW-002",
+          "relationship_type": "ENABLED_BY",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-055",
+              "source_type": "user_provided_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-055",
+              "title": "Synthetic user provided document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:055",
+              "locator": "Synthetic test section 55",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-028",
+      "title": "MANAGES with Firmware source",
+      "description": "Synthetic invalid fixture for MANAGES with Firmware source.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_SOURCE_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-028-01",
+          "source_id": "FW-001",
+          "relationship_type": "MANAGES",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the MANAGES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-056",
+              "source_type": "ingested_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-056",
+              "title": "Synthetic ingested document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:056",
+              "locator": "Synthetic test section 56",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-029",
+      "title": "PROTECTS with Management source",
+      "description": "Synthetic invalid fixture for PROTECTS with Management source.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_SOURCE_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-029-01",
+          "source_id": "MGT-001",
+          "relationship_type": "PROTECTS",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the PROTECTS relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-057",
+              "source_type": "knowledge_base_source",
+              "source_id": "TEST-EVIDENCE-SOURCE-057",
+              "title": "Synthetic knowledge base source evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:057",
+              "locator": "Synthetic test section 57",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-030",
+      "title": "RUNS_ON with Firmware target",
+      "description": "Synthetic invalid fixture for RUNS_ON with Firmware target.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_TARGET_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-030-01",
+          "source_id": "DRV-007",
+          "relationship_type": "RUNS_ON",
+          "target_id": "FW-001",
+          "statement": "Synthetic fixture assertion used to test the RUNS_ON relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_0",
+              "operator": "equals",
+              "value": "fixture_a",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-058",
+              "source_type": "manual_review",
+              "source_id": "TEST-EVIDENCE-SOURCE-058",
+              "title": "Synthetic manual review evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:058",
+              "locator": "Synthetic test section 58",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-031",
+      "title": "INSTALLED_ON with Security target",
+      "description": "Synthetic invalid fixture for INSTALLED_ON with Security target.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_TARGET_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-031-01",
+          "source_id": "SEC-004",
+          "relationship_type": "INSTALLED_ON",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the INSTALLED_ON relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_1",
+              "operator": "not_equals",
+              "value": "fixture_b",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-059",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-059",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:059",
+              "locator": "Synthetic test section 59",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-032",
+      "title": "REPLACES across categories",
+      "description": "Synthetic invalid fixture for REPLACES across categories.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CROSS_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-032-01",
+          "source_id": "OS-003",
+          "relationship_type": "REPLACES",
+          "target_id": "FW-001",
+          "statement": "Synthetic fixture assertion used to test the REPLACES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_2",
+              "operator": "greater_than",
+              "value": 1,
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-060",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-060",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:060",
+              "locator": "Synthetic test section 60",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-033",
+      "title": "DEPRECATED_BY across categories",
+      "description": "Synthetic invalid fixture for DEPRECATED_BY across categories.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CROSS_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-033-01",
+          "source_id": "OS-002",
+          "relationship_type": "DEPRECATED_BY",
+          "target_id": "FW-001",
+          "statement": "Synthetic fixture assertion used to test the DEPRECATED_BY relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_3",
+              "operator": "greater_than_or_equal",
+              "value": 2,
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-061",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-061",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:061",
+              "locator": "Synthetic test section 61",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-034",
+      "title": "IS_A across categories",
+      "description": "Synthetic invalid fixture for IS_A across categories.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CROSS_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-034-01",
+          "source_id": "OS-002",
+          "relationship_type": "IS_A",
+          "target_id": "FW-001",
+          "statement": "Synthetic fixture assertion used to test the IS_A relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-062",
+              "source_type": "internal_policy",
+              "source_id": "TEST-EVIDENCE-SOURCE-062",
+              "title": "Synthetic internal policy evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:062",
+              "locator": "Synthetic test section 62",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.75,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-035",
+      "title": "High-risk relationship without evidence",
+      "description": "Synthetic invalid fixture for High-risk relationship without evidence.",
+      "validation_layer": "evidence",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "MISSING_REQUIRED_EVIDENCE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-035-01",
+          "source_id": "OS-003",
+          "relationship_type": "REQUIRES",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the REQUIRES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-036",
+      "title": "Authoritative predicate with manual evidence",
+      "description": "Synthetic invalid fixture for Authoritative predicate with manual evidence.",
+      "validation_layer": "evidence",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "MISSING_REQUIRED_EVIDENCE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-036-01",
+          "source_id": "OS-003",
+          "relationship_type": "REQUIRES",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the REQUIRES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-065",
+              "source_type": "manual_review",
+              "source_id": "TEST-EVIDENCE-SOURCE-065",
+              "title": "Synthetic manual review evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:065",
+              "locator": "Synthetic test section 65",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-037",
+      "title": "Invalid evidence source type",
+      "description": "Synthetic invalid fixture for Invalid evidence source type.",
+      "validation_layer": "evidence",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_EVIDENCE_SOURCE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-037-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "source_type": "blog_post",
+              "title": "Synthetic invalid evidence"
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-038",
+      "title": "SUPPORTS without conditions",
+      "description": "Synthetic invalid fixture for SUPPORTS without conditions.",
+      "validation_layer": "conditions",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_CONDITIONS_REQUIRED",
+        "MISSING_REQUIRED_CONDITIONS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-038-01",
+          "source_id": "DRV-007",
+          "relationship_type": "SUPPORTS",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the SUPPORTS relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-067",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-067",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:067",
+              "locator": "Synthetic test section 67",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-039",
+      "title": "COMPATIBLE_WITH without conditions",
+      "description": "Synthetic invalid fixture for COMPATIBLE_WITH without conditions.",
+      "validation_layer": "conditions",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_CONDITIONS_REQUIRED",
+        "MISSING_REQUIRED_CONDITIONS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-039-01",
+          "source_id": "DRV-008",
+          "relationship_type": "COMPATIBLE_WITH",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the COMPATIBLE_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-068",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-068",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:068",
+              "locator": "Synthetic test section 68",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-040",
+      "title": "CONFLICTS_WITH without conditions",
+      "description": "Synthetic invalid fixture for CONFLICTS_WITH without conditions.",
+      "validation_layer": "conditions",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_CONDITIONS_REQUIRED",
+        "MISSING_REQUIRED_CONDITIONS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-040-01",
+          "source_id": "SEC-003",
+          "relationship_type": "CONFLICTS_WITH",
+          "target_id": "OS-007",
+          "statement": "Synthetic fixture assertion used to test the CONFLICTS_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-069",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-069",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:069",
+              "locator": "Synthetic test section 69",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-041",
+      "title": "Version-specific REQUIRES without conditions",
+      "description": "Synthetic invalid fixture for Version-specific REQUIRES without conditions.",
+      "validation_layer": "conditions",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_CONDITIONS_REQUIRED",
+        "MISSING_REQUIRED_CONDITIONS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-041-01",
+          "source_id": "OS-003",
+          "relationship_type": "REQUIRES",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the REQUIRES relationship type between registered test endpoints.",
+          "assertion_scope": "version_specific",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-070",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-070",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:070",
+              "locator": "Synthetic test section 70",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-042",
+      "title": "in with scalar value",
+      "description": "Synthetic invalid fixture for in with scalar value.",
+      "validation_layer": "conditions",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_VALUE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-042-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute",
+              "operator": "in",
+              "value": "scalar"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-071",
+              "source_type": "user_provided_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-071",
+              "title": "Synthetic user provided document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:071",
+              "locator": "Synthetic test section 71",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-043",
+      "title": "not_in with scalar value",
+      "description": "Synthetic invalid fixture for not_in with scalar value.",
+      "validation_layer": "conditions",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_INVALID_VALUE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-043-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute",
+              "operator": "not_in",
+              "value": "scalar"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-072",
+              "source_type": "ingested_document",
+              "source_id": "TEST-EVIDENCE-SOURCE-072",
+              "title": "Synthetic ingested document evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:072",
+              "locator": "Synthetic test section 72",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-044",
+      "title": "Below predicate confidence",
+      "description": "Synthetic invalid fixture for Below predicate confidence.",
+      "validation_layer": "confidence",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONFIDENCE_BELOW_MINIMUM"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-044-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-073",
+              "source_type": "knowledge_base_source",
+              "source_id": "TEST-EVIDENCE-SOURCE-073",
+              "title": "Synthetic knowledge base source evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:073",
+              "locator": "Synthetic test section 73",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.79,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-045",
+      "title": "High-risk below 0.90",
+      "description": "Synthetic invalid fixture for High-risk below 0.90.",
+      "validation_layer": "confidence",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONFIDENCE_BELOW_MINIMUM"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-045-01",
+          "source_id": "OS-003",
+          "relationship_type": "REQUIRES",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the REQUIRES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-074",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-074",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:074",
+              "locator": "Synthetic test section 74",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.89,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-046",
+      "title": "Exact duplicate records",
+      "description": "Synthetic invalid fixture for Exact duplicate records.",
+      "validation_layer": "duplicate",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "EXACT_DUPLICATE_RELATIONSHIP"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-046-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-075",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-075",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:075",
+              "locator": "Synthetic test section 75",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-046-02",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-075",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-075",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:075",
+              "locator": "Synthetic test section 75",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-047",
+      "title": "Duplicate conditions with different key order",
+      "description": "Synthetic invalid fixture for Duplicate conditions with different key order.",
+      "validation_layer": "duplicate",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "EXACT_DUPLICATE_RELATIONSHIP"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-047-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute",
+              "operator": "equals",
+              "value": "x",
+              "unit": null,
+              "description": "Synthetic"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-076",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-076",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:076",
+              "locator": "Synthetic test section 76",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-047-02",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "description": "Synthetic",
+              "unit": null,
+              "value": "x",
+              "operator": "equals",
+              "attribute": "fixture_attribute"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-076",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-076",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:076",
+              "locator": "Synthetic test section 76",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-048",
+      "title": "IS_A two-node cycle",
+      "description": "Synthetic invalid fixture for IS_A two-node cycle.",
+      "validation_layer": "cycle",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CYCLE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-048-01",
+          "source_id": "OS-002",
+          "relationship_type": "IS_A",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the IS_A relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-077",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-077",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:077",
+              "locator": "Synthetic test section 77",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.7,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-048-02",
+          "source_id": "OS-001",
+          "relationship_type": "IS_A",
+          "target_id": "OS-002",
+          "statement": "Synthetic fixture assertion used to test the IS_A relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-078",
+              "source_type": "internal_policy",
+              "source_id": "TEST-EVIDENCE-SOURCE-078",
+              "title": "Synthetic internal policy evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:078",
+              "locator": "Synthetic test section 78",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.7,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-049",
+      "title": "PART_OF two-node cycle",
+      "description": "Synthetic invalid fixture for PART_OF two-node cycle.",
+      "validation_layer": "cycle",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CYCLE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-049-01",
+          "source_id": "OS-008",
+          "relationship_type": "PART_OF",
+          "target_id": "OS-004",
+          "statement": "Synthetic fixture assertion used to test the PART_OF relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-049-02",
+          "source_id": "OS-004",
+          "relationship_type": "PART_OF",
+          "target_id": "OS-008",
+          "statement": "Synthetic fixture assertion used to test the PART_OF relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-050",
+      "title": "REPLACES two-node cycle",
+      "description": "Synthetic invalid fixture for REPLACES two-node cycle.",
+      "validation_layer": "cycle",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CYCLE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-050-01",
+          "source_id": "OS-003",
+          "relationship_type": "REPLACES",
+          "target_id": "OS-002",
+          "statement": "Synthetic fixture assertion used to test the REPLACES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_0",
+              "operator": "equals",
+              "value": "fixture_a",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-079",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-079",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:079",
+              "locator": "Synthetic test section 79",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-050-02",
+          "source_id": "OS-002",
+          "relationship_type": "REPLACES",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the REPLACES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_0",
+              "operator": "equals",
+              "value": "fixture_a",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-080",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-080",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:080",
+              "locator": "Synthetic test section 80",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-051",
+      "title": "DEPRECATED_BY two-node cycle",
+      "description": "Synthetic invalid fixture for DEPRECATED_BY two-node cycle.",
+      "validation_layer": "cycle",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CYCLE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-051-01",
+          "source_id": "OS-002",
+          "relationship_type": "DEPRECATED_BY",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the DEPRECATED_BY relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_1",
+              "operator": "not_equals",
+              "value": "fixture_b",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-081",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-081",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:081",
+              "locator": "Synthetic test section 81",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-051-02",
+          "source_id": "OS-003",
+          "relationship_type": "DEPRECATED_BY",
+          "target_id": "OS-002",
+          "statement": "Synthetic fixture assertion used to test the DEPRECATED_BY relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_1",
+              "operator": "not_equals",
+              "value": "fixture_b",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-082",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-082",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:082",
+              "locator": "Synthetic test section 82",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-052",
+      "title": "REQUIRES two-node cycle",
+      "description": "Synthetic invalid fixture for REQUIRES two-node cycle.",
+      "validation_layer": "cycle",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "FORBIDDEN_CYCLE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-052-01",
+          "source_id": "OS-003",
+          "relationship_type": "REQUIRES",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the REQUIRES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-083",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-083",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:083",
+              "locator": "Synthetic test section 83",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-052-02",
+          "source_id": "SEC-001",
+          "relationship_type": "REQUIRES",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the REQUIRES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-084",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-084",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:084",
+              "locator": "Synthetic test section 84",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-053",
+      "title": "DEPENDS_ON two-node cycle",
+      "description": "Synthetic invalid fixture for DEPENDS_ON two-node cycle.",
+      "validation_layer": "cycle",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "REVIEW_REQUIRED_CYCLE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-053-01",
+          "source_id": "OS-005",
+          "relationship_type": "DEPENDS_ON",
+          "target_id": "OS-008",
+          "statement": "Synthetic fixture assertion used to test the DEPENDS_ON relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-085",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-085",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:085",
+              "locator": "Synthetic test section 85",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-053-02",
+          "source_id": "OS-008",
+          "relationship_type": "DEPENDS_ON",
+          "target_id": "OS-005",
+          "statement": "Synthetic fixture assertion used to test the DEPENDS_ON relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-086",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-086",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:086",
+              "locator": "Synthetic test section 86",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-054",
+      "title": "Compatible and conflict contradiction",
+      "description": "Synthetic invalid fixture for Compatible and conflict contradiction.",
+      "validation_layer": "contradiction",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONTRADICTORY_RELATIONSHIPS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-054-01",
+          "source_id": "DRV-008",
+          "relationship_type": "COMPATIBLE_WITH",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the COMPATIBLE_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_platform",
+              "operator": "equals",
+              "value": "synthetic_platform"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-087",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-087",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:087",
+              "locator": "Synthetic test section 87",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-054-02",
+          "source_id": "DRV-008",
+          "relationship_type": "CONFLICTS_WITH",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the CONFLICTS_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_platform",
+              "operator": "equals",
+              "value": "synthetic_platform"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-088",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-088",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:088",
+              "locator": "Synthetic test section 88",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-055",
+      "title": "Support and conflict overlap",
+      "description": "Synthetic invalid fixture for Support and conflict overlap.",
+      "validation_layer": "contradiction",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONTRADICTORY_RELATIONSHIPS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-055-01",
+          "source_id": "DRV-007",
+          "relationship_type": "SUPPORTS",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the SUPPORTS relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_platform",
+              "operator": "equals",
+              "value": "synthetic_platform"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-089",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-089",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:089",
+              "locator": "Synthetic test section 89",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-055-02",
+          "source_id": "DRV-007",
+          "relationship_type": "CONFLICTS_WITH",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the CONFLICTS_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_platform",
+              "operator": "equals",
+              "value": "synthetic_platform"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-090",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-090",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:090",
+              "locator": "Synthetic test section 90",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-056",
+      "title": "Requires and conflict overlap",
+      "description": "Synthetic invalid fixture for Requires and conflict overlap.",
+      "validation_layer": "contradiction",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONTRADICTORY_RELATIONSHIPS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-056-01",
+          "source_id": "OS-003",
+          "relationship_type": "REQUIRES",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the REQUIRES relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_platform",
+              "operator": "equals",
+              "value": "synthetic_platform"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-091",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-091",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:091",
+              "locator": "Synthetic test section 91",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-056-02",
+          "source_id": "OS-003",
+          "relationship_type": "CONFLICTS_WITH",
+          "target_id": "SEC-001",
+          "statement": "Synthetic fixture assertion used to test the CONFLICTS_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_platform",
+              "operator": "equals",
+              "value": "synthetic_platform"
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-092",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-092",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:092",
+              "locator": "Synthetic test section 92",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-057",
+      "title": "IS_A and PART_OF predicate confusion",
+      "description": "Synthetic invalid fixture for IS_A and PART_OF predicate confusion.",
+      "validation_layer": "contradiction",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "CONTRADICTORY_RELATIONSHIPS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-057-01",
+          "source_id": "OS-002",
+          "relationship_type": "IS_A",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the IS_A relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [],
+          "confidence": 0.7,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-057-02",
+          "source_id": "OS-002",
+          "relationship_type": "PART_OF",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the PART_OF relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [],
+          "confidence": 0.75,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-058",
+      "title": "Reciprocal SUPPORTS inference",
+      "description": "Synthetic invalid fixture for Reciprocal SUPPORTS inference.",
+      "validation_layer": "collection",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-058-01",
+          "source_id": "DRV-007",
+          "relationship_type": "SUPPORTS",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the SUPPORTS relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_8",
+              "operator": "exists",
+              "value": true,
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-093",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-093",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:093",
+              "locator": "Synthetic test section 93",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-058-02",
+          "source_id": "OS-003",
+          "relationship_type": "SUPPORTS",
+          "target_id": "DRV-007",
+          "statement": "Synthetic fixture assertion used to test the SUPPORTS relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_8",
+              "operator": "exists",
+              "value": true,
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-094",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-094",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:094",
+              "locator": "Synthetic test section 94",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-059",
+      "title": "Reciprocal COMPATIBLE_WITH materialization",
+      "description": "Synthetic invalid fixture for Reciprocal COMPATIBLE_WITH materialization.",
+      "validation_layer": "collection",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-059-01",
+          "source_id": "DRV-008",
+          "relationship_type": "COMPATIBLE_WITH",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the COMPATIBLE_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_9",
+              "operator": "matches",
+              "value": "^fixture_[a-z]+$",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-095",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-095",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:095",
+              "locator": "Synthetic test section 95",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        },
+        {
+          "relationship_id": "REL-INVALID-059-02",
+          "source_id": "OS-001",
+          "relationship_type": "COMPATIBLE_WITH",
+          "target_id": "DRV-008",
+          "statement": "Synthetic fixture assertion used to test the COMPATIBLE_WITH relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_9",
+              "operator": "matches",
+              "value": "^fixture_[a-z]+$",
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-096",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-096",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:096",
+              "locator": "Synthetic test section 96",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-060",
+      "title": "Stored virtual inverse MANAGED_BY",
+      "description": "Synthetic invalid fixture for Stored virtual inverse MANAGED_BY.",
+      "validation_layer": "relationship_type",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "UNKNOWN_RELATIONSHIP_TYPE",
+        "VIRTUAL_INVERSE_MATERIALIZATION_FORBIDDEN"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-060-01",
+          "source_id": "FW-002",
+          "relationship_type": "MANAGED_BY",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-097",
+              "source_type": "knowledge_base_source",
+              "source_id": "TEST-EVIDENCE-SOURCE-097",
+              "title": "Synthetic knowledge base source evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:097",
+              "locator": "Synthetic test section 97",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-061",
+      "title": "Candidate treated as production importable",
+      "description": "Synthetic invalid fixture for Candidate treated as production importable.",
+      "validation_layer": "approval",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "PRODUCTION_APPROVAL_REQUIRED"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-061-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-098",
+              "source_type": "manual_review",
+              "source_id": "TEST-EVIDENCE-SOURCE-098",
+              "title": "Synthetic manual review evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:098",
+              "locator": "Synthetic test section 98",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-062",
+      "title": "Rejected treated as production importable",
+      "description": "Synthetic invalid fixture for Rejected treated as production importable.",
+      "validation_layer": "approval",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "PRODUCTION_APPROVAL_REQUIRED"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-062-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-099",
+              "source_type": "official_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-099",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:099",
+              "locator": "Synthetic test section 99",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "rejected",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-063",
+      "title": "Deprecated treated as production importable",
+      "description": "Synthetic invalid fixture for Deprecated treated as production importable.",
+      "validation_layer": "approval",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "PRODUCTION_APPROVAL_REQUIRED"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-063-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-100",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-100",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:100",
+              "locator": "Synthetic test section 100",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "deprecated",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-064",
+      "title": "Approved relationship with validation error",
+      "description": "Synthetic invalid fixture for Approved relationship with validation error.",
+      "validation_layer": "approval",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_SOURCE_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-064-01",
+          "source_id": "FW-001",
+          "relationship_type": "MANAGES",
+          "target_id": "OS-001",
+          "statement": "Synthetic fixture assertion used to test the MANAGES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-101",
+              "source_type": "vendor_documentation",
+              "source_id": "TEST-EVIDENCE-SOURCE-101",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:101",
+              "locator": "Synthetic test section 101",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.8500000000000001,
+          "verification_status": "source_verified",
+          "approval_status": "approved",
+          "approved_by": "Synthetic Test Approver",
+          "approved_at": "2026-06-20T00:00:00Z",
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-065",
+      "title": "RUNS_ON forbidden same category",
+      "description": "Synthetic invalid fixture for RUNS_ON forbidden same category.",
+      "validation_layer": "domain_range",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "INVALID_TARGET_CATEGORY",
+        "FORBIDDEN_SAME_CATEGORY"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-065-01",
+          "source_id": "DRV-007",
+          "relationship_type": "RUNS_ON",
+          "target_id": "DRV-001",
+          "statement": "Synthetic fixture assertion used to test the RUNS_ON relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [
+            {
+              "attribute": "fixture_attribute_5",
+              "operator": "less_than_or_equal",
+              "value": 9,
+              "unit": null,
+              "description": "Synthetic condition used only for validator testing."
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-102",
+              "source_type": "internal_policy",
+              "source_id": "TEST-EVIDENCE-SOURCE-102",
+              "title": "Synthetic internal policy evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:102",
+              "locator": "Synthetic test section 102",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 1.0,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-066",
+      "title": "Required evidence absent",
+      "description": "Synthetic invalid fixture for Required evidence absent.",
+      "validation_layer": "evidence",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "MISSING_REQUIRED_EVIDENCE"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-066-01",
+          "source_id": "FW-002",
+          "relationship_type": "USES",
+          "target_id": "FW-009",
+          "statement": "Synthetic fixture assertion used to test the USES relationship type between registered test endpoints.",
+          "assertion_scope": "universal",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [],
+          "confidence": 0.8,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "INVALID-CASE-067",
+      "title": "Explicit missing required conditions",
+      "description": "Synthetic invalid fixture for Explicit missing required conditions.",
+      "validation_layer": "conditions",
+      "expected_valid": false,
+      "expected_error_codes": [
+        "SCHEMA_CONDITIONS_REQUIRED",
+        "MISSING_REQUIRED_CONDITIONS"
+      ],
+      "records": [
+        {
+          "relationship_id": "REL-INVALID-067-01",
+          "source_id": "DRV-007",
+          "relationship_type": "SUPPORTS",
+          "target_id": "OS-003",
+          "statement": "Synthetic fixture assertion used to test the SUPPORTS relationship type between registered test endpoints.",
+          "assertion_scope": "conditional",
+          "condition_logic": "ALL",
+          "conditions": [],
+          "evidence": [
+            {
+              "evidence_id": "EVID-EXAMPLE-104",
+              "source_type": "industry_standard",
+              "source_id": "TEST-EVIDENCE-SOURCE-104",
+              "title": "Synthetic authoritative evidence fixture",
+              "uri": "urn:test:relationship-ontology:evidence:104",
+              "locator": "Synthetic test section 104",
+              "notes": "Test fixture only; not production evidence."
+            }
+          ],
+          "confidence": 0.9500000000000001,
+          "verification_status": "review_required",
+          "approval_status": "candidate",
+          "approved_by": null,
+          "approved_at": null,
+          "source_release": "1.1.0-rc2",
+          "relationship_ontology_version": "1.0.0",
+          "metadata": {
+            "created_by": "relationship_fixture_generator",
+            "created_at": null,
+            "updated_at": null,
+            "notes": "Synthetic test fixture only; never import into Neo4j."
+          }
+        }
+      ]
+    }
+  ]
+}

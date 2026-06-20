@@ -1,0 +1,377 @@
+[
+  {
+    "entity_id": "SEC-001",
+    "name": "TPM",
+    "type": "SecurityComponent",
+    "subtype": "Hardware Security Component",
+    "layer": "Security Layer",
+    "description": "Trusted Platform Module (TPM) hardware component providing a platform root of trust, secure key storage, attestation capabilities, and platform configuration registers. Variants include discrete, firmware (fTPM), integrated, and virtual TPM implementations.",
+    "purpose": "Provide hardware-rooted cryptographic functions, secure key storage, and platform attestation to support measured boot and device identity features.",
+    "aliases": [
+      "Trusted Platform Module"
+    ],
+    "keywords": [
+      "TPM 1.2",
+      "TPM 2.0",
+      "Discrete TPM",
+      "Firmware TPM",
+      "Integrated TPM",
+      "Virtual TPM",
+      "Platform Configuration Register",
+      "Endorsement Key",
+      "Storage Root Key",
+      "Attestation Identity Key",
+      "TPM NV Storage",
+      "key hierarchy"
+    ],
+    "related_entities": [
+      "Secure Boot",
+      "Secure Enclave",
+      "Hardware Root of Trust",
+      "Memory Encryption",
+      "Physical Unclonable Function",
+      "Hardware Security Key"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-002",
+    "name": "Secure Boot",
+    "type": "SecurityComponent",
+    "subtype": "Boot Security Feature",
+    "layer": "Security Layer",
+    "description": "Pre-boot integrity enforcement mechanism that validates signatures of bootloader and firmware components against authorized keys and signature stores to help ensure platform boot integrity.",
+    "purpose": "Enforce verification of pre-OS images and boot components to reduce the risk of unauthorized or tampered boot software executing on the platform.",
+    "aliases": [],
+    "keywords": [
+      "Platform Key",
+      "Key Exchange Key",
+      "Authorized Signature Database",
+      "Forbidden Signature Database",
+      "Machine Owner Key",
+      "Secure Boot Policy",
+      "Secure Boot Audit Mode",
+      "Secure Boot Setup Mode",
+      "Bootloader Signing",
+      "Kernel Module Signing",
+      "Option ROM Validation",
+      "Secure Boot Certificate Management"
+    ],
+    "related_entities": [
+      "TPM",
+      "TPM Measured Boot",
+      "Boot Guard",
+      "UEFI Signature Database",
+      "Firmware Integrity Verification",
+      "Platform Key Management",
+      "Early Launch Anti-Malware"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-003",
+    "name": "Antivirus",
+    "type": "SecurityComponent",
+    "subtype": "Security Agent",
+    "layer": "Security Layer",
+    "description": "Endpoint security agent that performs signature-based and heuristic scanning, and other detection techniques to identify and mitigate known malware and suspicious files.",
+    "purpose": "Detect and mitigate known malicious software via signature updates, heuristic analysis, and scanning engines while integrating with endpoint management and update services.",
+    "aliases": [],
+    "keywords": [
+      "Signature-Based Detection Engine",
+      "Heuristic Analysis Engine",
+      "Behavioral Detection Engine",
+      "Real-Time File System Scanner",
+      "On-Demand Scanner",
+      "Quarantine Manager",
+      "Threat Definition Update Service",
+      "Boot Sector Scanner",
+      "Email Attachment Scanner",
+      "Web Content Scanner",
+      "Script Execution Monitor",
+      "Exploit Prevention Module"
+    ],
+    "related_entities": [
+      "EDR Agent",
+      "Anti-Malware Engine",
+      "Host Intrusion Prevention System",
+      "Application Whitelisting Agent",
+      "File Integrity Monitoring Agent",
+      "Data Loss Prevention Agent"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-004",
+    "name": "EDR Agent",
+    "type": "SecurityComponent",
+    "subtype": "Security Agent",
+    "layer": "Security Layer",
+    "description": "Endpoint Detection and Response (EDR) agent that collects telemetry (process, file, network, registry, and memory activity) and provides analysis, hunting, and containment capabilities.",
+    "purpose": "Enable detection, investigation, and response to advanced threats by aggregating telemetry, applying behavioral analytics, and supporting containment or remediation actions.",
+    "aliases": [],
+    "keywords": [
+      "Kernel Sensor",
+      "Process Telemetry Collector",
+      "File System Activity Monitor",
+      "Network Activity Monitor",
+      "Registry Activity Monitor",
+      "Memory Forensics Module",
+      "Threat Intelligence Integration",
+      "Automated Response Engine",
+      "Behavioral Analytics Engine",
+      "Isolation and Containment Module"
+    ],
+    "related_entities": [
+      "Antivirus",
+      "Host Intrusion Detection System",
+      "Extended Detection and Response Agent",
+      "User and Entity Behavior Analytics Agent",
+      "Security Information and Event Management Forwarder",
+      "File Integrity Monitoring Agent"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-005",
+    "name": "Secure Enclave",
+    "type": "SecurityComponent",
+    "subtype": "Hardware Security Component",
+    "layer": "Security Layer",
+    "description": "Hardware-based secure processor in Apple devices that provides cryptographic operations and secure key storage.",
+    "purpose": "Provide secure storage and processing of sensitive data in Apple hardware.",
+    "aliases": [],
+    "keywords": [
+      "Apple",
+      "secure processor",
+      "key storage"
+    ],
+    "related_entities": [
+      "macOS",
+      "TPM"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-006",
+    "name": "System Integrity Protection",
+    "type": "SecurityComponent",
+    "subtype": "Security Feature",
+    "layer": "Security Layer",
+    "description": "Security feature in macOS that restricts what the root user can do to protect system files.",
+    "purpose": "Prevent unauthorized modifications to system files in macOS.",
+    "aliases": [
+      "SIP"
+    ],
+    "keywords": [
+      "macOS",
+      "root",
+      "system files"
+    ],
+    "related_entities": [
+      "macOS"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-007",
+    "name": "Gatekeeper",
+    "type": "SecurityComponent",
+    "subtype": "Security Feature",
+    "layer": "Security Layer",
+    "description": "Security feature in macOS that verifies the authenticity of downloaded applications.",
+    "purpose": "Ensure only trusted applications run on macOS.",
+    "aliases": [],
+    "keywords": [
+      "macOS",
+      "app verification",
+      "notarization"
+    ],
+    "related_entities": [
+      "macOS",
+      "Notarization"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-008",
+    "name": "FileVault",
+    "type": "SecurityComponent",
+    "subtype": "Full Disk Encryption",
+    "layer": "Security Layer",
+    "description": "Full-disk encryption feature in macOS that protects data on startup disks.",
+    "purpose": "Encrypt the entire startup disk in macOS.",
+    "aliases": [],
+    "keywords": [
+      "macOS",
+      "full disk encryption"
+    ],
+    "related_entities": [
+      "macOS",
+      "Full Disk Encryption"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Apple",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-009",
+    "name": "BitLocker",
+    "type": "SecurityComponent",
+    "subtype": "Full Disk Encryption",
+    "layer": "Security Layer",
+    "description": "Full-disk encryption feature in Windows that protects data by encrypting entire volumes.",
+    "purpose": "Encrypt entire volumes in Windows to protect data.",
+    "aliases": [],
+    "keywords": [
+      "Windows",
+      "full disk encryption",
+      "TPM"
+    ],
+    "related_entities": [
+      "Windows",
+      "Full Disk Encryption",
+      "TPM"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical",
+    "concept_scope": "VendorSpecific",
+    "vendor": "Microsoft",
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-010",
+    "name": "SELinux",
+    "type": "SecurityComponent",
+    "subtype": "Security Module",
+    "layer": "Security Layer",
+    "description": "Security-enhanced Linux module providing mandatory access control policies.",
+    "purpose": "Enforce mandatory access controls in Linux.",
+    "aliases": [
+      "Security Enhanced Linux"
+    ],
+    "keywords": [
+      "Linux",
+      "access control"
+    ],
+    "related_entities": [
+      "Linux"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-011",
+    "name": "AppArmor",
+    "type": "SecurityComponent",
+    "subtype": "Security Module",
+    "layer": "Security Layer",
+    "description": "Linux security module that provides mandatory access control using program profiles.",
+    "purpose": "Restrict program capabilities in Linux.",
+    "aliases": [],
+    "keywords": [
+      "Linux",
+      "access control"
+    ],
+    "related_entities": [
+      "Linux"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  },
+  {
+    "entity_id": "SEC-012",
+    "name": "LUKS",
+    "type": "SecurityComponent",
+    "subtype": "Disk Encryption",
+    "layer": "Security Layer",
+    "description": "Linux Unified Key Setup for full-disk encryption.",
+    "purpose": "Encrypt disks in Linux.",
+    "aliases": [],
+    "keywords": [
+      "Linux",
+      "disk encryption"
+    ],
+    "related_entities": [
+      "Linux",
+      "Full Disk Encryption"
+    ],
+    "knowledge_category": "Security",
+    "compatibility_relevance": "High",
+    "validation_priority": "High",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [],
+    "review_notes": ""
+  }
+]

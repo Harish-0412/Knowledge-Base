@@ -1,0 +1,21 @@
+{
+  "file": "relationship_rules.json",
+  "status": "PASS",
+  "relationship_type_count": 20,
+  "relationship_rule_count": 20,
+  "missing_rules": [],
+  "unknown_rules": [],
+  "category_errors": [],
+  "type_errors": [],
+  "policy_errors": [],
+  "inheritance_mismatches": [],
+  "cross_predicate_constraint_errors": [],
+  "neo4j_policy_errors": [],
+  "immutability_errors": [],
+  "warnings": [
+    "The five-category model cannot fully distinguish standards, interfaces, services, policies, agents and abstract capabilities.",
+    "Manual-review annotations outside an allowlist do not authorize approval; a future ontology revision is required.",
+    "RUNS_ON uses cross_category_policy allowed because required is not a controlled value; explicit allowlists enforce its direction."
+  ],
+  "summary": "Validated 20 relationship rules against 20 registered types. Structural validation status: PASS."
+}

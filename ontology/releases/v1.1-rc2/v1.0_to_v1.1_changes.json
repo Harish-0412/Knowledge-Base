@@ -531,81 +531,6 @@
       }
     },
     {
-      "entity_id": "OS-001",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        },
-        "vendor": {
-          "old": null,
-          "new": "Microsoft"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        }
-      }
-    },
-    {
-      "entity_id": "OS-002",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        },
-        "vendor": {
-          "old": null,
-          "new": "Microsoft"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        }
-      }
-    },
-    {
-      "entity_id": "OS-003",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        },
-        "vendor": {
-          "old": null,
-          "new": "Microsoft"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        }
-      }
-    },
-    {
       "entity_id": "OS-004",
       "fields_changed": {
         "aliases": {
@@ -626,22 +551,6 @@
             "Linux Distro",
             "Open Source OS"
           ]
-        },
-        "concept_scope": {
-          "old": null,
-          "new": "Generic"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
         }
       }
     },
@@ -670,10 +579,6 @@
             "Ubuntu Jammy",
             "Ubuntu Noble"
           ]
-        },
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
         },
         "keywords": {
           "old": [
@@ -775,72 +680,6 @@
             "LXC",
             "LXD"
           ]
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        },
-        "vendor": {
-          "old": null,
-          "new": "Canonical"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        }
-      }
-    },
-    {
-      "entity_id": "OS-006",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        },
-        "vendor": {
-          "old": null,
-          "new": "Red Hat"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        }
-      }
-    },
-    {
-      "entity_id": "OS-007",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        },
-        "vendor": {
-          "old": null,
-          "new": "Apple"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
         }
       }
     },
@@ -1207,177 +1046,6 @@
       }
     },
     {
-      "entity_id": "OS-001",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "vendor": {
-          "old": null,
-          "new": "Microsoft"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        }
-      }
-    },
-    {
-      "entity_id": "OS-002",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "vendor": {
-          "old": null,
-          "new": "Microsoft"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        }
-      }
-    },
-    {
-      "entity_id": "OS-003",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "vendor": {
-          "old": null,
-          "new": "Microsoft"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        }
-      }
-    },
-    {
-      "entity_id": "OS-004",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "Generic"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        }
-      }
-    },
-    {
-      "entity_id": "OS-005",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "vendor": {
-          "old": null,
-          "new": "Canonical"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        }
-      }
-    },
-    {
-      "entity_id": "OS-006",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "vendor": {
-          "old": null,
-          "new": "Red Hat"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        }
-      }
-    },
-    {
-      "entity_id": "OS-007",
-      "fields_changed": {
-        "concept_scope": {
-          "old": null,
-          "new": "VendorSpecific"
-        },
-        "vendor": {
-          "old": null,
-          "new": "Apple"
-        },
-        "verification_status": {
-          "old": null,
-          "new": "review_required"
-        },
-        "provenance": {
-          "old": null,
-          "new": []
-        },
-        "review_notes": {
-          "old": null,
-          "new": ""
-        }
-      }
-    },
-    {
       "entity_id": "SEC-001",
       "fields_changed": {
         "concept_scope": {
@@ -1469,5 +1137,5 @@
     "Existing v1.0 entity IDs remain stable.",
     "RELATED_TO edges are provisional staging relationships."
   ],
-  "summary": "Added 30 entities, removed 0, modified 24, changed 0 existing IDs."
+  "summary": "Added 30 entities, removed 0, modified 19, changed 0 existing IDs."
 }

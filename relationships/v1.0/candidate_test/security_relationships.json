@@ -1,0 +1,254 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "candidate",
+  "domain": "Security",
+  "relationship_count": 7,
+  "relationships": [
+    {
+      "relationship_id": "REL-CAND-77A5F81B26C0",
+      "source_id": "SEC-001",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "TPM uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-8006D3B5782E",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-001",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-001; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Security"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-AA398946F4AA",
+      "source_id": "SEC-001",
+      "relationship_type": "USES",
+      "target_id": "SEC-005",
+      "statement": "TPM uses Secure Enclave.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E28BEB40A566",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-001",
+          "title": "RC2 Cross-Reference: Secure Enclave",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-001; target_entity_id=SEC-005; reference=Secure Enclave",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Security"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-B39B17DB54BD",
+      "source_id": "SEC-002",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "Secure Boot uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-78E936CB29E6",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-002",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-002; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Security"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-A860D7C3DA68",
+      "source_id": "SEC-003",
+      "relationship_type": "USES",
+      "target_id": "SEC-004",
+      "statement": "Antivirus uses EDR Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6A98AAE94EA5",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-003",
+          "title": "RC2 Cross-Reference: EDR Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-003; target_entity_id=SEC-004; reference=EDR Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Security"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-16E19487B9A3",
+      "source_id": "SEC-004",
+      "relationship_type": "USES",
+      "target_id": "SEC-003",
+      "statement": "EDR Agent uses Antivirus.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-EEE542F6DC89",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-004",
+          "title": "RC2 Cross-Reference: Antivirus",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-004; target_entity_id=SEC-003; reference=Antivirus",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Security"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-9AE81CAA5570",
+      "source_id": "SEC-005",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "Secure Enclave uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-123F7C8897B1",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-005",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-005; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Security"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3B8D86E6D1EF",
+      "source_id": "SEC-009",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "BitLocker uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E5871CDE37B1",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-009",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-009; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Security"
+      }
+    }
+  ]
+}
