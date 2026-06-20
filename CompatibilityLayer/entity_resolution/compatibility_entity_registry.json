@@ -1,0 +1,334 @@
+{
+  "registry_name": "Compatibility Layer Entity Registry",
+  "registry_type": "Layer 3 — Compatibility Entity Resolution Registry",
+  "registry_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "status": "active",
+  "description": "Layer 3 entity registry establishing cross-layer linkage between compatibility rule candidates (CompatibilityLayer) and the authoritative Layer 1 canonical entity registry (RC2). Records all resolved and unresolved entity discoveries from the compatibility candidate scan. Serves as the entity bridge for Phase 4 rule production.",
+  "source_registry": {
+    "registry_path": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+    "registry_version": "1.1.0-rc2",
+    "registry_entity_count": 54,
+    "registry_status": "valid",
+    "registry_categories": ["Driver", "Firmware", "Operating System", "Security", "Management"]
+  },
+  "candidate_source": {
+    "source_path": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+    "source_document_id": "DOC-CA114A84AE60",
+    "candidates_scanned": 42,
+    "candidate_id_range": "RCAND-000360 through RCAND-000401"
+  },
+  "resolution_statistics": {
+    "total_raw_component_names_observed": 19,
+    "discarded_non_component_artifacts": 3,
+    "discarded_items": ["unknown (sentinel value)", "Reboot Cycle (readiness artifact)", "Step 1 (procedural artifact)"],
+    "total_logical_entities_after_deduplication": 11,
+    "resolved_count": 3,
+    "unresolved_count": 8,
+    "resolution_rate_pct": 27.3,
+    "unresolved_breakdown": {
+      "requires_new_registration": 2,
+      "requires_new_registration_or_alias": 2,
+      "requires_alias_addition_only": 1,
+      "requires_alias_addition_or_new_registration": 1,
+      "out_of_scope_hardware_platform": 2,
+      "out_of_scope_third_party_integration": 1
+    }
+  },
+  "resolved_entities": [
+    {
+      "entity_name": "System BIOS / BIOS",
+      "all_raw_variants": ["System BIOS", "BIOS", "bios"],
+      "resolved_entity_id": "FW-001",
+      "canonical_name": "BIOS",
+      "normalized_name": "bios",
+      "knowledge_category": "Firmware",
+      "type": "Firmware",
+      "subtype": "Pre-Boot Firmware",
+      "layer": "Firmware Layer",
+      "rc2_status": "active",
+      "concept_scope": "Generic",
+      "resolution_method": "alias_match + canonical_name_match + normalized_name_match",
+      "resolution_pass": "passes 1, 2, and 3 all succeeded independently",
+      "confidence": 1.0,
+      "cross_layer_link": {
+        "layer3_entity_name": "System BIOS / BIOS",
+        "layer1_entity_id": "FW-001",
+        "layer1_canonical_name": "BIOS",
+        "link_type": "resolved_identity",
+        "link_status": "confirmed"
+      },
+      "source_candidates": [
+        "RCAND-000363",
+        "RCAND-000370",
+        "RCAND-000373",
+        "RCAND-000374",
+        "RCAND-000379",
+        "RCAND-000382",
+        "RCAND-000385",
+        "RCAND-000391",
+        "RCAND-000397"
+      ]
+    },
+    {
+      "entity_name": "NIC Firmware",
+      "all_raw_variants": ["NIC Firmware"],
+      "resolved_entity_id": "FW-005",
+      "canonical_name": "Network Firmware",
+      "normalized_name": "network firmware",
+      "knowledge_category": "Firmware",
+      "type": "Firmware",
+      "subtype": "Network Device Firmware",
+      "layer": "Firmware Layer",
+      "rc2_status": "active",
+      "concept_scope": "Generic",
+      "resolution_method": "alias_match",
+      "resolution_pass": "pass 2 — 'NIC Firmware' found verbatim in FW-005.aliases",
+      "confidence": 1.0,
+      "cross_layer_link": {
+        "layer3_entity_name": "NIC Firmware",
+        "layer1_entity_id": "FW-005",
+        "layer1_canonical_name": "Network Firmware",
+        "link_type": "resolved_identity",
+        "link_status": "confirmed"
+      },
+      "source_candidates": [
+        "RCAND-000367"
+      ]
+    },
+    {
+      "entity_name": "SIEM (platform aspect of 'third-party SIEM connectors')",
+      "all_raw_variants": ["third-party SIEM connectors"],
+      "resolved_entity_id": "MGT-008",
+      "canonical_name": "SIEM",
+      "normalized_name": "siem",
+      "knowledge_category": "Management",
+      "type": "ManagementTool",
+      "subtype": "Security Operations Platform",
+      "layer": "Management Layer",
+      "rc2_status": "active",
+      "concept_scope": "Generic",
+      "resolution_method": "partial_match_substring_platform",
+      "resolution_pass": "pass 4 — token 'SIEM' in raw string matches MGT-008 canonical_name case-insensitively",
+      "confidence": 0.75,
+      "resolution_scope_caveat": "Platform concept only. Third-party connector software and ACME Partner Program certification are not resolved.",
+      "cross_layer_link": {
+        "layer3_entity_name": "SIEM platform reference in 'third-party SIEM connectors'",
+        "layer1_entity_id": "MGT-008",
+        "layer1_canonical_name": "SIEM",
+        "link_type": "partial_resolved_identity",
+        "link_status": "confirmed_partial"
+      },
+      "source_candidates": [
+        "RCAND-000368"
+      ]
+    }
+  ],
+  "unresolved_entities": [
+    {
+      "entity_name": "Enterprise OS",
+      "all_raw_variants": ["Enterprise OS"],
+      "component_type": "os",
+      "unresolved_reason": "Synthetic enterprise OS product not registered in RC2. No canonical name, alias, or normalized name match across all 54 RC2 entities.",
+      "scope_classification": "requires_new_registration",
+      "suggested_registration": {
+        "suggested_entity_id": "OS-013",
+        "canonical_name": "Enterprise OS",
+        "type": "OperatingSystem",
+        "subtype": "Operating System Version",
+        "knowledge_category": "Operating System",
+        "versions_observed": ["2025.2", "2026.1"]
+      },
+      "source_candidates": ["RCAND-000360","RCAND-000362","RCAND-000365","RCAND-000369","RCAND-000371","RCAND-000375","RCAND-000381","RCAND-000390","RCAND-000396","RCAND-000399"]
+    },
+    {
+      "entity_name": "System Firmware / firmware",
+      "all_raw_variants": ["System Firmware", "firmware"],
+      "component_type": "firmware",
+      "unresolved_reason": "No RC2 entity with canonical name or alias 'System Firmware'. Proven distinct from FW-001 (BIOS) by co-occurrence evidence in RCAND-000363 where both System BIOS and System Firmware appear in the same rule.",
+      "scope_classification": "requires_new_registration_or_alias_addition",
+      "suggested_registration": {
+        "suggested_entity_id": "FW-013",
+        "canonical_name": "System Firmware",
+        "type": "Firmware",
+        "subtype": "Pre-Boot Firmware",
+        "knowledge_category": "Firmware",
+        "versions_observed": ["7.9.0", "8.0.0", "8.1.x", "8.2.0", "8.2.1"],
+        "alternative": "Add as alias to FW-002 (UEFI) if domain expert confirms equivalence — requires explicit confirmation before alias addition"
+      },
+      "data_quality_flag": "RCAND-000364 and RCAND-000374 mislabel 'System Firmware' with component_type='bios' — extractor error",
+      "source_candidates": ["RCAND-000361","RCAND-000363","RCAND-000364","RCAND-000370","RCAND-000373","RCAND-000374","RCAND-000380","RCAND-000383","RCAND-000386","RCAND-000392","RCAND-000397","RCAND-000398","RCAND-000401"]
+    },
+    {
+      "entity_name": "Driver Pack",
+      "all_raw_variants": ["Driver Pack", "driver pack"],
+      "component_type": "driver",
+      "unresolved_reason": "RC2 driver registry models individual driver types only. No bundle/distribution entity exists. 'Driver Pack' is a multi-driver aggregate distribution package with no RC2 equivalent.",
+      "scope_classification": "requires_new_registration",
+      "suggested_registration": {
+        "suggested_entity_id": "DRV-009",
+        "canonical_name": "Driver Pack",
+        "type": "Driver",
+        "subtype": "Driver Bundle",
+        "knowledge_category": "Driver",
+        "versions_observed": ["12.3.0", "12.4.0", "12.4.2", "12.5.0"],
+        "suggested_aliases": ["Driver Bundle", "Driver Distribution Package"]
+      },
+      "source_candidates": ["RCAND-000360","RCAND-000369","RCAND-000371","RCAND-000375","RCAND-000376","RCAND-000381","RCAND-000387","RCAND-000393","RCAND-000399","RCAND-000400"]
+    },
+    {
+      "entity_name": "Platform Driver Pack",
+      "all_raw_variants": ["Platform Driver Pack"],
+      "component_type": "driver",
+      "unresolved_reason": "No RC2 entity. Hardware-context-specific driver bundle variant. Used in EdgeStation-specific and OS compatibility contexts alongside but distinct from 'Driver Pack'.",
+      "scope_classification": "requires_new_registration_or_alias_of_pending_entity",
+      "suggested_registration": {
+        "suggested_entity_id": "DRV-010",
+        "canonical_name": "Platform Driver Pack",
+        "type": "Driver",
+        "subtype": "Driver Bundle",
+        "knowledge_category": "Driver",
+        "versions_observed": ["12.5.0"],
+        "alternative": "Evaluate as alias of DRV-009 (Driver Pack) once that entity is registered"
+      },
+      "source_candidates": ["RCAND-000364","RCAND-000365","RCAND-000367","RCAND-000400"]
+    },
+    {
+      "entity_name": "Security Agent",
+      "all_raw_variants": ["Security Agent"],
+      "component_type": "agent",
+      "unresolved_reason": "No RC2 entity has 'Security Agent' as canonical name or alias. SEC-004 (EDR Agent) is closest semantic match but has no aliases; explicit alias match is required for resolution.",
+      "scope_classification": "requires_alias_addition_or_new_registration",
+      "suggested_registration": {
+        "primary_recommendation": "Add 'Security Agent' as alias to SEC-004 (EDR Agent) after domain expert confirmation",
+        "alternative_entity_id": "SEC-013",
+        "alternative_canonical_name": "Security Agent",
+        "type": "SecurityComponent",
+        "subtype": "Security Agent",
+        "knowledge_category": "Security",
+        "versions_observed": ["4.7.x", "4.8.3"],
+        "cve_evidence": "CVE SEC-2026-003 titled 'Endpoint Agent Token Exposure' supports EDR Agent classification"
+      },
+      "source_candidates": ["RCAND-000362","RCAND-000366","RCAND-000372","RCAND-000377","RCAND-000378","RCAND-000384","RCAND-000388","RCAND-000394"]
+    },
+    {
+      "entity_name": "Endpoint Management Agent",
+      "all_raw_variants": ["Endpoint Management Agent", "Endpoint Mgmt Agent"],
+      "component_type": "agent",
+      "unresolved_reason": "MGT-010 (Endpoint Agent) is the closest RC2 entity but aliases are 'Client Agent' and 'Management Agent' only — the combined form 'Endpoint Management Agent' is absent. RCAND-000395 confirms 'Endpoint Mgmt Agent' and 'Endpoint Management Agent' refer to the same product.",
+      "scope_classification": "requires_alias_addition",
+      "suggested_registration": {
+        "primary_recommendation": "Add 'Endpoint Management Agent' and 'Endpoint Mgmt Agent' as aliases to MGT-010 (Endpoint Agent). No new entity registration required.",
+        "target_entity_id": "MGT-010",
+        "aliases_to_add": ["Endpoint Management Agent", "Endpoint Mgmt Agent"],
+        "confidence": "high — source context strongly confirms equivalence",
+        "versions_observed": ["3.7.0", "3.7.1"]
+      },
+      "source_candidates": ["RCAND-000366","RCAND-000368","RCAND-000372","RCAND-000389","RCAND-000395"]
+    },
+    {
+      "entity_name": "ProBook and Enterprise Laptop Series",
+      "all_raw_variants": ["ProBook and Enterprise Laptop Series"],
+      "component_type": "hardware_platform_model",
+      "unresolved_reason": "Hardware device family. RC2 Layer 1 registry covers software entities only. Hardware platforms are structurally out of scope.",
+      "scope_classification": "out_of_scope_hardware_platform",
+      "suggested_registration": {
+        "primary_recommendation": "No Layer 1 action required. Document as hardware platform scope reference. A separate hardware device registry would be required if hardware entity modeling is needed."
+      },
+      "source_candidates": ["RCAND-000361"]
+    },
+    {
+      "entity_name": "EdgeStation Workstations",
+      "all_raw_variants": ["EdgeStation Workstations"],
+      "component_type": "hardware_platform_model",
+      "unresolved_reason": "Hardware device family. Same out-of-scope classification as 'ProBook and Enterprise Laptop Series'.",
+      "scope_classification": "out_of_scope_hardware_platform",
+      "suggested_registration": {
+        "primary_recommendation": "No Layer 1 action required. Document as hardware platform scope reference."
+      },
+      "source_candidates": ["RCAND-000367"]
+    }
+  ],
+  "data_quality_findings": [
+    {
+      "finding_id": "DQF-001",
+      "issue": "component_type mislabeling",
+      "description": "RCAND-000364 and RCAND-000374 assign component_type='bios' to 'System Firmware'. Version evidence (8.x.x for System Firmware vs. 6.x.x for BIOS) and RCAND-000363 co-occurrence proof confirm these are distinct components. The mislabeling is an extractor error.",
+      "affected_candidates": ["RCAND-000364", "RCAND-000374"],
+      "recommended_fix": "Correct component_type to 'firmware' for 'System Firmware' records in normalized_rule_candidates.json, or document the mislabeling in the entity resolution record for Phase 4."
+    },
+    {
+      "finding_id": "DQF-002",
+      "issue": "Null component_name with type-string normalization",
+      "description": "Multiple candidates have component_name=null in raw metadata; the normalized layer fills component_name with the type string ('bios', 'firmware', 'driver'). These are valid but derived names, not original source text.",
+      "affected_candidates": ["RCAND-000370","RCAND-000373","RCAND-000379","RCAND-000380","RCAND-000383","RCAND-000386","RCAND-000391","RCAND-000392","RCAND-000397","RCAND-000398","RCAND-000401"]
+    },
+    {
+      "finding_id": "DQF-003",
+      "issue": "Readiness process artifacts extracted as component names",
+      "description": "'Reboot Cycle' (RCAND-000398) and 'Step 1' (RCAND-000401) appear in requirements[].component_name with component_type='readiness'. These are procedural references incorrectly structured as component requirements by the extractor. They were excluded from entity resolution.",
+      "affected_candidates": ["RCAND-000398", "RCAND-000401"]
+    }
+  ],
+  "recommended_rc2_changes": {
+    "summary": "6 changes to RC2 registry required to achieve full resolution coverage. 2 are alias additions requiring minimal change; 4 require new entity registrations.",
+    "priority_order": [
+      {
+        "priority": 1,
+        "action": "add_aliases",
+        "target_entity_id": "MGT-010",
+        "target_canonical_name": "Endpoint Agent",
+        "aliases_to_add": ["Endpoint Management Agent", "Endpoint Mgmt Agent"],
+        "confidence": "high",
+        "rationale": "Source text in RCAND-000395 explicitly equates both forms. No domain expert confirmation needed."
+      },
+      {
+        "priority": 2,
+        "action": "register_new_entity",
+        "suggested_entity_id": "FW-013",
+        "canonical_name": "System Firmware",
+        "knowledge_category": "Firmware",
+        "type": "Firmware",
+        "subtype": "Pre-Boot Firmware",
+        "rationale": "Proven distinct from BIOS by RCAND-000363 co-occurrence. Most referenced unresolved entity in the candidate set (13 candidates)."
+      },
+      {
+        "priority": 3,
+        "action": "register_new_entity",
+        "suggested_entity_id": "DRV-009",
+        "canonical_name": "Driver Pack",
+        "knowledge_category": "Driver",
+        "type": "Driver",
+        "subtype": "Driver Bundle",
+        "rationale": "Second most referenced unresolved entity (10 candidates). Required for OS-level compatibility rules."
+      },
+      {
+        "priority": 4,
+        "action": "register_new_entity",
+        "suggested_entity_id": "OS-013",
+        "canonical_name": "Enterprise OS",
+        "knowledge_category": "Operating System",
+        "type": "OperatingSystem",
+        "subtype": "Operating System Version",
+        "rationale": "Most referenced entity in the candidate set overall (10 candidates). All OS-level rules depend on this entity."
+      },
+      {
+        "priority": 5,
+        "action": "add_alias_or_register",
+        "option_a": {"action": "add_alias", "target_entity_id": "SEC-004", "alias": "Security Agent", "requires": "domain expert confirmation"},
+        "option_b": {"action": "register_new_entity", "suggested_entity_id": "SEC-013", "canonical_name": "Security Agent"},
+        "rationale": "8 candidates reference Security Agent. Priority lower because resolution is conditional on domain expert confirmation of SEC-004 equivalence."
+      },
+      {
+        "priority": 6,
+        "action": "register_new_entity",
+        "suggested_entity_id": "DRV-010",
+        "canonical_name": "Platform Driver Pack",
+        "knowledge_category": "Driver",
+        "type": "Driver",
+        "subtype": "Driver Bundle",
+        "rationale": "4 candidates. May be resolved as alias of DRV-009 once that entity exists."
+      }
+    ]
+  }
+}

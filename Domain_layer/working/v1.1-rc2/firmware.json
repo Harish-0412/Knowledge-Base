@@ -355,6 +355,62 @@
     "review_notes": ""
   },
   {
+    "entity_id": "FW-013",
+    "name": "System Firmware",
+    "type": "Firmware",
+    "subtype": "Pre-Boot Firmware",
+    "layer": "Firmware Layer",
+    "description": "Platform-level firmware installed on enterprise endpoint and server hardware that governs low-level hardware initialization, power management, boot sequencing, and hardware feature configuration. Distinct from BIOS (FW-001) as confirmed by co-occurrence in the same compatibility rule (RCAND-000363 references both System BIOS and System Firmware as separate component requirements). Versioned with an 8.x.x scheme in the observed compatibility advisories.",
+    "purpose": "Provision of platform firmware that manages hardware initialization, power sequencing, and feature enablement on enterprise endpoint hardware. Subject to version constraints as a prerequisite for BIOS upgrades and OS compatibility requirements.",
+    "aliases": [
+      "Platform Firmware",
+      "Device Firmware",
+      "Endpoint Firmware",
+      "System Platform Firmware"
+    ],
+    "keywords": [
+      "system firmware",
+      "platform firmware",
+      "device firmware",
+      "firmware version",
+      "firmware update",
+      "firmware minimum version",
+      "firmware compatibility",
+      "pre-boot firmware",
+      "hardware initialization firmware",
+      "endpoint firmware",
+      "firmware upgrade path",
+      "firmware sequencing",
+      "battery health firmware",
+      "boot delay",
+      "firmware authentication",
+      "firmware validation"
+    ],
+    "related_entities": [
+      "BIOS",
+      "UEFI",
+      "Embedded Controller Firmware",
+      "Firmware Update Utility",
+      "Enterprise OS",
+      "Driver Pack",
+      "Security Agent"
+    ],
+    "knowledge_category": "Firmware",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [
+      {
+        "source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+        "document_id": "DOC-CA114A84AE60",
+        "reason": "Discovered during Layer 3 compatibility entity resolution. Proven distinct from BIOS by co-occurrence in RCAND-000363 (System BIOS in conditions[], System Firmware in requirements[] in same rule). Referenced across 13 candidates. Versions observed: 7.9.0, 8.0.0, 8.1.x, 8.2.0, 8.2.1."
+      }
+    ],
+    "review_notes": "Added in Layer 3 entity resolution phase. Proven distinct from FW-001 (BIOS) by RCAND-000363 co-occurrence evidence — both appear in the same compatibility rule as different components. Not aliased to FW-002 (UEFI) without domain expert confirmation. Registered at FW-013 following existing Firmware namespace sequence. Note: FW-007 through FW-012 are governance-exception IDs; FW-013 is the next available firmware namespace slot."
+  },
+  {
     "entity_id": "FW-006",
     "name": "ACPI",
     "type": "Firmware",

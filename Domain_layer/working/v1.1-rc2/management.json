@@ -572,7 +572,9 @@
     "purpose": "Provide an endpoint-resident communication and execution component for approved management or security operations.",
     "aliases": [
       "Management Agent",
-      "Client Agent"
+      "Client Agent",
+      "Endpoint Management Agent",
+      "Endpoint Mgmt Agent"
     ],
     "keywords": [
       "agent",

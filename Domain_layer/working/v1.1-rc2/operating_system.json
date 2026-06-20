@@ -719,6 +719,53 @@
     "validation_priority": "Critical"
   },
   {
+    "entity_id": "OS-013",
+    "name": "Enterprise OS",
+    "type": "OperatingSystem",
+    "subtype": "Operating System Version",
+    "layer": "Operating System Layer",
+    "description": "Generic enterprise-grade operating system version used in compatibility rule candidates and advisory documents to represent a versioned OS product deployed across managed enterprise endpoint and server fleets. Identified by a year-based version scheme (e.g., 2025.2, 2026.1). Used as a compatibility target in driver, firmware, and security agent compatibility rules.",
+    "purpose": "Represent a versioned enterprise OS product as a compatibility target and condition scope within compatibility rules. Enables precise version-based compatibility assertions between drivers, firmware, and security agents against specific OS release milestones.",
+    "aliases": [],
+    "keywords": [
+      "enterprise operating system",
+      "enterprise OS",
+      "OS version",
+      "OS migration",
+      "OS upgrade",
+      "compatibility target",
+      "driver compatibility",
+      "firmware compatibility",
+      "year-based version scheme",
+      "enterprise endpoint OS",
+      "fleet OS",
+      "OS baseline"
+    ],
+    "related_entities": [
+      "Driver Pack",
+      "Platform Driver Pack",
+      "System Firmware",
+      "Security Agent",
+      "Endpoint Management Agent",
+      "Patch Manager",
+      "Endpoint Manager"
+    ],
+    "knowledge_category": "Operating System",
+    "compatibility_relevance": "Critical",
+    "validation_priority": "Critical",
+    "concept_scope": "Generic",
+    "vendor": null,
+    "verification_status": "review_required",
+    "provenance": [
+      {
+        "source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+        "document_id": "DOC-CA114A84AE60",
+        "reason": "Discovered during Layer 3 compatibility entity resolution — required for OS-level compatibility rules (RCAND-000360 through RCAND-000401). Versions observed: 2025.2, 2026.1."
+      }
+    ],
+    "review_notes": "Added in Layer 3 entity resolution phase. Entity represents a synthetic/generic enterprise OS product name used in compatibility advisory documents. Not a variant of Windows, Linux, macOS, Ubuntu, or RHEL. Registered at OS-013 following existing OS namespace sequence."
+  },
+  {
     "entity_id": "OS-011",
     "name": "Debian",
     "type": "OperatingSystem",

@@ -1,0 +1,31 @@
+[
+  {
+    "entity_name": "ProBook and Enterprise Laptop Series",
+    "all_raw_variants": ["ProBook and Enterprise Laptop Series"],
+    "component_type": "hardware_platform_model",
+    "reason": "Hardware device family model. The RC2 Layer 1 registry covers software entities only across five categories: Driver, Firmware, Operating System, Security, and Management. Hardware device platforms and laptop/workstation models are structurally out of scope for the Layer 1 software entity registry. No registration action is required or appropriate.",
+    "scope_classification": "out_of_scope_hardware_platform",
+    "suggested_action": "No Layer 1 action required. This entity's role in compatibility rules is as an Exception exclusion scope only — device families exempt from a rule. Document as hardware platform scope reference if needed.",
+    "source_candidates": ["RCAND-000361"]
+  },
+  {
+    "entity_name": "EdgeStation Workstations",
+    "all_raw_variants": ["EdgeStation Workstations"],
+    "component_type": "hardware_platform_model",
+    "reason": "Hardware device family model. Same out-of-scope classification as 'ProBook and Enterprise Laptop Series'. The Layer 1 RC2 registry does not and should not register hardware device platforms.",
+    "scope_classification": "out_of_scope_hardware_platform",
+    "suggested_action": "No Layer 1 action required. This entity's role in compatibility rules is as a Condition scope (hardware context in which the rule applies) and Exception scope. Document as hardware platform scope reference if needed.",
+    "source_candidates": ["RCAND-000367"]
+  },
+  {
+    "entity_name": "third-party SIEM connectors (connector aspect)",
+    "all_raw_variants": ["third-party SIEM connectors"],
+    "component_type": "third_party_integration",
+    "reason": "The SIEM platform concept was resolved to MGT-008 (SIEM). The third-party connector software itself — certified under the ACME Partner Program (vendor='ACME') — does not have a Layer 1 equivalent. Third-party integration software from external partners is outside the scope of the Layer 1 software entity registry which covers only generic, vendor-neutral domain components.",
+    "scope_classification": "out_of_scope_third_party_integration",
+    "suggested_action": "No Layer 1 action required. SIEM platform reference is resolved to MGT-008. The ACME Partner Program and third-party connector software are outside Layer 1 scope. If third-party integration tracking is required it should be addressed in a separate partner/integration registry.",
+    "component_family": "ACME Partner Program",
+    "vendor": "ACME",
+    "source_candidates": ["RCAND-000368"]
+  }
+]

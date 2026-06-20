@@ -1,0 +1,130 @@
+{
+  "catalog_version": "1.0.0",
+  "field_count": 26,
+  "schema_version_ref": "COMPAT-RULE-SCHEMA-1.0.0",
+  "created_date": "2026-06-20",
+  "description": "Field-by-field catalog for all 26 fields in the Compatibility Rule Schema. Documents purpose, allowed values, examples, validation rules, and cross-field dependencies for each field.",
+  "fields": [
+    {
+      "field_name": "rule_id",
+      "purpose": "Serves as the globally unique, stable primary key for every CompatibilityRule. Used as the node key in Neo4j, the document ID in Qdrant, and the reference identifier in all cross-system citations and sequence chains.",
+      "allowed_values": "String matching ^CRULE-[A-Z0-9]+-[0-9]{3,}$",
+      "examples": ["CRULE-FW-BIOS-001", "CRULE-DRV-OS-042", "CRULE-SEC-MGT-007"],
+      "validation_rules": [
+        "Must match pattern ^CRULE-[A-Z0-9]+-[0-9]{3,}$",
+        "Must be unique across all rules in the system",
+        "Must not be reused or recycled after deletion or archival",
+        "Must not contain lowercase characters or spaces"
+      ],
+      "relationships_to_other_fields": [
+        "sequence_prerequisite_ref references this field in another rule to build sequence chains",
+        "Immutable after creation; no other field change can modify rule_id"
+      ]
+    },
+    {
+      "field_name": "rule_type",
+      "purpose": "Classifies the semantic nature of the rule, selecting the evaluation model, required field set, operator vocabulary, severity constraints, and minimum confidence threshold that apply to this rule.",
+      "allowed_values": ["min_version_constraint", "known_issue_fixed", "readiness_requirement", "feature_support_added", "incompatible_combination", "update_order_constraint"],
+      "examples": ["min_version_constraint", "known_issue_fixed", "incompatible_combination"],
+      "validation_rules": [
+        "Must be one of the 6 registered rule types",
+        "Must not be null or empty",
+        "Determines which fields are conditionally required"
+      ],
+      "relationships_to_other_fields": [
+        "Governs minimum threshold for confidence field",
+        "Governs allowed values for severity field",
+        "Determines whether sequence_step and sequence_prerequisite_ref are required",
+        "Determines whether conditions must have at least 2 entries (incompatible_combination)",
+        "feature_support_added restricts severity to info and warning only"
+      ]
+    },
+    {
+      "field_name": "status",
+      "purpose": "Tracks the current lifecycle state of the rule, controlling production eligibility, import permissions to Neo4j and Qdrant, and what operations are allowed on the rule.",
+      "allowed_values": ["candidate", "validated", "approved", "deprecated", "rejected", "superseded", "archived"],
+      "examples": ["candidate", "approved", "superseded"],
+      "validation_rules": [
+        "Must be one of the 7 defined lifecycle states",
+        "Transitions must follow the allowed_transitions matrix",
+        "Archived is a terminal state and cannot transition to any other state"
+      ],
+      "relationships_to_other_fields": [
+        "When status = approved, approved_by and approved_at are both required",
+        "When status = approved, evidence must contain at least 1 entry",
+        "Only approved status permits Neo4j and Qdrant import"
+      ]
+    },
+    {
+      "field_name": "subject",
+      "purpose": "Identifies the primary entity the rule applies to. The entity the compliance engine evaluates against the rule logic. Links to an RC2 canonical entity to enable graph traversal and version comparison.",
+      "allowed_values": "Object with entity_id (RC2 pattern ^[A-Z]{2,3}-[0-9]{3}$), component_name (string), and optional version_constraint object",
+      "examples": [
+        {"entity_id": "FW-001", "component_name": "BIOS", "version_constraint": {"operator": ">=", "version_normalized": "6.4.2", "version_scheme": "semantic", "requirement_kind": "min_version"}},
+        {"entity_id": "DRV-009", "component_name": "Driver Pack"}
+      ],
+      "validation_rules": [
+        "entity_id must match ^[A-Z]{2,3}-[0-9]{3}$ and exist in RC2 registry",
+        "component_name must not be null or empty",
+        "version_constraint.operator must be from rule_type allowed operators",
+        "version_constraint.version_scheme must be one of: semantic, wildcard, named_release, calendar, unknown"
+      ],
+      "relationships_to_other_fields": [
+        "subject.entity_id must differ from object.entity_id",
+        "version_constraint.operator must be valid for the declared rule_type"
+      ]
+    },
+    {
+      "field_name": "predicate",
+      "purpose": "Declares the semantic relationship between subject and object. Drives the Neo4j edge type and semantic interpretation of the rule in compliance evaluation and root cause tracing.",
+      "allowed_values": ["REQUIRES", "SUPPORTS", "CONFLICTS_WITH", "FIXED_BY", "UPGRADE_TO", "DEPENDS_ON", "REMEDIATES", "BLOCKS", "SUPERSEDES", "REFERENCES", "HAS_CONDITION", "HAS_EXCEPTION", "HAS_EVIDENCE", "HAS_REMEDIATION", "VALIDATED_BY", "APPROVED_BY", "DERIVED_FROM", "REPLACES", "TARGETS", "SUPPORTED_BY"],
+      "examples": ["REQUIRES", "CONFLICTS_WITH", "FIXED_BY"],
+      "validation_rules": [
+        "Must be one of the 20 registered relationship names from compatibility_relationships.json",
+        "Must not be null or empty",
+        "Must be semantically appropriate for the rule_type"
+      ],
+      "relationships_to_other_fields": [
+        "Determines the Neo4j edge type between subject and object nodes",
+        "FIXED_BY is semantically aligned with known_issue_fixed rule_type",
+        "REQUIRES is semantically aligned with min_version_constraint and readiness_requirement"
+      ]
+    },
+    {
+      "field_name": "object",
+      "purpose": "Identifies the secondary entity the rule relates to via the predicate. The target of the semantic relationship. Same structure as subject.",
+      "allowed_values": "Object with entity_id (RC2 pattern), component_name (string), and optional version_constraint object",
+      "examples": [
+        {"entity_id": "FW-013", "component_name": "System Firmware", "version_constraint": {"operator": ">=", "version_normalized": "8.2.1", "version_scheme": "semantic", "requirement_kind": "min_version"}},
+        {"entity_id": "MGT-010", "component_name": "Endpoint Agent"}
+      ],
+      "validation_rules": [
+        "entity_id must match ^[A-Z]{2,3}-[0-9]{3}$ and exist in RC2 registry",
+        "component_name must not be null or empty",
+        "object.entity_id must not equal subject.entity_id"
+      ],
+      "relationships_to_other_fields": [
+        "object.entity_id must differ from subject.entity_id",
+        "version_constraint structure mirrors subject version_constraint validation rules"
+      ]
+    },
+    {
+      "field_name": "conditions",
+      "purpose": "Provides the scoping conditions that must be satisfied for the rule to evaluate. Restricts rule firing to specific system states, installed versions, or migration contexts. Empty for universal rules.",
+      "allowed_values": "Array of condition objects, each with condition_id, entity_id, component_name, operator, version_normalized, version_scheme, and optional condition_context. Can be empty array.",
+      "examples": [
+        [{"condition_id": "COND-001", "entity_id": "OS-013", "component_name": "Enterprise OS", "operator": "==", "version_normalized": "2026.1", "version_scheme": "calendar"}],
+        []
+      ],
+      "validation_rules": [
+        "Can be empty array for universal rules",
+        "incompatible_combination rules must have at least 2 entries",
+        "Each condition_id must be unique within the array",
+        "Each entity_id must exist in the RC2 registry"
+      ],
+      "relationships_to_other_fields": [
+        "condition_logic determines how multiple conditions are combined (AND/OR)",
+        "incompatible_combination requires at least 2 conditions (enforced by VR-011)",
+        "Conditions reference entity_ids that must be in RC2 registry (same as subject and object)"
+      ]
+    },

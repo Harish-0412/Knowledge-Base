@@ -9,7 +9,7 @@
     "security.json",
     "management.json"
   ],
-  "entity_count": 54,
+  "entity_count": 58,
   "entities": [
     {
       "entity_id": "DRV-001",
@@ -640,7 +640,9 @@
       "knowledge_category": "Management",
       "aliases": [
         "Client Agent",
-        "Management Agent"
+        "Management Agent",
+        "Endpoint Management Agent",
+        "Endpoint Mgmt Agent"
       ],
       "source_file": "management.json",
       "status": "active",
@@ -959,7 +961,9 @@
       "subtype": "Security Agent",
       "layer": "Security Layer",
       "knowledge_category": "Security",
-      "aliases": [],
+      "aliases": [
+        "Security Agent"
+      ],
       "source_file": "security.json",
       "status": "active",
       "concept_scope": "Generic",
@@ -1098,6 +1102,108 @@
       "vendor": null,
       "verification_status": "review_required",
       "provenance": []
+    },
+    {
+      "entity_id": "FW-013",
+      "canonical_name": "System Firmware",
+      "normalized_name": "system firmware",
+      "type": "Firmware",
+      "subtype": "Pre-Boot Firmware",
+      "layer": "Firmware Layer",
+      "knowledge_category": "Firmware",
+      "aliases": [
+        "Platform Firmware",
+        "Device Firmware",
+        "Endpoint Firmware",
+        "System Platform Firmware"
+      ],
+      "source_file": "firmware.json",
+      "status": "active",
+      "concept_scope": "Generic",
+      "vendor": null,
+      "verification_status": "review_required",
+      "provenance": [
+        {
+          "source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+          "document_id": "DOC-CA114A84AE60",
+          "reason": "Added in Layer 3 entity resolution. Proven distinct from FW-001 (BIOS) by RCAND-000363 co-occurrence. Versions observed: 7.9.0, 8.0.0, 8.1.x, 8.2.0, 8.2.1."
+        }
+      ]
+    },
+    {
+      "entity_id": "OS-013",
+      "canonical_name": "Enterprise OS",
+      "normalized_name": "enterprise os",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Version",
+      "layer": "Operating System Layer",
+      "knowledge_category": "Operating System",
+      "aliases": [],
+      "source_file": "operating_system.json",
+      "status": "active",
+      "concept_scope": "Generic",
+      "vendor": null,
+      "verification_status": "review_required",
+      "provenance": [
+        {
+          "source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+          "document_id": "DOC-CA114A84AE60",
+          "reason": "Added in Layer 3 entity resolution. Synthetic enterprise OS product referenced across 10 candidates. Versions observed: 2025.2, 2026.1."
+        }
+      ]
+    },
+    {
+      "entity_id": "DRV-009",
+      "canonical_name": "Driver Pack",
+      "normalized_name": "driver pack",
+      "type": "Driver",
+      "subtype": "Driver Bundle",
+      "layer": "Driver Layer",
+      "knowledge_category": "Driver",
+      "aliases": [
+        "Driver Bundle",
+        "Driver Distribution Package",
+        "Driver Stack",
+        "Driver Release Package"
+      ],
+      "source_file": "drivers.json",
+      "status": "active",
+      "concept_scope": "Generic",
+      "vendor": null,
+      "verification_status": "review_required",
+      "provenance": [
+        {
+          "source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+          "document_id": "DOC-CA114A84AE60",
+          "reason": "Added in Layer 3 entity resolution. Multi-driver distribution bundle referenced across 10 candidates. Versions observed: 12.3.0, 12.4.0, 12.4.2, 12.5.0."
+        }
+      ]
+    },
+    {
+      "entity_id": "DRV-010",
+      "canonical_name": "Platform Driver Pack",
+      "normalized_name": "platform driver pack",
+      "type": "Driver",
+      "subtype": "Driver Bundle",
+      "layer": "Driver Layer",
+      "knowledge_category": "Driver",
+      "aliases": [
+        "Platform Driver Bundle",
+        "Platform-Specific Driver Pack",
+        "Hardware Platform Driver Pack"
+      ],
+      "source_file": "drivers.json",
+      "status": "active",
+      "concept_scope": "Generic",
+      "vendor": null,
+      "verification_status": "review_required",
+      "provenance": [
+        {
+          "source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+          "document_id": "DOC-CA114A84AE60",
+          "reason": "Added in Layer 3 entity resolution. Platform-specific driver bundle referenced in 4 candidates (EdgeStation context). Version observed: 12.5.0."
+        }
+      ]
     }
   ]
 }

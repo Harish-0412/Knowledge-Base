@@ -1,0 +1,530 @@
+{
+  "ontology_component": "compatibility_entities",
+  "ontology_layer": "Layer 3 - Compatibility Ontology",
+  "ontology_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "status": "active",
+  "description": "Defines the canonical entity types used in the Compatibility Ontology. These entities represent the structural building blocks of compatibility rules, conditions, evidence, and remediation pathways within the Dynamic Compatibility and Configuration Compliance Engine.",
+  "entity_count": 10,
+  "entities": [
+    {
+      "entity_name": "CompatibilityRule",
+      "description": "A machine-readable assertion that defines a compatibility requirement, constraint, or condition between two or more components. A CompatibilityRule is the primary governed unit of the Compatibility Ontology and is derived from one or more validated CompatibilityDocument sources.",
+      "purpose": "Encapsulates a single, atomic compatibility statement that can be evaluated, versioned, and enforced against a live system inventory. Each rule must be traceable to an authoritative source document and must be independently approvable.",
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "severity",
+        "condition_logic",
+        "conditions",
+        "requirements",
+        "lifecycle_state",
+        "confidence_score",
+        "source_document_id",
+        "source_excerpt",
+        "remediation_hint",
+        "created_at",
+        "approved_by",
+        "approved_at"
+      ],
+      "optional_fields": [
+        "exceptions",
+        "tags",
+        "derived_from_rule_id",
+        "superseded_by_rule_id",
+        "validated_by_report_id",
+        "notes"
+      ],
+      "identity_fields": [
+        "rule_id"
+      ],
+      "id_pattern": "CRULE-[A-Z0-9]+-[0-9]+",
+      "lifecycle_states": ["candidate", "validated", "approved", "deprecated", "rejected", "superseded", "archived"],
+      "domain_relationship_to_layer1": "A CompatibilityRule evaluates and constrains entities registered in the Layer 1 canonical_entity_registry (DRV-*, FW-*, OS-*, SEC-*, MGT-* namespaces).",
+      "usage_examples": [
+        {
+          "example_id": "CE-CRULE-001",
+          "description": "A min_version_constraint rule asserting that Driver Pack >= 12.4.0 is required when Enterprise OS 2026.1 is installed.",
+          "rule_id": "CRULE-DRV-OS-001",
+          "rule_type": "min_version_constraint",
+          "severity": "warning",
+          "condition_logic": "AND",
+          "conditions": [
+            {"component_type": "os", "component_name": "Enterprise OS", "operator": "==", "version": "2026.1"}
+          ],
+          "requirements": [
+            {"component_type": "driver", "component_name": "Driver Pack", "operator": ">=", "version": "12.4.0"}
+          ],
+          "lifecycle_state": "candidate"
+        },
+        {
+          "example_id": "CE-CRULE-002",
+          "description": "A known_issue_fixed rule asserting that System Firmware >= 6.4.2 resolves a privilege escalation vulnerability.",
+          "rule_id": "CRULE-FW-SEC-001",
+          "rule_type": "known_issue_fixed",
+          "severity": "critical",
+          "condition_logic": "AND",
+          "conditions": [],
+          "requirements": [
+            {"component_type": "bios", "component_name": "System BIOS", "operator": ">=", "version": "6.4.2"}
+          ],
+          "lifecycle_state": "candidate"
+        }
+      ]
+    },
+    {
+      "entity_name": "Condition",
+      "description": "A single evaluable predicate that must be satisfied for a CompatibilityRule to apply. A Condition binds a component reference to an operator and a version or value assertion. Multiple Conditions within a rule are combined using the rule's condition_logic (AND/OR).",
+      "purpose": "Provides the applicability gate for a CompatibilityRule. Conditions scope the rule to a specific component state, version range, platform, or configuration context. Without at least one Condition, a rule applies universally.",
+      "required_fields": [
+        "condition_id",
+        "component_type",
+        "component_name",
+        "operator",
+        "version_normalized",
+        "version_scheme"
+      ],
+      "optional_fields": [
+        "component_family",
+        "vendor",
+        "value_raw",
+        "value_normalized",
+        "metadata"
+      ],
+      "identity_fields": [
+        "condition_id"
+      ],
+      "id_pattern": "COND-[0-9]+",
+      "allowed_operators": ["==", "!=", ">=", "<=", ">", "<", "installed", "not_installed", "in", "not_in", "exists", "matches"],
+      "allowed_version_schemes": ["semantic", "wildcard", "named_release", "calendar", "unknown"],
+      "usage_examples": [
+        {
+          "example_id": "CE-COND-001",
+          "description": "Condition asserting that Enterprise OS version 2026.1 is installed.",
+          "condition_id": "COND-001",
+          "component_type": "os",
+          "component_name": "Enterprise OS",
+          "operator": "==",
+          "version_normalized": "2026.1",
+          "version_scheme": "semantic"
+        },
+        {
+          "example_id": "CE-COND-002",
+          "description": "Condition asserting that System Firmware is in the 8.1.x line (wildcard).",
+          "condition_id": "COND-002",
+          "component_type": "firmware",
+          "component_name": "System Firmware",
+          "operator": "matches",
+          "version_normalized": "8.1.x",
+          "version_scheme": "wildcard"
+        }
+      ]
+    },
+    {
+      "entity_name": "Exception",
+      "description": "A scoped exclusion from a CompatibilityRule that declares specific component configurations, device families, or environmental contexts in which the rule does not apply. Exceptions are first-class ontology entities and must carry their own evidence and approval chain.",
+      "purpose": "Enables precision in rule application by carving out documented exclusions, preventing false-positive compliance failures on exempt device classes or configurations. An Exception does not negate the rule globally; it narrows its scope.",
+      "required_fields": [
+        "exception_id",
+        "parent_rule_id",
+        "exception_scope",
+        "exclusion_criteria",
+        "justification",
+        "evidence_reference"
+      ],
+      "optional_fields": [
+        "expiry_date",
+        "approved_by",
+        "approved_at",
+        "notes"
+      ],
+      "identity_fields": [
+        "exception_id"
+      ],
+      "id_pattern": "EXC-[A-Z0-9]+-[0-9]+",
+      "exception_scope_values": ["device_family", "component_version", "platform", "vendor", "environment", "time_bounded"],
+      "usage_examples": [
+        {
+          "example_id": "CE-EXC-001",
+          "description": "Exception to a NIC Firmware requirement: ProBook Series, Enterprise Laptop Series, and ComputeNode Servers are exempt because they do not ship with the same onboard NIC controller.",
+          "exception_id": "EXC-NICFW-001",
+          "parent_rule_id": "CRULE-FW-DRV-001",
+          "exception_scope": "device_family",
+          "exclusion_criteria": {
+            "excluded_device_families": ["ProBook Series", "Enterprise Laptop Series", "ComputeNode Servers"]
+          },
+          "justification": "These device families do not include the affected onboard NIC controller hardware."
+        }
+      ]
+    },
+    {
+      "entity_name": "Evidence",
+      "description": "A traceable reference to an authoritative source that substantiates a CompatibilityRule, Condition, or Exception. Evidence records must identify the source document, the relevant excerpt, and the extraction mechanism used to derive the rule.",
+      "purpose": "Provides the auditability and traceability backbone of the Compatibility Ontology. Without traceable Evidence, rules cannot progress beyond candidate lifecycle state. Evidence records bridge the CompatibilityLayer to source documentation ingested in Layer 2.",
+      "required_fields": [
+        "evidence_id",
+        "source_document_id",
+        "source_type",
+        "source_excerpt",
+        "source_page",
+        "source_chunk_id",
+        "confidence_score",
+        "extraction_method"
+      ],
+      "optional_fields": [
+        "source_url",
+        "source_title",
+        "locator",
+        "notes",
+        "tags"
+      ],
+      "identity_fields": [
+        "evidence_id"
+      ],
+      "id_pattern": "EVID-[A-Z0-9]+-[0-9]+",
+      "source_type_values": [
+        "official_documentation",
+        "vendor_documentation",
+        "industry_standard",
+        "internal_policy",
+        "user_provided_document",
+        "ingested_document",
+        "knowledge_base_source",
+        "manual_review",
+        "automated_extraction"
+      ],
+      "extraction_method_values": ["nlp_extraction", "structured_parsing", "manual_review", "hybrid"],
+      "usage_examples": [
+        {
+          "example_id": "CE-EVID-001",
+          "description": "Evidence record linking a min_version_constraint rule candidate to its source excerpt in document DOC-CA114A84AE60.",
+          "evidence_id": "EVID-CA114A84AE60-001",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_type": "ingested_document",
+          "source_excerpt": "Customers upgrading to Enterprise OS 2026.1 should be aware that Driver Pack versions prior to 12.4.0 were not validated against this release.",
+          "source_page": 1,
+          "source_chunk_id": "CHUNK-000377",
+          "confidence_score": 0.9,
+          "extraction_method": "nlp_extraction"
+        }
+      ]
+    },
+    {
+      "entity_name": "Remediation",
+      "description": "A prescribed corrective action that resolves a compatibility violation identified by a CompatibilityRule. A Remediation specifies the exact upgrade path, configuration change, or administrative action required to bring a non-compliant system into compliance.",
+      "purpose": "Transforms a passive compliance failure signal into an actionable work order. Remediations close the loop between rule evaluation and operational response, providing IT administrators with version-specific, step-sequenced instructions.",
+      "required_fields": [
+        "remediation_id",
+        "parent_rule_id",
+        "remediation_type",
+        "target_component_type",
+        "target_component_name",
+        "target_version",
+        "remediation_hint"
+      ],
+      "optional_fields": [
+        "sequence_order",
+        "prerequisite_remediation_ids",
+        "urgency_level",
+        "estimated_downtime",
+        "rollback_available",
+        "notes"
+      ],
+      "identity_fields": [
+        "remediation_id"
+      ],
+      "id_pattern": "REM-[A-Z0-9]+-[0-9]+",
+      "remediation_type_values": ["version_upgrade", "version_downgrade", "configuration_change", "component_removal", "component_install", "sequenced_update", "policy_exception"],
+      "usage_examples": [
+        {
+          "example_id": "CE-REM-001",
+          "description": "Remediation instructing an upgrade of Driver Pack to >= 12.4.0 before OS migration.",
+          "remediation_id": "REM-DRV-001",
+          "parent_rule_id": "CRULE-DRV-OS-001",
+          "remediation_type": "version_upgrade",
+          "target_component_type": "driver",
+          "target_component_name": "Driver Pack",
+          "target_version": "12.4.0",
+          "remediation_hint": "Upgrade Driver Pack to version 12.4.0 or later before migrating to Enterprise OS 2026.1 to ensure peripheral stability."
+        },
+        {
+          "example_id": "CE-REM-002",
+          "description": "Sequenced remediation requiring Firmware upgrade before BIOS upgrade.",
+          "remediation_id": "REM-FW-BIOS-001",
+          "parent_rule_id": "CRULE-FW-BIOS-001",
+          "remediation_type": "sequenced_update",
+          "target_component_type": "firmware",
+          "target_component_name": "System Firmware",
+          "target_version": "8.2.1",
+          "sequence_order": 1,
+          "remediation_hint": "Upgrade Firmware to version 8.2.1 before proceeding with BIOS upgrade."
+        }
+      ]
+    },
+    {
+      "entity_name": "CompatibilityDocument",
+      "description": "A registered source document from which CompatibilityRules are extracted. A CompatibilityDocument may be a vendor advisory, release note, compliance bulletin, security bulletin, or field engineering note. Each document is assigned a stable document_id and tracked through the ingestion pipeline.",
+      "purpose": "Provides the authoritative provenance anchor for all rules derived from a given source. Registering the source document as a first-class entity enables traceability, version tracking, and evidence chain integrity across the entire Compatibility Ontology.",
+      "required_fields": [
+        "document_id",
+        "document_title",
+        "document_type",
+        "document_version",
+        "publication_date",
+        "ingestion_date",
+        "ingestion_status",
+        "source_url"
+      ],
+      "optional_fields": [
+        "vendor",
+        "product_family",
+        "page_count",
+        "chunk_count",
+        "rule_candidate_count",
+        "notes"
+      ],
+      "identity_fields": [
+        "document_id"
+      ],
+      "id_pattern": "DOC-[A-Z0-9]+",
+      "document_type_values": [
+        "vendor_advisory",
+        "release_notes",
+        "security_bulletin",
+        "compliance_bulletin",
+        "field_engineering_note",
+        "compatibility_matrix",
+        "internal_policy",
+        "standards_specification"
+      ],
+      "ingestion_status_values": ["pending", "ingested", "chunked", "extracted", "validated", "archived"],
+      "usage_examples": [
+        {
+          "example_id": "CE-DOC-001",
+          "description": "A compatibility advisory document from which 42 rule candidates were extracted.",
+          "document_id": "DOC-CA114A84AE60",
+          "document_title": "Enterprise Component Compatibility Advisory 2026",
+          "document_type": "vendor_advisory",
+          "document_version": "1.0",
+          "publication_date": "2026-06-01",
+          "ingestion_date": "2026-06-20",
+          "ingestion_status": "extracted",
+          "rule_candidate_count": 42
+        }
+      ]
+    },
+    {
+      "entity_name": "VersionConstraint",
+      "description": "A formal expression of a version-based requirement that specifies the acceptable version range for a component in relation to another component or environmental state. VersionConstraints are the atomic building blocks of Conditions and Requirements within CompatibilityRules.",
+      "purpose": "Provides a normalized, machine-evaluable representation of version requirements that is independent of raw source text. VersionConstraints enable automated compliance checking by translating human-readable version statements into structured predicates with defined operators and version semantics.",
+      "required_fields": [
+        "constraint_id",
+        "component_type",
+        "component_name",
+        "operator",
+        "version_normalized",
+        "version_scheme",
+        "requirement_kind"
+      ],
+      "optional_fields": [
+        "component_family",
+        "vendor",
+        "version_raw",
+        "value_raw",
+        "value_normalized",
+        "metadata"
+      ],
+      "identity_fields": [
+        "constraint_id"
+      ],
+      "id_pattern": "VC-[A-Z0-9]+-[0-9]+",
+      "requirement_kind_values": ["min_version", "max_version", "exact_version", "version_range", "required_present", "must_not_be_present", "readiness"],
+      "allowed_operators": ["==", "!=", ">=", "<=", ">", "<", "in", "not_in", "exists", "matches"],
+      "version_scheme_values": ["semantic", "wildcard", "named_release", "calendar", "unknown"],
+      "usage_examples": [
+        {
+          "example_id": "CE-VC-001",
+          "description": "VersionConstraint expressing Driver Pack must be >= 12.5.0.",
+          "constraint_id": "VC-DRV-001",
+          "component_type": "driver",
+          "component_name": "Driver Pack",
+          "operator": ">=",
+          "version_normalized": "12.5.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        },
+        {
+          "example_id": "CE-VC-002",
+          "description": "VersionConstraint expressing BIOS must be exactly 6.4.2.",
+          "constraint_id": "VC-FW-001",
+          "component_type": "bios",
+          "component_name": "System BIOS",
+          "operator": "==",
+          "version_normalized": "6.4.2",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      ]
+    },
+    {
+      "entity_name": "DependencyConstraint",
+      "description": "A structured expression of a runtime or installation dependency between two components, where one component's correct operation requires the presence, state, or version of another. DependencyConstraints model operational coupling that is not necessarily a published formal requirement.",
+      "purpose": "Captures the category of compatibility knowledge where components have undocumented or implicit runtime dependencies that surface as field-observed stability issues or integration failures. Distinct from VersionConstraints in that dependency direction and coupling type are explicitly modeled.",
+      "required_fields": [
+        "constraint_id",
+        "dependent_component_type",
+        "dependent_component_name",
+        "dependency_component_type",
+        "dependency_component_name",
+        "dependency_type",
+        "coupling_strength"
+      ],
+      "optional_fields": [
+        "version_constraint_ref",
+        "condition_refs",
+        "justification",
+        "evidence_refs",
+        "notes"
+      ],
+      "identity_fields": [
+        "constraint_id"
+      ],
+      "id_pattern": "DC-[A-Z0-9]+-[0-9]+",
+      "dependency_type_values": ["runtime_dependency", "install_prerequisite", "co_installation_requirement", "functional_dependency", "security_dependency"],
+      "coupling_strength_values": ["mandatory", "conditional", "optional", "advisory"],
+      "usage_examples": [
+        {
+          "example_id": "CE-DC-001",
+          "description": "DependencyConstraint expressing Security Agent 4.8.3 mandatorily depends on Endpoint Management Agent >= 3.7.0.",
+          "constraint_id": "DC-SEC-MGT-001",
+          "dependent_component_type": "agent",
+          "dependent_component_name": "Security Agent",
+          "dependency_component_type": "agent",
+          "dependency_component_name": "Endpoint Management Agent",
+          "dependency_type": "co_installation_requirement",
+          "coupling_strength": "mandatory"
+        }
+      ]
+    },
+    {
+      "entity_name": "ConflictConstraint",
+      "description": "A formal record of a documented incompatibility between two or more component configurations. A ConflictConstraint asserts that the co-existence of specified component versions or states produces a documented negative outcome such as instability, security regression, boot failure, or data loss.",
+      "purpose": "Enables the compatibility engine to proactively identify and flag prohibited component combinations before they are deployed. ConflictConstraints are derived from unsupported-combination sections, known issues, and field defect reports in source documents.",
+      "required_fields": [
+        "constraint_id",
+        "conflicting_component_a_type",
+        "conflicting_component_a_name",
+        "conflicting_component_a_version_constraint",
+        "conflicting_component_b_type",
+        "conflicting_component_b_name",
+        "conflicting_component_b_version_constraint",
+        "conflict_symptom",
+        "severity",
+        "evidence_ref"
+      ],
+      "optional_fields": [
+        "affected_device_families",
+        "conflict_id_reference",
+        "workaround_available",
+        "remediation_ref",
+        "notes"
+      ],
+      "identity_fields": [
+        "constraint_id"
+      ],
+      "id_pattern": "CC-[A-Z0-9]+-[0-9]+",
+      "severity_values": ["critical", "warning", "info"],
+      "usage_examples": [
+        {
+          "example_id": "CE-CC-001",
+          "description": "ConflictConstraint: BIOS 6.4.2 with Firmware < 8.0.0 is an unsupported combination.",
+          "constraint_id": "CC-FW-BIOS-001",
+          "conflicting_component_a_type": "bios",
+          "conflicting_component_a_name": "System BIOS",
+          "conflicting_component_a_version_constraint": "== 6.4.2",
+          "conflicting_component_b_type": "firmware",
+          "conflicting_component_b_name": "System Firmware",
+          "conflicting_component_b_version_constraint": "< 8.0.0",
+          "conflict_symptom": "Unsupported combination; firmware not validated for use with this BIOS version.",
+          "severity": "critical",
+          "evidence_ref": "EVID-CA114A84AE60-UNSUP-001"
+        },
+        {
+          "example_id": "CE-CC-002",
+          "description": "ConflictConstraint: Driver Pack 12.3.0 with Enterprise OS 2026.1 causes network adapter instability.",
+          "constraint_id": "CC-DRV-OS-001",
+          "conflicting_component_a_type": "driver",
+          "conflicting_component_a_name": "Driver Pack",
+          "conflicting_component_a_version_constraint": "== 12.3.0",
+          "conflicting_component_b_type": "os",
+          "conflicting_component_b_name": "Enterprise OS",
+          "conflicting_component_b_version_constraint": "== 2026.1",
+          "conflict_symptom": "Network adapter instability on Enterprise OS 2026.1.",
+          "severity": "warning",
+          "evidence_ref": "EVID-CA114A84AE60-KI-002"
+        }
+      ]
+    },
+    {
+      "entity_name": "UpdateSequenceConstraint",
+      "description": "A structured record of a mandated ordering of component updates or upgrades. UpdateSequenceConstraints assert that component A must reach a specified version before component B can be safely upgraded, installed, or migrated to, and that violating this sequence may result in boot failure, installation failure, or data loss.",
+      "purpose": "Models the subset of compatibility knowledge where temporal and sequential ordering of update operations is safety-critical. Enables the compliance engine to generate ordered remediation plans and block out-of-sequence upgrade paths.",
+      "required_fields": [
+        "constraint_id",
+        "sequence_step",
+        "component_type",
+        "component_name",
+        "required_version",
+        "before_component_type",
+        "before_component_name",
+        "before_component_version",
+        "severity",
+        "evidence_ref"
+      ],
+      "optional_fields": [
+        "condition_refs",
+        "failure_mode_if_violated",
+        "notes"
+      ],
+      "identity_fields": [
+        "constraint_id"
+      ],
+      "id_pattern": "USC-[A-Z0-9]+-[0-9]+",
+      "severity_values": ["critical", "warning", "info"],
+      "usage_examples": [
+        {
+          "example_id": "CE-USC-001",
+          "description": "UpdateSequenceConstraint: Upgrade Firmware to >= 8.2.1 BEFORE upgrading BIOS, when Firmware is currently < 8.0.0.",
+          "constraint_id": "USC-FW-BIOS-001",
+          "sequence_step": 1,
+          "component_type": "firmware",
+          "component_name": "System Firmware",
+          "required_version": "8.2.1",
+          "before_component_type": "bios",
+          "before_component_name": "System BIOS",
+          "before_component_version": "6.4.2",
+          "severity": "critical",
+          "evidence_ref": "EVID-CA114A84AE60-SEQ-001",
+          "failure_mode_if_violated": "Installation failure or intermittent boot delays (KI-001)."
+        },
+        {
+          "example_id": "CE-USC-002",
+          "description": "UpdateSequenceConstraint: Upgrade Driver Pack to >= 12.5.0 BEFORE migrating to Enterprise OS 2026.1.",
+          "constraint_id": "USC-DRV-OS-001",
+          "sequence_step": 1,
+          "component_type": "driver",
+          "component_name": "Driver Pack",
+          "required_version": "12.5.0",
+          "before_component_type": "os",
+          "before_component_name": "Enterprise OS",
+          "before_component_version": "2026.1",
+          "severity": "critical",
+          "evidence_ref": "EVID-CA114A84AE60-SEQ-002",
+          "failure_mode_if_violated": "Peripheral instability and network adapter failures after OS migration."
+        }
+      ]
+    }
+  ],
+  "neo4j_compatibility_note": "All entity_name values are suitable for use as Neo4j node labels. id_pattern values define property key formats for node identity. No entity in this file maps directly to Layer 1 canonical entities; they are Layer 3 structural types that reference Layer 1 entities by entity_id.",
+  "qdrant_compatibility_note": "Evidence and CompatibilityDocument entities are the primary candidates for semantic embedding. source_excerpt fields are the recommended embedding payload. rule_id, evidence_id, and document_id should be stored as Qdrant point metadata for cross-layer retrieval."
+}

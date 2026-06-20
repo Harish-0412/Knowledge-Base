@@ -1,0 +1,351 @@
+{
+  "ontology_component": "compatibility_lifecycle",
+  "ontology_layer": "Layer 3 - Compatibility Ontology",
+  "ontology_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "status": "active",
+  "description": "Defines the lifecycle state machine for CompatibilityRule entities within the Compatibility Ontology. Each state represents a distinct stage in the governance journey from raw extraction to production deployment to retirement. Lifecycle states enforce audit trail integrity, approval gate enforcement, and rule retirement traceability.",
+  "lifecycle_state_count": 7,
+  "lifecycle_model": {
+    "initial_state": "candidate",
+    "terminal_states": ["rejected", "archived"],
+    "production_eligible_states": ["approved"],
+    "gate_states": ["validated", "approved"],
+    "description": "Rules begin as 'candidate' after extraction and progress through validation, approval, operational deployment, and eventually retirement. No rule may be imported to Neo4j or Qdrant production stores unless in the 'approved' state. Terminal states are irreversible without explicit governance escalation."
+  },
+  "transition_matrix": {
+    "description": "Defines all allowed state transitions. A transition not listed is forbidden. Transitions must be recorded with a timestamp, actor, and justification.",
+    "allowed_transitions": [
+      {"from": "candidate", "to": "validated"},
+      {"from": "candidate", "to": "rejected"},
+      {"from": "validated", "to": "approved"},
+      {"from": "validated", "to": "rejected"},
+      {"from": "validated", "to": "candidate"},
+      {"from": "approved", "to": "deprecated"},
+      {"from": "approved", "to": "superseded"},
+      {"from": "deprecated", "to": "archived"},
+      {"from": "deprecated", "to": "approved"},
+      {"from": "superseded", "to": "archived"},
+      {"from": "rejected", "to": "candidate"}
+    ],
+    "forbidden_transitions": [
+      {"from": "archived", "to": "any", "reason": "Archived is a terminal state. Rules cannot be reactivated from archive."},
+      {"from": "approved", "to": "candidate", "reason": "Approved rules cannot be demoted to candidate directly; must be deprecated first."},
+      {"from": "superseded", "to": "approved", "reason": "Superseded rules cannot be re-approved; a new rule must be created as successor."}
+    ]
+  },
+  "lifecycle_states": [
+    {
+      "state": "candidate",
+      "display_name": "Candidate",
+      "description": "The rule has been extracted from a source document (or derived from a raw rule candidate) and registered in the Compatibility Ontology. It has not yet been formally validated. The rule may contain extraction artifacts, low-confidence mappings, or unresolved component references. It must not be used in production compliance evaluations.",
+      "semantic_meaning": "Provisional rule awaiting formal validation. Treated as a hypothesis until validated.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_operations": [
+        "Read",
+        "Update rule fields",
+        "Add evidence",
+        "Add conditions",
+        "Submit for validation",
+        "Reject"
+      ],
+      "forbidden_operations": [
+        "Approve without prior validation",
+        "Use in live compliance evaluation",
+        "Import to production graph stores"
+      ],
+      "allowed_next_states": ["validated", "rejected"],
+      "approval_requirements": {
+        "human_approval_required": false,
+        "automated_validation_required": false,
+        "evidence_required": false,
+        "notes": "No formal approval is required to enter or remain in candidate state. The state is set automatically upon rule extraction."
+      },
+      "transition_triggers": {
+        "to_validated": "Automated validation pipeline completes without errors for all required fields, entity references, and rule logic integrity checks.",
+        "to_rejected": "Manual review determines the rule is invalid, unextractable, or a duplicate of an existing approved rule."
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": false,
+        "require_justification": false
+      },
+      "example_use_case": "A rule candidate RCAND-000360 has been extracted from DOC-CA114A84AE60 with confidence 0.9 and review_status 'pending_review'. It enters the Compatibility Ontology as a candidate CompatibilityRule awaiting validation."
+    },
+    {
+      "state": "validated",
+      "display_name": "Validated",
+      "description": "The rule has passed automated validation checks including: all required fields present and correctly typed, all referenced entity IDs resolvable to Layer 1 canonical entities or known component types, rule logic is internally consistent, version constraints are syntactically valid, and no exact duplicates exist in the approved rule set. The rule is ready for human review and approval.",
+      "semantic_meaning": "Machine-validated rule awaiting human review and approval. Structurally sound but not yet governance-approved.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_operations": [
+        "Read",
+        "Human review",
+        "Approve",
+        "Return to candidate with annotations",
+        "Reject"
+      ],
+      "forbidden_operations": [
+        "Use in live compliance evaluation",
+        "Import to production graph stores",
+        "Bypass human review for approval"
+      ],
+      "allowed_next_states": ["approved", "rejected", "candidate"],
+      "approval_requirements": {
+        "human_approval_required": false,
+        "automated_validation_required": true,
+        "validation_checks_required": [
+          "all_required_fields_present",
+          "entity_references_resolvable",
+          "version_syntax_valid",
+          "no_exact_duplicate_in_approved_set",
+          "condition_logic_consistent",
+          "confidence_score_meets_rule_type_minimum",
+          "source_document_registered"
+        ],
+        "evidence_required": false,
+        "notes": "Automated validation must PASS before a rule can enter validated state. Failed validation checks must be resolved in candidate state."
+      },
+      "transition_triggers": {
+        "to_approved": "Human reviewer approves the rule after confirming accuracy, source traceability, and operational appropriateness.",
+        "to_rejected": "Human reviewer determines the rule is incorrect, unsupported, or conflicts with existing approved rules.",
+        "to_candidate": "Human reviewer identifies gaps (missing evidence, ambiguous conditions) that require rework before re-validation."
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": false,
+        "require_justification": false,
+        "store_validation_report_ref": true
+      },
+      "example_use_case": "CompatibilityRule CRULE-FW-BIOS-001 passes all automated checks: entity FW-001 is resolved, version 6.4.2 is valid semver, no duplicate exists. Rule transitions to validated and is queued for human review."
+    },
+    {
+      "state": "approved",
+      "display_name": "Approved",
+      "description": "The rule has been reviewed and formally approved by an authorized human reviewer. It is eligible for production import into Neo4j and Qdrant stores, and it may be used in live compliance evaluations. Approved rules are the authoritative source of truth for the compliance engine. The approved_by and approved_at fields must be populated.",
+      "semantic_meaning": "Governance-approved rule, eligible for production use and graph store import. This is the single production-eligible state.",
+      "production_eligible": true,
+      "import_to_neo4j": true,
+      "import_to_qdrant": true,
+      "allowed_operations": [
+        "Read",
+        "Use in compliance evaluation",
+        "Import to Neo4j",
+        "Import to Qdrant",
+        "Deprecate",
+        "Supersede with a new rule"
+      ],
+      "forbidden_operations": [
+        "Modify rule logic, conditions, or version constraints without creating a new superseding rule",
+        "Reject directly without creating an audit trail",
+        "Demote to candidate"
+      ],
+      "allowed_next_states": ["deprecated", "superseded"],
+      "approval_requirements": {
+        "human_approval_required": true,
+        "automated_validation_required": true,
+        "approved_by_field_required": true,
+        "approved_at_field_required": true,
+        "verification_status_required": "human_approved",
+        "evidence_required": true,
+        "minimum_evidence_count": 1,
+        "notes": "All approval fields must be non-null. Approved rules must remain immutable. Any change to rule logic must be handled by creating a new candidate rule that supersedes the current one."
+      },
+      "transition_triggers": {
+        "to_deprecated": "A policy change, vendor announcement, or new release renders the rule obsolete, but it should be retained for historical reference before archival.",
+        "to_superseded": "A new, more accurate or comprehensive rule is approved that explicitly supersedes this one via the SUPERSEDES relationship."
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "store_approval_record": true
+      },
+      "example_use_case": "After human review confirms CRULE-FW-BIOS-001 accurately reflects the source advisory, the reviewer sets approved_by='tech_lead_001' and approved_at='2026-06-20T15:00:00Z'. The rule is now production-eligible."
+    },
+    {
+      "state": "deprecated",
+      "display_name": "Deprecated",
+      "description": "The rule was previously approved and is being phased out. It remains in the system for audit trail continuity and historical reference but is no longer evaluated in active compliance scans. Deprecated rules may be reinstated to approved under exceptional circumstances with full governance justification, or permanently archived after a defined retention period.",
+      "semantic_meaning": "Phased-out rule retained for audit continuity. Not evaluated in production compliance scans but not yet permanently retired.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_operations": [
+        "Read",
+        "Archive",
+        "Reinstate to approved (with escalation justification)",
+        "Reference from superseding rules for provenance"
+      ],
+      "forbidden_operations": [
+        "Use in live compliance evaluations",
+        "Create new relationships pointing to deprecated rules as active targets",
+        "Import to production stores"
+      ],
+      "allowed_next_states": ["archived", "approved"],
+      "approval_requirements": {
+        "human_approval_required": true,
+        "requires_deprecation_reason": true,
+        "deprecation_reason_values": [
+          "superseded_by_new_rule",
+          "vendor_advisory_withdrawn",
+          "component_end_of_life",
+          "policy_change",
+          "scope_change",
+          "incorrect_extraction"
+        ],
+        "reinstatement_requires_escalation": true,
+        "notes": "Reinstatement from deprecated to approved requires written escalation justification and re-validation. This path exists to handle cases where a deprecation decision was made in error."
+      },
+      "transition_triggers": {
+        "to_archived": "Retention period expires or the rule is determined to have no remaining audit value.",
+        "to_approved": "Governance escalation reverses the deprecation decision (exceptional path requiring justification)."
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "require_deprecation_reason": true
+      },
+      "example_use_case": "CRULE-FW-BIOS-001 is deprecated after System BIOS 6.4.2 is superseded by 7.0.0, rendering the 6.4.2 constraint obsolete. The rule is retained for audit of historical compliance posture."
+    },
+    {
+      "state": "rejected",
+      "display_name": "Rejected",
+      "description": "The rule has been formally rejected after human review or automated validation failure. Rejected rules must not be used in compliance evaluations. The rejection reason must be documented. A rejected rule may be returned to candidate state if the underlying issue is resolved, but it cannot be approved directly without re-entering the validation pipeline.",
+      "semantic_meaning": "Rule determined to be invalid, unsupported, or a duplicate. Not eligible for production use. May be resurrected as a new candidate if the rejection reason is resolved.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_operations": [
+        "Read",
+        "Document rejection reason",
+        "Return to candidate state with corrective annotations"
+      ],
+      "forbidden_operations": [
+        "Approve without returning to candidate and re-validating",
+        "Use in compliance evaluations",
+        "Import to any store"
+      ],
+      "allowed_next_states": ["candidate"],
+      "approval_requirements": {
+        "human_approval_required": false,
+        "requires_rejection_reason": true,
+        "rejection_reason_values": [
+          "duplicate_of_existing_approved_rule",
+          "insufficient_evidence",
+          "low_confidence_below_threshold",
+          "contradicts_existing_approved_rule",
+          "component_reference_unresolvable",
+          "source_document_unreliable",
+          "extraction_artifact_not_a_real_rule",
+          "out_of_scope"
+        ],
+        "notes": "Rejection reasons must be documented before transition is recorded. Transition back to candidate requires the rejection reason to be addressed."
+      },
+      "transition_triggers": {
+        "to_candidate": "The underlying rejection issue has been resolved (e.g., missing evidence added, component reference resolved, duplicate de-conflicted) and the rule is ready for re-validation."
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "require_rejection_reason": true
+      },
+      "example_use_case": "RCAND-000365 has a confidence score of 0.3 and an 'unverified_value' tag. After human review confirms the extracted value is not found in the source text, the derived CompatibilityRule is rejected with reason 'extraction_artifact_not_a_real_rule'."
+    },
+    {
+      "state": "superseded",
+      "display_name": "Superseded",
+      "description": "The rule has been explicitly replaced by a newer, more authoritative rule via the SUPERSEDES relationship. A superseded rule is retired from active evaluation but is preserved in the graph to maintain the provenance chain between the old and new rule. The superseding rule must be in the approved state before this transition is permitted.",
+      "semantic_meaning": "Rule that has been formally replaced by a successor. Preserved for provenance integrity but not evaluated in production. Cannot be reinstated.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_operations": [
+        "Read",
+        "Reference from superseding rule via SUPERSEDES relationship",
+        "Archive after retention period"
+      ],
+      "forbidden_operations": [
+        "Use in compliance evaluations",
+        "Approve or reinstate",
+        "Create new rules that supersede already-superseded rules (must supersede the active rule)"
+      ],
+      "allowed_next_states": ["archived"],
+      "approval_requirements": {
+        "human_approval_required": false,
+        "requires_superseding_rule_id": true,
+        "superseding_rule_must_be_approved": true,
+        "notes": "The superseding rule must be in approved state before the superseded transition is finalized. This ensures no gap in compliance coverage exists during the transition."
+      },
+      "transition_triggers": {
+        "to_archived": "Retention period expires or the historical provenance reference is no longer needed for audit purposes."
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": false,
+        "require_justification": false,
+        "record_superseding_rule_id": true
+      },
+      "example_use_case": "CRULE-FW-OS-001 asserting Firmware >= 8.2.0 is superseded by CRULE-FW-OS-002 asserting Firmware >= 8.2.1 after a new advisory raises the minimum. CRULE-FW-OS-001 is marked superseded with a SUPERSEDES link pointing to CRULE-FW-OS-002."
+    },
+    {
+      "state": "archived",
+      "display_name": "Archived",
+      "description": "The rule has been permanently retired and is no longer part of the active Compatibility Ontology. Archived rules are read-only historical records. They may be queried for audit purposes but cannot be transitioned to any other state without an explicit governance escalation and creation of a new candidate rule. Archival is the terminal state of the lifecycle.",
+      "semantic_meaning": "Permanently retired rule. Read-only historical record. Terminal state.",
+      "production_eligible": false,
+      "import_to_neo4j": false,
+      "import_to_qdrant": false,
+      "allowed_operations": [
+        "Read (audit access only)",
+        "Reference in historical compliance reports"
+      ],
+      "forbidden_operations": [
+        "Any state transition",
+        "Modify any rule fields",
+        "Use in any compliance evaluation",
+        "Import to any store",
+        "Reinstate without escalation and new candidate creation"
+      ],
+      "allowed_next_states": [],
+      "approval_requirements": {
+        "human_approval_required": true,
+        "requires_archive_reason": true,
+        "archive_reason_values": [
+          "retention_period_expired",
+          "component_decommissioned",
+          "document_source_withdrawn",
+          "superseding_rule_has_full_coverage",
+          "governance_decision"
+        ],
+        "notes": "Archived is a terminal state. The rule record is immutable. If a previously archived rule's constraint is needed again, a new CompatibilityRule candidate must be created and re-validated from scratch."
+      },
+      "transition_triggers": {
+        "no_further_transitions_permitted": true
+      },
+      "audit_requirements": {
+        "record_transition": true,
+        "require_actor_id": true,
+        "require_justification": true,
+        "require_archive_reason": true,
+        "retain_record_permanently": true
+      },
+      "example_use_case": "CRULE-FW-BIOS-001 is archived after System BIOS 6.x reaches end-of-life and all affected systems have been decommissioned. The retention period of 24 months post-deprecation has expired and the rule has no remaining audit value."
+    }
+  ],
+  "governance_policies": {
+    "minimum_time_in_validated_before_approval": "none — timing is at reviewer discretion",
+    "maximum_time_in_candidate_before_rejection": "90 days — rules not progressing to validated within 90 days should be reviewed for rejection",
+    "retention_period_deprecated_before_archive": "24 months",
+    "retention_period_superseded_before_archive": "12 months",
+    "retention_period_rejected_before_deletion": "rules are never deleted; they remain as rejected for audit purposes",
+    "production_import_eligibility": "approved state only",
+    "concurrent_approved_rules_policy": "A single source entity-target entity-rule type triple may not have more than one simultaneously approved rule without explicit governance review. Conflicting approvals require de-conflict and supersession."
+  }
+}

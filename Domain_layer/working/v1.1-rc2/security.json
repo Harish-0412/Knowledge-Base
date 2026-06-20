@@ -130,7 +130,9 @@
     "layer": "Security Layer",
     "description": "Endpoint Detection and Response (EDR) agent that collects telemetry (process, file, network, registry, and memory activity) and provides analysis, hunting, and containment capabilities.",
     "purpose": "Enable detection, investigation, and response to advanced threats by aggregating telemetry, applying behavioral analytics, and supporting containment or remediation actions.",
-    "aliases": [],
+    "aliases": [
+      "Security Agent"
+    ],
     "keywords": [
       "Kernel Sensor",
       "Process Telemetry Collector",
