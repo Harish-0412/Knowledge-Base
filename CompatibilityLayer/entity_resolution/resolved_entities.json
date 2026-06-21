@@ -1,0 +1,211 @@
+[
+  {
+    "entity_name": "System BIOS / BIOS",
+    "all_raw_variants": ["System BIOS", "BIOS", "bios"],
+    "resolved_entity_id": "FW-001",
+    "canonical_name": "BIOS",
+    "knowledge_category": "Firmware",
+    "type": "Firmware",
+    "subtype": "Pre-Boot Firmware",
+    "layer": "Firmware Layer",
+    "resolution_method": "alias_match + canonical_name_match + normalized_name_match",
+    "resolution_detail": "Raw name 'System BIOS' found verbatim in FW-001 alias list (pass 2 — alias match). 'BIOS' matches FW-001 canonical_name exactly (pass 1 — exact canonical). 'bios' matches FW-001 normalized_name (pass 3 — normalized match). All three resolution passes succeed independently. Highest-confidence resolution in the dataset.",
+    "passes_matched": [
+      "pass_1_exact_canonical_match: 'BIOS' == FW-001.canonical_name",
+      "pass_2_alias_match: 'System BIOS' in FW-001.aliases",
+      "pass_3_normalized_name_match: 'bios' == FW-001.normalized_name"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000363",
+      "RCAND-000370",
+      "RCAND-000373",
+      "RCAND-000374",
+      "RCAND-000379",
+      "RCAND-000382",
+      "RCAND-000385",
+      "RCAND-000391",
+      "RCAND-000397"
+    ],
+    "rc2_registry_version": "1.1.0-rc2"
+  },
+  {
+    "entity_name": "NIC Firmware",
+    "all_raw_variants": ["NIC Firmware"],
+    "resolved_entity_id": "FW-005",
+    "canonical_name": "Network Firmware",
+    "knowledge_category": "Firmware",
+    "type": "Firmware",
+    "subtype": "Network Device Firmware",
+    "layer": "Firmware Layer",
+    "resolution_method": "alias_match",
+    "resolution_detail": "Raw name 'NIC Firmware' found verbatim in FW-005 (Network Firmware) alias list. Clean single-pass alias resolution.",
+    "passes_matched": [
+      "pass_2_alias_match: 'NIC Firmware' in FW-005.aliases"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000367"
+    ],
+    "rc2_registry_version": "1.1.0-rc2"
+  },
+  {
+    "entity_name": "SIEM (platform aspect of 'third-party SIEM connectors')",
+    "all_raw_variants": ["third-party SIEM connectors"],
+    "resolved_entity_id": "MGT-008",
+    "canonical_name": "SIEM",
+    "knowledge_category": "Management",
+    "type": "ManagementTool",
+    "subtype": "Security Operations Platform",
+    "layer": "Management Layer",
+    "resolution_method": "partial_match_substring_platform",
+    "resolution_detail": "The raw string 'third-party SIEM connectors' contains the token 'SIEM' which matches MGT-008 canonical_name case-insensitively (pass 4 - case-insensitive/substring token match). Resolution is partial and scoped to the SIEM platform concept only. The third-party connector integration software and ACME Partner Program certification aspects do not resolve to any RC2 entity and are separately documented in unresolved_entities.json.",
+    "passes_matched": [
+      "pass_4_case_insensitive_substring: token 'SIEM' within 'third-party SIEM connectors' matches MGT-008.canonical_name"
+    ],
+    "resolution_scope_caveat": "SIEM platform concept only. The third-party connector software (component_family='ACME Partner Program', vendor='ACME') is NOT resolved to any RC2 entity and appears separately in unresolved_entities.json.",
+    "confidence": 0.75,
+    "source_candidates": [
+      "RCAND-000368"
+    ],
+    "rc2_registry_version": "1.1.0-rc2"
+  },
+  {
+    "entity_name": "Enterprise OS",
+    "all_raw_variants": ["Enterprise OS"],
+    "resolved_entity_id": "OS-013",
+    "canonical_name": "Enterprise OS",
+    "knowledge_category": "Operating System",
+    "type": "OperatingSystem",
+    "subtype": "Operating System Version",
+    "layer": "Operating System Layer",
+    "resolution_method": "new_registration_canonical_name_match",
+    "resolution_detail": "Entity registered as OS-013 in RC2 registry v1.1.0-rc2 during Layer 3 unresolved entity remediation. Exact canonical name match post-registration. Versions observed in candidates: 2025.2, 2026.1.",
+    "passes_matched": [
+      "pass_1_exact_canonical_match: 'Enterprise OS' == OS-013.canonical_name (post-registration)"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000360", "RCAND-000362", "RCAND-000365", "RCAND-000369",
+      "RCAND-000371", "RCAND-000375", "RCAND-000381", "RCAND-000390",
+      "RCAND-000396", "RCAND-000399"
+    ],
+    "rc2_registry_version": "1.1.0-rc2",
+    "resolution_action": "new_entity_registered"
+  },
+  {
+    "entity_name": "System Firmware / firmware",
+    "all_raw_variants": ["System Firmware", "firmware"],
+    "resolved_entity_id": "FW-013",
+    "canonical_name": "System Firmware",
+    "knowledge_category": "Firmware",
+    "type": "Firmware",
+    "subtype": "Pre-Boot Firmware",
+    "layer": "Firmware Layer",
+    "resolution_method": "new_registration_canonical_name_match",
+    "resolution_detail": "Entity registered as FW-013 in RC2 registry v1.1.0-rc2 during Layer 3 unresolved entity remediation. Proven distinct from FW-001 (BIOS) by RCAND-000363 co-occurrence evidence. Versions observed: 7.9.0, 8.0.0, 8.1.x, 8.2.0, 8.2.1.",
+    "passes_matched": [
+      "pass_1_exact_canonical_match: 'System Firmware' == FW-013.canonical_name (post-registration)",
+      "pass_3_normalized_name_match: 'firmware' resolved as type-string normalization of FW-013"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000361", "RCAND-000363", "RCAND-000364", "RCAND-000370",
+      "RCAND-000373", "RCAND-000374", "RCAND-000380", "RCAND-000383",
+      "RCAND-000386", "RCAND-000392", "RCAND-000397", "RCAND-000398",
+      "RCAND-000401"
+    ],
+    "rc2_registry_version": "1.1.0-rc2",
+    "resolution_action": "new_entity_registered"
+  },
+  {
+    "entity_name": "Driver Pack",
+    "all_raw_variants": ["Driver Pack", "driver pack"],
+    "resolved_entity_id": "DRV-009",
+    "canonical_name": "Driver Pack",
+    "knowledge_category": "Driver",
+    "type": "Driver",
+    "subtype": "Driver Bundle",
+    "layer": "Driver Layer",
+    "resolution_method": "new_registration_canonical_name_match",
+    "resolution_detail": "Entity registered as DRV-009 in RC2 registry v1.1.0-rc2 during Layer 3 unresolved entity remediation. Versions observed: 12.3.0, 12.4.0, 12.4.2, 12.5.0.",
+    "passes_matched": [
+      "pass_1_exact_canonical_match: 'Driver Pack' == DRV-009.canonical_name (post-registration)",
+      "pass_3_normalized_name_match: 'driver pack' == DRV-009.normalized_name (post-registration)"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000360", "RCAND-000369", "RCAND-000371", "RCAND-000375",
+      "RCAND-000376", "RCAND-000381", "RCAND-000387", "RCAND-000393",
+      "RCAND-000399", "RCAND-000400"
+    ],
+    "rc2_registry_version": "1.1.0-rc2",
+    "resolution_action": "new_entity_registered"
+  },
+  {
+    "entity_name": "Platform Driver Pack",
+    "all_raw_variants": ["Platform Driver Pack"],
+    "resolved_entity_id": "DRV-010",
+    "canonical_name": "Platform Driver Pack",
+    "knowledge_category": "Driver",
+    "type": "Driver",
+    "subtype": "Driver Bundle",
+    "layer": "Driver Layer",
+    "resolution_method": "new_registration_canonical_name_match",
+    "resolution_detail": "Entity registered as DRV-010 in RC2 registry v1.1.0-rc2 during Layer 3 unresolved entity remediation. Hardware-platform-specific driver bundle variant, distinct from DRV-009 (Driver Pack). Version observed: 12.5.0.",
+    "passes_matched": [
+      "pass_1_exact_canonical_match: 'Platform Driver Pack' == DRV-010.canonical_name (post-registration)"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000364", "RCAND-000365", "RCAND-000367", "RCAND-000400"
+    ],
+    "rc2_registry_version": "1.1.0-rc2",
+    "resolution_action": "new_entity_registered"
+  },
+  {
+    "entity_name": "Security Agent",
+    "all_raw_variants": ["Security Agent"],
+    "resolved_entity_id": "SEC-004",
+    "canonical_name": "EDR Agent",
+    "knowledge_category": "Security",
+    "type": "SecurityComponent",
+    "subtype": "Security Agent",
+    "layer": "Security Layer",
+    "resolution_method": "alias_match",
+    "resolution_detail": "Alias 'Security Agent' added to SEC-004 (EDR Agent) in RC2 registry v1.1.0-rc2 during Layer 3 unresolved entity remediation. CVE SEC-2026-003 titled 'Endpoint Agent Token Exposure' confirms EDR-class functionality. Versions observed: 4.7.x, 4.8.3.",
+    "passes_matched": [
+      "pass_2_alias_match: 'Security Agent' in SEC-004.aliases (post-alias-addition)"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000362", "RCAND-000366", "RCAND-000372", "RCAND-000377",
+      "RCAND-000378", "RCAND-000384", "RCAND-000388", "RCAND-000394"
+    ],
+    "rc2_registry_version": "1.1.0-rc2",
+    "resolution_action": "alias_added_to_existing_entity"
+  },
+  {
+    "entity_name": "Endpoint Management Agent",
+    "all_raw_variants": ["Endpoint Management Agent", "Endpoint Mgmt Agent"],
+    "resolved_entity_id": "MGT-010",
+    "canonical_name": "Endpoint Agent",
+    "knowledge_category": "Management",
+    "type": "ManagementTool",
+    "subtype": "Management Agent",
+    "layer": "Management Layer",
+    "resolution_method": "alias_match",
+    "resolution_detail": "Aliases 'Endpoint Management Agent' and 'Endpoint Mgmt Agent' added to MGT-010 (Endpoint Agent) in RC2 registry v1.1.0-rc2 during Layer 3 unresolved entity remediation. RCAND-000395 source excerpt explicitly equates both name forms. Versions observed: 3.7.0, 3.7.1.",
+    "passes_matched": [
+      "pass_2_alias_match: 'Endpoint Management Agent' in MGT-010.aliases (post-alias-addition)",
+      "pass_2_alias_match: 'Endpoint Mgmt Agent' in MGT-010.aliases (post-alias-addition)"
+    ],
+    "confidence": 1.0,
+    "source_candidates": [
+      "RCAND-000366", "RCAND-000368", "RCAND-000372", "RCAND-000389",
+      "RCAND-000395"
+    ],
+    "rc2_registry_version": "1.1.0-rc2",
+    "resolution_action": "alias_added_to_existing_entity"
+  }
+]

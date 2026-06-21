@@ -1,0 +1,12 @@
+{
+  "vectors_uploaded": 42,
+  "documents_expected": 42,
+  "failures": [],
+  "duplicates": 0,
+  "batch_size": 100,
+  "point_id_strategy": "deterministic_uuid5_from_document_id",
+  "upload_time": 1.87,
+  "upload_time_unit": "seconds",
+  "status": "READY",
+  "completed_at": "2026-06-21T07:53:12.311050+00:00"
+}

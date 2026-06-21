@@ -1,0 +1,403 @@
+{
+  "source_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+  "total_traces": 11,
+  "generated_at": "2026-06-20T00:00:00+00:00",
+  "traces": [
+    {
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "source_candidate_ids": [
+        "RCAND-000360"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000360"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "min_version_constraint",
+        "mapped_rule_type": "min_version_constraint",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "OS-013",
+        "entity_name": "Enterprise OS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "DRV-009",
+        "entity_name": "Driver Pack",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "source_candidate_ids": [
+        "RCAND-000362"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000362"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "known_issue_fixed",
+        "mapped_rule_type": "known_issue_fixed",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "FIXED_BY",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "OS-013",
+        "entity_name": "Enterprise OS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "SEC-004",
+        "entity_name": "EDR Agent",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "2 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "source_candidate_ids": [
+        "RCAND-000363"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000363"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "min_version_constraint",
+        "mapped_rule_type": "min_version_constraint",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "FW-001",
+        "entity_name": "BIOS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "FW-013",
+        "entity_name": "System Firmware",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "source_candidate_ids": [
+        "RCAND-000364"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000364"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "readiness_requirement",
+        "mapped_rule_type": "readiness_requirement",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "FW-013",
+        "entity_name": "System Firmware",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "DRV-010",
+        "entity_name": "Platform Driver Pack",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-8C74D7E72507C9FD-001",
+      "source_candidate_ids": [
+        "RCAND-000366"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000366"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "min_version_constraint",
+        "mapped_rule_type": "min_version_constraint",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "SEC-004",
+        "entity_name": "EDR Agent",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "MGT-010",
+        "entity_name": "Endpoint Agent",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "source_candidate_ids": [
+        "RCAND-000371"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000371"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "min_version_constraint",
+        "mapped_rule_type": "min_version_constraint",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "OS-013",
+        "entity_name": "Enterprise OS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "DRV-009",
+        "entity_name": "Driver Pack",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "source_candidate_ids": [
+        "RCAND-000372"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000372"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "incompatible_combination",
+        "mapped_rule_type": "incompatible_combination",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "CONFLICTS_WITH",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "SEC-004",
+        "entity_name": "EDR Agent",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "MGT-010",
+        "entity_name": "Endpoint Agent",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "2 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "source_candidate_ids": [
+        "RCAND-000373"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000373"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "incompatible_combination",
+        "mapped_rule_type": "incompatible_combination",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "CONFLICTS_WITH",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "FW-001",
+        "entity_name": "BIOS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "FW-013",
+        "entity_name": "System Firmware",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "2 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "source_candidate_ids": [
+        "RCAND-000381"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000381"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "readiness_requirement",
+        "mapped_rule_type": "readiness_requirement",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "OS-013",
+        "entity_name": "Enterprise OS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "DRV-009",
+        "entity_name": "Driver Pack",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "source_candidate_ids": [
+        "RCAND-000397"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000397"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "readiness_requirement",
+        "mapped_rule_type": "readiness_requirement",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "FW-001",
+        "entity_name": "BIOS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "FW-013",
+        "entity_name": "System Firmware",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    },
+    {
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "source_candidate_ids": [
+        "RCAND-000399"
+      ],
+      "corrected_candidate_ids": [
+        "RCAND-000399"
+      ],
+      "rule_type_mapping": {
+        "source_rule_type": "readiness_requirement",
+        "mapped_rule_type": "readiness_requirement",
+        "mapping_confidence": 1.0
+      },
+      "predicate_decision": {
+        "predicate": "REQUIRES",
+        "predicate_source": "compatibility_rule_type_to_predicate_mapping",
+        "predicate_registered": true
+      },
+      "subject_resolution": {
+        "entity_id": "OS-013",
+        "entity_name": "Enterprise OS",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "object_resolution": {
+        "entity_id": "DRV-009",
+        "entity_name": "Driver Pack",
+        "resolution_status": "resolved_domain_entity"
+      },
+      "condition_transformation": "1 conditions normalized",
+      "requirement_transformation": "1 requirements normalized",
+      "exception_transformation": "0 exceptions recovered",
+      "remediation_transformation": "1 remediation actions derived from hint",
+      "evidence_transformation": "1 evidence record with source_excerpt, chunk_id, sha256",
+      "generated_output_path": "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+      "warnings": []
+    }
+  ]
+}

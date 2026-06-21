@@ -1,0 +1,11 @@
+{
+  "documents_processed": 42,
+  "valid_embeddings": 42,
+  "embedding_dimension": 768,
+  "duplicates": 0,
+  "null_vectors": 0,
+  "metadata_present": true,
+  "failures": [],
+  "status": "READY",
+  "checked_at": "2026-06-21T07:53:09.044977+00:00"
+}

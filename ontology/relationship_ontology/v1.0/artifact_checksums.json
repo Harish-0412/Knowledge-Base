@@ -1,0 +1,112 @@
+{
+  "algorithm": "SHA-256",
+  "relationship_ontology_version": "1.0.0",
+  "artifact_count": 21,
+  "artifacts": [
+    {
+      "path": "docs/relationship_ontology_release_guide.md",
+      "sha256": "8d82716f6e836cf500a654b3452e1a89158e469d621891a762c810956b75cfa4",
+      "size_bytes": 3576
+    },
+    {
+      "path": "docs/relationship_record_schema_guide.md",
+      "sha256": "3af52e9d55c53f8b9cfc51791f42ab987555c77ecf1ad9107a62d162577d0fc1",
+      "size_bytes": 10171
+    },
+    {
+      "path": "docs/relationship_rules_guide.md",
+      "sha256": "e73f7a73e53debcbeeed982991d454d28fedfbba96efb19a504db3a4a52aba70",
+      "size_bytes": 12004
+    },
+    {
+      "path": "docs/relationship_type_catalog.md",
+      "sha256": "f1c417965d2245b0860b25c345794ddfcbeab4456709978f2bc520286425c94d",
+      "size_bytes": 17805
+    },
+    {
+      "path": "docs/relationship_validator_guide.md",
+      "sha256": "1df39b9cfd52a9c175f74ca65d9a04c13d68975a64c22584a78cdf57aca798c5",
+      "size_bytes": 1685
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/RELEASE_NOTES.md",
+      "sha256": "84bf52564df1a0da358375e694f8ce0e3a05cb407632cc99518b9a87027a4900",
+      "size_bytes": 1790
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/examples/README.md",
+      "sha256": "d3bf3398408b3ba89d02844c00fd2d501b624bcce8175be958ff9b779c3c91c7",
+      "size_bytes": 5388
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/examples/example_manifest.json",
+      "sha256": "37a289b33591458e5937a701247c88a14645f97843c904c3e9fc0651c5dcbc8d",
+      "size_bytes": 2940
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/examples/invalid_relationships.json",
+      "sha256": "3f6ff2c455dca5f4b163cc003f9b60503b6ac9e77c9eb0610bfb74b7418078ed",
+      "size_bytes": 148270
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/examples/valid_relationships.json",
+      "sha256": "cfddd67ba723d792dbbbde24cc28a1abb99def985ce860fd70813673fe92c61b",
+      "size_bytes": 47072
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/relationship_record.schema.json",
+      "sha256": "c93e75e1b0bab9207eaeb61772625622544753103bcdcfa6aef44cccb21bf36a",
+      "size_bytes": 12204
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/relationship_rules.json",
+      "sha256": "838c23227acc9757081c2881e0bacd6b108cb0a9ac92ee909c62d38a4c47a448",
+      "size_bytes": 41600
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/relationship_types.json",
+      "sha256": "7e7df6d8e0e253d440e4828618b9743647f9a37c337ef20623aebb68f2380169",
+      "size_bytes": 25118
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/validation/relationship_examples_validation.json",
+      "sha256": "ba40fa0b7a23104de9adfb0d8dd192cbd7eb9c51aa9174e585a27bd9145124d0",
+      "size_bytes": 3225
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/validation/relationship_fixture_execution.json",
+      "sha256": "9561e537dfc0204538b60268094e46af5544692ad91dadb85b347d4832c69e36",
+      "size_bytes": 21799
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/validation/relationship_rules_structural_validation.json",
+      "sha256": "972abd7dbc76e388f1fae4bf1f004a32da6e238a2f1d253e82caba09ac967720",
+      "size_bytes": 919
+    },
+    {
+      "path": "ontology/relationship_ontology/v1.0/validation/relationship_validator_self_test.json",
+      "sha256": "5a6c4650405f6d31ab677df987a9d6835f81e81f416e66506eb7b2799d0c1fc8",
+      "size_bytes": 731
+    },
+    {
+      "path": "scripts/validate_relationship_ontology.py",
+      "sha256": "2e87318cb71642ba0fefcd7160f4fa5796c30ef5c78bbd8512de2d2f8f900d33",
+      "size_bytes": 15956
+    },
+    {
+      "path": "scripts/verify_relationship_ontology_release.py",
+      "sha256": "8695a8a864bf89b36ce1ddcad116f61a2bbc969732db29e86f0a31e205f604d0",
+      "size_bytes": 22043
+    },
+    {
+      "path": "tests/test_relationship_ontology_release.py",
+      "sha256": "5ccf77f0d7366f461ac29e762f9a9b47e6625cf2d827190c65c22fd1f009d992",
+      "size_bytes": 6410
+    },
+    {
+      "path": "tests/test_relationship_validator.py",
+      "sha256": "f47f2adfebdeade89ec971b93d067adac1321cb871df4f2726f1f4ae4ad60e08",
+      "size_bytes": 3277
+    }
+  ]
+}

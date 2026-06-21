@@ -1,0 +1,791 @@
+{
+  "mode": "fixtures",
+  "status": "PASS",
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "valid_relationships": {
+    "executed": 30,
+    "passed": 30,
+    "failed": 0,
+    "failures": []
+  },
+  "invalid_cases": {
+    "executed": 67,
+    "passed": 67,
+    "failed": 0,
+    "results": [
+      {
+        "case_id": "INVALID-CASE-001",
+        "expected_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-002",
+        "expected_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-003",
+        "expected_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-004",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_PATTERN",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-005",
+        "expected_error_codes": [
+          "SCHEMA_ADDITIONAL_PROPERTY"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_ADDITIONAL_PROPERTY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-006",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_PATTERN"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_PATTERN"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-007",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_PATTERN"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_PATTERN",
+          "UNKNOWN_RELATIONSHIP_TYPE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-008",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-009",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-010",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-011",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-012",
+        "expected_error_codes": [
+          "CONFIDENCE_OUT_OF_RANGE"
+        ],
+        "actual_error_codes": [
+          "CONFIDENCE_OUT_OF_RANGE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-013",
+        "expected_error_codes": [
+          "CONFIDENCE_OUT_OF_RANGE"
+        ],
+        "actual_error_codes": [
+          "CONFIDENCE_OUT_OF_RANGE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-014",
+        "expected_error_codes": [
+          "SCHEMA_CONDITIONS_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-015",
+        "expected_error_codes": [
+          "INVALID_CONDITION_OPERATOR"
+        ],
+        "actual_error_codes": [
+          "INVALID_CONDITION_OPERATOR"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-016",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-017",
+        "expected_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_REQUIRED_FIELD_MISSING"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-018",
+        "expected_error_codes": [
+          "SCHEMA_APPROVER_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_APPROVER_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-019",
+        "expected_error_codes": [
+          "SCHEMA_APPROVAL_DATE_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_APPROVAL_DATE_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-020",
+        "expected_error_codes": [
+          "SCHEMA_APPROVAL_VERIFICATION_INVALID"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_APPROVAL_VERIFICATION_INVALID",
+          "SCHEMA_INVALID_ENUM"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-021",
+        "expected_error_codes": [
+          "SOURCE_ENTITY_NOT_FOUND"
+        ],
+        "actual_error_codes": [
+          "SOURCE_ENTITY_NOT_FOUND"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-022",
+        "expected_error_codes": [
+          "TARGET_ENTITY_NOT_FOUND"
+        ],
+        "actual_error_codes": [
+          "TARGET_ENTITY_NOT_FOUND"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-023",
+        "expected_error_codes": [
+          "SELF_RELATIONSHIP"
+        ],
+        "actual_error_codes": [
+          "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP",
+          "SELF_RELATIONSHIP"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-024",
+        "expected_error_codes": [
+          "RELATIONSHIP_ID_DUPLICATE"
+        ],
+        "actual_error_codes": [
+          "EXACT_DUPLICATE_RELATIONSHIP",
+          "RELATIONSHIP_ID_DUPLICATE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-025",
+        "expected_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE"
+        ],
+        "actual_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-026",
+        "expected_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE"
+        ],
+        "actual_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-027",
+        "expected_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE",
+          "VIRTUAL_INVERSE_MATERIALIZATION_FORBIDDEN"
+        ],
+        "actual_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE",
+          "VIRTUAL_INVERSE_MATERIALIZATION_FORBIDDEN"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-028",
+        "expected_error_codes": [
+          "INVALID_SOURCE_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "INVALID_SOURCE_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-029",
+        "expected_error_codes": [
+          "INVALID_SOURCE_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "INVALID_SOURCE_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-030",
+        "expected_error_codes": [
+          "INVALID_TARGET_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "INVALID_TARGET_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-031",
+        "expected_error_codes": [
+          "INVALID_TARGET_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_SAME_CATEGORY",
+          "INVALID_TARGET_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-032",
+        "expected_error_codes": [
+          "FORBIDDEN_CROSS_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CROSS_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-033",
+        "expected_error_codes": [
+          "FORBIDDEN_CROSS_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CROSS_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-034",
+        "expected_error_codes": [
+          "FORBIDDEN_CROSS_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CROSS_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-035",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_EVIDENCE"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_EVIDENCE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-036",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_EVIDENCE"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_EVIDENCE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-037",
+        "expected_error_codes": [
+          "INVALID_EVIDENCE_SOURCE"
+        ],
+        "actual_error_codes": [
+          "INVALID_EVIDENCE_SOURCE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-038",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-039",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-040",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-041",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-042",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-043",
+        "expected_error_codes": [
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "actual_error_codes": [
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-044",
+        "expected_error_codes": [
+          "CONFIDENCE_BELOW_MINIMUM"
+        ],
+        "actual_error_codes": [
+          "CONFIDENCE_BELOW_MINIMUM"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-045",
+        "expected_error_codes": [
+          "CONFIDENCE_BELOW_MINIMUM"
+        ],
+        "actual_error_codes": [
+          "CONFIDENCE_BELOW_MINIMUM"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-046",
+        "expected_error_codes": [
+          "EXACT_DUPLICATE_RELATIONSHIP"
+        ],
+        "actual_error_codes": [
+          "EXACT_DUPLICATE_RELATIONSHIP"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-047",
+        "expected_error_codes": [
+          "EXACT_DUPLICATE_RELATIONSHIP"
+        ],
+        "actual_error_codes": [
+          "EXACT_DUPLICATE_RELATIONSHIP"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-048",
+        "expected_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-049",
+        "expected_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-050",
+        "expected_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-051",
+        "expected_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-052",
+        "expected_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_CYCLE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-053",
+        "expected_error_codes": [
+          "REVIEW_REQUIRED_CYCLE"
+        ],
+        "actual_error_codes": [
+          "REVIEW_REQUIRED_CYCLE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-054",
+        "expected_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "actual_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-055",
+        "expected_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "actual_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-056",
+        "expected_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "actual_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-057",
+        "expected_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "actual_error_codes": [
+          "CONTRADICTORY_RELATIONSHIPS"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-058",
+        "expected_error_codes": [
+          "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP"
+        ],
+        "actual_error_codes": [
+          "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-059",
+        "expected_error_codes": [
+          "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP"
+        ],
+        "actual_error_codes": [
+          "RECIPROCAL_NON_SYMMETRIC_RELATIONSHIP"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-060",
+        "expected_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE",
+          "VIRTUAL_INVERSE_MATERIALIZATION_FORBIDDEN"
+        ],
+        "actual_error_codes": [
+          "UNKNOWN_RELATIONSHIP_TYPE",
+          "VIRTUAL_INVERSE_MATERIALIZATION_FORBIDDEN"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-061",
+        "expected_error_codes": [
+          "PRODUCTION_APPROVAL_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "PRODUCTION_APPROVAL_REQUIRED"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-062",
+        "expected_error_codes": [
+          "PRODUCTION_APPROVAL_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "PRODUCTION_APPROVAL_REQUIRED"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-063",
+        "expected_error_codes": [
+          "PRODUCTION_APPROVAL_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "PRODUCTION_APPROVAL_REQUIRED"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-064",
+        "expected_error_codes": [
+          "INVALID_SOURCE_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "INVALID_SOURCE_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-065",
+        "expected_error_codes": [
+          "FORBIDDEN_SAME_CATEGORY",
+          "INVALID_TARGET_CATEGORY"
+        ],
+        "actual_error_codes": [
+          "FORBIDDEN_SAME_CATEGORY",
+          "INVALID_TARGET_CATEGORY"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-066",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_EVIDENCE"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_EVIDENCE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      },
+      {
+        "case_id": "INVALID-CASE-067",
+        "expected_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED"
+        ],
+        "actual_error_codes": [
+          "MISSING_REQUIRED_CONDITIONS",
+          "SCHEMA_CONDITIONS_REQUIRED",
+          "SCHEMA_INVALID_VALUE"
+        ],
+        "missing_expected_error_codes": [],
+        "status": "PASS"
+      }
+    ]
+  },
+  "production_import_allowed": false,
+  "errors": [],
+  "warnings": [],
+  "summary": "All relationship fixtures produced their required validation results."
+}

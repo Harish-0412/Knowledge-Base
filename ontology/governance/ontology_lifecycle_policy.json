@@ -1,0 +1,28 @@
+{
+  "policy_version": "1.0.0",
+  "lifecycle_states": ["DRAFT", "CANDIDATE", "APPROVED", "DEPRECATED", "RETIRED"],
+  "allowed_transitions": [
+    {"from": "DRAFT", "to": "CANDIDATE", "requirements": ["Artifact completeness", "Automated validation"]},
+    {"from": "CANDIDATE", "to": "DRAFT", "requirements": ["Documented rejection or remediation need"]},
+    {"from": "CANDIDATE", "to": "APPROVED", "requirements": ["Governance approval", "All mandatory gates PASS"]},
+    {"from": "APPROVED", "to": "DEPRECATED", "requirements": ["Deprecation rationale", "Replacement or migration guidance", "Impact analysis"]},
+    {"from": "DEPRECATED", "to": "RETIRED", "requirements": ["Published retirement notice", "Traceability retained", "No active approved dependency"]}
+  ],
+  "prohibited_transitions": [
+    {"from": "DRAFT", "to": "APPROVED", "reason": "Candidate validation and review cannot be skipped."},
+    {"from": "APPROVED", "to": "RETIRED", "reason": "Deprecation and migration guidance must precede retirement."},
+    {"from": "RETIRED", "to": "DRAFT", "reason": "A retired identity remains historical; a new proposal requires a new identity where appropriate."}
+  ],
+  "deprecation_policy": {
+    "delete_entity_record": false,
+    "retain_entity_id": true,
+    "retain_canonical_name": true,
+    "replacement_link_required_when_available": true,
+    "release_notes_required": true
+  },
+  "retirement_policy": {
+    "historical_trace_required": true,
+    "new_relationships_allowed": false,
+    "existing_records_remain_readable": true
+  }
+}

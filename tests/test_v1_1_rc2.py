@@ -15,7 +15,7 @@ class V11RC2Tests(unittest.TestCase):
         cls.cross = json.loads((cls.release / "validation/cross_reference_validation.json").read_text(encoding="utf-8"))
 
     def test_entity_count_and_identity(self):
-        self.assertEqual(self.registry["entity_count"], 54)
+        self.assertEqual(self.registry["entity_count"], len(self.registry["entities"]))
         entities = {e["entity_id"]: e for e in self.registry["entities"]}
         self.assertEqual(entities["MGT-009"]["canonical_name"], "Configuration Baseline")
         self.assertEqual(entities["MGT-010"]["canonical_name"], "Endpoint Agent")

@@ -1,0 +1,46 @@
+{
+  "candidate_release": "1.0.0-candidate",
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "CANDIDATE",
+  "production_import_allowed": false,
+  "relationship_counts": {
+    "total": 196,
+    "Driver": 17,
+    "Cross Domain": 94,
+    "Firmware": 24,
+    "Management": 32,
+    "Operating System": 22,
+    "Security": 7
+  },
+  "counts_by_predicate": {
+    "USES": 196
+  },
+  "counts_by_risk": {
+    "medium": 196
+  },
+  "counts_by_verification_status": {
+    "review_required": 196
+  },
+  "review_queue_count": 0,
+  "evidence_gap_count": 0,
+  "validation_status": "pending",
+  "artifacts": [
+    "candidate_generation_trace.json",
+    "candidate_review_queue.json",
+    "cross_domain_relationships.json",
+    "driver_relationships.json",
+    "evidence_gap_report.json",
+    "firmware_relationships.json",
+    "management_relationships.json",
+    "operating_system_relationships.json",
+    "security_relationships.json"
+  ],
+  "known_limitations": [
+    "High-risk predicates withheld pending authoritative evidence",
+    "RELATED_TO relationships not generated",
+    "Inverse relationships not generated",
+    "Transitive closure not computed"
+  ],
+  "safety_notice": "Candidate relationships only. Production Neo4j import forbidden until human approval and production validation PASS."
+}

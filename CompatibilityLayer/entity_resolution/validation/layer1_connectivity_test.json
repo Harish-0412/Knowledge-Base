@@ -1,0 +1,194 @@
+{
+  "test_id": "CONN-TEST-L1-L3-002",
+  "test_type": "layer1_connectivity_test",
+  "test_name": "Layer 1 RC2 Registry Connectivity and Cross-Layer Linkage Test — Post-Remediation",
+  "ontology_layer_source": "Layer 3 — Compatibility Ontology",
+  "ontology_layer_target": "Layer 1 — Domain Knowledge Layer",
+  "execution_timestamp": "2026-06-20T00:00:00Z",
+  "test_phase": "post_remediation",
+  "executed_by": "Layer 3 Compatibility Knowledge Engineer",
+
+  "layer1_connection": "PASS",
+  "registry_loaded": true,
+  "cross_layer_status": "CONNECTED",
+
+  "connectivity_details": {
+    "registry_path_tested": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+    "registry_reachable": true,
+    "registry_parse_status": "SUCCESS",
+    "registry_version": "1.1.0-rc2",
+    "registry_schema_version": "1.1.0",
+    "registry_status_field": "valid",
+    "registry_entity_count": 58,
+    "registry_entity_count_before_remediation": 54,
+    "new_entities_added_this_session": 4,
+    "registry_source_files": [
+      "firmware.json",
+      "operating_system.json",
+      "drivers.json",
+      "security.json",
+      "management.json"
+    ],
+    "registry_categories_confirmed": ["Driver", "Firmware", "Operating System", "Security", "Management"],
+    "registry_id_namespaces_confirmed": ["DRV", "FW", "MGT", "OS", "SEC"],
+    "id_range_confirmed": {
+      "Driver":           "DRV-001 to DRV-010 (10 entities — DRV-009 Driver Pack and DRV-010 Platform Driver Pack added)",
+      "Firmware":         "FW-001 to FW-013 (13 entities — FW-013 System Firmware added; FW-007 to FW-012 are governance-approved namespace exceptions)",
+      "Management":       "MGT-001 to MGT-010 + OS-010 (11 entities — no new entities; MGT-010 received alias additions)",
+      "Operating System": "OS-001 to OS-013 (13 entities — OS-013 Enterprise OS added; OS-010 is governance namespace exception)",
+      "Security":         "SEC-001 to SEC-012 (12 entities — no new entities; SEC-004 received alias addition)"
+    }
+  },
+
+  "sample_resolved_entities": [
+    {
+      "layer3_raw_name": "System BIOS / BIOS / bios",
+      "layer1_entity_id": "FW-001",
+      "layer1_canonical_name": "BIOS",
+      "layer1_knowledge_category": "Firmware",
+      "layer1_type": "Firmware",
+      "layer1_subtype": "Pre-Boot Firmware",
+      "layer1_status": "active",
+      "resolution_method": "alias_match + canonical_name_match + normalized_name_match",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "System Firmware / firmware",
+      "layer1_entity_id": "FW-013",
+      "layer1_canonical_name": "System Firmware",
+      "layer1_knowledge_category": "Firmware",
+      "layer1_type": "Firmware",
+      "layer1_subtype": "Pre-Boot Firmware",
+      "layer1_status": "active",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "Enterprise OS",
+      "layer1_entity_id": "OS-013",
+      "layer1_canonical_name": "Enterprise OS",
+      "layer1_knowledge_category": "Operating System",
+      "layer1_type": "OperatingSystem",
+      "layer1_subtype": "Operating System Version",
+      "layer1_status": "active",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "Driver Pack / driver pack",
+      "layer1_entity_id": "DRV-009",
+      "layer1_canonical_name": "Driver Pack",
+      "layer1_knowledge_category": "Driver",
+      "layer1_type": "Driver",
+      "layer1_subtype": "Driver Bundle",
+      "layer1_status": "active",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "Platform Driver Pack",
+      "layer1_entity_id": "DRV-010",
+      "layer1_canonical_name": "Platform Driver Pack",
+      "layer1_knowledge_category": "Driver",
+      "layer1_type": "Driver",
+      "layer1_subtype": "Driver Bundle",
+      "layer1_status": "active",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "Security Agent",
+      "layer1_entity_id": "SEC-004",
+      "layer1_canonical_name": "EDR Agent",
+      "layer1_knowledge_category": "Security",
+      "layer1_type": "SecurityComponent",
+      "layer1_subtype": "Security Agent",
+      "layer1_status": "active",
+      "resolution_method": "alias_match (alias 'Security Agent' added to SEC-004)",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "Endpoint Management Agent / Endpoint Mgmt Agent",
+      "layer1_entity_id": "MGT-010",
+      "layer1_canonical_name": "Endpoint Agent",
+      "layer1_knowledge_category": "Management",
+      "layer1_type": "ManagementTool",
+      "layer1_subtype": "Management Agent",
+      "layer1_status": "active",
+      "resolution_method": "alias_match (aliases 'Endpoint Management Agent' and 'Endpoint Mgmt Agent' added to MGT-010)",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "NIC Firmware",
+      "layer1_entity_id": "FW-005",
+      "layer1_canonical_name": "Network Firmware",
+      "layer1_knowledge_category": "Firmware",
+      "layer1_type": "Firmware",
+      "layer1_subtype": "Network Device Firmware",
+      "layer1_status": "active",
+      "resolution_method": "alias_match",
+      "confidence": 1.0,
+      "cross_layer_link_verified": true
+    },
+    {
+      "layer3_raw_name": "third-party SIEM connectors (platform aspect)",
+      "layer1_entity_id": "MGT-008",
+      "layer1_canonical_name": "SIEM",
+      "layer1_knowledge_category": "Management",
+      "layer1_type": "ManagementTool",
+      "layer1_subtype": "Security Operations Platform",
+      "layer1_status": "active",
+      "resolution_method": "partial_match_substring_platform",
+      "confidence": 0.75,
+      "cross_layer_link_verified": true,
+      "partial_resolution_note": "SIEM platform concept resolved; connector integration aspect is out-of-scope"
+    }
+  ],
+
+  "cross_layer_linkage_summary": {
+    "total_cross_layer_links_established": 9,
+    "confirmed_links": [
+      {"layer3_entity": "System BIOS / BIOS",              "layer1_entity_id": "FW-001",  "link_status": "CONFIRMED"},
+      {"layer3_entity": "NIC Firmware",                    "layer1_entity_id": "FW-005",  "link_status": "CONFIRMED"},
+      {"layer3_entity": "System Firmware / firmware",      "layer1_entity_id": "FW-013",  "link_status": "CONFIRMED"},
+      {"layer3_entity": "Enterprise OS",                   "layer1_entity_id": "OS-013",  "link_status": "CONFIRMED"},
+      {"layer3_entity": "Driver Pack",                     "layer1_entity_id": "DRV-009", "link_status": "CONFIRMED"},
+      {"layer3_entity": "Platform Driver Pack",            "layer1_entity_id": "DRV-010", "link_status": "CONFIRMED"},
+      {"layer3_entity": "Security Agent",                  "layer1_entity_id": "SEC-004", "link_status": "CONFIRMED"},
+      {"layer3_entity": "SIEM platform aspect",            "layer1_entity_id": "MGT-008", "link_status": "CONFIRMED_PARTIAL"},
+      {"layer3_entity": "Endpoint Management Agent",       "layer1_entity_id": "MGT-010", "link_status": "CONFIRMED"}
+    ],
+    "pending_links": [],
+    "out_of_scope": [
+      {"layer3_entity": "ProBook and Enterprise Laptop Series", "link_status": "OUT_OF_SCOPE_HARDWARE_PLATFORM"},
+      {"layer3_entity": "EdgeStation Workstations",             "link_status": "OUT_OF_SCOPE_HARDWARE_PLATFORM"},
+      {"layer3_entity": "third-party SIEM connectors (connector aspect)", "link_status": "OUT_OF_SCOPE_THIRD_PARTY_INTEGRATION"}
+    ]
+  },
+
+  "forbidden_paths_check": {
+    "forbidden_path_1": {"path": "ontology/canonical_entity_registry.json",           "used": false, "status": "CORRECT"},
+    "forbidden_path_2": {"path": "ontology/v1.1-candidate/canonical_entity_registry.json", "used": false, "status": "CORRECT"},
+    "authorized_path":  {"path": "ontology/releases/v1.1-rc2/canonical_entity_registry.json", "used": true, "status": "CORRECT"}
+  },
+
+  "test_result": {
+    "layer1_connection": "PASS",
+    "registry_loaded": true,
+    "registry_version_confirmed": "1.1.0-rc2",
+    "registry_entity_count_confirmed": 58,
+    "cross_layer_status": "CONNECTED",
+    "confirmed_cross_layer_links": 9,
+    "pending_cross_layer_links": 0,
+    "out_of_scope_entities": 3,
+    "overall_test_status": "PASS",
+    "phase4_gate": "OPEN"
+  }
+}

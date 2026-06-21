@@ -1,0 +1,89 @@
+{
+  "status": "PASSED_WITH_WARNINGS",
+  "phase": 8,
+  "generated_rule_count": 11,
+  "validated_rule_count": 11,
+  "passed_rule_count": 11,
+  "failed_rule_count": 0,
+  "structural_error_count": 0,
+  "warning_count": 11,
+  "lineage_complete": true,
+  "production_import_allowed": false,
+  "phase9_allowed": true,
+  "artifacts": [
+    "phase8_candidate_validation.json",
+    "phase8_schema_validation.json",
+    "phase8_lineage_validation.json",
+    "phase8_evidence_validation.json"
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-FBAB6E52A6005CC3-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-55ADFDEDAD3CD919-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-AEADF7F483FE03B6-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-38D745D2F59A2285-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-8C74D7E72507C9FD-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-14AFEDA269990CAD-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-26AF9B5E643E194B-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-279369EA931D9982-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-6C513DB9B0A7D3CB-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-F51505E338E8B1D0-001: authoritative source verification pending"
+    },
+    {
+      "validation_rule_id": "EVIDENCE-UNVERIFIED",
+      "severity": "warning",
+      "field": "evidence[0]",
+      "message": "CRULE-A93082DE51586EFE-001: authoritative source verification pending"
+    }
+  ],
+  "generated_at": "2026-06-20T00:00:00+00:00"
+}

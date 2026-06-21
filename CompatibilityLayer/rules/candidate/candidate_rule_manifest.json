@@ -1,0 +1,57 @@
+{
+  "compatibility_ontology_version": "1.0.0",
+  "domain_registry_version": "1.1.0-rc2",
+  "product_registry_version": null,
+  "status": "CANDIDATE",
+  "production_import_allowed": false,
+  "source_document_ids": [
+    "DOC-CA114A84AE60"
+  ],
+  "source_candidate_count": 42,
+  "corrected_candidate_count": 43,
+  "generated_rule_count": 11,
+  "clarification_count": 32,
+  "rejected_extraction_count": 0,
+  "split_count": 1,
+  "merge_count": 0,
+  "rules_by_type": {
+    "min_version_constraint": 4,
+    "known_issue_fixed": 1,
+    "readiness_requirement": 4,
+    "incompatible_combination": 2
+  },
+  "rules_by_predicate": {
+    "REQUIRES": 8,
+    "FIXED_BY": 1,
+    "CONFLICTS_WITH": 2
+  },
+  "rules_by_outcome": {
+    "conditional": 9,
+    "prohibited": 2
+  },
+  "rules_by_resolution_status": {
+    "resolved": 11
+  },
+  "evidence_status_counts": {
+    "review_required": 11
+  },
+  "known_limitations": [
+    "Source document page/section verification unavailable - evidence marked review_required",
+    "EdgeStation Workstations and ProBook/Enterprise Laptop device families unresolved (no Layer 2 product registry)",
+    "RCAND-000365 split into 2 clarification items (low confidence, unverified value)",
+    "RCAND-000398 validation checkpoint not modelable as version requirement - routed to clarification",
+    "RCAND-000368 optional SIEM integration routed to clarification (optionality cannot be auto-resolved)",
+    "RCAND-000369 advisory deferral routed to clarification (pending certification context)",
+    "Candidates with unknown applicability: RCAND-000374 RCAND-000376 RCAND-000377 RCAND-000382 RCAND-000385 RCAND-000400 - routed to clarification"
+  ],
+  "artifacts": [
+    "CompatibilityLayer\\rules\\candidate\\compatibility_rule_candidates.json",
+    "CompatibilityLayer\\rules\\candidate\\candidate_rule_manifest.json",
+    "CompatibilityLayer\\rules\\candidate\\candidate_generation_trace.json",
+    "CompatibilityLayer\\rules\\candidate\\candidate_evidence_gaps.json",
+    "CompatibilityLayer\\rules\\candidate\\candidate_generation_report.json",
+    "CompatibilityLayer\\rules\\needs_clarification\\compatibility_rules_needing_clarification.json"
+  ],
+  "safety_notice": "Candidate compatibility rules only. Human review and Phase 8 validation are required before approval or graph import.",
+  "generated_at": "2026-06-20T00:00:00+00:00"
+}

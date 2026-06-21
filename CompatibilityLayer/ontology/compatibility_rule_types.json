@@ -1,0 +1,456 @@
+{
+  "ontology_component": "compatibility_rule_types",
+  "ontology_layer": "Layer 3 - Compatibility Ontology",
+  "ontology_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "status": "active",
+  "description": "Defines the canonical set of compatibility rule types used to classify CompatibilityRule instances. Rule types determine the validation logic, required fields, and severity handling applied during rule evaluation. Each rule type is grounded in observed patterns from the normalized_rule_candidates.json extraction layer.",
+  "rule_type_count": 6,
+  "rule_types": [
+    {
+      "rule_type": "min_version_constraint",
+      "display_name": "Minimum Version Constraint",
+      "description": "Asserts that a target component must be at or above a specified minimum version for the rule's conditions to be satisfied. This is the most common rule type and covers both explicit vendor requirements and field-validated baseline minimums. Applies when a source document states that versions below the threshold are 'not supported', 'not validated', or 'must be upgraded'.",
+      "validation_logic": {
+        "evaluation_model": "conditional_gate",
+        "step_1": "Evaluate all conditions in the rule using the declared condition_logic (AND/OR). If conditions are not met, rule does not fire for this system state.",
+        "step_2": "For each requirement in the rule, resolve the component_type and component_name to a Layer 1 entity or a system inventory record.",
+        "step_3": "Compare the installed version of the resolved component against the requirement operator and version_normalized value using semantic version comparison.",
+        "step_4": "If installed_version [operator] required_version evaluates to FALSE, raise a compliance violation at the rule's declared severity.",
+        "step_5": "If an Exception exists for the device family or platform context, suppress the violation for matching devices.",
+        "step_6": "Attach the HAS_REMEDIATION record to the violation record for remediation planning.",
+        "compliance_pass_condition": "installed_version >= required_version (where operator is >=)",
+        "compliance_fail_condition": "installed_version < required_version",
+        "version_comparison_algorithm": "semver for semantic version_scheme; lexicographic for named_release; pattern matching for wildcard"
+      },
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "severity",
+        "condition_logic",
+        "conditions",
+        "requirements",
+        "requirements[].operator",
+        "requirements[].version_normalized",
+        "requirements[].version_scheme",
+        "requirements[].requirement_kind",
+        "lifecycle_state",
+        "confidence_score",
+        "source_document_id",
+        "remediation_hint"
+      ],
+      "allowed_requirement_kinds": ["min_version", "exact_version", "version_range"],
+      "allowed_operators": [">=", "==", ">", "in"],
+      "allowed_severities": ["critical", "warning", "info"],
+      "example": {
+        "rule_id": "CRULE-DRV-OS-001",
+        "rule_type": "min_version_constraint",
+        "severity": "warning",
+        "description": "Driver Pack must be at version 12.4.0 or later when Enterprise OS 2026.1 is installed.",
+        "condition_logic": "AND",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "component_type": "os",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic"
+          }
+        ],
+        "requirements": [
+          {
+            "component_type": "driver",
+            "component_name": "Driver Pack",
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        ],
+        "remediation_hint": "Upgrade Driver Pack to version 12.4.0 or later before migrating to Enterprise OS 2026.1.",
+        "source_document_id": "DOC-CA114A84AE60",
+        "source_chunk_id": "CHUNK-000377",
+        "confidence_score": 0.9,
+        "lifecycle_state": "candidate"
+      }
+    },
+    {
+      "rule_type": "known_issue_fixed",
+      "display_name": "Known Issue Fixed",
+      "description": "Asserts that a specific known defect, bug, vulnerability, or stability issue has been resolved in a target component at or above a stated version. Rules of this type are sourced from known issues lists, CVE records, security bulletins, and advisory fixed-in version tables. The implication is that systems running versions below the fix threshold are exposed to the documented issue.",
+      "validation_logic": {
+        "evaluation_model": "vulnerability_exposure_check",
+        "step_1": "Evaluate all conditions using the declared condition_logic to determine if the rule applies to the current system context.",
+        "step_2": "Resolve the affected component from the system inventory.",
+        "step_3": "Compare the installed version against the fixed_in version threshold using the declared operator.",
+        "step_4": "If installed_version < fixed_in_version, raise a compliance violation at the rule's severity, annotated with the issue ID and description from the source excerpt.",
+        "step_5": "If a CVE or internal issue identifier is present in the source evidence, include it in the violation record for security tracking.",
+        "step_6": "Attach HAS_REMEDIATION to the violation. For security-severity rules, flag urgency_level as high.",
+        "compliance_pass_condition": "installed_version >= fixed_in_version",
+        "compliance_fail_condition": "installed_version < fixed_in_version (system is exposed to the documented issue)",
+        "special_handling": "If severity is 'critical' and the issue is security-related (CVE present), the remediation urgency_level must be set to 'immediate'."
+      },
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "severity",
+        "conditions",
+        "requirements",
+        "requirements[].version_normalized",
+        "requirements[].requirement_kind",
+        "lifecycle_state",
+        "confidence_score",
+        "source_document_id",
+        "source_excerpt",
+        "remediation_hint"
+      ],
+      "optional_fields_recommended": [
+        "issue_id",
+        "cve_id",
+        "issue_description"
+      ],
+      "allowed_requirement_kinds": ["min_version"],
+      "allowed_operators": [">="],
+      "allowed_severities": ["critical", "warning", "info"],
+      "example": {
+        "rule_id": "CRULE-FW-SEC-CVE001",
+        "rule_type": "known_issue_fixed",
+        "severity": "critical",
+        "description": "Privilege Escalation Vulnerability (SEC-2026-001) is fixed in System BIOS >= 6.4.2.",
+        "issue_id": "SEC-2026-001",
+        "condition_logic": "AND",
+        "conditions": [],
+        "requirements": [
+          {
+            "component_type": "bios",
+            "component_name": "System BIOS",
+            "operator": ">=",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        ],
+        "remediation_hint": "Update BIOS to version 6.4.2 or later to fix Privilege Escalation Vulnerability SEC-2026-001.",
+        "source_document_id": "DOC-CA114A84AE60",
+        "source_excerpt": "CVE / ID: SEC-2026-001 | Description: Privilege Escalation Vulnerability | Fixed In: BIOS Version 6.4.2",
+        "confidence_score": 0.95,
+        "lifecycle_state": "candidate"
+      }
+    },
+    {
+      "rule_type": "readiness_requirement",
+      "display_name": "Readiness Requirement",
+      "description": "Asserts that a system or fleet must satisfy a specific version or state readiness condition before a planned migration, upgrade, or deployment operation is permitted to proceed. Readiness requirements are pre-flight checks rather than current-state compliance violations. They are typically sourced from upgrade guidance sections, migration checklists, and IT advisory recommendations.",
+      "validation_logic": {
+        "evaluation_model": "pre_flight_gate",
+        "step_1": "Evaluate whether the system is in a planned migration or upgrade context matching the rule's conditions.",
+        "step_2": "Enumerate all readiness requirements defined in the rule's requirements array.",
+        "step_3": "For each readiness requirement, check the system inventory against the operator and version_normalized threshold.",
+        "step_4": "If any requirement is unmet, block the planned operation and raise a readiness_failure event at the rule's declared severity.",
+        "step_5": "If all requirements are met, issue a readiness_pass event and permit the planned operation to continue.",
+        "step_6": "Attach the HAS_REMEDIATION record; the remediation must be completed before the pre-flight check is re-evaluated.",
+        "compliance_pass_condition": "All readiness requirements satisfied before the target operation is initiated.",
+        "compliance_fail_condition": "One or more readiness requirements unmet at the time the target operation is initiated.",
+        "special_handling": "For time-bounded readiness (e.g., defer until maintenance window), record the deferral window and re-evaluate at the scheduled time rather than raising a blocking violation."
+      },
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "severity",
+        "condition_logic",
+        "conditions",
+        "requirements",
+        "requirements[].requirement_kind",
+        "lifecycle_state",
+        "confidence_score",
+        "source_document_id",
+        "remediation_hint"
+      ],
+      "allowed_requirement_kinds": ["min_version", "readiness", "required_present"],
+      "allowed_operators": [">=", "==", "exists"],
+      "allowed_severities": ["critical", "warning", "info"],
+      "example": {
+        "rule_id": "CRULE-DRV-OS-READY-001",
+        "rule_type": "readiness_requirement",
+        "severity": "critical",
+        "description": "Driver Pack must be upgraded to >= 12.5.0 before migrating to Enterprise OS 2026.1.",
+        "condition_logic": "AND",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "component_type": "os",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "planned_migration_target"
+          }
+        ],
+        "requirements": [
+          {
+            "component_type": "driver",
+            "component_name": "Driver Pack",
+            "operator": ">=",
+            "version_normalized": "12.5.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        ],
+        "remediation_hint": "Upgrade Driver Pack to version 12.5.0 or later before migrating to Enterprise OS 2026.1.",
+        "source_document_id": "DOC-CA114A84AE60",
+        "source_chunk_id": "CHUNK-000407",
+        "confidence_score": 0.95,
+        "lifecycle_state": "candidate"
+      }
+    },
+    {
+      "rule_type": "feature_support_added",
+      "display_name": "Feature Support Added",
+      "description": "Asserts that a specific capability, integration, or feature became available at a declared component version. Unlike min_version_constraint, feature_support_added rules describe optional or tested-but-not-required capabilities. They are compliance-informational rather than compliance-blocking, and they enable capability-based inventory queries.",
+      "validation_logic": {
+        "evaluation_model": "capability_availability_check",
+        "step_1": "Evaluate conditions to determine if the rule applies to the system context.",
+        "step_2": "Resolve the component from the inventory and compare its installed version against the feature_available_from_version threshold.",
+        "step_3": "If installed_version >= feature_available_from_version, record the capability as available for the system.",
+        "step_4": "If installed_version < feature_available_from_version, record the capability as unavailable. Do not raise a compliance violation unless the rule severity is 'warning' or 'critical'.",
+        "step_5": "Expose the capability availability as an inventory attribute for downstream compliance and configuration queries.",
+        "compliance_pass_condition": "installed_version >= feature_available_from_version (capability is available).",
+        "compliance_fail_condition": "installed_version < feature_available_from_version (capability is unavailable). Violation raised only for non-info severity.",
+        "special_handling": "For tested-but-optional integrations (as described in source documents), set severity to 'info' and do not block operations. Only flag if a downstream compliance policy requires the capability."
+      },
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "severity",
+        "condition_logic",
+        "conditions",
+        "requirements",
+        "requirements[].requirement_kind",
+        "lifecycle_state",
+        "confidence_score",
+        "source_document_id",
+        "source_excerpt"
+      ],
+      "optional_fields_recommended": [
+        "feature_name",
+        "feature_description",
+        "optional_integration_flag"
+      ],
+      "allowed_requirement_kinds": ["min_version", "required_present"],
+      "allowed_operators": [">=", "=="],
+      "allowed_severities": ["info", "warning"],
+      "example": {
+        "rule_id": "CRULE-MGT-SIEM-001",
+        "rule_type": "feature_support_added",
+        "severity": "info",
+        "description": "Endpoint Management Agent 3.7.1 supports integration with third-party SIEM connectors certified under the ACME Partner Program.",
+        "feature_name": "Third-Party SIEM Connector Integration",
+        "optional_integration_flag": true,
+        "condition_logic": "AND",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "component_type": "agent",
+            "component_name": "Endpoint Management Agent",
+            "operator": "==",
+            "version_normalized": "3.7.1",
+            "version_scheme": "semantic"
+          }
+        ],
+        "requirements": [
+          {
+            "component_type": "agent",
+            "component_name": "SIEM Connector",
+            "operator": "==",
+            "version_normalized": "acme_partner_certified",
+            "version_scheme": "named_release",
+            "requirement_kind": "required_present"
+          }
+        ],
+        "source_document_id": "DOC-CA114A84AE60",
+        "source_excerpt": "Endpoint Management Agent 3.7.1 supports integration with third-party SIEM connectors certified under the ACME Partner Program. This is a tested-but-optional configuration.",
+        "confidence_score": 0.9,
+        "lifecycle_state": "candidate"
+      }
+    },
+    {
+      "rule_type": "incompatible_combination",
+      "display_name": "Incompatible Combination",
+      "description": "Asserts that a specific co-existence of two or more component versions or states produces a documented negative outcome and must not be allowed in a production environment. Incompatible combinations are sourced from unsupported-combination tables, known issues with no planned fix, and documented instability reports. Unlike conflict constraints, which describe general conflicts, incompatible_combination rules encode the precise version pair that constitutes the prohibited state.",
+      "validation_logic": {
+        "evaluation_model": "prohibited_state_detection",
+        "step_1": "Evaluate all conditions in condition_logic. If all conditions are simultaneously true on the target system, the prohibited state is detected.",
+        "step_2": "Check requirements for any disqualifying version states (e.g., a component version that falls within a prohibited range).",
+        "step_3": "If the prohibited combination is detected, raise a compliance violation at the rule's severity. Do not suppress without an explicit Exception record.",
+        "step_4": "Mark the affected system as NON_COMPLIANT and block any pending deployments that would maintain the prohibited state.",
+        "step_5": "Attach the HAS_REMEDIATION record; the remediation must break the prohibited combination by upgrading or removing one of the conflicting components.",
+        "compliance_pass_condition": "The prohibited component combination is not simultaneously present on the system.",
+        "compliance_fail_condition": "Both conflicting components are simultaneously present at versions within the documented prohibited range.",
+        "special_handling": "If severity is 'critical', elevate to an immediate remediation work order and notify the IT administrator without waiting for the next scheduled compliance scan."
+      },
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "severity",
+        "condition_logic",
+        "conditions",
+        "conditions[min 2 entries to define the pair]",
+        "requirements",
+        "lifecycle_state",
+        "confidence_score",
+        "source_document_id",
+        "source_excerpt",
+        "remediation_hint"
+      ],
+      "allowed_requirement_kinds": ["min_version", "max_version", "version_range", "required_present"],
+      "allowed_operators": ["==", "<", ">", ">=", "<=", "!=", "in"],
+      "allowed_severities": ["critical", "warning"],
+      "example": {
+        "rule_id": "CRULE-FW-BIOS-INCOMPAT-001",
+        "rule_type": "incompatible_combination",
+        "severity": "critical",
+        "description": "Firmware versions earlier than 8.0.0 are not supported with BIOS 6.4.2 — unsupported combination UNSUP-001.",
+        "condition_logic": "AND",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "component_type": "bios",
+            "component_name": "System BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic"
+          },
+          {
+            "condition_id": "COND-002",
+            "component_type": "firmware",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "requirements": [
+          {
+            "component_type": "firmware",
+            "component_name": "System Firmware",
+            "operator": ">=",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        ],
+        "remediation_hint": "Upgrade firmware to version 8.0.0 or later when using BIOS 6.4.2.",
+        "source_document_id": "DOC-CA114A84AE60",
+        "source_excerpt": "UNSUP-001 Firmware versions earlier than 8.0.0 are not supported with BIOS 6.4.2.",
+        "confidence_score": 0.95,
+        "lifecycle_state": "candidate"
+      }
+    },
+    {
+      "rule_type": "update_order_constraint",
+      "display_name": "Update Order Constraint",
+      "description": "Asserts a mandatory sequential ordering of update operations, where one component must be updated to a minimum version before another component can be safely updated or upgraded. Violating the declared sequence may produce installation failures, boot failures, or data loss. Update order constraints are sourced from upgrade sequencing guides, staged migration procedures, and step-by-step advisory instructions.",
+      "validation_logic": {
+        "evaluation_model": "sequenced_operation_guard",
+        "step_1": "Evaluate conditions to determine if the system is in the scope of the sequencing constraint.",
+        "step_2": "Identify the sequence prerequisite: the component that must be updated first (step N-1) and the component that follows (step N).",
+        "step_3": "Check the system inventory for the current version of the prerequisite component.",
+        "step_4": "If the prerequisite component does not yet satisfy its required version, block the subsequent component's upgrade and raise a sequencing_violation event.",
+        "step_5": "If the prerequisite is satisfied, permit the subsequent upgrade to proceed and record the sequence completion.",
+        "step_6": "For multi-step sequences, chain evaluation: each step must pass before the next is evaluated.",
+        "compliance_pass_condition": "All prerequisite components in the sequence are at or above their required versions before the dependent component upgrade is initiated.",
+        "compliance_fail_condition": "A dependent component upgrade is attempted while one or more prerequisite components have not yet reached their required version.",
+        "special_handling": "For direct-jump upgrade paths (e.g., BIOS versions earlier than 6.2.0 must jump directly to 6.4.2 without intermediate stops), validate the current version against the jump condition and prescribe the exact target version rather than a range."
+      },
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "severity",
+        "condition_logic",
+        "conditions",
+        "requirements",
+        "requirements[].requirement_kind",
+        "sequence_step",
+        "sequence_prerequisite_ref",
+        "lifecycle_state",
+        "confidence_score",
+        "source_document_id",
+        "remediation_hint"
+      ],
+      "optional_fields_recommended": [
+        "failure_mode_if_violated",
+        "jump_path_flag",
+        "sequence_total_steps"
+      ],
+      "allowed_requirement_kinds": ["min_version", "exact_version"],
+      "allowed_operators": [">=", "==", "<", ">"],
+      "allowed_severities": ["critical", "warning"],
+      "example": {
+        "rule_id": "CRULE-FW-BIOS-SEQ-001",
+        "rule_type": "update_order_constraint",
+        "severity": "critical",
+        "description": "Firmware versions earlier than 8.0.0 must be upgraded to 8.2.1 BEFORE the BIOS upgrade is attempted.",
+        "sequence_step": 1,
+        "sequence_total_steps": 2,
+        "failure_mode_if_violated": "Installation failure or boot delays as described in KI-001.",
+        "condition_logic": "AND",
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "component_type": "firmware",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic"
+          }
+        ],
+        "requirements": [
+          {
+            "component_type": "firmware",
+            "component_name": "System Firmware",
+            "operator": "==",
+            "version_normalized": "8.2.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version",
+            "before_component_upgrade": "BIOS to 6.4.2"
+          }
+        ],
+        "remediation_hint": "Upgrade Firmware to version 8.2.1 before proceeding with BIOS upgrade if current firmware is earlier than 8.0.0.",
+        "source_document_id": "DOC-CA114A84AE60",
+        "source_excerpt": "Upgrade Firmware versions earlier than 8.0.0 to version 8.2.1 before upgrading BIOS.",
+        "confidence_score": 0.95,
+        "lifecycle_state": "candidate"
+      }
+    }
+  ],
+  "rule_type_selection_guide": {
+    "description": "Use this guide to select the correct rule_type when classifying a raw rule candidate.",
+    "decision_table": [
+      {
+        "signal_in_source_text": "versions prior to X are not supported / not validated / must be upgraded",
+        "rule_type": "min_version_constraint"
+      },
+      {
+        "signal_in_source_text": "fixed in version X / resolved in / CVE ID / security vulnerability fixed",
+        "rule_type": "known_issue_fixed"
+      },
+      {
+        "signal_in_source_text": "must be current before migration / upgrade before attempting / ensure X before Y",
+        "rule_type": "readiness_requirement"
+      },
+      {
+        "signal_in_source_text": "supports / adds support for / tested-but-optional / certified integration",
+        "rule_type": "feature_support_added"
+      },
+      {
+        "signal_in_source_text": "not supported with / may experience instability / UNSUP- / prohibited combination",
+        "rule_type": "incompatible_combination"
+      },
+      {
+        "signal_in_source_text": "upgrade X before Y / direct upgrade path / Step 1 then Step 2 / sequence",
+        "rule_type": "update_order_constraint"
+      }
+    ]
+  }
+}

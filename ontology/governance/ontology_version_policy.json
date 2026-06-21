@@ -1,0 +1,28 @@
+{
+  "policy_version": "1.0.0",
+  "versioning_scheme": "Semantic Versioning",
+  "format": "MAJOR.MINOR.PATCH",
+  "rules": {
+    "MAJOR": {
+      "increment_when": ["Backward-incompatible ontology meaning changes", "Predicate direction or semantics change", "Removal of previously supported terms after deprecation"],
+      "example": "v2.0.0"
+    },
+    "MINOR": {
+      "increment_when": ["Backward-compatible entity additions", "Backward-compatible relationship type additions", "New optional metadata or validation capability"],
+      "example": "v1.1.0"
+    },
+    "PATCH": {
+      "increment_when": ["Documentation corrections", "Validation or packaging fixes that do not change ontology meaning", "Non-semantic metadata correction"],
+      "example": "v1.1.1"
+    }
+  },
+  "examples": ["v1.0.0", "v1.1.0", "v1.1.1", "v2.0.0"],
+  "pre_release_labels": ["draft", "alpha", "beta", "rc"],
+  "compatibility_rules": [
+    "Entity IDs remain stable across all versions.",
+    "Canonical names remain stable after release.",
+    "Minor and patch releases must remain backward compatible with the preceding release in the same major line.",
+    "Every release declares its source registry and relationship ontology versions.",
+    "Frozen versions are never overwritten."
+  ]
+}

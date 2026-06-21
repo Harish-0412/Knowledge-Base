@@ -1,0 +1,7 @@
+{
+  "documents_processed": 24,
+  "embedding_dimension": 768,
+  "duplicates": 0,
+  "failures": [],
+  "status": "READY"
+}

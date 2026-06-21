@@ -1,0 +1,258 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "READY",
+  "gates": [
+    {
+      "gate_id": "GATE-01",
+      "name": "Schema",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "draft_2020_12_schema",
+          "status": "PASS"
+        },
+        {
+          "check": "registered_relationship_types",
+          "actual": 20,
+          "expected": 20,
+          "status": "PASS"
+        },
+        {
+          "check": "type_rule_alignment",
+          "status": "PASS"
+        },
+        {
+          "check": "schema_examples",
+          "count": 3,
+          "errors": 0,
+          "status": "PASS"
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-02",
+      "name": "Relationship types",
+      "status": "PASS",
+      "checks": [
+        {
+          "count": 20,
+          "related_to_absent": true
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-03",
+      "name": "Relationship rules",
+      "status": "PASS",
+      "checks": [
+        {
+          "count": 20,
+          "aligned": true
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-04",
+      "name": "Fixtures",
+      "status": "PASS",
+      "checks": [
+        {
+          "valid": 30,
+          "invalid": 67
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-05",
+      "name": "Validator",
+      "status": "PASS",
+      "checks": [
+        {
+          "ontology": "PASS",
+          "fixtures": "PASS"
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-06",
+      "name": "Tests",
+      "status": "PASS",
+      "checks": [
+        {
+          "executed": 7,
+          "passed": 7,
+          "failed": 0,
+          "errors": 0,
+          "return_code": 0
+        },
+        {
+          "executed": 16,
+          "passed": 16,
+          "failed": 0,
+          "errors": 0,
+          "return_code": 0
+        },
+        {
+          "executed": 108,
+          "passed": 108,
+          "failed": 0,
+          "errors": 0,
+          "return_code": 0
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-07",
+      "name": "Determinism",
+      "status": "PASS",
+      "checks": [
+        {
+          "logical_validator_outputs_repeat": true
+        },
+        {
+          "checksum_ordering": "sorted"
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-08",
+      "name": "Immutability",
+      "status": "PASS",
+      "checks": [
+        {
+          "protected_inputs_unchanged": true
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-09",
+      "name": "Production safety",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "fixtures_not_importable",
+          "status": "PASS"
+        },
+        {
+          "check": "candidate_rejected",
+          "status": "PASS"
+        },
+        {
+          "check": "related_to_rejected",
+          "status": "PASS"
+        },
+        {
+          "check": "virtual_inverse_not_materialized",
+          "status": "PASS"
+        },
+        {
+          "check": "approved_error_free_only",
+          "status": "PASS"
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "gate_id": "GATE-10",
+      "name": "Documentation",
+      "status": "PASS",
+      "checks": [
+        {
+          "required_guides_exist": true
+        }
+      ],
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "artifact_count": 23,
+  "checksum_verification": {
+    "status": "PASS",
+    "checked": 21,
+    "matched": 21,
+    "mismatched": 0,
+    "missing": 0
+  },
+  "tests": {
+    "focused_validator_tests": {
+      "executed": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "return_code": 0
+    },
+    "focused_release_tests": {
+      "executed": 16,
+      "passed": 16,
+      "failed": 0,
+      "errors": 0,
+      "return_code": 0
+    },
+    "full_suite": {
+      "executed": 108,
+      "passed": 108,
+      "failed": 0,
+      "errors": 0,
+      "return_code": 0
+    }
+  },
+  "determinism": {
+    "status": "PASS",
+    "checks": [
+      "validator ontology output stable",
+      "validator fixture output stable",
+      "checksum paths sorted"
+    ]
+  },
+  "immutability": {
+    "status": "PASS",
+    "checked_files": 9,
+    "changed_files": []
+  },
+  "production_safety": {
+    "status": "PASS",
+    "checks": [
+      {
+        "check": "fixtures_not_importable",
+        "status": "PASS"
+      },
+      {
+        "check": "candidate_rejected",
+        "status": "PASS"
+      },
+      {
+        "check": "related_to_rejected",
+        "status": "PASS"
+      },
+      {
+        "check": "virtual_inverse_not_materialized",
+        "status": "PASS"
+      },
+      {
+        "check": "approved_error_free_only",
+        "status": "PASS"
+      }
+    ]
+  },
+  "blocking_issues": [],
+  "warnings": [],
+  "summary": "All ten acceptance gates pass. Relationship Ontology v1.0 defines the language and validator; it contains no approved production relationship instances."
+}

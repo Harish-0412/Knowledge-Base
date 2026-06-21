@@ -1,0 +1,15 @@
+{
+  "phase": 10,
+  "status": "BLOCKED",
+  "release_version": "1.0.0",
+  "decision_record_count": 11,
+  "approved_rule_count": 0,
+  "pending_decision_count": 11,
+  "production_import_allowed": false,
+  "blocking_issues": [
+    "11 Phase 9 decisions remain pending",
+    "No Phase 9 rule has human approval"
+  ],
+  "required_action": "Complete human review in CompatibilityLayer/reviews/phase9/compatibility_rule_review_decisions.json",
+  "generated_at": "2026-06-21T00:00:00+05:30"
+}

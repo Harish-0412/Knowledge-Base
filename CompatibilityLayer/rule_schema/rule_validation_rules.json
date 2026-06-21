@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "validation_rule_count": 40,
+  "validation_rules": [
+    {
+      "validation_rule_id": "VR-001",
+      "validation_category": "entity_reference",
+      "field_scope": "subject.entity_id",
+      "rule_description": "subject.entity_id must exist as a valid entity_id in the RC2 canonical_entity_registry v1.1.0-rc2.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: subject.entity_id '{value}' not found in RC2 registry v1.1.0-rc2.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-002",
+      "validation_category": "entity_reference",
+      "field_scope": "object.entity_id",
+      "rule_description": "object.entity_id must exist as a valid entity_id in the RC2 canonical_entity_registry v1.1.0-rc2.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: object.entity_id '{value}' not found in RC2 registry v1.1.0-rc2.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-003",
+      "validation_category": "entity_reference",
+      "field_scope": "conditions[].entity_id",
+      "rule_description": "Each condition entity_id (when present) must exist in the RC2 registry.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: conditions[{index}].entity_id '{value}' not found in RC2 registry.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-004",
+      "validation_category": "entity_reference",
+      "field_scope": "dependencies[].entity_id",
+      "rule_description": "Each dependency entity_id must exist in the RC2 registry.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: dependencies[{index}].entity_id '{value}' not found in RC2 registry.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-005",
+      "validation_category": "entity_reference",
+      "field_scope": "remediations[].target_entity_id",
+      "rule_description": "Each remediation target_entity_id must exist in the RC2 registry.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: remediations[{index}].target_entity_id '{value}' not found in RC2 registry.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-006",
+      "validation_category": "entity_reference",
+      "field_scope": "conflicts[].entity_id",
+      "rule_description": "Each conflict entity_id must exist in the RC2 registry.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: conflicts[{index}].entity_id '{value}' not found in RC2 registry.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-007",
+      "validation_category": "entity_reference",
+      "field_scope": "subject.entity_id vs object.entity_id",
+      "rule_description": "subject.entity_id and object.entity_id must not be identical (self-referential rules are forbidden).",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: subject and object entity_id are identical ('{value}'). Self-referential rules are forbidden.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-008",
+      "validation_category": "version_field",
+      "field_scope": "subject.version_constraint.version_normalized",
+      "rule_description": "For semantic version_scheme, version_normalized must match pattern ^[0-9]+\\.[0-9]+(\\.[0-9]+)?(\\.[0-9]+)?$ or wildcard x/X notation.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: subject.version_constraint.version_normalized '{value}' is not valid for version_scheme 'semantic'.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-009",
+      "validation_category": "version_field",
+      "field_scope": "object.version_constraint.version_normalized",
+      "rule_description": "For semantic version_scheme, object version_normalized must be valid semver.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: object.version_constraint.version_normalized '{value}' is not valid for version_scheme 'semantic'.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-010",
+      "validation_category": "version_field",
+      "field_scope": "conditions[].version_normalized",
+      "rule_description": "Condition version_normalized must be valid for its declared version_scheme.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: conditions[{index}].version_normalized '{value}' is not valid for version_scheme '{scheme}'.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-011",
+      "validation_category": "version_field",
+      "field_scope": "remediations[].target_version",
+      "rule_description": "Remediation target_version must be a non-empty string representing a valid upgrade target.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: remediations[{index}].target_version is empty or missing.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-012",
+      "validation_category": "confidence_value",
+      "field_scope": "confidence",
+      "rule_description": "confidence must be a number between 0.0 and 1.0 inclusive.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: confidence value '{value}' is outside the valid range 0.0-1.0.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-013",
+      "validation_category": "confidence_value",
+      "field_scope": "confidence",
+      "rule_description": "confidence must meet the minimum threshold for the declared rule_type.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: confidence '{value}' is below the minimum threshold '{threshold}' required for rule_type '{rule_type}'.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-014",
+      "validation_category": "evidence_reference",
+      "field_scope": "evidence[].evidence_id",
+      "rule_description": "evidence_id must match pattern ^EVID-[A-Z0-9]+-[0-9]+$.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: evidence[{index}].evidence_id '{value}' does not match required pattern.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-015",
+      "validation_category": "evidence_reference",
+      "field_scope": "evidence[].source_document_id",
+      "rule_description": "evidence source_document_id must match pattern ^DOC-[A-Z0-9]+$.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: evidence[{index}].source_document_id '{value}' does not match pattern ^DOC-[A-Z0-9]+$.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-016",
+      "validation_category": "evidence_reference",
+      "field_scope": "evidence[].source_type",
+      "rule_description": "evidence source_type must be from the allowed source_type vocabulary.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: evidence[{index}].source_type '{value}' is not a valid source_type.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-017",
+      "validation_category": "evidence_reference",
+      "field_scope": "evidence[].source_excerpt",
+      "rule_description": "evidence source_excerpt must be non-empty.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: evidence[{index}].source_excerpt is empty or missing.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-018",
+      "validation_category": "evidence_reference",
+      "field_scope": "evidence[].confidence_score",
+      "rule_description": "evidence confidence_score must be 0.0-1.0.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: evidence[{index}].confidence_score '{value}' is outside range 0.0-1.0.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-019",
+      "validation_category": "evidence_reference",
+      "field_scope": "evidence",
+      "rule_description": "At least 1 evidence record is required when status is approved.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: status is 'approved' but evidence array is empty. Minimum 1 evidence record required.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-020",
+      "validation_category": "predicate_vocabulary",
+      "field_scope": "predicate",
+      "rule_description": "predicate must be from the 20-item registered relationship vocabulary.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: predicate '{value}' is not a registered relationship type in the compatibility vocabulary.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-021",
+      "validation_category": "lifecycle_transition",
+      "field_scope": "status",
+      "rule_description": "status transitions must follow the allowed transition matrix.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: transition from '{from_state}' to '{to_state}' is not permitted by the lifecycle model.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-022",
+      "validation_category": "lifecycle_transition",
+      "field_scope": "status",
+      "rule_description": "archived is a terminal state. No transitions are permitted from archived.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: status is 'archived'. No transitions are permitted from the archived terminal state.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-023",
+      "validation_category": "lifecycle_transition",
+      "field_scope": "approved_by,approved_at",
+      "rule_description": "approved_by and approved_at must both be non-null when status is approved.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: status is 'approved' but {field} is null or missing. Both approved_by and approved_at are required.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-024",
+      "validation_category": "required_field_completeness",
+      "field_scope": "rule_id",
+      "rule_description": "rule_id is required and must be non-empty.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: rule_id is missing or empty.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-025",
+      "validation_category": "required_field_completeness",
+      "field_scope": "rule_type",
+      "rule_description": "rule_type is required and must be one of the 6 defined values.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: rule_type is missing, empty, or not a valid rule type.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-026",
+      "validation_category": "required_field_completeness",
+      "field_scope": "subject",
+      "rule_description": "subject object is required and all its sub-fields must be present.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: subject is missing or incomplete. Required sub-fields: entity_id, component_name, knowledge_category, version_constraint.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-027",
+      "validation_category": "required_field_completeness",
+      "field_scope": "object",
+      "rule_description": "object is required and all its sub-fields must be present.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: object is missing or incomplete. Required sub-fields: entity_id, component_name, knowledge_category, version_constraint.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-028",
+      "validation_category": "required_field_completeness",
+      "field_scope": "evidence",
+      "rule_description": "evidence array is required (may be empty for candidate rules but cannot be absent).",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: evidence field is absent. An empty array [] is acceptable for candidate rules but the field must be present.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-029",
+      "validation_category": "required_field_completeness",
+      "field_scope": "remediations",
+      "rule_description": "remediations array is required (may be empty for feature_support_added rules but cannot be absent).",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: remediations field is absent.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-030",
+      "validation_category": "duplicate_detection",
+      "field_scope": "rule_id",
+      "rule_description": "rule_id must be globally unique. No two rules may share the same rule_id regardless of lifecycle state.",
+      "error_severity": "error",
+      "error_message_template": "Duplicate rule_id detected: '{value}'. rule_id must be unique across all rules.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-031",
+      "validation_category": "duplicate_detection",
+      "field_scope": "subject+predicate+object+conditions",
+      "rule_description": "No two approved rules may be exact duplicates. Identity defined by rule_type, subject.entity_id, predicate, object.entity_id, condition_logic, and conditions fingerprint.",
+      "error_severity": "warning",
+      "error_message_template": "Rule {rule_id}: Potential duplicate of approved rule '{duplicate_id}'. Review before approval.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-032",
+      "validation_category": "cross_field_consistency",
+      "field_scope": "severity vs rule_type",
+      "rule_description": "Severity must be within the allowed values for the declared rule_type.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: severity '{value}' is not allowed for rule_type '{rule_type}'. Allowed severities: {allowed}.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-033",
+      "validation_category": "cross_field_consistency",
+      "field_scope": "condition_logic",
+      "rule_description": "condition_logic must be AND or OR.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: condition_logic '{value}' is invalid. Must be AND or OR.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-034",
+      "validation_category": "cross_field_consistency",
+      "field_scope": "source_document vs evidence[].source_document_id",
+      "rule_description": "source_document should match at least one evidence[].source_document_id.",
+      "error_severity": "warning",
+      "error_message_template": "Rule {rule_id}: source_document '{value}' does not match any evidence[].source_document_id. Verify source traceability.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-035",
+      "validation_category": "sequence_constraint",
+      "field_scope": "sequence_step",
+      "rule_description": "sequence_step is required for update_order_constraint rules.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: rule_type is 'update_order_constraint' but sequence_step is missing.",
+      "applies_to_rule_types": [
+        "update_order_constraint"
+      ]
+    },
+    {
+      "validation_rule_id": "VR-036",
+      "validation_category": "sequence_constraint",
+      "field_scope": "sequence_prerequisite_ref",
+      "rule_description": "sequence_prerequisite_ref is required when rule_type is update_order_constraint and sequence_step >= 2.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: sequence_step >= 2 but sequence_prerequisite_ref is missing.",
+      "applies_to_rule_types": [
+        "update_order_constraint"
+      ]
+    },
+    {
+      "validation_rule_id": "VR-037",
+      "validation_category": "sequence_constraint",
+      "field_scope": "sequence_prerequisite_ref",
+      "rule_description": "sequence_prerequisite_ref must not create a circular reference chain.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: sequence_prerequisite_ref creates a circular chain via '{chain}'.",
+      "applies_to_rule_types": [
+        "update_order_constraint"
+      ]
+    },
+    {
+      "validation_rule_id": "VR-038",
+      "validation_category": "incompatible_combination_constraint",
+      "field_scope": "conditions",
+      "rule_description": "incompatible_combination rules must have at least 2 conditions to define the prohibited pair.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: rule_type is 'incompatible_combination' but conditions array has fewer than 2 entries.",
+      "applies_to_rule_types": [
+        "incompatible_combination"
+      ]
+    },
+    {
+      "validation_rule_id": "VR-039",
+      "validation_category": "source_document_pattern",
+      "field_scope": "source_document",
+      "rule_description": "source_document must match pattern ^DOC-[A-Z0-9]+$.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: source_document '{value}' does not match required pattern ^DOC-[A-Z0-9]+$.",
+      "applies_to_rule_types": "all"
+    },
+    {
+      "validation_rule_id": "VR-040",
+      "validation_category": "rule_id_pattern",
+      "field_scope": "rule_id",
+      "rule_description": "rule_id must match the canonical pattern ^CRULE-[A-Z0-9]+-[0-9]{3,}$.",
+      "error_severity": "error",
+      "error_message_template": "Rule {rule_id}: rule_id '{value}' does not match required pattern ^CRULE-[A-Z0-9]+-[0-9]{{3,}}$.",
+      "applies_to_rule_types": "all"
+    }
+  ]
+}

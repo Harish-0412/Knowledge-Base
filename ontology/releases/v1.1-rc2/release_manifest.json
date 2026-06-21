@@ -1,0 +1,229 @@
+{
+  "release_version": "1.1.0-rc2",
+  "schema_version": "1.1.0",
+  "release_status": "READY_WITH_WARNINGS",
+  "registry_dependency_status": "READY_WITH_NONBLOCKING_WARNINGS",
+  "manifest_date": "2026-06-20",
+  "entity_count": 54,
+  "source_files": [
+    {
+      "path": "Domain_layer/working/v1.1-rc2/firmware.json",
+      "entity_count": 10,
+      "sha256": "f1c6708d1855fb83b74aec2460742d37f014e48f88a7213345c32c284259785f"
+    },
+    {
+      "path": "Domain_layer/working/v1.1-rc2/operating_system.json",
+      "entity_count": 12,
+      "sha256": "67f4c3fb6dd8e77873551f64030184591e7cbc1919aaa11d5542520521abdc8c"
+    },
+    {
+      "path": "Domain_layer/working/v1.1-rc2/drivers.json",
+      "entity_count": 8,
+      "sha256": "609b8c4bce05bd8168283c9c665ba612b0f62bef9a69af53f2cfb917ed0373ac"
+    },
+    {
+      "path": "Domain_layer/working/v1.1-rc2/security.json",
+      "entity_count": 12,
+      "sha256": "50ae35140b9c82b7b394dcdebbc157701de2af4d63acf4df93a4c1c1607b5319"
+    },
+    {
+      "path": "Domain_layer/working/v1.1-rc2/management.json",
+      "entity_count": 12,
+      "sha256": "61b645e50fd367966596dc3f67f12c62c1afa18ff1069c0c2205737dbaf6c80f"
+    }
+  ],
+  "registry_files": [
+    {
+      "path": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+      "sha256": "2ebdb0d1eaf90fe57d8423ea8d19e6c90aab59469af273076d8a0d42cb9ef0a5",
+      "entity_count": 54
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+      "sha256": "c6391c6b15357b1b7364aca238ab2353691f487d6a5888fbeb94b63dbb2fef2d",
+      "total_references": 376,
+      "resolved_references": 197
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/v1.0_to_v1.1_changes.json",
+      "sha256": "c9119f594b2b1c8ef0af79759cacb0f6959bbc75f379f38509a49274248a80c2"
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/v1.1_reference_classification.json",
+      "sha256": "67bcb3a7e5829f185e584f3896d5d13b516bcc99d737e8d3d397d61fc1c02c25"
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/v1.1_scope.json",
+      "sha256": "ad7406ab2c63da5cb6efaefb9172504aa5e49f0b7d8bbe180ac734185652c1ef"
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/entity_semantic_audit.json",
+      "sha256": "f9e71c668c47ae0e840fe92605af0f18b93a230d8996bb1342e47d353f091471"
+    }
+  ],
+  "validation_reports": [
+    {
+      "path": "ontology/releases/v1.1-rc2/validation/canonical_registry_validation.json",
+      "status": "PASS",
+      "sha256": "3d86e9b5248fd0db3bcc7ff71a5e95c571b3a56c218453b32fcd719eaa5a1307"
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/validation/cross_reference_validation.json",
+      "status": "PASS_WITH_WARNINGS",
+      "sha256": "bc201912f139b85d88aba9bb1a78a5d87a88aeb1c5245d13682a3ee8626595b9"
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/validation/neo4j_import_validation.json",
+      "status": "PASS",
+      "sha256": "35399913d24014492c1117eed8aa819ef008bf86e7d5a418aa84d4f0d01d0aa9"
+    },
+    {
+      "path": "ontology/releases/v1.1-rc2/validation/release_validation.json",
+      "status": "READY_WITH_WARNINGS",
+      "sha256": "77cb333180775c55333006c7eff9bfe83ac04d2a110624d219276c096ee63c72"
+    }
+  ],
+  "test_results": {
+    "test_suite": "tests.test_v1_1_rc2 plus unittest discovery",
+    "executed": 0,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "status": "pending_final_test_run"
+  },
+  "stable_id_confirmation": {
+    "duplicate_entity_ids": 0,
+    "duplicate_canonical_names": 0,
+    "changed_existing_ids": 0,
+    "existing_id_stability_percentage": 100.0,
+    "source_entity_count": 54,
+    "registry_entity_count": 54,
+    "frozen_v1_0_inputs_unchanged": true,
+    "identity_governance_stable": true,
+    "namespace_exceptions": [
+      {
+        "entity_id": "FW-007",
+        "canonical_name": "Firmware Update Utility",
+        "legacy_namespace": "Firmware",
+        "owning_category": "Management"
+      },
+      {
+        "entity_id": "FW-011",
+        "canonical_name": "OS Bootloader",
+        "legacy_namespace": "Firmware",
+        "owning_category": "Operating System"
+      },
+      {
+        "entity_id": "OS-010",
+        "canonical_name": "Ubuntu Pro",
+        "legacy_namespace": "Operating System",
+        "owning_category": "Management"
+      }
+    ]
+  },
+  "known_warnings": [
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "0 entity reclassification proposals require human approval.",
+      "count": 0,
+      "reason": "The eight governance decisions are approved and reflected in RC2 source metadata."
+    },
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "3 stable legacy ID namespace exceptions are documented.",
+      "count": 3,
+      "namespace_exceptions": [
+        {
+          "entity_id": "FW-007",
+          "canonical_name": "Firmware Update Utility",
+          "legacy_namespace": "Firmware",
+          "owning_category": "Management"
+        },
+        {
+          "entity_id": "FW-011",
+          "canonical_name": "OS Bootloader",
+          "legacy_namespace": "Firmware",
+          "owning_category": "Operating System"
+        },
+        {
+          "entity_id": "OS-010",
+          "canonical_name": "Ubuntu Pro",
+          "legacy_namespace": "Operating System",
+          "owning_category": "Management"
+        }
+      ],
+      "reason": "Entity IDs are preserved by governance decision even when owning category changes."
+    },
+    {
+      "classification": "nonblocking_external_reference",
+      "warning": "78 reference occurrences are classified as external.",
+      "count": 78
+    },
+    {
+      "classification": "nonblocking_deferred_reference",
+      "warning": "80 reference occurrences are deferred to future domains.",
+      "count": 80
+    },
+    {
+      "classification": "nonblocking_rejected_reference",
+      "warning": "21 reference occurrences are rejected.",
+      "count": 21
+    },
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "54 entities have verification_status=review_required and empty provenance.",
+      "count": 54
+    },
+    {
+      "classification": "nonblocking_documentation_warning",
+      "warning": "Shared Platform concepts remain modeled in current v1.1 owning domains until a Shared Platform domain is introduced.",
+      "affected_entity_ids": [
+        "FW-006",
+        "FW-008",
+        "FW-009"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "neo4j_import_package": {
+    "path": "neo4j/import/v1.1-rc2/",
+    "generation_status": "READY_WITH_WARNINGS",
+    "node_count": 54,
+    "relationship_count": 197,
+    "files": [
+      {
+        "path": "neo4j/import/v1.1-rc2/entities.csv",
+        "sha256": "67abc76bc9e8cd028a4072d4322d6e78dc66c6b6a6c43f940c9f0d23a1b1ee77"
+      },
+      {
+        "path": "neo4j/import/v1.1-rc2/resolved_references.csv",
+        "sha256": "8eb0ae72f7d29c14e6143b45430b56fffdac314c5982a4c28b47f57a5c09ac48"
+      },
+      {
+        "path": "neo4j/import/v1.1-rc2/external_references.csv",
+        "sha256": "23d5245822a12b35a34c59534cc19dd2032ad64d5e63de7dff7179a42fd9235e"
+      },
+      {
+        "path": "neo4j/import/v1.1-rc2/import_manifest.json",
+        "sha256": "b82c976f881acf39e5caccd7d91123448d4b00e6258596f109589ff8a1175aa2"
+      },
+      {
+        "path": "neo4j/import/v1.1-rc2/neo4j_constraints.cypher",
+        "sha256": "dabe7aadec9e54d5c440c050947c4626ba6694bb1351842a4f319f68a544446f"
+      },
+      {
+        "path": "neo4j/import/v1.1-rc2/README.md",
+        "sha256": "36034daa1011f798d0ec3814a32521c2e16a951c6eb26cc9ef69ec3573756860"
+      }
+    ]
+  },
+  "reference_policy": {
+    "unresolved_external_and_deferred_references_are_not_graph_nodes": true,
+    "statement": "Unresolved external and deferred references are recorded as classifications only and are not graph nodes in RC2."
+  },
+  "relationship_policy": {
+    "related_to_is_provisional": true,
+    "statement": "RELATED_TO is provisional in RC2 and should be replaced by governed Relationship Ontology predicates before final graph semantics are treated as stable."
+  },
+  "summary": "RC2 has 54 entities, 100% core resolution, passing registry and Neo4j validation, and no pending identity/category decisions. Remaining warnings are nonblocking."
+}

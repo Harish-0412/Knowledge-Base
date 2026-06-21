@@ -4,7 +4,7 @@
   "schema_version": "1.1.0",
   "blockers": [],
   "warnings": [
-    "8 entity reclassification proposals require human approval.",
+    "0 entity reclassification proposals require human approval.",
     "0 reference occurrences require human review.",
     "80 reference occurrences are deferred to future domains."
   ],

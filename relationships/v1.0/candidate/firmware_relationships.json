@@ -1,0 +1,849 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "candidate",
+  "domain": "Firmware",
+  "relationship_count": 24,
+  "relationships": [
+    {
+      "relationship_id": "REL-CAND-71D7C135EBC9",
+      "source_id": "FW-001",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "BIOS uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D6E71FF291AB",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-001",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-001; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3B083B5CAC80",
+      "source_id": "FW-001",
+      "relationship_type": "USES",
+      "target_id": "FW-003",
+      "statement": "BIOS uses Embedded Controller Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-1D8038F0A715",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-001",
+          "title": "RC2 Cross-Reference: Embedded Controller Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-001; target_entity_id=FW-003; reference=Embedded Controller Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-17CBEDA989CF",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-001",
+      "statement": "UEFI uses BIOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-1D508DDE3CBE",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: BIOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-001; reference=BIOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-393B5B04A377",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-009",
+      "statement": "UEFI uses GPT.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-338CFE0F79D3",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: GPT",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-009; reference=GPT",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-A12DE549DFA8",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-008",
+      "statement": "UEFI uses EFI System Partition.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F29B5911FC82",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: EFI System Partition",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-008; reference=EFI System Partition",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-A88891E7B5CC",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-010",
+      "statement": "UEFI uses Measured Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-1AB95EB918D4",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: Measured Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-010; reference=Measured Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-35B16E1D5599",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-006",
+      "statement": "UEFI uses ACPI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-000ED6289602",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: ACPI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-006; reference=ACPI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-B4420638B64A",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-003",
+      "statement": "UEFI uses Embedded Controller Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-78F5D85729F4",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: Embedded Controller Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-003; reference=Embedded Controller Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-F8B4B474D680",
+      "source_id": "FW-003",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Embedded Controller Firmware uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-482143636B8B",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-003",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-003; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-510FAA120129",
+      "source_id": "FW-003",
+      "relationship_type": "USES",
+      "target_id": "FW-001",
+      "statement": "Embedded Controller Firmware uses BIOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D50A50A744D7",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-003",
+          "title": "RC2 Cross-Reference: BIOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-003; target_entity_id=FW-001; reference=BIOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-64D78DB470C4",
+      "source_id": "FW-003",
+      "relationship_type": "USES",
+      "target_id": "FW-006",
+      "statement": "Embedded Controller Firmware uses ACPI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6BF2D49095D2",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-003",
+          "title": "RC2 Cross-Reference: ACPI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-003; target_entity_id=FW-006; reference=ACPI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-16A4BE99EDAE",
+      "source_id": "FW-004",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Storage Firmware uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-875666886FF2",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-004",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-004; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-DCCE38B78B86",
+      "source_id": "FW-005",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Network Firmware uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9002613F1C1E",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-005",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-005; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-BAB07D6E2A33",
+      "source_id": "FW-005",
+      "relationship_type": "USES",
+      "target_id": "FW-012",
+      "statement": "Network Firmware uses PXE Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9C102F6F3E66",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-005",
+          "title": "RC2 Cross-Reference: PXE Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-005; target_entity_id=FW-012; reference=PXE Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-7EF970D82EE4",
+      "source_id": "FW-006",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "ACPI uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6E84B5FB3E13",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-006",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-006; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-FFC2B4F44592",
+      "source_id": "FW-006",
+      "relationship_type": "USES",
+      "target_id": "FW-001",
+      "statement": "ACPI uses BIOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-268361F18A01",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-006",
+          "title": "RC2 Cross-Reference: BIOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-006; target_entity_id=FW-001; reference=BIOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-5E86DC0B3CA2",
+      "source_id": "FW-006",
+      "relationship_type": "USES",
+      "target_id": "FW-003",
+      "statement": "ACPI uses Embedded Controller Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3C27351C91C6",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-006",
+          "title": "RC2 Cross-Reference: Embedded Controller Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-006; target_entity_id=FW-003; reference=Embedded Controller Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-692D197C5654",
+      "source_id": "FW-008",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "EFI System Partition uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-FACE8C6C364F",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-008",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-008; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-44084160B519",
+      "source_id": "FW-008",
+      "relationship_type": "USES",
+      "target_id": "FW-009",
+      "statement": "EFI System Partition uses GPT.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-1AEDFEA4C08C",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-008",
+          "title": "RC2 Cross-Reference: GPT",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-008; target_entity_id=FW-009; reference=GPT",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-E8C62B1B2AD4",
+      "source_id": "FW-009",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "GPT uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-BC2D81BC2C27",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-009",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-009; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EB94BDEFD845",
+      "source_id": "FW-009",
+      "relationship_type": "USES",
+      "target_id": "FW-008",
+      "statement": "GPT uses EFI System Partition.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4CF7B4814D29",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-009",
+          "title": "RC2 Cross-Reference: EFI System Partition",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-009; target_entity_id=FW-008; reference=EFI System Partition",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-AF58BB71895D",
+      "source_id": "FW-010",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Measured Boot uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-16493DF602AC",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-010",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-010; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-31777D3C1720",
+      "source_id": "FW-012",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "PXE Boot uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-37C64F3D2EE5",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-012",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-012; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-C2390F2B477D",
+      "source_id": "FW-012",
+      "relationship_type": "USES",
+      "target_id": "FW-005",
+      "statement": "PXE Boot uses Network Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-005F57B91D83",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-012",
+          "title": "RC2 Cross-Reference: Network Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-012; target_entity_id=FW-005; reference=Network Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Firmware"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3299 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "candidate",
+  "domain": "Cross Domain",
+  "relationship_count": 94,
+  "relationships": [
+    {
+      "relationship_id": "REL-CAND-7D7B118A1BD5",
+      "source_id": "DRV-003",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Chipset Driver uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B34B5DAF424D",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-003",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-003; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-E31BAD31185B",
+      "source_id": "DRV-003",
+      "relationship_type": "USES",
+      "target_id": "FW-006",
+      "statement": "Chipset Driver uses ACPI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-974470C39250",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-003",
+          "title": "RC2 Cross-Reference: ACPI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-003; target_entity_id=FW-006; reference=ACPI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-59871D5DA10F",
+      "source_id": "DRV-004",
+      "relationship_type": "USES",
+      "target_id": "FW-005",
+      "statement": "Network Driver uses Network Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4C872788F16D",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-004",
+          "title": "RC2 Cross-Reference: Network Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-004; target_entity_id=FW-005; reference=Network Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-E124AD063473",
+      "source_id": "DRV-004",
+      "relationship_type": "USES",
+      "target_id": "FW-012",
+      "statement": "Network Driver uses PXE Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-2E17119B5810",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-004",
+          "title": "RC2 Cross-Reference: PXE Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-004; target_entity_id=FW-012; reference=PXE Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-F9689B32DB58",
+      "source_id": "DRV-005",
+      "relationship_type": "USES",
+      "target_id": "FW-004",
+      "statement": "Storage Driver uses Storage Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-65F8ABF1BDF2",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-005",
+          "title": "RC2 Cross-Reference: Storage Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-005; target_entity_id=FW-004; reference=Storage Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-A8E018766669",
+      "source_id": "DRV-005",
+      "relationship_type": "USES",
+      "target_id": "SEC-009",
+      "statement": "Storage Driver uses BitLocker.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-88D80BA60632",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-005",
+          "title": "RC2 Cross-Reference: BitLocker",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-005; target_entity_id=SEC-009; reference=BitLocker",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-35C4F39242D0",
+      "source_id": "DRV-006",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "Driver Signing uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9272478454A4",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-006",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-006; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0E06A1A24DC1",
+      "source_id": "DRV-007",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "WDDM uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A484B21FA778",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-007",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-007; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-B9C181EC5B79",
+      "source_id": "DRV-008",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "NDIS uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-22DA1D123F6C",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-008",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-008; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EFDEFBC19229",
+      "source_id": "FW-001",
+      "relationship_type": "USES",
+      "target_id": "FW-011",
+      "statement": "BIOS uses OS Bootloader.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C7A5D47D085B",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-001",
+          "title": "RC2 Cross-Reference: OS Bootloader",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-001; target_entity_id=FW-011; reference=OS Bootloader",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-86DC1B3C01CB",
+      "source_id": "FW-001",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "BIOS uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6C7F387A4795",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-001",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-001; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3DFAEF3C9C00",
+      "source_id": "FW-001",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "BIOS uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0AC1503DB174",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-001",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-001; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-C5A6A4FC6BC8",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "UEFI uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-41A9B4E802D8",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-FEA24B6B860E",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "UEFI uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-68D9B7236D5B",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D47C4B012562",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-011",
+      "statement": "UEFI uses OS Bootloader.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A8B6C8BDD444",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: OS Bootloader",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-011; reference=OS Bootloader",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CDBCC690963E",
+      "source_id": "FW-002",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "UEFI uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-EF9EC3EA03CA",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-002",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-002; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-B687835AB80C",
+      "source_id": "FW-003",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "Embedded Controller Firmware uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-97B033FBBCC8",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-003",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-003; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-08DD1281754D",
+      "source_id": "FW-003",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "Embedded Controller Firmware uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-8D91FBD1D08C",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-003",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-003; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EAE4499EB808",
+      "source_id": "FW-004",
+      "relationship_type": "USES",
+      "target_id": "DRV-005",
+      "statement": "Storage Firmware uses Storage Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-8BC58E48E0E7",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-004",
+          "title": "RC2 Cross-Reference: NVMe Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-004; target_entity_id=DRV-005; reference=NVMe Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "alias",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CEB85DF61270",
+      "source_id": "FW-004",
+      "relationship_type": "USES",
+      "target_id": "SEC-009",
+      "statement": "Storage Firmware uses BitLocker.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7FFC43A250F6",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-004",
+          "title": "RC2 Cross-Reference: BitLocker",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-004; target_entity_id=SEC-009; reference=BitLocker",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2FB199AD6E74",
+      "source_id": "FW-004",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "Storage Firmware uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6074FCC50D16",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-004",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-004; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-F71930C18257",
+      "source_id": "FW-005",
+      "relationship_type": "USES",
+      "target_id": "DRV-004",
+      "statement": "Network Firmware uses Network Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-DF197915010B",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-005",
+          "title": "RC2 Cross-Reference: Network Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-005; target_entity_id=DRV-004; reference=Network Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-7E181A3B6D55",
+      "source_id": "FW-005",
+      "relationship_type": "USES",
+      "target_id": "DRV-008",
+      "statement": "Network Firmware uses NDIS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-84D959E99341",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-005",
+          "title": "RC2 Cross-Reference: NDIS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-005; target_entity_id=DRV-008; reference=NDIS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-F1B11D5476D7",
+      "source_id": "FW-005",
+      "relationship_type": "USES",
+      "target_id": "FW-007",
+      "statement": "Network Firmware uses Firmware Update Utility.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-609BBD500E10",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-005",
+          "title": "RC2 Cross-Reference: Firmware Update Utility",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-005; target_entity_id=FW-007; reference=Firmware Update Utility",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-420A33E34E00",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-001",
+      "statement": "Firmware Update Utility uses BIOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F18AB765952F",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: BIOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-001; reference=BIOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-25CA512B00BF",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Firmware Update Utility uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7C0B57DBDD27",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-03E438368952",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-003",
+      "statement": "Firmware Update Utility uses Embedded Controller Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-134BD303872A",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: Embedded Controller Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-003; reference=Embedded Controller Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-F034DBDB11AD",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-004",
+      "statement": "Firmware Update Utility uses Storage Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3A5D1D4E4D36",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: Storage Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-004; reference=Storage Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2C4291CBEAEC",
+      "source_id": "FW-007",
+      "relationship_type": "USES",
+      "target_id": "FW-005",
+      "statement": "Firmware Update Utility uses Network Firmware.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F18A4950E649",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-007",
+          "title": "RC2 Cross-Reference: Network Firmware",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-007; target_entity_id=FW-005; reference=Network Firmware",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-897799F9FA26",
+      "source_id": "FW-008",
+      "relationship_type": "USES",
+      "target_id": "FW-011",
+      "statement": "EFI System Partition uses OS Bootloader.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0454E29606BE",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-008",
+          "title": "RC2 Cross-Reference: OS Bootloader",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-008; target_entity_id=FW-011; reference=OS Bootloader",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-717A23886DF3",
+      "source_id": "FW-010",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "Measured Boot uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D05C5F679377",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-010",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-010; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EEF66F747158",
+      "source_id": "FW-011",
+      "relationship_type": "USES",
+      "target_id": "FW-001",
+      "statement": "OS Bootloader uses BIOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-09A907C7898C",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-011",
+          "title": "RC2 Cross-Reference: BIOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-011; target_entity_id=FW-001; reference=BIOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-37013D84B40E",
+      "source_id": "FW-011",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "OS Bootloader uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6819B2028053",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-011",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-011; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-E9571B6304BC",
+      "source_id": "FW-011",
+      "relationship_type": "USES",
+      "target_id": "FW-008",
+      "statement": "OS Bootloader uses EFI System Partition.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5F7920568EFE",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-011",
+          "title": "RC2 Cross-Reference: EFI System Partition",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-011; target_entity_id=FW-008; reference=EFI System Partition",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-83CA8FA6D7C7",
+      "source_id": "FW-012",
+      "relationship_type": "USES",
+      "target_id": "DRV-004",
+      "statement": "PXE Boot uses Network Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-737179F6F1C3",
+          "source_type": "knowledge_base_source",
+          "source_id": "FW-012",
+          "title": "RC2 Cross-Reference: Network Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=FW-012; target_entity_id=DRV-004; reference=Network Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-9CCE386AA996",
+      "source_id": "MGT-002",
+      "relationship_type": "USES",
+      "target_id": "SEC-004",
+      "statement": "Monitoring Agent uses EDR Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4A97597FC69D",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-002",
+          "title": "RC2 Cross-Reference: EDR Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-002; target_entity_id=SEC-004; reference=EDR Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-549EE4F4AB0D",
+      "source_id": "MGT-004",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "Active Directory uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E141C1BC442E",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-004",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-004; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-AE57607E3673",
+      "source_id": "MGT-005",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "Group Policy uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5D45A160CEAF",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-005",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-005; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-34E5326E6955",
+      "source_id": "MGT-006",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "WSUS uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-EB10DE610926",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-006",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-006; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D99A800613CF",
+      "source_id": "MGT-007",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "Windows Update uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0CF2D4A7D625",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-007",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-007; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D200762283B7",
+      "source_id": "MGT-008",
+      "relationship_type": "USES",
+      "target_id": "SEC-004",
+      "statement": "SIEM uses EDR Agent.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-EC131F35CB34",
+          "source_type": "knowledge_base_source",
+          "source_id": "MGT-008",
+          "title": "RC2 Cross-Reference: EDR Agent",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=MGT-008; target_entity_id=SEC-004; reference=EDR Agent",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-7C98DB51C314",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-004",
+      "statement": "Windows uses Active Directory.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5C1549C0A3E3",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: Active Directory",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=MGT-004; reference=Active Directory",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0ED3962F61B6",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-005",
+      "statement": "Windows uses Group Policy.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7B12A0A39FB1",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: Group Policy",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=MGT-005; reference=Group Policy",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2536317944A2",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "SEC-009",
+      "statement": "Windows uses BitLocker.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4A940F64C23C",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: BitLocker",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=SEC-009; reference=BitLocker",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-4011C8CBD8E1",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Windows uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-8C3BB3407BB3",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D85A2351060A",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "Windows uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B9D506B733E1",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-09B66F8DBA61",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "Windows uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4FBDA0AFD84B",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-099C43BC643B",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Windows uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6CF864CC011D",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: WHQL Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=DRV-006; reference=WHQL Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "alias",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CDB10B140214",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "MGT-007",
+      "statement": "Windows uses Windows Update.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E09D430CE31F",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: Windows Update",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=MGT-007; reference=Windows Update",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-ED95E4E0088A",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "MGT-007",
+      "statement": "Windows 10 uses Windows Update.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9373A1FCFD8B",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: Windows Update",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=MGT-007; reference=Windows Update",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D53F5A8D15BE",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "MGT-006",
+      "statement": "Windows 10 uses WSUS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0198B3C3734D",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: WSUS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=MGT-006; reference=WSUS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0AEBBBF566F0",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "MGT-005",
+      "statement": "Windows 10 uses Group Policy.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3071966F2E9B",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: Group Policy",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=MGT-005; reference=Group Policy",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-025A92309D44",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "SEC-009",
+      "statement": "Windows 10 uses BitLocker.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-92DD0BD9BF1C",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: BitLocker",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=SEC-009; reference=BitLocker",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-FC5B8E8434FC",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "Windows 10 uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3D177ACD5E34",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-C8B4466B7E9C",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "Windows 10 uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7CC35DB6A612",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EB568701B807",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Windows 10 uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-017378507AB5",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-803CD82A84D7",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Windows 10 uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6DCF115A2CC3",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: WHQL Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=DRV-006; reference=WHQL Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "alias",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-03B5A5E68CDF",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "Windows 11 uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7C4D01D25E89",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-31042D4A766C",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Windows 11 uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-EAE410102FBF",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0888686BD99C",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "MGT-005",
+      "statement": "Windows 11 uses Group Policy.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-05E825A48B44",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: Group Policy",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=MGT-005; reference=Group Policy",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-405633C6FA2C",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "SEC-009",
+      "statement": "Windows 11 uses BitLocker.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E91B33839A3A",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: BitLocker",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=SEC-009; reference=BitLocker",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-8D108585B11A",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Windows 11 uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E7E55592BFF1",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: WHQL Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=DRV-006; reference=WHQL Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "alias",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-BD54389520DB",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "MGT-007",
+      "statement": "Windows 11 uses Windows Update.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-99F199F584A9",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: Windows Update",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=MGT-007; reference=Windows Update",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-6F964FB147CA",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "SEC-010",
+      "statement": "Linux uses SELinux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7BEE827A4DBF",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: SELinux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=SEC-010; reference=SELinux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-DCD97E056B55",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "SEC-011",
+      "statement": "Linux uses AppArmor.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5095885D62F7",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: AppArmor",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=SEC-011; reference=AppArmor",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0982EBC47F22",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Linux uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9B267EB6F090",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-30F9C8AC512D",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "Linux uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0D6EBE6CD8D1",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CB7B566BEF24",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "SEC-012",
+      "statement": "Linux uses LUKS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-FD2F3BF8A872",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: LUKS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=SEC-012; reference=LUKS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CD8EEA2F06AD",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "Linux uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3AD6EBA3F0BA",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-8A185EF14A30",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "SEC-011",
+      "statement": "Ubuntu uses AppArmor.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B3BDE496EDD7",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: AppArmor",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=SEC-011; reference=AppArmor",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-9947DB94F0FE",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "SEC-012",
+      "statement": "Ubuntu uses LUKS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-70919BD801DB",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: LUKS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=SEC-012; reference=LUKS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3C3D56D4FD35",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "Ubuntu uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-EA0CF3C3968B",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2B0CDFB1E9E6",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "Ubuntu uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B7387678D9E5",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-12C6C612D77D",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "OS-010",
+      "statement": "Ubuntu uses Ubuntu Pro.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C7FB1B5B14FA",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: Ubuntu Pro",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=OS-010; reference=Ubuntu Pro",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-9460E7B8DC7E",
+      "source_id": "OS-006",
+      "relationship_type": "USES",
+      "target_id": "SEC-010",
+      "statement": "RHEL uses SELinux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-DA8B83F872BB",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-006",
+          "title": "RC2 Cross-Reference: SELinux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-006; target_entity_id=SEC-010; reference=SELinux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3084B1C6157D",
+      "source_id": "OS-006",
+      "relationship_type": "USES",
+      "target_id": "SEC-012",
+      "statement": "RHEL uses LUKS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D5103B1F0888",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-006",
+          "title": "RC2 Cross-Reference: LUKS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-006; target_entity_id=SEC-012; reference=LUKS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-8C03ADD983C3",
+      "source_id": "OS-006",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "RHEL uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E0FD0035E9DB",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-006",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-006; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-632068F2927B",
+      "source_id": "OS-006",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "RHEL uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F57F76038DD5",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-006",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-006; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-268D850F88DB",
+      "source_id": "OS-006",
+      "relationship_type": "USES",
+      "target_id": "SEC-001",
+      "statement": "RHEL uses TPM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-77A39E4B867F",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-006",
+          "title": "RC2 Cross-Reference: TPM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-006; target_entity_id=SEC-001; reference=TPM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2CA251A0A89D",
+      "source_id": "OS-007",
+      "relationship_type": "USES",
+      "target_id": "SEC-005",
+      "statement": "macOS uses Secure Enclave.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9447E94E96E2",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-007",
+          "title": "RC2 Cross-Reference: Secure Enclave",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-007; target_entity_id=SEC-005; reference=Secure Enclave",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-BBA146B6CCD5",
+      "source_id": "OS-007",
+      "relationship_type": "USES",
+      "target_id": "SEC-006",
+      "statement": "macOS uses System Integrity Protection.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-CCA3E83077C3",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-007",
+          "title": "RC2 Cross-Reference: System Integrity Protection",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-007; target_entity_id=SEC-006; reference=System Integrity Protection",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3E388F083FAC",
+      "source_id": "OS-007",
+      "relationship_type": "USES",
+      "target_id": "SEC-007",
+      "statement": "macOS uses Gatekeeper.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5D5901E85818",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-007",
+          "title": "RC2 Cross-Reference: Gatekeeper",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-007; target_entity_id=SEC-007; reference=Gatekeeper",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-67701E11D688",
+      "source_id": "OS-007",
+      "relationship_type": "USES",
+      "target_id": "SEC-008",
+      "statement": "macOS uses FileVault.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-1E1012B36845",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-007",
+          "title": "RC2 Cross-Reference: FileVault",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-007; target_entity_id=SEC-008; reference=FileVault",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-0DB2A790E9C6",
+      "source_id": "OS-007",
+      "relationship_type": "USES",
+      "target_id": "FW-002",
+      "statement": "macOS uses UEFI.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-48DBFEB853CA",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-007",
+          "title": "RC2 Cross-Reference: UEFI",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-007; target_entity_id=FW-002; reference=UEFI",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2013C03BFA75",
+      "source_id": "OS-007",
+      "relationship_type": "USES",
+      "target_id": "SEC-002",
+      "statement": "macOS uses Secure Boot.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F9E7802102AE",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-007",
+          "title": "RC2 Cross-Reference: Secure Boot",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-007; target_entity_id=SEC-002; reference=Secure Boot",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-62477DE391A0",
+      "source_id": "OS-010",
+      "relationship_type": "USES",
+      "target_id": "OS-005",
+      "statement": "Ubuntu Pro uses Ubuntu.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-6CC29A7622FC",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-010",
+          "title": "RC2 Cross-Reference: Ubuntu",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-010; target_entity_id=OS-005; reference=Ubuntu",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-20340FD74B9F",
+      "source_id": "SEC-005",
+      "relationship_type": "USES",
+      "target_id": "OS-007",
+      "statement": "Secure Enclave uses macOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-5D08AE289C6E",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-005",
+          "title": "RC2 Cross-Reference: macOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-005; target_entity_id=OS-007; reference=macOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-76630C75EE0A",
+      "source_id": "SEC-006",
+      "relationship_type": "USES",
+      "target_id": "OS-007",
+      "statement": "System Integrity Protection uses macOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-59BCD83C9EF7",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-006",
+          "title": "RC2 Cross-Reference: macOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-006; target_entity_id=OS-007; reference=macOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-99683E6C98A8",
+      "source_id": "SEC-007",
+      "relationship_type": "USES",
+      "target_id": "OS-007",
+      "statement": "Gatekeeper uses macOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-D8F141D0781F",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-007",
+          "title": "RC2 Cross-Reference: macOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-007; target_entity_id=OS-007; reference=macOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CE348603FAF3",
+      "source_id": "SEC-008",
+      "relationship_type": "USES",
+      "target_id": "OS-007",
+      "statement": "FileVault uses macOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-BDE9271F2705",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-008",
+          "title": "RC2 Cross-Reference: macOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-008; target_entity_id=OS-007; reference=macOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-5012727D119A",
+      "source_id": "SEC-009",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "BitLocker uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3E223994461E",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-009",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-009; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-AC89BADA00E4",
+      "source_id": "SEC-010",
+      "relationship_type": "USES",
+      "target_id": "OS-004",
+      "statement": "SELinux uses Linux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-1BBC8F196657",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-010",
+          "title": "RC2 Cross-Reference: Linux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-010; target_entity_id=OS-004; reference=Linux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-8806A7B40FFE",
+      "source_id": "SEC-011",
+      "relationship_type": "USES",
+      "target_id": "OS-004",
+      "statement": "AppArmor uses Linux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-138594D5E0FC",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-011",
+          "title": "RC2 Cross-Reference: Linux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-011; target_entity_id=OS-004; reference=Linux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-33FA3082CDA9",
+      "source_id": "SEC-012",
+      "relationship_type": "USES",
+      "target_id": "OS-004",
+      "statement": "LUKS uses Linux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0B107AB5A80B",
+          "source_type": "knowledge_base_source",
+          "source_id": "SEC-012",
+          "title": "RC2 Cross-Reference: Linux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=SEC-012; target_entity_id=OS-004; reference=Linux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "cross_domain"
+      }
+    }
+  ]
+}

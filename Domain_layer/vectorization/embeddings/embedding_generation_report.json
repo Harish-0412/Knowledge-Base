@@ -1,0 +1,9 @@
+{
+  "documents_processed": 24,
+  "embeddings_generated": 24,
+  "embedding_dimension": 768,
+  "model_used": "BAAI/bge-base-en-v1.5",
+  "failures": [],
+  "status": "READY_FOR_QDRANT_UPLOAD",
+  "generated_at": "2026-06-21T08:11:31.689653+00:00"
+}

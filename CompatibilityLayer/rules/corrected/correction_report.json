@@ -1,0 +1,23 @@
+{
+  "source_candidate_count": 42,
+  "corrected_candidate_count": 43,
+  "trace_count": 129,
+  "corrections_by_type": {
+    "logic_normalization": 41,
+    "operator_normalization": 51,
+    "version_normalization": 1,
+    "routed_to_clarification": 33,
+    "component_type_normalization": 1,
+    "candidate_split": 1,
+    "exception_recovery": 1
+  },
+  "eligible_for_generation": 11,
+  "clarification_count": 32,
+  "split_count": 1,
+  "one_to_one_count": 11,
+  "unconverted_count": 30,
+  "all_42_accounted": true,
+  "raw_input_unchanged": true,
+  "source_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+  "generated_at": "2026-06-20T00:00:00+00:00"
+}

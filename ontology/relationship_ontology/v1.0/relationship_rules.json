@@ -1,0 +1,1247 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "candidate",
+  "description": "Domain, range, integrity and import rules for Relationship Ontology v1.0.",
+  "category_universe": [
+    "Driver",
+    "Firmware",
+    "Management",
+    "Operating System",
+    "Security"
+  ],
+  "type_universe": [
+    "Driver",
+    "Firmware",
+    "ManagementTool",
+    "OperatingSystem",
+    "SecurityComponent"
+  ],
+  "default_rules": {
+    "source_must_exist": true,
+    "target_must_exist": true,
+    "relationship_type_must_be_registered": true,
+    "relationship_id_must_be_unique": true,
+    "self_relationship_allowed": false,
+    "approval_required_for_production_import": true,
+    "required_import_approval_status": "approved",
+    "candidate_relationships_importable": false,
+    "rejected_relationships_importable": false,
+    "deprecated_relationships_importable": false,
+    "materialize_virtual_inverse": false,
+    "allow_unregistered_categories": false,
+    "allow_unregistered_types": false,
+    "confidence_must_be_between_zero_and_one": true,
+    "duplicate_detection_enabled": true,
+    "duplicate_identity_fields": [
+      "source_id",
+      "relationship_type",
+      "target_id",
+      "assertion_scope",
+      "conditions"
+    ],
+    "conditions_compared_canonically": true,
+    "evidence_policy_inherited_from_relationship_type": true,
+    "minimum_confidence_inherited_from_relationship_type": true,
+    "condition_policy_inherited_from_relationship_type": true
+  },
+  "relationship_rule_count": 20,
+  "relationship_rules": [
+    {
+      "relationship_type": "IS_A",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "required",
+      "cross_category_policy": "forbidden",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "recommended",
+      "condition_policy": "optional",
+      "minimum_confidence": 0.7,
+      "allowed_assertion_scopes": [
+        "universal",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Cross-category IS_A is invalid.",
+        "Multiple parents are allowed.",
+        "Do not materialize transitive closure as approved assertions without provenance.",
+        "Component-versus-subtype ambiguity requires review and may indicate PART_OF."
+      ]
+    },
+    {
+      "relationship_type": "IMPLEMENTS",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "targets whose role as a specification, standard, interface or abstraction is unclear"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "not_applicable",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "External targets must be modeled in the registry before approval.",
+        "Do not use for vague conceptual similarity."
+      ]
+    },
+    {
+      "relationship_type": "PART_OF",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "all cross-category combinations"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "review",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "recommended",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.75,
+      "allowed_assertion_scopes": [
+        "universal",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "PART_OF is not transitive in v1.0.",
+        "Component-versus-subtype ambiguity requires review and may indicate IS_A."
+      ]
+    },
+    {
+      "relationship_type": "USES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "broad or vague functional-use claims"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "not_applicable",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Must represent direct functional use.",
+        "Must not substitute for DEPENDS_ON or REQUIRES."
+      ]
+    },
+    {
+      "relationship_type": "CONFIGURES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Management",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": [
+          "Security sources"
+        ]
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "reciprocal CONFIGURES edges"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "review",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Management is the normal source category.",
+        "Security sources are allowed only for configuration-enforcement functions.",
+        "Do not use for update delivery."
+      ]
+    },
+    {
+      "relationship_type": "ENABLES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "reciprocal ENABLES edges",
+          "vague capability assertions"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "review",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Do not use when the target is mandatory for the source; use REQUIRES.",
+        "Cycles are warnings and do not support inference."
+      ]
+    },
+    {
+      "relationship_type": "INITIALIZES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Firmware"
+        ],
+        "allowed_types": [
+          "Firmware"
+        ],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "explicit_allowlist",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Firmware",
+          "Operating System",
+          "Driver",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": [
+          "Firmware -> Management (outside the v1.0 allowlist)",
+          "targets not representing boot, platform, device, security, driver or initialization-related components"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Management targets require a future rule revision.",
+        "Evidence must establish initialization, not general association."
+      ]
+    },
+    {
+      "relationship_type": "MANAGES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Management"
+        ],
+        "allowed_types": [
+          "ManagementTool"
+        ],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "explicit_allowlist",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "reciprocal MANAGES edges"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "review",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Non-Management sources are invalid in v1.0.",
+        "Do not use for passive monitoring."
+      ]
+    },
+    {
+      "relationship_type": "MONITORS",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Management",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": [
+          "Firmware sources",
+          "Operating System sources",
+          "Driver sources"
+        ]
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "reciprocal MONITORS edges"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "not_applicable",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Sources outside the allowlist require a future rule revision and cannot be approved under v1.0.",
+        "Monitoring does not imply management or configuration."
+      ]
+    },
+    {
+      "relationship_type": "PROTECTS",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Security"
+        ],
+        "allowed_types": [
+          "SecurityComponent"
+        ],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "explicit_allowlist",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "reciprocal PROTECTS edges",
+          "claims based only on general security relevance"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "not_applicable",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Non-Security sources are invalid in v1.0.",
+        "A concrete protection function is required."
+      ]
+    },
+    {
+      "relationship_type": "UPDATES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Management"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Non-Management sources require a future rule revision.",
+        "Reciprocal UPDATES edges and cycles are invalid.",
+        "Evidence must establish update delivery, application or orchestration."
+      ]
+    },
+    {
+      "relationship_type": "DEPENDS_ON",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "all dependency cycles"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "review",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "authoritative_required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.9,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Do not infer transitivity.",
+        "Not a substitute for a formal published requirement."
+      ]
+    },
+    {
+      "relationship_type": "INSTALLED_ON",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Security",
+          "Management"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Operating System"
+        ],
+        "allowed_types": [
+          "OperatingSystem"
+        ],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "explicit_allowlist",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "forbidden",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "The target must be an Operating System entity.",
+        "Does not imply RUNS_ON, SUPPORTS or COMPATIBLE_WITH.",
+        "Built-in components may require PART_OF."
+      ]
+    },
+    {
+      "relationship_type": "REQUIRES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": [
+          "broad universal requirements"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "authoritative_required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.9,
+      "allowed_assertion_scopes": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "The target must be mandatory under the stated scope.",
+        "Do not infer from USES or RELATED_TO.",
+        "Authoritative evidence is mandatory."
+      ]
+    },
+    {
+      "relationship_type": "RUNS_ON",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Security",
+          "Management"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Operating System"
+        ],
+        "allowed_types": [
+          "OperatingSystem"
+        ],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "explicit_allowlist",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "forbidden",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.8,
+      "allowed_assertion_scopes": [
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "This predicate is inherently cross-category in the allowed source-to-target direction.",
+        "Firmware and Operating System sources are invalid in v1.0.",
+        "Does not imply SUPPORTS or COMPATIBLE_WITH."
+      ]
+    },
+    {
+      "relationship_type": "DEPRECATED_BY",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "required",
+      "cross_category_policy": "forbidden",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "authoritative_required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.9,
+      "allowed_assertion_scopes": [
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Source and target must share a category.",
+        "Reciprocal edges and cycles are invalid.",
+        "Formal deprecation evidence is mandatory.",
+        "Do not infer solely from REPLACES."
+      ]
+    },
+    {
+      "relationship_type": "REPLACES",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "required",
+      "cross_category_policy": "forbidden",
+      "self_relationship_allowed": false,
+      "cycle_policy": "forbidden",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "authoritative_required",
+      "condition_policy": "required_when_non_universal",
+      "minimum_confidence": 0.9,
+      "allowed_assertion_scopes": [
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Source and target must share a category.",
+        "Reciprocal edges and cycles are invalid.",
+        "A newer publication date does not prove replacement."
+      ]
+    },
+    {
+      "relationship_type": "COMPATIBLE_WITH",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "not_applicable",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "authoritative_required",
+      "condition_policy": "always_required",
+      "minimum_confidence": 0.9,
+      "allowed_assertion_scopes": [
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Conditions and authoritative evidence are mandatory.",
+        "Do not infer a reverse edge.",
+        "RELATED_TO does not imply compatibility."
+      ]
+    },
+    {
+      "relationship_type": "CONFLICTS_WITH",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "any_registered_category",
+        "type_policy": "any_registered_type",
+        "requires_manual_review_for": []
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "not_applicable",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "authoritative_required",
+      "condition_policy": "always_required",
+      "minimum_confidence": 0.9,
+      "allowed_assertion_scopes": [
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Conditions and authoritative evidence are mandatory.",
+        "Do not infer a reverse edge.",
+        "Suspected or unverified issues are insufficient."
+      ]
+    },
+    {
+      "relationship_type": "SUPPORTS",
+      "enabled": true,
+      "source_domain": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": []
+      },
+      "target_range": {
+        "allowed_categories": [
+          "Driver",
+          "Firmware",
+          "Management",
+          "Operating System",
+          "Security"
+        ],
+        "allowed_types": [],
+        "category_policy": "explicit_allowlist",
+        "type_policy": "derived_from_allowed_categories",
+        "requires_manual_review_for": [
+          "universal assertions"
+        ]
+      },
+      "same_category_policy": "allowed",
+      "cross_category_policy": "allowed",
+      "self_relationship_allowed": false,
+      "cycle_policy": "not_applicable",
+      "duplicate_policy": "reject_exact_duplicate",
+      "reverse_edge_policy": "do_not_materialize",
+      "evidence_policy": "authoritative_required",
+      "condition_policy": "always_required",
+      "minimum_confidence": 0.9,
+      "allowed_assertion_scopes": [
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ],
+      "production_import_requires_approval": true,
+      "invalid_combination_severity": "error",
+      "review_combination_severity": "warning",
+      "notes": [
+        "Conditions and authoritative evidence are mandatory.",
+        "Direction must reflect source documentation.",
+        "Do not infer from RUNS_ON, INSTALLED_ON or RELATED_TO."
+      ]
+    }
+  ],
+  "cross_predicate_constraints": [
+    {
+      "constraint_id": "CPC-001-COMPATIBLE-CONFLICT",
+      "relationship_types": [
+        "COMPATIBLE_WITH",
+        "CONFLICTS_WITH"
+      ],
+      "comparison_direction": "same_direction",
+      "scope_comparison": "same_scope_and_conditions",
+      "severity": "error",
+      "action": "reject_conflicting_approval",
+      "description": "The same directed entity pair, scope and canonical conditions cannot have approved COMPATIBLE_WITH and CONFLICTS_WITH assertions."
+    },
+    {
+      "constraint_id": "CPC-002-SUPPORTS-CONFLICT",
+      "relationship_types": [
+        "SUPPORTS",
+        "CONFLICTS_WITH"
+      ],
+      "comparison_direction": "same_direction",
+      "scope_comparison": "overlapping_scope_requires_review",
+      "severity": "warning",
+      "action": "require_human_review",
+      "description": "Overlapping SUPPORTS and CONFLICTS_WITH assertions for the same direction require human reconciliation."
+    },
+    {
+      "constraint_id": "CPC-003-REQUIRES-CONFLICT",
+      "relationship_types": [
+        "REQUIRES",
+        "CONFLICTS_WITH"
+      ],
+      "comparison_direction": "same_direction",
+      "scope_comparison": "overlapping_scope_requires_review",
+      "severity": "warning",
+      "action": "require_human_review",
+      "description": "Overlapping REQUIRES and CONFLICTS_WITH assertions for the same direction require human reconciliation."
+    },
+    {
+      "constraint_id": "CPC-004-ISA-PARTOF",
+      "relationship_types": [
+        "IS_A",
+        "PART_OF"
+      ],
+      "comparison_direction": "same_direction",
+      "scope_comparison": "overlapping_scope_requires_review",
+      "severity": "warning",
+      "action": "require_human_review",
+      "description": "The same source-target pair classified as both subtype and component may indicate predicate confusion."
+    },
+    {
+      "constraint_id": "CPC-005-RUNSON-INSTALLEDON",
+      "relationship_types": [
+        "RUNS_ON",
+        "INSTALLED_ON"
+      ],
+      "comparison_direction": "same_direction",
+      "scope_comparison": "overlapping_scope_requires_review",
+      "severity": "warning",
+      "action": "prohibit_automatic_inference",
+      "description": "RUNS_ON and INSTALLED_ON may coexist, but neither may be inferred automatically from the other."
+    },
+    {
+      "constraint_id": "CPC-006-REPLACES-RECIPROCAL",
+      "relationship_types": [
+        "REPLACES"
+      ],
+      "comparison_direction": "either_direction",
+      "scope_comparison": "overlapping_scope_requires_review",
+      "severity": "error",
+      "action": "reject_cycle",
+      "description": "Reciprocal REPLACES assertions form a forbidden lifecycle cycle."
+    },
+    {
+      "constraint_id": "CPC-007-DEPRECATED-RECIPROCAL",
+      "relationship_types": [
+        "DEPRECATED_BY"
+      ],
+      "comparison_direction": "either_direction",
+      "scope_comparison": "overlapping_scope_requires_review",
+      "severity": "error",
+      "action": "reject_cycle",
+      "description": "Reciprocal DEPRECATED_BY assertions form a forbidden lifecycle cycle."
+    }
+  ],
+  "validation_severity_policy": {
+    "error_conditions": [
+      "missing_source_entity",
+      "missing_target_entity",
+      "unknown_relationship_type",
+      "self_relationship",
+      "invalid_source_category",
+      "invalid_target_category",
+      "forbidden_cross_category_relationship",
+      "forbidden_same_category_relationship",
+      "missing_required_evidence",
+      "missing_required_conditions",
+      "confidence_below_minimum",
+      "exact_duplicate",
+      "forbidden_cycle",
+      "approval_inconsistency",
+      "contradictory_approved_relationship"
+    ],
+    "warning_conditions": [
+      "manual_review_combination",
+      "review_cycle",
+      "broad_universal_assertion",
+      "overlapping_scope",
+      "possible_predicate_confusion",
+      "reciprocal_non_symmetric_relationship"
+    ]
+  },
+  "neo4j_import_policy": {
+    "import_only_when_relationship_enabled": true,
+    "required_approval_status": "approved",
+    "reject_candidate_relationships": true,
+    "reject_rejected_relationships": true,
+    "reject_deprecated_relationships": true,
+    "reject_validation_errors": true,
+    "allow_validation_warnings": false,
+    "store_canonical_direction_only": true,
+    "materialize_virtual_inverse": false,
+    "relationship_type_property_source": "relationship_type",
+    "relationship_id_property_required": true,
+    "source_and_target_must_exist_before_import": true,
+    "provisional_related_to_import_policy": "excluded_from_semantic_release"
+  }
+}

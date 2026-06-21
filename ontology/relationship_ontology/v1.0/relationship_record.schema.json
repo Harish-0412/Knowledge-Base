@@ -1,0 +1,501 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sidequest:knowledgebase:schema:relationship-record:1.0.0",
+  "title": "Knowledge Base Relationship Record",
+  "description": "Canonical structural schema for candidate and governed Knowledge Base relationship assertions. This schema defines record shape only; it does not register relationship predicates or assert production relationships.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "relationship_id",
+    "source_id",
+    "relationship_type",
+    "target_id",
+    "statement",
+    "assertion_scope",
+    "condition_logic",
+    "conditions",
+    "evidence",
+    "confidence",
+    "verification_status",
+    "approval_status",
+    "approved_by",
+    "approved_at",
+    "source_release",
+    "relationship_ontology_version",
+    "metadata"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string",
+      "minLength": 5,
+      "pattern": "^REL-[A-Z0-9]+(?:-[A-Z0-9]+)*$",
+      "description": "Globally stable relationship identifier beginning with REL-."
+    },
+    "source_id": {
+      "$ref": "#/$defs/entityId"
+    },
+    "relationship_type": {
+      "type": "string",
+      "minLength": 2,
+      "pattern": "^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*$",
+      "description": "Uppercase controlled predicate identifier. Registration is validated outside this schema."
+    },
+    "target_id": {
+      "$ref": "#/$defs/entityId"
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 10,
+      "pattern": "\\S",
+      "description": "Human-readable statement expressing exactly one relationship assertion."
+    },
+    "assertion_scope": {
+      "type": "string",
+      "enum": [
+        "universal",
+        "conditional",
+        "version_specific",
+        "platform_specific",
+        "vendor_specific"
+      ]
+    },
+    "condition_logic": {
+      "type": "string",
+      "enum": [
+        "ALL",
+        "ANY"
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/condition"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "review_required",
+        "source_verified",
+        "human_approved"
+      ]
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "approved",
+        "rejected",
+        "deprecated"
+      ]
+    },
+    "approved_by": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      ]
+    },
+    "approved_at": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "format": "date-time"
+        }
+      ]
+    },
+    "source_release": {
+      "$ref": "#/$defs/version"
+    },
+    "relationship_ontology_version": {
+      "$ref": "#/$defs/version"
+    },
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "assertion_scope": {
+            "enum": [
+              "conditional",
+              "version_specific",
+              "platform_specific",
+              "vendor_specific"
+            ]
+          }
+        },
+        "required": [
+          "assertion_scope"
+        ]
+      },
+      "then": {
+        "properties": {
+          "conditions": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "approval_status": {
+            "const": "approved"
+          }
+        },
+        "required": [
+          "approval_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "approved_by": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "approved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "verification_status": {
+            "enum": [
+              "source_verified",
+              "human_approved"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "entityId": {
+      "type": "string",
+      "minLength": 3,
+      "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$",
+      "description": "Domain-neutral uppercase, hyphen-delimited entity identifier compatible with current IDs such as FW-001 and future multi-segment IDs."
+    },
+    "version": {
+      "type": "string",
+      "minLength": 3,
+      "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?$"
+    },
+    "conditionValue": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attribute",
+        "operator",
+        "value"
+      ],
+      "properties": {
+        "attribute": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z][a-z0-9]*(?:_[a-z0-9]+)*$"
+        },
+        "operator": {
+          "type": "string",
+          "enum": [
+            "equals",
+            "not_equals",
+            "greater_than",
+            "greater_than_or_equal",
+            "less_than",
+            "less_than_or_equal",
+            "in",
+            "not_in",
+            "exists",
+            "matches"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/conditionValue"
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "enum": [
+                  "in",
+                  "not_in"
+                ]
+              }
+            },
+            "required": [
+              "operator"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_type",
+        "title"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 6,
+          "pattern": "^EVID-[A-Z0-9]+(?:-[A-Z0-9]+)*$"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "official_documentation",
+            "industry_standard",
+            "vendor_documentation",
+            "internal_policy",
+            "user_provided_document",
+            "ingested_document",
+            "knowledge_base_source",
+            "manual_review"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "uri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "locator": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_by",
+        "created_at",
+        "updated_at",
+        "notes"
+      ],
+      "properties": {
+        "created_by": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "created_at": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "updated_at": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "date-time"
+            }
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "relationship_id": "REL-EXAMPLE-001",
+      "source_id": "TEST-SOURCE-001",
+      "relationship_type": "EXAMPLE_LINK",
+      "target_id": "TEST-TARGET-001",
+      "statement": "Synthetic source links to synthetic target for schema demonstration only.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [],
+      "confidence": 0.5,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "created_by": "schema_example",
+        "created_at": null,
+        "updated_at": null,
+        "notes": "Synthetic schema example only."
+      }
+    },
+    {
+      "relationship_id": "REL-EXAMPLE-002",
+      "source_id": "TEST-SOURCE-002",
+      "relationship_type": "EXAMPLE_LINK",
+      "target_id": "TEST-TARGET-002",
+      "statement": "Synthetic source links to synthetic target when the example condition is met.",
+      "assertion_scope": "conditional",
+      "condition_logic": "ALL",
+      "conditions": [
+        {
+          "attribute": "example_version",
+          "operator": "greater_than_or_equal",
+          "value": "2.0",
+          "unit": null,
+          "description": "Synthetic condition for schema demonstration only."
+        }
+      ],
+      "evidence": [],
+      "confidence": 0.6,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "created_by": "schema_example",
+        "created_at": null,
+        "updated_at": null,
+        "notes": "Synthetic schema example only."
+      }
+    },
+    {
+      "relationship_id": "REL-EXAMPLE-003",
+      "source_id": "TEST-SOURCE-003",
+      "relationship_type": "EXAMPLE_LINK",
+      "target_id": "TEST-TARGET-003",
+      "statement": "Synthetic source links to synthetic target under an approved example condition.",
+      "assertion_scope": "conditional",
+      "condition_logic": "ANY",
+      "conditions": [
+        {
+          "attribute": "example_platform",
+          "operator": "in",
+          "value": [
+            "test_platform_a",
+            "test_platform_b"
+          ],
+          "unit": null,
+          "description": "Synthetic condition for schema demonstration only."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-EXAMPLE-001",
+          "source_type": "manual_review",
+          "source_id": "TEST-DOC-001",
+          "title": "Synthetic schema example review",
+          "locator": "Example section",
+          "notes": "Schema example only; not production evidence."
+        }
+      ],
+      "confidence": 0.9,
+      "verification_status": "human_approved",
+      "approval_status": "approved",
+      "approved_by": "schema_example_reviewer",
+      "approved_at": "2000-01-01T00:00:00Z",
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "created_by": "schema_example",
+        "created_at": null,
+        "updated_at": null,
+        "notes": "Synthetic schema example only; not a production relationship."
+      }
+    }
+  ]
+}

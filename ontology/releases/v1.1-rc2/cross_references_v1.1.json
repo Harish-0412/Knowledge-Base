@@ -1290,7 +1290,7 @@
     },
     {
       "source_entity_id": "FW-007",
-      "source_file": "firmware.json",
+      "source_file": "management.json",
       "reference_value": "BIOS",
       "occurrence_index": 0,
       "status": "resolved",
@@ -1299,7 +1299,7 @@
     },
     {
       "source_entity_id": "FW-007",
-      "source_file": "firmware.json",
+      "source_file": "management.json",
       "reference_value": "UEFI",
       "occurrence_index": 1,
       "status": "resolved",
@@ -1308,7 +1308,7 @@
     },
     {
       "source_entity_id": "FW-007",
-      "source_file": "firmware.json",
+      "source_file": "management.json",
       "reference_value": "Embedded Controller Firmware",
       "occurrence_index": 2,
       "status": "resolved",
@@ -1317,7 +1317,7 @@
     },
     {
       "source_entity_id": "FW-007",
-      "source_file": "firmware.json",
+      "source_file": "management.json",
       "reference_value": "Storage Firmware",
       "occurrence_index": 3,
       "status": "resolved",
@@ -1326,7 +1326,7 @@
     },
     {
       "source_entity_id": "FW-007",
-      "source_file": "firmware.json",
+      "source_file": "management.json",
       "reference_value": "Network Firmware",
       "occurrence_index": 4,
       "status": "resolved",
@@ -1398,7 +1398,7 @@
     },
     {
       "source_entity_id": "FW-011",
-      "source_file": "firmware.json",
+      "source_file": "operating_system.json",
       "reference_value": "BIOS",
       "occurrence_index": 0,
       "status": "resolved",
@@ -1407,7 +1407,7 @@
     },
     {
       "source_entity_id": "FW-011",
-      "source_file": "firmware.json",
+      "source_file": "operating_system.json",
       "reference_value": "UEFI",
       "occurrence_index": 1,
       "status": "resolved",
@@ -1416,7 +1416,7 @@
     },
     {
       "source_entity_id": "FW-011",
-      "source_file": "firmware.json",
+      "source_file": "operating_system.json",
       "reference_value": "EFI System Partition",
       "occurrence_index": 2,
       "status": "resolved",
@@ -3474,7 +3474,7 @@
     },
     {
       "source_entity_id": "OS-010",
-      "source_file": "operating_system.json",
+      "source_file": "management.json",
       "reference_value": "Ubuntu",
       "occurrence_index": 0,
       "status": "resolved",

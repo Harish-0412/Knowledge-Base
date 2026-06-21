@@ -1,0 +1,1414 @@
+{
+  "document_id": "DOC-CA114A84AE60",
+  "generated_rule_count": 11,
+  "clarification_count": 32,
+  "approval_status": "candidate",
+  "production_import_allowed": false,
+  "generated_at": "2026-06-20T00:00:00+00:00",
+  "source_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+  "rules": [
+    {
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "source_candidate_ids": [
+        "RCAND-000360"
+      ],
+      "original_candidate_hash": "935AAF0C21052A36",
+      "rule_type": "min_version_constraint",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "OS-013",
+        "component_name": "Enterprise OS",
+        "knowledge_category": "Operating System",
+        "entity_name": "Enterprise OS",
+        "entity_kind": "Operating System",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "2026.1",
+          "version_normalized": "2026.1",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "DRV-009",
+        "component_name": "Driver Pack",
+        "knowledge_category": "Driver",
+        "entity_name": "Driver Pack",
+        "entity_kind": "Driver",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "12.4.0",
+          "version_normalized": "12.4.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "version_specific",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "entity_name": "Enterprise OS",
+          "entity_kind": "Operating System",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "2026.1",
+          "version_normalized": "2026.1",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "DRV-009",
+          "entity_name": "Driver Pack",
+          "entity_kind": "Driver",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "12.4.0",
+          "version_normalized": "12.4.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000360-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "DRV-009",
+          "target_component_name": "Driver Pack",
+          "operator": ">=",
+          "target_version": "12.4.0",
+          "sequence_order": 1,
+          "remediation_hint": "Upgrade Driver Pack to version 12.4.0 or later before migrating to Enterprise OS 2026.1 to ensure peripheral stability."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000360-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000377",
+          "source_page": 1,
+          "source_excerpt": "Customers upgrading to Enterprise OS 2026.1 should be aware that Driver Pack versions prior to 12.4.0 were not validated against this release and may exhibit reduced peripheral stability, particularly with USB-C docking accessories and external display adapters. Fleets that have not yet standardized on the current Driver Pack baseline are encouraged to complete that upgrade ahead of any OS migration work.",
+          "original_candidate_id": "RCAND-000360",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.9,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "warning",
+      "confidence": 0.9,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000377"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000360. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "source_candidate_ids": [
+        "RCAND-000362"
+      ],
+      "original_candidate_hash": "8AF44AEA2454835E",
+      "rule_type": "known_issue_fixed",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "OS-013",
+        "component_name": "Enterprise OS",
+        "knowledge_category": "Operating System",
+        "entity_name": "Enterprise OS",
+        "entity_kind": "Operating System",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "2025.2",
+          "version_normalized": "2025.2",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "predicate": "FIXED_BY",
+      "object": {
+        "entity_id": "SEC-004",
+        "component_name": "EDR Agent",
+        "knowledge_category": "Security",
+        "entity_name": "EDR Agent",
+        "entity_kind": "Security",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "Security Agent",
+          "version_normalized": "security_agent",
+          "version_scheme": "named_release",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "version_specific",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "SEC-004",
+          "component_name": "EDR Agent",
+          "entity_name": "EDR Agent",
+          "entity_kind": "Security",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "Security Agent",
+          "version_normalized": "security_agent",
+          "version_scheme": "named_release",
+          "evaluation_readiness": "ready"
+        },
+        {
+          "condition_id": "COND-002",
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "entity_name": "Enterprise OS",
+          "entity_kind": "Operating System",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "<",
+          "version_raw": "2025.2",
+          "version_normalized": "2025.2",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "OS-013",
+          "entity_name": "Enterprise OS",
+          "entity_kind": "Operating System",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "2025.2",
+          "version_normalized": "2025.2",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000362-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "OS-013",
+          "target_component_name": "Enterprise OS",
+          "operator": ">=",
+          "target_version": "2025.2",
+          "sequence_order": 1,
+          "remediation_hint": "Upgrade Enterprise OS to version 2025.2 or newer to ensure consistent telemetry reporting."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000362-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000379",
+          "source_page": 1,
+          "source_excerpt": "It has also been observed that Security Agent deployments paired with Enterprise OS builds older than 2025.2 can produce inconsistent telemetry reporting to centralized management consoles, even when all other components meet published minimums. Affected environments should treat this as a signal to revisit their OS upgrade timeline rather than assuming the Security Agent installation itself is at fault.",
+          "original_candidate_id": "RCAND-000362",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.9,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "warning",
+      "confidence": 0.9,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000379"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000362. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "source_candidate_ids": [
+        "RCAND-000363"
+      ],
+      "original_candidate_hash": "BDF901DA5EDD2CE2",
+      "rule_type": "min_version_constraint",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "FW-001",
+        "component_name": "BIOS",
+        "knowledge_category": "Firmware",
+        "entity_name": "BIOS",
+        "entity_kind": "Firmware",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "6.4.2",
+          "version_normalized": "6.4.2",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "FW-013",
+        "component_name": "System Firmware",
+        "knowledge_category": "Firmware",
+        "entity_name": "System Firmware",
+        "entity_kind": "Firmware",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "8.2.0",
+          "version_normalized": "8.2.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "version_specific",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "entity_name": "BIOS",
+          "entity_kind": "Firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "6.4.2",
+          "version_normalized": "6.4.2",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "FW-013",
+          "entity_name": "System Firmware",
+          "entity_kind": "Firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "8.2.0",
+          "version_normalized": "8.2.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000363-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "FW-013",
+          "target_component_name": "System Firmware",
+          "operator": ">=",
+          "target_version": "8.2.0",
+          "sequence_order": 1,
+          "remediation_hint": "Ensure System Firmware is updated to version 8.2.0 or later before installing System BIOS 6.4.2."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000363-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000385",
+          "source_page": 1,
+          "source_excerpt": "System BIOS 6.4.2 requires System Firmware 8.2.0 or later.",
+          "original_candidate_id": "RCAND-000363",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 1.0,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "critical",
+      "confidence": 1.0,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000385"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000363. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "source_candidate_ids": [
+        "RCAND-000364"
+      ],
+      "original_candidate_hash": "6D027F47D8DB71D9",
+      "rule_type": "readiness_requirement",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "FW-013",
+        "component_name": "System Firmware",
+        "knowledge_category": "firmware",
+        "entity_name": "System Firmware",
+        "entity_kind": "firmware",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "8.2.1",
+          "version_normalized": "8.2.1",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "DRV-010",
+        "component_name": "Platform Driver Pack",
+        "knowledge_category": "Driver",
+        "entity_name": "Platform Driver Pack",
+        "entity_kind": "Driver",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "12.5.0",
+          "version_normalized": "12.5.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "conditional",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "entity_name": "System Firmware",
+          "entity_kind": "firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "8.2.1",
+          "version_normalized": "8.2.1",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "DRV-010",
+          "entity_name": "Platform Driver Pack",
+          "entity_kind": "Driver",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "12.5.0",
+          "version_normalized": "12.5.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000364-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "DRV-010",
+          "target_component_name": "Platform Driver Pack",
+          "operator": ">=",
+          "target_version": "12.5.0",
+          "sequence_order": 1,
+          "remediation_hint": "Ensure Platform Driver Pack 12.5.0 or later is installed when using System Firmware 8.2.1."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000364-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000386",
+          "source_page": 1,
+          "source_excerpt": "System Firmware 8.2.1 supports Platform Driver Pack 12.5.0 and later.",
+          "original_candidate_id": "RCAND-000364",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.95,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "info",
+      "confidence": 0.95,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000386"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000364. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-8C74D7E72507C9FD-001",
+      "source_candidate_ids": [
+        "RCAND-000366"
+      ],
+      "original_candidate_hash": "CD231C4BCD594F36",
+      "rule_type": "min_version_constraint",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "SEC-004",
+        "component_name": "EDR Agent",
+        "knowledge_category": "Security",
+        "entity_name": "EDR Agent",
+        "entity_kind": "Security",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "4.8.3",
+          "version_normalized": "4.8.3",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "MGT-010",
+        "component_name": "Endpoint Agent",
+        "knowledge_category": "Management",
+        "entity_name": "Endpoint Agent",
+        "entity_kind": "Management",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "3.7.0",
+          "version_normalized": "3.7.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "version_specific",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "SEC-004",
+          "component_name": "EDR Agent",
+          "entity_name": "EDR Agent",
+          "entity_kind": "Security",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "4.8.3",
+          "version_normalized": "4.8.3",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "MGT-010",
+          "entity_name": "Endpoint Agent",
+          "entity_kind": "Management",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "3.7.0",
+          "version_normalized": "3.7.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000366-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "MGT-010",
+          "target_component_name": "Endpoint Agent",
+          "operator": ">=",
+          "target_version": "3.7.0",
+          "sequence_order": 1,
+          "remediation_hint": "Ensure Endpoint Management Agent is updated to version 3.7.0 or later."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000366-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000388",
+          "source_page": 1,
+          "source_excerpt": "Security Agent 4.8.3 requires Endpoint Management Agent 3.7.0 or later.",
+          "original_candidate_id": "RCAND-000366",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 1.0,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "critical",
+      "confidence": 1.0,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000388"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000366. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "source_candidate_ids": [
+        "RCAND-000371"
+      ],
+      "original_candidate_hash": "744ED913D4287C1F",
+      "rule_type": "min_version_constraint",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "OS-013",
+        "component_name": "Enterprise OS",
+        "knowledge_category": "Operating System",
+        "entity_name": "Enterprise OS",
+        "entity_kind": "Operating System",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "2026.1",
+          "version_normalized": "2026.1",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "DRV-009",
+        "component_name": "Driver Pack",
+        "knowledge_category": "Driver",
+        "entity_name": "Driver Pack",
+        "entity_kind": "Driver",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "12.0.0",
+          "version_normalized": "12.0.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "version_specific",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "entity_name": "Enterprise OS",
+          "entity_kind": "Operating System",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "2026.1",
+          "version_normalized": "2026.1",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "DRV-009",
+          "entity_name": "Driver Pack",
+          "entity_kind": "Driver",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "12.0.0",
+          "version_normalized": "12.0.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000371-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "DRV-009",
+          "target_component_name": "Driver Pack",
+          "operator": ">=",
+          "target_version": "12.0.0",
+          "sequence_order": 1,
+          "remediation_hint": "Update Driver Pack to version 12.0.0 or later when using Enterprise OS 2026.1."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000371-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000396",
+          "source_page": 1,
+          "source_excerpt": "UNSUP-002 Driver Pack versions earlier than 12.0.0 are not supported on Enterprise OS 2026.1.",
+          "original_candidate_id": "RCAND-000371",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.95,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "critical",
+      "confidence": 0.95,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000396"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000371. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "source_candidate_ids": [
+        "RCAND-000372"
+      ],
+      "original_candidate_hash": "AED2FCB336762795",
+      "rule_type": "incompatible_combination",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "SEC-004",
+        "component_name": "EDR Agent",
+        "knowledge_category": "Security",
+        "entity_name": "EDR Agent",
+        "entity_kind": "Security",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "4.8.3",
+          "version_normalized": "4.8.3",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "CONFLICTS_WITH",
+      "object": {
+        "entity_id": "MGT-010",
+        "component_name": "Endpoint Agent",
+        "knowledge_category": "Management",
+        "entity_name": "Endpoint Agent",
+        "entity_kind": "Management",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "Endpoint Management Agent",
+          "version_normalized": "endpoint_management_agent",
+          "version_scheme": "named_release",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "outcome": "prohibited",
+      "assertion_scope": "conditional",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "SEC-004",
+          "component_name": "EDR Agent",
+          "entity_name": "EDR Agent",
+          "entity_kind": "Security",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "4.8.3",
+          "version_normalized": "4.8.3",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        },
+        {
+          "condition_id": "COND-002",
+          "entity_id": "MGT-010",
+          "component_name": "Endpoint Agent",
+          "entity_name": "Endpoint Agent",
+          "entity_kind": "Management",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "Endpoint Management Agent",
+          "version_normalized": "endpoint_management_agent",
+          "version_scheme": "named_release",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "MGT-010",
+          "entity_name": "Endpoint Agent",
+          "entity_kind": "Management",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "3.7.0",
+          "version_normalized": "3.7.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000372-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "MGT-010",
+          "target_component_name": "Endpoint Agent",
+          "operator": ">=",
+          "target_version": "3.7.0",
+          "sequence_order": 1,
+          "remediation_hint": "Upgrade Endpoint Management Agent to version 3.7.0 or later."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000372-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000397",
+          "source_page": 1,
+          "source_excerpt": "UNSUP-003 Security Agent 4.8.3 is not supported with Endpoint Management Agent versions earlier than 3.7.0.",
+          "original_candidate_id": "RCAND-000372",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.95,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "critical",
+      "confidence": 0.95,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000397"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000372. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "source_candidate_ids": [
+        "RCAND-000373"
+      ],
+      "original_candidate_hash": "17E185188A385225",
+      "rule_type": "incompatible_combination",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "FW-001",
+        "component_name": "BIOS",
+        "knowledge_category": "Firmware",
+        "entity_name": "BIOS",
+        "entity_kind": "Firmware",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "6.4.2",
+          "version_normalized": "6.4.2",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "CONFLICTS_WITH",
+      "object": {
+        "entity_id": "FW-013",
+        "component_name": "System Firmware",
+        "knowledge_category": "Firmware",
+        "entity_name": "System Firmware",
+        "entity_kind": "Firmware",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "<",
+          "version_raw": "8.2.0",
+          "version_normalized": "8.2.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "outcome": "prohibited",
+      "assertion_scope": "conditional",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "entity_name": "BIOS",
+          "entity_kind": "Firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "6.4.2",
+          "version_normalized": "6.4.2",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        },
+        {
+          "condition_id": "COND-002",
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "entity_name": "System Firmware",
+          "entity_kind": "Firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "<",
+          "version_raw": "8.2.0",
+          "version_normalized": "8.2.0",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "FW-013",
+          "entity_name": "System Firmware",
+          "entity_kind": "Firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "8.2.0",
+          "version_normalized": "8.2.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000373-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "FW-013",
+          "target_component_name": "System Firmware",
+          "operator": ">=",
+          "target_version": "8.2.0",
+          "sequence_order": 1,
+          "remediation_hint": "Update Firmware to version 8.2.0 or later to avoid intermittent boot delays when running BIOS 6.4.2."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000373-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000398",
+          "source_page": 1,
+          "source_excerpt": "Systems running BIOS 6.4.2 with Firmware earlier than 8.2.0 may experience intermittent boot delays.",
+          "original_candidate_id": "RCAND-000373",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.95,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "warning",
+      "confidence": 0.95,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000398"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000373. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "source_candidate_ids": [
+        "RCAND-000381"
+      ],
+      "original_candidate_hash": "787B8DEDB2361A5D",
+      "rule_type": "readiness_requirement",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "OS-013",
+        "component_name": "Enterprise OS",
+        "knowledge_category": "Operating System",
+        "entity_name": "Enterprise OS",
+        "entity_kind": "Operating System",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "2026.1",
+          "version_normalized": "2026.1",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "DRV-009",
+        "component_name": "Driver Pack",
+        "knowledge_category": "Driver",
+        "entity_name": "Driver Pack",
+        "entity_kind": "Driver",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "12.5.0",
+          "version_normalized": "12.5.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "conditional",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "entity_name": "Enterprise OS",
+          "entity_kind": "Operating System",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "2026.1",
+          "version_normalized": "2026.1",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "DRV-009",
+          "entity_name": "Driver Pack",
+          "entity_kind": "Driver",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "12.5.0",
+          "version_normalized": "12.5.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000381-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "DRV-009",
+          "target_component_name": "Driver Pack",
+          "operator": ">=",
+          "target_version": "12.5.0",
+          "sequence_order": 1,
+          "remediation_hint": "Upgrade Driver Pack to version 12.5.0 or later before migrating to Enterprise OS 2026.1."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000381-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000407",
+          "source_page": 1,
+          "source_excerpt": "Upgrade Driver Pack versions earlier than 12.5.0 before migrating to Enterprise OS 2026.1.",
+          "original_candidate_id": "RCAND-000381",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.95,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "critical",
+      "confidence": 0.95,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000407"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000381. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "source_candidate_ids": [
+        "RCAND-000397"
+      ],
+      "original_candidate_hash": "40CBF929FA48298E",
+      "rule_type": "readiness_requirement",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "FW-001",
+        "component_name": "BIOS",
+        "knowledge_category": "Firmware",
+        "entity_name": "BIOS",
+        "entity_kind": "Firmware",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "6.4.2",
+          "version_normalized": "6.4.2",
+          "version_scheme": "semantic",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "FW-013",
+        "component_name": "System Firmware",
+        "knowledge_category": "Firmware",
+        "entity_name": "System Firmware",
+        "entity_kind": "Firmware",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": ">=",
+          "version_raw": "8.2.0",
+          "version_normalized": "8.2.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "conditional",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "entity_name": "BIOS",
+          "entity_kind": "Firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "6.4.2",
+          "version_normalized": "6.4.2",
+          "version_scheme": "semantic",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "FW-013",
+          "entity_name": "System Firmware",
+          "entity_kind": "Firmware",
+          "resolution_status": "resolved_domain_entity",
+          "operator": ">=",
+          "version_raw": "8.2.0",
+          "version_normalized": "8.2.0",
+          "version_scheme": "semantic",
+          "requirement_kind": "min_version",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000397-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "FW-013",
+          "target_component_name": "System Firmware",
+          "operator": ">=",
+          "target_version": "8.2.0",
+          "sequence_order": 1,
+          "remediation_hint": "Upgrade firmware to version 8.2.0 or later before attempting to upgrade BIOS to 6.4.2."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000397-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000426",
+          "source_page": 1,
+          "source_excerpt": "Because BIOS 6.4.2 requires Firmware 8.2.0 or later (COMP-001), firmware must be brought current before the BIOS upgrade is attempted.",
+          "original_candidate_id": "RCAND-000397",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.95,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "critical",
+      "confidence": 0.95,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000426"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000397. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    },
+    {
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "source_candidate_ids": [
+        "RCAND-000399"
+      ],
+      "original_candidate_hash": "31BF0CA266BBC35D",
+      "rule_type": "readiness_requirement",
+      "status": "candidate",
+      "subject": {
+        "entity_id": "OS-013",
+        "component_name": "Enterprise OS",
+        "knowledge_category": "Operating System",
+        "entity_name": "Enterprise OS",
+        "entity_kind": "Operating System",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "Enterprise OS migration",
+          "version_normalized": "enterprise_os_migration",
+          "version_scheme": "named_release",
+          "requirement_kind": "exact_version"
+        }
+      },
+      "predicate": "REQUIRES",
+      "object": {
+        "entity_id": "DRV-009",
+        "component_name": "Driver Pack",
+        "knowledge_category": "Driver",
+        "entity_name": "Driver Pack",
+        "entity_kind": "Driver",
+        "resolution_status": "resolved_domain_entity",
+        "registry_source": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+        "version_constraint": {
+          "operator": "==",
+          "version_raw": "current",
+          "version_normalized": "current",
+          "version_scheme": "named_release",
+          "requirement_kind": "readiness"
+        }
+      },
+      "outcome": "conditional",
+      "assertion_scope": "conditional",
+      "condition_logic": "AND",
+      "conditions": [
+        {
+          "condition_id": "COND-001",
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "entity_name": "Enterprise OS",
+          "entity_kind": "Operating System",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "Enterprise OS migration",
+          "version_normalized": "enterprise_os_migration",
+          "version_scheme": "named_release",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-001",
+          "entity_id": "DRV-009",
+          "entity_name": "Driver Pack",
+          "entity_kind": "Driver",
+          "resolution_status": "resolved_domain_entity",
+          "operator": "==",
+          "version_raw": "current",
+          "version_normalized": "current",
+          "version_scheme": "named_release",
+          "requirement_kind": "readiness",
+          "evaluation_readiness": "ready"
+        }
+      ],
+      "exceptions": [],
+      "remediations": [
+        {
+          "remediation_id": "REM-RCAND000399-001",
+          "remediation_type": "version_upgrade",
+          "target_entity_id": "DRV-009",
+          "target_component_name": "Driver Pack",
+          "operator": "==",
+          "target_version": "current",
+          "sequence_order": 1,
+          "remediation_hint": "Ensure the driver pack is updated to the current version before attempting Enterprise OS migration."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-RCAND000399-001",
+          "source_type": "ingested_document",
+          "source_document_id": "DOC-CA114A84AE60",
+          "source_chunk_id": "CHUNK-000430",
+          "source_page": 1,
+          "source_excerpt": "Per REC-003, the driver pack must be current before any Enterprise OS migration is attempted.",
+          "original_candidate_id": "RCAND-000399",
+          "source_manifest_sha256": "265e84ce1611d02f438c64580629775706989703fc98ee08d1d4557a34897dc9",
+          "confidence_score": 0.9,
+          "verification_status": "review_required",
+          "extraction_method": "nlp_extraction"
+        }
+      ],
+      "severity": "critical",
+      "confidence": 0.9,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "source_document": "DOC-CA114A84AE60",
+      "source_document_id": "DOC-CA114A84AE60",
+      "source_chunk_ids": [
+        "CHUNK-000430"
+      ],
+      "source_release": "1.1.0-rc2",
+      "compatibility_ontology_version": "1.0.0",
+      "created_timestamp": "2026-06-20T00:00:00+00:00",
+      "updated_timestamp": "2026-06-20T00:00:00+00:00",
+      "approved_by": null,
+      "approved_at": null,
+      "metadata": {
+        "created_by": "phase7_generate_compatibility_rules",
+        "created_at": "2026-06-20T00:00:00+00:00",
+        "updated_at": "2026-06-20T00:00:00+00:00",
+        "notes": "Candidate rule generated from corrected candidate RCAND-000399. Awaiting Phase 8 validation and Phase 9 human review."
+      }
+    }
+  ]
+}

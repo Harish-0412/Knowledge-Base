@@ -1,0 +1,778 @@
+{
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "template_count": 6,
+  "templates": [
+    {
+      "rule_type": "min_version_constraint",
+      "display_name": "Minimum Version Constraint",
+      "description": "Asserts that a target component must be at or above a specified minimum version under the declared conditions.",
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "status",
+        "subject",
+        "predicate",
+        "object",
+        "conditions",
+        "evidence",
+        "remediations",
+        "source_document",
+        "confidence",
+        "severity",
+        "condition_logic",
+        "created_timestamp",
+        "updated_timestamp"
+      ],
+      "optional_fields": [
+        "exceptions",
+        "dependencies",
+        "conflicts",
+        "source_section",
+        "tags",
+        "issue_id"
+      ],
+      "minimum_confidence_threshold": 0.7,
+      "allowed_operators": [
+        ">=",
+        "==",
+        ">",
+        "in"
+      ],
+      "allowed_severities": [
+        "critical",
+        "warning",
+        "info"
+      ],
+      "condition_minimum": 0,
+      "validation_logic": {
+        "evaluation_model": "conditional_gate",
+        "steps": [
+          "Evaluate all conditions using condition_logic (AND/OR). If not met, rule does not fire.",
+          "Resolve subject entity from system inventory using subject.entity_id.",
+          "Compare installed version against subject.version_constraint using declared operator.",
+          "If comparison is FALSE, raise compliance violation at declared severity.",
+          "Check exceptions array for applicable device family or scope exclusions.",
+          "Attach remediation record to violation for remediation planning."
+        ],
+        "compliance_pass_condition": "installed_version >= required_version",
+        "compliance_fail_condition": "installed_version < required_version"
+      },
+      "example_instance": {
+        "rule_id": "CRULE-DRV-OS-001",
+        "rule_type": "min_version_constraint",
+        "status": "candidate",
+        "severity": "warning",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000377",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated against Enterprise OS 2026.1.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to version 12.4.0 or later before migrating to Enterprise OS 2026.1 to ensure peripheral stability."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000377",
+        "confidence": 0.9,
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null
+      }
+    },
+    {
+      "rule_type": "known_issue_fixed",
+      "display_name": "Known Issue Fixed",
+      "description": "Asserts that a specific defect, vulnerability, or stability issue is resolved at or above a stated version.",
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "status",
+        "subject",
+        "predicate",
+        "object",
+        "evidence",
+        "remediations",
+        "source_document",
+        "source_section",
+        "confidence",
+        "severity",
+        "condition_logic",
+        "created_timestamp",
+        "updated_timestamp"
+      ],
+      "optional_fields": [
+        "conditions",
+        "exceptions",
+        "dependencies",
+        "conflicts",
+        "tags",
+        "issue_id"
+      ],
+      "minimum_confidence_threshold": 0.8,
+      "allowed_operators": [
+        ">="
+      ],
+      "allowed_severities": [
+        "critical",
+        "warning",
+        "info"
+      ],
+      "condition_minimum": 0,
+      "validation_logic": {
+        "evaluation_model": "vulnerability_exposure_check",
+        "steps": [
+          "Evaluate conditions to determine applicability.",
+          "Resolve subject entity from system inventory.",
+          "Compare installed version against fixed_in threshold.",
+          "If installed < fixed_in, raise violation annotated with issue_id.",
+          "For critical security rules, set remediation urgency to immediate.",
+          "Attach remediation record to violation."
+        ],
+        "compliance_pass_condition": "installed_version >= fixed_in_version",
+        "compliance_fail_condition": "installed_version < fixed_in_version (system exposed to documented issue)"
+      },
+      "example_instance": {
+        "rule_id": "CRULE-FW-SEC-CVE001",
+        "rule_type": "known_issue_fixed",
+        "status": "candidate",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "FIXED_BY",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "conditions": [],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000408",
+            "source_excerpt": "CVE / ID: SEC-2026-001 | Description: Privilege Escalation Vulnerability | Fixed In: BIOS Version 6.4.2",
+            "confidence_score": 0.95,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-BIOS-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "FW-001",
+            "target_component_name": "BIOS",
+            "target_version": "6.4.2",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Update BIOS to version 6.4.2 or later to fix Privilege Escalation Vulnerability SEC-2026-001."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000408",
+        "confidence": 0.95,
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "issue_id": "SEC-2026-001"
+      }
+    },
+    {
+      "rule_type": "readiness_requirement",
+      "display_name": "Readiness Requirement",
+      "description": "Asserts a pre-flight check that must pass before a planned migration or upgrade is permitted to proceed.",
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "status",
+        "subject",
+        "predicate",
+        "object",
+        "conditions",
+        "evidence",
+        "remediations",
+        "source_document",
+        "confidence",
+        "severity",
+        "condition_logic",
+        "created_timestamp",
+        "updated_timestamp"
+      ],
+      "optional_fields": [
+        "exceptions",
+        "dependencies",
+        "conflicts",
+        "source_section",
+        "tags"
+      ],
+      "minimum_confidence_threshold": 0.7,
+      "allowed_operators": [
+        ">=",
+        "==",
+        "exists"
+      ],
+      "allowed_severities": [
+        "critical",
+        "warning",
+        "info"
+      ],
+      "condition_minimum": 0,
+      "validation_logic": {
+        "evaluation_model": "pre_flight_gate",
+        "steps": [
+          "Check if system is in planned migration or upgrade context matching conditions.",
+          "Enumerate all readiness requirements in the requirements specification.",
+          "Check inventory against each requirement threshold.",
+          "If any unmet, block planned operation and raise readiness_failure event.",
+          "If all met, issue readiness_pass and permit operation.",
+          "Attach remediation for pre-flight failure resolution."
+        ],
+        "compliance_pass_condition": "All readiness requirements satisfied before the target operation is initiated.",
+        "compliance_fail_condition": "One or more readiness requirements unmet at operation initiation time."
+      },
+      "example_instance": {
+        "rule_id": "CRULE-DRV-OS-READY-001",
+        "rule_type": "readiness_requirement",
+        "status": "candidate",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.5.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "REQUIRES",
+        "object": {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "condition_context": "planned_migration_target"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000407",
+            "source_excerpt": "Upgrade Driver Pack versions earlier than 12.5.0 before migrating to Enterprise OS 2026.1.",
+            "confidence_score": 0.95,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-DRV-READY-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.5.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to version 12.5.0 or later before migrating to Enterprise OS 2026.1."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000407",
+        "confidence": 0.95,
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null
+      }
+    },
+    {
+      "rule_type": "feature_support_added",
+      "display_name": "Feature Support Added",
+      "description": "Asserts that a specific capability or integration became available at a declared component version. Informational rather than blocking.",
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "status",
+        "subject",
+        "predicate",
+        "object",
+        "conditions",
+        "evidence",
+        "source_document",
+        "confidence",
+        "severity",
+        "condition_logic",
+        "created_timestamp",
+        "updated_timestamp"
+      ],
+      "optional_fields": [
+        "exceptions",
+        "dependencies",
+        "conflicts",
+        "remediations",
+        "source_section",
+        "tags",
+        "issue_id"
+      ],
+      "minimum_confidence_threshold": 0.7,
+      "allowed_operators": [
+        ">=",
+        "=="
+      ],
+      "allowed_severities": [
+        "info",
+        "warning"
+      ],
+      "condition_minimum": 0,
+      "validation_logic": {
+        "evaluation_model": "capability_availability_check",
+        "steps": [
+          "Evaluate conditions for applicability.",
+          "Resolve subject component from inventory.",
+          "Compare installed version against feature_available_from threshold.",
+          "If installed >= threshold, record capability as available.",
+          "If installed < threshold, record as unavailable. Do not block unless severity is warning.",
+          "Expose capability availability as inventory attribute for downstream queries."
+        ],
+        "compliance_pass_condition": "installed_version >= feature_available_from_version (capability available).",
+        "compliance_fail_condition": "installed_version < feature_available_from_version (capability unavailable)."
+      },
+      "example_instance": {
+        "rule_id": "CRULE-MGT-SIEM-001",
+        "rule_type": "feature_support_added",
+        "status": "candidate",
+        "severity": "info",
+        "subject": {
+          "entity_id": "MGT-010",
+          "component_name": "Endpoint Management Agent",
+          "knowledge_category": "Management",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "3.7.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "SUPPORTS",
+        "object": {
+          "entity_id": "MGT-008",
+          "component_name": "SIEM",
+          "knowledge_category": "Management",
+          "version_constraint": {
+            "operator": "exists",
+            "version_normalized": "any",
+            "version_scheme": "named_release",
+            "requirement_kind": "required_present"
+          }
+        },
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "MGT-010",
+            "component_name": "Endpoint Management Agent",
+            "operator": "==",
+            "version_normalized": "3.7.1",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000391",
+            "source_excerpt": "Endpoint Management Agent 3.7.1 supports integration with third-party SIEM connectors certified under the ACME Partner Program. This is a tested-but-optional configuration.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000391",
+        "confidence": 0.9,
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null
+      }
+    },
+    {
+      "rule_type": "incompatible_combination",
+      "display_name": "Incompatible Combination",
+      "description": "Asserts that a co-existence of specified component versions produces a documented negative outcome and is prohibited.",
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "status",
+        "subject",
+        "predicate",
+        "object",
+        "conditions",
+        "evidence",
+        "remediations",
+        "source_document",
+        "source_section",
+        "confidence",
+        "severity",
+        "condition_logic",
+        "created_timestamp",
+        "updated_timestamp"
+      ],
+      "optional_fields": [
+        "exceptions",
+        "dependencies",
+        "conflicts",
+        "tags",
+        "issue_id"
+      ],
+      "minimum_confidence_threshold": 0.85,
+      "allowed_operators": [
+        "==",
+        "<",
+        ">",
+        ">=",
+        "<=",
+        "!=",
+        "in"
+      ],
+      "allowed_severities": [
+        "critical",
+        "warning"
+      ],
+      "condition_minimum": 2,
+      "validation_logic": {
+        "evaluation_model": "prohibited_state_detection",
+        "steps": [
+          "Evaluate all conditions using condition_logic. If all simultaneously true, prohibited state is detected.",
+          "Raise compliance violation at declared severity without suppression.",
+          "Mark system as NON_COMPLIANT and block pending deployments that maintain prohibited state.",
+          "For critical severity, elevate to immediate remediation work order.",
+          "Attach remediation that breaks the prohibited combination."
+        ],
+        "compliance_pass_condition": "The prohibited component combination is not simultaneously present.",
+        "compliance_fail_condition": "Both conflicting components are simultaneously present at prohibited versions."
+      },
+      "example_instance": {
+        "rule_id": "CRULE-FW-BIOS-INCOMPAT-001",
+        "rule_type": "incompatible_combination",
+        "status": "candidate",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "predicate": "CONFLICTS_WITH",
+        "object": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "max_version"
+          }
+        },
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-001",
+            "component_name": "BIOS",
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          },
+          {
+            "condition_id": "COND-002",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000395",
+            "source_excerpt": "UNSUP-001 Firmware versions earlier than 8.0.0 are not supported with BIOS 6.4.2.",
+            "confidence_score": 0.95,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-FW-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "FW-013",
+            "target_component_name": "System Firmware",
+            "target_version": "8.0.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade System Firmware to version 8.0.0 or later when using BIOS 6.4.2."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000395",
+        "confidence": 0.95,
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null
+      }
+    },
+    {
+      "rule_type": "update_order_constraint",
+      "display_name": "Update Order Constraint",
+      "description": "Asserts a mandatory sequential ordering of component updates where one must be completed before another is safe to initiate.",
+      "required_fields": [
+        "rule_id",
+        "rule_type",
+        "status",
+        "subject",
+        "predicate",
+        "object",
+        "conditions",
+        "evidence",
+        "remediations",
+        "source_document",
+        "confidence",
+        "severity",
+        "condition_logic",
+        "sequence_step",
+        "created_timestamp",
+        "updated_timestamp"
+      ],
+      "optional_fields": [
+        "exceptions",
+        "dependencies",
+        "conflicts",
+        "source_section",
+        "tags",
+        "sequence_total_steps",
+        "sequence_prerequisite_ref"
+      ],
+      "minimum_confidence_threshold": 0.85,
+      "allowed_operators": [
+        ">=",
+        "==",
+        "<",
+        ">"
+      ],
+      "allowed_severities": [
+        "critical",
+        "warning"
+      ],
+      "condition_minimum": 0,
+      "validation_logic": {
+        "evaluation_model": "sequenced_operation_guard",
+        "steps": [
+          "Evaluate conditions to determine scope applicability.",
+          "Identify prerequisite component (step N-1) and dependent component (step N).",
+          "Check inventory for current version of prerequisite component.",
+          "If prerequisite not satisfied, block dependent upgrade and raise sequencing_violation.",
+          "If satisfied, permit dependent upgrade and record sequence completion.",
+          "For multi-step chains, evaluate each step in sequence_step order."
+        ],
+        "compliance_pass_condition": "All prerequisite components at required versions before dependent upgrade.",
+        "compliance_fail_condition": "Dependent upgrade attempted while prerequisite has not reached required version."
+      },
+      "example_instance": {
+        "rule_id": "CRULE-FW-BIOS-SEQ-001",
+        "rule_type": "update_order_constraint",
+        "status": "candidate",
+        "severity": "critical",
+        "subject": {
+          "entity_id": "FW-013",
+          "component_name": "System Firmware",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "8.2.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        },
+        "predicate": "BLOCKS",
+        "object": {
+          "entity_id": "FW-001",
+          "component_name": "BIOS",
+          "knowledge_category": "Firmware",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "6.4.2",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        },
+        "conditions": [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "version_scheme": "semantic",
+            "condition_context": "currently_installed"
+          }
+        ],
+        "exceptions": [],
+        "dependencies": [],
+        "conflicts": [],
+        "evidence": [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_chunk_id": "CHUNK-000406",
+            "source_excerpt": "Upgrade Firmware versions earlier than 8.0.0 to version 8.2.1 before upgrading BIOS.",
+            "confidence_score": 0.95,
+            "extraction_method": "nlp_extraction"
+          }
+        ],
+        "remediations": [
+          {
+            "remediation_id": "REM-FW-SEQ-001",
+            "remediation_type": "sequenced_update",
+            "target_entity_id": "FW-013",
+            "target_component_name": "System Firmware",
+            "target_version": "8.2.1",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade System Firmware to version 8.2.1 before proceeding with BIOS upgrade if current firmware is earlier than 8.0.0."
+          }
+        ],
+        "source_document": "DOC-CA114A84AE60",
+        "source_section": "CHUNK-000406",
+        "confidence": 0.95,
+        "condition_logic": "AND",
+        "tags": [],
+        "created_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "updated_timestamp": "2026-06-20T14:18:31.317312+00:00",
+        "approved_by": null,
+        "approved_at": null,
+        "sequence_step": 1,
+        "sequence_total_steps": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "collections_available": true,
+    "layer1_knowledge_retrieved": true,
+    "layer3_knowledge_retrieved": true,
+    "routing_matches_expected_categories": true,
+    "answers_non_empty": true,
+    "sources_included": true,
+    "confidence_calculated": true,
+    "grounded_without_llm": true,
+    "answer_rate_at_least_90_percent": true,
+    "source_coverage_at_least_90_percent": true,
+    "average_similarity_above_0_70": true,
+    "retrieved_documents_relevant": true,
+    "empty_answers_at_most_10_percent": true,
+    "no_search_failures": true
+  },
+  "failures": [],
+  "status": "PASSED",
+  "final_status": "READY_FOR_LAYER_INTEGRATION",
+  "generated_at": "2026-06-21T08:48:56.788149+00:00"
+}

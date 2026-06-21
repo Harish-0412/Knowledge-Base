@@ -1,0 +1,13 @@
+{
+  "collection_exists": true,
+  "collection_name": "kb_compatibility_layer",
+  "vector_count": 42,
+  "expected_vector_count": 42,
+  "payload_point_count": 42,
+  "payload_exists_for_all_points": true,
+  "embedding_dimension": 768,
+  "distance": "cosine",
+  "failed_vectors": 0,
+  "status": "READY",
+  "checked_at": "2026-06-21T07:53:24.880076+00:00"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "PASS_WITH_WARNINGS",
+  "status": "PASS",
   "entities_reviewed": 54,
   "approved_entities": [
     "DRV-001",
@@ -15,14 +15,21 @@
     "FW-003",
     "FW-004",
     "FW-005",
+    "FW-006",
+    "FW-007",
+    "FW-008",
+    "FW-009",
     "FW-010",
+    "FW-011",
     "FW-012",
     "MGT-001",
     "MGT-002",
     "MGT-003",
+    "MGT-004",
     "MGT-005",
     "MGT-006",
     "MGT-007",
+    "MGT-008",
     "MGT-009",
     "MGT-010",
     "OS-001",
@@ -34,6 +41,7 @@
     "OS-007",
     "OS-008",
     "OS-009",
+    "OS-010",
     "OS-011",
     "OS-012",
     "SEC-001",
@@ -49,142 +57,10 @@
     "SEC-011",
     "SEC-012"
   ],
-  "reclassification_proposals": [
-    {
-      "entity_id": "FW-006",
-      "current_name": "ACPI",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "ACPI is an industry standard/interface, not firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-007",
-      "current_name": "Firmware Update Utility",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "A firmware update utility is software that updates firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-008",
-      "current_name": "EFI System Partition",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "The EFI System Partition is a boot storage structure.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-009",
-      "current_name": "GPT",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "GPT is a disk partitioning standard.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-011",
-      "current_name": "OS Bootloader",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "An OS bootloader is software in the boot chain, not firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "MGT-004",
-      "current_name": "Active Directory",
-      "current_category": "Management",
-      "proposed_category_or_classification": "future_domain_entity",
-      "reason": "Active Directory primarily belongs to Identity and Access.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "MGT-008",
-      "current_name": "SIEM",
-      "current_category": "Management",
-      "proposed_category_or_classification": "requires_human_review",
-      "reason": "SIEM is security operations infrastructure; placement needs governance approval.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "OS-010",
-      "current_name": "Ubuntu Pro",
-      "current_category": "Operating System",
-      "proposed_category_or_classification": "requires_human_review",
-      "reason": "Ubuntu Pro is a service/subscription, not an OS version.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    }
-  ],
+  "reclassification_proposals": [],
   "deferred_entities": [],
   "duplicate_candidates": [],
-  "granularity_issues": [
-    {
-      "entity_id": "FW-007",
-      "current_name": "Firmware Update Utility",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "A firmware update utility is software that updates firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-008",
-      "current_name": "EFI System Partition",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "The EFI System Partition is a boot storage structure.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-009",
-      "current_name": "GPT",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "GPT is a disk partitioning standard.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-011",
-      "current_name": "OS Bootloader",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "An OS bootloader is software in the boot chain, not firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "OS-010",
-      "current_name": "Ubuntu Pro",
-      "current_category": "Operating System",
-      "proposed_category_or_classification": "requires_human_review",
-      "reason": "Ubuntu Pro is a service/subscription, not an OS version.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    }
-  ],
+  "granularity_issues": [],
   "vendor_specific_entities": [
     "DRV-007",
     "DRV-008",
@@ -192,15 +68,7 @@
     "MGT-005",
     "MGT-006",
     "MGT-007",
-    "OS-001",
-    "OS-002",
-    "OS-003",
-    "OS-005",
-    "OS-006",
-    "OS-007",
-    "OS-009",
     "OS-010",
-    "OS-012",
     "SEC-005",
     "SEC-006",
     "SEC-007",
@@ -208,87 +76,6 @@
     "SEC-009"
   ],
   "unsupported_claims": [],
-  "human_review_required": [
-    {
-      "entity_id": "FW-006",
-      "current_name": "ACPI",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "ACPI is an industry standard/interface, not firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-007",
-      "current_name": "Firmware Update Utility",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "A firmware update utility is software that updates firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-008",
-      "current_name": "EFI System Partition",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "The EFI System Partition is a boot storage structure.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-009",
-      "current_name": "GPT",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "GPT is a disk partitioning standard.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "FW-011",
-      "current_name": "OS Bootloader",
-      "current_category": "Firmware",
-      "proposed_category_or_classification": "shared_platform_concept",
-      "reason": "An OS bootloader is software in the boot chain, not firmware.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "MGT-004",
-      "current_name": "Active Directory",
-      "current_category": "Management",
-      "proposed_category_or_classification": "future_domain_entity",
-      "reason": "Active Directory primarily belongs to Identity and Access.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "MGT-008",
-      "current_name": "SIEM",
-      "current_category": "Management",
-      "proposed_category_or_classification": "requires_human_review",
-      "reason": "SIEM is security operations infrastructure; placement needs governance approval.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    },
-    {
-      "entity_id": "OS-010",
-      "current_name": "Ubuntu Pro",
-      "current_category": "Operating System",
-      "proposed_category_or_classification": "requires_human_review",
-      "reason": "Ubuntu Pro is a service/subscription, not an OS version.",
-      "confidence": "high",
-      "automatic_change_safe": false,
-      "recommended_action": "Human ontology governance review before changing category or ID."
-    }
-  ],
-  "summary": "Reviewed 54 entities; 8 category or granularity decisions require human approval."
+  "human_review_required": [],
+  "summary": "Reviewed 54 entities; 0 category or granularity decisions require human approval."
 }

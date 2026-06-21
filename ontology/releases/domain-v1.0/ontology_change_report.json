@@ -1,0 +1,13 @@
+{
+  "release_id": "domain-v1.0",
+  "ontology_version": "1.0.0",
+  "change_scope": "Governance, packaging, validation and documentation only",
+  "semantic_change": false,
+  "added_entities": [],
+  "modified_entities": [],
+  "removed_entities": [],
+  "changed_entity_ids": [],
+  "changed_canonical_names": [],
+  "source_change_report": "ontology/releases/v1.1-rc2/v1.0_to_v1.1_changes.json",
+  "summary": "This finalization package introduces no entity or relationship semantic changes. It governs and packages the existing 54-entity RC2 registry and released 20-type Relationship Ontology."
+}

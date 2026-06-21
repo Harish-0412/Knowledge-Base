@@ -4,11 +4,11 @@
   "source_entity_count": 54,
   "registry_entity_count": 54,
   "source_file_counts": {
-    "firmware.json": 12,
+    "firmware.json": 10,
     "operating_system.json": 12,
     "drivers.json": 8,
     "security.json": 12,
-    "management.json": 10
+    "management.json": 12
   },
   "errors": [],
   "warnings": [],

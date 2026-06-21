@@ -1,0 +1,10 @@
+{
+  "query_count": 15,
+  "average_results_returned": 5.0,
+  "empty_result_count": 0,
+  "average_similarity_score": 0.660177,
+  "retrieval_success_rate": 100.0,
+  "scores_valid": true,
+  "status": "READY",
+  "checked_at": "2026-06-21T07:53:59.145036+00:00"
+}

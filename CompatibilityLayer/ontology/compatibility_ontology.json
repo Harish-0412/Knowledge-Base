@@ -1,0 +1,309 @@
+{
+  "ontology_id": "compat-ontology-layer3-v1.0.0",
+  "ontology_name": "Compatibility Ontology",
+  "ontology_layer": "Layer 3 - Compatibility Ontology",
+  "ontology_version": "1.0.0",
+  "created_date": "2026-06-20",
+  "status": "active",
+  "description": "Master ontology document for Layer 3 of the Dynamic Compatibility and Configuration Compliance Engine. Defines the complete semantic model for compatibility entities, relationships, rule types, and lifecycle governance. This ontology is designed to operate against the Layer 1 Domain Knowledge Layer canonical entity registry and to produce validated, machine-readable compatibility rules suitable for automated compliance evaluation.",
+  "engine_context": {
+    "engine_name": "Dynamic Compatibility and Configuration Compliance Engine",
+    "layer": 3,
+    "layer_name": "Compatibility Ontology Layer",
+    "layer_responsibility": "Transform extracted compatibility statements into validated, machine-readable compatibility rules by defining the ontological framework against which those rules are structured, governed, and evaluated.",
+    "upstream_dependency": {
+      "layer": 1,
+      "layer_name": "Domain Knowledge Layer",
+      "canonical_entity_registry_version": "1.1.0-rc2",
+      "entity_count": 24,
+      "entity_namespaces": ["DRV", "FW", "OS", "SEC", "MGT"]
+    },
+    "upstream_source_layer": {
+      "layer": 2,
+      "layer_name": "Document Ingestion and Extraction Layer",
+      "raw_rule_candidate_source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+      "source_document_id": "DOC-CA114A84AE60",
+      "raw_candidate_count": 42
+    },
+    "downstream_consumers": {
+      "neo4j": {
+        "description": "Property graph store for structured relationship traversal and compliance path queries.",
+        "eligible_state_for_import": "approved",
+        "node_labels": ["CompatibilityRule", "Condition", "Exception", "Evidence", "Remediation", "CompatibilityDocument", "VersionConstraint", "DependencyConstraint", "ConflictConstraint", "UpdateSequenceConstraint"],
+        "relationship_types": ["REQUIRES", "SUPPORTS", "CONFLICTS_WITH", "FIXED_BY", "UPGRADE_TO", "DEPENDS_ON", "REMEDIATES", "BLOCKS", "SUPERSEDES", "REFERENCES", "HAS_CONDITION", "HAS_EXCEPTION", "HAS_EVIDENCE", "HAS_REMEDIATION", "VALIDATED_BY", "APPROVED_BY", "DERIVED_FROM", "REPLACES", "TARGETS"]
+      },
+      "qdrant": {
+        "description": "Vector store for semantic similarity search over rule evidence and source excerpts.",
+        "eligible_state_for_import": "approved",
+        "embedding_candidates": ["Evidence.source_excerpt", "CompatibilityRule.rule_description", "CompatibilityDocument.document_title"],
+        "metadata_fields": ["rule_id", "evidence_id", "document_id", "rule_type", "severity", "lifecycle_state"]
+      }
+    }
+  },
+  "ontology_components": {
+    "entities": {
+      "component_file": "CompatibilityLayer/ontology/compatibility_entities.json",
+      "component_version": "1.0.0",
+      "entity_count": 10,
+      "entities": [
+        {
+          "entity_name": "CompatibilityRule",
+          "purpose": "Primary governed unit — a single machine-readable compatibility assertion between components.",
+          "id_pattern": "CRULE-[A-Z0-9]+-[0-9]+",
+          "production_eligible_states": ["approved"]
+        },
+        {
+          "entity_name": "Condition",
+          "purpose": "Applicability gate — scopes a rule to specific component states or versions.",
+          "id_pattern": "COND-[0-9]+"
+        },
+        {
+          "entity_name": "Exception",
+          "purpose": "Scoped exclusion — defines device families or contexts exempt from a rule.",
+          "id_pattern": "EXC-[A-Z0-9]+-[0-9]+"
+        },
+        {
+          "entity_name": "Evidence",
+          "purpose": "Auditability anchor — traceable reference to source document excerpt.",
+          "id_pattern": "EVID-[A-Z0-9]+-[0-9]+"
+        },
+        {
+          "entity_name": "Remediation",
+          "purpose": "Corrective prescription — actionable upgrade or configuration path to resolve a violation.",
+          "id_pattern": "REM-[A-Z0-9]+-[0-9]+"
+        },
+        {
+          "entity_name": "CompatibilityDocument",
+          "purpose": "Source registration — provenance anchor for all rules derived from a document.",
+          "id_pattern": "DOC-[A-Z0-9]+"
+        },
+        {
+          "entity_name": "VersionConstraint",
+          "purpose": "Normalized version predicate — machine-evaluable version requirement expression.",
+          "id_pattern": "VC-[A-Z0-9]+-[0-9]+"
+        },
+        {
+          "entity_name": "DependencyConstraint",
+          "purpose": "Operational coupling — models runtime or install-time dependencies between components.",
+          "id_pattern": "DC-[A-Z0-9]+-[0-9]+"
+        },
+        {
+          "entity_name": "ConflictConstraint",
+          "purpose": "Prohibited co-existence — records incompatible component version combinations.",
+          "id_pattern": "CC-[A-Z0-9]+-[0-9]+"
+        },
+        {
+          "entity_name": "UpdateSequenceConstraint",
+          "purpose": "Operation ordering — enforces mandatory sequencing of component update operations.",
+          "id_pattern": "USC-[A-Z0-9]+-[0-9]+"
+        }
+      ]
+    },
+    "relationships": {
+      "component_file": "CompatibilityLayer/ontology/compatibility_relationships.json",
+      "component_version": "1.0.0",
+      "relationship_count": 20,
+      "design_principle": "All relationships are directional, canonical direction only. Virtual inverses are never materialized.",
+      "relationships": [
+        {"relationship_name": "REQUIRES", "category": "Compatibility", "risk_level": "high"},
+        {"relationship_name": "SUPPORTS", "category": "Compatibility", "risk_level": "high"},
+        {"relationship_name": "CONFLICTS_WITH", "category": "Compatibility", "risk_level": "high"},
+        {"relationship_name": "FIXED_BY", "category": "Resolution", "risk_level": "high"},
+        {"relationship_name": "UPGRADE_TO", "category": "Resolution", "risk_level": "medium"},
+        {"relationship_name": "DEPENDS_ON", "category": "Dependency", "risk_level": "high"},
+        {"relationship_name": "REMEDIATES", "category": "Resolution", "risk_level": "medium"},
+        {"relationship_name": "SUPPORTED_BY", "category": "Compatibility (virtual inverse)", "risk_level": "high", "note": "Virtual inverse of SUPPORTS. Do not materialize."},
+        {"relationship_name": "BLOCKS", "category": "Constraint", "risk_level": "high"},
+        {"relationship_name": "SUPERSEDES", "category": "Lifecycle", "risk_level": "high"},
+        {"relationship_name": "REFERENCES", "category": "Provenance", "risk_level": "low"},
+        {"relationship_name": "HAS_CONDITION", "category": "Structure", "risk_level": "low"},
+        {"relationship_name": "HAS_EXCEPTION", "category": "Structure", "risk_level": "medium"},
+        {"relationship_name": "HAS_EVIDENCE", "category": "Audit", "risk_level": "low"},
+        {"relationship_name": "HAS_REMEDIATION", "category": "Resolution", "risk_level": "low"},
+        {"relationship_name": "VALIDATED_BY", "category": "Governance", "risk_level": "high"},
+        {"relationship_name": "APPROVED_BY", "category": "Governance", "risk_level": "high"},
+        {"relationship_name": "DERIVED_FROM", "category": "Provenance", "risk_level": "low"},
+        {"relationship_name": "REPLACES", "category": "Lifecycle", "risk_level": "high"},
+        {"relationship_name": "TARGETS", "category": "Cross-Layer", "risk_level": "medium", "note": "Cross-layer join to Layer 1 canonical_entity_registry."}
+      ]
+    },
+    "rule_types": {
+      "component_file": "CompatibilityLayer/ontology/compatibility_rule_types.json",
+      "component_version": "1.0.0",
+      "rule_type_count": 6,
+      "rule_types": [
+        {
+          "rule_type": "min_version_constraint",
+          "display_name": "Minimum Version Constraint",
+          "evaluation_model": "conditional_gate",
+          "allowed_severities": ["critical", "warning", "info"]
+        },
+        {
+          "rule_type": "known_issue_fixed",
+          "display_name": "Known Issue Fixed",
+          "evaluation_model": "vulnerability_exposure_check",
+          "allowed_severities": ["critical", "warning", "info"]
+        },
+        {
+          "rule_type": "readiness_requirement",
+          "display_name": "Readiness Requirement",
+          "evaluation_model": "pre_flight_gate",
+          "allowed_severities": ["critical", "warning", "info"]
+        },
+        {
+          "rule_type": "feature_support_added",
+          "display_name": "Feature Support Added",
+          "evaluation_model": "capability_availability_check",
+          "allowed_severities": ["info", "warning"]
+        },
+        {
+          "rule_type": "incompatible_combination",
+          "display_name": "Incompatible Combination",
+          "evaluation_model": "prohibited_state_detection",
+          "allowed_severities": ["critical", "warning"]
+        },
+        {
+          "rule_type": "update_order_constraint",
+          "display_name": "Update Order Constraint",
+          "evaluation_model": "sequenced_operation_guard",
+          "allowed_severities": ["critical", "warning"]
+        }
+      ]
+    },
+    "lifecycle_states": {
+      "component_file": "CompatibilityLayer/ontology/compatibility_lifecycle.json",
+      "component_version": "1.0.0",
+      "lifecycle_state_count": 7,
+      "initial_state": "candidate",
+      "terminal_states": ["rejected", "archived"],
+      "production_eligible_states": ["approved"],
+      "lifecycle_states": [
+        {
+          "state": "candidate",
+          "production_eligible": false,
+          "allowed_next_states": ["validated", "rejected"]
+        },
+        {
+          "state": "validated",
+          "production_eligible": false,
+          "allowed_next_states": ["approved", "rejected", "candidate"]
+        },
+        {
+          "state": "approved",
+          "production_eligible": true,
+          "import_to_neo4j": true,
+          "import_to_qdrant": true,
+          "allowed_next_states": ["deprecated", "superseded"]
+        },
+        {
+          "state": "deprecated",
+          "production_eligible": false,
+          "allowed_next_states": ["archived", "approved"]
+        },
+        {
+          "state": "rejected",
+          "production_eligible": false,
+          "allowed_next_states": ["candidate"]
+        },
+        {
+          "state": "superseded",
+          "production_eligible": false,
+          "allowed_next_states": ["archived"]
+        },
+        {
+          "state": "archived",
+          "production_eligible": false,
+          "allowed_next_states": [],
+          "terminal": true
+        }
+      ]
+    }
+  },
+  "cross_layer_integration": {
+    "layer1_integration": {
+      "description": "Layer 3 CompatibilityRules reference Layer 1 entities via the TARGETS relationship. Component types in raw candidates (os, firmware, bios, driver, agent) must be resolved to Layer 1 entity_id values before a rule can progress to the validated state.",
+      "component_type_to_layer1_type_mapping": [
+        {"raw_component_type": "os", "layer1_type": "OperatingSystem", "layer1_prefixes": ["OS"]},
+        {"raw_component_type": "firmware", "layer1_type": "Firmware", "layer1_prefixes": ["FW"]},
+        {"raw_component_type": "bios", "layer1_type": "Firmware", "layer1_prefixes": ["FW"], "canonical_entity": "FW-001 (BIOS) or FW-002 (UEFI)"},
+        {"raw_component_type": "driver", "layer1_type": "Driver", "layer1_prefixes": ["DRV"]},
+        {"raw_component_type": "agent", "layer1_type": "SecurityComponent or ManagementTool", "layer1_prefixes": ["SEC", "MGT"]},
+        {"raw_component_type": "model", "layer1_type": "No Layer 1 type — hardware platform models are not registered entities", "handling": "Capture in condition metadata; do not resolve to Layer 1 entity"}
+      ]
+    },
+    "layer2_integration": {
+      "description": "Layer 3 rules are derived from raw candidates produced by the Layer 2 extraction pipeline. The DERIVED_FROM relationship links each governed CompatibilityRule to its source RCAND-* record.",
+      "source_candidate_id_pattern": "RCAND-[0-9]+",
+      "derivation_relationship": "DERIVED_FROM"
+    }
+  },
+  "ontology_constraints": {
+    "global_constraints": [
+      {
+        "constraint_id": "OC-001",
+        "description": "Every CompatibilityRule in approved state must have at least one HAS_EVIDENCE relationship to a registered Evidence record.",
+        "severity": "error",
+        "enforcement": "validation_gate"
+      },
+      {
+        "constraint_id": "OC-002",
+        "description": "No two CompatibilityRules in approved state may be exact duplicates. Duplicate identity is defined by: (source_component_type, source_component_version_constraint, target_component_type, target_component_version_constraint, rule_type, condition_logic, conditions).",
+        "severity": "error",
+        "enforcement": "validation_gate"
+      },
+      {
+        "constraint_id": "OC-003",
+        "description": "An approved CompatibilityRule and an approved ConflictConstraint may not simultaneously assert that the same component combination is both REQUIRED and CONFLICTS_WITH under overlapping conditions.",
+        "severity": "error",
+        "enforcement": "cross_predicate_constraint"
+      },
+      {
+        "constraint_id": "OC-004",
+        "description": "The SUPERSEDES and REPLACES relationship chains must not form cycles. A rule may not directly or transitively supersede itself.",
+        "severity": "error",
+        "enforcement": "graph_cycle_detection"
+      },
+      {
+        "constraint_id": "OC-005",
+        "description": "All TARGETS relationships must resolve to a valid entity_id in the Layer 1 canonical_entity_registry (v1.1.0-rc2 or later). Unresolved entity references block the validated state transition.",
+        "severity": "error",
+        "enforcement": "validation_gate"
+      },
+      {
+        "constraint_id": "OC-006",
+        "description": "UpdateSequenceConstraint records must define at least two ordered steps. A sequence with a single step should be modeled as a readiness_requirement rule instead.",
+        "severity": "warning",
+        "enforcement": "validation_hint"
+      },
+      {
+        "constraint_id": "OC-007",
+        "description": "confidence_score must meet the minimum threshold defined by the rule_type. Rules with confidence_score below the minimum for their rule type cannot be validated.",
+        "severity": "error",
+        "enforcement": "validation_gate",
+        "minimum_thresholds": {
+          "min_version_constraint": 0.70,
+          "known_issue_fixed": 0.80,
+          "readiness_requirement": 0.70,
+          "feature_support_added": 0.70,
+          "incompatible_combination": 0.85,
+          "update_order_constraint": 0.85
+        }
+      }
+    ]
+  },
+  "versioning_policy": {
+    "ontology_version_format": "MAJOR.MINOR.PATCH following semantic versioning",
+    "major_version_triggers": ["Addition or removal of entity types", "Breaking changes to relationship semantics", "Changes to lifecycle state machine that alter allowed transitions"],
+    "minor_version_triggers": ["Addition of new optional fields", "Addition of new relationship types", "Extension of allowed rule types"],
+    "patch_version_triggers": ["Documentation corrections", "Non-breaking field description updates", "Bug fixes in validation logic descriptions"],
+    "backward_compatibility_commitment": "MINOR and PATCH versions are backward compatible with all existing approved rules. MAJOR version changes require a formal migration plan and may require re-validation of existing approved rules."
+  },
+  "provenance": {
+    "created_by": "Compatibility Ontology Engineer - Layer 3",
+    "created_at": "2026-06-20T00:00:00Z",
+    "based_on_layer1_registry_version": "1.1.0-rc2",
+    "based_on_relationship_ontology_version": "1.0.0",
+    "raw_candidates_reviewed": "DOC-CA114A84AE60 (42 candidates, RCAND-000360 through RCAND-000401)",
+    "notes": "This ontology was designed to be fully compatible with the existing Layer 1 entity registry, relationship ontology governance model, and the raw rule candidates extracted from DOC-CA114A84AE60. All terminology, ID patterns, and governance policies align with the established project conventions."
+  }
+}

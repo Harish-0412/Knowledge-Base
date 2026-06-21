@@ -1,0 +1,553 @@
+{
+  "catalog_version": "1.0.0",
+  "schema_version_ref": "1.0.0",
+  "created_date": "2026-06-20",
+  "field_count": 26,
+  "fields": [
+    {
+      "field_name": "rule_id",
+      "purpose": "Globally unique immutable identifier used as primary key across Neo4j, Qdrant, and all cross-system references. Enables deterministic deduplication and cross-layer traceability.",
+      "allowed_values": "String matching ^CRULE-[A-Z0-9]+-[0-9]{3,}$",
+      "examples": [
+        "CRULE-FW-BIOS-001",
+        "CRULE-DRV-OS-042",
+        "CRULE-SEC-MGT-007"
+      ],
+      "validation_rules": [
+        "Must match ID pattern",
+        "Must be globally unique",
+        "Must never be recycled",
+        "Must not contain spaces"
+      ],
+      "relationships_to_other_fields": [
+        "Referenced by sequence_prerequisite_ref in other rules",
+        "Used as the Neo4j node identity key"
+      ]
+    },
+    {
+      "field_name": "rule_type",
+      "purpose": "Classifies rule semantics to select correct validation logic, evaluation model, and required field set. The compliance engine routes rule evaluation by rule_type.",
+      "allowed_values": "Enum: min_version_constraint, known_issue_fixed, readiness_requirement, feature_support_added, incompatible_combination, update_order_constraint",
+      "examples": [
+        "min_version_constraint",
+        "incompatible_combination"
+      ],
+      "validation_rules": [
+        "Must be one of 6 defined values",
+        "Determines minimum confidence threshold",
+        "Determines allowed severity values"
+      ],
+      "relationships_to_other_fields": [
+        "Determines which fields are required (sequence_step required for update_order_constraint)",
+        "Restricts allowed severity values",
+        "Sets minimum confidence threshold"
+      ]
+    },
+    {
+      "field_name": "status",
+      "purpose": "Controls lifecycle state machine position, production eligibility, and allowed operations. The compliance engine only evaluates approved rules; Neo4j and Qdrant only import approved rules.",
+      "allowed_values": "Enum: candidate, validated, approved, deprecated, rejected, superseded, archived",
+      "examples": [
+        "candidate",
+        "approved",
+        "superseded"
+      ],
+      "validation_rules": [
+        "Must be one of 7 defined states",
+        "Transitions must follow allowed matrix",
+        "Only approved is production eligible"
+      ],
+      "relationships_to_other_fields": [
+        "approved_by and approved_at are required when status=approved",
+        "Determines import eligibility for Neo4j and Qdrant"
+      ]
+    },
+    {
+      "field_name": "subject",
+      "purpose": "Identifies the primary entity the rule applies to. Provides the RC2 entity ID enabling cross-layer graph linkage, plus version constraint for compliance evaluation.",
+      "allowed_values": "Object with entity_id (RC2 pattern), component_name, knowledge_category, version_constraint (operator, version_normalized, version_scheme, requirement_kind)",
+      "examples": [
+        {
+          "entity_id": "DRV-009",
+          "component_name": "Driver Pack",
+          "knowledge_category": "Driver",
+          "version_constraint": {
+            "operator": ">=",
+            "version_normalized": "12.4.0",
+            "version_scheme": "semantic",
+            "requirement_kind": "min_version"
+          }
+        }
+      ],
+      "validation_rules": [
+        "entity_id must exist in RC2 registry",
+        "operator must be from allowed set",
+        "version_normalized must be valid for declared version_scheme",
+        "knowledge_category must match RC2 entity category"
+      ],
+      "relationships_to_other_fields": [
+        "Must differ from object (no self-reference)",
+        "entity_id links to Layer 1 canonical entity via TARGETS relationship"
+      ]
+    },
+    {
+      "field_name": "predicate",
+      "purpose": "Defines the semantic relationship type between subject and object. The Neo4j generator uses this as the edge type. The compliance engine interprets the semantics to determine evaluation logic.",
+      "allowed_values": "Enum of 20 registered predicates: REQUIRES, SUPPORTS, CONFLICTS_WITH, FIXED_BY, UPGRADE_TO, DEPENDS_ON, REMEDIATES, BLOCKS, SUPERSEDES, REFERENCES, HAS_CONDITION, HAS_EXCEPTION, HAS_EVIDENCE, HAS_REMEDIATION, VALIDATED_BY, APPROVED_BY, DERIVED_FROM, REPLACES, TARGETS, SUPPORTED_BY",
+      "examples": [
+        "REQUIRES",
+        "CONFLICTS_WITH",
+        "FIXED_BY"
+      ],
+      "validation_rules": [
+        "Must be from the 20-item controlled vocabulary",
+        "Must not be null",
+        "Direction is always subject to object"
+      ],
+      "relationships_to_other_fields": [
+        "Determines semantic meaning of the subject-object pair",
+        "Neo4j uses this as the edge label between entity nodes"
+      ]
+    },
+    {
+      "field_name": "object",
+      "purpose": "Identifies the secondary entity the rule constrains. Same structure as subject. The compliance engine compares the installed version of this entity against the version_constraint.",
+      "allowed_values": "Same object schema as subject field",
+      "examples": [
+        {
+          "entity_id": "OS-013",
+          "component_name": "Enterprise OS",
+          "knowledge_category": "Operating System",
+          "version_constraint": {
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic",
+            "requirement_kind": "exact_version"
+          }
+        }
+      ],
+      "validation_rules": [
+        "entity_id must exist in RC2 registry",
+        "Must differ from subject",
+        "version_normalized must be valid for declared scheme"
+      ],
+      "relationships_to_other_fields": [
+        "Must differ from subject (self-reference forbidden)",
+        "entity_id links to Layer 1 entity via TARGETS relationship"
+      ]
+    },
+    {
+      "field_name": "conditions",
+      "purpose": "Defines the applicability gates. The compliance engine evaluates all conditions before firing the rule. Empty array means the rule applies universally.",
+      "allowed_values": "Array of condition objects with condition_id, entity_id, component_name, operator, version_normalized, version_scheme, condition_context",
+      "examples": [
+        [
+          {
+            "condition_id": "COND-001",
+            "entity_id": "OS-013",
+            "component_name": "Enterprise OS",
+            "operator": "==",
+            "version_normalized": "2026.1",
+            "version_scheme": "semantic"
+          }
+        ]
+      ],
+      "validation_rules": [
+        "incompatible_combination requires >= 2 conditions",
+        "Each condition_id must be unique within the rule",
+        "operator must be from allowed operator set",
+        "version_normalized required when operator is version-comparative"
+      ],
+      "relationships_to_other_fields": [
+        "Combined using condition_logic (AND/OR)",
+        "incompatible_combination rule_type enforces minimum 2 conditions"
+      ]
+    },
+    {
+      "field_name": "exceptions",
+      "purpose": "Declares scoped exclusions where the rule does not apply. Prevents false-positive compliance failures on exempt device families or configurations.",
+      "allowed_values": "Array of exception objects with exception_id, scope_type, excluded_entity_ids, excluded_device_families, justification",
+      "examples": [
+        [
+          {
+            "exception_id": "EXC-NICFW-001",
+            "scope_type": "device_family",
+            "excluded_device_families": [
+              "ProBook Series"
+            ],
+            "justification": "Device family lacks the affected NIC controller hardware."
+          }
+        ]
+      ],
+      "validation_rules": [
+        "exception_id must match ^EXC-[A-Z0-9]+-[0-9]+$",
+        "scope_type must be from allowed set",
+        "justification must be non-empty"
+      ],
+      "relationships_to_other_fields": [
+        "Connected via HAS_EXCEPTION relationship",
+        "Exceptions require evidence to be approved"
+      ]
+    },
+    {
+      "field_name": "dependencies",
+      "purpose": "Captures runtime or install-time operational dependencies that context-qualify the rule. Used by the compliance engine for dependency chain analysis and by the Root Cause Analysis engine.",
+      "allowed_values": "Array of dependency objects with dependency_id, entity_id, component_name, operator, version_normalized, dependency_type",
+      "examples": [
+        [
+          {
+            "dependency_id": "DC-SEC-MGT-001",
+            "entity_id": "MGT-010",
+            "component_name": "Endpoint Management Agent",
+            "operator": ">=",
+            "version_normalized": "3.7.0",
+            "dependency_type": "co_installation_requirement"
+          }
+        ]
+      ],
+      "validation_rules": [
+        "entity_id must exist in RC2 registry",
+        "dependency_type must be from allowed set"
+      ],
+      "relationships_to_other_fields": [
+        "Connected via DEPENDS_ON relationship in Neo4j",
+        "Used by Root Cause Analysis engine to trace dependency chains"
+      ]
+    },
+    {
+      "field_name": "conflicts",
+      "purpose": "Explicitly records component-version combinations that produce documented negative outcomes when co-existing with the subject. Drives the compliance engine prohibited state detection.",
+      "allowed_values": "Array of conflict objects with conflict_id, entity_id, component_name, operator, version_normalized, conflict_symptom, severity",
+      "examples": [
+        [
+          {
+            "conflict_id": "CC-FW-BIOS-001",
+            "entity_id": "FW-013",
+            "component_name": "System Firmware",
+            "operator": "<",
+            "version_normalized": "8.0.0",
+            "conflict_symptom": "Boot failure risk.",
+            "severity": "critical"
+          }
+        ]
+      ],
+      "validation_rules": [
+        "entity_id must exist in RC2 registry",
+        "conflict_symptom must be non-empty",
+        "severity required"
+      ],
+      "relationships_to_other_fields": [
+        "Connected via CONFLICTS_WITH relationship in Neo4j",
+        "Cross-reference with incompatible_combination rules for consistency"
+      ]
+    },
+    {
+      "field_name": "evidence",
+      "purpose": "Provides document-level traceability for every rule. Required before a rule can be approved. The source_excerpt is the primary text payload for Qdrant semantic embedding.",
+      "allowed_values": "Array of evidence objects with evidence_id, source_type, source_document_id, source_chunk_id, source_excerpt, confidence_score, extraction_method",
+      "examples": [
+        [
+          {
+            "evidence_id": "EVID-CA114A84AE60-001",
+            "source_type": "ingested_document",
+            "source_document_id": "DOC-CA114A84AE60",
+            "source_excerpt": "Driver Pack versions prior to 12.4.0 were not validated.",
+            "confidence_score": 0.9,
+            "extraction_method": "nlp_extraction"
+          }
+        ]
+      ],
+      "validation_rules": [
+        "At least 1 evidence required when status=approved",
+        "evidence_id must match pattern",
+        "source_document_id must match DOC-* pattern",
+        "confidence_score 0.0-1.0"
+      ],
+      "relationships_to_other_fields": [
+        "Connected via HAS_EVIDENCE relationship",
+        "source_excerpt is the Qdrant embedding payload",
+        "source_document_id must match source_document field"
+      ]
+    },
+    {
+      "field_name": "remediations",
+      "purpose": "Prescribes actionable corrective actions. The Recommendation Engine uses remediation_hint for human-readable instructions; sequence_order enables ordered remediation plans.",
+      "allowed_values": "Array of remediation objects with remediation_id, remediation_type, target_entity_id, target_component_name, target_version, operator, sequence_order, remediation_hint",
+      "examples": [
+        [
+          {
+            "remediation_id": "REM-DRV-001",
+            "remediation_type": "version_upgrade",
+            "target_entity_id": "DRV-009",
+            "target_component_name": "Driver Pack",
+            "target_version": "12.4.0",
+            "operator": ">=",
+            "sequence_order": 1,
+            "remediation_hint": "Upgrade Driver Pack to 12.4.0 or later."
+          }
+        ]
+      ],
+      "validation_rules": [
+        "target_entity_id must exist in RC2 registry",
+        "remediation_hint must be non-empty",
+        "sequence_order values unique within rule"
+      ],
+      "relationships_to_other_fields": [
+        "Connected via HAS_REMEDIATION relationship",
+        "sequence_order used with sequence_step for ordered upgrade plans"
+      ]
+    },
+    {
+      "field_name": "source_document",
+      "purpose": "Document-level provenance anchor. Must match source_document_id in at least one evidence record. Used for document-level audit trails.",
+      "allowed_values": "String matching ^DOC-[A-Z0-9]+$",
+      "examples": [
+        "DOC-CA114A84AE60"
+      ],
+      "validation_rules": [
+        "Must match ^DOC-[A-Z0-9]+$",
+        "Must be non-empty",
+        "Should match at least one evidence[].source_document_id"
+      ],
+      "relationships_to_other_fields": [
+        "Must be consistent with evidence[].source_document_id entries",
+        "Connected via DERIVED_FROM or REFERENCES relationship to CompatibilityDocument node"
+      ]
+    },
+    {
+      "field_name": "source_section",
+      "purpose": "Sub-document reference for precise traceability within the source document. Enables pinpointing the exact chunk, page, or section that contains the supporting text.",
+      "allowed_values": "String (chunk ID, page reference, or section heading)",
+      "examples": [
+        "CHUNK-000377",
+        "Page 1, Section 3.2"
+      ],
+      "validation_rules": [
+        "If present, must be non-empty"
+      ],
+      "relationships_to_other_fields": [
+        "Provides more precise location than source_document alone",
+        "Optional complement to evidence[].source_chunk_id"
+      ]
+    },
+    {
+      "field_name": "confidence",
+      "purpose": "Overall rule confidence synthesized from extraction quality and evidence reliability. Gates validation — rules below the rule_type minimum are rejected.",
+      "allowed_values": "Float between 0.0 and 1.0 inclusive",
+      "examples": [
+        0.9,
+        0.95,
+        0.75
+      ],
+      "validation_rules": [
+        "Must be 0.0-1.0 inclusive",
+        "Must meet rule_type minimum threshold",
+        "Below-threshold rules are rejected"
+      ],
+      "relationships_to_other_fields": [
+        "Minimum threshold determined by rule_type",
+        "Should be consistent with the highest evidence confidence_score"
+      ]
+    },
+    {
+      "field_name": "severity",
+      "purpose": "Drives compliance alert priority and remediation urgency. The compliance engine maps severity to alert levels; the recommendation engine uses it to prioritize fix ordering.",
+      "allowed_values": "Enum: critical, warning, info",
+      "examples": [
+        "critical",
+        "warning",
+        "info"
+      ],
+      "validation_rules": [
+        "Must be one of critical, warning, info",
+        "feature_support_added restricted to info/warning",
+        "incompatible_combination restricted to critical/warning",
+        "update_order_constraint restricted to critical/warning"
+      ],
+      "relationships_to_other_fields": [
+        "Restricts allowed values based on rule_type",
+        "Drives urgency_level in remediations (critical severity -> urgency: immediate)"
+      ]
+    },
+    {
+      "field_name": "condition_logic",
+      "purpose": "Boolean combinator for the conditions array. Tells the compliance engine whether ALL conditions (AND) or ANY condition (OR) must be true for the rule to fire.",
+      "allowed_values": "Enum: AND, OR",
+      "examples": [
+        "AND",
+        "OR"
+      ],
+      "validation_rules": [
+        "Must be AND or OR",
+        "Must not be null",
+        "Default is AND"
+      ],
+      "relationships_to_other_fields": [
+        "Applied across all entries in the conditions array",
+        "Affects rule firing semantics in the compliance evaluation engine"
+      ]
+    },
+    {
+      "field_name": "sequence_step",
+      "purpose": "Position in a multi-step update sequence chain. Required for update_order_constraint rules. Enables the compliance engine to enforce ordered update execution.",
+      "allowed_values": "Positive integer >= 1",
+      "examples": [
+        1,
+        2,
+        3
+      ],
+      "validation_rules": [
+        "Required when rule_type is update_order_constraint",
+        "Must be positive integer >= 1",
+        "Must be absent for all other rule types"
+      ],
+      "relationships_to_other_fields": [
+        "Must be <= sequence_total_steps when both present",
+        "Pairs with sequence_prerequisite_ref for chain traversal"
+      ]
+    },
+    {
+      "field_name": "sequence_total_steps",
+      "purpose": "Total chain length of the update sequence. Enables the compliance engine and recommendation engine to know when a sequence is complete.",
+      "allowed_values": "Integer >= 2",
+      "examples": [
+        2,
+        3
+      ],
+      "validation_rules": [
+        "If present, must be >= 2",
+        "Must be >= sequence_step",
+        "Only meaningful for update_order_constraint"
+      ],
+      "relationships_to_other_fields": [
+        "Complements sequence_step for chain progress tracking"
+      ]
+    },
+    {
+      "field_name": "sequence_prerequisite_ref",
+      "purpose": "Links this rule to its prerequisite step in the sequence. Enables the Root Cause Analysis engine to trace sequencing violations back to the blocking step.",
+      "allowed_values": "String matching rule_id pattern",
+      "examples": [
+        "CRULE-FW-BIOS-001"
+      ],
+      "validation_rules": [
+        "Must match CRULE-* pattern",
+        "Referenced rule must exist",
+        "Must not create circular reference chains",
+        "Required when update_order_constraint AND sequence_step >= 2"
+      ],
+      "relationships_to_other_fields": [
+        "Stored as BLOCKS edge in Neo4j",
+        "Used by Root Cause Analysis engine for chain traversal"
+      ]
+    },
+    {
+      "field_name": "issue_id",
+      "purpose": "Links the rule to a specific CVE or internal security issue record. Enables security tracking, patch management integration, and compliance reporting against known vulnerabilities.",
+      "allowed_values": "String in format SEC-YYYY-NNN or CVE-YYYY-NNNNN",
+      "examples": [
+        "SEC-2026-001",
+        "CVE-2026-12345"
+      ],
+      "validation_rules": [
+        "If present, must be non-empty",
+        "Recommended for all known_issue_fixed rules"
+      ],
+      "relationships_to_other_fields": [
+        "Relevant primarily for known_issue_fixed rule_type",
+        "Used by compliance engine for CVE-level reporting"
+      ]
+    },
+    {
+      "field_name": "tags",
+      "purpose": "Classification and quality tags for workflow management, filtering, and review routing. The unverified_value tag blocks approval without explicit human clearance.",
+      "allowed_values": "Array of strings from the defined tag vocabulary",
+      "examples": [
+        [
+          "security_critical"
+        ],
+        [
+          "unverified_value",
+          "needs_clarification"
+        ]
+      ],
+      "validation_rules": [
+        "Must be an array",
+        "Rules with unverified_value tag require human review before approval",
+        "Tags must be non-empty strings"
+      ],
+      "relationships_to_other_fields": [
+        "unverified_value tag blocks automatic approval promotion",
+        "Tags can be used as Qdrant filters for batch operations"
+      ]
+    },
+    {
+      "field_name": "created_timestamp",
+      "purpose": "Audit trail anchor. Records when the rule was first ingested. Used for retention policy enforcement and rule aging analysis.",
+      "allowed_values": "ISO-8601 UTC datetime string",
+      "examples": [
+        "2026-06-20T14:18:31.317312+00:00"
+      ],
+      "validation_rules": [
+        "Must be valid ISO-8601 datetime",
+        "Must not be modified after creation",
+        "Must be <= updated_timestamp"
+      ],
+      "relationships_to_other_fields": [
+        "Must be <= updated_timestamp",
+        "Must be <= approved_at when approved"
+      ]
+    },
+    {
+      "field_name": "updated_timestamp",
+      "purpose": "Records the most recent modification. Used to detect stale candidate rules and enforce the 90-day candidate expiry policy.",
+      "allowed_values": "ISO-8601 UTC datetime string",
+      "examples": [
+        "2026-06-20T15:30:00.000000+00:00"
+      ],
+      "validation_rules": [
+        "Must be valid ISO-8601 datetime",
+        "Must be >= created_timestamp",
+        "Must be updated on every field change"
+      ],
+      "relationships_to_other_fields": [
+        "Must be >= created_timestamp",
+        "Drives 90-day candidate expiry policy enforcement"
+      ]
+    },
+    {
+      "field_name": "approved_by",
+      "purpose": "Governance record of the human reviewer who approved this rule. Provides the auditability proof required for production import.",
+      "allowed_values": "Non-empty string identifier of an authorized reviewer",
+      "examples": [
+        "tech_lead_001",
+        "compliance_officer_002"
+      ],
+      "validation_rules": [
+        "Required and non-empty when status=approved",
+        "Must be null when status is candidate or validated"
+      ],
+      "relationships_to_other_fields": [
+        "Must be present simultaneously with approved_at when status=approved",
+        "Stored via APPROVED_BY relationship in Neo4j"
+      ]
+    },
+    {
+      "field_name": "approved_at",
+      "purpose": "Timestamps the formal governance approval decision. Required for production import eligibility. Used by the audit trail and retention policy engines.",
+      "allowed_values": "ISO-8601 UTC datetime string",
+      "examples": [
+        "2026-06-20T15:00:00.000000+00:00"
+      ],
+      "validation_rules": [
+        "Required and valid ISO-8601 when status=approved",
+        "Must be null when status is candidate or validated",
+        "Must be >= created_timestamp"
+      ],
+      "relationships_to_other_fields": [
+        "Must be present simultaneously with approved_by when status=approved",
+        "Must be >= created_timestamp"
+      ]
+    }
+  ]
+}

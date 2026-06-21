@@ -1,0 +1,29 @@
+{
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "generated_rule_count": 11,
+  "decision_record_count": 11,
+  "recommended_approve": 0,
+  "recommended_approve_with_corrections": 0,
+  "recommended_reject": 0,
+  "recommended_defer": 0,
+  "recommended_clarification": 11,
+  "recommended_split": 0,
+  "recommended_merge": 0,
+  "high_risk_rule_count": 11,
+  "evidence_gap_count": 11,
+  "pending_human_decisions": 11,
+  "clarification_item_count": 32,
+  "source_candidate_count": 42,
+  "accounted_source_candidate_count": 42,
+  "lineage_complete": true,
+  "phase8_status": "PASSED_WITH_WARNINGS",
+  "production_import_allowed": false,
+  "phase10_allowed": false,
+  "errors": [],
+  "warnings": [
+    "Original source document is unavailable for authoritative evidence verification.",
+    "No rule has been approved; every decision remains pending.",
+    "Phase 10 and Phase 11 were not executed."
+  ],
+  "summary": "Prepared 11 generated rules and 32 clarification items for human semantic review."
+}

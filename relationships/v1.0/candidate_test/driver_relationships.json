@@ -1,0 +1,604 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "candidate",
+  "domain": "Driver",
+  "relationship_count": 17,
+  "relationships": [
+    {
+      "relationship_id": "REL-CAND-78963D7884F3",
+      "source_id": "DRV-001",
+      "relationship_type": "USES",
+      "target_id": "DRV-003",
+      "statement": "Graphics Driver uses Chipset Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A0C02BAB2295",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-001",
+          "title": "RC2 Cross-Reference: Chipset Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-001; target_entity_id=DRV-003; reference=Chipset Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-6D7053F88829",
+      "source_id": "DRV-001",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Graphics Driver uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-2401CC2D400D",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-001",
+          "title": "RC2 Cross-Reference: Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-001; target_entity_id=DRV-006; reference=Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-8A0FEC755DF5",
+      "source_id": "DRV-001",
+      "relationship_type": "USES",
+      "target_id": "DRV-007",
+      "statement": "Graphics Driver uses WDDM.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-66A15313ADEC",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-001",
+          "title": "RC2 Cross-Reference: WDDM",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-001; target_entity_id=DRV-007; reference=WDDM",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-934EB322FF77",
+      "source_id": "DRV-002",
+      "relationship_type": "USES",
+      "target_id": "DRV-003",
+      "statement": "Audio Driver uses Chipset Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-0617E8D0F00E",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-002",
+          "title": "RC2 Cross-Reference: Chipset Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-002; target_entity_id=DRV-003; reference=Chipset Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-954128929A56",
+      "source_id": "DRV-002",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Audio Driver uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-48250A58CB6B",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-002",
+          "title": "RC2 Cross-Reference: Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-002; target_entity_id=DRV-006; reference=Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-4EA2E727848D",
+      "source_id": "DRV-003",
+      "relationship_type": "USES",
+      "target_id": "DRV-005",
+      "statement": "Chipset Driver uses Storage Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-562D5BF8B104",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-003",
+          "title": "RC2 Cross-Reference: Storage Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-003; target_entity_id=DRV-005; reference=Storage Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-45232ACF3A49",
+      "source_id": "DRV-003",
+      "relationship_type": "USES",
+      "target_id": "DRV-004",
+      "statement": "Chipset Driver uses Network Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-7EE9CC4799DA",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-003",
+          "title": "RC2 Cross-Reference: Network Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-003; target_entity_id=DRV-004; reference=Network Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D937EACF5AF8",
+      "source_id": "DRV-003",
+      "relationship_type": "USES",
+      "target_id": "DRV-001",
+      "statement": "Chipset Driver uses Graphics Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-BBB6CF2137EC",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-003",
+          "title": "RC2 Cross-Reference: Graphics Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-003; target_entity_id=DRV-001; reference=Graphics Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-8D585FA550EC",
+      "source_id": "DRV-003",
+      "relationship_type": "USES",
+      "target_id": "DRV-002",
+      "statement": "Chipset Driver uses Audio Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A148B45D6E2F",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-003",
+          "title": "RC2 Cross-Reference: Audio Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-003; target_entity_id=DRV-002; reference=Audio Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-2F97834361B6",
+      "source_id": "DRV-003",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Chipset Driver uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-ED8A102E8E1C",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-003",
+          "title": "RC2 Cross-Reference: Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-003; target_entity_id=DRV-006; reference=Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-6B11DA59FAF1",
+      "source_id": "DRV-004",
+      "relationship_type": "USES",
+      "target_id": "DRV-003",
+      "statement": "Network Driver uses Chipset Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E01909617CD4",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-004",
+          "title": "RC2 Cross-Reference: Chipset Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-004; target_entity_id=DRV-003; reference=Chipset Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-458497CCBF5F",
+      "source_id": "DRV-004",
+      "relationship_type": "USES",
+      "target_id": "DRV-008",
+      "statement": "Network Driver uses NDIS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-54407945625C",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-004",
+          "title": "RC2 Cross-Reference: NDIS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-004; target_entity_id=DRV-008; reference=NDIS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-E84C1E42CB34",
+      "source_id": "DRV-004",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Network Driver uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A8C9DC1A417B",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-004",
+          "title": "RC2 Cross-Reference: Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-004; target_entity_id=DRV-006; reference=Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-5F2EF528AB18",
+      "source_id": "DRV-005",
+      "relationship_type": "USES",
+      "target_id": "DRV-003",
+      "statement": "Storage Driver uses Chipset Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3791DF3FC480",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-005",
+          "title": "RC2 Cross-Reference: Chipset Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-005; target_entity_id=DRV-003; reference=Chipset Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-CBC6B6B082E4",
+      "source_id": "DRV-005",
+      "relationship_type": "USES",
+      "target_id": "DRV-006",
+      "statement": "Storage Driver uses Driver Signing.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-323A08B3A30E",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-005",
+          "title": "RC2 Cross-Reference: Driver Signing",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-005; target_entity_id=DRV-006; reference=Driver Signing",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D9CAA03AE1E3",
+      "source_id": "DRV-007",
+      "relationship_type": "USES",
+      "target_id": "DRV-001",
+      "statement": "WDDM uses Graphics Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-CA3CEEC66ED2",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-007",
+          "title": "RC2 Cross-Reference: Graphics Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-007; target_entity_id=DRV-001; reference=Graphics Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-75D2E840547C",
+      "source_id": "DRV-008",
+      "relationship_type": "USES",
+      "target_id": "DRV-004",
+      "statement": "NDIS uses Network Driver.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B0192D317806",
+          "source_type": "knowledge_base_source",
+          "source_id": "DRV-008",
+          "title": "RC2 Cross-Reference: Network Driver",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=DRV-008; target_entity_id=DRV-004; reference=Network Driver",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Driver"
+      }
+    }
+  ]
+}

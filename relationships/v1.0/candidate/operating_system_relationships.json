@@ -1,0 +1,779 @@
+{
+  "relationship_ontology_version": "1.0.0",
+  "entity_registry_version": "1.1.0-rc2",
+  "status": "candidate",
+  "domain": "Operating System",
+  "relationship_count": 22,
+  "relationships": [
+    {
+      "relationship_id": "REL-CAND-B02D0B0779F6",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "OS-002",
+      "statement": "Windows uses Windows 10.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-922B926E3C1A",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: Windows 10",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=OS-002; reference=Windows 10",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-9FD6F175888F",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "OS-003",
+      "statement": "Windows uses Windows 11.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-B4D4DCBC6818",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: Windows 11",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=OS-003; reference=Windows 11",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-671AD485B964",
+      "source_id": "OS-001",
+      "relationship_type": "USES",
+      "target_id": "OS-009",
+      "statement": "Windows uses Windows NT Kernel.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9173F68859C1",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-001",
+          "title": "RC2 Cross-Reference: Windows NT Kernel",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-001; target_entity_id=OS-009; reference=Windows NT Kernel",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-535AA761EFD0",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "Windows 10 uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-CADF59474B8A",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-EB02C50DB807",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "OS-003",
+      "statement": "Windows 10 uses Windows 11.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-92A0EF14473D",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: Windows 11",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=OS-003; reference=Windows 11",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-435B48557C87",
+      "source_id": "OS-002",
+      "relationship_type": "USES",
+      "target_id": "OS-009",
+      "statement": "Windows 10 uses Windows NT Kernel.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4393742DD014",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-002",
+          "title": "RC2 Cross-Reference: Windows NT Kernel",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-002; target_entity_id=OS-009; reference=Windows NT Kernel",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-278F780E69C0",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "Windows 11 uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A39A10AEEB19",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-86794E2F9469",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "OS-002",
+      "statement": "Windows 11 uses Windows 10.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9A51F79ADB95",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: Windows 10",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=OS-002; reference=Windows 10",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-9354B0653DCF",
+      "source_id": "OS-003",
+      "relationship_type": "USES",
+      "target_id": "OS-009",
+      "statement": "Windows 11 uses Windows NT Kernel.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-2817F8C387A2",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-003",
+          "title": "RC2 Cross-Reference: Windows NT Kernel",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-003; target_entity_id=OS-009; reference=Windows NT Kernel",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-E3CFCF825253",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "OS-005",
+      "statement": "Linux uses Ubuntu.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-E05F72D5EB2D",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: Ubuntu",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=OS-005; reference=Ubuntu",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-C32B8BD0CB73",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "OS-006",
+      "statement": "Linux uses RHEL.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-F93BEC98E8C6",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: RHEL",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=OS-006; reference=RHEL",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-B79870979951",
+      "source_id": "OS-004",
+      "relationship_type": "USES",
+      "target_id": "OS-008",
+      "statement": "Linux uses Linux Kernel.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-727632A1E313",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-004",
+          "title": "RC2 Cross-Reference: Linux Kernel",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-004; target_entity_id=OS-008; reference=Linux Kernel",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-FC07AEAABCE2",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "OS-004",
+      "statement": "Ubuntu uses Linux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C4439B719387",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: Linux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=OS-004; reference=Linux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-7B6D3EE846D2",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "OS-011",
+      "statement": "Ubuntu uses Debian.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9C29EA907A87",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: Debian",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=OS-011; reference=Debian",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-D2C11AA5C7C3",
+      "source_id": "OS-005",
+      "relationship_type": "USES",
+      "target_id": "OS-008",
+      "statement": "Ubuntu uses Linux Kernel.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-3E371C1D1AAD",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-005",
+          "title": "RC2 Cross-Reference: Linux Kernel",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-005; target_entity_id=OS-008; reference=Linux Kernel",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-22393831E135",
+      "source_id": "OS-006",
+      "relationship_type": "USES",
+      "target_id": "OS-004",
+      "statement": "RHEL uses Linux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-538F2792F727",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-006",
+          "title": "RC2 Cross-Reference: Linux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-006; target_entity_id=OS-004; reference=Linux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-AF3BC710F390",
+      "source_id": "OS-006",
+      "relationship_type": "USES",
+      "target_id": "OS-008",
+      "statement": "RHEL uses Linux Kernel.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-4AF00766D9FE",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-006",
+          "title": "RC2 Cross-Reference: Linux Kernel",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-006; target_entity_id=OS-008; reference=Linux Kernel",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-DF6AD9DBAAFB",
+      "source_id": "OS-007",
+      "relationship_type": "USES",
+      "target_id": "OS-012",
+      "statement": "macOS uses XNU Kernel.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-8DEFF79FD8D1",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-007",
+          "title": "RC2 Cross-Reference: XNU Kernel",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-007; target_entity_id=OS-012; reference=XNU Kernel",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-C5A4EDB6E200",
+      "source_id": "OS-008",
+      "relationship_type": "USES",
+      "target_id": "OS-004",
+      "statement": "Linux Kernel uses Linux.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-872CEA558BB9",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-008",
+          "title": "RC2 Cross-Reference: Linux",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-008; target_entity_id=OS-004; reference=Linux",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-A0975F4A9BF3",
+      "source_id": "OS-009",
+      "relationship_type": "USES",
+      "target_id": "OS-001",
+      "statement": "Windows NT Kernel uses Windows.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-A0CA952D557C",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-009",
+          "title": "RC2 Cross-Reference: Windows",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-009; target_entity_id=OS-001; reference=Windows",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-31CA970F53F5",
+      "source_id": "OS-011",
+      "relationship_type": "USES",
+      "target_id": "OS-005",
+      "statement": "Debian uses Ubuntu.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-9241AE4E18FD",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-011",
+          "title": "RC2 Cross-Reference: Ubuntu",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-011; target_entity_id=OS-005; reference=Ubuntu",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    },
+    {
+      "relationship_id": "REL-CAND-3976DE59C2A9",
+      "source_id": "OS-012",
+      "relationship_type": "USES",
+      "target_id": "OS-007",
+      "statement": "XNU Kernel uses macOS.",
+      "assertion_scope": "universal",
+      "condition_logic": "ALL",
+      "conditions": [],
+      "evidence": [
+        {
+          "evidence_id": "EVID-CAND-C2BB43242BE8",
+          "source_type": "knowledge_base_source",
+          "source_id": "OS-012",
+          "title": "RC2 Cross-Reference: macOS",
+          "uri": "ontology/releases/v1.1-rc2/cross_references_v1.1.json",
+          "locator": "source_entity_id=OS-012; target_entity_id=OS-007; reference=macOS",
+          "notes": "Candidate relationship from approved cross-reference resolution"
+        }
+      ],
+      "confidence": 0.7,
+      "verification_status": "review_required",
+      "approval_status": "candidate",
+      "approved_by": null,
+      "approved_at": null,
+      "source_release": "1.1.0-rc2",
+      "relationship_ontology_version": "1.0.0",
+      "metadata": {
+        "extraction_method": "approved_cross_reference",
+        "source_field": "cross_references",
+        "cross_reference_status": "resolved",
+        "reference_resolution_method": "canonical_name",
+        "routing_domain": "Operating System"
+      }
+    }
+  ]
+}

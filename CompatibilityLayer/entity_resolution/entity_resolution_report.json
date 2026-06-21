@@ -1,0 +1,232 @@
+{
+  "report_id": "ENT-RES-RPT-L3-001",
+  "report_type": "entity_resolution_report",
+  "ontology_layer": "Layer 3 — Compatibility Ontology",
+  "created_date": "2026-06-20",
+  "execution_timestamp": "2026-06-20T00:00:00Z",
+  "status": "COMPLETE",
+  "executed_by": "Layer 3 Compatibility Knowledge Engineer",
+
+  "registry_version_used": "1.1.0-rc2",
+  "registry_path_used": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+  "candidate_source": "CompatibilityLayer/source/raw/normalized_rule_candidates.json",
+  "source_document_id": "DOC-CA114A84AE60",
+
+  "entity_counts": {
+    "total_raw_component_names_observed": 19,
+    "discarded_non_component_artifacts": 3,
+    "total_discovered_entities": 11,
+    "resolved_entities": 9,
+    "unresolved_entities_in_scope": 0,
+    "out_of_scope_entities": 3,
+    "resolution_rate_pct": 100.0,
+    "resolution_rate_fraction": "9/9"
+  },
+
+  "resolution_rate_note": "100% resolution rate for all in-scope entities. The 3 out-of-scope items (ProBook and Enterprise Laptop Series, EdgeStation Workstations, SIEM connector aspect) are hardware platforms and third-party integrations outside Layer 1 scope and require no registry action. Initial phase produced 3 direct resolutions; the remediation phase completed 6 additional resolutions via 4 new entity registrations (OS-013, FW-013, DRV-009, DRV-010) and 2 alias additions (SEC-004 gained 'Security Agent'; MGT-010 gained 'Endpoint Management Agent' and 'Endpoint Mgmt Agent'). Note: BIOS/System BIOS variants (FW-001, FW-005) were already resolved in the initial phase; the 9 count reflects distinct resolved logical entity groups.",
+
+  "discarded_entities": [
+    {"raw_name": "unknown", "reason": "Sentinel value in extractor output — not a real component name", "count_in_candidates": 6},
+    {"raw_name": "Reboot Cycle", "reason": "Readiness/process concept, not a software component entity", "count_in_candidates": 1},
+    {"raw_name": "Step 1", "reason": "Procedural step reference, not a software component entity", "count_in_candidates": 1}
+  ],
+
+  "resolved_entities": [
+    {
+      "entity_name": "System BIOS / BIOS",
+      "resolved_entity_id": "FW-001",
+      "canonical_name": "BIOS",
+      "knowledge_category": "Firmware",
+      "resolution_method": "alias_match + canonical_name_match + normalized_name_match",
+      "confidence": 1.0,
+      "candidate_count": 9
+    },
+    {
+      "entity_name": "NIC Firmware",
+      "resolved_entity_id": "FW-005",
+      "canonical_name": "Network Firmware",
+      "knowledge_category": "Firmware",
+      "resolution_method": "alias_match",
+      "confidence": 1.0,
+      "candidate_count": 1
+    },
+    {
+      "entity_name": "SIEM (platform aspect)",
+      "resolved_entity_id": "MGT-008",
+      "canonical_name": "SIEM",
+      "knowledge_category": "Management",
+      "resolution_method": "partial_match_substring_platform",
+      "confidence": 0.75,
+      "candidate_count": 1
+    },
+    {
+      "entity_name": "Enterprise OS",
+      "resolved_entity_id": "OS-013",
+      "canonical_name": "Enterprise OS",
+      "knowledge_category": "Operating System",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "candidate_count": 10,
+      "resolution_action": "new_entity_registered"
+    },
+    {
+      "entity_name": "System Firmware / firmware",
+      "resolved_entity_id": "FW-013",
+      "canonical_name": "System Firmware",
+      "knowledge_category": "Firmware",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "candidate_count": 13,
+      "resolution_action": "new_entity_registered"
+    },
+    {
+      "entity_name": "Driver Pack",
+      "resolved_entity_id": "DRV-009",
+      "canonical_name": "Driver Pack",
+      "knowledge_category": "Driver",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "candidate_count": 10,
+      "resolution_action": "new_entity_registered"
+    },
+    {
+      "entity_name": "Platform Driver Pack",
+      "resolved_entity_id": "DRV-010",
+      "canonical_name": "Platform Driver Pack",
+      "knowledge_category": "Driver",
+      "resolution_method": "new_registration_canonical_name_match",
+      "confidence": 1.0,
+      "candidate_count": 4,
+      "resolution_action": "new_entity_registered"
+    },
+    {
+      "entity_name": "Security Agent",
+      "resolved_entity_id": "SEC-004",
+      "canonical_name": "EDR Agent",
+      "knowledge_category": "Security",
+      "resolution_method": "alias_match",
+      "confidence": 1.0,
+      "candidate_count": 8,
+      "resolution_action": "alias_added_to_existing_entity"
+    },
+    {
+      "entity_name": "Endpoint Management Agent",
+      "resolved_entity_id": "MGT-010",
+      "canonical_name": "Endpoint Agent",
+      "knowledge_category": "Management",
+      "resolution_method": "alias_match",
+      "confidence": 1.0,
+      "candidate_count": 5,
+      "resolution_action": "alias_added_to_existing_entity"
+    }
+  ],
+
+  "unresolved_entities": [
+    {
+      "entity_name": "ProBook and Enterprise Laptop Series",
+      "scope_classification": "out_of_scope_hardware_platform",
+      "candidate_count": 1,
+      "action": "No Layer 1 registration required — hardware platform, outside Layer 1 scope"
+    },
+    {
+      "entity_name": "EdgeStation Workstations",
+      "scope_classification": "out_of_scope_hardware_platform",
+      "candidate_count": 1,
+      "action": "No Layer 1 registration required — hardware platform, outside Layer 1 scope"
+    },
+    {
+      "entity_name": "third-party SIEM connectors (connector aspect)",
+      "scope_classification": "out_of_scope_third_party_integration",
+      "candidate_count": 1,
+      "action": "No Layer 1 registration required — SIEM platform resolved to MGT-008; connector aspect is third-party integration outside Layer 1 scope"
+    }
+  ],
+
+  "duplicate_mappings": {
+    "description": "Multiple raw variant names that resolved to or group under the same logical entity.",
+    "duplicate_groups": [
+      {
+        "logical_entity": "System BIOS / BIOS",
+        "variants": ["System BIOS", "BIOS", "bios"],
+        "resolved_to": "FW-001",
+        "deduplication_method": "canonical + alias + normalized match — all three variants map to same entity"
+      },
+      {
+        "logical_entity": "System Firmware / firmware",
+        "variants": ["System Firmware", "firmware"],
+        "resolved_to": "FW-013",
+        "deduplication_method": "semantic grouping — 'firmware' is a type-string normalization of null-name records representing same product. New entity FW-013 registered."
+      },
+      {
+        "logical_entity": "Driver Pack",
+        "variants": ["Driver Pack", "driver pack"],
+        "resolved_to": "DRV-009",
+        "deduplication_method": "case normalization — lowercase variant is the same entity. New entity DRV-009 registered."
+      },
+      {
+        "logical_entity": "Endpoint Management Agent",
+        "variants": ["Endpoint Management Agent", "Endpoint Mgmt Agent"],
+        "resolved_to": "MGT-010",
+        "deduplication_method": "source evidence — RCAND-000395 explicitly equates both forms. Aliases added to MGT-010."
+      }
+    ]
+  },
+
+  "resolution_method_summary": {
+    "pass_1_exact_canonical_match": {"attempted": 11, "succeeded": 5, "entities": ["BIOS", "Enterprise OS (post-registration)", "System Firmware (post-registration)", "Driver Pack (post-registration)", "Platform Driver Pack (post-registration)"]},
+    "pass_2_alias_match": {"attempted": 11, "succeeded": 4, "entities": ["System BIOS via FW-001 alias", "NIC Firmware via FW-005 alias", "Security Agent via SEC-004 alias (post-addition)", "Endpoint Management Agent via MGT-010 alias (post-addition)"]},
+    "pass_3_normalized_name_match": {"attempted": 11, "succeeded": 1, "entities": ["bios via FW-001 normalized_name"]},
+    "pass_4_case_insensitive_match": {"attempted": 11, "succeeded": 1, "entities": ["SIEM token in 'third-party SIEM connectors' — partial match, confidence 0.75"]},
+    "note": "BIOS group succeeded on passes 1, 2, and 3 independently — counted once. Total distinct logical resolutions for in-scope entities = 10/10. Remediation actions: 4 new entity registrations + 2 alias additions."
+  },
+
+  "candidate_coverage_analysis": {
+    "candidates_with_all_entities_resolved": 42,
+    "candidates_with_only_out_of_scope_entities": 0,
+    "total_candidates_scanned": 42,
+    "note": "All 42 candidates now have full entity resolution coverage. Every software component referenced in RCAND-000360 through RCAND-000401 maps to a registered RC2 entity. Hardware platform references (ProBook, EdgeStation) are handled as condition metadata scope — they do not require Layer 1 entity registration."
+  },
+
+  "data_quality_findings_summary": [
+    {
+      "finding_id": "DQF-001",
+      "issue": "component_type mislabeling: 'System Firmware' labeled as component_type='bios' in RCAND-000364 and RCAND-000374",
+      "affected_candidates": 2,
+      "impact": "Resolved — FW-013 (System Firmware) is now registered. Phase 4 rule production should normalise component_type to 'firmware' for these two records when mapping to FW-013."
+    },
+    {
+      "finding_id": "DQF-002",
+      "issue": "Null component_name populated with type-string by normalizer",
+      "affected_candidates": 11,
+      "impact": "Low — all now resolve correctly. Lowercased type-string forms ('bios'→FW-001, 'firmware'→FW-013, 'driver'→DRV-009) map to registered entities."
+    },
+    {
+      "finding_id": "DQF-003",
+      "issue": "Readiness process artifacts ('Reboot Cycle', 'Step 1') extracted as component requirements",
+      "affected_candidates": 2,
+      "impact": "Low — discarded before resolution. Phase 4 should handle RCAND-000398 and RCAND-000401 with special readiness requirement logic rather than component entity resolution."
+    }
+  ],
+
+  "phase4_readiness_assessment": {
+    "status": "READY",
+    "resolved_entities_ready_for_phase4": [
+      "FW-001 (BIOS) — 9 candidates",
+      "FW-005 (Network Firmware / NIC Firmware) — 1 candidate",
+      "FW-013 (System Firmware) — 13 candidates",
+      "OS-013 (Enterprise OS) — 10 candidates",
+      "DRV-009 (Driver Pack) — 10 candidates",
+      "DRV-010 (Platform Driver Pack) — 4 candidates",
+      "SEC-004 (EDR Agent / Security Agent) — 8 candidates",
+      "MGT-008 (SIEM) — 1 candidate",
+      "MGT-010 (Endpoint Agent / Endpoint Management Agent) — 5 candidates"
+    ],
+    "blocking_gaps": [],
+    "non_blocking_notes": [
+      "ProBook and Enterprise Laptop Series — hardware platform scope reference; handled as condition metadata in Phase 4",
+      "EdgeStation Workstations — hardware platform scope reference; handled as condition metadata in Phase 4",
+      "third-party SIEM connectors connector aspect — out-of-scope third-party integration; SIEM platform resolved to MGT-008"
+    ],
+    "recommended_action_before_phase4": "None. All in-scope entities are resolved. Phase 4 rule production may proceed against the updated RC2 registry (v1.1.0-rc2, entity_count=60)."
+  }
+}
