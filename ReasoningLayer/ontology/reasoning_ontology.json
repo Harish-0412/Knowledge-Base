@@ -1,0 +1,131 @@
+{
+  "ontology_id": "reasoning-ontology-layer4-phase1-v1.0.0",
+  "ontology_version": "1.0.0",
+  "ontology_layer": "Layer 4 Phase 1 - Reasoning Ontology",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "purpose": "Vendor-neutral explanation, risk assessment, recommendation, prevention, and lifecycle semantics for enterprise endpoint compatibility and configuration compliance.",
+  "grounding": {
+    "layer_1": {
+      "path": "Domain_layer/normalized",
+      "entity_count": 24,
+      "domains": [
+        "Firmware",
+        "OperatingSystem",
+        "Driver",
+        "SecurityComponent",
+        "ManagementTool"
+      ]
+    },
+    "layer_3": {
+      "path": "CompatibilityLayer/ontology",
+      "rule_types": [
+        "min_version_constraint",
+        "known_issue_fixed",
+        "readiness_requirement",
+        "feature_support_added",
+        "incompatible_combination",
+        "update_order_constraint"
+      ],
+      "patterns": [
+        "version gate",
+        "required dependency",
+        "prohibited combination",
+        "support lifecycle",
+        "ordered upgrade path",
+        "evidence-derived remediation"
+      ]
+    }
+  },
+  "entity_types": [
+    "RootCause",
+    "Violation",
+    "RiskLevel",
+    "Recommendation",
+    "Prevention",
+    "Evidence",
+    "ReasoningFinding",
+    "CompatibilityRule"
+  ],
+  "components": {
+    "root_causes": {
+      "path": "ReasoningLayer/ontology/root_cause_types.json",
+      "count": 12
+    },
+    "violations": {
+      "path": "ReasoningLayer/ontology/violation_types.json",
+      "count": 10
+    },
+    "risk_levels": {
+      "path": "ReasoningLayer/ontology/risk_levels.json",
+      "count": 5
+    },
+    "recommendations": {
+      "path": "ReasoningLayer/ontology/recommendation_types.json",
+      "count": 10
+    },
+    "preventions": {
+      "path": "ReasoningLayer/ontology/prevention_types.json",
+      "count": 10
+    },
+    "relationships": {
+      "path": "ReasoningLayer/ontology/reasoning_relationships.json",
+      "count": 10
+    },
+    "lifecycle_states": {
+      "path": "ReasoningLayer/ontology/reasoning_lifecycle.json",
+      "count": 9
+    }
+  },
+  "risk_escalation": [
+    {
+      "from": "Informational",
+      "to": "Low"
+    },
+    {
+      "from": "Low",
+      "to": "Medium"
+    },
+    {
+      "from": "Medium",
+      "to": "High"
+    },
+    {
+      "from": "High",
+      "to": "Critical"
+    }
+  ],
+  "risk_assignment_factors": [
+    "violation severity",
+    "business criticality",
+    "scope",
+    "exploitability",
+    "failure likelihood",
+    "dependency depth",
+    "evidence confidence",
+    "remediation availability"
+  ],
+  "dependency_reasoning": {
+    "traversal": "Follow Layer 3 DEPENDS_ON and REQUIRES edges transitively with cycle detection.",
+    "aggregation": "The highest unresolved upstream risk is inherited by dependent findings; scope and dependency depth may raise it.",
+    "unknown_handling": "Missing or contradictory evidence produces UnknownState and never silently passes."
+  },
+  "reasoning_flow": [
+    "Layer1Entity",
+    "CompatibilityRule",
+    "Violation",
+    "RootCause",
+    "RiskLevel",
+    "Recommendation",
+    "Prevention"
+  ],
+  "example_chain": {
+    "input": "Firmware 3.2",
+    "violation": "VIOL-VERSION",
+    "root_cause": "RC-VERSION-MISMATCH",
+    "risk": "Critical",
+    "recommendation": "REC-UPGRADE",
+    "prevention": "PREV-VERSION-VALIDATION"
+  },
+  "resolution_policy": "A finding reaches Resolved only after remediation evidence is verified and the originating rule no longer fails."
+}

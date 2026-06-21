@@ -1,0 +1,89 @@
+{
+  "ontology_component": "reasoning_lifecycle",
+  "ontology_version": "1.0.0",
+  "lifecycle_state_count": 9,
+  "initial_state": "Detected",
+  "terminal_states": [
+    "Resolved"
+  ],
+  "states": [
+    {
+      "state": "Detected",
+      "description": "A rule evaluation or observation creates a finding."
+    },
+    {
+      "state": "Classified",
+      "description": "The violation taxonomy is assigned."
+    },
+    {
+      "state": "Analyzed",
+      "description": "Evidence, dependencies, conflicts, and context are evaluated."
+    },
+    {
+      "state": "RootCauseIdentified",
+      "description": "One or more supported root causes are selected."
+    },
+    {
+      "state": "RecommendationGenerated",
+      "description": "Applicable actions are ranked by risk and feasibility."
+    },
+    {
+      "state": "RemediationPlanned",
+      "description": "An approved execution plan, owner, and window exist."
+    },
+    {
+      "state": "RemediationApplied",
+      "description": "The planned change has been executed."
+    },
+    {
+      "state": "Verified",
+      "description": "Post-change evaluation confirms expected state and risk reduction."
+    },
+    {
+      "state": "Resolved",
+      "description": "The violation is closed with retained evidence and lineage."
+    }
+  ],
+  "valid_transitions": [
+    {
+      "from": "Detected",
+      "to": "Classified"
+    },
+    {
+      "from": "Classified",
+      "to": "Analyzed"
+    },
+    {
+      "from": "Analyzed",
+      "to": "RootCauseIdentified"
+    },
+    {
+      "from": "RootCauseIdentified",
+      "to": "RecommendationGenerated"
+    },
+    {
+      "from": "RecommendationGenerated",
+      "to": "RemediationPlanned"
+    },
+    {
+      "from": "RemediationPlanned",
+      "to": "RemediationApplied"
+    },
+    {
+      "from": "RemediationApplied",
+      "to": "Verified"
+    },
+    {
+      "from": "Verified",
+      "to": "Resolved"
+    },
+    {
+      "from": "Verified",
+      "to": "Analyzed"
+    },
+    {
+      "from": "RemediationApplied",
+      "to": "RemediationPlanned"
+    }
+  ]
+}

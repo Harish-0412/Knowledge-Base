@@ -1,0 +1,37 @@
+[
+  {
+    "risk_level": "Informational",
+    "description": "No current adverse effect; observation improves context or planning.",
+    "business_impact": "No material interruption expected.",
+    "technical_impact": "Capability or evidence note only.",
+    "recommended_response_time": "Review during the next scheduled assessment."
+  },
+  {
+    "risk_level": "Low",
+    "description": "Limited exposure with a stable workaround or low likelihood of impact.",
+    "business_impact": "Minor localized inefficiency.",
+    "technical_impact": "Non-blocking deviation or reduced capability.",
+    "recommended_response_time": "Within 30 calendar days."
+  },
+  {
+    "risk_level": "Medium",
+    "description": "Material exposure that may affect service quality or compliance if left unresolved.",
+    "business_impact": "Degraded productivity or audit concern.",
+    "technical_impact": "Intermittent failure, drift, or unsupported state.",
+    "recommended_response_time": "Within 10 business days."
+  },
+  {
+    "risk_level": "High",
+    "description": "Probable or significant operational, compliance, or security impact.",
+    "business_impact": "Service disruption, control failure, or substantial support risk.",
+    "technical_impact": "Blocking incompatibility, exposed vulnerability, or failed dependency.",
+    "recommended_response_time": "Within 24 hours; expedite remediation."
+  },
+  {
+    "risk_level": "Critical",
+    "description": "Immediate or systemic threat requiring containment or blocking action.",
+    "business_impact": "Widespread outage, severe security exposure, data loss, or regulatory breach.",
+    "technical_impact": "Unsafe operation, boot or upgrade failure, critical vulnerability, or cascading dependency failure.",
+    "recommended_response_time": "Immediate response and continuous handling until contained."
+  }
+]

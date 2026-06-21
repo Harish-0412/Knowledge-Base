@@ -1,0 +1,336 @@
+{
+  "category": "Recommendation",
+  "count": 30,
+  "questions": [
+    {
+      "question_id": "REC-001",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop001?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-002",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop002?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-003",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop003.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-004",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop004?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-005",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop005?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-006",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop006.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-007",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop007?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-008",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop008?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-009",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop009.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-010",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop010?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-011",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop011?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-012",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop012.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-013",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop013?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-014",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop014?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-015",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop015.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-016",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop016?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-017",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop017?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-018",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop018.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-019",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop019?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-020",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop020?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-021",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop021.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-022",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop022?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-023",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop023?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-024",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop024.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-025",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop025?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-026",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop026?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-027",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop027.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-028",
+      "category": "Recommendation",
+      "question": "How do I fix Laptop028?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-029",
+      "category": "Recommendation",
+      "question": "What should I do to remediate Laptop029?",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "REC-030",
+      "category": "Recommendation",
+      "question": "Recommend a fix for Laptop030.",
+      "expected_intent": "RecommendationRequest",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    }
+  ]
+}

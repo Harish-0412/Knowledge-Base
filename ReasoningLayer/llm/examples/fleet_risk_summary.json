@@ -1,0 +1,9 @@
+{
+  "question": "Show a fleet compliance summary.",
+  "expected_intent": "FleetAnalysis",
+  "entities": {},
+  "evidence": [
+    {"type": "InventoryEvidence", "fact": "The retrieved inventory contains Laptop001 and Laptop002"},
+    {"type": "RiskEvidence", "fact": "Laptop001 has one high-risk compatibility violation"}
+  ]
+}

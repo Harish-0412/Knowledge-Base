@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reasoning relationships",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "relationship_name",
+      "source_type",
+      "target_type",
+      "description"
+    ],
+    "properties": {
+      "relationship_name": {
+        "type": "string",
+        "pattern": "^[A-Z_]+$"
+      },
+      "source_type": {
+        "enum": [
+          "RootCause",
+          "Violation",
+          "RiskLevel",
+          "Recommendation",
+          "Prevention",
+          "Evidence",
+          "ReasoningFinding",
+          "CompatibilityRule"
+        ]
+      },
+      "target_type": {
+        "enum": [
+          "RootCause",
+          "Violation",
+          "RiskLevel",
+          "Recommendation",
+          "Prevention",
+          "Evidence",
+          "ReasoningFinding",
+          "CompatibilityRule"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

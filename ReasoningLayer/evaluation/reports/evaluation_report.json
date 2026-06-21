@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-21T15:35:01.766375+00:00",
+  "metrics": {
+    "total_questions": 220,
+    "questions_passed": 0,
+    "questions_failed": 220,
+    "average_confidence": 0.2,
+    "average_latency_ms": 0.69,
+    "average_latency_seconds": 0.001,
+    "hallucination_rate": 0.0,
+    "root_cause_coverage": 0.0,
+    "recommendation_coverage": 0.0,
+    "evidence_coverage": 0.0,
+    "retrieval_success_rate": 0.0,
+    "stress_benchmark_pass_rate": 0.0,
+    "overall_system_score": 0.0
+  },
+  "category_results": {
+    "Definition": {
+      "total": 50,
+      "passed": 0
+    },
+    "Compatibility": {
+      "total": 30,
+      "passed": 0
+    },
+    "RootCause": {
+      "total": 30,
+      "passed": 0
+    },
+    "Recommendation": {
+      "total": 30,
+      "passed": 0
+    },
+    "Prevention": {
+      "total": 20,
+      "passed": 0
+    },
+    "Fleet": {
+      "total": 20,
+      "passed": 0
+    },
+    "Hybrid": {
+      "total": 20,
+      "passed": 0
+    },
+    "Stress": {
+      "total": 20,
+      "passed": 0
+    }
+  },
+  "failure_reasons": {
+    "No evidence was retrieved": 220,
+    "Root cause is not supported by evidence": 220,
+    "Recommendation is not supported by evidence": 220
+  }
+}

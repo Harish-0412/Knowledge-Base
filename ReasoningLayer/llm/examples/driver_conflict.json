@@ -1,0 +1,9 @@
+{
+  "question": "Why does the display driver conflict with the firmware?",
+  "expected_intent": "RootCauseAnalysis",
+  "entities": {"device": "Laptop001", "driver": "DisplayDriver 5.1", "firmware": "3.2"},
+  "evidence": [
+    {"type": "InventoryEvidence", "fact": "Laptop001 reports DisplayDriver 5.1 and firmware 3.2"},
+    {"type": "CompatibilityEvidence", "fact": "Rule CR-DRV-09 marks that combination incompatible"}
+  ]
+}

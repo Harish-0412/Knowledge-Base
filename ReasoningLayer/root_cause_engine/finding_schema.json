@@ -1,0 +1,91 @@
+{
+  "schema_id": "RCA-FINDING-SCHEMA-V1",
+  "schema_version": "1.0.0",
+  "description": "Schema for a single root-cause finding produced by the Root Cause Analysis Engine.",
+  "required_fields": [
+    "finding_id",
+    "query_id",
+    "device",
+    "root_cause_id",
+    "violation_id",
+    "risk_level",
+    "recommendations",
+    "evidence_ids",
+    "confidence",
+    "status"
+  ],
+  "fields": {
+    "finding_id": {
+      "datatype": "string",
+      "description": "Deterministic FIND-<8hex> identifier."
+    },
+    "query_id": {
+      "datatype": "string",
+      "description": "Query plan ID from EvidencePackage."
+    },
+    "device": {
+      "datatype": "string",
+      "description": "Device or entity under analysis."
+    },
+    "root_cause_id": {
+      "datatype": "string",
+      "description": "RC-* identifier from root_cause_types.json."
+    },
+    "root_cause_name": {
+      "datatype": "string",
+      "description": "Human-readable root cause name."
+    },
+    "violation_id": {
+      "datatype": "string",
+      "description": "VIOL-* identifier from violation_types.json."
+    },
+    "violation_name": {
+      "datatype": "string",
+      "description": "Human-readable violation name."
+    },
+    "risk_level": {
+      "datatype": "string",
+      "description": "Informational|Low|Medium|High|Critical."
+    },
+    "severity_score": {
+      "datatype": "number",
+      "description": "Numeric risk score 0-100."
+    },
+    "description": {
+      "datatype": "string",
+      "description": "Narrative finding description."
+    },
+    "affected_component": {
+      "datatype": "string",
+      "description": "Component name or version affected."
+    },
+    "required_action": {
+      "datatype": "string",
+      "description": "Primary corrective action label."
+    },
+    "recommendations": {
+      "datatype": "array",
+      "description": "Ordered list of REC-* identifiers."
+    },
+    "evidence_ids": {
+      "datatype": "array",
+      "description": "Evidence IDs from EvidencePackage that support this finding."
+    },
+    "confidence": {
+      "datatype": "number",
+      "description": "Confidence 0.0-1.0 in this finding."
+    },
+    "status": {
+      "datatype": "string",
+      "description": "open|investigating|resolved|suppressed."
+    },
+    "timestamp": {
+      "datatype": "string",
+      "description": "ISO-8601 UTC timestamp."
+    },
+    "metadata": {
+      "datatype": "object",
+      "description": "Additional traceability metadata."
+    }
+  }
+}

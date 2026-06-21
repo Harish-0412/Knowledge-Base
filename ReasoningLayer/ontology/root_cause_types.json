@@ -1,0 +1,296 @@
+[
+  {
+    "root_cause_id": "RC-VERSION-MISMATCH",
+    "name": "VersionMismatch",
+    "description": "Installed and required component versions do not satisfy a declared comparison constraint.",
+    "severity_range": [
+      "Low",
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "min_version_constraint",
+      "exact_version_constraint",
+      "version_range_failure"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3"
+    ],
+    "recommended_actions": [
+      "REC-UPGRADE",
+      "REC-DOWNGRADE",
+      "REC-PATCH"
+    ]
+  },
+  {
+    "root_cause_id": "RC-MISSING-DEPENDENCY",
+    "name": "MissingDependency",
+    "description": "A component, capability, service, or prerequisite required by another component is absent.",
+    "severity_range": [
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "required_present_failure",
+      "dependency_resolution_failure",
+      "prerequisite_absent"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3"
+    ],
+    "recommended_actions": [
+      "REC-INSTALL",
+      "REC-CONFIGURATION-CHANGE",
+      "REC-REPLACE"
+    ]
+  },
+  {
+    "root_cause_id": "RC-UNSUPPORTED-CONFIGURATION",
+    "name": "UnsupportedConfiguration",
+    "description": "The observed combination or setting is outside the declared support envelope.",
+    "severity_range": [
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "unsupported_combination",
+      "readiness_requirement_failure",
+      "capability_not_supported"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3"
+    ],
+    "recommended_actions": [
+      "REC-CONFIGURATION-CHANGE",
+      "REC-UPGRADE",
+      "REC-REPLACE"
+    ]
+  },
+  {
+    "root_cause_id": "RC-DEPRECATED-COMPONENT",
+    "name": "DeprecatedComponent",
+    "description": "A component is deprecated, superseded, end-of-support, or no longer approved for use.",
+    "severity_range": [
+      "Low",
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "end_of_support",
+      "superseded_rule",
+      "deprecated_lifecycle_state"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3"
+    ],
+    "recommended_actions": [
+      "REC-UPGRADE",
+      "REC-REPLACE",
+      "REC-REMOVE"
+    ]
+  },
+  {
+    "root_cause_id": "RC-CONFLICT-VIOLATION",
+    "name": "ConflictViolation",
+    "description": "Two or more otherwise valid components or configurations cannot safely coexist.",
+    "severity_range": [
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "incompatible_combination",
+      "conflicts_with_edge",
+      "mutually_exclusive_setting"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3"
+    ],
+    "recommended_actions": [
+      "REC-REMOVE",
+      "REC-REPLACE",
+      "REC-CONFIGURATION-CHANGE"
+    ]
+  },
+  {
+    "root_cause_id": "RC-SECURITY-VIOLATION",
+    "name": "SecurityViolation",
+    "description": "A security requirement is absent, disabled, vulnerable, or contradicted by the current configuration.",
+    "severity_range": [
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "known_issue_fixed_failure",
+      "security_baseline_failure",
+      "vulnerability_exposure"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "recommended_actions": [
+      "REC-PATCH",
+      "REC-UPGRADE",
+      "REC-CONFIGURATION-CHANGE"
+    ]
+  },
+  {
+    "root_cause_id": "RC-MISSING-COMPONENT",
+    "name": "MissingComponent",
+    "description": "A required managed component is not installed, discovered, or reporting inventory state.",
+    "severity_range": [
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "typical_triggers": [
+      "inventory_absence",
+      "agent_not_installed",
+      "component_not_discovered"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3"
+    ],
+    "recommended_actions": [
+      "REC-INSTALL",
+      "REC-MONITORING-ACTION"
+    ]
+  },
+  {
+    "root_cause_id": "RC-INVALID-UPGRADE-PATH",
+    "name": "InvalidUpgradePath",
+    "description": "A requested transition skips or violates a mandatory prerequisite, intermediate version, or operation order.",
+    "severity_range": [
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "update_order_constraint",
+      "readiness_requirement_failure",
+      "unsupported_direct_jump"
+    ],
+    "affected_layers": [
+      "Layer 3",
+      "Layer 4"
+    ],
+    "recommended_actions": [
+      "REC-UPGRADE",
+      "REC-ROLLBACK",
+      "REC-CONFIGURATION-CHANGE"
+    ]
+  },
+  {
+    "root_cause_id": "RC-LIFECYCLE-MISMATCH",
+    "name": "LifecycleMismatch",
+    "description": "Component, rule, or policy lifecycle states are incompatible with the intended operation or support state.",
+    "severity_range": [
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "typical_triggers": [
+      "expired_support_window",
+      "unapproved_rule",
+      "target_lifecycle_incompatible"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "recommended_actions": [
+      "REC-UPGRADE",
+      "REC-REPLACE",
+      "REC-POLICY-UPDATE"
+    ]
+  },
+  {
+    "root_cause_id": "RC-CONFIGURATION-DRIFT",
+    "name": "ConfigurationDrift",
+    "description": "Observed state has diverged from an approved configuration baseline after deployment.",
+    "severity_range": [
+      "Low",
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "baseline_delta",
+      "unauthorized_change",
+      "setting_reversion"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 4"
+    ],
+    "recommended_actions": [
+      "REC-CONFIGURATION-CHANGE",
+      "REC-ROLLBACK",
+      "REC-MONITORING-ACTION"
+    ]
+  },
+  {
+    "root_cause_id": "RC-POLICY-VIOLATION",
+    "name": "PolicyViolation",
+    "description": "Observed state violates an organizational requirement even when technically compatible.",
+    "severity_range": [
+      "Low",
+      "Medium",
+      "High",
+      "Critical"
+    ],
+    "typical_triggers": [
+      "compliance_rule_failure",
+      "prohibited_state",
+      "required_control_absent"
+    ],
+    "affected_layers": [
+      "Layer 3",
+      "Layer 4"
+    ],
+    "recommended_actions": [
+      "REC-POLICY-UPDATE",
+      "REC-CONFIGURATION-CHANGE",
+      "REC-INSTALL"
+    ]
+  },
+  {
+    "root_cause_id": "RC-UNKNOWN-STATE",
+    "name": "UnknownState",
+    "description": "Evidence is missing, stale, contradictory, or insufficient to establish a deterministic cause.",
+    "severity_range": [
+      "Informational",
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "typical_triggers": [
+      "missing_inventory",
+      "ambiguous_version",
+      "conflicting_evidence",
+      "evaluation_error"
+    ],
+    "affected_layers": [
+      "Layer 1",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "recommended_actions": [
+      "REC-MONITORING-ACTION",
+      "REC-CONFIGURATION-CHANGE"
+    ]
+  }
+]

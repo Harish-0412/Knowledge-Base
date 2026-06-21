@@ -1,0 +1,3218 @@
+[
+  {
+    "test_id": "QUT-001",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-002",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-003",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-004",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-005",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-006",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-007",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-008",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-009",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-010",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-011",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-012",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-013",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-014",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-015",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-016",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-017",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-018",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-019",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-020",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-021",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-022",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-023",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-024",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-025",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-026",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-027",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-028",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-029",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-030",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-031",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-032",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-033",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-034",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-035",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-036",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-037",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-038",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-039",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-040",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-041",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-042",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-043",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-044",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-045",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-046",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-047",
+    "category": "Layer1",
+    "query": "Define firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-048",
+    "category": "Layer1",
+    "query": "Describe operating system.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "operating_system"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-049",
+    "category": "Layer1",
+    "query": "Explain the concept of driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "driver"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-050",
+    "category": "Layer1",
+    "query": "What are security agent components?",
+    "expected_intent": "ConceptExplanation",
+    "expected_entities": {
+      "component_types": [
+        "security_component"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer1"
+    ]
+  },
+  {
+    "test_id": "QUT-051",
+    "category": "Layer2",
+    "query": "Show inventory for Device101.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device101"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-052",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-053",
+    "category": "Layer2",
+    "query": "Show device details for Device103.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device103"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-054",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-055",
+    "category": "Layer2",
+    "query": "Inspect device Device105.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device105"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-056",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-057",
+    "category": "Layer2",
+    "query": "Show inventory for Device107.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device107"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-058",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-059",
+    "category": "Layer2",
+    "query": "Show device details for Device109.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device109"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-060",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-061",
+    "category": "Layer2",
+    "query": "Inspect device Device111.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device111"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-062",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-063",
+    "category": "Layer2",
+    "query": "Show inventory for Device113.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device113"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-064",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-065",
+    "category": "Layer2",
+    "query": "Show device details for Device115.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device115"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-066",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-067",
+    "category": "Layer2",
+    "query": "Inspect device Device117.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device117"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-068",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-069",
+    "category": "Layer2",
+    "query": "Show inventory for Device119.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device119"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-070",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-071",
+    "category": "Layer2",
+    "query": "Show device details for Device121.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device121"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-072",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-073",
+    "category": "Layer2",
+    "query": "Inspect device Device123.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device123"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-074",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-075",
+    "category": "Layer2",
+    "query": "Show inventory for Device125.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device125"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-076",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-077",
+    "category": "Layer2",
+    "query": "Show device details for Device127.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device127"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-078",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-079",
+    "category": "Layer2",
+    "query": "Inspect device Device129.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device129"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-080",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-081",
+    "category": "Layer2",
+    "query": "Show inventory for Device131.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device131"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-082",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-083",
+    "category": "Layer2",
+    "query": "Show device details for Device133.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device133"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-084",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-085",
+    "category": "Layer2",
+    "query": "Inspect device Device135.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device135"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-086",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-087",
+    "category": "Layer2",
+    "query": "Show inventory for Device137.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device137"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-088",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-089",
+    "category": "Layer2",
+    "query": "Show device details for Device139.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device139"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-090",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-091",
+    "category": "Layer2",
+    "query": "Inspect device Device141.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device141"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-092",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-093",
+    "category": "Layer2",
+    "query": "Show inventory for Device143.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device143"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-094",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-095",
+    "category": "Layer2",
+    "query": "Show device details for Device145.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device145"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-096",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-097",
+    "category": "Layer2",
+    "query": "Inspect device Device147.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device147"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-098",
+    "category": "Layer2",
+    "query": "Summarize device group compliance.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-099",
+    "category": "Layer2",
+    "query": "Show inventory for Device149.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_entities": {
+      "device": "Device149"
+    },
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-100",
+    "category": "Layer2",
+    "query": "Analyze the fleet for conflicts.",
+    "expected_intent": "FleetAnalysis",
+    "expected_entities": {},
+    "expected_target_layers": [
+      "Layer2"
+    ]
+  },
+  {
+    "test_id": "QUT-101",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-102",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-103",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-104",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-105",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-106",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-107",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-108",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-109",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-110",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-111",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-112",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-113",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-114",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-115",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-116",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-117",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-118",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-119",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-120",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-121",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-122",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-123",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-124",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-125",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-126",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-127",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-128",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-129",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-130",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-131",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-132",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-133",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-134",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-135",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-136",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-137",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-138",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-139",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-140",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-141",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-142",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-143",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-144",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-145",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-146",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "bios"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-147",
+    "category": "Layer3",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_entities": {
+      "bios": "2.1",
+      "firmware": "3.2"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-148",
+    "category": "Layer3",
+    "query": "Explain rule CRULE-FW-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_entities": {
+      "rule": "CRULE-FW-001"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-149",
+    "category": "Layer3",
+    "query": "Which firmware version is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_entities": {
+      "component_types": [
+        "firmware"
+      ]
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-150",
+    "category": "Layer3",
+    "query": "Is BIOS 2.1 still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_entities": {
+      "bios": "2.1"
+    },
+    "expected_target_layers": [
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-151",
+    "category": "Hybrid",
+    "query": "Why is Laptop201 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop201"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-152",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop202?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop202"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-153",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop203?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop203"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-154",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop204.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop204"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-155",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop205.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop205",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-156",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop206.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop206"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-157",
+    "category": "Hybrid",
+    "query": "Why is Laptop207 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop207"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-158",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop208?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop208"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-159",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop209?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop209"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-160",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop210.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop210"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-161",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop211.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop211",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-162",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop212.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop212"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-163",
+    "category": "Hybrid",
+    "query": "Why is Laptop213 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop213"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-164",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop214?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop214"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-165",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop215?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop215"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-166",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop216.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop216"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-167",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop217.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop217",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-168",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop218.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop218"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-169",
+    "category": "Hybrid",
+    "query": "Why is Laptop219 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop219"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-170",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop220?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop220"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-171",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop221?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop221"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-172",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop222.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop222"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-173",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop223.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop223",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-174",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop224.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop224"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-175",
+    "category": "Hybrid",
+    "query": "Why is Laptop225 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop225"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-176",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop226?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop226"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-177",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop227?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop227"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-178",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop228.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop228"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-179",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop229.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop229",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-180",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop230.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop230"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-181",
+    "category": "Hybrid",
+    "query": "Why is Laptop231 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop231"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-182",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop232?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop232"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-183",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop233?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop233"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-184",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop234.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop234"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-185",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop235.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop235",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-186",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop236.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop236"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-187",
+    "category": "Hybrid",
+    "query": "Why is Laptop237 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop237"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-188",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop238?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop238"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-189",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop239?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop239"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-190",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop240.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop240"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-191",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop241.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop241",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-192",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop242.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop242"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-193",
+    "category": "Hybrid",
+    "query": "Why is Laptop243 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop243"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-194",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop244?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop244"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-195",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop245?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop245"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-196",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop246.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop246"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-197",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop247.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop247",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-198",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop248.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop248"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-199",
+    "category": "Hybrid",
+    "query": "Why is Laptop249 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop249"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-200",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop250?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop250"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-201",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop251?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop251"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-202",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop252.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop252"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-203",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop253.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop253",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-204",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop254.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop254"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-205",
+    "category": "Hybrid",
+    "query": "Why is Laptop255 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop255"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-206",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop256?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop256"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-207",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop257?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop257"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-208",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop258.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop258"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-209",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop259.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop259",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-210",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop260.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop260"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-211",
+    "category": "Hybrid",
+    "query": "Why is Laptop261 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop261"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-212",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop262?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop262"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-213",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop263?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop263"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-214",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop264.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop264"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-215",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop265.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop265",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-216",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop266.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop266"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-217",
+    "category": "Hybrid",
+    "query": "Why is Laptop267 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop267"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-218",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop268?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop268"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-219",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop269?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop269"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-220",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop270.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop270"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-221",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop271.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop271",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-222",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop272.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop272"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-223",
+    "category": "Hybrid",
+    "query": "Why is Laptop273 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop273"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-224",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop274?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop274"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-225",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop275?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop275"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-226",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop276.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop276"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-227",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop277.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop277",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-228",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop278.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop278"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-229",
+    "category": "Hybrid",
+    "query": "Why is Laptop279 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop279"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-230",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop280?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop280"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-231",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop281?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop281"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-232",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop282.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop282"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-233",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop283.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop283",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-234",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop284.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop284"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-235",
+    "category": "Hybrid",
+    "query": "Why is Laptop285 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop285"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-236",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop286?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop286"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-237",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop287?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop287"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-238",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop288.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop288"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-239",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop289.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop289",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-240",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop290.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop290"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-241",
+    "category": "Hybrid",
+    "query": "Why is Laptop291 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop291"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-242",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop292?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop292"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-243",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop293?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop293"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-244",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop294.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop294"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-245",
+    "category": "Hybrid",
+    "query": "Investigate violation VIOL-VERSION for Laptop295.",
+    "expected_intent": "ViolationInvestigation",
+    "expected_entities": {
+      "device": "Laptop295",
+      "violation": "VIOL-VERSION"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-246",
+    "category": "Hybrid",
+    "query": "Check upgrade readiness for Laptop296.",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_entities": {
+      "device": "Laptop296"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-247",
+    "category": "Hybrid",
+    "query": "Why is Laptop297 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_entities": {
+      "device": "Laptop297"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-248",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop298?",
+    "expected_intent": "ComplianceStatus",
+    "expected_entities": {
+      "device": "Laptop298"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-249",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop299?",
+    "expected_intent": "RecommendationRequest",
+    "expected_entities": {
+      "device": "Laptop299"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  {
+    "test_id": "QUT-250",
+    "category": "Hybrid",
+    "query": "Assess risk for Laptop300.",
+    "expected_intent": "RiskAssessment",
+    "expected_entities": {
+      "device": "Laptop300"
+    },
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ]
+  }
+]

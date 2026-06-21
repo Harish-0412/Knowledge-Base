@@ -1,0 +1,99 @@
+[
+  {
+    "violation_id": "VIOL-COMPATIBILITY",
+    "name": "CompatibilityViolation",
+    "description": "A system state does not meet a compatibility rule or supported combination.",
+    "related_root_causes": [
+      "RC-VERSION-MISMATCH",
+      "RC-UNSUPPORTED-CONFIGURATION",
+      "RC-CONFLICT-VIOLATION",
+      "RC-UNKNOWN-STATE"
+    ]
+  },
+  {
+    "violation_id": "VIOL-COMPLIANCE",
+    "name": "ComplianceViolation",
+    "description": "A system state fails an applicable technical or organizational control.",
+    "related_root_causes": [
+      "RC-POLICY-VIOLATION",
+      "RC-CONFIGURATION-DRIFT",
+      "RC-SECURITY-VIOLATION"
+    ]
+  },
+  {
+    "violation_id": "VIOL-DEPENDENCY",
+    "name": "DependencyViolation",
+    "description": "A required dependency is missing, unreachable, or unsuitable.",
+    "related_root_causes": [
+      "RC-MISSING-DEPENDENCY",
+      "RC-MISSING-COMPONENT",
+      "RC-VERSION-MISMATCH"
+    ]
+  },
+  {
+    "violation_id": "VIOL-VERSION",
+    "name": "VersionViolation",
+    "description": "An installed version falls outside an allowed or required version constraint.",
+    "related_root_causes": [
+      "RC-VERSION-MISMATCH",
+      "RC-DEPRECATED-COMPONENT"
+    ]
+  },
+  {
+    "violation_id": "VIOL-LIFECYCLE",
+    "name": "LifecycleViolation",
+    "description": "An entity is used outside its valid approval, servicing, or support lifecycle.",
+    "related_root_causes": [
+      "RC-LIFECYCLE-MISMATCH",
+      "RC-DEPRECATED-COMPONENT"
+    ]
+  },
+  {
+    "violation_id": "VIOL-SECURITY",
+    "name": "SecurityViolation",
+    "description": "A state exposes a known vulnerability or fails a required security control.",
+    "related_root_causes": [
+      "RC-SECURITY-VIOLATION",
+      "RC-CONFIGURATION-DRIFT",
+      "RC-POLICY-VIOLATION"
+    ]
+  },
+  {
+    "violation_id": "VIOL-POLICY",
+    "name": "PolicyViolation",
+    "description": "A state contradicts an applicable enterprise policy.",
+    "related_root_causes": [
+      "RC-POLICY-VIOLATION",
+      "RC-CONFIGURATION-DRIFT"
+    ]
+  },
+  {
+    "violation_id": "VIOL-CONFLICT",
+    "name": "ConflictViolation",
+    "description": "Mutually incompatible components or settings coexist.",
+    "related_root_causes": [
+      "RC-CONFLICT-VIOLATION",
+      "RC-UNSUPPORTED-CONFIGURATION"
+    ]
+  },
+  {
+    "violation_id": "VIOL-SUPPORTABILITY",
+    "name": "SupportabilityViolation",
+    "description": "A configuration cannot receive the expected vendor-neutral operational support.",
+    "related_root_causes": [
+      "RC-DEPRECATED-COMPONENT",
+      "RC-UNSUPPORTED-CONFIGURATION",
+      "RC-LIFECYCLE-MISMATCH"
+    ]
+  },
+  {
+    "violation_id": "VIOL-UPGRADE",
+    "name": "UpgradeViolation",
+    "description": "A proposed or attempted upgrade does not meet readiness or sequencing constraints.",
+    "related_root_causes": [
+      "RC-INVALID-UPGRADE-PATH",
+      "RC-MISSING-DEPENDENCY",
+      "RC-VERSION-MISMATCH"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-06-21T15:47:04.357902+00:00",
+  "status": "PASS",
+  "packages": {
+    "llama-index": {
+      "status": "PASS",
+      "version": "0.14.22"
+    },
+    "llama-index-llms-ollama": {
+      "status": "PASS",
+      "version": "0.10.1"
+    },
+    "qdrant-client": {
+      "status": "PASS",
+      "version": "1.18.0"
+    },
+    "neo4j": {
+      "status": "PASS",
+      "version": "6.2.0"
+    },
+    "requests": {
+      "status": "PASS",
+      "version": "2.34.2"
+    }
+  }
+}

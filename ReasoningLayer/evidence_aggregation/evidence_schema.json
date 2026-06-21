@@ -1,0 +1,115 @@
+{
+  "schema_id": "EVIDENCE-SCHEMA-1.0.0",
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-21",
+  "description": "Unified schema for all evidence objects produced by the Evidence Aggregation Layer.",
+  "required_fields": [
+    "evidence_id",
+    "evidence_type",
+    "source_layer",
+    "source_system",
+    "entity",
+    "confidence",
+    "timestamp"
+  ],
+  "fields": {
+    "evidence_id": {
+      "datatype": "string",
+      "required": true,
+      "description": "Deterministic unique identifier for this evidence record. Format: EVID-<type_prefix>-<8hex>."
+    },
+    "evidence_type": {
+      "datatype": "string",
+      "required": true,
+      "description": "Evidence classification from evidence_types.json.",
+      "allowed_values": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DomainEvidence",
+        "DependencyEvidence",
+        "VersionEvidence",
+        "LifecycleEvidence",
+        "ViolationEvidence",
+        "RecommendationEvidence",
+        "RiskEvidence"
+      ]
+    },
+    "source_layer": {
+      "datatype": "string",
+      "required": true,
+      "description": "Origin layer.",
+      "allowed_values": [
+        "Layer1",
+        "Layer2",
+        "Layer3"
+      ]
+    },
+    "source_system": {
+      "datatype": "string",
+      "required": true,
+      "description": "Storage system queried.",
+      "allowed_values": [
+        "Qdrant",
+        "Neo4j",
+        "Derived"
+      ]
+    },
+    "entity": {
+      "datatype": "string",
+      "required": true,
+      "description": "Primary entity this evidence is about (e.g., device ID, component name, rule ID)."
+    },
+    "relationship": {
+      "datatype": "string",
+      "required": false,
+      "description": "Relationship predicate linking entity to target (e.g., REQUIRES, CONFLICTS_WITH, INSTALLED_ON)."
+    },
+    "target": {
+      "datatype": "string",
+      "required": false,
+      "description": "Secondary entity referenced by the relationship."
+    },
+    "content": {
+      "datatype": "object",
+      "required": false,
+      "description": "Evidence payload — raw retrieved record, snippet, or derived fact."
+    },
+    "confidence": {
+      "datatype": "number",
+      "required": true,
+      "description": "Confidence score 0.0-1.0 for this evidence record."
+    },
+    "retrieval_score": {
+      "datatype": "number",
+      "required": false,
+      "description": "Raw similarity or query score from the retrieval system (0.0-1.0)."
+    },
+    "priority": {
+      "datatype": "string",
+      "required": false,
+      "description": "Assigned priority after ranking.",
+      "allowed_values": [
+        "Critical",
+        "Highest",
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    "timestamp": {
+      "datatype": "string",
+      "required": true,
+      "description": "ISO-8601 UTC timestamp of retrieval."
+    },
+    "query_id": {
+      "datatype": "string",
+      "required": false,
+      "description": "Query plan ID that triggered this evidence retrieval."
+    },
+    "metadata": {
+      "datatype": "object",
+      "required": false,
+      "description": "Additional provenance metadata."
+    }
+  }
+}

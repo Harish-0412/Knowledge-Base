@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Root cause taxonomy",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "root_cause_id",
+      "name",
+      "description",
+      "severity_range",
+      "typical_triggers",
+      "affected_layers",
+      "recommended_actions"
+    ],
+    "properties": {
+      "root_cause_id": {
+        "type": "string",
+        "pattern": "^RC-[A-Z0-9-]+$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "severity_range": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "Informational",
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        }
+      },
+      "typical_triggers": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string"
+        }
+      },
+      "affected_layers": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "Layer 1",
+            "Layer 3",
+            "Layer 4"
+          ]
+        }
+      },
+      "recommended_actions": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "pattern": "^REC-"
+        }
+      }
+    }
+  }
+}

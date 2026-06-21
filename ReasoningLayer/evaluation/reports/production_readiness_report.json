@@ -1,0 +1,27 @@
+{
+  "total_questions": 220,
+  "questions_passed": 0,
+  "questions_failed": 220,
+  "average_confidence": 0.2,
+  "average_latency_ms": 0.69,
+  "average_latency_seconds": 0.001,
+  "hallucination_rate": 0.0,
+  "root_cause_coverage": 0.0,
+  "recommendation_coverage": 0.0,
+  "evidence_coverage": 0.0,
+  "retrieval_success_rate": 0.0,
+  "stress_benchmark_pass_rate": 0.0,
+  "overall_system_score": 0.0,
+  "validation_checks": {
+    "average_confidence_above_0_85": false,
+    "hallucination_rate_below_0_05": true,
+    "root_cause_coverage_above_0_95": false,
+    "recommendation_coverage_above_0_95": false,
+    "evidence_coverage_above_0_90": false,
+    "retrieval_success_rate_above_0_95": false,
+    "average_latency_below_5_seconds": true,
+    "stress_benchmark_pass_rate_above_0_90": false
+  },
+  "status": "VALIDATION_FAILED",
+  "generated_at": "2026-06-21T15:35:01.770235+00:00"
+}

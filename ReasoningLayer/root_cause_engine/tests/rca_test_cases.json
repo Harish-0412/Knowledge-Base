@@ -1,0 +1,702 @@
+[
+  {
+    "test_id": "TC-RCA-001",
+    "question": "Why is Laptop001 non-compliant?",
+    "expected_device": "Laptop001",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-002",
+    "question": "Why is Laptop002 failing?",
+    "expected_device": "Laptop002",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-003",
+    "question": "What violations does Laptop003 have?",
+    "expected_device": "Laptop003",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-004",
+    "question": "Is Laptop004 vulnerable to CVE issues?",
+    "expected_device": "Laptop004",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-005",
+    "question": "What security issues does Laptop005 have?",
+    "expected_device": "Laptop005",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-006",
+    "question": "Is Laptop006 running deprecated components?",
+    "expected_device": "Laptop006",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-007",
+    "question": "Does Laptop007 have version mismatches?",
+    "expected_device": "Laptop007",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-008",
+    "question": "What is the compliance status of Laptop008?",
+    "expected_device": "Laptop008",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-009",
+    "question": "Why is Laptop009 showing boot delays?",
+    "expected_device": "Laptop009",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-010",
+    "question": "Does Laptop010 have missing dependencies?",
+    "expected_device": "Laptop010",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-011",
+    "question": "Why is Laptop011 non-compliant?",
+    "expected_device": "Laptop011",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-012",
+    "question": "Why is Laptop012 failing?",
+    "expected_device": "Laptop012",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-013",
+    "question": "What violations does Laptop013 have?",
+    "expected_device": "Laptop013",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-014",
+    "question": "Is Laptop014 vulnerable to CVE issues?",
+    "expected_device": "Laptop014",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-015",
+    "question": "What security issues does Laptop015 have?",
+    "expected_device": "Laptop015",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-016",
+    "question": "Is Device001 running deprecated components?",
+    "expected_device": "Device001",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-017",
+    "question": "Does Device002 have version mismatches?",
+    "expected_device": "Device002",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-018",
+    "question": "What is the compliance status of Device003?",
+    "expected_device": "Device003",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-019",
+    "question": "Why is Device004 showing boot delays?",
+    "expected_device": "Device004",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-020",
+    "question": "Does Device005 have missing dependencies?",
+    "expected_device": "Device005",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-021",
+    "question": "Why is Device006 non-compliant?",
+    "expected_device": "Device006",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-022",
+    "question": "Why is Device007 failing?",
+    "expected_device": "Device007",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-023",
+    "question": "What violations does Device008 have?",
+    "expected_device": "Device008",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-024",
+    "question": "Is Device009 vulnerable to CVE issues?",
+    "expected_device": "Device009",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-025",
+    "question": "What security issues does Device010 have?",
+    "expected_device": "Device010",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-026",
+    "question": "Is Server001 running deprecated components?",
+    "expected_device": "Server001",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-027",
+    "question": "Does Server002 have version mismatches?",
+    "expected_device": "Server002",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-028",
+    "question": "What is the compliance status of Server003?",
+    "expected_device": "Server003",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-029",
+    "question": "Why is Server004 showing boot delays?",
+    "expected_device": "Server004",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-030",
+    "question": "Does Server005 have missing dependencies?",
+    "expected_device": "Server005",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-031",
+    "question": "Why is Server006 non-compliant?",
+    "expected_device": "Server006",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-032",
+    "question": "Why is Server007 failing?",
+    "expected_device": "Server007",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-033",
+    "question": "What violations does Server008 have?",
+    "expected_device": "Server008",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-034",
+    "question": "Is Server009 vulnerable to CVE issues?",
+    "expected_device": "Server009",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-035",
+    "question": "What security issues does Server010 have?",
+    "expected_device": "Server010",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-036",
+    "question": "Is Workstation001 running deprecated components?",
+    "expected_device": "Workstation001",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-037",
+    "question": "Does Workstation002 have version mismatches?",
+    "expected_device": "Workstation002",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-038",
+    "question": "What is the compliance status of Workstation003?",
+    "expected_device": "Workstation003",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-039",
+    "question": "Why is Workstation004 showing boot delays?",
+    "expected_device": "Workstation004",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-040",
+    "question": "Does Workstation005 have missing dependencies?",
+    "expected_device": "Workstation005",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-041",
+    "question": "Why is Workstation006 non-compliant?",
+    "expected_device": "Workstation006",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-042",
+    "question": "Why is Workstation007 failing?",
+    "expected_device": "Workstation007",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-043",
+    "question": "What violations does Workstation008 have?",
+    "expected_device": "Workstation008",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-044",
+    "question": "Is Workstation009 vulnerable to CVE issues?",
+    "expected_device": "Workstation009",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-045",
+    "question": "What security issues does Workstation010 have?",
+    "expected_device": "Workstation010",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-046",
+    "question": "Is Workstation011 running deprecated components?",
+    "expected_device": "Workstation011",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-047",
+    "question": "Does Workstation012 have version mismatches?",
+    "expected_device": "Workstation012",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-048",
+    "question": "What is the compliance status of Workstation013?",
+    "expected_device": "Workstation013",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-049",
+    "question": "Why is Workstation014 showing boot delays?",
+    "expected_device": "Workstation014",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  },
+  {
+    "test_id": "TC-RCA-050",
+    "question": "Does Laptop001 have missing dependencies?",
+    "expected_device": "Laptop001",
+    "expected_max_risk_in": [
+      "Critical",
+      "High",
+      "Medium",
+      "Low",
+      "Informational"
+    ],
+    "expected_min_findings": 1,
+    "expects_violation": true
+  }
+]

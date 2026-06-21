@@ -1,0 +1,246 @@
+{
+  "category": "Hybrid",
+  "count": 20,
+  "questions": [
+    {
+      "question_id": "HYB-001",
+      "category": "Hybrid",
+      "question": "Why is Laptop001 failing and how can I prevent recurrence?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-002",
+      "category": "Hybrid",
+      "question": "Why is Laptop002 non-compliant and how do I fix it?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-003",
+      "category": "Hybrid",
+      "question": "Why did Laptop003 fail its firmware requirement and what risks exist?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-004",
+      "category": "Hybrid",
+      "question": "Why is Laptop004 failing and how can I prevent recurrence?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-005",
+      "category": "Hybrid",
+      "question": "Why is Laptop005 non-compliant and how do I fix it?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-006",
+      "category": "Hybrid",
+      "question": "Why did Laptop006 fail its firmware requirement and what risks exist?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-007",
+      "category": "Hybrid",
+      "question": "Why is Laptop007 failing and how can I prevent recurrence?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-008",
+      "category": "Hybrid",
+      "question": "Why is Laptop008 non-compliant and how do I fix it?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-009",
+      "category": "Hybrid",
+      "question": "Why did Laptop009 fail its firmware requirement and what risks exist?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-010",
+      "category": "Hybrid",
+      "question": "Why is Laptop010 failing and how can I prevent recurrence?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-011",
+      "category": "Hybrid",
+      "question": "Why is Laptop011 non-compliant and how do I fix it?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-012",
+      "category": "Hybrid",
+      "question": "Why did Laptop012 fail its firmware requirement and what risks exist?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-013",
+      "category": "Hybrid",
+      "question": "Why is Laptop013 failing and how can I prevent recurrence?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-014",
+      "category": "Hybrid",
+      "question": "Why is Laptop014 non-compliant and how do I fix it?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-015",
+      "category": "Hybrid",
+      "question": "Why did Laptop015 fail its firmware requirement and what risks exist?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-016",
+      "category": "Hybrid",
+      "question": "Why is Laptop016 failing and how can I prevent recurrence?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-017",
+      "category": "Hybrid",
+      "question": "Why is Laptop017 non-compliant and how do I fix it?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-018",
+      "category": "Hybrid",
+      "question": "Why did Laptop018 fail its firmware requirement and what risks exist?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-019",
+      "category": "Hybrid",
+      "question": "Why is Laptop019 failing and how can I prevent recurrence?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "HYB-020",
+      "category": "Hybrid",
+      "question": "Why is Laptop020 non-compliant and how do I fix it?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "category": "Prevention",
+  "count": 20,
+  "questions": [
+    {
+      "question_id": "PREV-001",
+      "category": "Prevention",
+      "question": "How can I prevent this violation on Laptop001?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-002",
+      "category": "Prevention",
+      "question": "How can future violations be avoided on Laptop002?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-003",
+      "category": "Prevention",
+      "question": "What prevention strategy applies to firmware violation 3?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-004",
+      "category": "Prevention",
+      "question": "How can I prevent this violation on Laptop004?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-005",
+      "category": "Prevention",
+      "question": "How can future violations be avoided on Laptop005?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-006",
+      "category": "Prevention",
+      "question": "What prevention strategy applies to firmware violation 6?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-007",
+      "category": "Prevention",
+      "question": "How can I prevent this violation on Laptop007?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-008",
+      "category": "Prevention",
+      "question": "How can future violations be avoided on Laptop008?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-009",
+      "category": "Prevention",
+      "question": "What prevention strategy applies to firmware violation 9?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-010",
+      "category": "Prevention",
+      "question": "How can I prevent this violation on Laptop010?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-011",
+      "category": "Prevention",
+      "question": "How can future violations be avoided on Laptop011?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-012",
+      "category": "Prevention",
+      "question": "What prevention strategy applies to firmware violation 12?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-013",
+      "category": "Prevention",
+      "question": "How can I prevent this violation on Laptop013?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-014",
+      "category": "Prevention",
+      "question": "How can future violations be avoided on Laptop014?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-015",
+      "category": "Prevention",
+      "question": "What prevention strategy applies to firmware violation 15?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-016",
+      "category": "Prevention",
+      "question": "How can I prevent this violation on Laptop016?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-017",
+      "category": "Prevention",
+      "question": "How can future violations be avoided on Laptop017?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-018",
+      "category": "Prevention",
+      "question": "What prevention strategy applies to firmware violation 18?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-019",
+      "category": "Prevention",
+      "question": "How can I prevent this violation on Laptop019?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    },
+    {
+      "question_id": "PREV-020",
+      "category": "Prevention",
+      "question": "How can future violations be avoided on Laptop020?",
+      "expected_intent": "PreventionRequest",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "RecommendationEvidence"
+      ]
+    }
+  ]
+}

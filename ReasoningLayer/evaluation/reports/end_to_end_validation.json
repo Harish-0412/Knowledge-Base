@@ -1,0 +1,19 @@
+{
+  "test_count": 100,
+  "metrics": {
+    "total_questions": 100,
+    "questions_passed": 0,
+    "questions_failed": 100,
+    "average_confidence": 0.2,
+    "average_latency_ms": 1.16,
+    "average_latency_seconds": 0.001,
+    "hallucination_rate": 0.0,
+    "root_cause_coverage": 0.0,
+    "recommendation_coverage": 0.0,
+    "evidence_coverage": 0.0,
+    "retrieval_success_rate": 0.0,
+    "stress_benchmark_pass_rate": 0.0,
+    "overall_system_score": 0.0
+  },
+  "status": "VALIDATION_FAILED"
+}

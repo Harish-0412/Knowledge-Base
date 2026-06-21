@@ -1,0 +1,19 @@
+{
+  "report_id": "QUERY-UNDERSTANDING-METRICS-V1",
+  "intent_count": 15,
+  "entity_count": 15,
+  "patterns_count": 150,
+  "test_cases": 250,
+  "test_distribution": {
+    "Layer1": 50,
+    "Layer2": 50,
+    "Layer3": 50,
+    "Hybrid": 100
+  },
+  "intent_accuracy": 100.0,
+  "entity_accuracy": 100.0,
+  "routing_accuracy": 100.0,
+  "parsing_accuracy": 100.0,
+  "intent_pattern_coverage": 100.0,
+  "failed_test_cases": 0
+}

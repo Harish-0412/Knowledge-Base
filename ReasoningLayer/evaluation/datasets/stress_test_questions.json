@@ -1,0 +1,426 @@
+{
+  "category": "Stress",
+  "count": 20,
+  "questions": [
+    {
+      "question_id": "STRESS-001",
+      "category": "Stress",
+      "question": "Why are Laptop001 and Laptop021 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-002",
+      "category": "Stress",
+      "question": "Why are Laptop002 and Laptop022 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-003",
+      "category": "Stress",
+      "question": "Why are Laptop003 and Laptop023 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-004",
+      "category": "Stress",
+      "question": "Why are Laptop004 and Laptop024 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-005",
+      "category": "Stress",
+      "question": "Why are Laptop005 and Laptop025 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-006",
+      "category": "Stress",
+      "question": "Why are Laptop006 and Laptop026 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-007",
+      "category": "Stress",
+      "question": "Why are Laptop007 and Laptop027 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-008",
+      "category": "Stress",
+      "question": "Why are Laptop008 and Laptop028 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-009",
+      "category": "Stress",
+      "question": "Why are Laptop009 and Laptop029 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-010",
+      "category": "Stress",
+      "question": "Why are Laptop010 and Laptop030 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-011",
+      "category": "Stress",
+      "question": "Why are Laptop011 and Laptop031 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-012",
+      "category": "Stress",
+      "question": "Why are Laptop012 and Laptop032 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-013",
+      "category": "Stress",
+      "question": "Why are Laptop013 and Laptop033 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-014",
+      "category": "Stress",
+      "question": "Why are Laptop014 and Laptop034 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-015",
+      "category": "Stress",
+      "question": "Why are Laptop015 and Laptop035 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-016",
+      "category": "Stress",
+      "question": "Why are Laptop016 and Laptop036 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-017",
+      "category": "Stress",
+      "question": "Why are Laptop017 and Laptop037 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-018",
+      "category": "Stress",
+      "question": "Why are Laptop018 and Laptop038 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-019",
+      "category": "Stress",
+      "question": "Why are Laptop019 and Laptop039 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    },
+    {
+      "question_id": "STRESS-020",
+      "category": "Stress",
+      "question": "Why are Laptop020 and Laptop040 failing BIOS, firmware, and operating-system compatibility checks, what dependency chain caused the violations, what risks follow, and how do I fix and prevent recurrence across the fleet?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "DomainEvidence",
+        "InventoryEvidence",
+        "CompatibilityEvidence",
+        "DependencyEvidence",
+        "RiskEvidence",
+        "RecommendationEvidence"
+      ],
+      "minimum_evidence_sources": 3,
+      "requirements": [
+        "multiple_evidence_sources",
+        "multiple_reasoning_steps",
+        "compatibility_analysis",
+        "recommendation_generation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+[
+  {
+    "intent_id": "INTENT-CONCEPT-EXPLANATION",
+    "intent_name": "ConceptExplanation",
+    "description": "Explain a domain or reasoning concept.",
+    "expected_entities": [
+      "BIOS",
+      "Firmware",
+      "OperatingSystem",
+      "Driver",
+      "SecurityComponent",
+      "ManagementTool"
+    ],
+    "target_layers": [
+      "Layer1"
+    ],
+    "response_type": "explanation"
+  },
+  {
+    "intent_id": "INTENT-ROOT-CAUSE-ANALYSIS",
+    "intent_name": "RootCauseAnalysis",
+    "description": "Determine why a device or state is failing.",
+    "expected_entities": [
+      "Device",
+      "Violation",
+      "Rule"
+    ],
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "response_type": "root_cause_analysis"
+  },
+  {
+    "intent_id": "INTENT-COMPLIANCE-STATUS",
+    "intent_name": "ComplianceStatus",
+    "description": "Determine compliance state and failed controls.",
+    "expected_entities": [
+      "Device",
+      "Rule",
+      "Violation"
+    ],
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "response_type": "compliance_status"
+  },
+  {
+    "intent_id": "INTENT-RECOMMENDATION-REQUEST",
+    "intent_name": "RecommendationRequest",
+    "description": "Request corrective actions for a device or violation.",
+    "expected_entities": [
+      "Device",
+      "Violation",
+      "RootCause"
+    ],
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "response_type": "recommendations"
+  },
+  {
+    "intent_id": "INTENT-PREVENTION-REQUEST",
+    "intent_name": "PreventionRequest",
+    "description": "Request controls that prevent recurrence.",
+    "expected_entities": [
+      "Violation",
+      "RootCause"
+    ],
+    "target_layers": [
+      "Layer3"
+    ],
+    "response_type": "prevention_strategy"
+  },
+  {
+    "intent_id": "INTENT-RISK-ASSESSMENT",
+    "intent_name": "RiskAssessment",
+    "description": "Assess technical and business risk.",
+    "expected_entities": [
+      "Device",
+      "Violation",
+      "Risk"
+    ],
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "response_type": "risk_assessment"
+  },
+  {
+    "intent_id": "INTENT-DEPENDENCY-ANALYSIS",
+    "intent_name": "DependencyAnalysis",
+    "description": "Trace direct or transitive dependencies.",
+    "expected_entities": [
+      "BIOS",
+      "Firmware",
+      "OperatingSystem",
+      "Driver",
+      "Rule"
+    ],
+    "target_layers": [
+      "Layer3"
+    ],
+    "response_type": "dependency_graph"
+  },
+  {
+    "intent_id": "INTENT-COMPATIBILITY-INQUIRY",
+    "intent_name": "CompatibilityInquiry",
+    "description": "Determine whether components or versions are compatible.",
+    "expected_entities": [
+      "BIOS",
+      "Firmware",
+      "OperatingSystem",
+      "Driver",
+      "Version"
+    ],
+    "target_layers": [
+      "Layer3"
+    ],
+    "response_type": "compatibility_result"
+  },
+  {
+    "intent_id": "INTENT-VIOLATION-INVESTIGATION",
+    "intent_name": "ViolationInvestigation",
+    "description": "Investigate a specific violation and its evidence.",
+    "expected_entities": [
+      "Device",
+      "Violation",
+      "Rule"
+    ],
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "response_type": "violation_details"
+  },
+  {
+    "intent_id": "INTENT-FLEET-ANALYSIS",
+    "intent_name": "FleetAnalysis",
+    "description": "Analyze inventory state across a fleet or device group.",
+    "expected_entities": [
+      "Device",
+      "Risk",
+      "Violation"
+    ],
+    "target_layers": [
+      "Layer2"
+    ],
+    "response_type": "fleet_summary"
+  },
+  {
+    "intent_id": "INTENT-DEVICE-INVESTIGATION",
+    "intent_name": "DeviceInvestigation",
+    "description": "Inspect the state and inventory of one device.",
+    "expected_entities": [
+      "Device"
+    ],
+    "target_layers": [
+      "Layer2"
+    ],
+    "response_type": "device_details"
+  },
+  {
+    "intent_id": "INTENT-RULE-EXPLANATION",
+    "intent_name": "RuleExplanation",
+    "description": "Explain a compatibility rule and its evidence.",
+    "expected_entities": [
+      "Rule",
+      "Document"
+    ],
+    "target_layers": [
+      "Layer3"
+    ],
+    "response_type": "rule_explanation"
+  },
+  {
+    "intent_id": "INTENT-VERSION-ANALYSIS",
+    "intent_name": "VersionAnalysis",
+    "description": "Find required, installed, allowed, or fixed versions.",
+    "expected_entities": [
+      "Version",
+      "BIOS",
+      "Firmware",
+      "OperatingSystem",
+      "Driver"
+    ],
+    "target_layers": [
+      "Layer3"
+    ],
+    "response_type": "version_analysis"
+  },
+  {
+    "intent_id": "INTENT-LIFECYCLE-ANALYSIS",
+    "intent_name": "LifecycleAnalysis",
+    "description": "Evaluate support, approval, deprecation, or end-of-life state.",
+    "expected_entities": [
+      "BIOS",
+      "Firmware",
+      "OperatingSystem",
+      "Driver",
+      "Rule"
+    ],
+    "target_layers": [
+      "Layer3"
+    ],
+    "response_type": "lifecycle_analysis"
+  },
+  {
+    "intent_id": "INTENT-UPGRADE-IMPACT",
+    "intent_name": "UpgradeImpactAnalysis",
+    "description": "Assess readiness, dependencies, and risk before an upgrade.",
+    "expected_entities": [
+      "Device",
+      "Version",
+      "BIOS",
+      "Firmware",
+      "OperatingSystem",
+      "Driver"
+    ],
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "response_type": "upgrade_impact"
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "report_id": "QUERY-UNDERSTANDING-VALIDATION-V1",
+  "validation_date": "2026-06-21",
+  "overall_status": "PASS",
+  "validation_checks": [
+    {
+      "check_id": "VAL-QUL-001",
+      "check_name": "Intent catalog complete",
+      "status": "PASS",
+      "details": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check_id": "VAL-QUL-002",
+      "check_name": "Entity catalog complete",
+      "status": "PASS",
+      "details": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check_id": "VAL-QUL-003",
+      "check_name": "Pattern minimum met",
+      "status": "PASS",
+      "details": {
+        "actual": 150,
+        "minimum": 150
+      }
+    },
+    {
+      "check_id": "VAL-QUL-004",
+      "check_name": "Test minimum and distribution met",
+      "status": "PASS",
+      "details": {
+        "Layer1": 50,
+        "Layer2": 50,
+        "Layer3": 50,
+        "Hybrid": 100
+      }
+    },
+    {
+      "check_id": "VAL-QUL-005",
+      "check_name": "Intent classifier operational",
+      "status": "PASS",
+      "details": {
+        "accuracy": 1.0
+      }
+    },
+    {
+      "check_id": "VAL-QUL-006",
+      "check_name": "Entity extractor operational",
+      "status": "PASS",
+      "details": {
+        "accuracy": 1.0
+      }
+    },
+    {
+      "check_id": "VAL-QUL-007",
+      "check_name": "Router operational",
+      "status": "PASS",
+      "details": {
+        "accuracy": 1.0
+      }
+    },
+    {
+      "check_id": "VAL-QUL-008",
+      "check_name": "Parser operational",
+      "status": "PASS",
+      "details": {
+        "accuracy": 1.0
+      }
+    },
+    {
+      "check_id": "VAL-QUL-009",
+      "check_name": "Intent pattern coverage",
+      "status": "PASS",
+      "details": {
+        "covered": 15
+      }
+    },
+    {
+      "check_id": "VAL-QUL-010",
+      "check_name": "Intent test coverage",
+      "status": "PASS",
+      "details": {
+        "covered": 14
+      }
+    },
+    {
+      "check_id": "VAL-QUL-011",
+      "check_name": "Routing rules resolve",
+      "status": "PASS",
+      "details": {
+        "route_count": 15
+      }
+    }
+  ],
+  "summary": {
+    "checks_total": 11,
+    "checks_passed": 11,
+    "checks_failed": 0
+  },
+  "accuracy_threshold": "> 90%",
+  "metrics_file": "ReasoningLayer/query_understanding/reports/query_understanding_metrics.json",
+  "final_status": "READY_FOR_PHASE_3"
+}

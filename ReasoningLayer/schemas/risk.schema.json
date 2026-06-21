@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Risk levels",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "risk_level",
+      "description",
+      "business_impact",
+      "technical_impact",
+      "recommended_response_time"
+    ],
+    "properties": {
+      "risk_level": {
+        "enum": [
+          "Informational",
+          "Low",
+          "Medium",
+          "High",
+          "Critical"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "business_impact": {
+        "type": "string",
+        "minLength": 1
+      },
+      "technical_impact": {
+        "type": "string",
+        "minLength": 1
+      },
+      "recommended_response_time": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

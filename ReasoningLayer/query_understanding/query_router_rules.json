@@ -1,0 +1,240 @@
+{
+  "version": "1.0.0",
+  "intent_signals": {
+    "ConceptExplanation": {
+      "signals": [
+        "what is",
+        "what are",
+        "define",
+        "explain the concept",
+        "describe"
+      ],
+      "negative_signals": [
+        "compliance status",
+        "risk level",
+        "required version",
+        "root cause",
+        "lifecycle status",
+        "upgrade impact",
+        "rule evidence"
+      ],
+      "priority": 5
+    },
+    "RootCauseAnalysis": {
+      "signals": [
+        "why is",
+        "why did",
+        "root cause",
+        "what caused",
+        "reason for",
+        "failing"
+      ],
+      "priority": 80
+    },
+    "ComplianceStatus": {
+      "signals": [
+        "compliance status",
+        "is compliant",
+        "non-compliant",
+        "compliance state",
+        "failed controls",
+        "affect compliance"
+      ],
+      "priority": 65
+    },
+    "RecommendationRequest": {
+      "signals": [
+        "how do i fix",
+        "how can i fix",
+        "what should i do",
+        "recommend a fix",
+        "remediate",
+        "corrective action"
+      ],
+      "priority": 75
+    },
+    "PreventionRequest": {
+      "signals": [
+        "how can i prevent",
+        "how can this be prevented",
+        "future violations",
+        "prevent recurrence",
+        "prevention strategy",
+        "avoid this again",
+        "prevent this"
+      ],
+      "priority": 75
+    },
+    "RiskAssessment": {
+      "signals": [
+        "assess risk",
+        "what risks",
+        "risk level",
+        "business impact",
+        "technical impact",
+        "how risky"
+      ],
+      "priority": 70
+    },
+    "DependencyAnalysis": {
+      "signals": [
+        "depends on",
+        "dependencies",
+        "dependency chain",
+        "requires",
+        "prerequisite",
+        "what depends"
+      ],
+      "priority": 70
+    },
+    "CompatibilityInquiry": {
+      "signals": [
+        "compatible with",
+        "compatibility issues",
+        "is compatible",
+        "support firmware",
+        "work with",
+        "supported combination"
+      ],
+      "priority": 60
+    },
+    "ViolationInvestigation": {
+      "signals": [
+        "investigate violation",
+        "violation details",
+        "why this violation",
+        "violation evidence",
+        "show violation"
+      ],
+      "priority": 85
+    },
+    "FleetAnalysis": {
+      "signals": [
+        "affected devices",
+        "devices are affected",
+        "which devices",
+        "fleet",
+        "across devices",
+        "all managed devices",
+        "how many devices",
+        "device group"
+      ],
+      "priority": 75
+    },
+    "DeviceInvestigation": {
+      "signals": [
+        "show inventory for",
+        "inspect device",
+        "device details",
+        "device state",
+        "inventory of"
+      ],
+      "priority": 55
+    },
+    "RuleExplanation": {
+      "signals": [
+        "explain rule",
+        "why does rule",
+        "rule logic",
+        "rule evidence",
+        "what does rule"
+      ],
+      "priority": 85
+    },
+    "VersionAnalysis": {
+      "signals": [
+        "version is required",
+        "required version",
+        "minimum version",
+        "fixed version",
+        "version range",
+        "which version"
+      ],
+      "priority": 70
+    },
+    "LifecycleAnalysis": {
+      "signals": [
+        "end of support",
+        "end of life",
+        "deprecated",
+        "lifecycle status",
+        "support window",
+        "still supported"
+      ],
+      "priority": 75
+    },
+    "UpgradeImpactAnalysis": {
+      "signals": [
+        "upgrade impact",
+        "before upgrading",
+        "if i upgrade",
+        "upgrade readiness",
+        "safe to upgrade",
+        "upgrade path"
+      ],
+      "priority": 90
+    }
+  },
+  "intent_routes": {
+    "ConceptExplanation": [
+      "Layer1"
+    ],
+    "RootCauseAnalysis": [
+      "Layer2",
+      "Layer3"
+    ],
+    "ComplianceStatus": [
+      "Layer2",
+      "Layer3"
+    ],
+    "RecommendationRequest": [
+      "Layer2",
+      "Layer3"
+    ],
+    "PreventionRequest": [
+      "Layer3"
+    ],
+    "RiskAssessment": [
+      "Layer2",
+      "Layer3"
+    ],
+    "DependencyAnalysis": [
+      "Layer3"
+    ],
+    "CompatibilityInquiry": [
+      "Layer3"
+    ],
+    "ViolationInvestigation": [
+      "Layer2",
+      "Layer3"
+    ],
+    "FleetAnalysis": [
+      "Layer2"
+    ],
+    "DeviceInvestigation": [
+      "Layer2"
+    ],
+    "RuleExplanation": [
+      "Layer3"
+    ],
+    "VersionAnalysis": [
+      "Layer3"
+    ],
+    "LifecycleAnalysis": [
+      "Layer3"
+    ],
+    "UpgradeImpactAnalysis": [
+      "Layer2",
+      "Layer3"
+    ]
+  },
+  "routing_policy": {
+    "layer_order": [
+      "Layer1",
+      "Layer2",
+      "Layer3"
+    ],
+    "device_entity_adds": "Layer2",
+    "rule_or_reasoning_entity_adds": "Layer3"
+  }
+}

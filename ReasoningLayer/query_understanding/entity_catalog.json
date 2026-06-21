@@ -1,0 +1,165 @@
+[
+  {
+    "entity_type": "Device",
+    "description": "Managed endpoint or server inventory object.",
+    "aliases": [
+      "device",
+      "endpoint",
+      "laptop",
+      "workstation",
+      "server",
+      "machine"
+    ]
+  },
+  {
+    "entity_type": "BIOS",
+    "description": "Pre-boot BIOS or UEFI firmware component.",
+    "aliases": [
+      "bios",
+      "system bios",
+      "uefi",
+      "rom bios"
+    ]
+  },
+  {
+    "entity_type": "Firmware",
+    "description": "Embedded software controlling platform or device hardware.",
+    "aliases": [
+      "firmware",
+      "system firmware",
+      "device firmware",
+      "fw"
+    ]
+  },
+  {
+    "entity_type": "OperatingSystem",
+    "description": "Endpoint operating system family, release, or build.",
+    "aliases": [
+      "operating system",
+      "os",
+      "windows",
+      "linux",
+      "ubuntu"
+    ]
+  },
+  {
+    "entity_type": "Driver",
+    "description": "Software interface between an operating system and hardware.",
+    "aliases": [
+      "driver",
+      "drivers",
+      "driver pack",
+      "device driver"
+    ]
+  },
+  {
+    "entity_type": "SecurityComponent",
+    "description": "Endpoint security control or agent.",
+    "aliases": [
+      "security component",
+      "security agent",
+      "antivirus",
+      "endpoint protection",
+      "secure boot",
+      "tpm"
+    ]
+  },
+  {
+    "entity_type": "ManagementTool",
+    "description": "Endpoint management, patching, or monitoring component.",
+    "aliases": [
+      "management tool",
+      "management agent",
+      "mdm",
+      "monitoring agent",
+      "patch manager"
+    ]
+  },
+  {
+    "entity_type": "Rule",
+    "description": "Layer 3 compatibility or configuration rule.",
+    "aliases": [
+      "rule",
+      "compatibility rule",
+      "constraint",
+      "policy rule",
+      "crule"
+    ]
+  },
+  {
+    "entity_type": "Version",
+    "description": "Normalized component version or version constraint value.",
+    "aliases": [
+      "version",
+      "release",
+      "build",
+      "revision",
+      "fixed in"
+    ]
+  },
+  {
+    "entity_type": "Violation",
+    "description": "Failed compatibility, compliance, dependency, or policy expectation.",
+    "aliases": [
+      "violation",
+      "failure",
+      "non-compliant",
+      "incompatibility"
+    ]
+  },
+  {
+    "entity_type": "RootCause",
+    "description": "Reasoning classification explaining a violation.",
+    "aliases": [
+      "root cause",
+      "cause",
+      "reason",
+      "configuration drift",
+      "version mismatch"
+    ]
+  },
+  {
+    "entity_type": "Recommendation",
+    "description": "Corrective action class proposed for a root cause.",
+    "aliases": [
+      "recommendation",
+      "fix",
+      "remediation",
+      "corrective action"
+    ]
+  },
+  {
+    "entity_type": "Risk",
+    "description": "Ordered impact assessment from Informational through Critical.",
+    "aliases": [
+      "risk",
+      "severity",
+      "impact",
+      "critical",
+      "high",
+      "medium",
+      "low"
+    ]
+  },
+  {
+    "entity_type": "Vendor",
+    "description": "Organization associated with a product or source.",
+    "aliases": [
+      "vendor",
+      "manufacturer",
+      "publisher",
+      "supplier"
+    ]
+  },
+  {
+    "entity_type": "Document",
+    "description": "Evidence-bearing source document or advisory.",
+    "aliases": [
+      "document",
+      "advisory",
+      "bulletin",
+      "source",
+      "evidence"
+    ]
+  }
+]

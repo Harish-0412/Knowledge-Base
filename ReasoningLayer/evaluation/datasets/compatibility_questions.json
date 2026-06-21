@@ -1,0 +1,306 @@
+{
+  "category": "Compatibility",
+  "count": 30,
+  "questions": [
+    {
+      "question_id": "COMP-001",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.1 compatible with firmware 3.1?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-002",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.2 support firmware 4.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-003",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 1.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-004",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.4 compatible with firmware 2.4?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-005",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.5 support firmware 3.5?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-006",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 2.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-007",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.7 compatible with firmware 5.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-008",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.8 support firmware 2.1?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-009",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 1.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-010",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.0 compatible with firmware 4.3?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-011",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.1 support firmware 5.4?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-012",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 2.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-013",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.3 compatible with firmware 3.6?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-014",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.4 support firmware 4.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-015",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 1.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-016",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.6 compatible with firmware 2.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-017",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.7 support firmware 3.3?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-018",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 2.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-019",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.9 compatible with firmware 5.5?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-020",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.0 support firmware 2.6?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-021",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 1.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-022",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.2 compatible with firmware 4.1?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-023",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.3 support firmware 5.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-024",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 2.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-025",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.5 compatible with firmware 3.4?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-026",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.6 support firmware 4.5?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-027",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 1.2?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-028",
+      "category": "Compatibility",
+      "question": "Is BIOS 2.8 compatible with firmware 2.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-029",
+      "category": "Compatibility",
+      "question": "Does BIOS 3.9 support firmware 3.1?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    },
+    {
+      "question_id": "COMP-030",
+      "category": "Compatibility",
+      "question": "Is Windows 11 compatible with TPM 2.0?",
+      "expected_intent": "CompatibilityInquiry",
+      "expected_evidence_types": [
+        "CompatibilityEvidence",
+        "VersionEvidence"
+      ]
+    }
+  ]
+}

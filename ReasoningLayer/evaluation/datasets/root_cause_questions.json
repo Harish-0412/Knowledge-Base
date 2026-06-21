@@ -1,0 +1,306 @@
+{
+  "category": "RootCause",
+  "count": 30,
+  "questions": [
+    {
+      "question_id": "RCA-001",
+      "category": "RootCause",
+      "question": "Why is Laptop001 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-002",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop002?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-003",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop003?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-004",
+      "category": "RootCause",
+      "question": "Why is Laptop004 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-005",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop005?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-006",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop006?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-007",
+      "category": "RootCause",
+      "question": "Why is Laptop007 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-008",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop008?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-009",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop009?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-010",
+      "category": "RootCause",
+      "question": "Why is Laptop010 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-011",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop011?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-012",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop012?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-013",
+      "category": "RootCause",
+      "question": "Why is Laptop013 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-014",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop014?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-015",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop015?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-016",
+      "category": "RootCause",
+      "question": "Why is Laptop016 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-017",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop017?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-018",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop018?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-019",
+      "category": "RootCause",
+      "question": "Why is Laptop019 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-020",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop020?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-021",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop021?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-022",
+      "category": "RootCause",
+      "question": "Why is Laptop022 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-023",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop023?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-024",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop024?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-025",
+      "category": "RootCause",
+      "question": "Why is Laptop025 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-026",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop026?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-027",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop027?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-028",
+      "category": "RootCause",
+      "question": "Why is Laptop028 non-compliant?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-029",
+      "category": "RootCause",
+      "question": "What caused compliance validation to fail on Laptop029?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    },
+    {
+      "question_id": "RCA-030",
+      "category": "RootCause",
+      "question": "Why is the BIOS upgrade failing on Laptop030?",
+      "expected_intent": "RootCauseAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "CompatibilityEvidence"
+      ]
+    }
+  ]
+}

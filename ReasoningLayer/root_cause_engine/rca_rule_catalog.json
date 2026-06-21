@@ -1,0 +1,314 @@
+{
+  "catalog_id": "RCA-RULE-CATALOG-V1",
+  "version": "1.0.0",
+  "created_date": "2026-06-21",
+  "rule_count": 12,
+  "rules": [
+    {
+      "rule_id": "RCA-RULE-RC-VERSION-MISMATCH",
+      "root_cause_id": "RC-VERSION-MISMATCH",
+      "root_cause_name": "VersionMismatch",
+      "trigger_patterns": [
+        "min_version_constraint",
+        "exact_version_constraint",
+        "version_range_failure"
+      ],
+      "severity_range": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-COMPATIBILITY",
+        "VIOL-DEPENDENCY",
+        "VIOL-VERSION",
+        "VIOL-UPGRADE"
+      ],
+      "recommendations": [
+        "REC-UPGRADE",
+        "REC-DOWNGRADE",
+        "REC-PATCH"
+      ],
+      "description": "Installed and required component versions do not satisfy a declared comparison constraint."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-MISSING-DEPENDENCY",
+      "root_cause_id": "RC-MISSING-DEPENDENCY",
+      "root_cause_name": "MissingDependency",
+      "trigger_patterns": [
+        "required_present_failure",
+        "dependency_resolution_failure",
+        "prerequisite_absent"
+      ],
+      "severity_range": [
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-DEPENDENCY",
+        "VIOL-UPGRADE"
+      ],
+      "recommendations": [
+        "REC-INSTALL",
+        "REC-CONFIGURATION-CHANGE",
+        "REC-REPLACE"
+      ],
+      "description": "A component, capability, service, or prerequisite required by another component is absent."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-UNSUPPORTED-CONFIGURATION",
+      "root_cause_id": "RC-UNSUPPORTED-CONFIGURATION",
+      "root_cause_name": "UnsupportedConfiguration",
+      "trigger_patterns": [
+        "unsupported_combination",
+        "readiness_requirement_failure",
+        "capability_not_supported"
+      ],
+      "severity_range": [
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-COMPATIBILITY",
+        "VIOL-CONFLICT",
+        "VIOL-SUPPORTABILITY"
+      ],
+      "recommendations": [
+        "REC-CONFIGURATION-CHANGE",
+        "REC-UPGRADE",
+        "REC-REPLACE"
+      ],
+      "description": "The observed combination or setting is outside the declared support envelope."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-DEPRECATED-COMPONENT",
+      "root_cause_id": "RC-DEPRECATED-COMPONENT",
+      "root_cause_name": "DeprecatedComponent",
+      "trigger_patterns": [
+        "end_of_support",
+        "superseded_rule",
+        "deprecated_lifecycle_state"
+      ],
+      "severity_range": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-VERSION",
+        "VIOL-LIFECYCLE",
+        "VIOL-SUPPORTABILITY"
+      ],
+      "recommendations": [
+        "REC-UPGRADE",
+        "REC-REPLACE",
+        "REC-REMOVE"
+      ],
+      "description": "A component is deprecated, superseded, end-of-support, or no longer approved for use."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-CONFLICT-VIOLATION",
+      "root_cause_id": "RC-CONFLICT-VIOLATION",
+      "root_cause_name": "ConflictViolation",
+      "trigger_patterns": [
+        "incompatible_combination",
+        "conflicts_with_edge",
+        "mutually_exclusive_setting"
+      ],
+      "severity_range": [
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-COMPATIBILITY",
+        "VIOL-CONFLICT"
+      ],
+      "recommendations": [
+        "REC-REMOVE",
+        "REC-REPLACE",
+        "REC-CONFIGURATION-CHANGE"
+      ],
+      "description": "Two or more otherwise valid components or configurations cannot safely coexist."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-SECURITY-VIOLATION",
+      "root_cause_id": "RC-SECURITY-VIOLATION",
+      "root_cause_name": "SecurityViolation",
+      "trigger_patterns": [
+        "known_issue_fixed_failure",
+        "security_baseline_failure",
+        "vulnerability_exposure"
+      ],
+      "severity_range": [
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-COMPLIANCE",
+        "VIOL-SECURITY"
+      ],
+      "recommendations": [
+        "REC-PATCH",
+        "REC-UPGRADE",
+        "REC-CONFIGURATION-CHANGE"
+      ],
+      "description": "A security requirement is absent, disabled, vulnerable, or contradicted by the current configuration."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-MISSING-COMPONENT",
+      "root_cause_id": "RC-MISSING-COMPONENT",
+      "root_cause_name": "MissingComponent",
+      "trigger_patterns": [
+        "inventory_absence",
+        "agent_not_installed",
+        "component_not_discovered"
+      ],
+      "severity_range": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "related_violations": [
+        "VIOL-DEPENDENCY"
+      ],
+      "recommendations": [
+        "REC-INSTALL",
+        "REC-MONITORING-ACTION"
+      ],
+      "description": "A required managed component is not installed, discovered, or reporting inventory state."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-INVALID-UPGRADE-PATH",
+      "root_cause_id": "RC-INVALID-UPGRADE-PATH",
+      "root_cause_name": "InvalidUpgradePath",
+      "trigger_patterns": [
+        "update_order_constraint",
+        "readiness_requirement_failure",
+        "unsupported_direct_jump"
+      ],
+      "severity_range": [
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-UPGRADE"
+      ],
+      "recommendations": [
+        "REC-UPGRADE",
+        "REC-ROLLBACK",
+        "REC-CONFIGURATION-CHANGE"
+      ],
+      "description": "A requested transition skips or violates a mandatory prerequisite, intermediate version, or operation order."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-LIFECYCLE-MISMATCH",
+      "root_cause_id": "RC-LIFECYCLE-MISMATCH",
+      "root_cause_name": "LifecycleMismatch",
+      "trigger_patterns": [
+        "expired_support_window",
+        "unapproved_rule",
+        "target_lifecycle_incompatible"
+      ],
+      "severity_range": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "related_violations": [
+        "VIOL-LIFECYCLE",
+        "VIOL-SUPPORTABILITY"
+      ],
+      "recommendations": [
+        "REC-UPGRADE",
+        "REC-REPLACE",
+        "REC-POLICY-UPDATE"
+      ],
+      "description": "Component, rule, or policy lifecycle states are incompatible with the intended operation or support state."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-CONFIGURATION-DRIFT",
+      "root_cause_id": "RC-CONFIGURATION-DRIFT",
+      "root_cause_name": "ConfigurationDrift",
+      "trigger_patterns": [
+        "baseline_delta",
+        "unauthorized_change",
+        "setting_reversion"
+      ],
+      "severity_range": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-COMPLIANCE",
+        "VIOL-SECURITY",
+        "VIOL-POLICY"
+      ],
+      "recommendations": [
+        "REC-CONFIGURATION-CHANGE",
+        "REC-ROLLBACK",
+        "REC-MONITORING-ACTION"
+      ],
+      "description": "Observed state has diverged from an approved configuration baseline after deployment."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-POLICY-VIOLATION",
+      "root_cause_id": "RC-POLICY-VIOLATION",
+      "root_cause_name": "PolicyViolation",
+      "trigger_patterns": [
+        "compliance_rule_failure",
+        "prohibited_state",
+        "required_control_absent"
+      ],
+      "severity_range": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "related_violations": [
+        "VIOL-COMPLIANCE",
+        "VIOL-SECURITY",
+        "VIOL-POLICY"
+      ],
+      "recommendations": [
+        "REC-POLICY-UPDATE",
+        "REC-CONFIGURATION-CHANGE",
+        "REC-INSTALL"
+      ],
+      "description": "Observed state violates an organizational requirement even when technically compatible."
+    },
+    {
+      "rule_id": "RCA-RULE-RC-UNKNOWN-STATE",
+      "root_cause_id": "RC-UNKNOWN-STATE",
+      "root_cause_name": "UnknownState",
+      "trigger_patterns": [
+        "missing_inventory",
+        "ambiguous_version",
+        "conflicting_evidence",
+        "evaluation_error"
+      ],
+      "severity_range": [
+        "Informational",
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "related_violations": [
+        "VIOL-COMPATIBILITY"
+      ],
+      "recommendations": [
+        "REC-MONITORING-ACTION",
+        "REC-CONFIGURATION-CHANGE"
+      ],
+      "description": "Evidence is missing, stale, contradictory, or insufficient to establish a deterministic cause."
+    }
+  ]
+}

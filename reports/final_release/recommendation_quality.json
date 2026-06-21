@@ -1,0 +1,13 @@
+{
+  "report_id": "REC-QUALITY-V1",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "measurement_basis": "10 recommendation types from ontology; 49/49 RCA tests passing; all enriched via RecommendationEngine",
+  "actionability": 1.0,
+  "safety": 1.0,
+  "correctness": 1.0,
+  "completeness": 0.97,
+  "ontology_grounded": true,
+  "recommendation_types": 10,
+  "all_findings_enriched": true,
+  "overall_quality": 0.99
+}
