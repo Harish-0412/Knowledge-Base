@@ -1,0 +1,26 @@
+{
+  "devices": 5,
+  "components": 63,
+  "warnings": [
+    "Device 'DEV-000001' component at index 0 (COMP-000001): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000001' component at index 1 (COMP-000002): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000001' component at index 4 (COMP-000005): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000001' component at index 6 (COMP-000013): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000002' component at index 0 (COMP-000014): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000002' component at index 1 (COMP-000015): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000002' component at index 4 (COMP-000018): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000003' component at index 0 (COMP-000026): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000003' component at index 1 (COMP-000027): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000003' component at index 4 (COMP-000030): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000003' component at index 6 (COMP-000038): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000004' component at index 0 (COMP-000039): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000004' component at index 1 (COMP-000040): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000004' component at index 4 (COMP-000043): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000005' component at index 0 (COMP-000051): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000005' component at index 1 (COMP-000052): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000005' component at index 2 (COMP-000053): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000005' component at index 4 (COMP-000055): missing version fields: version_raw, version_normalized",
+    "Device 'DEV-000005' component at index 9 (COMP-000060): missing version fields: version_raw, version_normalized"
+  ],
+  "errors": []
+}

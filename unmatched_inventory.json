@@ -1,0 +1,415 @@
+[
+  {
+    "component_instance_id": "COMP-000001",
+    "component_name": "Device Model",
+    "component_family": "R420",
+    "value_normalized": "dell_poweredge_r420",
+    "component_type": "model"
+  },
+  {
+    "component_instance_id": "COMP-000002",
+    "component_name": "Device Type",
+    "component_family": null,
+    "value_normalized": "server",
+    "component_type": "device_type"
+  },
+  {
+    "component_instance_id": "COMP-000003",
+    "component_name": "System BIOS",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "bios"
+  },
+  {
+    "component_instance_id": "COMP-000004",
+    "component_name": "VMware ESXi",
+    "component_family": null,
+    "value_normalized": "vmware_esxi_5_1_x",
+    "component_type": "os"
+  },
+  {
+    "component_instance_id": "COMP-000005",
+    "component_name": "Intel Xeon",
+    "component_family": "E5-2400 V2",
+    "value_normalized": "intel_xeon_e5_2400_v2",
+    "component_type": "cpu"
+  },
+  {
+    "component_instance_id": "COMP-000006",
+    "component_name": "Lifecycle Controller Firmware",
+    "component_family": "lifecycle_controller",
+    "value_normalized": null,
+    "component_type": "firmware"
+  },
+  {
+    "component_instance_id": "COMP-000013",
+    "component_name": "QLogic QLE24xx",
+    "component_family": "QLE24xx",
+    "value_normalized": "qlogic_qle24xx",
+    "component_type": "hba"
+  },
+  {
+    "component_instance_id": "COMP-000007",
+    "component_name": "PERC H710",
+    "component_family": "PERC H710",
+    "value_normalized": null,
+    "component_type": "raid_controller"
+  },
+  {
+    "component_instance_id": "COMP-000008",
+    "component_name": "Intel X710 NIC Firmware",
+    "component_family": "X710",
+    "value_normalized": "intel_x710",
+    "component_type": "network_adapter"
+  },
+  {
+    "component_instance_id": "COMP-000009",
+    "component_name": "Intel X710 Network Driver",
+    "component_family": "X710",
+    "value_normalized": null,
+    "component_type": "driver"
+  },
+  {
+    "component_instance_id": "COMP-000011",
+    "component_name": "CompatIQ Endpoint Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "agent"
+  },
+  {
+    "component_instance_id": "COMP-000012",
+    "component_name": "Dell OpenManage Enterprise Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "management_tool"
+  },
+  {
+    "component_instance_id": "COMP-000014",
+    "component_name": "Device Model",
+    "component_family": "R740",
+    "value_normalized": "dell_poweredge_r740",
+    "component_type": "model"
+  },
+  {
+    "component_instance_id": "COMP-000015",
+    "component_name": "Device Type",
+    "component_family": null,
+    "value_normalized": "server",
+    "component_type": "device_type"
+  },
+  {
+    "component_instance_id": "COMP-000016",
+    "component_name": "System BIOS",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "bios"
+  },
+  {
+    "component_instance_id": "COMP-000017",
+    "component_name": "Windows Server",
+    "component_family": null,
+    "value_normalized": "windows_server_2022",
+    "component_type": "os"
+  },
+  {
+    "component_instance_id": "COMP-000018",
+    "component_name": "Intel Xeon",
+    "component_family": "Silver 4210",
+    "value_normalized": "intel_xeon_silver_4210",
+    "component_type": "cpu"
+  },
+  {
+    "component_instance_id": "COMP-000019",
+    "component_name": "Lifecycle Controller Firmware",
+    "component_family": "lifecycle_controller",
+    "value_normalized": null,
+    "component_type": "firmware"
+  },
+  {
+    "component_instance_id": "COMP-000020",
+    "component_name": "PERC H740P",
+    "component_family": "PERC H740P",
+    "value_normalized": null,
+    "component_type": "raid_controller"
+  },
+  {
+    "component_instance_id": "COMP-000021",
+    "component_name": "Intel X710 NIC Firmware",
+    "component_family": "X710",
+    "value_normalized": "intel_x710",
+    "component_type": "network_adapter"
+  },
+  {
+    "component_instance_id": "COMP-000022",
+    "component_name": "Intel X710 Network Driver",
+    "component_family": "X710",
+    "value_normalized": null,
+    "component_type": "driver"
+  },
+  {
+    "component_instance_id": "COMP-000024",
+    "component_name": "CompatIQ Endpoint Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "agent"
+  },
+  {
+    "component_instance_id": "COMP-000025",
+    "component_name": "Dell OpenManage Enterprise Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "management_tool"
+  },
+  {
+    "component_instance_id": "COMP-000026",
+    "component_name": "Device Model",
+    "component_family": "R420",
+    "value_normalized": "dell_poweredge_r420",
+    "component_type": "model"
+  },
+  {
+    "component_instance_id": "COMP-000027",
+    "component_name": "Device Type",
+    "component_family": null,
+    "value_normalized": "server",
+    "component_type": "device_type"
+  },
+  {
+    "component_instance_id": "COMP-000028",
+    "component_name": "System BIOS",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "bios"
+  },
+  {
+    "component_instance_id": "COMP-000029",
+    "component_name": "VMware ESXi",
+    "component_family": null,
+    "value_normalized": "vmware_esxi_5_1_x",
+    "component_type": "os"
+  },
+  {
+    "component_instance_id": "COMP-000030",
+    "component_name": "Intel Xeon",
+    "component_family": "E5-2400 V2",
+    "value_normalized": "intel_xeon_e5_2400_v2",
+    "component_type": "cpu"
+  },
+  {
+    "component_instance_id": "COMP-000031",
+    "component_name": "Lifecycle Controller Firmware",
+    "component_family": "lifecycle_controller",
+    "value_normalized": null,
+    "component_type": "firmware"
+  },
+  {
+    "component_instance_id": "COMP-000038",
+    "component_name": "QLogic QLE24xx",
+    "component_family": "QLE24xx",
+    "value_normalized": "qlogic_qle24xx",
+    "component_type": "hba"
+  },
+  {
+    "component_instance_id": "COMP-000032",
+    "component_name": "PERC H710",
+    "component_family": "PERC H710",
+    "value_normalized": null,
+    "component_type": "raid_controller"
+  },
+  {
+    "component_instance_id": "COMP-000033",
+    "component_name": "Intel X710 NIC Firmware",
+    "component_family": "X710",
+    "value_normalized": "intel_x710",
+    "component_type": "network_adapter"
+  },
+  {
+    "component_instance_id": "COMP-000034",
+    "component_name": "Intel X710 Network Driver",
+    "component_family": "X710",
+    "value_normalized": null,
+    "component_type": "driver"
+  },
+  {
+    "component_instance_id": "COMP-000036",
+    "component_name": "CompatIQ Endpoint Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "agent"
+  },
+  {
+    "component_instance_id": "COMP-000037",
+    "component_name": "Dell OpenManage Enterprise Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "management_tool"
+  },
+  {
+    "component_instance_id": "COMP-000039",
+    "component_name": "Device Model",
+    "component_family": "R740",
+    "value_normalized": "dell_poweredge_r740",
+    "component_type": "model"
+  },
+  {
+    "component_instance_id": "COMP-000040",
+    "component_name": "Device Type",
+    "component_family": null,
+    "value_normalized": "server",
+    "component_type": "device_type"
+  },
+  {
+    "component_instance_id": "COMP-000041",
+    "component_name": "System BIOS",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "bios"
+  },
+  {
+    "component_instance_id": "COMP-000042",
+    "component_name": "VMware ESXi",
+    "component_family": null,
+    "value_normalized": "vmware_esxi_7_0_u3",
+    "component_type": "os"
+  },
+  {
+    "component_instance_id": "COMP-000043",
+    "component_name": "Intel Xeon",
+    "component_family": "Gold 6230",
+    "value_normalized": "intel_xeon_gold_6230",
+    "component_type": "cpu"
+  },
+  {
+    "component_instance_id": "COMP-000044",
+    "component_name": "Lifecycle Controller Firmware",
+    "component_family": "lifecycle_controller",
+    "value_normalized": null,
+    "component_type": "firmware"
+  },
+  {
+    "component_instance_id": "COMP-000045",
+    "component_name": "PERC H740P",
+    "component_family": "PERC H740P",
+    "value_normalized": null,
+    "component_type": "raid_controller"
+  },
+  {
+    "component_instance_id": "COMP-000046",
+    "component_name": "Intel X710 NIC Firmware",
+    "component_family": "X710",
+    "value_normalized": "intel_x710",
+    "component_type": "network_adapter"
+  },
+  {
+    "component_instance_id": "COMP-000047",
+    "component_name": "Intel X710 Network Driver",
+    "component_family": "X710",
+    "value_normalized": null,
+    "component_type": "driver"
+  },
+  {
+    "component_instance_id": "COMP-000049",
+    "component_name": "CompatIQ Endpoint Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "agent"
+  },
+  {
+    "component_instance_id": "COMP-000050",
+    "component_name": "Dell OpenManage Enterprise Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "management_tool"
+  },
+  {
+    "component_instance_id": "COMP-000051",
+    "component_name": "Device Model",
+    "component_family": "Latitude 5440",
+    "value_normalized": "dell_latitude_5440",
+    "component_type": "model"
+  },
+  {
+    "component_instance_id": "COMP-000052",
+    "component_name": "Device Type",
+    "component_family": null,
+    "value_normalized": "laptop",
+    "component_type": "device_type"
+  },
+  {
+    "component_instance_id": "COMP-000053",
+    "component_name": "System BIOS",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "bios"
+  },
+  {
+    "component_instance_id": "COMP-000054",
+    "component_name": "Microsoft Windows",
+    "component_family": null,
+    "value_normalized": "windows_11_23h2",
+    "component_type": "os"
+  },
+  {
+    "component_instance_id": "COMP-000055",
+    "component_name": "Intel Core",
+    "component_family": "Intel Core i7-1365U",
+    "value_normalized": "intel_core_i7_1365u",
+    "component_type": "cpu"
+  },
+  {
+    "component_instance_id": "COMP-000056",
+    "component_name": "Intel Management Engine Firmware",
+    "component_family": "intel_me",
+    "value_normalized": null,
+    "component_type": "firmware"
+  },
+  {
+    "component_instance_id": "COMP-000057",
+    "component_name": "Intel AX211 Wi-Fi Firmware",
+    "component_family": "AX211",
+    "value_normalized": "intel_ax211",
+    "component_type": "network_adapter"
+  },
+  {
+    "component_instance_id": "COMP-000058",
+    "component_name": "Intel AX211 Wi-Fi Driver",
+    "component_family": "AX211",
+    "value_normalized": null,
+    "component_type": "driver"
+  },
+  {
+    "component_instance_id": "COMP-000059",
+    "component_name": "NVMe Storage Firmware",
+    "component_family": "PM9A1",
+    "value_normalized": null,
+    "component_type": "storage_controller"
+  },
+  {
+    "component_instance_id": "COMP-000060",
+    "component_name": "TPM 2.0",
+    "component_family": null,
+    "value_normalized": true,
+    "component_type": "tpm"
+  },
+  {
+    "component_instance_id": "COMP-000061",
+    "component_name": "CompatIQ Endpoint Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "agent"
+  },
+  {
+    "component_instance_id": "COMP-000062",
+    "component_name": "SentinelOne Security Agent",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "agent"
+  },
+  {
+    "component_instance_id": "COMP-000063",
+    "component_name": "Dell Command Update",
+    "component_family": null,
+    "value_normalized": null,
+    "component_type": "management_tool"
+  }
+]

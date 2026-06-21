@@ -1,0 +1,18 @@
+diff --git a/scripts/loaders/inventory_entity_mapper.py b/scripts/loaders/inventory_entity_mapper.py
+--- a/scripts/loaders/inventory_entity_mapper.py
++++ b/scripts/loaders/inventory_entity_mapper.py
+@@ -115,1 +115,1 @@
+-        return 0, 0, 0, [], [err]
++        return 0, 0, 0, 0, 0, [], [err]
+@@ -117,1 +117,1 @@
+-    # Map name (lowercase) to entity_id and normalized_name (lowercase) to entity_id for double-safety lookup
++    # Both Entity.name and Entity.normalized_name participate in exact matching.
+@@ -122,1 +122,1 @@
+-            name_to_id[str(r["name"]).lower().strip()] = entity_id
++            name_to_id[normalize_lookup_name(r["name"])] = entity_id
+@@ -124,1 +124,1 @@
+-            name_to_id[str(r["normalized_name"]).lower().strip()] = entity_id
++            name_to_id[normalize_lookup_name(r["normalized_name"])] = entity_id
+@@ -126,1 +126,1 @@
+-    logger.info(f"Loaded {len(name_to_id)} entity mapping keys from database.")
++    logger.info(f"Loaded {len(name_to_id)} normalized entity name keys from database.")

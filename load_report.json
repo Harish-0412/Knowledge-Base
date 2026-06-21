@@ -1,0 +1,19 @@
+{
+  "fields_loaded": [
+    "aliases",
+    "compatibility_relevance",
+    "description",
+    "entity_id",
+    "keywords",
+    "knowledge_category",
+    "layer",
+    "name",
+    "purpose",
+    "related_entities",
+    "subtype",
+    "type",
+    "validation_priority"
+  ],
+  "entities_loaded": 24,
+  "errors": []
+}

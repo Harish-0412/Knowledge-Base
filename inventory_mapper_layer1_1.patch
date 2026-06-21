@@ -1,0 +1,170 @@
+diff --git a/scripts/loaders/inventory_entity_mapper.py b/scripts/loaders/inventory_entity_mapper.py
+--- a/scripts/loaders/inventory_entity_mapper.py
++++ b/scripts/loaders/inventory_entity_mapper.py
+@@ -4,7 +4,7 @@
+ import logging
+ from pathlib import Path
+-from typing import Dict, Any, List, Set, Tuple
++from typing import Dict, List, Tuple
+ 
+ # Setup logging
+ logging.basicConfig(
+@@ -18,6 +18,12 @@
+ 
+ BATCH_SIZE = 50
+ 
++def normalize_lookup_name(value: object) -> str:
++    """Normalizes an entity or component name for exact-name lookup."""
++    return " ".join(str(value or "").strip().casefold().split())
++
++
+ def get_target_entity_name(comp_type: str, comp_name: str) -> str | None:
+@@ -89,10 +95,12 @@
+ 
+     return None
+ 
+-def build_inventory_mappings(conn: Neo4jConnection) -> Tuple[int, int, int, List[dict], List[str]]:
+-    """Maps ComponentInstances to Domain Entities and creates INSTANCE_OF relationships."""
++def build_inventory_mappings(conn: Neo4jConnection) -> Tuple[int, int, int, int, int, List[dict], List[str]]:
++    """Maps ComponentInstances using exact names before the existing rules."""
+     mapped_count = 0
++    exact_name_mapped = 0
++    rule_mapped = 0
+     unmapped_count = 0
+     relationships_created = 0
+     unmapped_components = []
+@@ -107,17 +115,17 @@
+         err = f"Failed to retrieve Entities from Neo4j: {e}"
+         logger.error(err, exc_info=True)
+-        return 0, 0, 0, [], [err]
++        return 0, 0, 0, 0, 0, [], [err]
+ 
+-    # Map name (lowercase) to entity_id and normalized_name (lowercase) to entity_id for double-safety lookup
++    # Both Entity.name and Entity.normalized_name participate in exact matching.
+     name_to_id: Dict[str, str] = {}
+     for r in entities_result:
+         entity_id = r["entity_id"]
+         if r.get("name"):
+-            name_to_id[str(r["name"]).lower().strip()] = entity_id
++            name_to_id[normalize_lookup_name(r["name"])] = entity_id
+         if r.get("normalized_name"):
+-            name_to_id[str(r["normalized_name"]).lower().strip()] = entity_id
++            name_to_id[normalize_lookup_name(r["normalized_name"])] = entity_id
+ 
+-    logger.info(f"Loaded {len(name_to_id)} entity mapping keys from database.")
++    logger.info(f"Loaded {len(name_to_id)} normalized entity name keys from database.")
+@@ -131,7 +139,7 @@
+         err = f"Failed to retrieve ComponentInstances from Neo4j: {e}"
+         logger.error(err, exc_info=True)
+-        return 0, 0, 0, [], [err]
++        return 0, 0, 0, 0, 0, [], [err]
+ 
+     logger.info(f"Retrieved {len(components_result)} ComponentInstance nodes to evaluate.")
+@@ -139,19 +147,36 @@
+     relationship_batch = []
+ 
+     for comp in components_result:
+         comp_id = comp["comp_id"]
+         comp_type = comp["comp_type"]
+         comp_name = comp["comp_name"]
+ 
+-        target_name = get_target_entity_name(comp_type, comp_name)
+-        
+-        target_entity_id = None
+-        if target_name:
+-            target_entity_id = name_to_id.get(target_name.lower().strip())
++        # Stage 1: exact normalized component name against Entity.name and
++        # Entity.normalized_name. Existing rules run only when this misses.
++        target_entity_id = name_to_id.get(normalize_lookup_name(comp_name))
++        target_name = None
++        resolution_method = None
++
++        if target_entity_id:
++            resolution_method = "exact_name"
++        else:
++            # Stage 2: preserve the pre-Layer-1.1 fallback rules.
++            target_name = get_target_entity_name(comp_type, comp_name)
++            if target_name:
++                target_entity_id = name_to_id.get(normalize_lookup_name(target_name))
++            if target_entity_id:
++                resolution_method = "rule"
+ 
+         if target_entity_id:
+             relationship_batch.append({
+                 "component_instance_id": comp_id,
+                 "entity_id": target_entity_id
+             })
+             mapped_count += 1
++            if resolution_method == "exact_name":
++                exact_name_mapped += 1
++            else:
++                rule_mapped += 1
+         else:
+-            reason = "No mapping strategy matched" if not target_name else f"Target entity '{target_name}' not found in database"
++            reason = (
++                "No exact-name or rule-based mapping matched"
++                if not target_name
++                else f"Target entity '{target_name}' not found in database"
++            )
+             unmapped_components.append({
+@@ -180,7 +205,23 @@
+             logger.error(err, exc_info=True)
+             errors.append(err)
+ 
+-    return mapped_count, unmapped_count, relationships_created, unmapped_components, errors
++    logger.info(
++        "Mapping resolution summary: exact_name=%d, rule_based=%d, unmapped=%d",
++        exact_name_mapped,
++        rule_mapped,
++        unmapped_count,
++    )
++
++    return (
++        mapped_count,
++        exact_name_mapped,
++        rule_mapped,
++        unmapped_count,
++        relationships_created,
++        unmapped_components,
++        errors,
++    )
+ 
+ def main():
+@@ -192,6 +233,8 @@
+     
+     conn = Neo4jConnection()
+     mapped = 0
++    exact_name_mapped = 0
++    rule_mapped = 0
+     unmapped = 0
+     relationships_created = 0
+@@ -199,7 +242,16 @@
+ 
+     try:
+         conn.connect()
+-        mapped, unmapped, relationships_created, unmapped_components, run_errors = build_inventory_mappings(conn)
++        (
++            mapped,
++            exact_name_mapped,
++            rule_mapped,
++            unmapped,
++            relationships_created,
++            unmapped_components,
++            run_errors,
++        ) = build_inventory_mappings(conn)
+         errors.extend(run_errors)
+@@ -216,6 +268,8 @@
+     unmapped_ids = [c["component_instance_id"] for c in unmapped_components]
+     report = {
+         "mapped": mapped,
++        "exact_name_mapped": exact_name_mapped,
++        "rule_mapped": rule_mapped,
+         "unmapped": unmapped,
+         "relationships_created": relationships_created,
+@@ -244,6 +298,8 @@
+     # Output summary stats
+     print("=== Inventory-to-Entity Mapping Complete ===")
+     print(f"Mapped Components:      {mapped}")
++    print(f"Exact Name Mappings:    {exact_name_mapped}")
++    print(f"Rule-based Mappings:    {rule_mapped}")
+     print(f"Unmapped Components:    {unmapped}")

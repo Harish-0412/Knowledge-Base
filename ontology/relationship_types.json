@@ -1,0 +1,16 @@
+{
+  "relationship_types": [
+    "REQUIRES",
+    "SUPPORTS",
+    "DEPENDS_ON",
+    "RUNS_ON",
+    "INITIALIZES",
+    "ENABLES",
+    "MANAGES",
+    "UPDATES",
+    "PROVIDED_BY",
+    "REPLACED_BY",
+    "CONFLICTS_WITH",
+    "INSTALLED_ON"
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "component_instance_id": "COMP-000001",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000002",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000014",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000015",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000026",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000027",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000039",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000040",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000051",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000052",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000064",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000065",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000076",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000077",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000088",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000089",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000103",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000104",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000116",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000117",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000129",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000130",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000142",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000143",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000154",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000155",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000166",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000167",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000179",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000180",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000192",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000193",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000207",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000208",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000222",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000223",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000235",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000236",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000250",
+    "component_name": "Device Model",
+    "component_type": "model",
+    "reason": "No exact-name or rule-based mapping matched"
+  },
+  {
+    "component_instance_id": "COMP-000251",
+    "component_name": "Device Type",
+    "component_type": "device_type",
+    "reason": "No exact-name or rule-based mapping matched"
+  }
+]

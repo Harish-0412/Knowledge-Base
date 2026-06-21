@@ -1,0 +1,23 @@
+{
+  "_documentation": {
+    "description": "Maps inventory component types to Layer 1 canonical entities used by Neo4j loader scripts.",
+    "unmapped_component_types": {
+      "model": "Skipped. Represents the hardware device model configuration, handled at the Device node level.",
+      "device_type": "Skipped. Represents the classification of the device (e.g. server, workstation), stored as a Device property.",
+      "cpu": "Unmapped. Represents host processor hardware; currently not modeled as an Entity node in Layer 1.",
+      "hba": "Unmapped. Host Bus Adapters; currently treated as generic hardware components.",
+      "network_adapter": "Unmapped. Network interface card hardware; currently treated as generic hardware.",
+      "raid_controller": "Unmapped. RAID disk array controller hardware; currently treated as generic hardware.",
+      "storage_controller": "Unmapped. Disk storage controller hardware; currently treated as generic hardware."
+    }
+  },
+  "mappings": {
+    "bios": "BIOS",
+    "driver": "Driver",
+    "firmware": "Firmware",
+    "os": "OperatingSystem",
+    "tpm": "TPM",
+    "agent": "Endpoint Agent",
+    "management_tool": "Endpoint Manager"
+  }
+}

@@ -1,0 +1,7 @@
+neo4j
+qdrant-client
+sentence-transformers
+fastapi
+uvicorn
+pydantic
+python-dotenv

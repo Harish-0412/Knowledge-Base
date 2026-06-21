@@ -1,0 +1,15 @@
+{
+  "node_types": [
+    "Hardware",
+    "Firmware",
+    "OperatingSystem",
+    "Driver",
+    "SecurityComponent",
+    "Agent",
+    "ManagementTool",
+    "Vendor",
+    "Document",
+    "Rule",
+    "Device"
+  ]
+}

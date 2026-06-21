@@ -1,22 +1,27 @@
-# Python
+# Ignore Python virtual environments
+venv/
+ENV/
+env/
+
+# Ignore environment variable files (secrets)
+.env
+*.env
+
+# Ignore Python cache and compiled files
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
 
-# VS Code
-.vscode/
-
-# macOS
-.DS_Store
-
-# Logs
+# Ignore logs and reports
 *.log
+*.json
 
-# Pytest
-.cache/
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.swp

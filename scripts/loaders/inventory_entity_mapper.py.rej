@@ -1,0 +1,21 @@
+diff a/scripts/loaders/inventory_entity_mapper.py b/scripts/loaders/inventory_entity_mapper.py	(rejected hunks)
+@@ -107,17 +115,17 @@
+         err = f"Failed to retrieve Entities from Neo4j: {e}"
+         logger.error(err, exc_info=True)
+-        return 0, 0, 0, [], [err]
++        return 0, 0, 0, 0, 0, [], [err]
+ 
+-    # Map name (lowercase) to entity_id and normalized_name (lowercase) to entity_id for double-safety lookup
++    # Both Entity.name and Entity.normalized_name participate in exact matching.
+     name_to_id: Dict[str, str] = {}
+     for r in entities_result:
+         entity_id = r["entity_id"]
+         if r.get("name"):
+-            name_to_id[str(r["name"]).lower().strip()] = entity_id
++            name_to_id[normalize_lookup_name(r["name"])] = entity_id
+         if r.get("normalized_name"):
+-            name_to_id[str(r["normalized_name"]).lower().strip()] = entity_id
++            name_to_id[normalize_lookup_name(r["normalized_name"])] = entity_id
+ 
+-    logger.info(f"Loaded {len(name_to_id)} entity mapping keys from database.")
++    logger.info(f"Loaded {len(name_to_id)} normalized entity name keys from database.")

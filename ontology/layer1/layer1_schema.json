@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Layer 1 Entity Ontology Schema",
+  "description": "Placeholder: Defines node types, relationship types and property rules for Layer 1 Domain Knowledge entities."
+}
