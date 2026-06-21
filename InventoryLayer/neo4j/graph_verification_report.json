@@ -1,0 +1,135 @@
+{
+  "report_id": "GRAPH-VERIFY-INVENTORY-001",
+  "report_type": "inventory_graph_verification",
+  "generated_at": "2026-06-21T18:25:36.163226+00:00",
+  "import_directory": "D:\\Fazmina\\endpoint-kb\\InventoryLayer\\neo4j",
+  "expected_counts": {
+    "nodes": {
+      "Device": 500,
+      "InstalledBIOS": 20,
+      "InstalledFirmware": 15,
+      "InstalledOS": 34,
+      "InstalledDriver": 73,
+      "Vendor": 16
+    },
+    "relationships": {
+      "HAS_BIOS": 500,
+      "HAS_FIRMWARE": 500,
+      "RUNS_OS": 500,
+      "HAS_DRIVER": 1647,
+      "BELONGS_TO_VENDOR": 500
+    }
+  },
+  "actual_node_counts": {
+    "Device": 520,
+    "InstalledBIOS": 20,
+    "InstalledFirmware": 15,
+    "InstalledOS": 34,
+    "InstalledDriver": 73,
+    "Vendor": 16
+  },
+  "actual_relationship_counts": {
+    "HAS_BIOS": 500,
+    "HAS_FIRMWARE": 500,
+    "RUNS_OS": 500,
+    "HAS_DRIVER": 1625,
+    "BELONGS_TO_VENDOR": 500
+  },
+  "count_comparison": {
+    "nodes": {
+      "Device": {
+        "expected": 500,
+        "actual": 520,
+        "status": "FAIL"
+      },
+      "InstalledBIOS": {
+        "expected": 20,
+        "actual": 20,
+        "status": "PASS"
+      },
+      "InstalledFirmware": {
+        "expected": 15,
+        "actual": 15,
+        "status": "PASS"
+      },
+      "InstalledOS": {
+        "expected": 34,
+        "actual": 34,
+        "status": "PASS"
+      },
+      "InstalledDriver": {
+        "expected": 73,
+        "actual": 73,
+        "status": "PASS"
+      },
+      "Vendor": {
+        "expected": 16,
+        "actual": 16,
+        "status": "PASS"
+      }
+    },
+    "relationships": {
+      "HAS_BIOS": {
+        "expected": 500,
+        "actual": 500,
+        "status": "PASS"
+      },
+      "HAS_FIRMWARE": {
+        "expected": 500,
+        "actual": 500,
+        "status": "PASS"
+      },
+      "RUNS_OS": {
+        "expected": 500,
+        "actual": 500,
+        "status": "PASS"
+      },
+      "HAS_DRIVER": {
+        "expected": 1647,
+        "actual": 1625,
+        "status": "FAIL"
+      },
+      "BELONGS_TO_VENDOR": {
+        "expected": 500,
+        "actual": 500,
+        "status": "PASS"
+      }
+    }
+  },
+  "relationship_endpoint_validation": {
+    "HAS_BIOS": {
+      "total_relationships": 500,
+      "valid_endpoint_relationships": 500,
+      "invalid_endpoint_relationships": 0,
+      "status": "PASS"
+    },
+    "HAS_FIRMWARE": {
+      "total_relationships": 500,
+      "valid_endpoint_relationships": 500,
+      "invalid_endpoint_relationships": 0,
+      "status": "PASS"
+    },
+    "RUNS_OS": {
+      "total_relationships": 500,
+      "valid_endpoint_relationships": 500,
+      "invalid_endpoint_relationships": 0,
+      "status": "PASS"
+    },
+    "HAS_DRIVER": {
+      "total_relationships": 1625,
+      "valid_endpoint_relationships": 1625,
+      "invalid_endpoint_relationships": 0,
+      "status": "PASS"
+    },
+    "BELONGS_TO_VENDOR": {
+      "total_relationships": 500,
+      "valid_endpoint_relationships": 500,
+      "invalid_endpoint_relationships": 0,
+      "status": "PASS"
+    }
+  },
+  "missing_references": "Neo4j does not permit physically dangling relationships; endpoint validation checks relationship types and endpoint labels.",
+  "duplicate_device_ids": [],
+  "errors": [],
+  "overall_status": "FAIL"
+}

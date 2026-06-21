@@ -1,0 +1,69 @@
+{
+  "ontology_id": "inventory-ontology-layer2-v1.0.0",
+  "ontology_name": "Inventory Ontology",
+  "ontology_layer": "Layer 2 - Inventory Ontology",
+  "ontology_version": "1.0.0",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "description": "Master ontology document for Layer 2 of the Dynamic Compatibility and Configuration Compliance Engine. Defines the semantic model for observed devices, installed configurations, vendors, models, and inventory snapshots. This ontology intentionally excludes Neo4j import implementation, compliance checks, and compatibility rule logic.",
+  "engine_context": {
+    "engine_name": "Dynamic Compatibility and Configuration Compliance Engine",
+    "layer": 2,
+    "layer_name": "Inventory Ontology Layer",
+    "layer_responsibility": "Represent actual device inventory and installed configuration state as observed from inventory sources.",
+    "upstream_dependency": {
+      "layer": 1,
+      "layer_name": "Domain Knowledge Layer",
+      "relationship": "Installed inventory components may later be resolved to Layer 1 ontology entities, but this ontology only defines Layer 2 inventory object types."
+    },
+    "downstream_consumers": {
+      "future_neo4j_import": {
+        "description": "A future import stage may transform this ontology into graph labels and relationships. No import implementation is included in this package."
+      },
+      "future_compatibility_layer": {
+        "description": "A future compatibility evaluation layer may use observed inventory state as input. No compatibility or compliance logic is included in this package."
+      }
+    }
+  },
+  "ontology_components": {
+    "entities": {
+      "component_file": "InventoryLayer/ontology/inventory_entities.json",
+      "component_version": "1.0.0",
+      "entity_count": 10,
+      "entities": [
+        {"entity_name": "Device", "purpose": "Root observed endpoint inventory object."},
+        {"entity_name": "DeviceModel", "purpose": "Observed model or platform family for a device."},
+        {"entity_name": "InstalledBIOS", "purpose": "Observed installed BIOS or UEFI BIOS state."},
+        {"entity_name": "InstalledFirmware", "purpose": "Observed installed firmware state."},
+        {"entity_name": "InstalledOS", "purpose": "Observed installed operating system state."},
+        {"entity_name": "InstalledDriver", "purpose": "Observed installed driver state."},
+        {"entity_name": "InstalledSecurityAgent", "purpose": "Observed installed endpoint security state."},
+        {"entity_name": "InstalledManagementTool", "purpose": "Observed installed management tooling state."},
+        {"entity_name": "Vendor", "purpose": "Vendor attribution for devices, models, and components."},
+        {"entity_name": "InventorySnapshot", "purpose": "Point-in-time inventory collection provenance."}
+      ]
+    },
+    "relationships": {
+      "component_file": "InventoryLayer/ontology/inventory_relationships.json",
+      "component_version": "1.0.0",
+      "relationship_count": 8,
+      "relationships": [
+        {"relationship_name": "HAS_BIOS", "source_types": ["Device"], "target_types": ["InstalledBIOS"]},
+        {"relationship_name": "HAS_FIRMWARE", "source_types": ["Device"], "target_types": ["InstalledFirmware"]},
+        {"relationship_name": "RUNS_OS", "source_types": ["Device"], "target_types": ["InstalledOS"]},
+        {"relationship_name": "HAS_DRIVER", "source_types": ["Device"], "target_types": ["InstalledDriver"]},
+        {"relationship_name": "HAS_SECURITY_AGENT", "source_types": ["Device"], "target_types": ["InstalledSecurityAgent"]},
+        {"relationship_name": "HAS_MANAGEMENT_TOOL", "source_types": ["Device"], "target_types": ["InstalledManagementTool"]},
+        {"relationship_name": "BELONGS_TO_VENDOR", "source_types": ["Device", "DeviceModel", "InstalledBIOS", "InstalledFirmware", "InstalledOS", "InstalledDriver", "InstalledSecurityAgent", "InstalledManagementTool"], "target_types": ["Vendor"]},
+        {"relationship_name": "HAS_INVENTORY_SNAPSHOT", "source_types": ["Device"], "target_types": ["InventorySnapshot"]}
+      ]
+    }
+  },
+  "explicitly_out_of_scope": [
+    "Neo4j import files",
+    "Neo4j loading logic",
+    "Compliance checks",
+    "Compatibility rules",
+    "Remediation recommendation logic"
+  ]
+}

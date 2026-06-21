@@ -1,0 +1,254 @@
+{
+  "inventory_records": [
+    {
+      "device_id": "DEV-DELL-7400-001",
+      "device_name": "atl-wks-001",
+      "vendor": "Dell",
+      "device_model": "Latitude 7400",
+      "bios_version": "1.28.0",
+      "firmware_version": "Intel Management Engine 12.0.94.2380",
+      "operating_system": {
+        "name": "Windows 11 Pro",
+        "version": "23H2",
+        "edition": "Professional",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "Intel UHD Graphics Driver", "version": "31.0.101.5333", "vendor": "Intel", "component_type": "graphics_driver"},
+        {"name": "Intel Wireless-AC Driver", "version": "23.20.0.4", "vendor": "Intel", "component_type": "network_driver"}
+      ],
+      "security_agents": [
+        {"name": "Microsoft Defender for Endpoint", "version": "4.18.24050.7", "vendor": "Microsoft", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "Dell Command Update", "version": "5.3.0", "vendor": "Dell", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:00:00Z"
+    },
+    {
+      "device_id": "DEV-DELL-R740-002",
+      "device_name": "chi-srv-db-002",
+      "vendor": "Dell",
+      "device_model": "PowerEdge R740",
+      "bios_version": "2.21.2",
+      "firmware_version": "Lifecycle Controller 7.10.30.00",
+      "operating_system": {
+        "name": "Ubuntu Server",
+        "version": "22.04.4 LTS",
+        "edition": "Server",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "Broadcom NetXtreme-E Driver", "version": "22.0.5.10", "vendor": "Broadcom", "component_type": "network_driver"},
+        {"name": "PERC H740P RAID Controller Driver", "version": "7.722.02.00", "vendor": "Dell", "component_type": "storage_driver"}
+      ],
+      "security_agents": [
+        {"name": "CrowdStrike Falcon Sensor", "version": "7.15.18206", "vendor": "CrowdStrike", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "Dell OpenManage Server Administrator", "version": "11.0.1", "vendor": "Dell", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:05:00Z"
+    },
+    {
+      "device_id": "DEV-HP-840G9-003",
+      "device_name": "nyc-wks-fin-003",
+      "vendor": "HP",
+      "device_model": "EliteBook 840 G9",
+      "bios_version": "U76 Ver. 01.14.00",
+      "firmware_version": "HP Firmware Pack 01.14.00",
+      "operating_system": {
+        "name": "Windows 11 Enterprise",
+        "version": "23H2",
+        "edition": "Enterprise",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "Intel AX211 Wi-Fi Driver", "version": "23.40.0.4", "vendor": "Intel", "component_type": "network_driver"},
+        {"name": "Realtek Audio Driver", "version": "6.0.9605.1", "vendor": "Realtek", "component_type": "audio_driver"}
+      ],
+      "security_agents": [
+        {"name": "Microsoft Defender for Endpoint", "version": "4.18.24050.7", "vendor": "Microsoft", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "HP Image Assistant", "version": "5.2.1", "vendor": "HP", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:10:00Z"
+    },
+    {
+      "device_id": "DEV-HP-DL380-004",
+      "device_name": "dal-srv-app-004",
+      "vendor": "HP",
+      "device_model": "ProLiant DL380 Gen10",
+      "bios_version": "U30 v2.96",
+      "firmware_version": "iLO 5 3.05",
+      "operating_system": {
+        "name": "Red Hat Enterprise Linux",
+        "version": "9.4",
+        "edition": "Server",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "HPE Smart Array Driver", "version": "2.1.28", "vendor": "HPE", "component_type": "storage_driver"},
+        {"name": "Mellanox ConnectX Driver", "version": "5.8-3.0.7.0", "vendor": "NVIDIA", "component_type": "network_driver"}
+      ],
+      "security_agents": [
+        {"name": "Trellix Endpoint Security for Linux", "version": "10.7.15", "vendor": "Trellix", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "HPE OneView Agent", "version": "8.8.0", "vendor": "HPE", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:15:00Z"
+    },
+    {
+      "device_id": "DEV-LENOVO-T14-005",
+      "device_name": "sea-wks-eng-005",
+      "vendor": "Lenovo",
+      "device_model": "ThinkPad T14 Gen 4",
+      "bios_version": "N3EET45W 1.45",
+      "firmware_version": "Lenovo System Firmware 1.45",
+      "operating_system": {
+        "name": "Windows 10 Enterprise",
+        "version": "22H2",
+        "edition": "Enterprise",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "Intel Iris Xe Graphics Driver", "version": "31.0.101.5522", "vendor": "Intel", "component_type": "graphics_driver"},
+        {"name": "Synaptics TouchPad Driver", "version": "19.5.35.97", "vendor": "Synaptics", "component_type": "input_driver"}
+      ],
+      "security_agents": [
+        {"name": "SentinelOne Agent", "version": "23.4.4.223", "vendor": "SentinelOne", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "Lenovo Commercial Vantage", "version": "10.2501.15.0", "vendor": "Lenovo", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:20:00Z"
+    },
+    {
+      "device_id": "DEV-LENOVO-P360-006",
+      "device_name": "bos-wks-cad-006",
+      "vendor": "Lenovo",
+      "device_model": "ThinkStation P360",
+      "bios_version": "M4ZKT36A 1.36",
+      "firmware_version": "Intel Management Engine 16.1.30.2264",
+      "operating_system": {
+        "name": "Ubuntu Desktop",
+        "version": "24.04 LTS",
+        "edition": "Desktop",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "NVIDIA RTX Workstation Driver", "version": "550.90.07", "vendor": "NVIDIA", "component_type": "graphics_driver"},
+        {"name": "Intel Ethernet Controller Driver", "version": "6.8.4", "vendor": "Intel", "component_type": "network_driver"}
+      ],
+      "security_agents": [
+        {"name": "Microsoft Defender for Endpoint Linux", "version": "101.24052.0002", "vendor": "Microsoft", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "Lenovo Update Retriever", "version": "5.00.0191", "vendor": "Lenovo", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:25:00Z"
+    },
+    {
+      "device_id": "DEV-DELL-5420-007",
+      "device_name": "mia-wks-ops-007",
+      "vendor": "Dell",
+      "device_model": "Latitude 5420",
+      "bios_version": "1.36.0",
+      "firmware_version": "Dell TPM 2.0 Firmware 7.2.2.0",
+      "operating_system": {
+        "name": "Windows 11 Pro",
+        "version": "24H2",
+        "edition": "Professional",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "Intel Dynamic Tuning Driver", "version": "9.0.11404.39881", "vendor": "Intel", "component_type": "system_driver"},
+        {"name": "Dell ControlVault Driver", "version": "4.12.8.14", "vendor": "Dell", "component_type": "security_driver"}
+      ],
+      "security_agents": [
+        {"name": "Bitdefender Endpoint Security Tools", "version": "7.9.12.412", "vendor": "Bitdefender", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "Microsoft Intune Management Extension", "version": "1.82.401.0", "vendor": "Microsoft", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:30:00Z"
+    },
+    {
+      "device_id": "DEV-HP-Z2-008",
+      "device_name": "phx-wks-design-008",
+      "vendor": "HP",
+      "device_model": "Z2 Tower G9",
+      "bios_version": "U50 Ver. 01.09.02",
+      "firmware_version": "Intel Management Engine 16.1.30.2307",
+      "operating_system": {
+        "name": "Windows 11 Enterprise",
+        "version": "24H2",
+        "edition": "Enterprise",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "NVIDIA RTX Workstation Driver", "version": "552.55", "vendor": "NVIDIA", "component_type": "graphics_driver"},
+        {"name": "Intel Chipset Device Software", "version": "10.1.19627.8423", "vendor": "Intel", "component_type": "chipset_driver"}
+      ],
+      "security_agents": [
+        {"name": "CrowdStrike Falcon Sensor", "version": "7.16.18312", "vendor": "CrowdStrike", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "HP Support Assistant", "version": "9.36.20.0", "vendor": "HP", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:35:00Z"
+    },
+    {
+      "device_id": "DEV-LENOVO-SR650-009",
+      "device_name": "den-srv-virt-009",
+      "vendor": "Lenovo",
+      "device_model": "ThinkSystem SR650 V2",
+      "bios_version": "IVE166T 3.10",
+      "firmware_version": "XClarity Controller 3.30",
+      "operating_system": {
+        "name": "Linux",
+        "version": "Rocky Linux 9.4",
+        "edition": "Server",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "Broadcom 9300-8i Storage Driver", "version": "38.00.00.00", "vendor": "Broadcom", "component_type": "storage_driver"},
+        {"name": "Intel X710 Network Driver", "version": "5.19.6", "vendor": "Intel", "component_type": "network_driver"}
+      ],
+      "security_agents": [
+        {"name": "Qualys Cloud Agent", "version": "6.1.0.49", "vendor": "Qualys", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "Lenovo XClarity Administrator Agent", "version": "4.2.0", "vendor": "Lenovo", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:40:00Z"
+    },
+    {
+      "device_id": "DEV-DELL-3561-010",
+      "device_name": "aus-wks-lab-010",
+      "vendor": "Dell",
+      "device_model": "Precision 3561",
+      "bios_version": "1.31.1",
+      "firmware_version": "Intel Management Engine 15.0.45.2411",
+      "operating_system": {
+        "name": "Ubuntu",
+        "version": "20.04.6 LTS",
+        "edition": "Desktop",
+        "architecture": "x64"
+      },
+      "driver_versions": [
+        {"name": "NVIDIA T600 Driver", "version": "535.183.01", "vendor": "NVIDIA", "component_type": "graphics_driver"},
+        {"name": "Intel Wi-Fi 6 AX201 Driver", "version": "22.250.1.2", "vendor": "Intel", "component_type": "network_driver"}
+      ],
+      "security_agents": [
+        {"name": "Sophos Linux Sensor", "version": "2.0.22", "vendor": "Sophos", "component_type": "endpoint_security"}
+      ],
+      "management_tools": [
+        {"name": "Dell Command Configure", "version": "4.12.0", "vendor": "Dell", "component_type": "management_tool"}
+      ],
+      "inventory_timestamp": "2026-06-21T08:45:00Z"
+    }
+  ]
+}

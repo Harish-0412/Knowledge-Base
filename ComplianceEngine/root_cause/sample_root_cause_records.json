@@ -1,0 +1,1602 @@
+[
+  {
+    "device": "Laptop001",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop002",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      }
+    ]
+  },
+  {
+    "device": "Laptop003",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop004",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      }
+    ]
+  },
+  {
+    "device": "Laptop005",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop006",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      }
+    ]
+  },
+  {
+    "device": "Laptop007",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      }
+    ]
+  },
+  {
+    "device": "Laptop008",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      }
+    ]
+  },
+  {
+    "device": "Laptop009",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop010",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop011",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.20.0.4"
+      }
+    ]
+  },
+  {
+    "device": "Laptop012",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop013",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.20.0.4"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Agent service stopped"
+      }
+    ]
+  },
+  {
+    "device": "Laptop014",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Agent service stopped"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM disabled"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Unsupported"
+      }
+    ]
+  },
+  {
+    "device": "Laptop015",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM disabled"
+      }
+    ]
+  },
+  {
+    "device": "Laptop016",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Unsupported"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.2.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop017",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.2.1"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "535.183.01"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop018",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "535.183.01"
+      }
+    ]
+  },
+  {
+    "device": "Laptop019",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop020",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop021",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop022",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.30.0.6"
+      }
+    ]
+  },
+  {
+    "device": "Laptop023",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.30.0.6"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Not installed"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM 1.2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop024",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Not installed"
+      }
+    ]
+  },
+  {
+    "device": "Laptop025",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM 1.2"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Pending reboot"
+      }
+    ]
+  },
+  {
+    "device": "Laptop026",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Pending reboot"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "4.12.0"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "550.90.07"
+      }
+    ]
+  },
+  {
+    "device": "Laptop027",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "4.12.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop028",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "550.90.07"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop029",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop030",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      }
+    ]
+  },
+  {
+    "device": "Laptop031",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop032",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      }
+    ]
+  },
+  {
+    "device": "Laptop033",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop034",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      }
+    ]
+  },
+  {
+    "device": "Laptop035",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop036",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      }
+    ]
+  },
+  {
+    "device": "Laptop037",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      }
+    ]
+  },
+  {
+    "device": "Laptop038",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop039",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop040",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop041",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.20.0.4"
+      }
+    ]
+  },
+  {
+    "device": "Laptop042",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop043",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.20.0.4"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Agent service stopped"
+      }
+    ]
+  },
+  {
+    "device": "Laptop044",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Agent service stopped"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM disabled"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Unsupported"
+      }
+    ]
+  },
+  {
+    "device": "Laptop045",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM disabled"
+      }
+    ]
+  },
+  {
+    "device": "Laptop046",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Unsupported"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.2.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop047",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.2.1"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "535.183.01"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop048",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "535.183.01"
+      }
+    ]
+  },
+  {
+    "device": "Laptop049",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      }
+    ]
+  },
+  {
+    "device": "Laptop050",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop051",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop052",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.30.0.6"
+      }
+    ]
+  },
+  {
+    "device": "Laptop053",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.30.0.6"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Not installed"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM 1.2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop054",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Not installed"
+      }
+    ]
+  },
+  {
+    "device": "Laptop055",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM 1.2"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Pending reboot"
+      }
+    ]
+  },
+  {
+    "device": "Laptop056",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Pending reboot"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "4.12.0"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "550.90.07"
+      }
+    ]
+  },
+  {
+    "device": "Laptop057",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "4.12.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop058",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "550.90.07"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop059",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop060",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop061",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop062",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      }
+    ]
+  },
+  {
+    "device": "Laptop063",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop064",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      }
+    ]
+  },
+  {
+    "device": "Laptop065",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop066",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      }
+    ]
+  },
+  {
+    "device": "Laptop067",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      }
+    ]
+  },
+  {
+    "device": "Laptop068",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      }
+    ]
+  },
+  {
+    "device": "Laptop069",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop070",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop071",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.20.0.4"
+      }
+    ]
+  },
+  {
+    "device": "Laptop072",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop073",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.20.0.4"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Agent service stopped"
+      }
+    ]
+  },
+  {
+    "device": "Laptop074",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Agent service stopped"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM disabled"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Unsupported"
+      }
+    ]
+  },
+  {
+    "device": "Laptop075",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM disabled"
+      }
+    ]
+  },
+  {
+    "device": "Laptop076",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Unsupported"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.2.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop077",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.2.1"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "535.183.01"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop078",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "535.183.01"
+      }
+    ]
+  },
+  {
+    "device": "Laptop079",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop080",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop081",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop082",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.30.0.6"
+      }
+    ]
+  },
+  {
+    "device": "Laptop083",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "23.30.0.6"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Not installed"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM 1.2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop084",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Not installed"
+      }
+    ]
+  },
+  {
+    "device": "Laptop085",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM 1.2"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Pending reboot"
+      }
+    ]
+  },
+  {
+    "device": "Laptop086",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Pending reboot"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "4.12.0"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "550.90.07"
+      }
+    ]
+  },
+  {
+    "device": "Laptop087",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "4.12.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop088",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "550.90.07"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop089",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      }
+    ]
+  },
+  {
+    "device": "Laptop090",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.3"
+      }
+    ]
+  },
+  {
+    "device": "Laptop091",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.27.0"
+      },
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop092",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-003",
+        "expected": "Windows 11 23H2 or later",
+        "actual": "Windows 10 22H2"
+      },
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      },
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      }
+    ]
+  },
+  {
+    "device": "Laptop093",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-004",
+        "expected": "Intel AX211 Wi-Fi Driver >= 23.40.0.4",
+        "actual": "22.250.1.2"
+      }
+    ]
+  },
+  {
+    "device": "Laptop094",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-005",
+        "expected": "Security Agent installed and active",
+        "actual": "Installed but inactive"
+      },
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      }
+    ]
+  },
+  {
+    "device": "Laptop095",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-006",
+        "expected": "TPM 2.0 enabled",
+        "actual": "TPM not detected"
+      },
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      },
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop096",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-007",
+        "expected": "Secure Boot enabled",
+        "actual": "Disabled"
+      }
+    ]
+  },
+  {
+    "device": "Laptop097",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-008",
+        "expected": "Management tool version >= 5.3.0",
+        "actual": "5.0.1"
+      },
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      }
+    ]
+  },
+  {
+    "device": "Laptop098",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-009",
+        "expected": "NVIDIA RTX Workstation Driver >= 552.55",
+        "actual": "551.86"
+      },
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      },
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      }
+    ]
+  },
+  {
+    "device": "Laptop099",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-010",
+        "expected": "Ubuntu 22.04.4 LTS or later",
+        "actual": "Ubuntu 22.04.2 LTS"
+      }
+    ]
+  },
+  {
+    "device": "Laptop100",
+    "status": "NON_COMPLIANT",
+    "root_cause": [
+      {
+        "rule": "RULE-001",
+        "expected": "Firmware >= 3.5",
+        "actual": "3.1"
+      },
+      {
+        "rule": "RULE-002",
+        "expected": "BIOS >= 1.28.0",
+        "actual": "1.24.1"
+      }
+    ]
+  }
+]

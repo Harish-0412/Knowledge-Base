@@ -1,0 +1,75 @@
+{
+  "manifest_name": "Layer 2 Inventory Neo4j Import Manifest",
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-06-21T00:00:00Z",
+  "source_file": "InventoryLayer/data/mock_inventory.json",
+  "import_directory": "InventoryLayer/neo4j",
+  "status": "PASS",
+  "node_files": [
+    {
+      "file": "device_nodes.csv",
+      "label": "Device",
+      "id_group": "Device",
+      "records": 500
+    },
+    {
+      "file": "bios_nodes.csv",
+      "label": "InstalledBIOS",
+      "id_group": "BIOS",
+      "records": 20
+    },
+    {
+      "file": "firmware_nodes.csv",
+      "label": "InstalledFirmware",
+      "id_group": "Firmware",
+      "records": 15
+    },
+    {
+      "file": "os_nodes.csv",
+      "label": "InstalledOS",
+      "id_group": "OS",
+      "records": 34
+    },
+    {
+      "file": "driver_nodes.csv",
+      "label": "InstalledDriver",
+      "id_group": "Driver",
+      "records": 73
+    },
+    {
+      "file": "vendor_nodes.csv",
+      "label": "Vendor",
+      "id_group": "Vendor",
+      "records": 16
+    }
+  ],
+  "relationship_files": [
+    {
+      "file": "has_bios_relationships.csv",
+      "type": "HAS_BIOS",
+      "records": 500
+    },
+    {
+      "file": "has_firmware_relationships.csv",
+      "type": "HAS_FIRMWARE",
+      "records": 500
+    },
+    {
+      "file": "runs_os_relationships.csv",
+      "type": "RUNS_OS",
+      "records": 500
+    },
+    {
+      "file": "has_driver_relationships.csv",
+      "type": "HAS_DRIVER",
+      "records": 1647
+    },
+    {
+      "file": "belongs_to_vendor_relationships.csv",
+      "type": "BELONGS_TO_VENDOR",
+      "records": 500
+    }
+  ],
+  "constraints_file": "neo4j_constraints.cypher",
+  "validation_report": "validation_report.json"
+}

@@ -1,0 +1,119 @@
+{
+  "report_id": "LAYER2-RETRIEVAL-VALIDATION",
+  "overall_status": "PASS",
+  "questions_evaluated": 5,
+  "results": [
+    {
+      "question": "Why is Laptop001 non-compliant?",
+      "resolved_device_id": "DEV-DELL-0011",
+      "retrieved_components": [
+        {
+          "import_id": "BIOS-DELL-86671D24B4",
+          "name": "Dell BIOS 2.18.1",
+          "type": "bios",
+          "version": "2.18.1"
+        },
+        {
+          "import_id": "FW-DELL-A0AC1F14D6",
+          "name": "Lifecycle Controller 7.10.30.00",
+          "type": "firmware",
+          "version": "Lifecycle Controller 7.10.30.00"
+        },
+        {
+          "import_id": "OS-WINDOWS-10-ENTERPRISE-A35D8196A3",
+          "name": "Windows 10 Enterprise",
+          "type": "operating_system",
+          "version": "22H2"
+        },
+        {
+          "import_id": "DRV-NVIDIA-F86DF40F00",
+          "name": "NVIDIA RTX Workstation Driver",
+          "type": "driver",
+          "version": "552.55"
+        },
+        {
+          "import_id": "DRV-BROADCOM-79916FDE65",
+          "name": "Broadcom NetXtreme-E Driver",
+          "type": "driver",
+          "version": "22.0.5.10"
+        },
+        {
+          "import_id": "DRV-DELL-6BBDE36D10",
+          "name": "Dell ControlVault Driver",
+          "type": "driver",
+          "version": "4.12.8.17"
+        }
+      ],
+      "evidence_count": 8,
+      "pass_fail": "PASS"
+    },
+    {
+      "question": "What BIOS is installed on Laptop001?",
+      "resolved_device_id": "DEV-DELL-0011",
+      "retrieved_components": [
+        {
+          "import_id": "BIOS-DELL-86671D24B4",
+          "name": "Dell BIOS 2.18.1",
+          "type": "bios",
+          "version": "2.18.1"
+        }
+      ],
+      "evidence_count": 8,
+      "pass_fail": "PASS"
+    },
+    {
+      "question": "What firmware is installed on Laptop001?",
+      "resolved_device_id": "DEV-DELL-0011",
+      "retrieved_components": [
+        {
+          "import_id": "FW-DELL-A0AC1F14D6",
+          "name": "Lifecycle Controller 7.10.30.00",
+          "type": "firmware",
+          "version": "Lifecycle Controller 7.10.30.00"
+        }
+      ],
+      "evidence_count": 8,
+      "pass_fail": "PASS"
+    },
+    {
+      "question": "What OS is installed on Laptop001?",
+      "resolved_device_id": "DEV-DELL-0011",
+      "retrieved_components": [
+        {
+          "import_id": "OS-WINDOWS-10-ENTERPRISE-A35D8196A3",
+          "name": "Windows 10 Enterprise",
+          "type": "operating_system",
+          "version": "22H2"
+        }
+      ],
+      "evidence_count": 8,
+      "pass_fail": "PASS"
+    },
+    {
+      "question": "What drivers are installed on Laptop001?",
+      "resolved_device_id": "DEV-DELL-0011",
+      "retrieved_components": [
+        {
+          "import_id": "DRV-NVIDIA-F86DF40F00",
+          "name": "NVIDIA RTX Workstation Driver",
+          "type": "driver",
+          "version": "552.55"
+        },
+        {
+          "import_id": "DRV-BROADCOM-79916FDE65",
+          "name": "Broadcom NetXtreme-E Driver",
+          "type": "driver",
+          "version": "22.0.5.10"
+        },
+        {
+          "import_id": "DRV-DELL-6BBDE36D10",
+          "name": "Dell ControlVault Driver",
+          "type": "driver",
+          "version": "4.12.8.17"
+        }
+      ],
+      "evidence_count": 8,
+      "pass_fail": "PASS"
+    }
+  ]
+}

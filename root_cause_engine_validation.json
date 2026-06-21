@@ -1,0 +1,66 @@
+{
+  "engine": "RootCauseEngine",
+  "device_tested": "DEV-000002",
+  "root_cause_count": 3,
+  "critical_count": 2,
+  "warning_count": 0,
+  "non_compliant_count": 1,
+  "llm_context_generated": true,
+  "status": "PASS",
+  "llm_context": {
+    "device_id": "DEV-000002",
+    "overall_status": "CRITICAL",
+    "critical_findings": [
+      "Lifecycle Controller Firmware version 6.1.0 does not satisfy the minimum required version 8.2.0 required by BIOS compatibility policy.",
+      "Lifecycle Controller Firmware version 6.1.0 does not satisfy the minimum required version 8.2.0 required by BIOS compatibility policy."
+    ],
+    "warning_findings": [],
+    "root_causes": [
+      {
+        "device_id": "DEV-000002",
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "severity": "critical",
+        "status": "CRITICAL",
+        "affected_component": "Lifecycle Controller Firmware",
+        "required_component": "BIOS Compatibility Requirement",
+        "required_version": "8.2.0",
+        "installed_version": "6.1.0",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "category": "Firmware",
+        "impact": "System compatibility requirements are violated and immediate remediation is recommended.",
+        "root_cause": "Lifecycle Controller Firmware version 6.1.0 does not satisfy the minimum required version 8.2.0 required by BIOS compatibility policy."
+      },
+      {
+        "device_id": "DEV-000002",
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "severity": "critical",
+        "status": "CRITICAL",
+        "affected_component": "Lifecycle Controller Firmware",
+        "required_component": "BIOS Compatibility Requirement",
+        "required_version": "8.2.0",
+        "installed_version": "6.1.0",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "category": "Firmware",
+        "impact": "System compatibility requirements are violated and immediate remediation is recommended.",
+        "root_cause": "Lifecycle Controller Firmware version 6.1.0 does not satisfy the minimum required version 8.2.0 required by BIOS compatibility policy."
+      },
+      {
+        "device_id": "DEV-000002",
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "severity": "info",
+        "status": "NON_COMPLIANT",
+        "affected_component": "NVIDIA RTX Workstation Driver",
+        "required_component": "Lifecycle Controller Firmware Compatibility Requirement",
+        "required_version": "12.5.0",
+        "installed_version": "Not Installed",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "category": "Driver",
+        "impact": "Configuration does not satisfy required policy or readiness requirements.",
+        "root_cause": "NVIDIA RTX Workstation Driver is not installed, but is required by Lifecycle Controller Firmware compatibility policy."
+      }
+    ]
+  }
+}

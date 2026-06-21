@@ -1,0 +1,15 @@
+{
+  "report_id": "ROOT-CAUSE-VALIDATION-001",
+  "report_type": "root_cause_sample_validation",
+  "generated_at": "2026-06-21T15:47:00.861479+00:00",
+  "schema_file": "ComplianceEngine/root_cause/root_cause_schema.json",
+  "sample_file": "ComplianceEngine/root_cause/sample_root_cause_records.json",
+  "validation": {
+    "record_count": 100,
+    "expected_record_count": 100,
+    "duplicate_devices": [],
+    "invalid_records": [],
+    "status": "PASS"
+  },
+  "overall_status": "PASS"
+}

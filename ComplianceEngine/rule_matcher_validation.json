@@ -1,0 +1,2063 @@
+{
+  "report_id": "RULE-MATCHER-VALIDATION",
+  "status": "PASS",
+  "total_devices_evaluated": 20,
+  "total_matched_rules": 115,
+  "matched_examples": {
+    "DEV-000001": {
+      "device_id": "DEV-000001",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+          "predicate": "REQUIRES",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.4.0",
+            "created_at": "2026-06-20T21:49:41.874000000+00:00",
+            "version_normalized": "12.4.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+          "predicate": "FIXED_BY",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Security",
+            "requirement_kind": "exact_version",
+            "entity_name": "EDR Agent",
+            "version_raw": "Security Agent",
+            "created_at": "2026-06-20T21:49:45.334000000+00:00",
+            "version_normalized": "security_agent",
+            "entity_id": "SEC-004",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-14AFEDA269990CAD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.0.0",
+            "created_at": "2026-06-20T21:49:47.502000000+00:00",
+            "version_normalized": "12.0.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:48.540000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-A93082DE51586EFE-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "readiness",
+            "entity_name": "Driver Pack",
+            "version_raw": "current",
+            "created_at": "2026-06-20T21:49:49.277000000+00:00",
+            "version_normalized": "current",
+            "entity_id": "DRV-009",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000002": {
+      "device_id": "DEV-000002",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000003": {
+      "device_id": "DEV-000003",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+          "predicate": "REQUIRES",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.4.0",
+            "created_at": "2026-06-20T21:49:41.874000000+00:00",
+            "version_normalized": "12.4.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+          "predicate": "FIXED_BY",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Security",
+            "requirement_kind": "exact_version",
+            "entity_name": "EDR Agent",
+            "version_raw": "Security Agent",
+            "created_at": "2026-06-20T21:49:45.334000000+00:00",
+            "version_normalized": "security_agent",
+            "entity_id": "SEC-004",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-14AFEDA269990CAD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.0.0",
+            "created_at": "2026-06-20T21:49:47.502000000+00:00",
+            "version_normalized": "12.0.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:48.540000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-A93082DE51586EFE-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "readiness",
+            "entity_name": "Driver Pack",
+            "version_raw": "current",
+            "created_at": "2026-06-20T21:49:49.277000000+00:00",
+            "version_normalized": "current",
+            "entity_id": "DRV-009",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000004": {
+      "device_id": "DEV-000004",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+          "predicate": "REQUIRES",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.4.0",
+            "created_at": "2026-06-20T21:49:41.874000000+00:00",
+            "version_normalized": "12.4.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+          "predicate": "FIXED_BY",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Security",
+            "requirement_kind": "exact_version",
+            "entity_name": "EDR Agent",
+            "version_raw": "Security Agent",
+            "created_at": "2026-06-20T21:49:45.334000000+00:00",
+            "version_normalized": "security_agent",
+            "entity_id": "SEC-004",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-14AFEDA269990CAD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.0.0",
+            "created_at": "2026-06-20T21:49:47.502000000+00:00",
+            "version_normalized": "12.0.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:48.540000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-A93082DE51586EFE-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "readiness",
+            "entity_name": "Driver Pack",
+            "version_raw": "current",
+            "created_at": "2026-06-20T21:49:49.277000000+00:00",
+            "version_normalized": "current",
+            "entity_id": "DRV-009",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000005": {
+      "device_id": "DEV-000005",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000006": {
+      "device_id": "DEV-000006",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000007": {
+      "device_id": "DEV-000007",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000008": {
+      "device_id": "DEV-000008",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000009": {
+      "device_id": "DEV-000009",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000010": {
+      "device_id": "DEV-000010",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000011": {
+      "device_id": "DEV-000011",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000012": {
+      "device_id": "DEV-000012",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000013": {
+      "device_id": "DEV-000013",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+          "predicate": "REQUIRES",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.4.0",
+            "created_at": "2026-06-20T21:49:41.874000000+00:00",
+            "version_normalized": "12.4.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+          "predicate": "FIXED_BY",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Security",
+            "requirement_kind": "exact_version",
+            "entity_name": "EDR Agent",
+            "version_raw": "Security Agent",
+            "created_at": "2026-06-20T21:49:45.334000000+00:00",
+            "version_normalized": "security_agent",
+            "entity_id": "SEC-004",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-14AFEDA269990CAD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.0.0",
+            "created_at": "2026-06-20T21:49:47.502000000+00:00",
+            "version_normalized": "12.0.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:48.540000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-A93082DE51586EFE-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "readiness",
+            "entity_name": "Driver Pack",
+            "version_raw": "current",
+            "created_at": "2026-06-20T21:49:49.277000000+00:00",
+            "version_normalized": "current",
+            "entity_id": "DRV-009",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000014": {
+      "device_id": "DEV-000014",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000015": {
+      "device_id": "DEV-000015",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+          "predicate": "REQUIRES",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.4.0",
+            "created_at": "2026-06-20T21:49:41.874000000+00:00",
+            "version_normalized": "12.4.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+          "predicate": "FIXED_BY",
+          "severity": "warning",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Security",
+            "requirement_kind": "exact_version",
+            "entity_name": "EDR Agent",
+            "version_raw": "Security Agent",
+            "created_at": "2026-06-20T21:49:45.334000000+00:00",
+            "version_normalized": "security_agent",
+            "entity_id": "SEC-004",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-14AFEDA269990CAD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.0.0",
+            "created_at": "2026-06-20T21:49:47.502000000+00:00",
+            "version_normalized": "12.0.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:48.540000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-009",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-A93082DE51586EFE-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "OS-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "readiness",
+            "entity_name": "Driver Pack",
+            "version_raw": "current",
+            "created_at": "2026-06-20T21:49:49.277000000+00:00",
+            "version_normalized": "current",
+            "entity_id": "DRV-009",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    },
+    "DEV-000016": {
+      "device_id": "DEV-000016",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000017": {
+      "device_id": "DEV-000017",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000018": {
+      "device_id": "DEV-000018",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000019": {
+      "device_id": "DEV-000019",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-8C74D7E72507C9FD-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "min_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "3.7.0",
+            "created_at": "2026-06-20T21:49:47.272000000+00:00",
+            "version_normalized": "3.7.0",
+            "entity_id": "MGT-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-26AF9B5E643E194B-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "critical",
+          "target_entity": "SEC-004",
+          "constraint": {
+            "entity_kind": "Management",
+            "requirement_kind": "exact_version",
+            "entity_name": "Endpoint Agent",
+            "version_raw": "Endpoint Management Agent",
+            "created_at": "2026-06-20T21:49:47.740000000+00:00",
+            "version_normalized": "endpoint_management_agent",
+            "entity_id": "MGT-010",
+            "version_scheme": "named_release",
+            "operator": "=="
+          }
+        }
+      ]
+    },
+    "DEV-000020": {
+      "device_id": "DEV-000020",
+      "matched_rules": [
+        {
+          "rule_id": "CRULE-AEADF7F483FE03B6-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-279369EA931D9982-001",
+          "predicate": "CONFLICTS_WITH",
+          "severity": "warning",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "exact_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:47.953000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": "<"
+          }
+        },
+        {
+          "rule_id": "CRULE-F51505E338E8B1D0-001",
+          "predicate": "REQUIRES",
+          "severity": "critical",
+          "target_entity": "FW-001",
+          "constraint": {
+            "entity_kind": "Firmware",
+            "requirement_kind": "min_version",
+            "entity_name": "System Firmware",
+            "version_raw": "8.2.0",
+            "created_at": "2026-06-20T21:49:46.595000000+00:00",
+            "version_normalized": "8.2.0",
+            "entity_id": "FW-013",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        },
+        {
+          "rule_id": "CRULE-38D745D2F59A2285-001",
+          "predicate": "REQUIRES",
+          "severity": "info",
+          "target_entity": "FW-013",
+          "constraint": {
+            "entity_kind": "Driver",
+            "requirement_kind": "min_version",
+            "entity_name": "Platform Driver Pack",
+            "version_raw": "12.5.0",
+            "created_at": "2026-06-20T21:49:46.968000000+00:00",
+            "version_normalized": "12.5.0",
+            "entity_id": "DRV-010",
+            "version_scheme": "semantic",
+            "operator": ">="
+          }
+        }
+      ]
+    }
+  }
+}

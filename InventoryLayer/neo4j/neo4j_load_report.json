@@ -1,0 +1,90 @@
+{
+  "report_id": "NEO4J-LOAD-INVENTORY-001",
+  "report_type": "inventory_neo4j_load",
+  "generated_at": "2026-06-21T18:25:17.773131+00:00",
+  "import_directory": "D:\\Fazmina\\endpoint-kb\\InventoryLayer\\neo4j",
+  "expected_counts": {
+    "nodes": {
+      "Device": 500,
+      "InstalledBIOS": 20,
+      "InstalledFirmware": 15,
+      "InstalledOS": 34,
+      "InstalledDriver": 73,
+      "Vendor": 16
+    },
+    "relationships": {
+      "HAS_BIOS": 500,
+      "HAS_FIRMWARE": 500,
+      "RUNS_OS": 500,
+      "HAS_DRIVER": 1647,
+      "BELONGS_TO_VENDOR": 500
+    }
+  },
+  "csv_reference_checks": {
+    "HAS_BIOS": {
+      "rows_checked": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    "HAS_FIRMWARE": {
+      "rows_checked": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    "RUNS_OS": {
+      "rows_checked": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    "HAS_DRIVER": {
+      "rows_checked": 1647,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    "BELONGS_TO_VENDOR": {
+      "rows_checked": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    }
+  },
+  "nodes_processed": {
+    "Device": 500,
+    "InstalledBIOS": 20,
+    "InstalledFirmware": 15,
+    "InstalledOS": 34,
+    "InstalledDriver": 73,
+    "Vendor": 16
+  },
+  "relationships_processed": {
+    "HAS_BIOS": 500,
+    "HAS_FIRMWARE": 500,
+    "RUNS_OS": 500,
+    "HAS_DRIVER": 1647,
+    "BELONGS_TO_VENDOR": 500
+  },
+  "graph_counts_after_load": {
+    "nodes": {
+      "Device": 520,
+      "InstalledBIOS": 20,
+      "InstalledFirmware": 15,
+      "InstalledOS": 34,
+      "InstalledDriver": 73,
+      "Vendor": 16
+    },
+    "relationships": {
+      "HAS_BIOS": 500,
+      "HAS_FIRMWARE": 500,
+      "RUNS_OS": 500,
+      "HAS_DRIVER": 1625,
+      "BELONGS_TO_VENDOR": 500
+    }
+  },
+  "duplicate_device_ids": [],
+  "errors": [],
+  "overall_status": "FAIL"
+}

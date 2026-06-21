@@ -1,0 +1,66 @@
+{
+  "report_id": "NEO4J-RETRIEVER-ALIGNMENT-VAL",
+  "status": "PASS",
+  "timestamp": "2026-06-21T23:38:00+05:30",
+  "files_changed": [
+    "ReasoningLayer/evidence_aggregation/neo4j_retriever.py"
+  ],
+  "queries_changed": [
+    {
+      "method": "get_installed_bios",
+      "old_query": "MATCH (d:Device {device_id: $id})-[:HAS_BIOS]->(b:BIOS) RETURN b",
+      "new_query": "MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance) WHERE c.component_type = $ctype OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity) RETURN c { .*, entity_name: e.name, entity_id: e.entity_id } AS comp"
+    },
+    {
+      "method": "get_installed_firmware",
+      "old_query": "MATCH (d:Device {device_id: $id})-[:HAS_FIRMWARE]->(f:Firmware) RETURN f",
+      "new_query": "MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance) WHERE c.component_type = $ctype OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity) RETURN c { .*, entity_name: e.name, entity_id: e.entity_id } AS comp"
+    },
+    {
+      "method": "get_installed_os",
+      "old_query": "MATCH (d:Device {device_id: $id})-[:HAS_OS]->(o:OperatingSystem) RETURN o",
+      "new_query": "MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance) WHERE c.component_type = $ctype OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity) RETURN c { .*, entity_name: e.name, entity_id: e.entity_id } AS comp"
+    },
+    {
+      "method": "get_installed_drivers",
+      "old_query": "MATCH (d:Device {device_id: $id})-[:HAS_DRIVER]->(dr:Driver) RETURN dr",
+      "new_query": "MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance) WHERE c.component_type = $ctype OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity) RETURN c { .*, entity_name: e.name, entity_id: e.entity_id } AS comp"
+    },
+    {
+      "method": "get_installed_security_agents",
+      "old_query": "MATCH (d:Device {device_id:$id})-[:HAS_SECURITY_AGENT]->(s:SecurityAgent) RETURN s",
+      "new_query": "MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance) WHERE c.component_type = $ctype OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity) RETURN c { .*, entity_name: e.name, entity_id: e.entity_id } AS comp"
+    },
+    {
+      "method": "get_installed_management_agents",
+      "old_query": "MATCH (d:Device {device_id:$id})-[:HAS_MANAGEMENT_AGENT]->(m:ManagementAgent) RETURN m",
+      "new_query": "MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance) WHERE c.component_type = $ctype OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity) RETURN c { .*, entity_name: e.name, entity_id: e.entity_id } AS comp"
+    },
+    {
+      "method": "get_installed_tpm",
+      "old_query": "None (New method)",
+      "new_query": "MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance) WHERE c.component_type = $ctype OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity) RETURN c { .*, entity_name: e.name, entity_id: e.entity_id } AS comp"
+    }
+  ],
+  "validation_run": {
+    "unittest_passed": true,
+    "tests_run": 116,
+    "components": [
+      {
+        "test_file": "ReasoningLayer/evidence_aggregation/tests/test_evidence_aggregation.py",
+        "tests_run": 62,
+        "status": "PASS"
+      },
+      {
+        "test_file": "ReasoningLayer/query_understanding/tests/test_query_understanding.py",
+        "tests_run": 5,
+        "status": "PASS"
+      },
+      {
+        "test_file": "ReasoningLayer/root_cause_engine/tests/test_root_cause_engine.py",
+        "tests_run": 49,
+        "status": "PASS"
+      }
+    ]
+  }
+}

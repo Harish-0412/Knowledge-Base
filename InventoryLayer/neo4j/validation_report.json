@@ -1,0 +1,68 @@
+{
+  "report_id": "VAL-RPT-INVENTORY-NEO4J-IMPORT-001",
+  "report_type": "neo4j_inventory_import_validation",
+  "generated_at": "2026-06-21T00:00:00Z",
+  "source_file": "InventoryLayer/data/mock_inventory.json",
+  "import_directory": "InventoryLayer/neo4j",
+  "overall_status": "PASS",
+  "node_counts": {
+    "devices": 500,
+    "bios": 20,
+    "firmware": 15,
+    "operating_systems": 34,
+    "drivers": 73,
+    "vendors": 16
+  },
+  "relationship_counts": {
+    "HAS_BIOS": 500,
+    "HAS_FIRMWARE": 500,
+    "RUNS_OS": 500,
+    "HAS_DRIVER": 1647,
+    "BELONGS_TO_VENDOR": 500
+  },
+  "reference_integrity_checks": [
+    {
+      "relationship_file": "has_bios_relationships.csv",
+      "relationship_count": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    {
+      "relationship_file": "has_firmware_relationships.csv",
+      "relationship_count": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    {
+      "relationship_file": "runs_os_relationships.csv",
+      "relationship_count": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    {
+      "relationship_file": "has_driver_relationships.csv",
+      "relationship_count": 1647,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    },
+    {
+      "relationship_file": "belongs_to_vendor_relationships.csv",
+      "relationship_count": 500,
+      "missing_start_references": [],
+      "missing_end_references": [],
+      "status": "PASS"
+    }
+  ],
+  "duplicate_checks": {
+    "duplicate_device_ids": 0,
+    "duplicate_bios_ids": 0,
+    "duplicate_firmware_ids": 0,
+    "duplicate_os_ids": 0,
+    "duplicate_driver_ids": 0,
+    "duplicate_vendor_ids": 0
+  }
+}

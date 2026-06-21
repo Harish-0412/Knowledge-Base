@@ -1,0 +1,94 @@
+{
+  "report_id": "VAL-RPT-INVENTORY-ONTOLOGY-001",
+  "report_type": "inventory_ontology_structural_validation",
+  "ontology_id": "inventory-ontology-layer2-v1.0.0",
+  "ontology_version": "1.0.0",
+  "ontology_layer": "Layer 2 - Inventory Ontology",
+  "validation_timestamp": "2026-06-21T00:00:00Z",
+  "validated_by": "Senior Knowledge Graph Engineer",
+  "overall_status": "PASS",
+  "overall_summary": "All required Inventory Layer ontology artifacts are present and structurally valid. No duplicate entity names or relationship names were detected. Entity and relationship counts match the declared package contents. Relationship source and target types resolve to declared inventory entity names. The package defines inventory ontology only and does not introduce Neo4j imports, compliance checks, or compatibility rules.",
+  "files_validated": [
+    {
+      "file": "InventoryLayer/ontology/inventory_entities.json",
+      "entity_count": 10,
+      "validation_status": "PASS"
+    },
+    {
+      "file": "InventoryLayer/ontology/inventory_relationships.json",
+      "relationship_count": 8,
+      "validation_status": "PASS"
+    },
+    {
+      "file": "InventoryLayer/ontology/inventory_ontology.json",
+      "validation_status": "PASS"
+    }
+  ],
+  "validation_checks": [
+    {
+      "check_id": "INV-VAL-001",
+      "check_name": "Valid JSON",
+      "description": "Verifies that all Inventory Layer ontology JSON files parse successfully.",
+      "status": "PASS",
+      "files_checked": [
+        "InventoryLayer/ontology/inventory_entities.json",
+        "InventoryLayer/ontology/inventory_relationships.json",
+        "InventoryLayer/ontology/inventory_ontology.json"
+      ],
+      "errors_found": 0
+    },
+    {
+      "check_id": "INV-VAL-002",
+      "check_name": "Duplicate Entity Detection",
+      "description": "Verifies that no two entity definitions share the same entity_name value within inventory_entities.json.",
+      "status": "PASS",
+      "entities_checked": 10,
+      "duplicates_found": 0,
+      "entities_validated": [
+        "Device",
+        "DeviceModel",
+        "InstalledBIOS",
+        "InstalledFirmware",
+        "InstalledOS",
+        "InstalledDriver",
+        "InstalledSecurityAgent",
+        "InstalledManagementTool",
+        "Vendor",
+        "InventorySnapshot"
+      ]
+    },
+    {
+      "check_id": "INV-VAL-003",
+      "check_name": "Duplicate Relationship Detection",
+      "description": "Verifies that no two relationship definitions share the same relationship_name value within inventory_relationships.json.",
+      "status": "PASS",
+      "relationships_checked": 8,
+      "duplicates_found": 0,
+      "relationships_validated": [
+        "HAS_BIOS",
+        "HAS_FIRMWARE",
+        "RUNS_OS",
+        "HAS_DRIVER",
+        "HAS_SECURITY_AGENT",
+        "HAS_MANAGEMENT_TOOL",
+        "BELONGS_TO_VENDOR",
+        "HAS_INVENTORY_SNAPSHOT"
+      ]
+    },
+    {
+      "check_id": "INV-VAL-004",
+      "check_name": "Relationship Endpoint Resolution",
+      "description": "Verifies that every relationship source type and target type resolves to a declared Inventory Layer entity.",
+      "status": "PASS",
+      "undefined_source_types": [],
+      "undefined_target_types": []
+    },
+    {
+      "check_id": "INV-VAL-005",
+      "check_name": "Scope Boundary Validation",
+      "description": "Verifies that the package is limited to Inventory Layer ontology definitions and does not define Neo4j imports, compliance checks, or compatibility rules.",
+      "status": "PASS",
+      "out_of_scope_artifacts_created": []
+    }
+  ]
+}

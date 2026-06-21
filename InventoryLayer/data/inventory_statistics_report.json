@@ -1,0 +1,130 @@
+{
+  "report_name": "Layer 2 Mock Enterprise Inventory Statistics Report",
+  "report_version": "1.0.0",
+  "generated_at": "2026-06-21T00:00:00Z",
+  "source_file": "InventoryLayer/data/mock_inventory.json",
+  "total_devices": 500,
+  "distribution_strategy": {
+    "vendors": "Dell 45%, HP 30%, Lenovo 25%",
+    "operating_systems": "Windows 11 50%, Windows 10 30%, Ubuntu 20%",
+    "notes": "Distribution approximates an enterprise fleet with heavier Dell and Windows 11 adoption, remaining Windows 10 lifecycle devices, and Ubuntu engineering/server estate."
+  },
+  "vendor_counts": {
+    "Dell": 225,
+    "HP": 150,
+    "Lenovo": 125
+  },
+  "operating_system_family_counts": {
+    "Ubuntu": 100,
+    "Windows 10": 150,
+    "Windows 11": 250
+  },
+  "model_counts": {
+    "Dell Latitude 5420": 22,
+    "Dell Latitude 5530": 29,
+    "Dell Latitude 7440": 23,
+    "Dell OptiPlex 7010": 21,
+    "Dell OptiPlex 7090": 22,
+    "Dell PowerEdge R650": 24,
+    "Dell PowerEdge R740": 20,
+    "Dell PowerEdge R750": 20,
+    "Dell Precision 3561": 21,
+    "Dell Precision 5680": 23,
+    "HP EliteBook 840 G8": 14,
+    "HP EliteBook 840 G9": 11,
+    "HP EliteBook 860 G10": 13,
+    "HP EliteDesk 800 G6": 9,
+    "HP ProBook 450 G9": 20,
+    "HP ProLiant DL360 Gen10": 15,
+    "HP ProLiant DL380 Gen10": 12,
+    "HP ProLiant ML350 Gen10": 18,
+    "HP Z2 Tower G9": 14,
+    "HP ZBook Firefly 14 G9": 24,
+    "Lenovo ThinkCentre M70q Gen 3": 13,
+    "Lenovo ThinkCentre M90q Gen 3": 11,
+    "Lenovo ThinkPad P16 Gen 1": 8,
+    "Lenovo ThinkPad T14 Gen 2": 14,
+    "Lenovo ThinkPad T14 Gen 4": 19,
+    "Lenovo ThinkPad X1 Carbon Gen 10": 8,
+    "Lenovo ThinkStation P360": 14,
+    "Lenovo ThinkSystem SR630 V2": 18,
+    "Lenovo ThinkSystem SR650 V2": 11,
+    "Lenovo ThinkSystem ST650 V2": 9
+  },
+  "bios_version_counts": {
+    "Dell 1.22.0": 31,
+    "Dell 1.24.1": 23,
+    "Dell 1.28.0": 24,
+    "Dell 1.31.1": 34,
+    "Dell 1.36.0": 27,
+    "Dell 2.18.1": 22,
+    "Dell 2.21.2": 27,
+    "Dell 2.22.1": 37,
+    "HP S78 Ver. 01.15.00": 32,
+    "HP U30 v2.92": 26,
+    "HP U30 v2.96": 19,
+    "HP U50 Ver. 01.09.02": 20,
+    "HP U76 Ver. 01.12.00": 21,
+    "HP U76 Ver. 01.14.00": 32,
+    "Lenovo IVE164T 3.08": 16,
+    "Lenovo IVE166T 3.10": 20,
+    "Lenovo M4ZKT34A 1.34": 28,
+    "Lenovo M4ZKT36A 1.36": 19,
+    "Lenovo N3EET43W 1.43": 28,
+    "Lenovo N3EET45W 1.45": 14
+  },
+  "firmware_version_counts": {
+    "Dell Dell TPM 2.0 Firmware 7.2.2.0": 48,
+    "Dell iDRAC 6.10.30.20": 37,
+    "Dell Intel Management Engine 12.0.94.2380": 53,
+    "Dell Intel Management Engine 15.0.45.2411": 45,
+    "Dell Lifecycle Controller 7.10.30.00": 42,
+    "HP HP Firmware Pack 01.14.00": 23,
+    "HP HPE Smart Array Firmware 3.53": 33,
+    "HP iLO 5 3.05": 28,
+    "HP iLO 6 1.61": 33,
+    "HP Intel Management Engine 16.1.30.2307": 33,
+    "Lenovo Intel Management Engine 16.1.30.2264": 33,
+    "Lenovo Lenovo System Firmware 1.45": 25,
+    "Lenovo Lenovo TPM Firmware 7.85": 24,
+    "Lenovo XClarity Controller 3.30": 25,
+    "Lenovo XClarity Controller 4.10": 18
+  },
+  "security_agent_counts": {
+    "Bitdefender Endpoint Security Tools": 82,
+    "CrowdStrike Falcon Sensor": 68,
+    "Microsoft Defender for Endpoint": 57,
+    "Qualys Cloud Agent": 68,
+    "SentinelOne Agent": 75,
+    "Sophos Intercept X": 77,
+    "Trellix Endpoint Security": 73
+  },
+  "management_tool_counts": {
+    "Dell Command Configure": 82,
+    "Dell Command Update": 79,
+    "Dell OpenManage Server Administrator": 64,
+    "HP Image Assistant": 51,
+    "HP Support Assistant": 41,
+    "HPE OneView Agent": 58,
+    "Lenovo Commercial Vantage": 42,
+    "Lenovo Update Retriever": 46,
+    "Lenovo XClarity Administrator Agent": 37
+  },
+  "driver_component_count": 1647,
+  "average_drivers_per_device": 3.29,
+  "validation_summary": {
+    "unique_device_ids": 500,
+    "duplicate_device_ids": 0,
+    "required_vendor_coverage": {
+      "Dell": true,
+      "HP": true,
+      "Lenovo": true
+    },
+    "required_os_coverage": {
+      "Windows 10": true,
+      "Windows 11": true,
+      "Ubuntu": true
+    },
+    "status": "PASS"
+  }
+}

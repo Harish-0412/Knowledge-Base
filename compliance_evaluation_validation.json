@@ -1,0 +1,974 @@
+{
+  "report_id": "COMPLIANCE-EVALUATOR-VALIDATION",
+  "overall_status": "PASS",
+  "total_devices_evaluated": 20,
+  "total_rules_evaluated": 115,
+  "status_distribution": {
+    "COMPLIANT": 20,
+    "WARNING": 20,
+    "NON_COMPLIANT": 10,
+    "CRITICAL": 65
+  },
+  "evaluation_examples": {
+    "DEV-000001": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000001",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000001",
+        "expected": "< 8.2.0",
+        "actual": "6.1.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000001",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+        "device_id": "DEV-000001",
+        "expected": ">= 12.4.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+        "device_id": "DEV-000001",
+        "expected": "== security_agent",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-14AFEDA269990CAD-001",
+        "device_id": "DEV-000001",
+        "expected": ">= 12.0.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+        "device_id": "DEV-000001",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-A93082DE51586EFE-001",
+        "device_id": "DEV-000001",
+        "expected": "== current",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000001",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000002": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000002",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000002",
+        "expected": "< 8.2.0",
+        "actual": "6.1.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000002",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000002",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000003": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000003",
+        "expected": ">= 8.2.0",
+        "actual": "6.0.1",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000003",
+        "expected": "< 8.2.0",
+        "actual": "6.0.1",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000003",
+        "expected": ">= 8.2.0",
+        "actual": "6.0.1",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+        "device_id": "DEV-000003",
+        "expected": ">= 12.4.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+        "device_id": "DEV-000003",
+        "expected": "== security_agent",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-14AFEDA269990CAD-001",
+        "device_id": "DEV-000003",
+        "expected": ">= 12.0.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+        "device_id": "DEV-000003",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-A93082DE51586EFE-001",
+        "device_id": "DEV-000003",
+        "expected": "== current",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000003",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000004": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000004",
+        "expected": ">= 8.2.0",
+        "actual": "6.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000004",
+        "expected": "< 8.2.0",
+        "actual": "6.2.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000004",
+        "expected": ">= 8.2.0",
+        "actual": "6.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+        "device_id": "DEV-000004",
+        "expected": ">= 12.4.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+        "device_id": "DEV-000004",
+        "expected": "== security_agent",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-14AFEDA269990CAD-001",
+        "device_id": "DEV-000004",
+        "expected": ">= 12.0.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+        "device_id": "DEV-000004",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-A93082DE51586EFE-001",
+        "device_id": "DEV-000004",
+        "expected": "== current",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000004",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000005": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000005",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000005",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000005",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000005",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000005",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000006": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000006",
+        "expected": ">= 8.2.0",
+        "actual": "5.9.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000006",
+        "expected": "< 8.2.0",
+        "actual": "5.9.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000006",
+        "expected": ">= 8.2.0",
+        "actual": "5.9.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000006",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000007": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000007",
+        "expected": ">= 8.2.0",
+        "actual": "6.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000007",
+        "expected": "< 8.2.0",
+        "actual": "6.2.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000007",
+        "expected": ">= 8.2.0",
+        "actual": "6.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000007",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000008": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000008",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000008",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000008",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000008",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000008",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000009": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000009",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000009",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000009",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000009",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000009",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000010": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000010",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000010",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000010",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000010",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000010",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000011": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000011",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000011",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000011",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000011",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000011",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000012": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000012",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000012",
+        "expected": "< 8.2.0",
+        "actual": "6.1.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000012",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000012",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000013": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000013",
+        "expected": ">= 8.2.0",
+        "actual": "5.9.5",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000013",
+        "expected": "< 8.2.0",
+        "actual": "5.9.5",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000013",
+        "expected": ">= 8.2.0",
+        "actual": "5.9.5",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+        "device_id": "DEV-000013",
+        "expected": ">= 12.4.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+        "device_id": "DEV-000013",
+        "expected": "== security_agent",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-14AFEDA269990CAD-001",
+        "device_id": "DEV-000013",
+        "expected": ">= 12.0.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+        "device_id": "DEV-000013",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-A93082DE51586EFE-001",
+        "device_id": "DEV-000013",
+        "expected": "== current",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000013",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000014": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000014",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000014",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000014",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000014",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000014",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000015": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000015",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000015",
+        "expected": "< 8.2.0",
+        "actual": "6.1.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000015",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+        "device_id": "DEV-000015",
+        "expected": ">= 12.4.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+        "device_id": "DEV-000015",
+        "expected": "== security_agent",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-14AFEDA269990CAD-001",
+        "device_id": "DEV-000015",
+        "expected": ">= 12.0.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+        "device_id": "DEV-000015",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-A93082DE51586EFE-001",
+        "device_id": "DEV-000015",
+        "expected": "== current",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000015",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ],
+    "DEV-000016": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000016",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000016",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000016",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000016",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000016",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000017": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000017",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000017",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000017",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000017",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000017",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000018": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000018",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000018",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000018",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000018",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000018",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000019": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000019",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000019",
+        "expected": "< 8.2.0",
+        "actual": "Not Installed",
+        "severity": "warning",
+        "status": "WARNING"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000019",
+        "expected": ">= 8.2.0",
+        "actual": "Not Installed",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-8C74D7E72507C9FD-001",
+        "device_id": "DEV-000019",
+        "expected": ">= 3.7.0",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-26AF9B5E643E194B-001",
+        "device_id": "DEV-000019",
+        "expected": "== endpoint_management_agent",
+        "actual": "5.2.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      }
+    ],
+    "DEV-000020": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "device_id": "DEV-000020",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-279369EA931D9982-001",
+        "device_id": "DEV-000020",
+        "expected": "< 8.2.0",
+        "actual": "6.1.0",
+        "severity": "warning",
+        "status": "COMPLIANT"
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "device_id": "DEV-000020",
+        "expected": ">= 8.2.0",
+        "actual": "6.1.0",
+        "severity": "critical",
+        "status": "CRITICAL"
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "device_id": "DEV-000020",
+        "expected": ">= 12.5.0",
+        "actual": "Not Installed",
+        "severity": "info",
+        "status": "NON_COMPLIANT"
+      }
+    ]
+  }
+}

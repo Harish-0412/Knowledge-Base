@@ -1,0 +1,17 @@
+:ID(Vendor),vendor_name,normalized_vendor_name,:LABEL
+VENDOR-BITDEFENDER,Bitdefender,bitdefender,Vendor
+VENDOR-BROADCOM,Broadcom,broadcom,Vendor
+VENDOR-CROWDSTRIKE,CrowdStrike,crowdstrike,Vendor
+VENDOR-DELL,Dell,dell,Vendor
+VENDOR-HP,HP,hp,Vendor
+VENDOR-HPE,HPE,hpe,Vendor
+VENDOR-INTEL,Intel,intel,Vendor
+VENDOR-LENOVO,Lenovo,lenovo,Vendor
+VENDOR-MICROSOFT,Microsoft,microsoft,Vendor
+VENDOR-NVIDIA,NVIDIA,nvidia,Vendor
+VENDOR-QUALYS,Qualys,qualys,Vendor
+VENDOR-REALTEK,Realtek,realtek,Vendor
+VENDOR-SENTINELONE,SentinelOne,sentinelone,Vendor
+VENDOR-SOPHOS,Sophos,sophos,Vendor
+VENDOR-SYNAPTICS,Synaptics,synaptics,Vendor
+VENDOR-TRELLIX,Trellix,trellix,Vendor

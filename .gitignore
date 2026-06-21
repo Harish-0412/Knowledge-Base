@@ -1,27 +1,23 @@
-# Ignore Python virtual environments
+# Python
 venv/
-ENV/
-env/
-
-# Ignore environment variable files (secrets)
-.env
-*.env
-
-# Ignore Python cache and compiled files
+.venv/
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# Ignore logs and reports
-*.log
-*.json
+# Environment
+.env
+.env.*
 
-# Ignore OS-specific files
+# Neo4j
+*.dump
+
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
 Thumbs.db
 
-# Ignore IDE/editor settings
-.vscode/
-.idea/
-*.swp
+# Logs
+*.log

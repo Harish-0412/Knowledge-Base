@@ -1,0 +1,66 @@
+{
+  "ruleset_name": "Layer 2 Inventory Validation Rules",
+  "ruleset_version": "1.0.0",
+  "ruleset_layer": "Layer 2 - Inventory Schema",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "description": "Validation rules for normalized inventory records. These rules validate structure, required fields, uniqueness, and basic data quality only.",
+  "validation_scope": [
+    "schema_structure",
+    "required_fields",
+    "unique_device_id",
+    "timestamp_parseability",
+    "component_array_shape"
+  ],
+  "rules": [
+    {
+      "rule_id": "INV-SCHEMA-001",
+      "rule_name": "Valid JSON",
+      "severity": "critical",
+      "description": "inventory_schema.json, inventory_validation_rules.json, sample_inventory.json, and validation report files must parse as valid JSON.",
+      "expected_result": "PASS"
+    },
+    {
+      "rule_id": "INV-SCHEMA-002",
+      "rule_name": "Required Inventory Fields Present",
+      "severity": "critical",
+      "description": "Every inventory record must include device_id, device_name, vendor, device_model, bios_version, firmware_version, operating_system, driver_versions, security_agents, management_tools, and inventory_timestamp.",
+      "expected_result": "PASS"
+    },
+    {
+      "rule_id": "INV-SCHEMA-003",
+      "rule_name": "Unique Device Identifiers",
+      "severity": "critical",
+      "description": "Every device_id value must be unique within a sample inventory file.",
+      "expected_result": "PASS"
+    },
+    {
+      "rule_id": "INV-SCHEMA-004",
+      "rule_name": "Operating System Structure",
+      "severity": "critical",
+      "description": "operating_system must be an object containing at least name and version.",
+      "expected_result": "PASS"
+    },
+    {
+      "rule_id": "INV-SCHEMA-005",
+      "rule_name": "Installed Component Arrays",
+      "severity": "critical",
+      "description": "driver_versions, security_agents, and management_tools must be arrays. Each item must contain name and version.",
+      "expected_result": "PASS"
+    },
+    {
+      "rule_id": "INV-SCHEMA-006",
+      "rule_name": "Inventory Timestamp Format",
+      "severity": "critical",
+      "description": "inventory_timestamp must be parseable as an ISO 8601 date-time value.",
+      "expected_result": "PASS"
+    },
+    {
+      "rule_id": "INV-SCHEMA-007",
+      "rule_name": "Sample Coverage",
+      "severity": "major",
+      "description": "Sample inventory must include 10 records and cover Dell, HP, Lenovo, Windows, Linux, and Ubuntu examples.",
+      "expected_result": "PASS"
+    }
+  ]
+}

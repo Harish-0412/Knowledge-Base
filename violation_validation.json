@@ -1,0 +1,868 @@
+{
+  "report_id": "VIOLATION-GENERATOR-VALIDATION",
+  "status": "PASS",
+  "total_devices_evaluated": 20,
+  "total_violations_found": 95,
+  "status_distribution": {
+    "CRITICAL": 65,
+    "WARNING": 20,
+    "NON_COMPLIANT": 10
+  },
+  "violation_records": [
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-FBAB6E52A6005CC3-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "expected": ">= 12.4.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-55ADFDEDAD3CD919-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "expected": "== security_agent",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-14AFEDA269990CAD-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "expected": ">= 12.0.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-6C513DB9B0A7D3CB-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-A93082DE51586EFE-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "expected": "== current",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000001-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000001",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000002-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000002",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000002-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000002",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000002-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000002",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.0.1",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.0.1",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-FBAB6E52A6005CC3-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "expected": ">= 12.4.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-55ADFDEDAD3CD919-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "expected": "== security_agent",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-14AFEDA269990CAD-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "expected": ">= 12.0.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-6C513DB9B0A7D3CB-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-A93082DE51586EFE-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "expected": "== current",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000003-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000003",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-FBAB6E52A6005CC3-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "expected": ">= 12.4.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-55ADFDEDAD3CD919-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "expected": "== security_agent",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-14AFEDA269990CAD-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "expected": ">= 12.0.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-6C513DB9B0A7D3CB-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-A93082DE51586EFE-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "expected": "== current",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000004-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000004",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000005-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000005",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000005-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000005",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000005-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000005",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000005-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000005",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000006-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000006",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "5.9.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000006-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000006",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "5.9.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000006-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000006",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000007-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000007",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000007-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000007",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000007-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000007",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000008-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000008",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000008-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000008",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000008-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000008",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000008-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000008",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000009-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000009",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000009-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000009",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000009-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000009",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000009-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000009",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000010-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000010",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000010-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000010",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000010-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000010",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000010-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000010",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000011-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000011",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000011-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000011",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000011-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000011",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000011-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000011",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000012-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000012",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000012-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000012",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000012-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000012",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "5.9.5",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "5.9.5",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-FBAB6E52A6005CC3-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "expected": ">= 12.4.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-55ADFDEDAD3CD919-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "expected": "== security_agent",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-14AFEDA269990CAD-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "expected": ">= 12.0.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-6C513DB9B0A7D3CB-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-A93082DE51586EFE-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "expected": "== current",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000013-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000013",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000014-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000014",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000014-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000014",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000014-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000014",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000014-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000014",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-FBAB6E52A6005CC3-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-FBAB6E52A6005CC3-001",
+      "expected": ">= 12.4.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-55ADFDEDAD3CD919-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-55ADFDEDAD3CD919-001",
+      "expected": "== security_agent",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-14AFEDA269990CAD-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-14AFEDA269990CAD-001",
+      "expected": ">= 12.0.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-6C513DB9B0A7D3CB-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-6C513DB9B0A7D3CB-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-A93082DE51586EFE-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-A93082DE51586EFE-001",
+      "expected": "== current",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000015-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000015",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    },
+    {
+      "violation_id": "VIOL-DEV-000016-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000016",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000016-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000016",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000016-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000016",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000016-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000016",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000017-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000017",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000017-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000017",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000017-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000017",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000017-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000017",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000018-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000018",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000018-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000018",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000018-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000018",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000018-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000018",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000019-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000019",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000019-CRULE-279369EA931D9982-001",
+      "device_id": "DEV-000019",
+      "rule_id": "CRULE-279369EA931D9982-001",
+      "expected": "< 8.2.0",
+      "actual": "Not Installed",
+      "severity": "warning",
+      "status": "WARNING"
+    },
+    {
+      "violation_id": "VIOL-DEV-000019-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000019",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "Not Installed",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000019-CRULE-26AF9B5E643E194B-001",
+      "device_id": "DEV-000019",
+      "rule_id": "CRULE-26AF9B5E643E194B-001",
+      "expected": "== endpoint_management_agent",
+      "actual": "5.2.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000020-CRULE-AEADF7F483FE03B6-001",
+      "device_id": "DEV-000020",
+      "rule_id": "CRULE-AEADF7F483FE03B6-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000020-CRULE-F51505E338E8B1D0-001",
+      "device_id": "DEV-000020",
+      "rule_id": "CRULE-F51505E338E8B1D0-001",
+      "expected": ">= 8.2.0",
+      "actual": "6.1.0",
+      "severity": "critical",
+      "status": "CRITICAL"
+    },
+    {
+      "violation_id": "VIOL-DEV-000020-CRULE-38D745D2F59A2285-001",
+      "device_id": "DEV-000020",
+      "rule_id": "CRULE-38D745D2F59A2285-001",
+      "expected": ">= 12.5.0",
+      "actual": "Not Installed",
+      "severity": "info",
+      "status": "NON_COMPLIANT"
+    }
+  ]
+}

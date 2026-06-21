@@ -1,0 +1,117 @@
+{
+  "engine": "PreventionEngine",
+  "device_tested": "DEV-000002",
+  "violations_evaluated": 3,
+  "prevention_rules_triggered": 3,
+  "status": "PASS",
+  "prevention_summary": {
+    "device_id": "DEV-000002",
+    "top_risks": [
+      "Critical compatibility risk for Lifecycle Controller Firmware due to failed BIOS Compatibility Requirement"
+    ],
+    "recommended_programs": [
+      "Enable automated firmware lifecycle management",
+      "Enable driver update policy",
+      "Establish vendor alignment for platform hardware refreshes",
+      "Implement driver deployment rings",
+      "Monitor firmware versions through endpoint management",
+      "Perform monthly firmware audits",
+      "Schedule quarterly driver reviews",
+      "Standardize driver baselines across device pools"
+    ],
+    "automation_candidates": [
+      "Automated compliance scanning",
+      "Automated driver installation",
+      "Automated firmware lifecycle management",
+      "Automated inventory refresh"
+    ]
+  },
+  "llm_context": {
+    "device_id": "DEV-000002",
+    "overall_status": "CRITICAL",
+    "high_priority_prevention": [
+      "Enable alerts for firmware version discrepancies",
+      "Validate firmware signatures before deployment"
+    ],
+    "prevention_guidance": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "priority": "HIGH",
+        "category": "Firmware",
+        "short_term": [
+          "Validate firmware signatures before deployment",
+          "Enable alerts for firmware version discrepancies"
+        ],
+        "medium_term": [
+          "Perform monthly firmware audits",
+          "Monitor firmware versions through endpoint management"
+        ],
+        "long_term": [
+          "Enable automated firmware lifecycle management",
+          "Establish vendor alignment for platform hardware refreshes"
+        ],
+        "governance_controls": [
+          "Change management approval workflows",
+          "Compliance evidence tracking",
+          "Firmware version baselining"
+        ],
+        "automation_opportunities": [
+          "Automated compliance scanning",
+          "Automated firmware lifecycle management",
+          "Automated inventory refresh"
+        ]
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "priority": "HIGH",
+        "category": "Firmware",
+        "short_term": [
+          "Validate firmware signatures before deployment",
+          "Enable alerts for firmware version discrepancies"
+        ],
+        "medium_term": [
+          "Perform monthly firmware audits",
+          "Monitor firmware versions through endpoint management"
+        ],
+        "long_term": [
+          "Enable automated firmware lifecycle management",
+          "Establish vendor alignment for platform hardware refreshes"
+        ],
+        "governance_controls": [
+          "Change management approval workflows",
+          "Compliance evidence tracking",
+          "Firmware version baselining"
+        ],
+        "automation_opportunities": [
+          "Automated compliance scanning",
+          "Automated firmware lifecycle management",
+          "Automated inventory refresh"
+        ]
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "priority": "LOW",
+        "category": "Driver",
+        "short_term": [
+          "Monitor driver health and check system logs for driver crashes"
+        ],
+        "medium_term": [
+          "Schedule quarterly driver reviews",
+          "Implement driver deployment rings"
+        ],
+        "long_term": [
+          "Enable driver update policy",
+          "Standardize driver baselines across device pools"
+        ],
+        "governance_controls": [
+          "Change management controls",
+          "Vendor driver verification workflows"
+        ],
+        "automation_opportunities": [
+          "Automated driver installation",
+          "Automated compliance scanning"
+        ]
+      }
+    ]
+  }
+}

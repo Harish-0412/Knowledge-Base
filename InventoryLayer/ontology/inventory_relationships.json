@@ -1,0 +1,83 @@
+{
+  "ontology_component": "inventory_relationships",
+  "ontology_layer": "Layer 2 - Inventory Ontology",
+  "ontology_version": "1.0.0",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "description": "Defines the controlled relationship vocabulary for the Inventory Layer. These relationships connect observed devices to installed configurations, vendors, models, and inventory snapshots. Direction is canonical and represents observed inventory state only.",
+  "relationship_count": 8,
+  "relationships": [
+    {
+      "relationship_name": "HAS_BIOS",
+      "description": "Connects a Device to its observed installed BIOS or UEFI BIOS instance.",
+      "source_types": ["Device"],
+      "target_types": ["InstalledBIOS"],
+      "directionality": "source_to_target",
+      "cardinality": "one_or_more_per_device",
+      "inventory_semantics": "installed_state"
+    },
+    {
+      "relationship_name": "HAS_FIRMWARE",
+      "description": "Connects a Device to an observed installed firmware instance.",
+      "source_types": ["Device"],
+      "target_types": ["InstalledFirmware"],
+      "directionality": "source_to_target",
+      "cardinality": "zero_or_more_per_device",
+      "inventory_semantics": "installed_state"
+    },
+    {
+      "relationship_name": "RUNS_OS",
+      "description": "Connects a Device to its observed installed operating system instance.",
+      "source_types": ["Device"],
+      "target_types": ["InstalledOS"],
+      "directionality": "source_to_target",
+      "cardinality": "one_or_more_per_device",
+      "inventory_semantics": "installed_state"
+    },
+    {
+      "relationship_name": "HAS_DRIVER",
+      "description": "Connects a Device to an observed installed driver instance.",
+      "source_types": ["Device"],
+      "target_types": ["InstalledDriver"],
+      "directionality": "source_to_target",
+      "cardinality": "zero_or_more_per_device",
+      "inventory_semantics": "installed_state"
+    },
+    {
+      "relationship_name": "HAS_SECURITY_AGENT",
+      "description": "Connects a Device to an observed installed security agent instance.",
+      "source_types": ["Device"],
+      "target_types": ["InstalledSecurityAgent"],
+      "directionality": "source_to_target",
+      "cardinality": "zero_or_more_per_device",
+      "inventory_semantics": "installed_state"
+    },
+    {
+      "relationship_name": "HAS_MANAGEMENT_TOOL",
+      "description": "Connects a Device to an observed installed management tool instance.",
+      "source_types": ["Device"],
+      "target_types": ["InstalledManagementTool"],
+      "directionality": "source_to_target",
+      "cardinality": "zero_or_more_per_device",
+      "inventory_semantics": "installed_state"
+    },
+    {
+      "relationship_name": "BELONGS_TO_VENDOR",
+      "description": "Connects a Device, DeviceModel, or installed component to the Vendor associated with that observed inventory object.",
+      "source_types": ["Device", "DeviceModel", "InstalledBIOS", "InstalledFirmware", "InstalledOS", "InstalledDriver", "InstalledSecurityAgent", "InstalledManagementTool"],
+      "target_types": ["Vendor"],
+      "directionality": "source_to_target",
+      "cardinality": "zero_or_more_per_source",
+      "inventory_semantics": "vendor_attribution"
+    },
+    {
+      "relationship_name": "HAS_INVENTORY_SNAPSHOT",
+      "description": "Connects a Device to the InventorySnapshot in which the device state was observed.",
+      "source_types": ["Device"],
+      "target_types": ["InventorySnapshot"],
+      "directionality": "source_to_target",
+      "cardinality": "one_or_more_per_device",
+      "inventory_semantics": "collection_provenance"
+    }
+  ]
+}

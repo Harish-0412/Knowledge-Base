@@ -1,0 +1,16 @@
+:ID(Firmware),import_id,name,vendor,firmware_version,:LABEL
+FW-HP-7468C1BBEC,FW-HP-7468C1BBEC,Intel Management Engine 16.1.30.2307,HP,Intel Management Engine 16.1.30.2307,InstalledFirmware
+FW-DELL-129603E273,FW-DELL-129603E273,Intel Management Engine 15.0.45.2411,Dell,Intel Management Engine 15.0.45.2411,InstalledFirmware
+FW-HP-BAF238AC37,FW-HP-BAF238AC37,HP Firmware Pack 01.14.00,HP,HP Firmware Pack 01.14.00,InstalledFirmware
+FW-LENOVO-3FB22C6BCF,FW-LENOVO-3FB22C6BCF,Intel Management Engine 16.1.30.2264,Lenovo,Intel Management Engine 16.1.30.2264,InstalledFirmware
+FW-HP-6B4840EB70,FW-HP-6B4840EB70,iLO 5 3.05,HP,iLO 5 3.05,InstalledFirmware
+FW-DELL-6A3BCECC3A,FW-DELL-6A3BCECC3A,iDRAC 6.10.30.20,Dell,iDRAC 6.10.30.20,InstalledFirmware
+FW-DELL-A8332BCBA5,FW-DELL-A8332BCBA5,Intel Management Engine 12.0.94.2380,Dell,Intel Management Engine 12.0.94.2380,InstalledFirmware
+FW-DELL-8EDB54E5E5,FW-DELL-8EDB54E5E5,Dell TPM 2.0 Firmware 7.2.2.0,Dell,Dell TPM 2.0 Firmware 7.2.2.0,InstalledFirmware
+FW-LENOVO-4CB55B3F1C,FW-LENOVO-4CB55B3F1C,XClarity Controller 4.10,Lenovo,XClarity Controller 4.10,InstalledFirmware
+FW-DELL-A0AC1F14D6,FW-DELL-A0AC1F14D6,Lifecycle Controller 7.10.30.00,Dell,Lifecycle Controller 7.10.30.00,InstalledFirmware
+FW-HP-1C4F3E8E9C,FW-HP-1C4F3E8E9C,iLO 6 1.61,HP,iLO 6 1.61,InstalledFirmware
+FW-LENOVO-53F5B3BC89,FW-LENOVO-53F5B3BC89,Lenovo TPM Firmware 7.85,Lenovo,Lenovo TPM Firmware 7.85,InstalledFirmware
+FW-LENOVO-0DD96320CD,FW-LENOVO-0DD96320CD,Lenovo System Firmware 1.45,Lenovo,Lenovo System Firmware 1.45,InstalledFirmware
+FW-HP-75C813DB5B,FW-HP-75C813DB5B,HPE Smart Array Firmware 3.53,HP,HPE Smart Array Firmware 3.53,InstalledFirmware
+FW-LENOVO-97EC8A8CE2,FW-LENOVO-97EC8A8CE2,XClarity Controller 3.30,Lenovo,XClarity Controller 3.30,InstalledFirmware

@@ -1,0 +1,74 @@
+:ID(Driver),import_id,name,version,vendor,component_type,:LABEL
+DRV-NVIDIA-F86DF40F00,DRV-NVIDIA-F86DF40F00,NVIDIA RTX Workstation Driver,552.55,NVIDIA,graphics_driver,InstalledDriver
+DRV-INTEL-07D41921A9,DRV-INTEL-07D41921A9,Intel UHD Graphics Driver,31.0.101.5336,Intel,graphics_driver,InstalledDriver
+DRV-HP-446583B7B7,DRV-HP-446583B7B7,HP Sure Sense Driver,4.4.12.4,HP,security_driver,InstalledDriver
+DRV-BROADCOM-712A2F5A79,DRV-BROADCOM-712A2F5A79,Broadcom 9300-8i Storage Driver,38.00.00.0,Broadcom,storage_driver,InstalledDriver
+DRV-INTEL-C5FED6A54F,DRV-INTEL-C5FED6A54F,Intel Ethernet Controller Driver,6.8.5,Intel,network_driver,InstalledDriver
+DRV-REALTEK-9CCAE8693E,DRV-REALTEK-9CCAE8693E,Realtek Audio Driver,6.0.9605.2,Realtek,audio_driver,InstalledDriver
+DRV-DELL-674B2D3BF5,DRV-DELL-674B2D3BF5,Dell ControlVault Driver,4.12.8.14,Dell,security_driver,InstalledDriver
+DRV-REALTEK-99F9F08AE2,DRV-REALTEK-99F9F08AE2,Realtek Audio Driver,6.0.9605.1,Realtek,audio_driver,InstalledDriver
+DRV-BROADCOM-6CDDC970CB,DRV-BROADCOM-6CDDC970CB,Broadcom NetXtreme-E Driver,22.0.5.12,Broadcom,network_driver,InstalledDriver
+DRV-HP-EA822B7312,DRV-HP-EA822B7312,HP Hotkey Support Driver,8.10.39.1,HP,system_driver,InstalledDriver
+DRV-INTEL-3DF58A09B7,DRV-INTEL-3DF58A09B7,Intel AX211 Wi-Fi Driver,23.40.0.6,Intel,network_driver,InstalledDriver
+DRV-SYNAPTICS-3F8B672098,DRV-SYNAPTICS-3F8B672098,Synaptics TouchPad Driver,19.5.35.99,Synaptics,input_driver,InstalledDriver
+DRV-INTEL-E2C439A2DB,DRV-INTEL-E2C439A2DB,Intel Chipset Device Software,10.1.19627.8423,Intel,chipset_driver,InstalledDriver
+DRV-INTEL-E87ACAFE4E,DRV-INTEL-E87ACAFE4E,Intel Iris Xe Graphics Driver,31.0.101.5522,Intel,graphics_driver,InstalledDriver
+DRV-HP-8F132A5744,DRV-HP-8F132A5744,HP Hotkey Support Driver,8.10.39.4,HP,system_driver,InstalledDriver
+DRV-INTEL-8102BEA24F,DRV-INTEL-8102BEA24F,Intel AX211 Wi-Fi Driver,23.40.0.4,Intel,network_driver,InstalledDriver
+DRV-INTEL-FE82CD6964,DRV-INTEL-FE82CD6964,Intel Iris Xe Graphics Driver,31.0.101.5523,Intel,graphics_driver,InstalledDriver
+DRV-INTEL-A1512838B1,DRV-INTEL-A1512838B1,Intel UHD Graphics Driver,31.0.101.5335,Intel,graphics_driver,InstalledDriver
+DRV-DELL-437F9F91D7,DRV-DELL-437F9F91D7,Dell Touchpad Driver,10.3201.101.217,Dell,input_driver,InstalledDriver
+DRV-INTEL-9440D9D3AB,DRV-INTEL-9440D9D3AB,Intel X710 Network Driver,5.19.9,Intel,network_driver,InstalledDriver
+DRV-INTEL-C94BBF26AF,DRV-INTEL-C94BBF26AF,Intel Chipset Device Software,10.1.19627.8424,Intel,chipset_driver,InstalledDriver
+DRV-DELL-61F0A64A98,DRV-DELL-61F0A64A98,PERC H740P RAID Controller Driver,7.722.02.2,Dell,storage_driver,InstalledDriver
+DRV-BROADCOM-18C76647A3,DRV-BROADCOM-18C76647A3,Broadcom 9300-8i Storage Driver,38.00.00.3,Broadcom,storage_driver,InstalledDriver
+DRV-HPE-CB2FAB501A,DRV-HPE-CB2FAB501A,HPE Smart Array Driver,2.1.30,HPE,storage_driver,InstalledDriver
+DRV-BROADCOM-F5431F61D1,DRV-BROADCOM-F5431F61D1,Broadcom 9300-8i Storage Driver,38.00.00.1,Broadcom,storage_driver,InstalledDriver
+DRV-INTEL-5CF8B67595,DRV-INTEL-5CF8B67595,Intel X710 Network Driver,5.19.6,Intel,network_driver,InstalledDriver
+DRV-DELL-6EAF2612B0,DRV-DELL-6EAF2612B0,Dell Touchpad Driver,10.3201.101.216,Dell,input_driver,InstalledDriver
+DRV-INTEL-6E8818052F,DRV-INTEL-6E8818052F,Intel UHD Graphics Driver,31.0.101.5334,Intel,graphics_driver,InstalledDriver
+DRV-BROADCOM-79916FDE65,DRV-BROADCOM-79916FDE65,Broadcom NetXtreme-E Driver,22.0.5.10,Broadcom,network_driver,InstalledDriver
+DRV-LENOVO-A1E23AB856,DRV-LENOVO-A1E23AB856,Lenovo Power Management Driver,1.68.35.2,Lenovo,system_driver,InstalledDriver
+DRV-DELL-6BBDE36D10,DRV-DELL-6BBDE36D10,Dell ControlVault Driver,4.12.8.17,Dell,security_driver,InstalledDriver
+DRV-INTEL-A0286A6555,DRV-INTEL-A0286A6555,Intel Ethernet Controller Driver,6.8.4,Intel,network_driver,InstalledDriver
+DRV-DELL-A7AB8550CD,DRV-DELL-A7AB8550CD,PERC H740P RAID Controller Driver,7.722.02.1,Dell,storage_driver,InstalledDriver
+DRV-REALTEK-1AF4D3AB8A,DRV-REALTEK-1AF4D3AB8A,Realtek Audio Driver,6.0.9605.3,Realtek,audio_driver,InstalledDriver
+DRV-INTEL-572E16DE2B,DRV-INTEL-572E16DE2B,Intel X710 Network Driver,5.19.8,Intel,network_driver,InstalledDriver
+DRV-LENOVO-659B62DB33,DRV-LENOVO-659B62DB33,Lenovo Power Management Driver,1.68.35.1,Lenovo,system_driver,InstalledDriver
+DRV-INTEL-F809C78978,DRV-INTEL-F809C78978,Intel X710 Network Driver,5.19.7,Intel,network_driver,InstalledDriver
+DRV-DELL-E634B5C54D,DRV-DELL-E634B5C54D,PERC H740P RAID Controller Driver,7.722.02.3,Dell,storage_driver,InstalledDriver
+DRV-HP-4C3E2F67B1,DRV-HP-4C3E2F67B1,HP Sure Sense Driver,4.4.12.1,HP,security_driver,InstalledDriver
+DRV-REALTEK-8B0DBDB0C8,DRV-REALTEK-8B0DBDB0C8,Realtek Audio Driver,6.0.9605.4,Realtek,audio_driver,InstalledDriver
+DRV-SYNAPTICS-670CADE0A0,DRV-SYNAPTICS-670CADE0A0,Synaptics TouchPad Driver,19.5.35.100,Synaptics,input_driver,InstalledDriver
+DRV-INTEL-92948EDB19,DRV-INTEL-92948EDB19,Intel UHD Graphics Driver,31.0.101.5333,Intel,graphics_driver,InstalledDriver
+DRV-LENOVO-341C1F1332,DRV-LENOVO-341C1F1332,Lenovo Intelligent Thermal Solution Driver,2.0.444.3,Lenovo,system_driver,InstalledDriver
+DRV-DELL-49284F1994,DRV-DELL-49284F1994,Dell ControlVault Driver,4.12.8.15,Dell,security_driver,InstalledDriver
+DRV-INTEL-30B2555CC9,DRV-INTEL-30B2555CC9,Intel AX211 Wi-Fi Driver,23.40.0.5,Intel,network_driver,InstalledDriver
+DRV-LENOVO-FD4315CE6E,DRV-LENOVO-FD4315CE6E,Lenovo Intelligent Thermal Solution Driver,2.0.444.2,Lenovo,system_driver,InstalledDriver
+DRV-BROADCOM-EEAEEEBCEC,DRV-BROADCOM-EEAEEEBCEC,Broadcom NetXtreme-E Driver,22.0.5.13,Broadcom,network_driver,InstalledDriver
+DRV-DELL-301AF4CFE3,DRV-DELL-301AF4CFE3,PERC H740P RAID Controller Driver,7.722.02.0,Dell,storage_driver,InstalledDriver
+DRV-LENOVO-A2EAB2267C,DRV-LENOVO-A2EAB2267C,Lenovo Power Management Driver,1.68.35.0,Lenovo,system_driver,InstalledDriver
+DRV-INTEL-C32F6EC6B7,DRV-INTEL-C32F6EC6B7,Intel AX211 Wi-Fi Driver,23.40.0.7,Intel,network_driver,InstalledDriver
+DRV-HP-B05331C613,DRV-HP-B05331C613,HP Hotkey Support Driver,8.10.39.3,HP,system_driver,InstalledDriver
+DRV-HPE-D1072DE67D,DRV-HPE-D1072DE67D,HPE Smart Array Driver,2.1.31,HPE,storage_driver,InstalledDriver
+DRV-INTEL-F1BB4322E0,DRV-INTEL-F1BB4322E0,Intel Chipset Device Software,10.1.19627.8425,Intel,chipset_driver,InstalledDriver
+DRV-BROADCOM-04C7F0B0F5,DRV-BROADCOM-04C7F0B0F5,Broadcom 9300-8i Storage Driver,38.00.00.2,Broadcom,storage_driver,InstalledDriver
+DRV-DELL-363065213F,DRV-DELL-363065213F,Dell Touchpad Driver,10.3201.101.218,Dell,input_driver,InstalledDriver
+DRV-INTEL-108EDBBA0F,DRV-INTEL-108EDBBA0F,Intel Chipset Device Software,10.1.19627.8426,Intel,chipset_driver,InstalledDriver
+DRV-BROADCOM-976E9A1969,DRV-BROADCOM-976E9A1969,Broadcom NetXtreme-E Driver,22.0.5.11,Broadcom,network_driver,InstalledDriver
+DRV-HP-FE7069BD54,DRV-HP-FE7069BD54,HP Sure Sense Driver,4.4.12.2,HP,security_driver,InstalledDriver
+DRV-INTEL-DA709DA80D,DRV-INTEL-DA709DA80D,Intel Iris Xe Graphics Driver,31.0.101.5524,Intel,graphics_driver,InstalledDriver
+DRV-DELL-A8B18FE647,DRV-DELL-A8B18FE647,Dell ControlVault Driver,4.12.8.16,Dell,security_driver,InstalledDriver
+DRV-HPE-586A4F3E69,DRV-HPE-586A4F3E69,HPE Smart Array Driver,2.1.28,HPE,storage_driver,InstalledDriver
+DRV-INTEL-87B2F6EC20,DRV-INTEL-87B2F6EC20,Intel Ethernet Controller Driver,6.8.7,Intel,network_driver,InstalledDriver
+DRV-INTEL-A04A45BB07,DRV-INTEL-A04A45BB07,Intel Iris Xe Graphics Driver,31.0.101.5525,Intel,graphics_driver,InstalledDriver
+DRV-LENOVO-4463291A50,DRV-LENOVO-4463291A50,Lenovo Power Management Driver,1.68.35.3,Lenovo,system_driver,InstalledDriver
+DRV-HPE-92328778B4,DRV-HPE-92328778B4,HPE Smart Array Driver,2.1.29,HPE,storage_driver,InstalledDriver
+DRV-INTEL-104FE7C895,DRV-INTEL-104FE7C895,Intel Ethernet Controller Driver,6.8.6,Intel,network_driver,InstalledDriver
+DRV-SYNAPTICS-6FADD1FBCA,DRV-SYNAPTICS-6FADD1FBCA,Synaptics TouchPad Driver,19.5.35.98,Synaptics,input_driver,InstalledDriver
+DRV-DELL-0572FBDFAB,DRV-DELL-0572FBDFAB,Dell Touchpad Driver,10.3201.101.215,Dell,input_driver,InstalledDriver
+DRV-LENOVO-21D7F0BAAB,DRV-LENOVO-21D7F0BAAB,Lenovo Intelligent Thermal Solution Driver,2.0.444.1,Lenovo,system_driver,InstalledDriver
+DRV-HP-3298769181,DRV-HP-3298769181,HP Sure Sense Driver,4.4.12.3,HP,security_driver,InstalledDriver
+DRV-HP-275087D1B3,DRV-HP-275087D1B3,HP Hotkey Support Driver,8.10.39.2,HP,system_driver,InstalledDriver
+DRV-LENOVO-B80A839034,DRV-LENOVO-B80A839034,Lenovo Intelligent Thermal Solution Driver,2.0.444.0,Lenovo,system_driver,InstalledDriver
+DRV-SYNAPTICS-0579A26944,DRV-SYNAPTICS-0579A26944,Synaptics TouchPad Driver,19.5.35.97,Synaptics,input_driver,InstalledDriver

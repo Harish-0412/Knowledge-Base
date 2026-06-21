@@ -1,0 +1,65 @@
+{
+  "engine": "RecommendationEngine",
+  "device_tested": "DEV-000002",
+  "violations_evaluated": 3,
+  "recommendations_generated": 3,
+  "status": "PASS",
+  "llm_context": {
+    "device_id": "DEV-000002",
+    "overall_status": "CRITICAL",
+    "high_priority_actions": [
+      "Upgrade Lifecycle Controller Firmware to version 8.2.0 or later",
+      "Upgrade Lifecycle Controller Firmware to version 8.2.0 or later"
+    ],
+    "recommendations": [
+      {
+        "rule_id": "CRULE-AEADF7F483FE03B6-001",
+        "priority": "HIGH",
+        "category": "Firmware",
+        "risk_level": "HIGH",
+        "summary": "Upgrade Lifecycle Controller Firmware to version 8.2.0 or later to restore BIOS compatibility.",
+        "immediate_actions": [
+          "Upgrade Lifecycle Controller Firmware to version 8.2.0 or later"
+        ],
+        "verification_steps": [
+          "Verify BIOS compatibility after upgrade"
+        ],
+        "follow_up_actions": [
+          "Re-run compliance validation"
+        ]
+      },
+      {
+        "rule_id": "CRULE-F51505E338E8B1D0-001",
+        "priority": "HIGH",
+        "category": "Firmware",
+        "risk_level": "HIGH",
+        "summary": "Upgrade Lifecycle Controller Firmware to version 8.2.0 or later to restore BIOS compatibility.",
+        "immediate_actions": [
+          "Upgrade Lifecycle Controller Firmware to version 8.2.0 or later"
+        ],
+        "verification_steps": [
+          "Verify BIOS compatibility after upgrade"
+        ],
+        "follow_up_actions": [
+          "Re-run compliance validation"
+        ]
+      },
+      {
+        "rule_id": "CRULE-38D745D2F59A2285-001",
+        "priority": "LOW",
+        "category": "Driver",
+        "risk_level": "LOW",
+        "summary": "Install NVIDIA RTX Workstation Driver to version 12.5.0 or later to restore Lifecycle Controller Firmware compatibility.",
+        "immediate_actions": [
+          "Install NVIDIA RTX Workstation Driver to version 12.5.0 or later"
+        ],
+        "verification_steps": [
+          "Verify Lifecycle Controller Firmware compatibility after install"
+        ],
+        "follow_up_actions": [
+          "Re-run compliance validation"
+        ]
+      }
+    ]
+  }
+}

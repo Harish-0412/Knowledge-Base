@@ -1,0 +1,26 @@
+{
+  "report_id": "DEVICE-IDENTITY-RESOLUTION-VALIDATION",
+  "status": "PASS",
+  "resolved_examples": {
+    "Laptop001": "DEV-DELL-0011",
+    "Server001": "DEV-DELL-0006",
+    "Workstation001": "DEV-DELL-0002",
+    "Device001": "DEV-DELL-0002"
+  },
+  "mapping_counts": {
+    "laptop": 205,
+    "server": 147,
+    "workstation": 72,
+    "desktop": 76,
+    "device": 500
+  },
+  "test_results": {
+    "passed": true,
+    "tests_run": 116,
+    "output_summary": [
+      "........................................................................ [ 62%]",
+      "............................................                             [100%]",
+      "116 passed in 0.56s"
+    ]
+  }
+}

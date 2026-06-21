@@ -39,46 +39,62 @@ class Neo4jRetriever:
     # ── installed components ───────────────────────────────────────────────
 
     def get_installed_bios(self, device_id: str) -> List[Evidence]:
-        rows = self.connector.run(
-            "MATCH (d:Device {device_id: $id})-[:HAS_BIOS]->(b:BIOS) RETURN b",
-            {"id": device_id})
-        return [self._component_evidence(r.get("b", {}), device_id, "BIOS", "HAS_BIOS")
-                for r in rows]
+        return self._get_components_by_type(device_id, "bios")
 
     def get_installed_firmware(self, device_id: str) -> List[Evidence]:
-        rows = self.connector.run(
-            "MATCH (d:Device {device_id: $id})-[:HAS_FIRMWARE]->(f:Firmware) RETURN f",
-            {"id": device_id})
-        return [self._component_evidence(r.get("f", {}), device_id, "Firmware", "HAS_FIRMWARE")
-                for r in rows]
+        return self._get_components_by_type(device_id, "firmware")
 
     def get_installed_os(self, device_id: str) -> List[Evidence]:
-        rows = self.connector.run(
-            "MATCH (d:Device {device_id: $id})-[:HAS_OS]->(o:OperatingSystem) RETURN o",
-            {"id": device_id})
-        return [self._component_evidence(r.get("o", {}), device_id, "OperatingSystem", "HAS_OS")
-                for r in rows]
+        return self._get_components_by_type(device_id, "os")
 
     def get_installed_drivers(self, device_id: str) -> List[Evidence]:
-        rows = self.connector.run(
-            "MATCH (d:Device {device_id: $id})-[:HAS_DRIVER]->(dr:Driver) RETURN dr",
-            {"id": device_id})
-        return [self._component_evidence(r.get("dr", {}), device_id, "Driver", "HAS_DRIVER")
-                for r in rows]
+        return self._get_components_by_type(device_id, "driver")
 
     def get_installed_security_agents(self, device_id: str) -> List[Evidence]:
-        rows = self.connector.run(
-            "MATCH (d:Device {device_id:$id})-[:HAS_SECURITY_AGENT]->(s:SecurityAgent) RETURN s",
-            {"id": device_id})
-        return [self._component_evidence(r.get("s", {}), device_id, "SecurityAgent", "HAS_SECURITY_AGENT")
-                for r in rows]
+        return self._get_components_by_type(device_id, "agent")
 
     def get_installed_management_agents(self, device_id: str) -> List[Evidence]:
-        rows = self.connector.run(
-            "MATCH (d:Device {device_id:$id})-[:HAS_MANAGEMENT_AGENT]->(m:ManagementAgent) RETURN m",
-            {"id": device_id})
-        return [self._component_evidence(r.get("m", {}), device_id, "ManagementAgent", "HAS_MANAGEMENT_AGENT")
-                for r in rows]
+        return self._get_components_by_type(device_id, "management_tool")
+
+    def get_installed_tpm(self, device_id: str) -> List[Evidence]:
+        return self._get_components_by_type(device_id, "tpm")
+
+    def _get_components_by_type(self, device_id: str, component_type: str) -> List[Evidence]:
+        """Generic helper to retrieve components of a specific type under the new schema."""
+        if self.offline:
+            return []
+        
+        query = """
+        MATCH (d:Device {device_id: $id})-[:HAS_COMPONENT]->(c:ComponentInstance)
+        WHERE c.component_type = $ctype
+        OPTIONAL MATCH (c)-[:INSTANCE_OF]->(e:Entity)
+        RETURN c {
+            .*,
+            entity_name: e.name,
+            entity_id: e.entity_id
+        } AS comp
+        """
+        rows = self.connector.run(query, {"id": device_id, "ctype": component_type})
+        evidence = []
+        for r in rows:
+            comp_data = dict(r.get("comp") or {})
+            
+            # Ensure required keys are explicitly present (even if None)
+            comp_data.setdefault("component_name", None)
+            comp_data.setdefault("component_type", component_type)
+            comp_data.setdefault("version_raw", None)
+            comp_data.setdefault("version_normalized", None)
+            comp_data.setdefault("vendor", None)
+            comp_data.setdefault("entity_name", None)
+            comp_data.setdefault("entity_id", None)
+            
+            evidence.append(self._component_evidence(
+                comp_data,
+                device_id,
+                component_type,
+                "HAS_COMPONENT"
+            ))
+        return evidence
 
     def get_device_relationships(self, device_id: str) -> List[Evidence]:
         """Return all relationships for a device — compatibility, compliance, violations."""
@@ -130,13 +146,22 @@ class Neo4jRetriever:
 
     def _component_evidence(self, node: Dict, device_id: str,
                             component_type: str, relationship: str) -> Evidence:
+        # Fallback resolution for target property of Evidence
+        target_val = (
+            node.get("version_normalized") or
+            node.get("version_raw") or
+            node.get("version") or
+            node.get("component_name") or
+            node.get("name") or
+            component_type
+        )
         return Evidence(
             evidence_type="InventoryEvidence",
             source_layer="Layer2",
             source_system="Neo4j",
             entity=device_id,
             relationship=relationship,
-            target=str(node.get("version") or node.get("name") or component_type),
+            target=str(target_val),
             confidence=1.0,
             content={"component_type": component_type, **dict(node)},
             metadata={"device_id": device_id, "component_type": component_type}

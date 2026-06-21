@@ -11,10 +11,12 @@ try:
     from .qdrant_retriever import QdrantRetriever
     from .neo4j_retriever  import Neo4jRetriever
     from .models.evidence_models import Evidence
+    from ..query_understanding.device_resolver import DeviceResolver
 except ImportError:
     from qdrant_retriever import QdrantRetriever
     from neo4j_retriever  import Neo4jRetriever
     from models.evidence_models import Evidence
+    from query_understanding.device_resolver import DeviceResolver
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +30,7 @@ class EvidenceCollector:
                  offline: bool = False) -> None:
         self.qdrant  = qdrant or QdrantRetriever(offline=offline)
         self.neo4j   = neo4j  or Neo4jRetriever(offline=offline)
+        self.device_resolver = DeviceResolver(neo4j_connector=self.neo4j.connector)
 
     def collect(self, query_plan: Dict[str, Any]) -> List[Evidence]:
         """
@@ -84,17 +87,33 @@ class EvidenceCollector:
 
     def _collect_inventory(self, entities: Dict[str, Any], intent: str = "") -> List[Evidence]:
         evidence: List[Evidence] = []
-        device_id = entities.get("device")
-        if not device_id:
+        orig_device_id = entities.get("device")
+        if not orig_device_id:
             return self.neo4j.get_fleet_devices() if intent == "FleetAnalysis" else evidence
-        evidence.extend(self.neo4j.get_device(device_id))
-        evidence.extend(self.neo4j.get_installed_bios(device_id))
-        evidence.extend(self.neo4j.get_installed_firmware(device_id))
-        evidence.extend(self.neo4j.get_installed_os(device_id))
-        evidence.extend(self.neo4j.get_installed_drivers(device_id))
-        evidence.extend(self.neo4j.get_installed_security_agents(device_id))
-        evidence.extend(self.neo4j.get_installed_management_agents(device_id))
-        evidence.extend(self.neo4j.get_device_relationships(device_id))
+            
+        actual_device_id = self.device_resolver.resolve(orig_device_id)
+        if not actual_device_id:
+            logger.warning(f"Could not resolve device name '{orig_device_id}' to any graph node.")
+            return evidence
+            
+        raw_evidence = []
+        raw_evidence.extend(self.neo4j.get_device(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_installed_bios(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_installed_firmware(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_installed_os(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_installed_drivers(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_installed_security_agents(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_installed_management_agents(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_installed_tpm(actual_device_id))
+        raw_evidence.extend(self.neo4j.get_device_relationships(actual_device_id))
+        
+        # Preserve original user-facing name in returned evidence
+        for ev in raw_evidence:
+            ev.entity = orig_device_id
+            if "device_id" in ev.metadata:
+                ev.metadata["device_id"] = orig_device_id
+            evidence.append(ev)
+            
         return evidence
 
     # ── Layer 3 ───────────────────────────────────────────────────────────

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dynamic-compatibility-engine.local/schemas/root_cause/root_cause_schema.json",
+  "schema_name": "Root Cause API Response Schema",
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "description": "Defines the response structure for root cause records produced by the Compliance Engine API layer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "device",
+    "status",
+    "root_cause"
+  ],
+  "properties": {
+    "device": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Device name or identifier associated with the root cause result."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "COMPLIANT",
+        "NON_COMPLIANT"
+      ],
+      "description": "Compliance status for the device."
+    },
+    "root_cause": {
+      "type": "array",
+      "description": "List of rule-level root cause findings. Empty only when status is COMPLIANT.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule",
+          "expected",
+          "actual"
+        ],
+        "properties": {
+          "rule": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^RULE-[0-9]{3}$"
+          },
+          "expected": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actual": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

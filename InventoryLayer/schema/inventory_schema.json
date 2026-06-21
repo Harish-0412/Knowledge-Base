@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dynamic-compatibility-engine.local/schemas/layer2/inventory_schema.json",
+  "schema_name": "Layer 2 Inventory Schema",
+  "schema_version": "1.0.0",
+  "schema_layer": "Layer 2 - Inventory Schema",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "description": "Schema for normalized inventory records representing actual endpoint devices and installed configurations. This schema supports Layer 2 inventory ingestion only and does not define Neo4j imports, compatibility rules, or compliance checks.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "inventory_records"
+  ],
+  "properties": {
+    "inventory_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/inventory_record"
+      }
+    }
+  },
+  "$defs": {
+    "inventory_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "device_id",
+        "device_name",
+        "vendor",
+        "device_model",
+        "bios_version",
+        "firmware_version",
+        "operating_system",
+        "driver_versions",
+        "security_agents",
+        "management_tools",
+        "inventory_timestamp"
+      ],
+      "properties": {
+        "device_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^DEV-[A-Z0-9-]+$",
+          "description": "Stable unique identifier for the inventoried device."
+        },
+        "device_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Hostname or display name of the device."
+        },
+        "vendor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Device manufacturer or primary vendor."
+        },
+        "device_model": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Device model, platform, or hardware family."
+        },
+        "bios_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Observed installed BIOS or UEFI BIOS version."
+        },
+        "firmware_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Observed platform, controller, or device firmware version summary."
+        },
+        "operating_system": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "version"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1
+            },
+            "edition": {
+              "type": "string"
+            },
+            "architecture": {
+              "type": "string",
+              "enum": [
+                "x64",
+                "arm64",
+                "x86",
+                "unknown"
+              ]
+            }
+          },
+          "description": "Observed installed operating system details."
+        },
+        "driver_versions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/installed_component_version"
+          },
+          "description": "Observed installed driver versions."
+        },
+        "security_agents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/installed_component_version"
+          },
+          "description": "Observed installed endpoint security agents."
+        },
+        "management_tools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/installed_component_version"
+          },
+          "description": "Observed installed endpoint management tools."
+        },
+        "inventory_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when the device inventory record was collected."
+        }
+      }
+    },
+    "installed_component_version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "component_type": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

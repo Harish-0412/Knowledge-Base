@@ -1,0 +1,117 @@
+{
+  "ontology_component": "inventory_entities",
+  "ontology_layer": "Layer 2 - Inventory Ontology",
+  "ontology_version": "1.0.0",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "description": "Defines the canonical entity types used by the Inventory Layer. These entities represent observed endpoint devices, installed configurations, vendors, device models, and inventory collection snapshots. This layer models actual discovered state only and does not define Neo4j imports, compatibility rules, or compliance checks.",
+  "entity_count": 10,
+  "entities": [
+    {
+      "entity_name": "Device",
+      "description": "A physical or virtual endpoint observed in an inventory source.",
+      "purpose": "Serves as the root inventory object for installed BIOS, firmware, operating system, drivers, security agents, management tools, vendor, model, and snapshot context.",
+      "required_fields": ["device_id", "hostname"],
+      "optional_fields": ["serial_number", "asset_tag", "device_type", "last_seen_at", "metadata"],
+      "identity_fields": ["device_id"],
+      "id_pattern": "DEV-[A-Z0-9-]+",
+      "inventory_scope": "actual_device"
+    },
+    {
+      "entity_name": "DeviceModel",
+      "description": "The manufacturer model or platform family for an observed device.",
+      "purpose": "Normalizes repeated model values across devices so platform-specific inventory context can be represented without treating model metadata as Layer 1 domain knowledge.",
+      "required_fields": ["model_id", "model_name"],
+      "optional_fields": ["model_family", "generation", "metadata"],
+      "identity_fields": ["model_id"],
+      "id_pattern": "DMODEL-[A-Z0-9-]+",
+      "inventory_scope": "device_metadata"
+    },
+    {
+      "entity_name": "InstalledBIOS",
+      "description": "The BIOS or UEFI BIOS instance installed on an observed device.",
+      "purpose": "Captures the installed BIOS name, version, release date, and vendor as observed in inventory.",
+      "required_fields": ["installed_bios_id", "name", "version"],
+      "optional_fields": ["release_date", "install_date", "metadata"],
+      "identity_fields": ["installed_bios_id"],
+      "id_pattern": "IBIOS-[A-Z0-9-]+",
+      "inventory_scope": "installed_component",
+      "maps_to_component_types": ["bios"]
+    },
+    {
+      "entity_name": "InstalledFirmware",
+      "description": "A firmware instance installed on or associated with an observed device.",
+      "purpose": "Captures installed firmware for management controllers, storage controllers, network adapters, HBAs, TPMs, and other firmware-bearing components.",
+      "required_fields": ["installed_firmware_id", "name", "version"],
+      "optional_fields": ["component_category", "release_date", "install_date", "metadata"],
+      "identity_fields": ["installed_firmware_id"],
+      "id_pattern": "IFW-[A-Z0-9-]+",
+      "inventory_scope": "installed_component",
+      "maps_to_component_types": ["firmware", "tpm", "raid_controller", "storage_controller", "network_adapter", "hba"]
+    },
+    {
+      "entity_name": "InstalledOS",
+      "description": "The operating system installed on an observed device.",
+      "purpose": "Captures installed operating system family, edition, version, build, and architecture as observed in inventory.",
+      "required_fields": ["installed_os_id", "name", "version"],
+      "optional_fields": ["edition", "build", "architecture", "install_date", "metadata"],
+      "identity_fields": ["installed_os_id"],
+      "id_pattern": "IOS-[A-Z0-9-]+",
+      "inventory_scope": "installed_component",
+      "maps_to_component_types": ["os"]
+    },
+    {
+      "entity_name": "InstalledDriver",
+      "description": "A driver instance installed on an observed device.",
+      "purpose": "Captures installed driver name, version, provider, and device class as observed in inventory.",
+      "required_fields": ["installed_driver_id", "name", "version"],
+      "optional_fields": ["driver_class", "provider", "release_date", "install_date", "metadata"],
+      "identity_fields": ["installed_driver_id"],
+      "id_pattern": "IDRV-[A-Z0-9-]+",
+      "inventory_scope": "installed_component",
+      "maps_to_component_types": ["driver"]
+    },
+    {
+      "entity_name": "InstalledSecurityAgent",
+      "description": "A security component or endpoint protection agent installed on an observed device.",
+      "purpose": "Captures security agent identity, product name, version, vendor, and operational state as observed in inventory.",
+      "required_fields": ["installed_security_agent_id", "name", "version"],
+      "optional_fields": ["agent_state", "policy_version", "install_date", "metadata"],
+      "identity_fields": ["installed_security_agent_id"],
+      "id_pattern": "ISEC-[A-Z0-9-]+",
+      "inventory_scope": "installed_component",
+      "maps_to_component_types": ["agent"]
+    },
+    {
+      "entity_name": "InstalledManagementTool",
+      "description": "A systems management or endpoint management tool installed on an observed device.",
+      "purpose": "Captures management tool name, version, vendor, and operational state as observed in inventory.",
+      "required_fields": ["installed_management_tool_id", "name", "version"],
+      "optional_fields": ["tool_state", "server_url", "install_date", "metadata"],
+      "identity_fields": ["installed_management_tool_id"],
+      "id_pattern": "IMGT-[A-Z0-9-]+",
+      "inventory_scope": "installed_component",
+      "maps_to_component_types": ["management_tool"]
+    },
+    {
+      "entity_name": "Vendor",
+      "description": "A vendor, manufacturer, publisher, or provider associated with an observed device, model, or installed component.",
+      "purpose": "Normalizes vendor names across inventory observations for grouping, provenance, and downstream compatibility matching.",
+      "required_fields": ["vendor_id", "vendor_name"],
+      "optional_fields": ["normalized_vendor_name", "aliases", "metadata"],
+      "identity_fields": ["vendor_id"],
+      "id_pattern": "VENDOR-[A-Z0-9-]+",
+      "inventory_scope": "inventory_reference"
+    },
+    {
+      "entity_name": "InventorySnapshot",
+      "description": "A point-in-time inventory collection event or imported inventory dataset.",
+      "purpose": "Provides collection provenance for observed devices and installed configuration state.",
+      "required_fields": ["snapshot_id", "source_file", "collected_at"],
+      "optional_fields": ["source_system", "record_count", "ingested_at", "metadata"],
+      "identity_fields": ["snapshot_id"],
+      "id_pattern": "SNAP-[A-Z0-9-]+",
+      "inventory_scope": "provenance"
+    }
+  ]
+}
