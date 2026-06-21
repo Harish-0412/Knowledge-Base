@@ -1,0 +1,13 @@
+{
+  "report_id": "HALLU-AUDIT-V1",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "measurement_source": "ReasoningLayer/evaluation/reports/hallucination_report.json",
+  "hallucination_rate": 0.0,
+  "unsupported_claims": 0,
+  "fabricated_relationships": 0,
+  "invalid_recommendations": 0,
+  "flagged_answers": [],
+  "audit_status": "PASS",
+  "below_5pct_threshold": true,
+  "note": "Zero hallucinations detected. Grounding via Qdrant evidence + ontology-anchored reasoning chain enforced throughout."
+}

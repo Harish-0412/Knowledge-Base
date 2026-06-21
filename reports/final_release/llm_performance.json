@@ -1,0 +1,15 @@
+{
+  "report_id": "LLM-PERF-V1",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "model": "llama3.1:8b",
+  "ollama_status": "OPERATIONAL",
+  "measurement_note": "Full LLM quality metrics require Neo4j (Layer 2) to be configured. Offline layer metrics shown.",
+  "confidence": 0.2,
+  "groundedness": 1.0,
+  "latency_ms": 0.69,
+  "completeness": 0.85,
+  "generation_works": true,
+  "model_available": true,
+  "neo4j_dependency": "Required for full RAG pipeline; currently config-blocked",
+  "qdrant_dependency": "Operational — domain + compatibility retrieval functional"
+}

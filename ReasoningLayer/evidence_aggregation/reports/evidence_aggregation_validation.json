@@ -1,0 +1,88 @@
+{
+  "report_id": "EVIDENCE-AGGREGATION-VALIDATION-V1",
+  "overall_status": "PASS",
+  "checks_total": 15,
+  "checks_passed": 15,
+  "validation_checks": [
+    {
+      "check_id": "VAL-EA-001",
+      "check_name": "Evidence types defined (9)",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-002",
+      "check_name": "Evidence schema complete",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-003",
+      "check_name": "Priority matrix complete",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-004",
+      "check_name": "QdrantRetriever operational",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-005",
+      "check_name": "Neo4jRetriever operational",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-006",
+      "check_name": "EvidenceCollector operational",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-007",
+      "check_name": "EvidenceRanker operational",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-008",
+      "check_name": "EvidenceGraphBuilder operational",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-009",
+      "check_name": "EvidenceAggregator operational",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-010",
+      "check_name": "EvidenceService operational",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-011",
+      "check_name": "Test corpus >= 200 cases",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-012",
+      "check_name": "Test distribution correct",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-013",
+      "check_name": "Connectivity report generated",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-014",
+      "check_name": "Evidence quality report generated",
+      "status": "PASS"
+    },
+    {
+      "check_id": "VAL-EA-015",
+      "check_name": "Tests pass",
+      "status": "PASS"
+    }
+  ],
+  "test_run": {
+    "passed": true,
+    "output": "..............................................................           [100%]\n62 passed in 0.18s"
+  },
+  "final_status": "READY_FOR_PHASE_4"
+}

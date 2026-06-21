@@ -1,0 +1,206 @@
+{
+  "category": "Fleet",
+  "count": 20,
+  "questions": [
+    {
+      "question_id": "FLEET-001",
+      "category": "Fleet",
+      "question": "Show fleet compliance summary for device group 1.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-002",
+      "category": "Fleet",
+      "question": "Which devices are highest risk in fleet group 2?",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-003",
+      "category": "Fleet",
+      "question": "Show critical devices across fleet group 3.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-004",
+      "category": "Fleet",
+      "question": "Show fleet compliance summary for device group 4.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-005",
+      "category": "Fleet",
+      "question": "Which devices are highest risk in fleet group 5?",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-006",
+      "category": "Fleet",
+      "question": "Show critical devices across fleet group 6.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-007",
+      "category": "Fleet",
+      "question": "Show fleet compliance summary for device group 7.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-008",
+      "category": "Fleet",
+      "question": "Which devices are highest risk in fleet group 8?",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-009",
+      "category": "Fleet",
+      "question": "Show critical devices across fleet group 9.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-010",
+      "category": "Fleet",
+      "question": "Show fleet compliance summary for device group 10.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-011",
+      "category": "Fleet",
+      "question": "Which devices are highest risk in fleet group 11?",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-012",
+      "category": "Fleet",
+      "question": "Show critical devices across fleet group 12.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-013",
+      "category": "Fleet",
+      "question": "Show fleet compliance summary for device group 13.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-014",
+      "category": "Fleet",
+      "question": "Which devices are highest risk in fleet group 14?",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-015",
+      "category": "Fleet",
+      "question": "Show critical devices across fleet group 15.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-016",
+      "category": "Fleet",
+      "question": "Show fleet compliance summary for device group 16.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-017",
+      "category": "Fleet",
+      "question": "Which devices are highest risk in fleet group 17?",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-018",
+      "category": "Fleet",
+      "question": "Show critical devices across fleet group 18.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-019",
+      "category": "Fleet",
+      "question": "Show fleet compliance summary for device group 19.",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    },
+    {
+      "question_id": "FLEET-020",
+      "category": "Fleet",
+      "question": "Which devices are highest risk in fleet group 20?",
+      "expected_intent": "FleetAnalysis",
+      "expected_evidence_types": [
+        "InventoryEvidence",
+        "RiskEvidence"
+      ]
+    }
+  ]
+}

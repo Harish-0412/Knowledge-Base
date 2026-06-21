@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-06-21T15:26:51.946467+00:00",
+  "unit_tests": {
+    "status": "PASS",
+    "passed": 113,
+    "return_code": 0,
+    "summary": "113 passed in 4.00s"
+  },
+  "live_llama_smoke": {
+    "status": "PASS",
+    "generation_status": "PASS",
+    "latency_ms": 26394.46,
+    "validation": {
+      "valid": false,
+      "confidence": 0.94,
+      "issues": [
+        "Unsupported claims in sections: ['prevention']"
+      ],
+      "hallucination_count": 1,
+      "evidence_coverage": 1.0
+    },
+    "error": null
+  },
+  "pipeline_operational": true,
+  "external_retrieval_ready": false,
+  "validation_status": "FAIL",
+  "final_status": "VALIDATION_FAILED"
+}

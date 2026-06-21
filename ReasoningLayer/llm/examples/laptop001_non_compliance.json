@@ -1,0 +1,9 @@
+{
+  "question": "Why is Laptop001 non-compliant?",
+  "expected_intent": "RootCauseAnalysis",
+  "entities": {"device": "Laptop001"},
+  "evidence": [
+    {"type": "InventoryEvidence", "fact": "Laptop001 reports BIOS 1.4.0"},
+    {"type": "CompatibilityEvidence", "fact": "Rule CR-BIOS-17 requires BIOS 1.6.0 or newer"}
+  ]
+}

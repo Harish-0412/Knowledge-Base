@@ -1,0 +1,105 @@
+{
+  "matrix_id": "EVIDENCE-PRIORITY-MATRIX-1.0.0",
+  "schema_version": "1.0.0",
+  "created_date": "2026-06-21",
+  "description": "Priority assignment rules for evidence objects. Applied by the EvidenceRanker.",
+  "priority_levels": {
+    "Critical": {
+      "score": 100,
+      "description": "Rule violations and risk evidence that block compliance. Surfaced first in every response."
+    },
+    "Highest": {
+      "score": 85,
+      "description": "Inventory facts directly proving a violation state."
+    },
+    "High": {
+      "score": 70,
+      "description": "Compatibility rules, version constraints, and remediation recommendations."
+    },
+    "Medium": {
+      "score": 50,
+      "description": "Domain knowledge definitions and conceptual context."
+    },
+    "Low": {
+      "score": 25,
+      "description": "Background concepts and general reference material."
+    }
+  },
+  "rules": [
+    {
+      "rule_id": "EPR-001",
+      "evidence_type": "ViolationEvidence",
+      "base_priority": "Critical",
+      "confidence_modifier": true,
+      "description": "Violation evidence is always Critical."
+    },
+    {
+      "rule_id": "EPR-002",
+      "evidence_type": "RiskEvidence",
+      "base_priority": "Critical",
+      "confidence_modifier": true,
+      "description": "Risk evidence is always Critical."
+    },
+    {
+      "rule_id": "EPR-003",
+      "evidence_type": "InventoryEvidence",
+      "base_priority": "Highest",
+      "confidence_modifier": true,
+      "description": "Direct device inventory facts are Highest."
+    },
+    {
+      "rule_id": "EPR-004",
+      "evidence_type": "CompatibilityEvidence",
+      "base_priority": "High",
+      "confidence_modifier": true,
+      "description": "Compatibility rules and constraints are High."
+    },
+    {
+      "rule_id": "EPR-005",
+      "evidence_type": "VersionEvidence",
+      "base_priority": "High",
+      "confidence_modifier": true,
+      "description": "Version constraint facts are High."
+    },
+    {
+      "rule_id": "EPR-006",
+      "evidence_type": "DependencyEvidence",
+      "base_priority": "High",
+      "confidence_modifier": true,
+      "description": "Dependency facts are High."
+    },
+    {
+      "rule_id": "EPR-007",
+      "evidence_type": "RecommendationEvidence",
+      "base_priority": "High",
+      "confidence_modifier": true,
+      "description": "Remediation recommendations are High."
+    },
+    {
+      "rule_id": "EPR-008",
+      "evidence_type": "LifecycleEvidence",
+      "base_priority": "Medium",
+      "confidence_modifier": true,
+      "description": "Lifecycle state is Medium."
+    },
+    {
+      "rule_id": "EPR-009",
+      "evidence_type": "DomainEvidence",
+      "base_priority": "Medium",
+      "confidence_modifier": true,
+      "description": "Domain definitions are Medium."
+    },
+    {
+      "rule_id": "EPR-010",
+      "evidence_type": "DomainEvidence",
+      "condition": "content_type=background",
+      "base_priority": "Low",
+      "confidence_modifier": false,
+      "description": "Background domain concepts are Low."
+    }
+  ],
+  "confidence_modifier": {
+    "description": "Multiply base score by confidence when confidence_modifier is True.",
+    "formula": "final_score = base_score * (0.5 + 0.5 * confidence)"
+  }
+}

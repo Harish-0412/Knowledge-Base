@@ -1,0 +1,42 @@
+{
+  "manifest_id": "EVIDENCE-AGGREGATION-PHASE3-V1",
+  "version": "1.0.0",
+  "created_date": "2026-06-21",
+  "status": "active",
+  "evidence_types": 9,
+  "schema_version": "1.0.0",
+  "implementation_files": [
+    "qdrant_retriever.py",
+    "neo4j_retriever.py",
+    "evidence_collector.py",
+    "evidence_ranker.py",
+    "evidence_graph_builder.py",
+    "evidence_aggregator.py",
+    "evidence_service.py"
+  ],
+  "consumers": [
+    "Root Cause Engine",
+    "Recommendation Engine",
+    "Compliance Evaluation Engine",
+    "Risk Assessment Engine"
+  ],
+  "upstream": [
+    "ReasoningLayer/query_understanding/query_understanding_service.py"
+  ],
+  "layer_sources": {
+    "Layer1": {
+      "system": "Qdrant",
+      "collection": "domain_knowledge"
+    },
+    "Layer2": {
+      "system": "Neo4j",
+      "collection": "inventory"
+    },
+    "Layer3": {
+      "system": "Qdrant",
+      "collection": "compatibility_rules"
+    }
+  },
+  "production_import_allowed": false,
+  "final_status": "active"
+}

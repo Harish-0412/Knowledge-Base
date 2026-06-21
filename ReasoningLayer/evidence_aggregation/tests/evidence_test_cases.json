@@ -1,0 +1,3864 @@
+[
+  {
+    "test_id": "TC-L1-001",
+    "category": "Layer1",
+    "query": "What is BIOS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-002",
+    "category": "Layer1",
+    "query": "Explain UEFI firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-003",
+    "category": "Layer1",
+    "query": "What does a chipset driver do?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-004",
+    "category": "Layer1",
+    "query": "Describe Secure Boot.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-005",
+    "category": "Layer1",
+    "query": "What is TPM?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-006",
+    "category": "Layer1",
+    "query": "Explain embedded controller firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-007",
+    "category": "Layer1",
+    "query": "What is a network driver?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-008",
+    "category": "Layer1",
+    "query": "What does an EDR agent do?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-009",
+    "category": "Layer1",
+    "query": "What is storage firmware?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-010",
+    "category": "Layer1",
+    "query": "Explain NIC firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-011",
+    "category": "Layer1",
+    "query": "What is a driver bundle?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-012",
+    "category": "Layer1",
+    "query": "Describe measured boot.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-013",
+    "category": "Layer1",
+    "query": "What is GPT partitioning?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-014",
+    "category": "Layer1",
+    "query": "Explain EFI system partition.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-015",
+    "category": "Layer1",
+    "query": "What is ACPI?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-016",
+    "category": "Layer1",
+    "query": "What is a management agent?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-017",
+    "category": "Layer1",
+    "query": "Explain endpoint manager.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-018",
+    "category": "Layer1",
+    "query": "What is BitLocker?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-019",
+    "category": "Layer1",
+    "query": "Describe AppArmor.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-020",
+    "category": "Layer1",
+    "query": "What is SELinux?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-021",
+    "category": "Layer1",
+    "query": "What is LUKS encryption?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-022",
+    "category": "Layer1",
+    "query": "Explain Windows NT kernel.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-023",
+    "category": "Layer1",
+    "query": "What is the XNU kernel?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-024",
+    "category": "Layer1",
+    "query": "Describe OS Bootloader.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-025",
+    "category": "Layer1",
+    "query": "What is a patch manager?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-026",
+    "category": "Layer1",
+    "query": "Explain WSUS.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-027",
+    "category": "Layer1",
+    "query": "What does a monitoring agent do?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-028",
+    "category": "Layer1",
+    "query": "What is Group Policy?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-029",
+    "category": "Layer1",
+    "query": "Explain Active Directory.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-030",
+    "category": "Layer1",
+    "query": "What is SIEM?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-031",
+    "category": "Layer1",
+    "query": "What is configuration baseline?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-032",
+    "category": "Layer1",
+    "query": "Describe Gatekeeper on macOS.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-033",
+    "category": "Layer1",
+    "query": "What is FileVault?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-034",
+    "category": "Layer1",
+    "query": "Explain System Integrity Protection.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-035",
+    "category": "Layer1",
+    "query": "What is Secure Enclave?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-036",
+    "category": "Layer1",
+    "query": "Describe PXE boot.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-037",
+    "category": "Layer1",
+    "query": "What does firmware update utility do?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-038",
+    "category": "Layer1",
+    "query": "Explain audio driver.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-039",
+    "category": "Layer1",
+    "query": "What is a graphics driver?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-040",
+    "category": "Layer1",
+    "query": "Describe WDDM.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-041",
+    "category": "Layer1",
+    "query": "What is NDIS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-042",
+    "category": "Layer1",
+    "query": "Explain driver signing.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-043",
+    "category": "Layer1",
+    "query": "What is Ubuntu Pro?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-044",
+    "category": "Layer1",
+    "query": "Describe RHEL.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-045",
+    "category": "Layer1",
+    "query": "What is Debian?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-046",
+    "category": "Layer1",
+    "query": "Explain macOS.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-047",
+    "category": "Layer1",
+    "query": "What is Windows Update?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-048",
+    "category": "Layer1",
+    "query": "Describe Linux kernel.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-049",
+    "category": "Layer1",
+    "query": "What is Enterprise OS?",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L1-050",
+    "category": "Layer1",
+    "query": "Explain System Firmware.",
+    "expected_intent": "ConceptExplanation",
+    "expected_target_layers": [
+      "Layer1"
+    ],
+    "expected_evidence_types": [
+      "DomainEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L2-001",
+    "category": "Layer2",
+    "query": "Why is Laptop001 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop001"
+    }
+  },
+  {
+    "test_id": "TC-L2-002",
+    "category": "Layer2",
+    "query": "Why is Laptop002 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop002"
+    }
+  },
+  {
+    "test_id": "TC-L2-003",
+    "category": "Layer2",
+    "query": "What is the compliance status of Laptop003?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop003"
+    }
+  },
+  {
+    "test_id": "TC-L2-004",
+    "category": "Layer2",
+    "query": "Show me Laptop004 configuration.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop004"
+    }
+  },
+  {
+    "test_id": "TC-L2-005",
+    "category": "Layer2",
+    "query": "What firmware is installed on Laptop005?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop005"
+    }
+  },
+  {
+    "test_id": "TC-L2-006",
+    "category": "Layer2",
+    "query": "What BIOS version does Laptop006 have?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop006"
+    }
+  },
+  {
+    "test_id": "TC-L2-007",
+    "category": "Layer2",
+    "query": "What OS is running on Laptop007?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop007"
+    }
+  },
+  {
+    "test_id": "TC-L2-008",
+    "category": "Layer2",
+    "query": "List drivers installed on Laptop008.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop008"
+    }
+  },
+  {
+    "test_id": "TC-L2-009",
+    "category": "Layer2",
+    "query": "How do I fix Laptop009?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop009"
+    }
+  },
+  {
+    "test_id": "TC-L2-010",
+    "category": "Layer2",
+    "query": "What risks does Laptop010 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop010"
+    }
+  },
+  {
+    "test_id": "TC-L2-011",
+    "category": "Layer2",
+    "query": "Why is Laptop011 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop011"
+    }
+  },
+  {
+    "test_id": "TC-L2-012",
+    "category": "Layer2",
+    "query": "Why is Laptop012 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop012"
+    }
+  },
+  {
+    "test_id": "TC-L2-013",
+    "category": "Layer2",
+    "query": "What is the compliance status of Laptop013?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop013"
+    }
+  },
+  {
+    "test_id": "TC-L2-014",
+    "category": "Layer2",
+    "query": "Show me Laptop014 configuration.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop014"
+    }
+  },
+  {
+    "test_id": "TC-L2-015",
+    "category": "Layer2",
+    "query": "What firmware is installed on Laptop015?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop015"
+    }
+  },
+  {
+    "test_id": "TC-L2-016",
+    "category": "Layer2",
+    "query": "What BIOS version does Laptop016 have?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop016"
+    }
+  },
+  {
+    "test_id": "TC-L2-017",
+    "category": "Layer2",
+    "query": "What OS is running on Laptop017?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop017"
+    }
+  },
+  {
+    "test_id": "TC-L2-018",
+    "category": "Layer2",
+    "query": "List drivers installed on Laptop018.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop018"
+    }
+  },
+  {
+    "test_id": "TC-L2-019",
+    "category": "Layer2",
+    "query": "How do I fix Laptop019?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop019"
+    }
+  },
+  {
+    "test_id": "TC-L2-020",
+    "category": "Layer2",
+    "query": "What risks does Laptop020 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop020"
+    }
+  },
+  {
+    "test_id": "TC-L2-021",
+    "category": "Layer2",
+    "query": "Why is Device001 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device001"
+    }
+  },
+  {
+    "test_id": "TC-L2-022",
+    "category": "Layer2",
+    "query": "Why is Device002 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device002"
+    }
+  },
+  {
+    "test_id": "TC-L2-023",
+    "category": "Layer2",
+    "query": "What is the compliance status of Device003?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device003"
+    }
+  },
+  {
+    "test_id": "TC-L2-024",
+    "category": "Layer2",
+    "query": "Show me Device004 configuration.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device004"
+    }
+  },
+  {
+    "test_id": "TC-L2-025",
+    "category": "Layer2",
+    "query": "What firmware is installed on Device005?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device005"
+    }
+  },
+  {
+    "test_id": "TC-L2-026",
+    "category": "Layer2",
+    "query": "What BIOS version does Device006 have?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device006"
+    }
+  },
+  {
+    "test_id": "TC-L2-027",
+    "category": "Layer2",
+    "query": "What OS is running on Device007?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device007"
+    }
+  },
+  {
+    "test_id": "TC-L2-028",
+    "category": "Layer2",
+    "query": "List drivers installed on Device008.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device008"
+    }
+  },
+  {
+    "test_id": "TC-L2-029",
+    "category": "Layer2",
+    "query": "How do I fix Device009?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device009"
+    }
+  },
+  {
+    "test_id": "TC-L2-030",
+    "category": "Layer2",
+    "query": "What risks does Device010 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device010"
+    }
+  },
+  {
+    "test_id": "TC-L2-031",
+    "category": "Layer2",
+    "query": "Why is Device011 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device011"
+    }
+  },
+  {
+    "test_id": "TC-L2-032",
+    "category": "Layer2",
+    "query": "Why is Device012 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device012"
+    }
+  },
+  {
+    "test_id": "TC-L2-033",
+    "category": "Layer2",
+    "query": "What is the compliance status of Device013?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device013"
+    }
+  },
+  {
+    "test_id": "TC-L2-034",
+    "category": "Layer2",
+    "query": "Show me Device014 configuration.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device014"
+    }
+  },
+  {
+    "test_id": "TC-L2-035",
+    "category": "Layer2",
+    "query": "What firmware is installed on Device015?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device015"
+    }
+  },
+  {
+    "test_id": "TC-L2-036",
+    "category": "Layer2",
+    "query": "What BIOS version does Server001 have?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server001"
+    }
+  },
+  {
+    "test_id": "TC-L2-037",
+    "category": "Layer2",
+    "query": "What OS is running on Server002?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server002"
+    }
+  },
+  {
+    "test_id": "TC-L2-038",
+    "category": "Layer2",
+    "query": "List drivers installed on Server003.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server003"
+    }
+  },
+  {
+    "test_id": "TC-L2-039",
+    "category": "Layer2",
+    "query": "How do I fix Server004?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server004"
+    }
+  },
+  {
+    "test_id": "TC-L2-040",
+    "category": "Layer2",
+    "query": "What risks does Server005 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server005"
+    }
+  },
+  {
+    "test_id": "TC-L2-041",
+    "category": "Layer2",
+    "query": "Why is Server006 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server006"
+    }
+  },
+  {
+    "test_id": "TC-L2-042",
+    "category": "Layer2",
+    "query": "Why is Server007 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server007"
+    }
+  },
+  {
+    "test_id": "TC-L2-043",
+    "category": "Layer2",
+    "query": "What is the compliance status of Server008?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server008"
+    }
+  },
+  {
+    "test_id": "TC-L2-044",
+    "category": "Layer2",
+    "query": "Show me Server009 configuration.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server009"
+    }
+  },
+  {
+    "test_id": "TC-L2-045",
+    "category": "Layer2",
+    "query": "What firmware is installed on Server010?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server010"
+    }
+  },
+  {
+    "test_id": "TC-L2-046",
+    "category": "Layer2",
+    "query": "What BIOS version does Server011 have?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server011"
+    }
+  },
+  {
+    "test_id": "TC-L2-047",
+    "category": "Layer2",
+    "query": "What OS is running on Server012?",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server012"
+    }
+  },
+  {
+    "test_id": "TC-L2-048",
+    "category": "Layer2",
+    "query": "List drivers installed on Server013.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server013"
+    }
+  },
+  {
+    "test_id": "TC-L2-049",
+    "category": "Layer2",
+    "query": "How do I fix Server014?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server014"
+    }
+  },
+  {
+    "test_id": "TC-L2-050",
+    "category": "Layer2",
+    "query": "What risks does Server015 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server015"
+    }
+  },
+  {
+    "test_id": "TC-L3-001",
+    "category": "Layer3",
+    "query": "Which firmware version is required for BIOS 6.4.2?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-002",
+    "category": "Layer3",
+    "query": "What is the minimum driver pack version for Enterprise OS 2026.1?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-003",
+    "category": "Layer3",
+    "query": "What firmware is required before upgrading BIOS?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-004",
+    "category": "Layer3",
+    "query": "Is BIOS 6.4.2 compatible with Firmware 8.2.0?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-005",
+    "category": "Layer3",
+    "query": "Does Driver Pack 12.5.0 support Enterprise OS 2026.1?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-006",
+    "category": "Layer3",
+    "query": "Can Security Agent 4.8.3 work with Endpoint Management Agent 3.7.0?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-007",
+    "category": "Layer3",
+    "query": "What rule is violated when Firmware is below 8.0.0?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "ViolationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-008",
+    "category": "Layer3",
+    "query": "Which compatibility rule covers BIOS 6.4.2 and Firmware 8.x?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "ViolationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-009",
+    "category": "Layer3",
+    "query": "What depends on BIOS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "DependencyEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-010",
+    "category": "Layer3",
+    "query": "What does System Firmware depend on?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "DependencyEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-011",
+    "category": "Layer3",
+    "query": "What is the upgrade order for BIOS 6.4.2?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-012",
+    "category": "Layer3",
+    "query": "What must be upgraded before Enterprise OS 2026.1 migration?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-013",
+    "category": "Layer3",
+    "query": "Is Security Agent 4.7.x still supported?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-014",
+    "category": "Layer3",
+    "query": "When does BIOS 6.x reach end of life?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-015",
+    "category": "Layer3",
+    "query": "Explain compatibility rule CRULE-FW-BIOS-001.",
+    "expected_intent": "RuleExplanation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-016",
+    "category": "Layer3",
+    "query": "What does the incompatible combination rule say about Firmware 8.0?",
+    "expected_intent": "RuleExplanation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-017",
+    "category": "Layer3",
+    "query": "What is the minimum NIC firmware for Platform Driver Pack 12.5.0?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-018",
+    "category": "Layer3",
+    "query": "Does System Firmware 8.2.1 support Platform Driver Pack 12.5.0?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-019",
+    "category": "Layer3",
+    "query": "What happens if Driver Pack is below 12.0.0 on Enterprise OS 2026.1?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "ViolationEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-020",
+    "category": "Layer3",
+    "query": "How can I prevent BIOS upgrade failures?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-021",
+    "category": "Layer3",
+    "query": "How do I avoid Firmware incompatibility issues?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-022",
+    "category": "Layer3",
+    "query": "What components depend on Enterprise OS?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "DependencyEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-023",
+    "category": "Layer3",
+    "query": "List all dependencies of Security Agent 4.8.3.",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "DependencyEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-024",
+    "category": "Layer3",
+    "query": "What is the minimum Security Agent version?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-025",
+    "category": "Layer3",
+    "query": "What version of Endpoint Management Agent is required?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-026",
+    "category": "Layer3",
+    "query": "Is Driver Pack 12.3.0 compatible with Enterprise OS 2026.1?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-027",
+    "category": "Layer3",
+    "query": "What is the impact of upgrading Firmware to 8.2.1?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-028",
+    "category": "Layer3",
+    "query": "What are the prerequisites for upgrading to BIOS 6.4.2?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-029",
+    "category": "Layer3",
+    "query": "What does the update order constraint for Firmware say?",
+    "expected_intent": "RuleExplanation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-030",
+    "category": "Layer3",
+    "query": "Explain the readiness requirement for Enterprise OS migration.",
+    "expected_intent": "RuleExplanation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-031",
+    "category": "Layer3",
+    "query": "What rule does BIOS 6.4.2 with Firmware 7.9 violate?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "ViolationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-032",
+    "category": "Layer3",
+    "query": "What firmware is needed before BIOS 6.4.2 upgrade?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-033",
+    "category": "Layer3",
+    "query": "Is Platform Driver Pack 12.5.0 the current release?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-034",
+    "category": "Layer3",
+    "query": "What is the lifecycle status of Driver Pack 12.3.0?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-035",
+    "category": "Layer3",
+    "query": "What is the risk of running Firmware below 8.0.0?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "RiskEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-036",
+    "category": "Layer3",
+    "query": "What risk does Security Agent 4.7.x exposure create?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "RiskEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-037",
+    "category": "Layer3",
+    "query": "Is Security Agent compatible with Enterprise OS 2025.2?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-038",
+    "category": "Layer3",
+    "query": "What are the dependency constraints for NIC Firmware 4.2.0?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "DependencyEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-039",
+    "category": "Layer3",
+    "query": "What is required before installing BIOS 6.4.2?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "DependencyEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-040",
+    "category": "Layer3",
+    "query": "How do I prevent Security Agent 4.7.x end-of-support issues?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-041",
+    "category": "Layer3",
+    "query": "What driver pack version is needed for BIOS upgrade readiness?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-042",
+    "category": "Layer3",
+    "query": "What OS versions does Platform Driver Pack 12.5.0 support?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-043",
+    "category": "Layer3",
+    "query": "What is the known issue fixed by BIOS 6.4.2?",
+    "expected_intent": "RuleExplanation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-044",
+    "category": "Layer3",
+    "query": "Explain the incompatible combination for BIOS 6.4.2.",
+    "expected_intent": "RuleExplanation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-045",
+    "category": "Layer3",
+    "query": "If I upgrade Firmware to 8.2.0, what else must I check?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-046",
+    "category": "Layer3",
+    "query": "What violations exist for Security Agent 4.7.x?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "ViolationEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-047",
+    "category": "Layer3",
+    "query": "Does Driver Pack 12.4.0 satisfy Enterprise OS 2026.1 requirements?",
+    "expected_intent": "VersionAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "VersionEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-048",
+    "category": "Layer3",
+    "query": "Is NIC Firmware 4.2.0 required for EdgeStation Workstations?",
+    "expected_intent": "CompatibilityInquiry",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-049",
+    "category": "Layer3",
+    "query": "What is the end-of-support date for Security Agent 4.7.x?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-L3-050",
+    "category": "Layer3",
+    "query": "What should I do before migrating to Enterprise OS 2026.1?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {}
+  },
+  {
+    "test_id": "TC-HYB-001",
+    "category": "Hybrid",
+    "query": "Why is Laptop001 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop001"
+    }
+  },
+  {
+    "test_id": "TC-HYB-002",
+    "category": "Hybrid",
+    "query": "Why is Laptop002 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop002"
+    }
+  },
+  {
+    "test_id": "TC-HYB-003",
+    "category": "Hybrid",
+    "query": "What is causing the compliance failure on Laptop003?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop003"
+    }
+  },
+  {
+    "test_id": "TC-HYB-004",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop004?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop004"
+    }
+  },
+  {
+    "test_id": "TC-HYB-005",
+    "category": "Hybrid",
+    "query": "What should I upgrade on Laptop005?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop005"
+    }
+  },
+  {
+    "test_id": "TC-HYB-006",
+    "category": "Hybrid",
+    "query": "Is Laptop006 compliant?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop006"
+    }
+  },
+  {
+    "test_id": "TC-HYB-007",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Laptop007?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop007"
+    }
+  },
+  {
+    "test_id": "TC-HYB-008",
+    "category": "Hybrid",
+    "query": "What risks does Laptop008 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop008"
+    }
+  },
+  {
+    "test_id": "TC-HYB-009",
+    "category": "Hybrid",
+    "query": "How risky is the current state of Laptop009?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop009"
+    }
+  },
+  {
+    "test_id": "TC-HYB-010",
+    "category": "Hybrid",
+    "query": "What does Laptop010 depend on?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "DependencyEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop010"
+    }
+  },
+  {
+    "test_id": "TC-HYB-011",
+    "category": "Hybrid",
+    "query": "What is the upgrade impact for Laptop011?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop011"
+    }
+  },
+  {
+    "test_id": "TC-HYB-012",
+    "category": "Hybrid",
+    "query": "Show all non-compliant devices like Laptop012.",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop012"
+    }
+  },
+  {
+    "test_id": "TC-HYB-013",
+    "category": "Hybrid",
+    "query": "How many devices have the same issue as Laptop013?",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop013"
+    }
+  },
+  {
+    "test_id": "TC-HYB-014",
+    "category": "Hybrid",
+    "query": "What violations does Laptop014 have?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop014"
+    }
+  },
+  {
+    "test_id": "TC-HYB-015",
+    "category": "Hybrid",
+    "query": "How can I prevent Laptop015 from failing again?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop015"
+    }
+  },
+  {
+    "test_id": "TC-HYB-016",
+    "category": "Hybrid",
+    "query": "Investigate Laptop016 firmware compliance.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop016"
+    }
+  },
+  {
+    "test_id": "TC-HYB-017",
+    "category": "Hybrid",
+    "query": "Show Laptop017 BIOS compatibility status.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop017"
+    }
+  },
+  {
+    "test_id": "TC-HYB-018",
+    "category": "Hybrid",
+    "query": "Is Laptop018 running end-of-life components?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop018"
+    }
+  },
+  {
+    "test_id": "TC-HYB-019",
+    "category": "Hybrid",
+    "query": "Why does Laptop019 keep failing compliance scans?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop019"
+    }
+  },
+  {
+    "test_id": "TC-HYB-020",
+    "category": "Hybrid",
+    "query": "Generate a remediation plan for Laptop020.",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop020"
+    }
+  },
+  {
+    "test_id": "TC-HYB-021",
+    "category": "Hybrid",
+    "query": "Why is Laptop021 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop021"
+    }
+  },
+  {
+    "test_id": "TC-HYB-022",
+    "category": "Hybrid",
+    "query": "Why is Laptop022 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop022"
+    }
+  },
+  {
+    "test_id": "TC-HYB-023",
+    "category": "Hybrid",
+    "query": "What is causing the compliance failure on Laptop023?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop023"
+    }
+  },
+  {
+    "test_id": "TC-HYB-024",
+    "category": "Hybrid",
+    "query": "How do I fix Laptop024?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop024"
+    }
+  },
+  {
+    "test_id": "TC-HYB-025",
+    "category": "Hybrid",
+    "query": "What should I upgrade on Laptop025?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Laptop025"
+    }
+  },
+  {
+    "test_id": "TC-HYB-026",
+    "category": "Hybrid",
+    "query": "Is Device001 compliant?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device001"
+    }
+  },
+  {
+    "test_id": "TC-HYB-027",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Device002?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device002"
+    }
+  },
+  {
+    "test_id": "TC-HYB-028",
+    "category": "Hybrid",
+    "query": "What risks does Device003 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device003"
+    }
+  },
+  {
+    "test_id": "TC-HYB-029",
+    "category": "Hybrid",
+    "query": "How risky is the current state of Device004?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device004"
+    }
+  },
+  {
+    "test_id": "TC-HYB-030",
+    "category": "Hybrid",
+    "query": "What does Device005 depend on?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "DependencyEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device005"
+    }
+  },
+  {
+    "test_id": "TC-HYB-031",
+    "category": "Hybrid",
+    "query": "What is the upgrade impact for Device006?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device006"
+    }
+  },
+  {
+    "test_id": "TC-HYB-032",
+    "category": "Hybrid",
+    "query": "Show all non-compliant devices like Device007.",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device007"
+    }
+  },
+  {
+    "test_id": "TC-HYB-033",
+    "category": "Hybrid",
+    "query": "How many devices have the same issue as Device008?",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device008"
+    }
+  },
+  {
+    "test_id": "TC-HYB-034",
+    "category": "Hybrid",
+    "query": "What violations does Device009 have?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device009"
+    }
+  },
+  {
+    "test_id": "TC-HYB-035",
+    "category": "Hybrid",
+    "query": "How can I prevent Device010 from failing again?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device010"
+    }
+  },
+  {
+    "test_id": "TC-HYB-036",
+    "category": "Hybrid",
+    "query": "Investigate Device011 firmware compliance.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device011"
+    }
+  },
+  {
+    "test_id": "TC-HYB-037",
+    "category": "Hybrid",
+    "query": "Show Device012 BIOS compatibility status.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device012"
+    }
+  },
+  {
+    "test_id": "TC-HYB-038",
+    "category": "Hybrid",
+    "query": "Is Device013 running end-of-life components?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device013"
+    }
+  },
+  {
+    "test_id": "TC-HYB-039",
+    "category": "Hybrid",
+    "query": "Why does Device014 keep failing compliance scans?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device014"
+    }
+  },
+  {
+    "test_id": "TC-HYB-040",
+    "category": "Hybrid",
+    "query": "Generate a remediation plan for Device015.",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device015"
+    }
+  },
+  {
+    "test_id": "TC-HYB-041",
+    "category": "Hybrid",
+    "query": "Why is Device016 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device016"
+    }
+  },
+  {
+    "test_id": "TC-HYB-042",
+    "category": "Hybrid",
+    "query": "Why is Device017 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device017"
+    }
+  },
+  {
+    "test_id": "TC-HYB-043",
+    "category": "Hybrid",
+    "query": "What is causing the compliance failure on Device018?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device018"
+    }
+  },
+  {
+    "test_id": "TC-HYB-044",
+    "category": "Hybrid",
+    "query": "How do I fix Device019?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device019"
+    }
+  },
+  {
+    "test_id": "TC-HYB-045",
+    "category": "Hybrid",
+    "query": "What should I upgrade on Device020?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device020"
+    }
+  },
+  {
+    "test_id": "TC-HYB-046",
+    "category": "Hybrid",
+    "query": "Is Device021 compliant?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device021"
+    }
+  },
+  {
+    "test_id": "TC-HYB-047",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Device022?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device022"
+    }
+  },
+  {
+    "test_id": "TC-HYB-048",
+    "category": "Hybrid",
+    "query": "What risks does Device023 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device023"
+    }
+  },
+  {
+    "test_id": "TC-HYB-049",
+    "category": "Hybrid",
+    "query": "How risky is the current state of Device024?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device024"
+    }
+  },
+  {
+    "test_id": "TC-HYB-050",
+    "category": "Hybrid",
+    "query": "What does Device025 depend on?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "DependencyEvidence"
+    ],
+    "expected_entities": {
+      "device": "Device025"
+    }
+  },
+  {
+    "test_id": "TC-HYB-051",
+    "category": "Hybrid",
+    "query": "What is the upgrade impact for Server001?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server001"
+    }
+  },
+  {
+    "test_id": "TC-HYB-052",
+    "category": "Hybrid",
+    "query": "Show all non-compliant devices like Server002.",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server002"
+    }
+  },
+  {
+    "test_id": "TC-HYB-053",
+    "category": "Hybrid",
+    "query": "How many devices have the same issue as Server003?",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server003"
+    }
+  },
+  {
+    "test_id": "TC-HYB-054",
+    "category": "Hybrid",
+    "query": "What violations does Server004 have?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server004"
+    }
+  },
+  {
+    "test_id": "TC-HYB-055",
+    "category": "Hybrid",
+    "query": "How can I prevent Server005 from failing again?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server005"
+    }
+  },
+  {
+    "test_id": "TC-HYB-056",
+    "category": "Hybrid",
+    "query": "Investigate Server006 firmware compliance.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server006"
+    }
+  },
+  {
+    "test_id": "TC-HYB-057",
+    "category": "Hybrid",
+    "query": "Show Server007 BIOS compatibility status.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server007"
+    }
+  },
+  {
+    "test_id": "TC-HYB-058",
+    "category": "Hybrid",
+    "query": "Is Server008 running end-of-life components?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server008"
+    }
+  },
+  {
+    "test_id": "TC-HYB-059",
+    "category": "Hybrid",
+    "query": "Why does Server009 keep failing compliance scans?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server009"
+    }
+  },
+  {
+    "test_id": "TC-HYB-060",
+    "category": "Hybrid",
+    "query": "Generate a remediation plan for Server010.",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server010"
+    }
+  },
+  {
+    "test_id": "TC-HYB-061",
+    "category": "Hybrid",
+    "query": "Why is Server011 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server011"
+    }
+  },
+  {
+    "test_id": "TC-HYB-062",
+    "category": "Hybrid",
+    "query": "Why is Server012 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server012"
+    }
+  },
+  {
+    "test_id": "TC-HYB-063",
+    "category": "Hybrid",
+    "query": "What is causing the compliance failure on Server013?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server013"
+    }
+  },
+  {
+    "test_id": "TC-HYB-064",
+    "category": "Hybrid",
+    "query": "How do I fix Server014?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server014"
+    }
+  },
+  {
+    "test_id": "TC-HYB-065",
+    "category": "Hybrid",
+    "query": "What should I upgrade on Server015?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server015"
+    }
+  },
+  {
+    "test_id": "TC-HYB-066",
+    "category": "Hybrid",
+    "query": "Is Server016 compliant?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server016"
+    }
+  },
+  {
+    "test_id": "TC-HYB-067",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Server017?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server017"
+    }
+  },
+  {
+    "test_id": "TC-HYB-068",
+    "category": "Hybrid",
+    "query": "What risks does Server018 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server018"
+    }
+  },
+  {
+    "test_id": "TC-HYB-069",
+    "category": "Hybrid",
+    "query": "How risky is the current state of Server019?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server019"
+    }
+  },
+  {
+    "test_id": "TC-HYB-070",
+    "category": "Hybrid",
+    "query": "What does Server020 depend on?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "DependencyEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server020"
+    }
+  },
+  {
+    "test_id": "TC-HYB-071",
+    "category": "Hybrid",
+    "query": "What is the upgrade impact for Server021?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server021"
+    }
+  },
+  {
+    "test_id": "TC-HYB-072",
+    "category": "Hybrid",
+    "query": "Show all non-compliant devices like Server022.",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server022"
+    }
+  },
+  {
+    "test_id": "TC-HYB-073",
+    "category": "Hybrid",
+    "query": "How many devices have the same issue as Server023?",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server023"
+    }
+  },
+  {
+    "test_id": "TC-HYB-074",
+    "category": "Hybrid",
+    "query": "What violations does Server024 have?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server024"
+    }
+  },
+  {
+    "test_id": "TC-HYB-075",
+    "category": "Hybrid",
+    "query": "How can I prevent Server025 from failing again?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Server025"
+    }
+  },
+  {
+    "test_id": "TC-HYB-076",
+    "category": "Hybrid",
+    "query": "Investigate Workstation001 firmware compliance.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation001"
+    }
+  },
+  {
+    "test_id": "TC-HYB-077",
+    "category": "Hybrid",
+    "query": "Show Workstation002 BIOS compatibility status.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation002"
+    }
+  },
+  {
+    "test_id": "TC-HYB-078",
+    "category": "Hybrid",
+    "query": "Is Workstation003 running end-of-life components?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation003"
+    }
+  },
+  {
+    "test_id": "TC-HYB-079",
+    "category": "Hybrid",
+    "query": "Why does Workstation004 keep failing compliance scans?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation004"
+    }
+  },
+  {
+    "test_id": "TC-HYB-080",
+    "category": "Hybrid",
+    "query": "Generate a remediation plan for Workstation005.",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation005"
+    }
+  },
+  {
+    "test_id": "TC-HYB-081",
+    "category": "Hybrid",
+    "query": "Why is Workstation006 failing?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation006"
+    }
+  },
+  {
+    "test_id": "TC-HYB-082",
+    "category": "Hybrid",
+    "query": "Why is Workstation007 non-compliant?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation007"
+    }
+  },
+  {
+    "test_id": "TC-HYB-083",
+    "category": "Hybrid",
+    "query": "What is causing the compliance failure on Workstation008?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation008"
+    }
+  },
+  {
+    "test_id": "TC-HYB-084",
+    "category": "Hybrid",
+    "query": "How do I fix Workstation009?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation009"
+    }
+  },
+  {
+    "test_id": "TC-HYB-085",
+    "category": "Hybrid",
+    "query": "What should I upgrade on Workstation010?",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation010"
+    }
+  },
+  {
+    "test_id": "TC-HYB-086",
+    "category": "Hybrid",
+    "query": "Is Workstation011 compliant?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation011"
+    }
+  },
+  {
+    "test_id": "TC-HYB-087",
+    "category": "Hybrid",
+    "query": "What is the compliance status of Workstation012?",
+    "expected_intent": "ComplianceStatus",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation012"
+    }
+  },
+  {
+    "test_id": "TC-HYB-088",
+    "category": "Hybrid",
+    "query": "What risks does Workstation013 have?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation013"
+    }
+  },
+  {
+    "test_id": "TC-HYB-089",
+    "category": "Hybrid",
+    "query": "How risky is the current state of Workstation014?",
+    "expected_intent": "RiskAssessment",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RiskEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation014"
+    }
+  },
+  {
+    "test_id": "TC-HYB-090",
+    "category": "Hybrid",
+    "query": "What does Workstation015 depend on?",
+    "expected_intent": "DependencyAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "DependencyEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation015"
+    }
+  },
+  {
+    "test_id": "TC-HYB-091",
+    "category": "Hybrid",
+    "query": "What is the upgrade impact for Workstation016?",
+    "expected_intent": "UpgradeImpactAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "VersionEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation016"
+    }
+  },
+  {
+    "test_id": "TC-HYB-092",
+    "category": "Hybrid",
+    "query": "Show all non-compliant devices like Workstation017.",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation017"
+    }
+  },
+  {
+    "test_id": "TC-HYB-093",
+    "category": "Hybrid",
+    "query": "How many devices have the same issue as Workstation018?",
+    "expected_intent": "FleetAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation018"
+    }
+  },
+  {
+    "test_id": "TC-HYB-094",
+    "category": "Hybrid",
+    "query": "What violations does Workstation019 have?",
+    "expected_intent": "ViolationInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation019"
+    }
+  },
+  {
+    "test_id": "TC-HYB-095",
+    "category": "Hybrid",
+    "query": "How can I prevent Workstation020 from failing again?",
+    "expected_intent": "PreventionRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation020"
+    }
+  },
+  {
+    "test_id": "TC-HYB-096",
+    "category": "Hybrid",
+    "query": "Investigate Workstation021 firmware compliance.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation021"
+    }
+  },
+  {
+    "test_id": "TC-HYB-097",
+    "category": "Hybrid",
+    "query": "Show Workstation022 BIOS compatibility status.",
+    "expected_intent": "DeviceInvestigation",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation022"
+    }
+  },
+  {
+    "test_id": "TC-HYB-098",
+    "category": "Hybrid",
+    "query": "Is Workstation023 running end-of-life components?",
+    "expected_intent": "LifecycleAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "LifecycleEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation023"
+    }
+  },
+  {
+    "test_id": "TC-HYB-099",
+    "category": "Hybrid",
+    "query": "Why does Workstation024 keep failing compliance scans?",
+    "expected_intent": "RootCauseAnalysis",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "CompatibilityEvidence",
+      "ViolationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation024"
+    }
+  },
+  {
+    "test_id": "TC-HYB-100",
+    "category": "Hybrid",
+    "query": "Generate a remediation plan for Workstation025.",
+    "expected_intent": "RecommendationRequest",
+    "expected_target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "expected_evidence_types": [
+      "InventoryEvidence",
+      "RecommendationEvidence"
+    ],
+    "expected_entities": {
+      "device": "Workstation025"
+    }
+  }
+]

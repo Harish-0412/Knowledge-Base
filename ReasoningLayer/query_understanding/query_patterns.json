@@ -1,0 +1,1412 @@
+[
+  {
+    "pattern_id": "QP-001",
+    "query": "What is BIOS?",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-002",
+    "query": "Define firmware.",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-003",
+    "query": "Describe operating systems.",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-004",
+    "query": "Explain the concept of drivers.",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-005",
+    "query": "What are security agents components?",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-006",
+    "query": "What is management tools?",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-007",
+    "query": "Define BIOS.",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-008",
+    "query": "Describe firmware.",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-009",
+    "query": "Explain the concept of operating systems.",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-010",
+    "query": "What are drivers components?",
+    "intent": "ConceptExplanation",
+    "target_layers": [
+      "Layer1"
+    ],
+    "coverage": "Layer1"
+  },
+  {
+    "pattern_id": "QP-011",
+    "query": "Why is Device001 failing?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-012",
+    "query": "What caused Device002 to fail?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-013",
+    "query": "Find the root cause for Device003.",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-014",
+    "query": "What is the reason for Device004 failing?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-015",
+    "query": "Why did Device005 become non-compliant?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-016",
+    "query": "Why is Device006 failing?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-017",
+    "query": "What caused Device007 to fail?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-018",
+    "query": "Find the root cause for Device008.",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-019",
+    "query": "What is the reason for Device009 failing?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-020",
+    "query": "Why did Device010 become non-compliant?",
+    "intent": "RootCauseAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-021",
+    "query": "What is the compliance status of Device001?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-022",
+    "query": "Is Device002 compliant?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-023",
+    "query": "Show the compliance state for Device003.",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-024",
+    "query": "Why is Device004 non-compliant?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-025",
+    "query": "Which failed controls affect Device005?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-026",
+    "query": "What is the compliance status of Device006?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-027",
+    "query": "Is Device007 compliant?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-028",
+    "query": "Show the compliance state for Device008.",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-029",
+    "query": "Why is Device009 non-compliant?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-030",
+    "query": "Which failed controls affect Device010?",
+    "intent": "ComplianceStatus",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-031",
+    "query": "How do I fix Device001?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-032",
+    "query": "How can I fix Device002?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-033",
+    "query": "What should I do for Device003?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-034",
+    "query": "Recommend a fix for Device004.",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-035",
+    "query": "What corrective action applies to Device005?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-036",
+    "query": "How do I fix Device006?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-037",
+    "query": "How can I fix Device007?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-038",
+    "query": "What should I do for Device008?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-039",
+    "query": "Recommend a fix for Device009.",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-040",
+    "query": "What corrective action applies to Device010?",
+    "intent": "RecommendationRequest",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-041",
+    "query": "How can I prevent this violation?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-042",
+    "query": "What prevention strategy avoids version mismatch?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-043",
+    "query": "How do we prevent recurrence?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-044",
+    "query": "How can we avoid this again?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-045",
+    "query": "Which control can prevent this conflict?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-046",
+    "query": "How can I prevent this violation?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-047",
+    "query": "What prevention strategy avoids version mismatch?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-048",
+    "query": "How do we prevent recurrence?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-049",
+    "query": "How can we avoid this again?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-050",
+    "query": "Which control can prevent this conflict?",
+    "intent": "PreventionRequest",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-051",
+    "query": "What risks affect Device001?",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-052",
+    "query": "Assess risk for Device002.",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-053",
+    "query": "What is the risk level for Device003?",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-054",
+    "query": "Describe the business impact for Device004.",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-055",
+    "query": "How risky is this violation?",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-056",
+    "query": "What risks affect Device006?",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-057",
+    "query": "Assess risk for Device007.",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-058",
+    "query": "What is the risk level for Device008?",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-059",
+    "query": "Describe the business impact for Device009.",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-060",
+    "query": "How risky is this violation?",
+    "intent": "RiskAssessment",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-061",
+    "query": "What depends on BIOS?",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-062",
+    "query": "Show firmware dependencies.",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-063",
+    "query": "Trace the dependency chain for BIOS.",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-064",
+    "query": "Which driver requires Firmware 3.2?",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-065",
+    "query": "What prerequisite applies to BIOS?",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-066",
+    "query": "What depends on BIOS?",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-067",
+    "query": "Show firmware dependencies.",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-068",
+    "query": "Trace the dependency chain for BIOS.",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-069",
+    "query": "Which driver requires Firmware 3.2?",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-070",
+    "query": "What prerequisite applies to BIOS?",
+    "intent": "DependencyAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-071",
+    "query": "Is BIOS 2.1 compatible with Firmware 3.2?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-072",
+    "query": "What compatibility issues exist?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-073",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-074",
+    "query": "Will Driver 4.1 work with OS 11.2?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-075",
+    "query": "Show the supported combination for BIOS and firmware.",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-076",
+    "query": "Is BIOS 2.1 compatible with Firmware 3.2?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-077",
+    "query": "What compatibility issues exist?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-078",
+    "query": "Does BIOS 2.1 support Firmware 3.2?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-079",
+    "query": "Will Driver 4.1 work with OS 11.2?",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-080",
+    "query": "Show the supported combination for BIOS and firmware.",
+    "intent": "CompatibilityInquiry",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-081",
+    "query": "Investigate violation VIOL-VERSION for Device001.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-082",
+    "query": "Show violation details for Device002.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-083",
+    "query": "Why this violation on Device003?",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-084",
+    "query": "Find violation evidence for Device004.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-085",
+    "query": "Show violation VIOL-COMPATIBILITY.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-086",
+    "query": "Investigate violation VIOL-VERSION for Device006.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-087",
+    "query": "Show violation details for Device007.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-088",
+    "query": "Why this violation on Device008?",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-089",
+    "query": "Find violation evidence for Device009.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-090",
+    "query": "Show violation VIOL-COMPATIBILITY.",
+    "intent": "ViolationInvestigation",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-091",
+    "query": "Show affected devices in the fleet.",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-092",
+    "query": "Analyze the fleet for conflicts.",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-093",
+    "query": "Which devices are non-compliant?",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-094",
+    "query": "How many devices have high risk?",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-095",
+    "query": "Summarize device group compliance.",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-096",
+    "query": "Show affected devices in the fleet.",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-097",
+    "query": "Analyze the fleet for conflicts.",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-098",
+    "query": "Which devices are non-compliant?",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-099",
+    "query": "How many devices have high risk?",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-100",
+    "query": "Summarize device group compliance.",
+    "intent": "FleetAnalysis",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-101",
+    "query": "Show inventory for Device001.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-102",
+    "query": "Inspect device Device002.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-103",
+    "query": "Show device details for Device003.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-104",
+    "query": "What is the device state of Device004?",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-105",
+    "query": "Display the inventory of Device005.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-106",
+    "query": "Show inventory for Device006.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-107",
+    "query": "Inspect device Device007.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-108",
+    "query": "Show device details for Device008.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-109",
+    "query": "What is the device state of Device009?",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-110",
+    "query": "Display the inventory of Device010.",
+    "intent": "DeviceInvestigation",
+    "target_layers": [
+      "Layer2"
+    ],
+    "coverage": "Layer2"
+  },
+  {
+    "pattern_id": "QP-111",
+    "query": "Explain rule CRULE-FW-001.",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-112",
+    "query": "Why does rule CRULE-FW-001 exist?",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-113",
+    "query": "Show rule logic for CRULE-FW-001.",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-114",
+    "query": "What is the rule evidence for CRULE-FW-001?",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-115",
+    "query": "What does rule CRULE-FW-001 require?",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-116",
+    "query": "Explain rule CRULE-FW-001.",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-117",
+    "query": "Why does rule CRULE-FW-001 exist?",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-118",
+    "query": "Show rule logic for CRULE-FW-001.",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-119",
+    "query": "What is the rule evidence for CRULE-FW-001?",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-120",
+    "query": "What does rule CRULE-FW-001 require?",
+    "intent": "RuleExplanation",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-121",
+    "query": "Which firmware version is required?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-122",
+    "query": "What is the required version of BIOS?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-123",
+    "query": "Show the minimum version for the driver.",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-124",
+    "query": "Which fixed version resolves the issue?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-125",
+    "query": "What version range is supported?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-126",
+    "query": "Which firmware version is required?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-127",
+    "query": "What is the required version of BIOS?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-128",
+    "query": "Show the minimum version for the driver.",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-129",
+    "query": "Which fixed version resolves the issue?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-130",
+    "query": "What version range is supported?",
+    "intent": "VersionAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-131",
+    "query": "Is BIOS 2.1 still supported?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-132",
+    "query": "When is firmware end of support?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-133",
+    "query": "Show deprecated drivers.",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-134",
+    "query": "What is the lifecycle status of CRULE-FW-001?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-135",
+    "query": "Which OS is at end of life?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-136",
+    "query": "Is BIOS 2.1 still supported?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-137",
+    "query": "When is firmware end of support?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-138",
+    "query": "Show deprecated drivers.",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-139",
+    "query": "What is the lifecycle status of CRULE-FW-001?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-140",
+    "query": "Which OS is at end of life?",
+    "intent": "LifecycleAnalysis",
+    "target_layers": [
+      "Layer3"
+    ],
+    "coverage": "Layer3"
+  },
+  {
+    "pattern_id": "QP-141",
+    "query": "What is the upgrade impact for Device001?",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-142",
+    "query": "Is Device002 safe to upgrade?",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-143",
+    "query": "Check upgrade readiness for Device003.",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-144",
+    "query": "What happens if I upgrade BIOS to 2.1?",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-145",
+    "query": "Show the upgrade path for Firmware 3.2.",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-146",
+    "query": "What is the upgrade impact for Device006?",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-147",
+    "query": "Is Device007 safe to upgrade?",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-148",
+    "query": "Check upgrade readiness for Device008.",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-149",
+    "query": "What happens if I upgrade BIOS to 2.1?",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  },
+  {
+    "pattern_id": "QP-150",
+    "query": "Show the upgrade path for Firmware 3.2.",
+    "intent": "UpgradeImpactAnalysis",
+    "target_layers": [
+      "Layer2",
+      "Layer3"
+    ],
+    "coverage": "Hybrid"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "evidence_type": "InventoryEvidence",
+    "description": "Device state facts retrieved from the Neo4j inventory layer — installed components, versions, configuration state, and device relationships.",
+    "priority": "High",
+    "source_layer": "Layer2",
+    "source_system": "Neo4j"
+  },
+  {
+    "evidence_type": "CompatibilityEvidence",
+    "description": "Compatibility rules, version constraints, dependency constraints, and conflict constraints retrieved from the Qdrant compatibility_rules collection.",
+    "priority": "High",
+    "source_layer": "Layer3",
+    "source_system": "Qdrant"
+  },
+  {
+    "evidence_type": "DomainEvidence",
+    "description": "Domain knowledge definitions, component descriptions, and conceptual facts retrieved from the Qdrant domain_knowledge collection.",
+    "priority": "Medium",
+    "source_layer": "Layer1",
+    "source_system": "Qdrant"
+  },
+  {
+    "evidence_type": "DependencyEvidence",
+    "description": "Explicit dependency relationships between components, derived from compatibility rules or domain knowledge.",
+    "priority": "High",
+    "source_layer": "Layer3",
+    "source_system": "Qdrant"
+  },
+  {
+    "evidence_type": "VersionEvidence",
+    "description": "Version constraint facts — minimum versions, exact versions, supported version ranges, and end-of-support thresholds.",
+    "priority": "High",
+    "source_layer": "Layer3",
+    "source_system": "Qdrant"
+  },
+  {
+    "evidence_type": "LifecycleEvidence",
+    "description": "Lifecycle state facts for components — active, deprecated, end-of-life, or end-of-support — from compatibility and domain layers.",
+    "priority": "Medium",
+    "source_layer": "Layer3",
+    "source_system": "Qdrant"
+  },
+  {
+    "evidence_type": "ViolationEvidence",
+    "description": "Detected rule violations — cases where an installed component version fails a compatibility or minimum-version constraint.",
+    "priority": "Critical",
+    "source_layer": "Layer3",
+    "source_system": "Qdrant"
+  },
+  {
+    "evidence_type": "RecommendationEvidence",
+    "description": "Remediation actions and upgrade recommendations derived from compatibility rules and violation evidence.",
+    "priority": "High",
+    "source_layer": "Layer3",
+    "source_system": "Qdrant"
+  },
+  {
+    "evidence_type": "RiskEvidence",
+    "description": "Risk assessments for detected violations — severity classification and blast-radius estimation.",
+    "priority": "Critical",
+    "source_layer": "Layer3",
+    "source_system": "Qdrant"
+  }
+]

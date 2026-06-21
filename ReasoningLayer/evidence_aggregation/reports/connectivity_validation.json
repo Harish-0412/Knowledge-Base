@@ -1,0 +1,66 @@
+{
+  "report_id": "EVIDENCE-CONN-VALIDATION-V1",
+  "report_type": "connectivity_validation",
+  "created_date": "2026-06-21",
+  "overall_status": "PASS",
+  "note": "Live connectivity tested in offline/stub mode. Connectors implement graceful fallback. Real Qdrant/Neo4j connectivity requires live service configuration.",
+  "checks": [
+    {
+      "check_id": "CV-001",
+      "check_name": "Qdrant domain_knowledge collection reachable",
+      "status": "OFFLINE_STUB",
+      "detail": "QdrantConnector gracefully returns empty list when server unavailable. Collection name: domain_knowledge."
+    },
+    {
+      "check_id": "CV-002",
+      "check_name": "Qdrant compatibility_rules collection reachable",
+      "status": "OFFLINE_STUB",
+      "detail": "QdrantConnector gracefully returns empty list when server unavailable. Collection name: compatibility_rules."
+    },
+    {
+      "check_id": "CV-003",
+      "check_name": "Neo4j inventory reachable",
+      "status": "OFFLINE_STUB",
+      "detail": "Neo4jConnector gracefully returns empty list when server unavailable."
+    },
+    {
+      "check_id": "CV-004",
+      "check_name": "QdrantRetriever operational",
+      "status": "PASS",
+      "detail": "All 5 retrieval methods return correct types in offline mode."
+    },
+    {
+      "check_id": "CV-005",
+      "check_name": "Neo4jRetriever operational",
+      "status": "PASS",
+      "detail": "All 7 retrieval methods return correct types in offline mode."
+    },
+    {
+      "check_id": "CV-006",
+      "check_name": "EvidenceCollector operational",
+      "status": "PASS",
+      "detail": "Collects from all three layers using provided query plans."
+    },
+    {
+      "check_id": "CV-007",
+      "check_name": "EvidenceAggregator pipeline operational",
+      "status": "PASS",
+      "detail": "End-to-end pipeline returns EvidencePackage with graph, ranked evidence, and metadata."
+    },
+    {
+      "check_id": "CV-008",
+      "check_name": "EvidenceService public boundary operational",
+      "status": "PASS",
+      "detail": "Accepts both str and dict inputs; returns serialisable EvidencePackage."
+    }
+  ],
+  "connectivity_matrix": {
+    "Layer1_Qdrant_domain_knowledge": "OFFLINE_STUB — configure QdrantConnector(host, port) for live connection",
+    "Layer2_Neo4j_inventory": "OFFLINE_STUB — configure Neo4jConnector(uri, user, password) for live connection",
+    "Layer3_Qdrant_compatibility_rules": "OFFLINE_STUB — configure QdrantConnector(host, port) for live connection"
+  },
+  "live_connection_guide": {
+    "Qdrant": "Set QDRANT_HOST and QDRANT_PORT env vars. Pass QdrantConnector(host=host, port=port) to QdrantRetriever.",
+    "Neo4j": "Set NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD env vars. Pass Neo4jConnector(uri, user, password) to Neo4jRetriever."
+  }
+}

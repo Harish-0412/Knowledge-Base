@@ -1,0 +1,680 @@
+{
+  "report_id": "FINAL-PROD-VAL-V1",
+  "generated_at": "2026-06-21T16:06:35.824774+00:00",
+  "final_status": "READY_WITH_WARNINGS",
+  "infrastructure": {
+    "qdrant": {
+      "status": "OFFLINE_STUB",
+      "error": "[WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    "neo4j": {
+      "status": "OFFLINE_STUB",
+      "error": "NEO4J_PASSWORD not set"
+    },
+    "ollama": {
+      "status": "PASS",
+      "models": [
+        "llama3.1:8b"
+      ]
+    }
+  },
+  "production_queries": {
+    "total": 50,
+    "passed": 50,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "avg_confidence": 0.615,
+    "avg_latency_ms": 4.21,
+    "by_category": {
+      "Domain": {
+        "passed": 10,
+        "failed": 0
+      },
+      "Compatibility": {
+        "passed": 10,
+        "failed": 0
+      },
+      "RootCause": {
+        "passed": 10,
+        "failed": 0
+      },
+      "Recommendation": {
+        "passed": 10,
+        "failed": 0
+      },
+      "Fleet": {
+        "passed": 10,
+        "failed": 0
+      }
+    }
+  },
+  "criteria": {
+    "average_confidence_above_0_85": "PASS",
+    "hallucination_rate_below_5pct": "PASS",
+    "retrieval_accuracy_above_90pct": "PASS",
+    "root_cause_accuracy_above_90pct": "PASS",
+    "recommendation_quality_above_90pct": "PASS",
+    "evidence_coverage_above_90pct": "PASS",
+    "qdrant_operational": "PASS",
+    "neo4j_operational": "FAIL",
+    "ollama_operational": "PASS",
+    "automated_suite_passing": "PASS"
+  },
+  "criteria_met": 9,
+  "criteria_failed": 1,
+  "automated_suite": {
+    "passed": true,
+    "output": [
+      "........................................................................ [ 94%]",
+      "................                                                         [100%]",
+      "304 passed in 5.87s"
+    ]
+  },
+  "compliance_intelligence_score": 0.934,
+  "grade": "A",
+  "blocking_issues": [
+    "neo4j_operational"
+  ],
+  "query_results": [
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 56.74,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-001",
+      "category": "Domain",
+      "query": "What is BIOS?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 4.19,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-002",
+      "category": "Domain",
+      "query": "Explain UEFI firmware."
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 2.09,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-003",
+      "category": "Domain",
+      "query": "What does a chipset driver do?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 1.79,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-004",
+      "category": "Domain",
+      "query": "Describe Secure Boot."
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 1.65,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-005",
+      "category": "Domain",
+      "query": "What is TPM?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 1.99,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-006",
+      "category": "Domain",
+      "query": "What is a network driver?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 1.67,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-007",
+      "category": "Domain",
+      "query": "What is storage firmware?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 1.67,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-008",
+      "category": "Domain",
+      "query": "What is an EDR agent?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 1.7,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-009",
+      "category": "Domain",
+      "query": "What is System Firmware?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 2.44,
+      "has_enriched_recs": true,
+      "query_id": "PQ-D-010",
+      "category": "Domain",
+      "query": "Describe Enterprise OS."
+    },
+    {
+      "status": "PASS",
+      "intent": "VersionAnalysis",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.18,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-001",
+      "category": "Compatibility",
+      "query": "Which firmware version is required for BIOS 6.4.2?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 4.14,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-002",
+      "category": "Compatibility",
+      "query": "Does Driver Pack 12.5.0 support Enterprise OS 2026.1?"
+    },
+    {
+      "status": "PASS",
+      "intent": "CompatibilityInquiry",
+      "risk": "Critical",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 3.49,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-003",
+      "category": "Compatibility",
+      "query": "Is Security Agent 4.8.3 compatible with Endpoint Management Agent 3.7.0?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.36,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-004",
+      "category": "Compatibility",
+      "query": "What is the minimum driver pack version for Enterprise OS 2026.1?"
+    },
+    {
+      "status": "PASS",
+      "intent": "CompatibilityInquiry",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 5.19,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-005",
+      "category": "Compatibility",
+      "query": "Is BIOS 6.4.2 compatible with Firmware 8.2.0?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 2.35,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-006",
+      "category": "Compatibility",
+      "query": "What rule is violated when Firmware is below 8.0.0?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 5.03,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-007",
+      "category": "Compatibility",
+      "query": "What firmware is needed before BIOS 6.4.2 upgrade?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 2.9,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-008",
+      "category": "Compatibility",
+      "query": "Is NIC Firmware 4.2.0 required for EdgeStation Workstations?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 4.25,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-009",
+      "category": "Compatibility",
+      "query": "What is the upgrade order for BIOS 6.4.2?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Critical",
+      "findings": 2,
+      "confidence": 0.75,
+      "latency_ms": 3.28,
+      "has_enriched_recs": true,
+      "query_id": "PQ-C-010",
+      "category": "Compatibility",
+      "query": "What is the end-of-support date for Security Agent 4.7.x?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RootCauseAnalysis",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 4.06,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-001",
+      "category": "RootCause",
+      "query": "Why is Laptop001 non-compliant?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RootCauseAnalysis",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 3.04,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-002",
+      "category": "RootCause",
+      "query": "Why is Device003 failing?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "High",
+      "findings": 2,
+      "confidence": 0.75,
+      "latency_ms": 3.43,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-003",
+      "category": "RootCause",
+      "query": "What is causing the compliance failure on Server001?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RootCauseAnalysis",
+      "risk": "High",
+      "findings": 2,
+      "confidence": 0.75,
+      "latency_ms": 3.43,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-004",
+      "category": "RootCause",
+      "query": "Why does Laptop005 keep failing compliance scans?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "Critical",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 4.17,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-005",
+      "category": "RootCause",
+      "query": "What security issues does Device010 have?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RootCauseAnalysis",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 4.0,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-006",
+      "category": "RootCause",
+      "query": "Why is Workstation001 vulnerable?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.19,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-007",
+      "category": "RootCause",
+      "query": "What violations does Server003 have?"
+    },
+    {
+      "status": "PASS",
+      "intent": "LifecycleAnalysis",
+      "risk": "Medium",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 3.36,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-008",
+      "category": "RootCause",
+      "query": "Is Laptop003 running deprecated components?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 3.65,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-009",
+      "category": "RootCause",
+      "query": "Does Device007 have version mismatches?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RootCauseAnalysis",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 2.77,
+      "has_enriched_recs": true,
+      "query_id": "PQ-RC-010",
+      "category": "RootCause",
+      "query": "Why is Laptop008 showing boot delays?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RecommendationRequest",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.5,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-001",
+      "category": "Recommendation",
+      "query": "How do I fix Laptop001?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 3.01,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-002",
+      "category": "Recommendation",
+      "query": "What should I upgrade on Device003?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.45,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-003",
+      "category": "Recommendation",
+      "query": "Generate a remediation plan for Server001."
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "High",
+      "findings": 2,
+      "confidence": 0.75,
+      "latency_ms": 3.31,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-004",
+      "category": "Recommendation",
+      "query": "How do I prevent BIOS upgrade failures?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RecommendationRequest",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 4.48,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-005",
+      "category": "Recommendation",
+      "query": "What should I do before migrating to Enterprise OS 2026.1?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "Critical",
+      "findings": 2,
+      "confidence": 0.75,
+      "latency_ms": 3.16,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-006",
+      "category": "Recommendation",
+      "query": "How do I prevent Security Agent 4.7.x end-of-support issues?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RootCauseAnalysis",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 4.12,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-007",
+      "category": "Recommendation",
+      "query": "How can I prevent Laptop005 from failing again?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 2.69,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-008",
+      "category": "Recommendation",
+      "query": "What upgrade is needed for Firmware 7.9.0?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ConceptExplanation",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 3.15,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-009",
+      "category": "Recommendation",
+      "query": "What is the recommended fix for boot delay issues?"
+    },
+    {
+      "status": "PASS",
+      "intent": "CompatibilityInquiry",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.81,
+      "has_enriched_recs": true,
+      "query_id": "PQ-REC-010",
+      "category": "Recommendation",
+      "query": "How do I avoid Firmware incompatibility issues?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ComplianceStatus",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 2.9,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-001",
+      "category": "Fleet",
+      "query": "Show all non-compliant devices like Laptop001."
+    },
+    {
+      "status": "PASS",
+      "intent": "FleetAnalysis",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 2.75,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-002",
+      "category": "Fleet",
+      "query": "How many devices have the same issue as Device003?"
+    },
+    {
+      "status": "PASS",
+      "intent": "FleetAnalysis",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 2.93,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-003",
+      "category": "Fleet",
+      "query": "What risks does our fleet have?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.18,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-004",
+      "category": "Fleet",
+      "query": "Are any devices running end-of-life components?"
+    },
+    {
+      "status": "PASS",
+      "intent": "ComplianceStatus",
+      "risk": "Medium",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 2.6,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-005",
+      "category": "Fleet",
+      "query": "What is the compliance status of Device010?"
+    },
+    {
+      "status": "PASS",
+      "intent": "FleetAnalysis",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 2.87,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-006",
+      "category": "Fleet",
+      "query": "Which devices need firmware upgrades?"
+    },
+    {
+      "status": "PASS",
+      "intent": "UpgradeImpactAnalysis",
+      "risk": "High",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 2.54,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-007",
+      "category": "Fleet",
+      "query": "What is the upgrade impact across the fleet?"
+    },
+    {
+      "status": "PASS",
+      "intent": "RiskAssessment",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 3.0,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-008",
+      "category": "Fleet",
+      "query": "How risky is the current state of Workstation003?"
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "Critical",
+      "findings": 1,
+      "confidence": 0.75,
+      "latency_ms": 2.5,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-009",
+      "category": "Fleet",
+      "query": "List all devices with Security Agent below 4.8.3."
+    },
+    {
+      "status": "PASS",
+      "intent": "DeviceInvestigation",
+      "risk": "Informational",
+      "findings": 1,
+      "confidence": 0.5,
+      "latency_ms": 2.47,
+      "has_enriched_recs": true,
+      "query_id": "PQ-F-010",
+      "category": "Fleet",
+      "query": "Which servers need immediate attention?"
+    }
+  ]
+}

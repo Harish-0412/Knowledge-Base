@@ -1,0 +1,456 @@
+{
+  "category": "Definition",
+  "count": 50,
+  "questions": [
+    {
+      "question_id": "DEF-001",
+      "category": "Definition",
+      "question": "What is BIOS?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-002",
+      "category": "Definition",
+      "question": "Define BIOS.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-003",
+      "category": "Definition",
+      "question": "Describe BIOS.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-004",
+      "category": "Definition",
+      "question": "Explain the concept of BIOS.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-005",
+      "category": "Definition",
+      "question": "What is the purpose of BIOS?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-006",
+      "category": "Definition",
+      "question": "What is UEFI?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-007",
+      "category": "Definition",
+      "question": "Define UEFI.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-008",
+      "category": "Definition",
+      "question": "Describe UEFI.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-009",
+      "category": "Definition",
+      "question": "Explain the concept of UEFI.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-010",
+      "category": "Definition",
+      "question": "What is the purpose of UEFI?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-011",
+      "category": "Definition",
+      "question": "What is TPM?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-012",
+      "category": "Definition",
+      "question": "Define TPM.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-013",
+      "category": "Definition",
+      "question": "Describe TPM.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-014",
+      "category": "Definition",
+      "question": "Explain the concept of TPM.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-015",
+      "category": "Definition",
+      "question": "What is the purpose of TPM?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-016",
+      "category": "Definition",
+      "question": "What is Secure Boot?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-017",
+      "category": "Definition",
+      "question": "Define Secure Boot.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-018",
+      "category": "Definition",
+      "question": "Describe Secure Boot.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-019",
+      "category": "Definition",
+      "question": "Explain the concept of Secure Boot.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-020",
+      "category": "Definition",
+      "question": "What is the purpose of Secure Boot?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-021",
+      "category": "Definition",
+      "question": "What is device driver?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-022",
+      "category": "Definition",
+      "question": "Define device driver.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-023",
+      "category": "Definition",
+      "question": "Describe device driver.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-024",
+      "category": "Definition",
+      "question": "Explain the concept of device driver.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-025",
+      "category": "Definition",
+      "question": "What is the purpose of device driver?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-026",
+      "category": "Definition",
+      "question": "What is firmware?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-027",
+      "category": "Definition",
+      "question": "Define firmware.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-028",
+      "category": "Definition",
+      "question": "Describe firmware.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-029",
+      "category": "Definition",
+      "question": "Explain the concept of firmware.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-030",
+      "category": "Definition",
+      "question": "What is the purpose of firmware?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-031",
+      "category": "Definition",
+      "question": "What is endpoint management?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-032",
+      "category": "Definition",
+      "question": "Define endpoint management.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-033",
+      "category": "Definition",
+      "question": "Describe endpoint management.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-034",
+      "category": "Definition",
+      "question": "Explain the concept of endpoint management.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-035",
+      "category": "Definition",
+      "question": "What is the purpose of endpoint management?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-036",
+      "category": "Definition",
+      "question": "What is BitLocker?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-037",
+      "category": "Definition",
+      "question": "Define BitLocker.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-038",
+      "category": "Definition",
+      "question": "Describe BitLocker.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-039",
+      "category": "Definition",
+      "question": "Explain the concept of BitLocker.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-040",
+      "category": "Definition",
+      "question": "What is the purpose of BitLocker?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-041",
+      "category": "Definition",
+      "question": "What is SELinux?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-042",
+      "category": "Definition",
+      "question": "Define SELinux.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-043",
+      "category": "Definition",
+      "question": "Describe SELinux.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-044",
+      "category": "Definition",
+      "question": "Explain the concept of SELinux.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-045",
+      "category": "Definition",
+      "question": "What is the purpose of SELinux?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-046",
+      "category": "Definition",
+      "question": "What is PXE Boot?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-047",
+      "category": "Definition",
+      "question": "Define PXE Boot.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-048",
+      "category": "Definition",
+      "question": "Describe PXE Boot.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-049",
+      "category": "Definition",
+      "question": "Explain the concept of PXE Boot.",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    },
+    {
+      "question_id": "DEF-050",
+      "category": "Definition",
+      "question": "What is the purpose of PXE Boot?",
+      "expected_intent": "ConceptExplanation",
+      "expected_evidence_types": [
+        "DomainEvidence"
+      ]
+    }
+  ]
+}

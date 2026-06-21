@@ -1,0 +1,107 @@
+[
+  {
+    "recommendation_id": "REC-UPGRADE",
+    "name": "Upgrade",
+    "description": "Move a component to a supported version satisfying the applicable constraints.",
+    "applicable_root_causes": [
+      "RC-VERSION-MISMATCH",
+      "RC-UNSUPPORTED-CONFIGURATION",
+      "RC-DEPRECATED-COMPONENT",
+      "RC-SECURITY-VIOLATION",
+      "RC-INVALID-UPGRADE-PATH",
+      "RC-LIFECYCLE-MISMATCH"
+    ]
+  },
+  {
+    "recommendation_id": "REC-DOWNGRADE",
+    "name": "Downgrade",
+    "description": "Return a component to a lower supported version when the current version creates incompatibility.",
+    "applicable_root_causes": [
+      "RC-VERSION-MISMATCH",
+      "RC-CONFLICT-VIOLATION"
+    ]
+  },
+  {
+    "recommendation_id": "REC-INSTALL",
+    "name": "Install",
+    "description": "Install a required component, dependency, control, or management capability.",
+    "applicable_root_causes": [
+      "RC-MISSING-DEPENDENCY",
+      "RC-MISSING-COMPONENT",
+      "RC-POLICY-VIOLATION"
+    ]
+  },
+  {
+    "recommendation_id": "REC-REMOVE",
+    "name": "Remove",
+    "description": "Remove a deprecated, prohibited, duplicate, or conflicting component.",
+    "applicable_root_causes": [
+      "RC-DEPRECATED-COMPONENT",
+      "RC-CONFLICT-VIOLATION"
+    ]
+  },
+  {
+    "recommendation_id": "REC-REPLACE",
+    "name": "Replace",
+    "description": "Substitute an unsupported or conflicting component with an approved equivalent.",
+    "applicable_root_causes": [
+      "RC-MISSING-DEPENDENCY",
+      "RC-UNSUPPORTED-CONFIGURATION",
+      "RC-DEPRECATED-COMPONENT",
+      "RC-CONFLICT-VIOLATION",
+      "RC-LIFECYCLE-MISMATCH"
+    ]
+  },
+  {
+    "recommendation_id": "REC-CONFIGURATION-CHANGE",
+    "name": "ConfigurationChange",
+    "description": "Change settings or state to restore compatibility and baseline conformance.",
+    "applicable_root_causes": [
+      "RC-MISSING-DEPENDENCY",
+      "RC-UNSUPPORTED-CONFIGURATION",
+      "RC-CONFLICT-VIOLATION",
+      "RC-SECURITY-VIOLATION",
+      "RC-INVALID-UPGRADE-PATH",
+      "RC-CONFIGURATION-DRIFT",
+      "RC-POLICY-VIOLATION",
+      "RC-UNKNOWN-STATE"
+    ]
+  },
+  {
+    "recommendation_id": "REC-PATCH",
+    "name": "Patch",
+    "description": "Apply a targeted corrective or security update.",
+    "applicable_root_causes": [
+      "RC-VERSION-MISMATCH",
+      "RC-SECURITY-VIOLATION"
+    ]
+  },
+  {
+    "recommendation_id": "REC-ROLLBACK",
+    "name": "Rollback",
+    "description": "Restore the last verified state after a harmful or invalid change.",
+    "applicable_root_causes": [
+      "RC-INVALID-UPGRADE-PATH",
+      "RC-CONFIGURATION-DRIFT"
+    ]
+  },
+  {
+    "recommendation_id": "REC-POLICY-UPDATE",
+    "name": "PolicyUpdate",
+    "description": "Correct, clarify, approve, or retire the governing policy where policy intent is outdated or inconsistent.",
+    "applicable_root_causes": [
+      "RC-LIFECYCLE-MISMATCH",
+      "RC-POLICY-VIOLATION"
+    ]
+  },
+  {
+    "recommendation_id": "REC-MONITORING-ACTION",
+    "name": "MonitoringAction",
+    "description": "Collect fresh evidence, increase observation, or alert on recurrence before making a disruptive change.",
+    "applicable_root_causes": [
+      "RC-MISSING-COMPONENT",
+      "RC-CONFIGURATION-DRIFT",
+      "RC-UNKNOWN-STATE"
+    ]
+  }
+]

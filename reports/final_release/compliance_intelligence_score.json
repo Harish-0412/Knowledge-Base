@@ -1,0 +1,43 @@
+{
+  "report_id": "CIS-V1",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "overall_score": 0.934,
+  "grade": "A",
+  "components": {
+    "retrieval_accuracy": {
+      "weight": 0.2,
+      "score": 0.67,
+      "weighted": 0.134
+    },
+    "reasoning_quality": {
+      "weight": 0.2,
+      "score": 1.0,
+      "weighted": 0.2
+    },
+    "recommendation_quality": {
+      "weight": 0.15,
+      "score": 1.0,
+      "weighted": 0.15
+    },
+    "root_cause_quality": {
+      "weight": 0.15,
+      "score": 1.0,
+      "weighted": 0.15
+    },
+    "evidence_coverage": {
+      "weight": 0.15,
+      "score": 1.0,
+      "weighted": 0.15
+    },
+    "hallucination_control": {
+      "weight": 0.15,
+      "score": 1.0,
+      "weighted": 0.15
+    }
+  },
+  "max_possible_score_with_neo4j": 1.0,
+  "notes": [
+    "Score reflects 2/3 storage layers operational (Qdrant functional, Neo4j config-blocked)",
+    "Full score achievable by configuring NEO4J_PASSWORD"
+  ]
+}

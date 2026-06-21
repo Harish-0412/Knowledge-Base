@@ -1,0 +1,96 @@
+[
+  {
+    "prevention_id": "PREV-CONTINUOUS-MONITORING",
+    "name": "ContinuousMonitoring",
+    "description": "Continuously detect state, evidence, and compatibility changes.",
+    "prevents": [
+      "RC-CONFIGURATION-DRIFT",
+      "RC-MISSING-COMPONENT",
+      "RC-UNKNOWN-STATE"
+    ]
+  },
+  {
+    "prevention_id": "PREV-POLICY-ENFORCEMENT",
+    "name": "PolicyEnforcement",
+    "description": "Enforce approved controls before and after configuration changes.",
+    "prevents": [
+      "RC-POLICY-VIOLATION",
+      "RC-SECURITY-VIOLATION"
+    ]
+  },
+  {
+    "prevention_id": "PREV-VERSION-VALIDATION",
+    "name": "VersionValidation",
+    "description": "Validate installed and target versions against constraints before approval.",
+    "prevents": [
+      "RC-VERSION-MISMATCH",
+      "RC-DEPRECATED-COMPONENT"
+    ]
+  },
+  {
+    "prevention_id": "PREV-CHANGE-CONTROL",
+    "name": "ChangeControl",
+    "description": "Require reviewed, traceable, and reversible configuration changes.",
+    "prevents": [
+      "RC-CONFIGURATION-DRIFT",
+      "RC-INVALID-UPGRADE-PATH"
+    ]
+  },
+  {
+    "prevention_id": "PREV-PREDEPLOYMENT-VALIDATION",
+    "name": "PreDeploymentValidation",
+    "description": "Evaluate compatibility, readiness, conflicts, and risk before deployment.",
+    "prevents": [
+      "RC-UNSUPPORTED-CONFIGURATION",
+      "RC-CONFLICT-VIOLATION",
+      "RC-INVALID-UPGRADE-PATH"
+    ]
+  },
+  {
+    "prevention_id": "PREV-SCHEDULED-COMPLIANCE-AUDIT",
+    "name": "ScheduledComplianceAudit",
+    "description": "Periodically reassess fleet state against current policies and rules.",
+    "prevents": [
+      "RC-POLICY-VIOLATION",
+      "RC-LIFECYCLE-MISMATCH",
+      "RC-CONFIGURATION-DRIFT"
+    ]
+  },
+  {
+    "prevention_id": "PREV-DEPENDENCY-VERIFICATION",
+    "name": "DependencyVerification",
+    "description": "Resolve and verify all direct and transitive prerequisites.",
+    "prevents": [
+      "RC-MISSING-DEPENDENCY",
+      "RC-MISSING-COMPONENT"
+    ]
+  },
+  {
+    "prevention_id": "PREV-LIFECYCLE-MANAGEMENT",
+    "name": "LifecycleManagement",
+    "description": "Track approval, servicing, deprecation, and replacement windows.",
+    "prevents": [
+      "RC-DEPRECATED-COMPONENT",
+      "RC-LIFECYCLE-MISMATCH"
+    ]
+  },
+  {
+    "prevention_id": "PREV-PATCH-GOVERNANCE",
+    "name": "PatchGovernance",
+    "description": "Prioritize, test, stage, and verify corrective updates.",
+    "prevents": [
+      "RC-SECURITY-VIOLATION",
+      "RC-VERSION-MISMATCH"
+    ]
+  },
+  {
+    "prevention_id": "PREV-CONFIGURATION-BASELINE",
+    "name": "ConfigurationBaseline",
+    "description": "Define and continuously compare against approved desired state.",
+    "prevents": [
+      "RC-CONFIGURATION-DRIFT",
+      "RC-UNSUPPORTED-CONFIGURATION",
+      "RC-POLICY-VIOLATION"
+    ]
+  }
+]

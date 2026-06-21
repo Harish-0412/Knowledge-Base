@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Violation taxonomy",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "violation_id",
+      "name",
+      "description",
+      "related_root_causes"
+    ],
+    "properties": {
+      "violation_id": {
+        "type": "string",
+        "pattern": "^VIOL-"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "related_root_causes": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "pattern": "^RC-"
+        }
+      }
+    }
+  }
+}

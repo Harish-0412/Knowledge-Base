@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Recommendation types",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "recommendation_id",
+      "name",
+      "description",
+      "applicable_root_causes"
+    ],
+    "properties": {
+      "recommendation_id": {
+        "type": "string",
+        "pattern": "^REC-"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "applicable_root_causes": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "pattern": "^RC-"
+        }
+      }
+    }
+  }
+}

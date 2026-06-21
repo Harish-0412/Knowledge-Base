@@ -1,0 +1,7 @@
+{
+  "model_name": "llama3.1:8b",
+  "temperature": 0.1,
+  "timeout": 120,
+  "max_tokens": 512,
+  "context_window": 131072
+}

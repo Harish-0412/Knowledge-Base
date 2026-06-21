@@ -1,0 +1,16 @@
+{
+  "report_id": "EVIDENCE-COV-V1",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "domain_layer": 1.0,
+  "inventory_layer": 0.0,
+  "compatibility_layer": 1.0,
+  "overall_coverage": 0.67,
+  "layer_detail": {
+    "Layer1_Qdrant_kb_domain_layer": "OPERATIONAL",
+    "Layer2_Neo4j_inventory": "CONFIG_BLOCKED",
+    "Layer3_Qdrant_kb_compatibility_layer": "OPERATIONAL"
+  },
+  "evidence_types_defined": 9,
+  "evidence_types_operational": 9,
+  "note": "Layer 2 coverage will reach 1.0 once NEO4J_PASSWORD is configured."
+}

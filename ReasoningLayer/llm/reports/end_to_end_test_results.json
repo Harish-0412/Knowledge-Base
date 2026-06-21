@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-06-21T15:26:51.946457+00:00",
+  "status": "FAIL",
+  "results": [
+    {
+      "question": "What is BIOS?",
+      "intent": "ConceptExplanation",
+      "target_layers": [
+        "Layer1"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 5.44
+    },
+    {
+      "question": "What is UEFI?",
+      "intent": "ConceptExplanation",
+      "target_layers": [
+        "Layer1"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.53
+    },
+    {
+      "question": "Why is Laptop001 non-compliant?",
+      "intent": "RootCauseAnalysis",
+      "target_layers": [
+        "Layer2",
+        "Layer3"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.5
+    },
+    {
+      "question": "How do I fix Laptop001?",
+      "intent": "RecommendationRequest",
+      "target_layers": [
+        "Layer2",
+        "Layer3"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.44
+    },
+    {
+      "question": "What risks exist for Laptop001?",
+      "intent": "RiskAssessment",
+      "target_layers": [
+        "Layer2",
+        "Layer3"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.43
+    },
+    {
+      "question": "Which devices are affected?",
+      "intent": "FleetAnalysis",
+      "target_layers": [
+        "Layer2"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.35
+    },
+    {
+      "question": "How can this be prevented?",
+      "intent": "PreventionRequest",
+      "target_layers": [
+        "Layer3"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.37
+    },
+    {
+      "question": "What firmware version is required?",
+      "intent": "VersionAnalysis",
+      "target_layers": [
+        "Layer3"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.73
+    },
+    {
+      "question": "What dependencies exist between BIOS and firmware?",
+      "intent": "DependencyAnalysis",
+      "target_layers": [
+        "Layer3"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.65
+    },
+    {
+      "question": "Show a fleet compliance summary.",
+      "intent": "FleetAnalysis",
+      "target_layers": [
+        "Layer2"
+      ],
+      "evidence_count": 0,
+      "generation_status": "ABSTAINED",
+      "valid": false,
+      "confidence": 0.55,
+      "evidence_coverage": 0.0,
+      "hallucination_count": 0,
+      "issues": [
+        "No evidence was retrieved",
+        "Root cause is not supported by evidence",
+        "Recommendation is not supported by evidence"
+      ],
+      "latency_ms": 0.48
+    }
+  ]
+}

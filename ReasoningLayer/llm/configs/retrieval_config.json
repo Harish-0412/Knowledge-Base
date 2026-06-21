@@ -1,0 +1,6 @@
+{
+  "top_k": 5,
+  "reranking": true,
+  "score_threshold": 0.3,
+  "hybrid_retrieval": true
+}

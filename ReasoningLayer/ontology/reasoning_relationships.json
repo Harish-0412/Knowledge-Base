@@ -1,0 +1,62 @@
+[
+  {
+    "relationship_name": "CAUSES",
+    "source_type": "RootCause",
+    "target_type": "Violation",
+    "description": "A diagnosed cause produces or materially explains a violation."
+  },
+  {
+    "relationship_name": "INDICATES",
+    "source_type": "Evidence",
+    "target_type": "RootCause",
+    "description": "Observed evidence supports a root-cause hypothesis."
+  },
+  {
+    "relationship_name": "MITIGATED_BY",
+    "source_type": "RootCause",
+    "target_type": "Recommendation",
+    "description": "A recommendation reduces or removes a root cause."
+  },
+  {
+    "relationship_name": "PREVENTED_BY",
+    "source_type": "RootCause",
+    "target_type": "Prevention",
+    "description": "A preventive control reduces recurrence likelihood."
+  },
+  {
+    "relationship_name": "ESCALATES_TO",
+    "source_type": "RiskLevel",
+    "target_type": "RiskLevel",
+    "description": "Unresolved conditions move risk to a higher level."
+  },
+  {
+    "relationship_name": "DERIVED_FROM",
+    "source_type": "ReasoningFinding",
+    "target_type": "CompatibilityRule",
+    "description": "A finding retains provenance to the Layer 3 rule that produced it."
+  },
+  {
+    "relationship_name": "TRIGGERS",
+    "source_type": "Violation",
+    "target_type": "ReasoningFinding",
+    "description": "A detected violation starts classification and analysis."
+  },
+  {
+    "relationship_name": "REQUIRES_ACTION",
+    "source_type": "RiskLevel",
+    "target_type": "Recommendation",
+    "description": "A risk assessment determines the urgency and class of response."
+  },
+  {
+    "relationship_name": "INCREASES_RISK",
+    "source_type": "Violation",
+    "target_type": "RiskLevel",
+    "description": "A violation contributes to a higher risk assessment."
+  },
+  {
+    "relationship_name": "REDUCES_RISK",
+    "source_type": "Recommendation",
+    "target_type": "RiskLevel",
+    "description": "A successful remediation lowers residual risk."
+  }
+]

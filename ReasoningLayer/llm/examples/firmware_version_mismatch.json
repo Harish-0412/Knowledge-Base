@@ -1,0 +1,9 @@
+{
+  "question": "Why does the installed firmware fail the version rule?",
+  "expected_intent": "RootCauseAnalysis",
+  "entities": {"device": "Laptop001", "firmware": "3.2"},
+  "evidence": [
+    {"type": "InventoryEvidence", "fact": "Laptop001 reports firmware 3.2"},
+    {"type": "VersionEvidence", "fact": "The applicable rule requires firmware 3.4 or newer"}
+  ]
+}

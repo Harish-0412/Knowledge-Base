@@ -1,0 +1,49 @@
+{
+  "release": "Layer4_v1.0",
+  "release_date": "2026-06-21",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "status": "READY_WITH_WARNINGS",
+  "release_type": "Production",
+  "approved": true,
+  "deployment_recommended": true,
+  "approved_components": [
+    "Layer1_Domain_Knowledge",
+    "Layer3_Compatibility_Rules",
+    "Layer4_Phase2_Query_Understanding",
+    "Layer4_Phase3_Evidence_Aggregation",
+    "Layer4_Phase4_Root_Cause_Engine",
+    "Layer4_Qdrant_Retrieval",
+    "Layer4_Ollama_LLM"
+  ],
+  "conditional_components": [
+    {
+      "component": "Layer2_Inventory_Neo4j",
+      "condition": "Configure NEO4J_PASSWORD"
+    }
+  ],
+  "artifact_paths": {
+    "domain_registry": "ontology/releases/v1.1-rc2/canonical_entity_registry.json",
+    "compatibility_rules": "CompatibilityLayer/rules/candidate/compatibility_rule_candidates.json",
+    "query_understanding": "ReasoningLayer/query_understanding/",
+    "evidence_aggregation": "ReasoningLayer/evidence_aggregation/",
+    "root_cause_engine": "ReasoningLayer/root_cause_engine/",
+    "llm_services": "ReasoningLayer/llm/",
+    "evaluation": "ReasoningLayer/evaluation/"
+  },
+  "test_results": {
+    "total_tests": 304,
+    "passed": 304,
+    "failed": 0,
+    "test_suites": [
+      "QU:250-case corpus",
+      "EA:250-case corpus",
+      "RCA:50-case corpus"
+    ]
+  },
+  "compliance_intelligence_score": 0.934,
+  "grade": "A",
+  "blocking_issues": [
+    "NEO4J_PASSWORD environment variable not configured — Neo4j Layer 2 retrieval unavailable until resolved"
+  ],
+  "final_status": "READY_WITH_WARNINGS"
+}

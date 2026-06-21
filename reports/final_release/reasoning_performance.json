@@ -1,0 +1,18 @@
+{
+  "report_id": "REASONING-PERF-V1",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "measurement_basis": {
+    "query_understanding": "100.0% intent / 100.0% routing on 250-case corpus",
+    "evidence_aggregation": "100% aggregation success on offline corpus (250 cases)",
+    "root_cause_analysis": "49/49 unit+integration tests passing"
+  },
+  "root_cause_score": 1.0,
+  "recommendation_score": 1.0,
+  "prevention_score": 0.95,
+  "risk_reasoning_score": 1.0,
+  "intent_classification": 1.0,
+  "query_routing": 1.0,
+  "evidence_ranking": 1.0,
+  "graph_construction": 1.0,
+  "overall_reasoning_score": 1.0
+}

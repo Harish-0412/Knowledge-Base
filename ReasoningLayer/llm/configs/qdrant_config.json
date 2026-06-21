@@ -1,0 +1,8 @@
+{
+  "cluster_url": "${QDRANT_URL}",
+  "api_key": "${QDRANT_API_KEY}",
+  "collections": [
+    "kb_domain_layer",
+    "kb_compatibility_layer"
+  ]
+}

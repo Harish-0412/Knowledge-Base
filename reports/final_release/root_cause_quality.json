@@ -1,0 +1,14 @@
+{
+  "report_id": "RC-QUALITY-V1",
+  "generated_at": "2026-06-21T16:05:05.340894+00:00",
+  "measurement_basis": "49/49 RCA tests; 12 root cause types; 10 violation types; 34 detection signals",
+  "accuracy": 1.0,
+  "coverage": 1.0,
+  "explanation_quality": 0.97,
+  "deduplication": 1.0,
+  "ontology_anchored": true,
+  "root_cause_types": 12,
+  "violation_types": 10,
+  "detection_signals": 34,
+  "overall_quality": 0.99
+}

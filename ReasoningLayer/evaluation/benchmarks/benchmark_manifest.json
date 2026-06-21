@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "benchmarks": [
+    {"name": "Definition Benchmark", "categories": ["Definition"]},
+    {"name": "Compatibility Benchmark", "categories": ["Compatibility"]},
+    {"name": "Root Cause Benchmark", "categories": ["RootCause"]},
+    {"name": "Recommendation Benchmark", "categories": ["Recommendation", "Prevention"]},
+    {"name": "Fleet Analysis Benchmark", "categories": ["Fleet"]},
+    {"name": "Stress Benchmark", "categories": ["Stress", "Hybrid"]}
+  ],
+  "production_thresholds": {
+    "average_confidence_min": 0.85,
+    "hallucination_rate_max": 0.05,
+    "root_cause_coverage_min": 0.95,
+    "recommendation_coverage_min": 0.95,
+    "evidence_coverage_min": 0.90,
+    "retrieval_success_rate_min": 0.95,
+    "average_latency_seconds_max": 5.0,
+    "stress_pass_rate_min": 0.90
+  }
+}

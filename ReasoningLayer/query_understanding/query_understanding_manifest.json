@@ -1,0 +1,33 @@
+{
+  "manifest_id": "QUERY-UNDERSTANDING-PHASE2-V1",
+  "version": "1.0.0",
+  "created_date": "2026-06-21",
+  "status": "validated",
+  "intent_count": 15,
+  "entity_count": 15,
+  "pattern_count": 150,
+  "test_case_count": 250,
+  "test_distribution": {
+    "Layer1": 50,
+    "Layer2": 50,
+    "Layer3": 50,
+    "Hybrid": 100
+  },
+  "implementation_files": [
+    "intent_classifier.py",
+    "entity_extractor.py",
+    "query_router.py",
+    "query_parser.py",
+    "query_understanding_service.py"
+  ],
+  "consumers": [
+    "Evidence Aggregation Layer",
+    "Neo4j Retrieval Engine",
+    "Qdrant Retrieval Engine",
+    "Root Cause Engine",
+    "Recommendation Engine"
+  ],
+  "validation_report": "ReasoningLayer/query_understanding/reports/query_understanding_validation.json",
+  "metrics_report": "ReasoningLayer/query_understanding/reports/query_understanding_metrics.json",
+  "final_status": "READY_FOR_PHASE_3"
+}

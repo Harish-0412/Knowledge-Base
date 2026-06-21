@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-06-21T15:47:46.769625+00:00",
+  "ollama_status": {
+    "status": "PASS",
+    "reachable": true,
+    "model": "llama3.1:8b",
+    "model_reachable": true,
+    "available_models": [
+      "llama3.1:8b"
+    ],
+    "error": null,
+    "generation_works": true
+  },
+  "qdrant_status": {
+    "status": "PASS",
+    "reachable": true,
+    "required_collections": [
+      "kb_domain_layer",
+      "kb_compatibility_layer"
+    ],
+    "available_collections": [
+      "kb_compatibility_layer",
+      "kb_domain_layer"
+    ],
+    "missing_collections": [],
+    "error": null
+  },
+  "neo4j_status": {
+    "status": "FAIL",
+    "reachable": false,
+    "database": "neo4j",
+    "test_query": null,
+    "error": "NEO4J_PASSWORD is not configured"
+  },
+  "dependency_status": "PASS",
+  "overall_status": "FAIL",
+  "final_status": "VALIDATION_FAILED"
+}

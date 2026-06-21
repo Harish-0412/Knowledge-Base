@@ -1,0 +1,9 @@
+{
+  "question": "Is the operating system on Laptop001 supported?",
+  "expected_intent": "CompatibilityInquiry",
+  "entities": {"device": "Laptop001", "operating_system": "ExampleOS 10"},
+  "evidence": [
+    {"type": "InventoryEvidence", "fact": "Laptop001 reports ExampleOS 10"},
+    {"type": "LifecycleEvidence", "fact": "ExampleOS 10 is outside its support window"}
+  ]
+}
