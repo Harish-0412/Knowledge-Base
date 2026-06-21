@@ -1,0 +1,31 @@
+{
+  "questions_tested": 50,
+  "questions_answered": 50,
+  "routing_accuracy": 100.0,
+  "answer_rate": 100.0,
+  "empty_result_count": 0,
+  "average_retrieved_documents": 4.14,
+  "average_similarity_score": 0.705724,
+  "retrieved_source_relevance_rate": 100.0,
+  "source_coverage": 100.0,
+  "search_failure_count": 0,
+  "retrieved_source_counts_by_collection": {
+    "kb_domain_layer": 50,
+    "kb_compatibility_layer": 157
+  },
+  "collection_status": {
+    "kb_domain_layer": {
+      "exists": true,
+      "vector_count": 24,
+      "vector_size": 768,
+      "distance": "Cosine"
+    },
+    "kb_compatibility_layer": {
+      "exists": true,
+      "vector_count": 42,
+      "vector_size": 768,
+      "distance": "Cosine"
+    }
+  },
+  "generated_at": "2026-06-21T08:48:56.788135+00:00"
+}

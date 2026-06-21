@@ -1,0 +1,789 @@
+{
+  "collection_name": "kb_compatibility_layer",
+  "model_used": "BAAI/bge-base-en-v1.5",
+  "top_k": 5,
+  "query_count": 15,
+  "tests": [
+    {
+      "test_id": "RET-001",
+      "query": "What firmware version is required?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.73824036,
+          "document_id": "COMPAT-DOC-RCAND-000392",
+          "rule_id": "RCAND-000392",
+          "rule_type": "min_version_constraint",
+          "subject": "firmware 8.2.0",
+          "object": "firmware 8.2.1"
+        },
+        {
+          "rank": 2,
+          "score": 0.7369281,
+          "document_id": "COMPAT-DOC-RCAND-000386",
+          "rule_id": "RCAND-000386",
+          "rule_type": "min_version_constraint",
+          "subject": "firmware",
+          "object": "firmware 8.2.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.7349192,
+          "document_id": "COMPAT-DOC-RCAND-000374",
+          "rule_id": "RCAND-000374",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "System Firmware 8.2.1"
+        },
+        {
+          "rank": 4,
+          "score": 0.72575665,
+          "document_id": "COMPAT-DOC-RCAND-000363",
+          "rule_id": "RCAND-000363",
+          "rule_type": "min_version_constraint",
+          "subject": "System BIOS 6.4.2",
+          "object": "System Firmware 8.2.0"
+        },
+        {
+          "rank": 5,
+          "score": 0.70444393,
+          "document_id": "COMPAT-DOC-RCAND-000397",
+          "rule_id": "RCAND-000397",
+          "rule_type": "readiness_requirement",
+          "subject": "bios 6.4.2",
+          "object": "firmware 8.2.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-002",
+      "query": "Which operating systems are supported?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.66548944,
+          "document_id": "COMPAT-DOC-RCAND-000365",
+          "rule_id": "RCAND-000365",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2025.2 and Enterprise OS 2026.1",
+          "object": "Platform Driver Pack 12.5.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.62686,
+          "document_id": "COMPAT-DOC-RCAND-000360",
+          "rule_id": "RCAND-000360",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.4.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.6230241,
+          "document_id": "COMPAT-DOC-RCAND-000371",
+          "rule_id": "RCAND-000371",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.0.0"
+        },
+        {
+          "rank": 4,
+          "score": 0.61642456,
+          "document_id": "COMPAT-DOC-RCAND-000364",
+          "rule_id": "RCAND-000364",
+          "rule_type": "readiness_requirement",
+          "subject": "System Firmware 8.2.1",
+          "object": "Platform Driver Pack 12.5.0"
+        },
+        {
+          "rank": 5,
+          "score": 0.60608155,
+          "document_id": "COMPAT-DOC-RCAND-000390",
+          "rule_id": "RCAND-000390",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS",
+          "object": "Enterprise OS 2025.2"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-003",
+      "query": "Show incompatible software combinations.",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.61000013,
+          "document_id": "COMPAT-DOC-RCAND-000375",
+          "rule_id": "RCAND-000375",
+          "rule_type": "incompatible_combination",
+          "subject": "Driver Pack 12.3.0 and Enterprise OS 2026.1",
+          "object": "Unspecified component 12.3.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.5745534,
+          "document_id": "COMPAT-DOC-RCAND-000372",
+          "rule_id": "RCAND-000372",
+          "rule_type": "incompatible_combination",
+          "subject": "Security Agent 4.8.3 and Endpoint Management Agent",
+          "object": "Endpoint Management Agent 3.7.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.57131135,
+          "document_id": "COMPAT-DOC-RCAND-000370",
+          "rule_id": "RCAND-000370",
+          "rule_type": "incompatible_combination",
+          "subject": "bios 6.4.2 and firmware 8.0.0",
+          "object": "Unspecified component 8.0.0"
+        },
+        {
+          "rank": 4,
+          "score": 0.56209064,
+          "document_id": "COMPAT-DOC-RCAND-000374",
+          "rule_id": "RCAND-000374",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "System Firmware 8.2.1"
+        },
+        {
+          "rank": 5,
+          "score": 0.54916203,
+          "document_id": "COMPAT-DOC-RCAND-000373",
+          "rule_id": "RCAND-000373",
+          "rule_type": "incompatible_combination",
+          "subject": "bios 6.4.2 and firmware 8.2.0",
+          "object": "firmware 8.2.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-004",
+      "query": "What causes a device to become non-compliant?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.5854128,
+          "document_id": "COMPAT-DOC-RCAND-000375",
+          "rule_id": "RCAND-000375",
+          "rule_type": "incompatible_combination",
+          "subject": "Driver Pack 12.3.0 and Enterprise OS 2026.1",
+          "object": "Unspecified component 12.3.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.5809737,
+          "document_id": "COMPAT-DOC-RCAND-000401",
+          "rule_id": "RCAND-000401",
+          "rule_type": "update_order_constraint",
+          "subject": "firmware 7.9.0",
+          "object": "Step 1"
+        },
+        {
+          "rank": 3,
+          "score": 0.5712109,
+          "document_id": "COMPAT-DOC-RCAND-000383",
+          "rule_id": "RCAND-000383",
+          "rule_type": "known_issue_fixed",
+          "subject": "firmware firmware installed ",
+          "object": "firmware 8.2.1"
+        },
+        {
+          "rank": 4,
+          "score": 0.5665237,
+          "document_id": "COMPAT-DOC-RCAND-000374",
+          "rule_id": "RCAND-000374",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "System Firmware 8.2.1"
+        },
+        {
+          "rank": 5,
+          "score": 0.5656413,
+          "document_id": "COMPAT-DOC-RCAND-000370",
+          "rule_id": "RCAND-000370",
+          "rule_type": "incompatible_combination",
+          "subject": "bios 6.4.2 and firmware 8.0.0",
+          "object": "Unspecified component 8.0.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-005",
+      "query": "Which drivers depend on firmware?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.71665895,
+          "document_id": "COMPAT-DOC-RCAND-000364",
+          "rule_id": "RCAND-000364",
+          "rule_type": "readiness_requirement",
+          "subject": "System Firmware 8.2.1",
+          "object": "Platform Driver Pack 12.5.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.6638944,
+          "document_id": "COMPAT-DOC-RCAND-000397",
+          "rule_id": "RCAND-000397",
+          "rule_type": "readiness_requirement",
+          "subject": "bios 6.4.2",
+          "object": "firmware 8.2.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.6507335,
+          "document_id": "COMPAT-DOC-RCAND-000380",
+          "rule_id": "RCAND-000380",
+          "rule_type": "update_order_constraint",
+          "subject": "firmware 8.0.0",
+          "object": "firmware 8.2.1"
+        },
+        {
+          "rank": 4,
+          "score": 0.64810735,
+          "document_id": "COMPAT-DOC-RCAND-000363",
+          "rule_id": "RCAND-000363",
+          "rule_type": "min_version_constraint",
+          "subject": "System BIOS 6.4.2",
+          "object": "System Firmware 8.2.0"
+        },
+        {
+          "rank": 5,
+          "score": 0.64204836,
+          "document_id": "COMPAT-DOC-RCAND-000373",
+          "rule_id": "RCAND-000373",
+          "rule_type": "incompatible_combination",
+          "subject": "bios 6.4.2 and firmware 8.2.0",
+          "object": "firmware 8.2.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-006",
+      "query": "What BIOS and firmware versions cannot be used together?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7829949,
+          "document_id": "COMPAT-DOC-RCAND-000370",
+          "rule_id": "RCAND-000370",
+          "rule_type": "incompatible_combination",
+          "subject": "bios 6.4.2 and firmware 8.0.0",
+          "object": "Unspecified component 8.0.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.7766604,
+          "document_id": "COMPAT-DOC-RCAND-000373",
+          "rule_id": "RCAND-000373",
+          "rule_type": "incompatible_combination",
+          "subject": "bios 6.4.2 and firmware 8.2.0",
+          "object": "firmware 8.2.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.7438545,
+          "document_id": "COMPAT-DOC-RCAND-000397",
+          "rule_id": "RCAND-000397",
+          "rule_type": "readiness_requirement",
+          "subject": "bios 6.4.2",
+          "object": "firmware 8.2.0"
+        },
+        {
+          "rank": 4,
+          "score": 0.74346447,
+          "document_id": "COMPAT-DOC-RCAND-000363",
+          "rule_id": "RCAND-000363",
+          "rule_type": "min_version_constraint",
+          "subject": "System BIOS 6.4.2",
+          "object": "System Firmware 8.2.0"
+        },
+        {
+          "rank": 5,
+          "score": 0.709998,
+          "document_id": "COMPAT-DOC-RCAND-000380",
+          "rule_id": "RCAND-000380",
+          "rule_type": "update_order_constraint",
+          "subject": "firmware 8.0.0",
+          "object": "firmware 8.2.1"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-007",
+      "query": "Which component must be upgraded before an operating system migration?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.70007074,
+          "document_id": "COMPAT-DOC-RCAND-000381",
+          "rule_id": "RCAND-000381",
+          "rule_type": "readiness_requirement",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.5.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.6777628,
+          "document_id": "COMPAT-DOC-RCAND-000360",
+          "rule_id": "RCAND-000360",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.4.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.6650875,
+          "document_id": "COMPAT-DOC-RCAND-000399",
+          "rule_id": "RCAND-000399",
+          "rule_type": "readiness_requirement",
+          "subject": "Enterprise OS Enterprise OS migration",
+          "object": "driver pack current"
+        },
+        {
+          "rank": 4,
+          "score": 0.6507829,
+          "document_id": "COMPAT-DOC-RCAND-000396",
+          "rule_id": "RCAND-000396",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS",
+          "object": "Enterprise OS 2026.1"
+        },
+        {
+          "rank": 5,
+          "score": 0.6476395,
+          "document_id": "COMPAT-DOC-RCAND-000379",
+          "rule_id": "RCAND-000379",
+          "rule_type": "update_order_constraint",
+          "subject": "bios 6.2.0",
+          "object": "bios 6.4.2"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-008",
+      "query": "Find minimum version requirements for security agents.",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.75745106,
+          "document_id": "COMPAT-DOC-RCAND-000388",
+          "rule_id": "RCAND-000388",
+          "rule_type": "min_version_constraint",
+          "subject": "Security Agent",
+          "object": "Security Agent 4.8.3"
+        },
+        {
+          "rank": 2,
+          "score": 0.75150204,
+          "document_id": "COMPAT-DOC-RCAND-000394",
+          "rule_id": "RCAND-000394",
+          "rule_type": "min_version_constraint",
+          "subject": "Security Agent",
+          "object": "Security Agent 4.8.3"
+        },
+        {
+          "rank": 3,
+          "score": 0.7266339,
+          "document_id": "COMPAT-DOC-RCAND-000366",
+          "rule_id": "RCAND-000366",
+          "rule_type": "min_version_constraint",
+          "subject": "Security Agent 4.8.3",
+          "object": "Endpoint Management Agent 3.7.0"
+        },
+        {
+          "rank": 4,
+          "score": 0.70621836,
+          "document_id": "COMPAT-DOC-RCAND-000377",
+          "rule_id": "RCAND-000377",
+          "rule_type": "readiness_requirement",
+          "subject": "unknown unknown installed ",
+          "object": "Security Agent 4.8.3"
+        },
+        {
+          "rank": 5,
+          "score": 0.7016262,
+          "document_id": "COMPAT-DOC-RCAND-000378",
+          "rule_id": "RCAND-000378",
+          "rule_type": "min_version_constraint",
+          "subject": "Security Agent 4.7.x",
+          "object": "Security Agent 31 July 2026"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-009",
+      "query": "Which known issues are fixed by upgrading?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.62072814,
+          "document_id": "COMPAT-DOC-RCAND-000374",
+          "rule_id": "RCAND-000374",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "System Firmware 8.2.1"
+        },
+        {
+          "rank": 2,
+          "score": 0.581505,
+          "document_id": "COMPAT-DOC-RCAND-000376",
+          "rule_id": "RCAND-000376",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "Driver Pack 12.5.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.5727088,
+          "document_id": "COMPAT-DOC-RCAND-000382",
+          "rule_id": "RCAND-000382",
+          "rule_type": "known_issue_fixed",
+          "subject": "unknown unknown installed ",
+          "object": "System BIOS 6.4.2"
+        },
+        {
+          "rank": 4,
+          "score": 0.5711881,
+          "document_id": "COMPAT-DOC-RCAND-000377",
+          "rule_id": "RCAND-000377",
+          "rule_type": "readiness_requirement",
+          "subject": "unknown unknown installed ",
+          "object": "Security Agent 4.8.3"
+        },
+        {
+          "rank": 5,
+          "score": 0.57094836,
+          "document_id": "COMPAT-DOC-RCAND-000360",
+          "rule_id": "RCAND-000360",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.4.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-010",
+      "query": "What update order must administrators follow?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.6259575,
+          "document_id": "COMPAT-DOC-RCAND-000380",
+          "rule_id": "RCAND-000380",
+          "rule_type": "update_order_constraint",
+          "subject": "firmware 8.0.0",
+          "object": "firmware 8.2.1"
+        },
+        {
+          "rank": 2,
+          "score": 0.6212013,
+          "document_id": "COMPAT-DOC-RCAND-000379",
+          "rule_id": "RCAND-000379",
+          "rule_type": "update_order_constraint",
+          "subject": "bios 6.2.0",
+          "object": "bios 6.4.2"
+        },
+        {
+          "rank": 3,
+          "score": 0.620806,
+          "document_id": "COMPAT-DOC-RCAND-000401",
+          "rule_id": "RCAND-000401",
+          "rule_type": "update_order_constraint",
+          "subject": "firmware 7.9.0",
+          "object": "Step 1"
+        },
+        {
+          "rank": 4,
+          "score": 0.59706473,
+          "document_id": "COMPAT-DOC-RCAND-000396",
+          "rule_id": "RCAND-000396",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS",
+          "object": "Enterprise OS 2026.1"
+        },
+        {
+          "rank": 5,
+          "score": 0.5967817,
+          "document_id": "COMPAT-DOC-RCAND-000377",
+          "rule_id": "RCAND-000377",
+          "rule_type": "readiness_requirement",
+          "subject": "unknown unknown installed ",
+          "object": "Security Agent 4.8.3"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-011",
+      "query": "Which configurations have critical compliance impact?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.5877616,
+          "document_id": "COMPAT-DOC-RCAND-000382",
+          "rule_id": "RCAND-000382",
+          "rule_type": "known_issue_fixed",
+          "subject": "unknown unknown installed ",
+          "object": "System BIOS 6.4.2"
+        },
+        {
+          "rank": 2,
+          "score": 0.58552045,
+          "document_id": "COMPAT-DOC-RCAND-000384",
+          "rule_id": "RCAND-000384",
+          "rule_type": "known_issue_fixed",
+          "subject": "Security Agent",
+          "object": "Security Agent 4.8.3"
+        },
+        {
+          "rank": 3,
+          "score": 0.5839298,
+          "document_id": "COMPAT-DOC-RCAND-000388",
+          "rule_id": "RCAND-000388",
+          "rule_type": "min_version_constraint",
+          "subject": "Security Agent",
+          "object": "Security Agent 4.8.3"
+        },
+        {
+          "rank": 4,
+          "score": 0.58224165,
+          "document_id": "COMPAT-DOC-RCAND-000383",
+          "rule_id": "RCAND-000383",
+          "rule_type": "known_issue_fixed",
+          "subject": "firmware firmware installed ",
+          "object": "firmware 8.2.1"
+        },
+        {
+          "rank": 5,
+          "score": 0.5795499,
+          "document_id": "COMPAT-DOC-RCAND-000386",
+          "rule_id": "RCAND-000386",
+          "rule_type": "min_version_constraint",
+          "subject": "firmware",
+          "object": "firmware 8.2.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-012",
+      "query": "What remediation is recommended for unsupported component versions?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.6318512,
+          "document_id": "COMPAT-DOC-RCAND-000370",
+          "rule_id": "RCAND-000370",
+          "rule_type": "incompatible_combination",
+          "subject": "bios 6.4.2 and firmware 8.0.0",
+          "object": "Unspecified component 8.0.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.6089716,
+          "document_id": "COMPAT-DOC-RCAND-000372",
+          "rule_id": "RCAND-000372",
+          "rule_type": "incompatible_combination",
+          "subject": "Security Agent 4.8.3 and Endpoint Management Agent",
+          "object": "Endpoint Management Agent 3.7.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.6060042,
+          "document_id": "COMPAT-DOC-RCAND-000385",
+          "rule_id": "RCAND-000385",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "BIOS 6.4.2"
+        },
+        {
+          "rank": 4,
+          "score": 0.5997808,
+          "document_id": "COMPAT-DOC-RCAND-000374",
+          "rule_id": "RCAND-000374",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "System Firmware 8.2.1"
+        },
+        {
+          "rank": 5,
+          "score": 0.5961086,
+          "document_id": "COMPAT-DOC-RCAND-000371",
+          "rule_id": "RCAND-000371",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.0.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-013",
+      "query": "Which endpoint management agent version is required?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.8239107,
+          "document_id": "COMPAT-DOC-RCAND-000389",
+          "rule_id": "RCAND-000389",
+          "rule_type": "min_version_constraint",
+          "subject": "Endpoint Management Agent",
+          "object": "Endpoint Management Agent 3.7.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.8168905,
+          "document_id": "COMPAT-DOC-RCAND-000366",
+          "rule_id": "RCAND-000366",
+          "rule_type": "min_version_constraint",
+          "subject": "Security Agent 4.8.3",
+          "object": "Endpoint Management Agent 3.7.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.7979147,
+          "document_id": "COMPAT-DOC-RCAND-000395",
+          "rule_id": "RCAND-000395",
+          "rule_type": "min_version_constraint",
+          "subject": "Endpoint Mgmt Agent",
+          "object": "Endpoint Mgmt Agent 3.7.1"
+        },
+        {
+          "rank": 4,
+          "score": 0.7363049,
+          "document_id": "COMPAT-DOC-RCAND-000372",
+          "rule_id": "RCAND-000372",
+          "rule_type": "incompatible_combination",
+          "subject": "Security Agent 4.8.3 and Endpoint Management Agent",
+          "object": "Endpoint Management Agent 3.7.0"
+        },
+        {
+          "rank": 5,
+          "score": 0.713042,
+          "document_id": "COMPAT-DOC-RCAND-000368",
+          "rule_id": "RCAND-000368",
+          "rule_type": "feature_support_added",
+          "subject": "Endpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program",
+          "object": "Unspecified component 3.7.1"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-014",
+      "query": "What platform driver pack versions are compatible?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.75644726,
+          "document_id": "COMPAT-DOC-RCAND-000365",
+          "rule_id": "RCAND-000365",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2025.2 and Enterprise OS 2026.1",
+          "object": "Platform Driver Pack 12.5.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.7367029,
+          "document_id": "COMPAT-DOC-RCAND-000364",
+          "rule_id": "RCAND-000364",
+          "rule_type": "readiness_requirement",
+          "subject": "System Firmware 8.2.1",
+          "object": "Platform Driver Pack 12.5.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.722793,
+          "document_id": "COMPAT-DOC-RCAND-000376",
+          "rule_id": "RCAND-000376",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "Driver Pack 12.5.0"
+        },
+        {
+          "rank": 4,
+          "score": 0.7179407,
+          "document_id": "COMPAT-DOC-RCAND-000400",
+          "rule_id": "RCAND-000400",
+          "rule_type": "min_version_constraint",
+          "subject": "unknown unknown installed ",
+          "object": "Driver Pack 12.5.0"
+        },
+        {
+          "rank": 5,
+          "score": 0.7072116,
+          "document_id": "COMPAT-DOC-RCAND-000371",
+          "rule_id": "RCAND-000371",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.0.0"
+        }
+      ]
+    },
+    {
+      "test_id": "RET-015",
+      "query": "Which compatibility rules describe feature support?",
+      "result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7005206,
+          "document_id": "COMPAT-DOC-RCAND-000365",
+          "rule_id": "RCAND-000365",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2025.2 and Enterprise OS 2026.1",
+          "object": "Platform Driver Pack 12.5.0"
+        },
+        {
+          "rank": 2,
+          "score": 0.6945747,
+          "document_id": "COMPAT-DOC-RCAND-000364",
+          "rule_id": "RCAND-000364",
+          "rule_type": "readiness_requirement",
+          "subject": "System Firmware 8.2.1",
+          "object": "Platform Driver Pack 12.5.0"
+        },
+        {
+          "rank": 3,
+          "score": 0.6938367,
+          "document_id": "COMPAT-DOC-RCAND-000375",
+          "rule_id": "RCAND-000375",
+          "rule_type": "incompatible_combination",
+          "subject": "Driver Pack 12.3.0 and Enterprise OS 2026.1",
+          "object": "Unspecified component 12.3.0"
+        },
+        {
+          "rank": 4,
+          "score": 0.6895238,
+          "document_id": "COMPAT-DOC-RCAND-000371",
+          "rule_id": "RCAND-000371",
+          "rule_type": "min_version_constraint",
+          "subject": "Enterprise OS 2026.1",
+          "object": "Driver Pack 12.0.0"
+        },
+        {
+          "rank": 5,
+          "score": 0.686784,
+          "document_id": "COMPAT-DOC-RCAND-000372",
+          "rule_id": "RCAND-000372",
+          "rule_type": "incompatible_combination",
+          "subject": "Security Agent 4.8.3 and Endpoint Management Agent",
+          "object": "Endpoint Management Agent 3.7.0"
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-06-21T07:53:59.144997+00:00"
+}

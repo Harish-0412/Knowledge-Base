@@ -1,0 +1,410 @@
+[
+  {
+    "document_id": "DOMAIN-DOC-DRV-001",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nGraphics Driver\n\nEntity Type:\nDriver\n\nSubtype:\nGraphics Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts GPU hardware and exposes standardized interfaces to the operating system and user-space applications for rendering, display output management, compute workloads, and hardware-accelerated media processing. Operates across both kernel-mode (KMD) and user-mode (UMD) driver components within the OS graphics subsystem.\n\nPurpose:\nProvision of hardware abstraction for GPU rendering pipelines, display adapter enumeration and configuration, graphics API translation, hardware-accelerated compute offload, and display output management including multi-monitor topology and refresh rate control.\n\nAliases:\nGPU Driver, Display Driver, Video Driver, Graphics Adapter Driver, Kernel Mode Driver KMD, User Mode Driver UMD, WDDM Driver, DRM Driver, Display Miniport Driver\n\nKeywords:\nGPU, graphics processing unit, WDDM, Windows Display Driver Model, DRM, Direct Rendering Manager, DirectX, OpenGL, Vulkan, OpenCL, CUDA, GPGPU, display adapter, framebuffer, kernel mode driver, user mode driver, dxgkrnl, graphics API, shader compiler, hardware acceleration, video decode, DXVA, display enumeration, refresh rate, resolution, multi-monitor, GPU virtualization, vGPU, driver signing, WHQL, TDR, Timeout Detection and Recovery, PCI Express, PCIe, driver INF, driver package, HDR, HDMI, DisplayPort, color depth\n\nRelated Entities:\nChipset Driver, OS Graphics Subsystem, DirectX Runtime, Vulkan Runtime, PCI Express Interface, UEFI GOP, Display Manager, GPU Firmware, Kernel Mode Setting, Driver Signing, WDDM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "DRV-001",
+      "name": "Graphics Driver",
+      "type": "Driver",
+      "subtype": "Graphics Driver",
+      "knowledge_category": "Driver",
+      "domain_layer": "Driver Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "drivers.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-DRV-002",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nAudio Driver\n\nEntity Type:\nDriver\n\nSubtype:\nAudio Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts audio hardware including HD Audio controllers, USB audio devices, and digital signal processors, exposing standardized interfaces to the OS audio subsystem for audio rendering, capture, mixing, and routing. Operates across kernel-mode bus and codec drivers and user-space audio engine components.\n\nPurpose:\nHardware abstraction for audio rendering and capture pipelines, audio device enumeration, sample rate and bit-depth negotiation, hardware mixing offload, acoustic signal processing, and audio endpoint routing within the OS audio subsystem.\n\nAliases:\nSound Driver, HD Audio Driver, Audio Codec Driver, Audio Controller Driver, ALSA Driver, WDM Audio Driver, UAA Driver, Universal Audio Architecture Driver, Sound Card Driver\n\nKeywords:\nHD Audio, HDA, High Definition Audio, Intel HDA, AC97, audio codec, ALSA, Advanced Linux Sound Architecture, WDM, Windows Driver Model, UAA, Universal Audio Architecture, audio endpoint, audio rendering, audio capture, sample rate, bit depth, PCM, audio bus driver, miniport driver, port driver, DSP, digital signal processor, audio mixing, audio routing, WASAPI, ASIO, audio latency, USB audio, I2S, audio device enumeration, microphone driver, speaker driver, audio privacy, mute control, audio virtualization, noise suppression, driver INF, WHQL\n\nRelated Entities:\nChipset Driver, OS Audio Subsystem, HD Audio Controller, USB Audio Class, Audio DSP Firmware, Driver Signing, PCI Express Interface, Kernel Streaming, WASAPI, Audio Endpoint Manager\n\nCompatibility Relevance:\nMedium\n\nValidation Priority:\nMedium",
+    "metadata": {
+      "entity_id": "DRV-002",
+      "name": "Audio Driver",
+      "type": "Driver",
+      "subtype": "Audio Driver",
+      "knowledge_category": "Driver",
+      "domain_layer": "Driver Layer",
+      "compatibility_relevance": "Medium",
+      "validation_priority": "Medium",
+      "source_file": "drivers.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-DRV-003",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nChipset Driver\n\nEntity Type:\nDriver\n\nSubtype:\nChipset Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nFoundational platform driver package that enables the operating system to correctly identify, enumerate, and communicate with the motherboard chipset components including PCIe root complexes, system bus controllers, SMBus, GPIO, UART, I2C, SPI interfaces, and power management controllers. Provides the platform abstraction layer upon which all other device drivers depend.\n\nPurpose:\nProvision of OS-level enumeration and communication support for chipset subsystems including PCIe topology, system bus controllers, I/O hub interfaces, power management integration, and platform device identification required by dependent drivers.\n\nAliases:\nPlatform Driver, System Chipset Driver, INF Driver, PCI INF Driver, Platform Controller Hub Driver, PCH Driver, Southbridge Driver, Northbridge Driver, System Bus Driver\n\nKeywords:\nchipset, PCH, Platform Controller Hub, SMBus, I2C, SPI, UART, GPIO, PCI, PCIe, PCI Express, root complex, ACPI, power management, device enumeration, INF file, PnP, Plug and Play, HECI, MEI, Management Engine Interface, USB controller, XHCI, EHCI, SATA controller, AHCI, system bus, I/O hub, platform device, driver package, hardware ID, compatible ID, device manager, IRQ routing, DMA remapping, IOMMU, VT-d, DMAR\n\nRelated Entities:\nUEFI, ACPI, PCI Express Interface, Storage Driver, Network Driver, Graphics Driver, Audio Driver, USB Controller Driver, Management Engine Interface, IOMMU, Power Management Subsystem, Driver Signing\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "DRV-003",
+      "name": "Chipset Driver",
+      "type": "Driver",
+      "subtype": "Chipset Driver",
+      "knowledge_category": "Driver",
+      "domain_layer": "Driver Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "drivers.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-DRV-004",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nNetwork Driver\n\nEntity Type:\nDriver\n\nSubtype:\nNetwork Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts network interface controller hardware and exposes a standardized interface to the operating system network stack for wired Ethernet, wireless LAN, Bluetooth, and mobile broadband connectivity. Operates within the OS networking subsystem handling packet transmission, reception, hardware offload, and power management for network adapters.\n\nPurpose:\nHardware abstraction for network packet transmission and reception, NIC feature negotiation, hardware offload configuration, power management of network adapters, wireless association management, and integration with OS network stack protocols.\n\nAliases:\nNIC Driver, Network Adapter Driver, LAN Driver, WLAN Driver, Wi-Fi Driver, Ethernet Driver, NDIS Driver, Wireless Driver, Bluetooth Driver, Mobile Broadband Driver\n\nKeywords:\nNDIS, Network Driver Interface Specification, miniport driver, protocol driver, filter driver, Ethernet, 802.3, IEEE 802.11, Wi-Fi, WLAN, Bluetooth, BLE, mobile broadband, LTE, 5G, WWAN, MAC address, packet offload, TCP offload engine, TOE, RSS, Receive Side Scaling, VMQ, Virtual Machine Queue, SR-IOV, VLAN, QoS, Wake-on-LAN, WoL, power management, PCIe, USB NIC, network adapter enumeration, driver INF, WHQL, OID, Object Identifier, NetCfg, NetAdapterCx, WDF, firmware update, network boot, PXE\n\nRelated Entities:\nNetwork Firmware, Chipset Driver, OS Network Stack, NDIS, PXE Boot, Network Access Control Agent, VPN Agent, Firewall Driver, Driver Signing, PCI Express Interface, USB Controller Driver, Wake-on-LAN\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "DRV-004",
+      "name": "Network Driver",
+      "type": "Driver",
+      "subtype": "Network Driver",
+      "knowledge_category": "Driver",
+      "domain_layer": "Driver Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "drivers.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-DRV-005",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nStorage Driver\n\nEntity Type:\nDriver\n\nSubtype:\nStorage Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts storage controller and device hardware, providing the operating system storage stack with standardized interfaces for block device enumeration, I/O request processing, command translation, and storage-specific feature management including hardware encryption, power states, and error recovery across NVMe, SATA, SAS, USB, and SD/MMC interfaces.\n\nPurpose:\nHardware abstraction for storage device I/O operations, storage controller enumeration, block device management, command set translation, hardware encryption feature integration, power state management, and error recovery handling within the OS storage stack.\n\nAliases:\nDisk Driver, NVMe Driver, SATA Driver, AHCI Driver, SAS Driver, StorPort Driver, SCSI Miniport Driver, Storage Miniport Driver, USB Mass Storage Driver, SD Host Controller Driver, RAID Driver\n\nKeywords:\nNVMe, Non-Volatile Memory Express, AHCI, Advanced Host Controller Interface, SATA, SAS, Serial Attached SCSI, SCSI, StorPort, miniport driver, block device, I/O request packet, IRP, disk enumeration, LUN, Logical Unit Number, self-encrypting drive, SED, TCG Opal, ATA security, secure erase, sanitize, TRIM, UNMAP, NCQ, Native Command Queuing, command queuing, PCIe, USB mass storage, UAS, USB Attached SCSI, SD host controller, MMC, eMMC, UFS, RAID, RAID controller, driver INF, WHQL, power management, D3cold, DEVSLP, power loss protection, error recovery, ECC, bad sector remapping, storage filter driver, volume manager\n\nRelated Entities:\nStorage Firmware, Chipset Driver, OS Storage Stack, Volume Manager, Full Disk Encryption, BitLocker, TCG Opal, RAID Controller, StorPort, SCSI, PCI Express Interface, USB Controller Driver, Driver Signing, Boot Critical Driver, File System Driver\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "DRV-005",
+      "name": "Storage Driver",
+      "type": "Driver",
+      "subtype": "Storage Driver",
+      "knowledge_category": "Driver",
+      "domain_layer": "Driver Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "drivers.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-FW-001",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nBIOS\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLegacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.\n\nPurpose:\nHardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.\n\nAliases:\nBasic Input/Output System, Legacy BIOS, System BIOS, ROM BIOS, PC BIOS, Traditional BIOS\n\nKeywords:\nPOST, Power-On Self-Test, MBR, Master Boot Record, INT 13h, CMOS, 16-bit real mode, non-volatile memory, boot sequence, hardware initialization, IRQ, DMA, legacy boot, CSM, Compatibility Support Module, flash chip, SPI ROM, firmware update, BIOS setup utility, BIOS version, BIOS password\n\nRelated Entities:\nUEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "FW-001",
+      "name": "BIOS",
+      "type": "Firmware",
+      "subtype": "Pre-Boot Firmware",
+      "knowledge_category": "Firmware",
+      "domain_layer": "Firmware Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "firmware.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-FW-002",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nUEFI\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nModern pre-boot firmware specification and runtime environment that replaces legacy BIOS, operating in 32-bit or 64-bit protected mode with support for GPT partition tables, network stack, cryptographic services, and a modular driver model. Provides a standardized interface between platform firmware and operating systems.\n\nPurpose:\nPlatform hardware initialization, Secure Boot enforcement, GPT-based boot management, provision of UEFI runtime services, and extensible pre-OS execution environment for drivers and applications.\n\nAliases:\nUnified Extensible Firmware Interface, UEFI BIOS, EFI, Extensible Firmware Interface, UEFI Firmware, UEFI Platform Firmware\n\nKeywords:\nSecure Boot, GPT, GUID Partition Table, EFI System Partition, ESP, DXE, Driver Execution Environment, PEI, Pre-EFI Initialization, BDS, Boot Device Select, UEFI Shell, NVRAM, Boot Manager, MOK, Machine Owner Key, Platform Key, Key Exchange Key, db, dbx, Signature Database, TPM integration, Measured Boot, ACPI, SMBIOS, firmware update, capsule update, UEFI variable, runtime services, boot services, network boot, PXE, HTTP Boot, UEFI driver\n\nRelated Entities:\nBIOS, Secure Boot, TPM, GPT, EFI System Partition, OS Bootloader, Measured Boot, ACPI, SMBIOS, Embedded Controller Firmware, Firmware Update Utility, CSM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "FW-002",
+      "name": "UEFI",
+      "type": "Firmware",
+      "subtype": "Pre-Boot Firmware",
+      "knowledge_category": "Firmware",
+      "domain_layer": "Firmware Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "firmware.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-FW-003",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nEmbedded Controller Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nPlatform Control Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLow-level firmware executing on a dedicated embedded microcontroller within an endpoint device, independent of the main CPU. Manages board-level hardware functions including power sequencing, thermal regulation, battery management, keyboard input, fan control, and lid state detection. Operates autonomously even when the main system is powered off.\n\nPurpose:\nAutonomous management of board-level hardware subsystems including power delivery, thermal policy enforcement, battery charge control, keyboard matrix scanning, and hardware event signaling to the main platform firmware.\n\nAliases:\nEC Firmware, Embedded Controller, EC, Board Management Firmware, System Management Controller Firmware, Keyboard Controller Firmware, KBC Firmware\n\nKeywords:\nembedded controller, EC, power sequencing, thermal management, battery management, fan control, keyboard matrix, lid switch, S-states, ACPI, SMBus, I2C, SPI, LPC bus, power button, wake events, EC firmware update, microcontroller, battery charging, smart battery, charge control, dGPU mux, USB-C power delivery, PD controller, GPIO, firmware flashing\n\nRelated Entities:\nUEFI, BIOS, ACPI, TPM, Battery Management System, Thermal Management Subsystem, USB Power Delivery Controller, Platform Power Management, Firmware Update Utility\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "FW-003",
+      "name": "Embedded Controller Firmware",
+      "type": "Firmware",
+      "subtype": "Platform Control Firmware",
+      "knowledge_category": "Firmware",
+      "domain_layer": "Firmware Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "firmware.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-FW-004",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nStorage Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nStorage Device Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nFirmware embedded within storage devices including HDDs, SSDs, NVMe drives, and storage controllers that manages media access, error correction, wear leveling, encryption operations, and interface protocol compliance. Executes on the device's internal processor, independent of the host operating system.\n\nPurpose:\nManagement of storage media access, interface protocol execution, hardware-based encryption, error correction, wear leveling, bad block management, and performance optimization independent of the host operating system.\n\nAliases:\nDrive Firmware, HDD Firmware, SSD Firmware, NVMe Firmware, Disk Firmware, Storage Controller Firmware, RAID Controller Firmware\n\nKeywords:\nNVMe, SATA, SAS, ATA, ATA Security, Self-Encrypting Drive, SED, TCG Opal, TCG Enterprise, eDrive, IEEE 1667, S.M.A.R.T, wear leveling, bad block management, ECC, error correction code, NAND flash, FTL, Flash Translation Layer, drive firmware update, DRAM cache, over-provisioning, sanitize command, secure erase, TRIM, UNMAP, storage encryption, storage controller, host-managed SMR, device-managed SMR, ZNS\n\nRelated Entities:\nUEFI, NVMe Driver, SATA Controller, Storage Controller Driver, Self-Encrypting Drive, TCG Opal, BitLocker, Full Disk Encryption, Firmware Update Utility, RAID Controller\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "FW-004",
+      "name": "Storage Firmware",
+      "type": "Firmware",
+      "subtype": "Storage Device Firmware",
+      "knowledge_category": "Firmware",
+      "domain_layer": "Firmware Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "firmware.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-FW-005",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nNetwork Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nNetwork Device Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nFirmware embedded within network interface controllers, wireless adapters, Bluetooth modules, and network management controllers that governs packet processing, PHY layer operations, protocol offload engines, out-of-band management capabilities, and PXE boot services. Executes autonomously on the device's dedicated processor.\n\nPurpose:\nManagement of network packet processing, PHY and MAC layer operations, protocol offload, out-of-band remote management, PXE and HTTP boot services, and wireless radio firmware for endpoint network connectivity.\n\nAliases:\nNIC Firmware, Network Interface Controller Firmware, LAN Firmware, WLAN Firmware, Wi-Fi Firmware, Bluetooth Firmware, Network Adapter Firmware, BMC Firmware, Baseboard Management Controller Firmware\n\nKeywords:\nNIC, Network Interface Controller, PXE, Preboot Execution Environment, HTTP Boot, iSCSI boot, FCoE, RDMA, iWARP, RoCE, TCP offload engine, TOE, out-of-band management, IPMI, BMC, Baseboard Management Controller, NCSI, Wake-on-LAN, WoL, WoWLAN, wireless firmware, Bluetooth firmware, IEEE 802.11, PHY layer, MAC layer, SR-IOV, virtual function, NIC firmware update, manageability firmware, remote KVM, SMASH, DASH, AMT, Active Management Technology, radio firmware, regulatory domain, network boot\n\nRelated Entities:\nUEFI, PXE Boot, Network Driver, NDIS, BMC, IPMI, Out-of-Band Management, WoL, Wireless Driver, Firmware Update Utility, Network Access Control, VPN Agent\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "FW-005",
+      "name": "Network Firmware",
+      "type": "Firmware",
+      "subtype": "Network Device Firmware",
+      "knowledge_category": "Firmware",
+      "domain_layer": "Firmware Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "firmware.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-MGT-001",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nEndpoint Manager\n\nEntity Type:\nManagementTool\n\nSubtype:\nEndpoint Management Tool\n\nKnowledge Category:\nManagement\n\nDescription:\nCentralized enterprise management platform that provides unified lifecycle management of endpoint devices including inventory discovery, OS deployment, application distribution, configuration enforcement, compliance assessment, patch management, remote control, and policy-based management across heterogeneous endpoint estates. Operates through a combination of agent-based and agentless communication channels integrating with directory services, PKI, and cloud management backends.\n\nPurpose:\nProvision of unified endpoint lifecycle management encompassing device enrollment, OS image deployment, software distribution, configuration baseline enforcement, compliance reporting, patch orchestration, remote remediation, and integration with identity and security platforms across enterprise endpoint fleets.\n\nAliases:\nUnified Endpoint Management, UEM, Mobile Device Management, MDM, Enterprise Mobility Management, EMM, Client Management Tool, CMT, Endpoint Management Platform, Systems Management Server, Desktop Management Tool, Device Management Platform\n\nKeywords:\nunified endpoint management, UEM, MDM, mobile device management, EMM, enterprise mobility management, device enrollment, DEP, device enrollment program, autopilot, zero touch provisioning, OS deployment, OSD, task sequence, imaging, WinPE, PXE boot, software distribution, application packaging, MSI, MSIX, configuration baseline, compliance policy, configuration profile, mobileconfig, Group Policy, GPO, DCM, desired configuration management, remote control, remote assistance, patch management, software update, inventory, hardware inventory, software inventory, asset management, CMDB, co-management, conditional access, endpoint compliance, certificate management, PKI integration, SCEP, NDES, cloud management gateway, CMG, management agent, client agent, agent health, heartbeat, policy refresh, wake-on-LAN, remote wipe, selective wipe, device retirement, enrollment restriction, device compliance, reporting, RBAC, role based access control, collections, device groups, boundary groups, distribution point, management point, content delivery, BranchCache, peer cache, delivery optimization\n\nRelated Entities:\nMonitoring Agent, Patch Manager, MDM Policy Engine, Group Policy, Active Directory, PKI, OS Deployment Service, Software Distribution System, Configuration Baseline, Compliance Policy Engine, Endpoint Agent, Identity Provider, Conditional Access Policy, Asset Inventory System, CMDB, Remote Control Service, Certificate Management System\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "MGT-001",
+      "name": "Endpoint Manager",
+      "type": "ManagementTool",
+      "subtype": "Endpoint Management Tool",
+      "knowledge_category": "Management",
+      "domain_layer": "Management Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "management.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-MGT-002",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nMonitoring Agent\n\nEntity Type:\nManagementTool\n\nSubtype:\nMonitoring Agent\n\nKnowledge Category:\nManagement\n\nDescription:\nLightweight software agent deployed on managed endpoints that continuously collects operational telemetry including system performance metrics, resource utilization, process state, event log data, service health, hardware sensor readings, and application availability indicators. Transmits collected data to centralized monitoring platforms for aggregation, threshold alerting, trend analysis, and capacity planning. May operate in conjunction with security telemetry pipelines and SIEM integrations.\n\nPurpose:\nContinuous collection and forwarding of endpoint operational telemetry encompassing performance counters, resource utilization metrics, event log streams, service availability states, hardware health indicators, and application performance data to centralized monitoring and observability platforms for alerting, dashboarding, and capacity management.\n\nAliases:\nEndpoint Monitoring Agent, System Monitoring Agent, Telemetry Agent, Performance Monitoring Agent, Infrastructure Agent, Observability Agent, Health Monitoring Agent, Remote Monitoring Agent, RMM Agent, Remote Monitoring and Management Agent, APM Agent, Node Exporter\n\nKeywords:\nmonitoring agent, telemetry, performance counter, metric collection, CPU utilization, memory utilization, disk I/O, network throughput, event log, Windows Event Log, syslog, journald, service health, process monitoring, uptime, availability, threshold alerting, alerting rule, heartbeat, agent health check, SNMP, WMI, Windows Management Instrumentation, WMI provider, ETW, Event Tracing for Windows, eBPF, perf, sysstat, hardware sensor, IPMI, BMC, temperature monitoring, fan speed, power consumption, SMART data, application performance monitoring, APM, real user monitoring, distributed tracing, log forwarding, log aggregation, SIEM integration, time series database, TSDB, Prometheus, metrics endpoint, scrape interval, push gateway, pull model, push model, agent configuration, agent deployment, agent update, RMM, remote monitoring and management, capacity planning, baseline performance, anomaly detection, dashboard, observability, OpenTelemetry, OTLP\n\nRelated Entities:\nEndpoint Manager, Patch Manager, SIEM, Log Aggregation Platform, Alerting Engine, Time Series Database, WMI, ETW, eBPF, syslog, Hardware Sensor Interface, IPMI, BMC, Application Performance Monitoring, OpenTelemetry, EDR Agent, OS Event Log\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "MGT-002",
+      "name": "Monitoring Agent",
+      "type": "ManagementTool",
+      "subtype": "Monitoring Agent",
+      "knowledge_category": "Management",
+      "domain_layer": "Management Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "management.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-MGT-003",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nPatch Manager\n\nEntity Type:\nManagementTool\n\nSubtype:\nPatch Management Tool\n\nKnowledge Category:\nManagement\n\nDescription:\nEnterprise software component responsible for the systematic discovery, acquisition, testing, scheduling, deployment, and verification of patches across operating systems, applications, firmware, and drivers on managed endpoint fleets. Integrates with vulnerability management platforms to prioritize patch deployment based on CVE severity, exploitability, and asset criticality. Maintains patch compliance state records and supports rollback capabilities for failed deployments.\n\nPurpose:\nSystematic orchestration of the endpoint patch lifecycle encompassing vulnerability-driven patch prioritization, patch acquisition from authoritative sources, controlled staging and testing, scheduled deployment across endpoint groups, installation verification, compliance state reporting, and rollback management for OS, application, driver, and firmware updates.\n\nAliases:\nPatch Management System, Software Update Management, Update Management Tool, Patch Orchestration Platform, Vulnerability Remediation Manager, Software Patching Tool, OS Update Manager, Patch Deployment Tool, Patch Compliance Manager\n\nKeywords:\npatch management, software update, OS patch, security patch, cumulative update, hotfix, service pack, patch Tuesday, out-of-band patch, zero-day patch, firmware update, driver update, BIOS update, UEFI update, patch catalog, WSUS, Windows Server Update Services, Windows Update, Windows Update for Business, WUfB, SUG, software update group, patch baseline, patch ring, deployment ring, phased deployment, patch testing, pilot group, staging environment, patch scheduling, maintenance window, reboot management, forced reboot, reboot suppression, patch compliance, missing patch, patch gap, patch SLA, CVE, Common Vulnerabilities and Exposures, CVSS, vulnerability severity, patch prioritization, vulnerability scanner integration, patch verification, patch rollback, uninstall patch, patch history, patch audit, patch report, third party patching, application patching, Linux patching, RPM update, APT update, YUM update, DNF update, macOS update, softwareupdate, delta patch, full patch, patch download, patch cache, content distribution, BranchCache, delivery optimization, peer-to-peer patching, patch agent, patch scan, patch detection\n\nRelated Entities:\nEndpoint Manager, Monitoring Agent, Vulnerability Management Platform, CVE Database, WSUS, Windows Update, OS Update Service, Firmware Update Utility, Driver Update Service, Deployment Ring Policy, Maintenance Window Policy, Patch Compliance Reporting, SIEM, Change Management System, Software Distribution System, Asset Inventory System\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "MGT-003",
+      "name": "Patch Manager",
+      "type": "ManagementTool",
+      "subtype": "Patch Management Tool",
+      "knowledge_category": "Management",
+      "domain_layer": "Management Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "management.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-OS-001",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nWindows\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nMicrosoft-developed proprietary general-purpose operating system family built on the Windows NT kernel architecture, providing a hardware abstraction layer, Win32/Win64 subsystem, NTFS file system, and integrated security subsystems including access control, code integrity enforcement, and virtualization-based security. Serves as the dominant enterprise endpoint and server OS platform.\n\nPurpose:\nProvision of a managed, hardware-abstracted execution environment for enterprise endpoint applications, security policy enforcement, identity and access control, enterprise management integration, and driver model standardization across heterogeneous hardware platforms.\n\nAliases:\nMicrosoft Windows, Windows OS, Windows NT, Win32 Platform, Win64 Platform, Windows Platform, WinNT\n\nKeywords:\nWindows NT kernel, Win32, Win64, NTFS, HAL, Hardware Abstraction Layer, Windows Registry, Active Directory, Group Policy, GPO, WDDM, NDIS, StorPort, WDM, Windows Driver Model, WHQL, WMI, PowerShell, WinRM, SMB, NTLM, Kerberos, SAM, LSA, LSASS, VBS, Virtualization Based Security, HVCI, Credential Guard, Device Guard, BitLocker, Windows Defender, UAC, User Account Control, Windows Update, WSUS, Windows Installer, MSI, MSIX, Intune, MDM, SCCM, COM, DCOM, ETW, Event Tracing for Windows, Windows Event Log, UEFI Secure Boot, PatchGuard, KPP, Kernel Patch Protection\n\nRelated Entities:\nWindows 10, Windows 11, Windows NT Kernel, Active Directory, Group Policy, NTFS, BitLocker, Windows Defender, UEFI, Secure Boot, TPM, Virtualization Based Security, WHQL Driver Signing, Windows Update, MDM Policy Engine, LSASS, Credential Guard\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "OS-001",
+      "name": "Windows",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Family",
+      "knowledge_category": "Operating System",
+      "domain_layer": "Operating System Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "operating_system.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-OS-002",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nWindows 10\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Version\n\nKnowledge Category:\nOperating System\n\nDescription:\nSpecific major release of the Windows NT-based operating system introducing the Universal Windows Platform, servicing branch model, Windows as a Service delivery, WDDM 2.x graphics model, and enhanced security features including Credential Guard, Device Guard, and Windows Hello. Delivered through semi-annual feature update and monthly cumulative update servicing channels.\n\nPurpose:\nProvision of an enterprise endpoint execution environment with servicing branch management, hardware compatibility across a broad device ecosystem, enterprise security baseline features, and transition path to modern management via MDM and co-management frameworks.\n\nAliases:\nWin10, Windows 10 OS, Windows 10 Enterprise, Windows 10 Pro, Windows 10 LTSC, Windows 10 SAC, WaaS Windows 10\n\nKeywords:\nWindows 10, Windows as a Service, WaaS, feature update, cumulative update, servicing branch, Semi-Annual Channel, SAC, LTSC, Long Term Servicing Channel, build number, OS version, 1903, 1909, 2004, 20H2, 21H1, 21H2, 22H2, Universal Windows Platform, UWP, WDDM 2.0, Credential Guard, Device Guard, Windows Hello, BitLocker, Secure Boot, TPM 1.2, TPM 2.0, UEFI, CBS, Component Based Servicing, Windows Update, WSUS, Intune, SCCM, co-management, MDM, Windows Defender Antivirus, Windows Defender Firewall, AppLocker, WDAC, Windows Defender Application Control, driver compatibility, WHQL, hardware compatibility list, HCL, end of support, EOS\n\nRelated Entities:\nWindows, Windows 11, Windows NT Kernel, Windows Update, WSUS, LTSC, MDM Policy Engine, Group Policy, BitLocker, Credential Guard, WDAC, TPM, Secure Boot, UEFI, WHQL Driver Signing, Windows Defender\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "OS-002",
+      "name": "Windows 10",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Version",
+      "knowledge_category": "Operating System",
+      "domain_layer": "Operating System Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "operating_system.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-OS-003",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nWindows 11\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Version\n\nKnowledge Category:\nOperating System\n\nDescription:\nMajor release of the Windows NT-based operating system introducing mandatory hardware baseline requirements including TPM 2.0, UEFI Secure Boot, CPU generation restrictions, and Virtualization Based Security by default. Delivers a revised desktop shell, updated WDDM 3.x graphics model, DirectStorage API, and enhanced security defaults including HVCI and enhanced phishing protection.\n\nPurpose:\nProvision of an enterprise endpoint execution environment with enforced hardware security baselines, default VBS and HVCI enablement, modern application delivery, enhanced identity protection, and productivity improvements targeting contemporary enterprise endpoint hardware.\n\nAliases:\nWin11, Windows 11 OS, Windows 11 Enterprise, Windows 11 Pro, Windows 11 LTSC, Windows 11 IoT Enterprise\n\nKeywords:\nWindows 11, TPM 2.0, UEFI Secure Boot, VBS, Virtualization Based Security, HVCI, Hypervisor Protected Code Integrity, hardware requirements, CPU compatibility, supported processor list, DirectStorage, WDDM 3.0, Windows 11 23H2, Windows 11 24H2, feature update, cumulative update, build number, OS version, Windows Hello for Business, Smart App Control, Enhanced Phishing Protection, Credential Guard default, LSASS protection, Microsoft Pluton, Secured-core PC, Config Lock, Android app support, WSA, Windows Subsystem for Android, WSL2, Windows Subsystem for Linux, driver compatibility, WHQL, hardware compatibility, HCL, upgrade readiness, PC Health Check, end of support, servicing, MDM, Intune, co-management\n\nRelated Entities:\nWindows, Windows 10, Windows NT Kernel, TPM 2.0, Secure Boot, UEFI, VBS, HVCI, Credential Guard, Microsoft Pluton, Secured-core PC, WDAC, Windows Defender, MDM Policy Engine, Group Policy, BitLocker, WHQL Driver Signing, Windows Update\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "OS-003",
+      "name": "Windows 11",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Version",
+      "knowledge_category": "Operating System",
+      "domain_layer": "Operating System Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "operating_system.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-OS-004",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nLinux\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nOpen-source, POSIX-compliant operating system kernel and ecosystem built on the monolithic Linux kernel with loadable module support, providing hardware abstraction, process scheduling, memory management, virtual file system, and networking subsystems. Distributed in numerous vendor-maintained and community-maintained distributions targeting enterprise servers, cloud workloads, developer endpoints, and embedded systems.\n\nPurpose:\nProvision of a stable, customizable, open-source OS platform for enterprise server, cloud, and endpoint workloads, supporting diverse hardware architectures, containerization, kernel-level security enforcement, and flexible deployment models across distribution variants.\n\nAliases:\nLinux OS, GNU/Linux, Linux Kernel, Linux Platform, Linux Distribution, Linux Distro, Open Source OS\n\nKeywords:\nLinux kernel, monolithic kernel, LKM, Loadable Kernel Module, POSIX, ELF, systemd, init system, GNU, glibc, ext4, XFS, Btrfs, VFS, Virtual File System, SELinux, Security Enhanced Linux, AppArmor, seccomp, cgroups, namespaces, eBPF, kernel module signing, DKMS, Dynamic Kernel Module Support, udev, udev rules, dmesg, sysfs, procfs, devfs, iptables, nftables, netfilter, LUKS, dm-crypt, PAM, Pluggable Authentication Modules, SSH, sudo, rpm, deb, package manager, container, Docker, OCI, Kubernetes, KVM, QEMU, UEFI boot, GRUB, Linux kernel version, LTS kernel, audit framework\n\nRelated Entities:\nUbuntu, RHEL, Linux Kernel, SELinux, AppArmor, UEFI, GRUB Bootloader, Secure Boot, LUKS, systemd, eBPF, Kernel Module Signing, PAM, cgroups, Container Runtime, TPM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "OS-004",
+      "name": "Linux",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Family",
+      "knowledge_category": "Operating System",
+      "domain_layer": "Operating System Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "operating_system.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-OS-005",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nUbuntu\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Distribution\n\nKnowledge Category:\nOperating System\n\nDescription:\nDebian-derived Linux distribution following a time-based release model with regular releases every six months and Long Term Support releases every two years providing five-year maintenance windows. Packages the Linux kernel with APT package management, systemd init system, Snap application delivery, and default desktop and server configurations targeting developer, enterprise endpoint, and cloud deployments.\n\nPurpose:\nProvision of a stable, commercially supported Debian-based Linux distribution with predictable release cadence, extended LTS security maintenance, cloud and container optimization, and enterprise support subscriptions for endpoint and server deployments.\n\nAliases:\nUbuntu Linux, Ubuntu LTS, Ubuntu Desktop, Ubuntu Server, Ubuntu Pro, Canonical Ubuntu, Ubuntu Focal, Ubuntu Jammy, Ubuntu Noble\n\nKeywords:\nUbuntu, Debian, APT, Advanced Package Tool, dpkg, deb package, LTS, Long Term Support, Ubuntu Pro, Snap, snapd, Snapcraft, systemd, GNOME, Wayland, X11, linux-image, linux-headers, kernel version, HWE, Hardware Enablement Stack, DKMS, AppArmor, UFW, Uncomplicated Firewall, LUKS, Ubuntu Security Notices, USN, Livepatch, kernel live patching, landscape, ubuntu-advantage, pro-client, cloud-init, netplan, Ubuntu release codename, focal, jammy, noble, EOL, end of life, MAAS, Juju, multipass, WSL, container, LXC, LXD\n\nRelated Entities:\nLinux, Debian, Linux Kernel, APT Package Manager, AppArmor, LUKS, systemd, UEFI, Secure Boot, GRUB Bootloader, Snap Package Manager, DKMS, Ubuntu Pro, Kernel Live Patching, Hardware Enablement Stack\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "OS-005",
+      "name": "Ubuntu",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Distribution",
+      "knowledge_category": "Operating System",
+      "domain_layer": "Operating System Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "operating_system.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-OS-006",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nRHEL\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Distribution\n\nKnowledge Category:\nOperating System\n\nDescription:\nCommercially supported, RPM-based enterprise Linux distribution derived from Fedora upstream, providing a stable ABI-compatible kernel with backported security patches, extended ten-year lifecycle support, SELinux enforcing mode by default, FIPS 140 validated cryptographic modules, and certified compatibility across enterprise hardware platforms, ISV software stacks, and regulated industry workloads.\n\nPurpose:\nProvision of a commercially supported enterprise Linux platform with long-term ABI stability, regulatory compliance certifications, SELinux mandatory access control, FIPS-validated cryptography, and hardware and ISV certification programs for enterprise server and endpoint deployments.\n\nAliases:\nRed Hat Enterprise Linux, RHEL OS, RHEL 8, RHEL 9, Enterprise Linux, EL, RHEL Server, RHEL Workstation\n\nKeywords:\nRHEL, Red Hat Enterprise Linux, RPM, YUM, DNF, subscription manager, RHSM, Red Hat Subscription Management, SELinux, Security Enhanced Linux, enforcing mode, FIPS 140, FIPS mode, kernel ABI, kABI, kpatch, kernel live patching, Extended Update Support, EUS, Application Streams, modularity, systemd, firewalld, nftables, LUKS2, dm-crypt, crypto-policies, system-wide crypto policy, OpenSCAP, SCAP, SSG, DISA STIG, CIS benchmark, Satellite, Ansible, Cockpit, Insights, ERRATA, CVE, Hardware Compatibility List, HCL, certified hardware, ISV certification, container, Podman, Buildah, OCI, cgroups v2, RHEL lifecycle, minor version, RHEL 8, RHEL 9\n\nRelated Entities:\nLinux, Linux Kernel, SELinux, FIPS 140, RPM Package Manager, systemd, LUKS, UEFI, Secure Boot, GRUB Bootloader, DKMS, OpenSCAP, Kernel Live Patching, Red Hat Satellite, Ansible Automation, TPM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "OS-006",
+      "name": "RHEL",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Distribution",
+      "knowledge_category": "Operating System",
+      "domain_layer": "Operating System Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "operating_system.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-OS-007",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nmacOS\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nApple-developed proprietary Unix-based operating system built on the XNU hybrid kernel combining Mach microkernel and BSD subsystems, providing a POSIX-compliant execution environment with a hardware-integrated security architecture including Apple Silicon Secure Enclave, System Integrity Protection, Gatekeeper, Transparency Consent and Control, FileVault full-disk encryption, and a signed kernel extension and system extension model.\n\nPurpose:\nProvision of a hardware-integrated, security-enforced POSIX-compliant enterprise endpoint platform with mandatory code signing, system integrity enforcement, hardware-rooted trust, privacy access controls, and enterprise management integration via MDM and configuration profile frameworks.\n\nAliases:\nMac OS X, OS X, macOS Ventura, macOS Sonoma, macOS Sequoia, Apple macOS, Darwin, macOS Platform, Apple Desktop OS\n\nKeywords:\nXNU kernel, Mach kernel, BSD, POSIX, macOS version, System Integrity Protection, SIP, Gatekeeper, Notarization, code signing, kernel extension, kext, System Extension, DriverKit, EndpointSecurity framework, Transparency Consent and Control, TCC, FileVault, APFS, Apple File System, Secure Enclave, Apple Silicon, T2 chip, Activation Lock, MDM, Mobile Device Management, Configuration Profile, mobileconfig, Apple Business Manager, ABM, ABM DEP, Device Enrollment Program, ADE, Automated Device Enrollment, Rosetta 2, Universal Binary, Homebrew, PKG, DMG, launchd, launchctl, plist, macOS update, softwareupdate, macOS release, Ventura, Sonoma, Sequoia, Monterey, Jamf, MDM enrollment, supervised mode, Accessibility API, UAMDM, User Approved MDM\n\nRelated Entities:\nXNU Kernel, Secure Enclave, System Integrity Protection, Gatekeeper, FileVault, DriverKit, EndpointSecurity Framework, TCC, MDM Configuration Profile, Apple Business Manager, UEFI, Secure Boot, TPM Equivalent, APFS, Code Signing, Kernel Extension, System Extension\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "OS-007",
+      "name": "macOS",
+      "type": "OperatingSystem",
+      "subtype": "Operating System Family",
+      "knowledge_category": "Operating System",
+      "domain_layer": "Operating System Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "operating_system.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-SEC-001",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nTPM\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nHardware Security Component\n\nKnowledge Category:\nSecurity\n\nDescription:\nTrusted Platform Module (TPM) hardware component providing a platform root of trust, secure key storage, attestation capabilities, and platform configuration registers. Variants include discrete, firmware (fTPM), integrated, and virtual TPM implementations.\n\nPurpose:\nProvide hardware-rooted cryptographic functions, secure key storage, and platform attestation to support measured boot and device identity features.\n\nAliases:\nTrusted Platform Module\n\nKeywords:\nTPM 1.2, TPM 2.0, Discrete TPM, Firmware TPM, Integrated TPM, Virtual TPM, Platform Configuration Register, Endorsement Key, Storage Root Key, Attestation Identity Key, TPM NV Storage, key hierarchy\n\nRelated Entities:\nSecure Boot, Secure Enclave, Hardware Root of Trust, Memory Encryption, Physical Unclonable Function, Hardware Security Key\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "SEC-001",
+      "name": "TPM",
+      "type": "SecurityComponent",
+      "subtype": "Hardware Security Component",
+      "knowledge_category": "Security",
+      "domain_layer": "Security Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "security.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-SEC-002",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nSecure Boot\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nBoot Security Feature\n\nKnowledge Category:\nSecurity\n\nDescription:\nPre-boot integrity enforcement mechanism that validates signatures of bootloader and firmware components against authorized keys and signature stores to help ensure platform boot integrity.\n\nPurpose:\nEnforce verification of pre-OS images and boot components to reduce the risk of unauthorized or tampered boot software executing on the platform.\n\nAliases:\nNone documented\n\nKeywords:\nPlatform Key, Key Exchange Key, Authorized Signature Database, Forbidden Signature Database, Machine Owner Key, Secure Boot Policy, Secure Boot Audit Mode, Secure Boot Setup Mode, Bootloader Signing, Kernel Module Signing, Option ROM Validation, Secure Boot Certificate Management\n\nRelated Entities:\nTPM, TPM Measured Boot, Boot Guard, UEFI Signature Database, Firmware Integrity Verification, Platform Key Management, Early Launch Anti-Malware\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "metadata": {
+      "entity_id": "SEC-002",
+      "name": "Secure Boot",
+      "type": "SecurityComponent",
+      "subtype": "Boot Security Feature",
+      "knowledge_category": "Security",
+      "domain_layer": "Security Layer",
+      "compatibility_relevance": "Critical",
+      "validation_priority": "Critical",
+      "source_file": "security.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-SEC-003",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nAntivirus\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nSecurity Agent\n\nKnowledge Category:\nSecurity\n\nDescription:\nEndpoint security agent that performs signature-based and heuristic scanning, and other detection techniques to identify and mitigate known malware and suspicious files.\n\nPurpose:\nDetect and mitigate known malicious software via signature updates, heuristic analysis, and scanning engines while integrating with endpoint management and update services.\n\nAliases:\nNone documented\n\nKeywords:\nSignature-Based Detection Engine, Heuristic Analysis Engine, Behavioral Detection Engine, Real-Time File System Scanner, On-Demand Scanner, Quarantine Manager, Threat Definition Update Service, Boot Sector Scanner, Email Attachment Scanner, Web Content Scanner, Script Execution Monitor, Exploit Prevention Module\n\nRelated Entities:\nEDR Agent, Anti-Malware Engine, Host Intrusion Prevention System, Application Whitelisting Agent, File Integrity Monitoring Agent, Data Loss Prevention Agent\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "SEC-003",
+      "name": "Antivirus",
+      "type": "SecurityComponent",
+      "subtype": "Security Agent",
+      "knowledge_category": "Security",
+      "domain_layer": "Security Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "security.json",
+      "source": "DomainLayer"
+    }
+  },
+  {
+    "document_id": "DOMAIN-DOC-SEC-004",
+    "document_type": "domain_entity",
+    "text": "Domain Knowledge Entity\n\nName:\nEDR Agent\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nSecurity Agent\n\nKnowledge Category:\nSecurity\n\nDescription:\nEndpoint Detection and Response (EDR) agent that collects telemetry (process, file, network, registry, and memory activity) and provides analysis, hunting, and containment capabilities.\n\nPurpose:\nEnable detection, investigation, and response to advanced threats by aggregating telemetry, applying behavioral analytics, and supporting containment or remediation actions.\n\nAliases:\nNone documented\n\nKeywords:\nKernel Sensor, Process Telemetry Collector, File System Activity Monitor, Network Activity Monitor, Registry Activity Monitor, Memory Forensics Module, Threat Intelligence Integration, Automated Response Engine, Behavioral Analytics Engine, Isolation and Containment Module\n\nRelated Entities:\nAntivirus, Host Intrusion Detection System, Extended Detection and Response Agent, User and Entity Behavior Analytics Agent, Security Information and Event Management Forwarder, File Integrity Monitoring Agent\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "metadata": {
+      "entity_id": "SEC-004",
+      "name": "EDR Agent",
+      "type": "SecurityComponent",
+      "subtype": "Security Agent",
+      "knowledge_category": "Security",
+      "domain_layer": "Security Layer",
+      "compatibility_relevance": "High",
+      "validation_priority": "High",
+      "source_file": "security.json",
+      "source": "DomainLayer"
+    }
+  }
+]

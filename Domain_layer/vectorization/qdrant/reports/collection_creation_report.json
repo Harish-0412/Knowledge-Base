@@ -1,0 +1,18 @@
+{
+  "collection_name": "kb_domain_layer",
+  "created": true,
+  "existing_collection_preserved": false,
+  "vector_size": 768,
+  "distance": "cosine",
+  "payload_indexed_fields": [
+    "document_id",
+    "entity_id",
+    "knowledge_category",
+    "layer",
+    "name",
+    "source",
+    "subtype",
+    "type"
+  ],
+  "status": "READY"
+}

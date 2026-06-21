@@ -1,0 +1,9 @@
+{
+  "entities_found": 24,
+  "documents_generated": 24,
+  "duplicates": 0,
+  "empty_documents": 0,
+  "failures": [],
+  "status": "READY_FOR_EMBEDDING",
+  "generated_at": "2026-06-21T08:11:24.045643+00:00"
+}

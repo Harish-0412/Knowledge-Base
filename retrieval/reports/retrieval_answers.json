@@ -1,0 +1,2451 @@
+[
+  {
+    "question": "What is BIOS?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-001",
+        "source": "DomainLayer",
+        "score": 0.670982
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-002",
+        "source": "DomainLayer",
+        "score": 0.575189
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nBIOS\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLegacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.\n\nPurpose:\nHardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.\n\nAliases:\nBasic Input/Output System, Legacy BIOS, System BIOS, ROM BIOS, PC BIOS, Traditional BIOS\n\nKeywords:\nPOST, Power-On Self-Test, MBR, Master Boot Record, INT 13h, CMOS, 16-bit real mode, non-volatile memory, boot sequence, hardware initialization, IRQ, DMA, legacy boot, CSM, Compatibility Support Module, flash chip, SPI ROM, firmware update, BIOS setup utility, BIOS version, BIOS password\n\nRelated Entities:\nUEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nBIOS\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLegacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.\n\nPurpose:\nHardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.\n\nAliases:\nBasic Input/Output System, Legacy BIOS, System BIOS, ROM BIOS, PC BIOS, Traditional BIOS\n\nKeywords:\nPOST, Power-On Self-Test, MBR, Master Boot Record, INT 13h, CMOS, 16-bit real mode, non-volatile memory, boot sequence, hardware initialization, IRQ, DMA, legacy boot, CSM, Compatibility Support Module, flash chip, SPI ROM, firmware update, BIOS setup utility, BIOS version, BIOS password\n\nRelated Entities:\nUEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nUEFI\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nModern pre-boot firmware specification and runtime environment that replaces legacy BIOS, operating in 32-bit or 64-bit protected mode with support for GPT partition tables, network stack, cryptographic services, and a modular driver model. Provides a standardized interface between platform firmware and operating systems.\n\nPurpose:\nPlatform hardware initialization, Secure Boot enforcement, GPT-based boot management, provision of UEFI runtime services, and extensible pre-OS execution environment for drivers and applications.\n\nAliases:\nUnified Extensible Firmware Interface, UEFI BIOS, EFI, Extensible Firmware Interface, UEFI Firmware, UEFI Platform Firmware\n\nKeywords:\nSecure Boot, GPT, GUID Partition Table, EFI System Partition, ESP, DXE, Driver Execution Environment, PEI, Pre-EFI Initialization, BDS, Boot Device Select, UEFI Shell, NVRAM, Boot Manager, MOK, Machine Owner Key, Platform Key, Key Exchange Key, db, dbx, Signature Database, TPM integration, Measured Boot, ACPI, SMBIOS, firmware update, capsule update, UEFI variable, runtime services, boot services, network boot, PXE, HTTP Boot, UEFI driver\n\nRelated Entities:\nBIOS, Secure Boot, TPM, GPT, EFI System Partition, OS Bootloader, Measured Boot, ACPI, SMBIOS, Embedded Controller Firmware, Firmware Update Utility, CSM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.623085,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-001",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is UEFI?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-002",
+        "source": "DomainLayer",
+        "score": 0.701196
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-001",
+        "source": "DomainLayer",
+        "score": 0.604768
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nUEFI\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nModern pre-boot firmware specification and runtime environment that replaces legacy BIOS, operating in 32-bit or 64-bit protected mode with support for GPT partition tables, network stack, cryptographic services, and a modular driver model. Provides a standardized interface between platform firmware and operating systems.\n\nPurpose:\nPlatform hardware initialization, Secure Boot enforcement, GPT-based boot management, provision of UEFI runtime services, and extensible pre-OS execution environment for drivers and applications.\n\nAliases:\nUnified Extensible Firmware Interface, UEFI BIOS, EFI, Extensible Firmware Interface, UEFI Firmware, UEFI Platform Firmware\n\nKeywords:\nSecure Boot, GPT, GUID Partition Table, EFI System Partition, ESP, DXE, Driver Execution Environment, PEI, Pre-EFI Initialization, BDS, Boot Device Select, UEFI Shell, NVRAM, Boot Manager, MOK, Machine Owner Key, Platform Key, Key Exchange Key, db, dbx, Signature Database, TPM integration, Measured Boot, ACPI, SMBIOS, firmware update, capsule update, UEFI variable, runtime services, boot services, network boot, PXE, HTTP Boot, UEFI driver\n\nRelated Entities:\nBIOS, Secure Boot, TPM, GPT, EFI System Partition, OS Bootloader, Measured Boot, ACPI, SMBIOS, Embedded Controller Firmware, Firmware Update Utility, CSM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nUEFI\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nModern pre-boot firmware specification and runtime environment that replaces legacy BIOS, operating in 32-bit or 64-bit protected mode with support for GPT partition tables, network stack, cryptographic services, and a modular driver model. Provides a standardized interface between platform firmware and operating systems.\n\nPurpose:\nPlatform hardware initialization, Secure Boot enforcement, GPT-based boot management, provision of UEFI runtime services, and extensible pre-OS execution environment for drivers and applications.\n\nAliases:\nUnified Extensible Firmware Interface, UEFI BIOS, EFI, Extensible Firmware Interface, UEFI Firmware, UEFI Platform Firmware\n\nKeywords:\nSecure Boot, GPT, GUID Partition Table, EFI System Partition, ESP, DXE, Driver Execution Environment, PEI, Pre-EFI Initialization, BDS, Boot Device Select, UEFI Shell, NVRAM, Boot Manager, MOK, Machine Owner Key, Platform Key, Key Exchange Key, db, dbx, Signature Database, TPM integration, Measured Boot, ACPI, SMBIOS, firmware update, capsule update, UEFI variable, runtime services, boot services, network boot, PXE, HTTP Boot, UEFI driver\n\nRelated Entities:\nBIOS, Secure Boot, TPM, GPT, EFI System Partition, OS Bootloader, Measured Boot, ACPI, SMBIOS, Embedded Controller Firmware, Firmware Update Utility, CSM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nWindows\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nMicrosoft-developed proprietary general-purpose operating system family built on the Windows NT kernel architecture, providing a hardware abstraction layer, Win32/Win64 subsystem, NTFS file system, and integrated security subsystems including access control, code integrity enforcement, and virtualization-based security. Serves as the dominant enterprise endpoint and server OS platform.\n\nPurpose:\nProvision of a managed, hardware-abstracted execution environment for enterprise endpoint applications, security policy enforcement, identity and access control, enterprise management integration, and driver model standardization across heterogeneous hardware platforms.\n\nAliases:\nMicrosoft Windows, Windows OS, Windows NT, Win32 Platform, Win64 Platform, Windows Platform, WinNT\n\nKeywords:\nWindows NT kernel, Win32, Win64, NTFS, HAL, Hardware Abstraction Layer, Windows Registry, Active Directory, Group Policy, GPO, WDDM, NDIS, StorPort, WDM, Windows Driver Model, WHQL, WMI, PowerShell, WinRM, SMB, NTLM, Kerberos, SAM, LSA, LSASS, VBS, Virtualization Based Security, HVCI, Credential Guard, Device Guard, BitLocker, Windows Defender, UAC, User Account Control, Windows Update, WSUS, Windows Installer, MSI, MSIX, Intune, MDM, SCCM, COM, DCOM, ETW, Event Tracing for Windows, Windows Event Log, UEFI Secure Boot, PatchGuard, KPP, Kernel Patch Protection\n\nRelated Entities:\nWindows 10, Windows 11, Windows NT Kernel, Active Directory, Group Policy, NTFS, BitLocker, Windows Defender, UEFI, Secure Boot, TPM, Virtualization Based Security, WHQL Driver Signing, Windows Update, MDM Policy Engine, LSASS, Credential Guard\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.652982,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-002",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is firmware?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-004",
+        "source": "DomainLayer",
+        "score": 0.693547
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-005",
+        "source": "DomainLayer",
+        "score": 0.672386
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-003",
+        "source": "DomainLayer",
+        "score": 0.667545
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-002",
+        "source": "DomainLayer",
+        "score": 0.643119
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-001",
+        "source": "DomainLayer",
+        "score": 0.640718
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nStorage Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nStorage Device Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nFirmware embedded within storage devices including HDDs, SSDs, NVMe drives, and storage controllers that manages media access, error correction, wear leveling, encryption operations, and interface protocol compliance. Executes on the device's internal processor, independent of the host operating system.\n\nPurpose:\nManagement of storage media access, interface protocol execution, hardware-based encryption, error correction, wear leveling, bad block management, and performance optimization independent of the host operating system.\n\nAliases:\nDrive Firmware, HDD Firmware, SSD Firmware, NVMe Firmware, Disk Firmware, Storage Controller Firmware, RAID Controller Firmware\n\nKeywords:\nNVMe, SATA, SAS, ATA, ATA Security, Self-Encrypting Drive, SED, TCG Opal, TCG Enterprise, eDrive, IEEE 1667, S.M.A.R.T, wear leveling, bad block management, ECC, error correction code, NAND flash, FTL, Flash Translation Layer, drive firmware update, DRAM cache, over-provisioning, sanitize command, secure erase, TRIM, UNMAP, storage encryption, storage controller, host-managed SMR, device-managed SMR, ZNS\n\nRelated Entities:\nUEFI, NVMe Driver, SATA Controller, Storage Controller Driver, Self-Encrypting Drive, TCG Opal, BitLocker, Full Disk Encryption, Firmware Update Utility, RAID Controller\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nStorage Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nStorage Device Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nFirmware embedded within storage devices including HDDs, SSDs, NVMe drives, and storage controllers that manages media access, error correction, wear leveling, encryption operations, and interface protocol compliance. Executes on the device's internal processor, independent of the host operating system.\n\nPurpose:\nManagement of storage media access, interface protocol execution, hardware-based encryption, error correction, wear leveling, bad block management, and performance optimization independent of the host operating system.\n\nAliases:\nDrive Firmware, HDD Firmware, SSD Firmware, NVMe Firmware, Disk Firmware, Storage Controller Firmware, RAID Controller Firmware\n\nKeywords:\nNVMe, SATA, SAS, ATA, ATA Security, Self-Encrypting Drive, SED, TCG Opal, TCG Enterprise, eDrive, IEEE 1667, S.M.A.R.T, wear leveling, bad block management, ECC, error correction code, NAND flash, FTL, Flash Translation Layer, drive firmware update, DRAM cache, over-provisioning, sanitize command, secure erase, TRIM, UNMAP, storage encryption, storage controller, host-managed SMR, device-managed SMR, ZNS\n\nRelated Entities:\nUEFI, NVMe Driver, SATA Controller, Storage Controller Driver, Self-Encrypting Drive, TCG Opal, BitLocker, Full Disk Encryption, Firmware Update Utility, RAID Controller\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nNetwork Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nNetwork Device Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nFirmware embedded within network interface controllers, wireless adapters, Bluetooth modules, and network management controllers that governs packet processing, PHY layer operations, protocol offload engines, out-of-band management capabilities, and PXE boot services. Executes autonomously on the device's dedicated processor.\n\nPurpose:\nManagement of network packet processing, PHY and MAC layer operations, protocol offload, out-of-band remote management, PXE and HTTP boot services, and wireless radio firmware for endpoint network connectivity.\n\nAliases:\nNIC Firmware, Network Interface Controller Firmware, LAN Firmware, WLAN Firmware, Wi-Fi Firmware, Bluetooth Firmware, Network Adapter Firmware, BMC Firmware, Baseboard Management Controller Firmware\n\nKeywords:\nNIC, Network Interface Controller, PXE, Preboot Execution Environment, HTTP Boot, iSCSI boot, FCoE, RDMA, iWARP, RoCE, TCP offload engine, TOE, out-of-band management, IPMI, BMC, Baseboard Management Controller, NCSI, Wake-on-LAN, WoL, WoWLAN, wireless firmware, Bluetooth firmware, IEEE 802.11, PHY layer, MAC layer, SR-IOV, virtual function, NIC firmware update, manageability firmware, remote KVM, SMASH, DASH, AMT, Active Management Technology, radio firmware, regulatory domain, network boot\n\nRelated Entities:\nUEFI, PXE Boot, Network Driver, NDIS, BMC, IPMI, Out-of-Band Management, WoL, Wireless Driver, Firmware Update Utility, Network Access Control, VPN Agent\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nEmbedded Controller Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nPlatform Control Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLow-level firmware executing on a dedicated embedded microcontroller within an endpoint device, independent of the main CPU. Manages board-level hardware functions including power sequencing, thermal regulation, battery management, keyboard input, fan control, and lid state detection. Operates autonomously even when the main system is powered off.\n\nPurpose:\nAutonomous management of board-level hardware subsystems including power delivery, thermal policy enforcement, battery charge control, keyboard matrix scanning, and hardware event signaling to the main platform firmware.\n\nAliases:\nEC Firmware, Embedded Controller, EC, Board Management Firmware, System Management Controller Firmware, Keyboard Controller Firmware, KBC Firmware\n\nKeywords:\nembedded controller, EC, power sequencing, thermal management, battery management, fan control, keyboard matrix, lid switch, S-states, ACPI, SMBus, I2C, SPI, LPC bus, power button, wake events, EC firmware update, microcontroller, battery charging, smart battery, charge control, dGPU mux, USB-C power delivery, PD controller, GPIO, firmware flashing\n\nRelated Entities:\nUEFI, BIOS, ACPI, TPM, Battery Management System, Thermal Management Subsystem, USB Power Delivery Controller, Platform Power Management, Firmware Update Utility\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nUEFI\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nModern pre-boot firmware specification and runtime environment that replaces legacy BIOS, operating in 32-bit or 64-bit protected mode with support for GPT partition tables, network stack, cryptographic services, and a modular driver model. Provides a standardized interface between platform firmware and operating systems.\n\nPurpose:\nPlatform hardware initialization, Secure Boot enforcement, GPT-based boot management, provision of UEFI runtime services, and extensible pre-OS execution environment for drivers and applications.\n\nAliases:\nUnified Extensible Firmware Interface, UEFI BIOS, EFI, Extensible Firmware Interface, UEFI Firmware, UEFI Platform Firmware\n\nKeywords:\nSecure Boot, GPT, GUID Partition Table, EFI System Partition, ESP, DXE, Driver Execution Environment, PEI, Pre-EFI Initialization, BDS, Boot Device Select, UEFI Shell, NVRAM, Boot Manager, MOK, Machine Owner Key, Platform Key, Key Exchange Key, db, dbx, Signature Database, TPM integration, Measured Boot, ACPI, SMBIOS, firmware update, capsule update, UEFI variable, runtime services, boot services, network boot, PXE, HTTP Boot, UEFI driver\n\nRelated Entities:\nBIOS, Secure Boot, TPM, GPT, EFI System Partition, OS Bootloader, Measured Boot, ACPI, SMBIOS, Embedded Controller Firmware, Firmware Update Utility, CSM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nBIOS\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLegacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.\n\nPurpose:\nHardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.\n\nAliases:\nBasic Input/Output System, Legacy BIOS, System BIOS, ROM BIOS, PC BIOS, Traditional BIOS\n\nKeywords:\nPOST, Power-On Self-Test, MBR, Master Boot Record, INT 13h, CMOS, 16-bit real mode, non-volatile memory, boot sequence, hardware initialization, IRQ, DMA, legacy boot, CSM, Compatibility Support Module, flash chip, SPI ROM, firmware update, BIOS setup utility, BIOS version, BIOS password\n\nRelated Entities:\nUEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.663463,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-003",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is a Trusted Platform Module?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-SEC-001",
+        "source": "DomainLayer",
+        "score": 0.722283
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-SEC-002",
+        "source": "DomainLayer",
+        "score": 0.66541
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nTPM\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nHardware Security Component\n\nKnowledge Category:\nSecurity\n\nDescription:\nTrusted Platform Module (TPM) hardware component providing a platform root of trust, secure key storage, attestation capabilities, and platform configuration registers. Variants include discrete, firmware (fTPM), integrated, and virtual TPM implementations.\n\nPurpose:\nProvide hardware-rooted cryptographic functions, secure key storage, and platform attestation to support measured boot and device identity features.\n\nAliases:\nTrusted Platform Module\n\nKeywords:\nTPM 1.2, TPM 2.0, Discrete TPM, Firmware TPM, Integrated TPM, Virtual TPM, Platform Configuration Register, Endorsement Key, Storage Root Key, Attestation Identity Key, TPM NV Storage, key hierarchy\n\nRelated Entities:\nSecure Boot, Secure Enclave, Hardware Root of Trust, Memory Encryption, Physical Unclonable Function, Hardware Security Key\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nTPM\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nHardware Security Component\n\nKnowledge Category:\nSecurity\n\nDescription:\nTrusted Platform Module (TPM) hardware component providing a platform root of trust, secure key storage, attestation capabilities, and platform configuration registers. Variants include discrete, firmware (fTPM), integrated, and virtual TPM implementations.\n\nPurpose:\nProvide hardware-rooted cryptographic functions, secure key storage, and platform attestation to support measured boot and device identity features.\n\nAliases:\nTrusted Platform Module\n\nKeywords:\nTPM 1.2, TPM 2.0, Discrete TPM, Firmware TPM, Integrated TPM, Virtual TPM, Platform Configuration Register, Endorsement Key, Storage Root Key, Attestation Identity Key, TPM NV Storage, key hierarchy\n\nRelated Entities:\nSecure Boot, Secure Enclave, Hardware Root of Trust, Memory Encryption, Physical Unclonable Function, Hardware Security Key\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nSecure Boot\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nBoot Security Feature\n\nKnowledge Category:\nSecurity\n\nDescription:\nPre-boot integrity enforcement mechanism that validates signatures of bootloader and firmware components against authorized keys and signature stores to help ensure platform boot integrity.\n\nPurpose:\nEnforce verification of pre-OS images and boot components to reduce the risk of unauthorized or tampered boot software executing on the platform.\n\nAliases:\nNone documented\n\nKeywords:\nPlatform Key, Key Exchange Key, Authorized Signature Database, Forbidden Signature Database, Machine Owner Key, Secure Boot Policy, Secure Boot Audit Mode, Secure Boot Setup Mode, Bootloader Signing, Kernel Module Signing, Option ROM Validation, Secure Boot Certificate Management\n\nRelated Entities:\nTPM, TPM Measured Boot, Boot Guard, UEFI Signature Database, Firmware Integrity Verification, Platform Key Management, Early Launch Anti-Malware\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.693847,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-004",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is Secure Boot?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-SEC-002",
+        "source": "DomainLayer",
+        "score": 0.731724
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nSecure Boot\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nBoot Security Feature\n\nKnowledge Category:\nSecurity\n\nDescription:\nPre-boot integrity enforcement mechanism that validates signatures of bootloader and firmware components against authorized keys and signature stores to help ensure platform boot integrity.\n\nPurpose:\nEnforce verification of pre-OS images and boot components to reduce the risk of unauthorized or tampered boot software executing on the platform.\n\nAliases:\nNone documented\n\nKeywords:\nPlatform Key, Key Exchange Key, Authorized Signature Database, Forbidden Signature Database, Machine Owner Key, Secure Boot Policy, Secure Boot Audit Mode, Secure Boot Setup Mode, Bootloader Signing, Kernel Module Signing, Option ROM Validation, Secure Boot Certificate Management\n\nRelated Entities:\nTPM, TPM Measured Boot, Boot Guard, UEFI Signature Database, Firmware Integrity Verification, Platform Key Management, Early Launch Anti-Malware\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nSecure Boot\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nBoot Security Feature\n\nKnowledge Category:\nSecurity\n\nDescription:\nPre-boot integrity enforcement mechanism that validates signatures of bootloader and firmware components against authorized keys and signature stores to help ensure platform boot integrity.\n\nPurpose:\nEnforce verification of pre-OS images and boot components to reduce the risk of unauthorized or tampered boot software executing on the platform.\n\nAliases:\nNone documented\n\nKeywords:\nPlatform Key, Key Exchange Key, Authorized Signature Database, Forbidden Signature Database, Machine Owner Key, Secure Boot Policy, Secure Boot Audit Mode, Secure Boot Setup Mode, Bootloader Signing, Kernel Module Signing, Option ROM Validation, Secure Boot Certificate Management\n\nRelated Entities:\nTPM, TPM Measured Boot, Boot Guard, UEFI Signature Database, Firmware Integrity Verification, Platform Key Management, Early Launch Anti-Malware\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.731724,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-005",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is an operating system?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-001",
+        "source": "DomainLayer",
+        "score": 0.648796
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-004",
+        "source": "DomainLayer",
+        "score": 0.636565
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-007",
+        "source": "DomainLayer",
+        "score": 0.627962
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-003",
+        "source": "DomainLayer",
+        "score": 0.603179
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-002",
+        "source": "DomainLayer",
+        "score": 0.601777
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nWindows\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nMicrosoft-developed proprietary general-purpose operating system family built on the Windows NT kernel architecture, providing a hardware abstraction layer, Win32/Win64 subsystem, NTFS file system, and integrated security subsystems including access control, code integrity enforcement, and virtualization-based security. Serves as the dominant enterprise endpoint and server OS platform.\n\nPurpose:\nProvision of a managed, hardware-abstracted execution environment for enterprise endpoint applications, security policy enforcement, identity and access control, enterprise management integration, and driver model standardization across heterogeneous hardware platforms.\n\nAliases:\nMicrosoft Windows, Windows OS, Windows NT, Win32 Platform, Win64 Platform, Windows Platform, WinNT\n\nKeywords:\nWindows NT kernel, Win32, Win64, NTFS, HAL, Hardware Abstraction Layer, Windows Registry, Active Directory, Group Policy, GPO, WDDM, NDIS, StorPort, WDM, Windows Driver Model, WHQL, WMI, PowerShell, WinRM, SMB, NTLM, Kerberos, SAM, LSA, LSASS, VBS, Virtualization Based Security, HVCI, Credential Guard, Device Guard, BitLocker, Windows Defender, UAC, User Account Control, Windows Update, WSUS, Windows Installer, MSI, MSIX, Intune, MDM, SCCM, COM, DCOM, ETW, Event Tracing for Windows, Windows Event Log, UEFI Secure Boot, PatchGuard, KPP, Kernel Patch Protection\n\nRelated Entities:\nWindows 10, Windows 11, Windows NT Kernel, Active Directory, Group Policy, NTFS, BitLocker, Windows Defender, UEFI, Secure Boot, TPM, Virtualization Based Security, WHQL Driver Signing, Windows Update, MDM Policy Engine, LSASS, Credential Guard\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nWindows\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nMicrosoft-developed proprietary general-purpose operating system family built on the Windows NT kernel architecture, providing a hardware abstraction layer, Win32/Win64 subsystem, NTFS file system, and integrated security subsystems including access control, code integrity enforcement, and virtualization-based security. Serves as the dominant enterprise endpoint and server OS platform.\n\nPurpose:\nProvision of a managed, hardware-abstracted execution environment for enterprise endpoint applications, security policy enforcement, identity and access control, enterprise management integration, and driver model standardization across heterogeneous hardware platforms.\n\nAliases:\nMicrosoft Windows, Windows OS, Windows NT, Win32 Platform, Win64 Platform, Windows Platform, WinNT\n\nKeywords:\nWindows NT kernel, Win32, Win64, NTFS, HAL, Hardware Abstraction Layer, Windows Registry, Active Directory, Group Policy, GPO, WDDM, NDIS, StorPort, WDM, Windows Driver Model, WHQL, WMI, PowerShell, WinRM, SMB, NTLM, Kerberos, SAM, LSA, LSASS, VBS, Virtualization Based Security, HVCI, Credential Guard, Device Guard, BitLocker, Windows Defender, UAC, User Account Control, Windows Update, WSUS, Windows Installer, MSI, MSIX, Intune, MDM, SCCM, COM, DCOM, ETW, Event Tracing for Windows, Windows Event Log, UEFI Secure Boot, PatchGuard, KPP, Kernel Patch Protection\n\nRelated Entities:\nWindows 10, Windows 11, Windows NT Kernel, Active Directory, Group Policy, NTFS, BitLocker, Windows Defender, UEFI, Secure Boot, TPM, Virtualization Based Security, WHQL Driver Signing, Windows Update, MDM Policy Engine, LSASS, Credential Guard\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nLinux\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nOpen-source, POSIX-compliant operating system kernel and ecosystem built on the monolithic Linux kernel with loadable module support, providing hardware abstraction, process scheduling, memory management, virtual file system, and networking subsystems. Distributed in numerous vendor-maintained and community-maintained distributions targeting enterprise servers, cloud workloads, developer endpoints, and embedded systems.\n\nPurpose:\nProvision of a stable, customizable, open-source OS platform for enterprise server, cloud, and endpoint workloads, supporting diverse hardware architectures, containerization, kernel-level security enforcement, and flexible deployment models across distribution variants.\n\nAliases:\nLinux OS, GNU/Linux, Linux Kernel, Linux Platform, Linux Distribution, Linux Distro, Open Source OS\n\nKeywords:\nLinux kernel, monolithic kernel, LKM, Loadable Kernel Module, POSIX, ELF, systemd, init system, GNU, glibc, ext4, XFS, Btrfs, VFS, Virtual File System, SELinux, Security Enhanced Linux, AppArmor, seccomp, cgroups, namespaces, eBPF, kernel module signing, DKMS, Dynamic Kernel Module Support, udev, udev rules, dmesg, sysfs, procfs, devfs, iptables, nftables, netfilter, LUKS, dm-crypt, PAM, Pluggable Authentication Modules, SSH, sudo, rpm, deb, package manager, container, Docker, OCI, Kubernetes, KVM, QEMU, UEFI boot, GRUB, Linux kernel version, LTS kernel, audit framework\n\nRelated Entities:\nUbuntu, RHEL, Linux Kernel, SELinux, AppArmor, UEFI, GRUB Bootloader, Secure Boot, LUKS, systemd, eBPF, Kernel Module Signing, PAM, cgroups, Container Runtime, TPM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nmacOS\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nApple-developed proprietary Unix-based operating system built on the XNU hybrid kernel combining Mach microkernel and BSD subsystems, providing a POSIX-compliant execution environment with a hardware-integrated security architecture including Apple Silicon Secure Enclave, System Integrity Protection, Gatekeeper, Transparency Consent and Control, FileVault full-disk encryption, and a signed kernel extension and system extension model.\n\nPurpose:\nProvision of a hardware-integrated, security-enforced POSIX-compliant enterprise endpoint platform with mandatory code signing, system integrity enforcement, hardware-rooted trust, privacy access controls, and enterprise management integration via MDM and configuration profile frameworks.\n\nAliases:\nMac OS X, OS X, macOS Ventura, macOS Sonoma, macOS Sequoia, Apple macOS, Darwin, macOS Platform, Apple Desktop OS\n\nKeywords:\nXNU kernel, Mach kernel, BSD, POSIX, macOS version, System Integrity Protection, SIP, Gatekeeper, Notarization, code signing, kernel extension, kext, System Extension, DriverKit, EndpointSecurity framework, Transparency Consent and Control, TCC, FileVault, APFS, Apple File System, Secure Enclave, Apple Silicon, T2 chip, Activation Lock, MDM, Mobile Device Management, Configuration Profile, mobileconfig, Apple Business Manager, ABM, ABM DEP, Device Enrollment Program, ADE, Automated Device Enrollment, Rosetta 2, Universal Binary, Homebrew, PKG, DMG, launchd, launchctl, plist, macOS update, softwareupdate, macOS release, Ventura, Sonoma, Sequoia, Monterey, Jamf, MDM enrollment, supervised mode, Accessibility API, UAMDM, User Approved MDM\n\nRelated Entities:\nXNU Kernel, Secure Enclave, System Integrity Protection, Gatekeeper, FileVault, DriverKit, EndpointSecurity Framework, TCC, MDM Configuration Profile, Apple Business Manager, UEFI, Secure Boot, TPM Equivalent, APFS, Code Signing, Kernel Extension, System Extension\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nWindows 11\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Version\n\nKnowledge Category:\nOperating System\n\nDescription:\nMajor release of the Windows NT-based operating system introducing mandatory hardware baseline requirements including TPM 2.0, UEFI Secure Boot, CPU generation restrictions, and Virtualization Based Security by default. Delivers a revised desktop shell, updated WDDM 3.x graphics model, DirectStorage API, and enhanced security defaults including HVCI and enhanced phishing protection.\n\nPurpose:\nProvision of an enterprise endpoint execution environment with enforced hardware security baselines, default VBS and HVCI enablement, modern application delivery, enhanced identity protection, and productivity improvements targeting contemporary enterprise endpoint hardware.\n\nAliases:\nWin11, Windows 11 OS, Windows 11 Enterprise, Windows 11 Pro, Windows 11 LTSC, Windows 11 IoT Enterprise\n\nKeywords:\nWindows 11, TPM 2.0, UEFI Secure Boot, VBS, Virtualization Based Security, HVCI, Hypervisor Protected Code Integrity, hardware requirements, CPU compatibility, supported processor list, DirectStorage, WDDM 3.0, Windows 11 23H2, Windows 11 24H2, feature update, cumulative update, build number, OS version, Windows Hello for Business, Smart App Control, Enhanced Phishing Protection, Credential Guard default, LSASS protection, Microsoft Pluton, Secured-core PC, Config Lock, Android app support, WSA, Windows Subsystem for Android, WSL2, Windows Subsystem for Linux, driver compatibility, WHQL, hardware compatibility, HCL, upgrade readiness, PC Health Check, end of support, servicing, MDM, Intune, co-management\n\nRelated Entities:\nWindows, Windows 10, Windows NT Kernel, TPM 2.0, Secure Boot, UEFI, VBS, HVCI, Credential Guard, Microsoft Pluton, Secured-core PC, WDAC, Windows Defender, MDM Policy Engine, Group Policy, BitLocker, WHQL Driver Signing, Windows Update\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nWindows 10\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Version\n\nKnowledge Category:\nOperating System\n\nDescription:\nSpecific major release of the Windows NT-based operating system introducing the Universal Windows Platform, servicing branch model, Windows as a Service delivery, WDDM 2.x graphics model, and enhanced security features including Credential Guard, Device Guard, and Windows Hello. Delivered through semi-annual feature update and monthly cumulative update servicing channels.\n\nPurpose:\nProvision of an enterprise endpoint execution environment with servicing branch management, hardware compatibility across a broad device ecosystem, enterprise security baseline features, and transition path to modern management via MDM and co-management frameworks.\n\nAliases:\nWin10, Windows 10 OS, Windows 10 Enterprise, Windows 10 Pro, Windows 10 LTSC, Windows 10 SAC, WaaS Windows 10\n\nKeywords:\nWindows 10, Windows as a Service, WaaS, feature update, cumulative update, servicing branch, Semi-Annual Channel, SAC, LTSC, Long Term Servicing Channel, build number, OS version, 1903, 1909, 2004, 20H2, 21H1, 21H2, 22H2, Universal Windows Platform, UWP, WDDM 2.0, Credential Guard, Device Guard, Windows Hello, BitLocker, Secure Boot, TPM 1.2, TPM 2.0, UEFI, CBS, Component Based Servicing, Windows Update, WSUS, Intune, SCCM, co-management, MDM, Windows Defender Antivirus, Windows Defender Firewall, AppLocker, WDAC, Windows Defender Application Control, driver compatibility, WHQL, hardware compatibility list, HCL, end of support, EOS\n\nRelated Entities:\nWindows, Windows 11, Windows NT Kernel, Windows Update, WSUS, LTSC, MDM Policy Engine, Group Policy, BitLocker, Credential Guard, WDAC, TPM, Secure Boot, UEFI, WHQL Driver Signing, Windows Defender\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.623656,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-006",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is Microsoft Windows?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-001",
+        "source": "DomainLayer",
+        "score": 0.637587
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-002",
+        "source": "DomainLayer",
+        "score": 0.606126
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-003",
+        "source": "DomainLayer",
+        "score": 0.588886
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nWindows\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nMicrosoft-developed proprietary general-purpose operating system family built on the Windows NT kernel architecture, providing a hardware abstraction layer, Win32/Win64 subsystem, NTFS file system, and integrated security subsystems including access control, code integrity enforcement, and virtualization-based security. Serves as the dominant enterprise endpoint and server OS platform.\n\nPurpose:\nProvision of a managed, hardware-abstracted execution environment for enterprise endpoint applications, security policy enforcement, identity and access control, enterprise management integration, and driver model standardization across heterogeneous hardware platforms.\n\nAliases:\nMicrosoft Windows, Windows OS, Windows NT, Win32 Platform, Win64 Platform, Windows Platform, WinNT\n\nKeywords:\nWindows NT kernel, Win32, Win64, NTFS, HAL, Hardware Abstraction Layer, Windows Registry, Active Directory, Group Policy, GPO, WDDM, NDIS, StorPort, WDM, Windows Driver Model, WHQL, WMI, PowerShell, WinRM, SMB, NTLM, Kerberos, SAM, LSA, LSASS, VBS, Virtualization Based Security, HVCI, Credential Guard, Device Guard, BitLocker, Windows Defender, UAC, User Account Control, Windows Update, WSUS, Windows Installer, MSI, MSIX, Intune, MDM, SCCM, COM, DCOM, ETW, Event Tracing for Windows, Windows Event Log, UEFI Secure Boot, PatchGuard, KPP, Kernel Patch Protection\n\nRelated Entities:\nWindows 10, Windows 11, Windows NT Kernel, Active Directory, Group Policy, NTFS, BitLocker, Windows Defender, UEFI, Secure Boot, TPM, Virtualization Based Security, WHQL Driver Signing, Windows Update, MDM Policy Engine, LSASS, Credential Guard\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nWindows\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nMicrosoft-developed proprietary general-purpose operating system family built on the Windows NT kernel architecture, providing a hardware abstraction layer, Win32/Win64 subsystem, NTFS file system, and integrated security subsystems including access control, code integrity enforcement, and virtualization-based security. Serves as the dominant enterprise endpoint and server OS platform.\n\nPurpose:\nProvision of a managed, hardware-abstracted execution environment for enterprise endpoint applications, security policy enforcement, identity and access control, enterprise management integration, and driver model standardization across heterogeneous hardware platforms.\n\nAliases:\nMicrosoft Windows, Windows OS, Windows NT, Win32 Platform, Win64 Platform, Windows Platform, WinNT\n\nKeywords:\nWindows NT kernel, Win32, Win64, NTFS, HAL, Hardware Abstraction Layer, Windows Registry, Active Directory, Group Policy, GPO, WDDM, NDIS, StorPort, WDM, Windows Driver Model, WHQL, WMI, PowerShell, WinRM, SMB, NTLM, Kerberos, SAM, LSA, LSASS, VBS, Virtualization Based Security, HVCI, Credential Guard, Device Guard, BitLocker, Windows Defender, UAC, User Account Control, Windows Update, WSUS, Windows Installer, MSI, MSIX, Intune, MDM, SCCM, COM, DCOM, ETW, Event Tracing for Windows, Windows Event Log, UEFI Secure Boot, PatchGuard, KPP, Kernel Patch Protection\n\nRelated Entities:\nWindows 10, Windows 11, Windows NT Kernel, Active Directory, Group Policy, NTFS, BitLocker, Windows Defender, UEFI, Secure Boot, TPM, Virtualization Based Security, WHQL Driver Signing, Windows Update, MDM Policy Engine, LSASS, Credential Guard\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nWindows 10\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Version\n\nKnowledge Category:\nOperating System\n\nDescription:\nSpecific major release of the Windows NT-based operating system introducing the Universal Windows Platform, servicing branch model, Windows as a Service delivery, WDDM 2.x graphics model, and enhanced security features including Credential Guard, Device Guard, and Windows Hello. Delivered through semi-annual feature update and monthly cumulative update servicing channels.\n\nPurpose:\nProvision of an enterprise endpoint execution environment with servicing branch management, hardware compatibility across a broad device ecosystem, enterprise security baseline features, and transition path to modern management via MDM and co-management frameworks.\n\nAliases:\nWin10, Windows 10 OS, Windows 10 Enterprise, Windows 10 Pro, Windows 10 LTSC, Windows 10 SAC, WaaS Windows 10\n\nKeywords:\nWindows 10, Windows as a Service, WaaS, feature update, cumulative update, servicing branch, Semi-Annual Channel, SAC, LTSC, Long Term Servicing Channel, build number, OS version, 1903, 1909, 2004, 20H2, 21H1, 21H2, 22H2, Universal Windows Platform, UWP, WDDM 2.0, Credential Guard, Device Guard, Windows Hello, BitLocker, Secure Boot, TPM 1.2, TPM 2.0, UEFI, CBS, Component Based Servicing, Windows Update, WSUS, Intune, SCCM, co-management, MDM, Windows Defender Antivirus, Windows Defender Firewall, AppLocker, WDAC, Windows Defender Application Control, driver compatibility, WHQL, hardware compatibility list, HCL, end of support, EOS\n\nRelated Entities:\nWindows, Windows 11, Windows NT Kernel, Windows Update, WSUS, LTSC, MDM Policy Engine, Group Policy, BitLocker, Credential Guard, WDAC, TPM, Secure Boot, UEFI, WHQL Driver Signing, Windows Defender\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nWindows 11\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Version\n\nKnowledge Category:\nOperating System\n\nDescription:\nMajor release of the Windows NT-based operating system introducing mandatory hardware baseline requirements including TPM 2.0, UEFI Secure Boot, CPU generation restrictions, and Virtualization Based Security by default. Delivers a revised desktop shell, updated WDDM 3.x graphics model, DirectStorage API, and enhanced security defaults including HVCI and enhanced phishing protection.\n\nPurpose:\nProvision of an enterprise endpoint execution environment with enforced hardware security baselines, default VBS and HVCI enablement, modern application delivery, enhanced identity protection, and productivity improvements targeting contemporary enterprise endpoint hardware.\n\nAliases:\nWin11, Windows 11 OS, Windows 11 Enterprise, Windows 11 Pro, Windows 11 LTSC, Windows 11 IoT Enterprise\n\nKeywords:\nWindows 11, TPM 2.0, UEFI Secure Boot, VBS, Virtualization Based Security, HVCI, Hypervisor Protected Code Integrity, hardware requirements, CPU compatibility, supported processor list, DirectStorage, WDDM 3.0, Windows 11 23H2, Windows 11 24H2, feature update, cumulative update, build number, OS version, Windows Hello for Business, Smart App Control, Enhanced Phishing Protection, Credential Guard default, LSASS protection, Microsoft Pluton, Secured-core PC, Config Lock, Android app support, WSA, Windows Subsystem for Android, WSL2, Windows Subsystem for Linux, driver compatibility, WHQL, hardware compatibility, HCL, upgrade readiness, PC Health Check, end of support, servicing, MDM, Intune, co-management\n\nRelated Entities:\nWindows, Windows 10, Windows NT Kernel, TPM 2.0, Secure Boot, UEFI, VBS, HVCI, Credential Guard, Microsoft Pluton, Secured-core PC, WDAC, Windows Defender, MDM Policy Engine, Group Policy, BitLocker, WHQL Driver Signing, Windows Update\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.610866,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-007",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is Linux?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-004",
+        "source": "DomainLayer",
+        "score": 0.653915
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-005",
+        "source": "DomainLayer",
+        "score": 0.620237
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-006",
+        "source": "DomainLayer",
+        "score": 0.596479
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nLinux\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nOpen-source, POSIX-compliant operating system kernel and ecosystem built on the monolithic Linux kernel with loadable module support, providing hardware abstraction, process scheduling, memory management, virtual file system, and networking subsystems. Distributed in numerous vendor-maintained and community-maintained distributions targeting enterprise servers, cloud workloads, developer endpoints, and embedded systems.\n\nPurpose:\nProvision of a stable, customizable, open-source OS platform for enterprise server, cloud, and endpoint workloads, supporting diverse hardware architectures, containerization, kernel-level security enforcement, and flexible deployment models across distribution variants.\n\nAliases:\nLinux OS, GNU/Linux, Linux Kernel, Linux Platform, Linux Distribution, Linux Distro, Open Source OS\n\nKeywords:\nLinux kernel, monolithic kernel, LKM, Loadable Kernel Module, POSIX, ELF, systemd, init system, GNU, glibc, ext4, XFS, Btrfs, VFS, Virtual File System, SELinux, Security Enhanced Linux, AppArmor, seccomp, cgroups, namespaces, eBPF, kernel module signing, DKMS, Dynamic Kernel Module Support, udev, udev rules, dmesg, sysfs, procfs, devfs, iptables, nftables, netfilter, LUKS, dm-crypt, PAM, Pluggable Authentication Modules, SSH, sudo, rpm, deb, package manager, container, Docker, OCI, Kubernetes, KVM, QEMU, UEFI boot, GRUB, Linux kernel version, LTS kernel, audit framework\n\nRelated Entities:\nUbuntu, RHEL, Linux Kernel, SELinux, AppArmor, UEFI, GRUB Bootloader, Secure Boot, LUKS, systemd, eBPF, Kernel Module Signing, PAM, cgroups, Container Runtime, TPM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nLinux\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nOpen-source, POSIX-compliant operating system kernel and ecosystem built on the monolithic Linux kernel with loadable module support, providing hardware abstraction, process scheduling, memory management, virtual file system, and networking subsystems. Distributed in numerous vendor-maintained and community-maintained distributions targeting enterprise servers, cloud workloads, developer endpoints, and embedded systems.\n\nPurpose:\nProvision of a stable, customizable, open-source OS platform for enterprise server, cloud, and endpoint workloads, supporting diverse hardware architectures, containerization, kernel-level security enforcement, and flexible deployment models across distribution variants.\n\nAliases:\nLinux OS, GNU/Linux, Linux Kernel, Linux Platform, Linux Distribution, Linux Distro, Open Source OS\n\nKeywords:\nLinux kernel, monolithic kernel, LKM, Loadable Kernel Module, POSIX, ELF, systemd, init system, GNU, glibc, ext4, XFS, Btrfs, VFS, Virtual File System, SELinux, Security Enhanced Linux, AppArmor, seccomp, cgroups, namespaces, eBPF, kernel module signing, DKMS, Dynamic Kernel Module Support, udev, udev rules, dmesg, sysfs, procfs, devfs, iptables, nftables, netfilter, LUKS, dm-crypt, PAM, Pluggable Authentication Modules, SSH, sudo, rpm, deb, package manager, container, Docker, OCI, Kubernetes, KVM, QEMU, UEFI boot, GRUB, Linux kernel version, LTS kernel, audit framework\n\nRelated Entities:\nUbuntu, RHEL, Linux Kernel, SELinux, AppArmor, UEFI, GRUB Bootloader, Secure Boot, LUKS, systemd, eBPF, Kernel Module Signing, PAM, cgroups, Container Runtime, TPM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nUbuntu\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Distribution\n\nKnowledge Category:\nOperating System\n\nDescription:\nDebian-derived Linux distribution following a time-based release model with regular releases every six months and Long Term Support releases every two years providing five-year maintenance windows. Packages the Linux kernel with APT package management, systemd init system, Snap application delivery, and default desktop and server configurations targeting developer, enterprise endpoint, and cloud deployments.\n\nPurpose:\nProvision of a stable, commercially supported Debian-based Linux distribution with predictable release cadence, extended LTS security maintenance, cloud and container optimization, and enterprise support subscriptions for endpoint and server deployments.\n\nAliases:\nUbuntu Linux, Ubuntu LTS, Ubuntu Desktop, Ubuntu Server, Ubuntu Pro, Canonical Ubuntu, Ubuntu Focal, Ubuntu Jammy, Ubuntu Noble\n\nKeywords:\nUbuntu, Debian, APT, Advanced Package Tool, dpkg, deb package, LTS, Long Term Support, Ubuntu Pro, Snap, snapd, Snapcraft, systemd, GNOME, Wayland, X11, linux-image, linux-headers, kernel version, HWE, Hardware Enablement Stack, DKMS, AppArmor, UFW, Uncomplicated Firewall, LUKS, Ubuntu Security Notices, USN, Livepatch, kernel live patching, landscape, ubuntu-advantage, pro-client, cloud-init, netplan, Ubuntu release codename, focal, jammy, noble, EOL, end of life, MAAS, Juju, multipass, WSL, container, LXC, LXD\n\nRelated Entities:\nLinux, Debian, Linux Kernel, APT Package Manager, AppArmor, LUKS, systemd, UEFI, Secure Boot, GRUB Bootloader, Snap Package Manager, DKMS, Ubuntu Pro, Kernel Live Patching, Hardware Enablement Stack\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nRHEL\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Distribution\n\nKnowledge Category:\nOperating System\n\nDescription:\nCommercially supported, RPM-based enterprise Linux distribution derived from Fedora upstream, providing a stable ABI-compatible kernel with backported security patches, extended ten-year lifecycle support, SELinux enforcing mode by default, FIPS 140 validated cryptographic modules, and certified compatibility across enterprise hardware platforms, ISV software stacks, and regulated industry workloads.\n\nPurpose:\nProvision of a commercially supported enterprise Linux platform with long-term ABI stability, regulatory compliance certifications, SELinux mandatory access control, FIPS-validated cryptography, and hardware and ISV certification programs for enterprise server and endpoint deployments.\n\nAliases:\nRed Hat Enterprise Linux, RHEL OS, RHEL 8, RHEL 9, Enterprise Linux, EL, RHEL Server, RHEL Workstation\n\nKeywords:\nRHEL, Red Hat Enterprise Linux, RPM, YUM, DNF, subscription manager, RHSM, Red Hat Subscription Management, SELinux, Security Enhanced Linux, enforcing mode, FIPS 140, FIPS mode, kernel ABI, kABI, kpatch, kernel live patching, Extended Update Support, EUS, Application Streams, modularity, systemd, firewalld, nftables, LUKS2, dm-crypt, crypto-policies, system-wide crypto policy, OpenSCAP, SCAP, SSG, DISA STIG, CIS benchmark, Satellite, Ansible, Cockpit, Insights, ERRATA, CVE, Hardware Compatibility List, HCL, certified hardware, ISV certification, container, Podman, Buildah, OCI, cgroups v2, RHEL lifecycle, minor version, RHEL 8, RHEL 9\n\nRelated Entities:\nLinux, Linux Kernel, SELinux, FIPS 140, RPM Package Manager, systemd, LUKS, UEFI, Secure Boot, GRUB Bootloader, DKMS, OpenSCAP, Kernel Live Patching, Red Hat Satellite, Ansible Automation, TPM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.623544,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-008",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is a device driver?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-003",
+        "source": "DomainLayer",
+        "score": 0.676749
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-005",
+        "source": "DomainLayer",
+        "score": 0.675974
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-004",
+        "source": "DomainLayer",
+        "score": 0.657161
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-002",
+        "source": "DomainLayer",
+        "score": 0.655464
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-001",
+        "source": "DomainLayer",
+        "score": 0.638509
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nChipset Driver\n\nEntity Type:\nDriver\n\nSubtype:\nChipset Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nFoundational platform driver package that enables the operating system to correctly identify, enumerate, and communicate with the motherboard chipset components including PCIe root complexes, system bus controllers, SMBus, GPIO, UART, I2C, SPI interfaces, and power management controllers. Provides the platform abstraction layer upon which all other device drivers depend.\n\nPurpose:\nProvision of OS-level enumeration and communication support for chipset subsystems including PCIe topology, system bus controllers, I/O hub interfaces, power management integration, and platform device identification required by dependent drivers.\n\nAliases:\nPlatform Driver, System Chipset Driver, INF Driver, PCI INF Driver, Platform Controller Hub Driver, PCH Driver, Southbridge Driver, Northbridge Driver, System Bus Driver\n\nKeywords:\nchipset, PCH, Platform Controller Hub, SMBus, I2C, SPI, UART, GPIO, PCI, PCIe, PCI Express, root complex, ACPI, power management, device enumeration, INF file, PnP, Plug and Play, HECI, MEI, Management Engine Interface, USB controller, XHCI, EHCI, SATA controller, AHCI, system bus, I/O hub, platform device, driver package, hardware ID, compatible ID, device manager, IRQ routing, DMA remapping, IOMMU, VT-d, DMAR\n\nRelated Entities:\nUEFI, ACPI, PCI Express Interface, Storage Driver, Network Driver, Graphics Driver, Audio Driver, USB Controller Driver, Management Engine Interface, IOMMU, Power Management Subsystem, Driver Signing\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nChipset Driver\n\nEntity Type:\nDriver\n\nSubtype:\nChipset Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nFoundational platform driver package that enables the operating system to correctly identify, enumerate, and communicate with the motherboard chipset components including PCIe root complexes, system bus controllers, SMBus, GPIO, UART, I2C, SPI interfaces, and power management controllers. Provides the platform abstraction layer upon which all other device drivers depend.\n\nPurpose:\nProvision of OS-level enumeration and communication support for chipset subsystems including PCIe topology, system bus controllers, I/O hub interfaces, power management integration, and platform device identification required by dependent drivers.\n\nAliases:\nPlatform Driver, System Chipset Driver, INF Driver, PCI INF Driver, Platform Controller Hub Driver, PCH Driver, Southbridge Driver, Northbridge Driver, System Bus Driver\n\nKeywords:\nchipset, PCH, Platform Controller Hub, SMBus, I2C, SPI, UART, GPIO, PCI, PCIe, PCI Express, root complex, ACPI, power management, device enumeration, INF file, PnP, Plug and Play, HECI, MEI, Management Engine Interface, USB controller, XHCI, EHCI, SATA controller, AHCI, system bus, I/O hub, platform device, driver package, hardware ID, compatible ID, device manager, IRQ routing, DMA remapping, IOMMU, VT-d, DMAR\n\nRelated Entities:\nUEFI, ACPI, PCI Express Interface, Storage Driver, Network Driver, Graphics Driver, Audio Driver, USB Controller Driver, Management Engine Interface, IOMMU, Power Management Subsystem, Driver Signing\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nStorage Driver\n\nEntity Type:\nDriver\n\nSubtype:\nStorage Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts storage controller and device hardware, providing the operating system storage stack with standardized interfaces for block device enumeration, I/O request processing, command translation, and storage-specific feature management including hardware encryption, power states, and error recovery across NVMe, SATA, SAS, USB, and SD/MMC interfaces.\n\nPurpose:\nHardware abstraction for storage device I/O operations, storage controller enumeration, block device management, command set translation, hardware encryption feature integration, power state management, and error recovery handling within the OS storage stack.\n\nAliases:\nDisk Driver, NVMe Driver, SATA Driver, AHCI Driver, SAS Driver, StorPort Driver, SCSI Miniport Driver, Storage Miniport Driver, USB Mass Storage Driver, SD Host Controller Driver, RAID Driver\n\nKeywords:\nNVMe, Non-Volatile Memory Express, AHCI, Advanced Host Controller Interface, SATA, SAS, Serial Attached SCSI, SCSI, StorPort, miniport driver, block device, I/O request packet, IRP, disk enumeration, LUN, Logical Unit Number, self-encrypting drive, SED, TCG Opal, ATA security, secure erase, sanitize, TRIM, UNMAP, NCQ, Native Command Queuing, command queuing, PCIe, USB mass storage, UAS, USB Attached SCSI, SD host controller, MMC, eMMC, UFS, RAID, RAID controller, driver INF, WHQL, power management, D3cold, DEVSLP, power loss protection, error recovery, ECC, bad sector remapping, storage filter driver, volume manager\n\nRelated Entities:\nStorage Firmware, Chipset Driver, OS Storage Stack, Volume Manager, Full Disk Encryption, BitLocker, TCG Opal, RAID Controller, StorPort, SCSI, PCI Express Interface, USB Controller Driver, Driver Signing, Boot Critical Driver, File System Driver\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nNetwork Driver\n\nEntity Type:\nDriver\n\nSubtype:\nNetwork Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts network interface controller hardware and exposes a standardized interface to the operating system network stack for wired Ethernet, wireless LAN, Bluetooth, and mobile broadband connectivity. Operates within the OS networking subsystem handling packet transmission, reception, hardware offload, and power management for network adapters.\n\nPurpose:\nHardware abstraction for network packet transmission and reception, NIC feature negotiation, hardware offload configuration, power management of network adapters, wireless association management, and integration with OS network stack protocols.\n\nAliases:\nNIC Driver, Network Adapter Driver, LAN Driver, WLAN Driver, Wi-Fi Driver, Ethernet Driver, NDIS Driver, Wireless Driver, Bluetooth Driver, Mobile Broadband Driver\n\nKeywords:\nNDIS, Network Driver Interface Specification, miniport driver, protocol driver, filter driver, Ethernet, 802.3, IEEE 802.11, Wi-Fi, WLAN, Bluetooth, BLE, mobile broadband, LTE, 5G, WWAN, MAC address, packet offload, TCP offload engine, TOE, RSS, Receive Side Scaling, VMQ, Virtual Machine Queue, SR-IOV, VLAN, QoS, Wake-on-LAN, WoL, power management, PCIe, USB NIC, network adapter enumeration, driver INF, WHQL, OID, Object Identifier, NetCfg, NetAdapterCx, WDF, firmware update, network boot, PXE\n\nRelated Entities:\nNetwork Firmware, Chipset Driver, OS Network Stack, NDIS, PXE Boot, Network Access Control Agent, VPN Agent, Firewall Driver, Driver Signing, PCI Express Interface, USB Controller Driver, Wake-on-LAN\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nAudio Driver\n\nEntity Type:\nDriver\n\nSubtype:\nAudio Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts audio hardware including HD Audio controllers, USB audio devices, and digital signal processors, exposing standardized interfaces to the OS audio subsystem for audio rendering, capture, mixing, and routing. Operates across kernel-mode bus and codec drivers and user-space audio engine components.\n\nPurpose:\nHardware abstraction for audio rendering and capture pipelines, audio device enumeration, sample rate and bit-depth negotiation, hardware mixing offload, acoustic signal processing, and audio endpoint routing within the OS audio subsystem.\n\nAliases:\nSound Driver, HD Audio Driver, Audio Codec Driver, Audio Controller Driver, ALSA Driver, WDM Audio Driver, UAA Driver, Universal Audio Architecture Driver, Sound Card Driver\n\nKeywords:\nHD Audio, HDA, High Definition Audio, Intel HDA, AC97, audio codec, ALSA, Advanced Linux Sound Architecture, WDM, Windows Driver Model, UAA, Universal Audio Architecture, audio endpoint, audio rendering, audio capture, sample rate, bit depth, PCM, audio bus driver, miniport driver, port driver, DSP, digital signal processor, audio mixing, audio routing, WASAPI, ASIO, audio latency, USB audio, I2S, audio device enumeration, microphone driver, speaker driver, audio privacy, mute control, audio virtualization, noise suppression, driver INF, WHQL\n\nRelated Entities:\nChipset Driver, OS Audio Subsystem, HD Audio Controller, USB Audio Class, Audio DSP Firmware, Driver Signing, PCI Express Interface, Kernel Streaming, WASAPI, Audio Endpoint Manager\n\nCompatibility Relevance:\nMedium\n\nValidation Priority:\nMedium",
+      "Domain Knowledge Entity\n\nName:\nGraphics Driver\n\nEntity Type:\nDriver\n\nSubtype:\nGraphics Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts GPU hardware and exposes standardized interfaces to the operating system and user-space applications for rendering, display output management, compute workloads, and hardware-accelerated media processing. Operates across both kernel-mode (KMD) and user-mode (UMD) driver components within the OS graphics subsystem.\n\nPurpose:\nProvision of hardware abstraction for GPU rendering pipelines, display adapter enumeration and configuration, graphics API translation, hardware-accelerated compute offload, and display output management including multi-monitor topology and refresh rate control.\n\nAliases:\nGPU Driver, Display Driver, Video Driver, Graphics Adapter Driver, Kernel Mode Driver KMD, User Mode Driver UMD, WDDM Driver, DRM Driver, Display Miniport Driver\n\nKeywords:\nGPU, graphics processing unit, WDDM, Windows Display Driver Model, DRM, Direct Rendering Manager, DirectX, OpenGL, Vulkan, OpenCL, CUDA, GPGPU, display adapter, framebuffer, kernel mode driver, user mode driver, dxgkrnl, graphics API, shader compiler, hardware acceleration, video decode, DXVA, display enumeration, refresh rate, resolution, multi-monitor, GPU virtualization, vGPU, driver signing, WHQL, TDR, Timeout Detection and Recovery, PCI Express, PCIe, driver INF, driver package, HDR, HDMI, DisplayPort, color depth\n\nRelated Entities:\nChipset Driver, OS Graphics Subsystem, DirectX Runtime, Vulkan Runtime, PCI Express Interface, UEFI GOP, Display Manager, GPU Firmware, Kernel Mode Setting, Driver Signing, WDDM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.660772,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-009",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What does a graphics driver do?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-001",
+        "source": "DomainLayer",
+        "score": 0.669894
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nGraphics Driver\n\nEntity Type:\nDriver\n\nSubtype:\nGraphics Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts GPU hardware and exposes standardized interfaces to the operating system and user-space applications for rendering, display output management, compute workloads, and hardware-accelerated media processing. Operates across both kernel-mode (KMD) and user-mode (UMD) driver components within the OS graphics subsystem.\n\nPurpose:\nProvision of hardware abstraction for GPU rendering pipelines, display adapter enumeration and configuration, graphics API translation, hardware-accelerated compute offload, and display output management including multi-monitor topology and refresh rate control.\n\nAliases:\nGPU Driver, Display Driver, Video Driver, Graphics Adapter Driver, Kernel Mode Driver KMD, User Mode Driver UMD, WDDM Driver, DRM Driver, Display Miniport Driver\n\nKeywords:\nGPU, graphics processing unit, WDDM, Windows Display Driver Model, DRM, Direct Rendering Manager, DirectX, OpenGL, Vulkan, OpenCL, CUDA, GPGPU, display adapter, framebuffer, kernel mode driver, user mode driver, dxgkrnl, graphics API, shader compiler, hardware acceleration, video decode, DXVA, display enumeration, refresh rate, resolution, multi-monitor, GPU virtualization, vGPU, driver signing, WHQL, TDR, Timeout Detection and Recovery, PCI Express, PCIe, driver INF, driver package, HDR, HDMI, DisplayPort, color depth\n\nRelated Entities:\nChipset Driver, OS Graphics Subsystem, DirectX Runtime, Vulkan Runtime, PCI Express Interface, UEFI GOP, Display Manager, GPU Firmware, Kernel Mode Setting, Driver Signing, WDDM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nGraphics Driver\n\nEntity Type:\nDriver\n\nSubtype:\nGraphics Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts GPU hardware and exposes standardized interfaces to the operating system and user-space applications for rendering, display output management, compute workloads, and hardware-accelerated media processing. Operates across both kernel-mode (KMD) and user-mode (UMD) driver components within the OS graphics subsystem.\n\nPurpose:\nProvision of hardware abstraction for GPU rendering pipelines, display adapter enumeration and configuration, graphics API translation, hardware-accelerated compute offload, and display output management including multi-monitor topology and refresh rate control.\n\nAliases:\nGPU Driver, Display Driver, Video Driver, Graphics Adapter Driver, Kernel Mode Driver KMD, User Mode Driver UMD, WDDM Driver, DRM Driver, Display Miniport Driver\n\nKeywords:\nGPU, graphics processing unit, WDDM, Windows Display Driver Model, DRM, Direct Rendering Manager, DirectX, OpenGL, Vulkan, OpenCL, CUDA, GPGPU, display adapter, framebuffer, kernel mode driver, user mode driver, dxgkrnl, graphics API, shader compiler, hardware acceleration, video decode, DXVA, display enumeration, refresh rate, resolution, multi-monitor, GPU virtualization, vGPU, driver signing, WHQL, TDR, Timeout Detection and Recovery, PCI Express, PCIe, driver INF, driver package, HDR, HDMI, DisplayPort, color depth\n\nRelated Entities:\nChipset Driver, OS Graphics Subsystem, DirectX Runtime, Vulkan Runtime, PCI Express Interface, UEFI GOP, Display Manager, GPU Firmware, Kernel Mode Setting, Driver Signing, WDDM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.669894,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-010",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is a chipset driver?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-003",
+        "source": "DomainLayer",
+        "score": 0.75187
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nChipset Driver\n\nEntity Type:\nDriver\n\nSubtype:\nChipset Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nFoundational platform driver package that enables the operating system to correctly identify, enumerate, and communicate with the motherboard chipset components including PCIe root complexes, system bus controllers, SMBus, GPIO, UART, I2C, SPI interfaces, and power management controllers. Provides the platform abstraction layer upon which all other device drivers depend.\n\nPurpose:\nProvision of OS-level enumeration and communication support for chipset subsystems including PCIe topology, system bus controllers, I/O hub interfaces, power management integration, and platform device identification required by dependent drivers.\n\nAliases:\nPlatform Driver, System Chipset Driver, INF Driver, PCI INF Driver, Platform Controller Hub Driver, PCH Driver, Southbridge Driver, Northbridge Driver, System Bus Driver\n\nKeywords:\nchipset, PCH, Platform Controller Hub, SMBus, I2C, SPI, UART, GPIO, PCI, PCIe, PCI Express, root complex, ACPI, power management, device enumeration, INF file, PnP, Plug and Play, HECI, MEI, Management Engine Interface, USB controller, XHCI, EHCI, SATA controller, AHCI, system bus, I/O hub, platform device, driver package, hardware ID, compatible ID, device manager, IRQ routing, DMA remapping, IOMMU, VT-d, DMAR\n\nRelated Entities:\nUEFI, ACPI, PCI Express Interface, Storage Driver, Network Driver, Graphics Driver, Audio Driver, USB Controller Driver, Management Engine Interface, IOMMU, Power Management Subsystem, Driver Signing\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nChipset Driver\n\nEntity Type:\nDriver\n\nSubtype:\nChipset Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nFoundational platform driver package that enables the operating system to correctly identify, enumerate, and communicate with the motherboard chipset components including PCIe root complexes, system bus controllers, SMBus, GPIO, UART, I2C, SPI interfaces, and power management controllers. Provides the platform abstraction layer upon which all other device drivers depend.\n\nPurpose:\nProvision of OS-level enumeration and communication support for chipset subsystems including PCIe topology, system bus controllers, I/O hub interfaces, power management integration, and platform device identification required by dependent drivers.\n\nAliases:\nPlatform Driver, System Chipset Driver, INF Driver, PCI INF Driver, Platform Controller Hub Driver, PCH Driver, Southbridge Driver, Northbridge Driver, System Bus Driver\n\nKeywords:\nchipset, PCH, Platform Controller Hub, SMBus, I2C, SPI, UART, GPIO, PCI, PCIe, PCI Express, root complex, ACPI, power management, device enumeration, INF file, PnP, Plug and Play, HECI, MEI, Management Engine Interface, USB controller, XHCI, EHCI, SATA controller, AHCI, system bus, I/O hub, platform device, driver package, hardware ID, compatible ID, device manager, IRQ routing, DMA remapping, IOMMU, VT-d, DMAR\n\nRelated Entities:\nUEFI, ACPI, PCI Express Interface, Storage Driver, Network Driver, Graphics Driver, Audio Driver, USB Controller Driver, Management Engine Interface, IOMMU, Power Management Subsystem, Driver Signing\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.75187,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-011",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is driver signing?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-003",
+        "source": "DomainLayer",
+        "score": 0.626575
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-005",
+        "source": "DomainLayer",
+        "score": 0.619023
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-004",
+        "source": "DomainLayer",
+        "score": 0.618248
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-002",
+        "source": "DomainLayer",
+        "score": 0.603762
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-DRV-001",
+        "source": "DomainLayer",
+        "score": 0.596341
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nChipset Driver\n\nEntity Type:\nDriver\n\nSubtype:\nChipset Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nFoundational platform driver package that enables the operating system to correctly identify, enumerate, and communicate with the motherboard chipset components including PCIe root complexes, system bus controllers, SMBus, GPIO, UART, I2C, SPI interfaces, and power management controllers. Provides the platform abstraction layer upon which all other device drivers depend.\n\nPurpose:\nProvision of OS-level enumeration and communication support for chipset subsystems including PCIe topology, system bus controllers, I/O hub interfaces, power management integration, and platform device identification required by dependent drivers.\n\nAliases:\nPlatform Driver, System Chipset Driver, INF Driver, PCI INF Driver, Platform Controller Hub Driver, PCH Driver, Southbridge Driver, Northbridge Driver, System Bus Driver\n\nKeywords:\nchipset, PCH, Platform Controller Hub, SMBus, I2C, SPI, UART, GPIO, PCI, PCIe, PCI Express, root complex, ACPI, power management, device enumeration, INF file, PnP, Plug and Play, HECI, MEI, Management Engine Interface, USB controller, XHCI, EHCI, SATA controller, AHCI, system bus, I/O hub, platform device, driver package, hardware ID, compatible ID, device manager, IRQ routing, DMA remapping, IOMMU, VT-d, DMAR\n\nRelated Entities:\nUEFI, ACPI, PCI Express Interface, Storage Driver, Network Driver, Graphics Driver, Audio Driver, USB Controller Driver, Management Engine Interface, IOMMU, Power Management Subsystem, Driver Signing\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nChipset Driver\n\nEntity Type:\nDriver\n\nSubtype:\nChipset Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nFoundational platform driver package that enables the operating system to correctly identify, enumerate, and communicate with the motherboard chipset components including PCIe root complexes, system bus controllers, SMBus, GPIO, UART, I2C, SPI interfaces, and power management controllers. Provides the platform abstraction layer upon which all other device drivers depend.\n\nPurpose:\nProvision of OS-level enumeration and communication support for chipset subsystems including PCIe topology, system bus controllers, I/O hub interfaces, power management integration, and platform device identification required by dependent drivers.\n\nAliases:\nPlatform Driver, System Chipset Driver, INF Driver, PCI INF Driver, Platform Controller Hub Driver, PCH Driver, Southbridge Driver, Northbridge Driver, System Bus Driver\n\nKeywords:\nchipset, PCH, Platform Controller Hub, SMBus, I2C, SPI, UART, GPIO, PCI, PCIe, PCI Express, root complex, ACPI, power management, device enumeration, INF file, PnP, Plug and Play, HECI, MEI, Management Engine Interface, USB controller, XHCI, EHCI, SATA controller, AHCI, system bus, I/O hub, platform device, driver package, hardware ID, compatible ID, device manager, IRQ routing, DMA remapping, IOMMU, VT-d, DMAR\n\nRelated Entities:\nUEFI, ACPI, PCI Express Interface, Storage Driver, Network Driver, Graphics Driver, Audio Driver, USB Controller Driver, Management Engine Interface, IOMMU, Power Management Subsystem, Driver Signing\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nStorage Driver\n\nEntity Type:\nDriver\n\nSubtype:\nStorage Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts storage controller and device hardware, providing the operating system storage stack with standardized interfaces for block device enumeration, I/O request processing, command translation, and storage-specific feature management including hardware encryption, power states, and error recovery across NVMe, SATA, SAS, USB, and SD/MMC interfaces.\n\nPurpose:\nHardware abstraction for storage device I/O operations, storage controller enumeration, block device management, command set translation, hardware encryption feature integration, power state management, and error recovery handling within the OS storage stack.\n\nAliases:\nDisk Driver, NVMe Driver, SATA Driver, AHCI Driver, SAS Driver, StorPort Driver, SCSI Miniport Driver, Storage Miniport Driver, USB Mass Storage Driver, SD Host Controller Driver, RAID Driver\n\nKeywords:\nNVMe, Non-Volatile Memory Express, AHCI, Advanced Host Controller Interface, SATA, SAS, Serial Attached SCSI, SCSI, StorPort, miniport driver, block device, I/O request packet, IRP, disk enumeration, LUN, Logical Unit Number, self-encrypting drive, SED, TCG Opal, ATA security, secure erase, sanitize, TRIM, UNMAP, NCQ, Native Command Queuing, command queuing, PCIe, USB mass storage, UAS, USB Attached SCSI, SD host controller, MMC, eMMC, UFS, RAID, RAID controller, driver INF, WHQL, power management, D3cold, DEVSLP, power loss protection, error recovery, ECC, bad sector remapping, storage filter driver, volume manager\n\nRelated Entities:\nStorage Firmware, Chipset Driver, OS Storage Stack, Volume Manager, Full Disk Encryption, BitLocker, TCG Opal, RAID Controller, StorPort, SCSI, PCI Express Interface, USB Controller Driver, Driver Signing, Boot Critical Driver, File System Driver\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nNetwork Driver\n\nEntity Type:\nDriver\n\nSubtype:\nNetwork Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts network interface controller hardware and exposes a standardized interface to the operating system network stack for wired Ethernet, wireless LAN, Bluetooth, and mobile broadband connectivity. Operates within the OS networking subsystem handling packet transmission, reception, hardware offload, and power management for network adapters.\n\nPurpose:\nHardware abstraction for network packet transmission and reception, NIC feature negotiation, hardware offload configuration, power management of network adapters, wireless association management, and integration with OS network stack protocols.\n\nAliases:\nNIC Driver, Network Adapter Driver, LAN Driver, WLAN Driver, Wi-Fi Driver, Ethernet Driver, NDIS Driver, Wireless Driver, Bluetooth Driver, Mobile Broadband Driver\n\nKeywords:\nNDIS, Network Driver Interface Specification, miniport driver, protocol driver, filter driver, Ethernet, 802.3, IEEE 802.11, Wi-Fi, WLAN, Bluetooth, BLE, mobile broadband, LTE, 5G, WWAN, MAC address, packet offload, TCP offload engine, TOE, RSS, Receive Side Scaling, VMQ, Virtual Machine Queue, SR-IOV, VLAN, QoS, Wake-on-LAN, WoL, power management, PCIe, USB NIC, network adapter enumeration, driver INF, WHQL, OID, Object Identifier, NetCfg, NetAdapterCx, WDF, firmware update, network boot, PXE\n\nRelated Entities:\nNetwork Firmware, Chipset Driver, OS Network Stack, NDIS, PXE Boot, Network Access Control Agent, VPN Agent, Firewall Driver, Driver Signing, PCI Express Interface, USB Controller Driver, Wake-on-LAN\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nAudio Driver\n\nEntity Type:\nDriver\n\nSubtype:\nAudio Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts audio hardware including HD Audio controllers, USB audio devices, and digital signal processors, exposing standardized interfaces to the OS audio subsystem for audio rendering, capture, mixing, and routing. Operates across kernel-mode bus and codec drivers and user-space audio engine components.\n\nPurpose:\nHardware abstraction for audio rendering and capture pipelines, audio device enumeration, sample rate and bit-depth negotiation, hardware mixing offload, acoustic signal processing, and audio endpoint routing within the OS audio subsystem.\n\nAliases:\nSound Driver, HD Audio Driver, Audio Codec Driver, Audio Controller Driver, ALSA Driver, WDM Audio Driver, UAA Driver, Universal Audio Architecture Driver, Sound Card Driver\n\nKeywords:\nHD Audio, HDA, High Definition Audio, Intel HDA, AC97, audio codec, ALSA, Advanced Linux Sound Architecture, WDM, Windows Driver Model, UAA, Universal Audio Architecture, audio endpoint, audio rendering, audio capture, sample rate, bit depth, PCM, audio bus driver, miniport driver, port driver, DSP, digital signal processor, audio mixing, audio routing, WASAPI, ASIO, audio latency, USB audio, I2S, audio device enumeration, microphone driver, speaker driver, audio privacy, mute control, audio virtualization, noise suppression, driver INF, WHQL\n\nRelated Entities:\nChipset Driver, OS Audio Subsystem, HD Audio Controller, USB Audio Class, Audio DSP Firmware, Driver Signing, PCI Express Interface, Kernel Streaming, WASAPI, Audio Endpoint Manager\n\nCompatibility Relevance:\nMedium\n\nValidation Priority:\nMedium",
+      "Domain Knowledge Entity\n\nName:\nGraphics Driver\n\nEntity Type:\nDriver\n\nSubtype:\nGraphics Driver\n\nKnowledge Category:\nDriver\n\nDescription:\nSoftware component that abstracts GPU hardware and exposes standardized interfaces to the operating system and user-space applications for rendering, display output management, compute workloads, and hardware-accelerated media processing. Operates across both kernel-mode (KMD) and user-mode (UMD) driver components within the OS graphics subsystem.\n\nPurpose:\nProvision of hardware abstraction for GPU rendering pipelines, display adapter enumeration and configuration, graphics API translation, hardware-accelerated compute offload, and display output management including multi-monitor topology and refresh rate control.\n\nAliases:\nGPU Driver, Display Driver, Video Driver, Graphics Adapter Driver, Kernel Mode Driver KMD, User Mode Driver UMD, WDDM Driver, DRM Driver, Display Miniport Driver\n\nKeywords:\nGPU, graphics processing unit, WDDM, Windows Display Driver Model, DRM, Direct Rendering Manager, DirectX, OpenGL, Vulkan, OpenCL, CUDA, GPGPU, display adapter, framebuffer, kernel mode driver, user mode driver, dxgkrnl, graphics API, shader compiler, hardware acceleration, video decode, DXVA, display enumeration, refresh rate, resolution, multi-monitor, GPU virtualization, vGPU, driver signing, WHQL, TDR, Timeout Detection and Recovery, PCI Express, PCIe, driver INF, driver package, HDR, HDMI, DisplayPort, color depth\n\nRelated Entities:\nChipset Driver, OS Graphics Subsystem, DirectX Runtime, Vulkan Runtime, PCI Express Interface, UEFI GOP, Display Manager, GPU Firmware, Kernel Mode Setting, Driver Signing, WDDM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.61279,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-012",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is endpoint management?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-MGT-001",
+        "source": "DomainLayer",
+        "score": 0.751358
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nEndpoint Manager\n\nEntity Type:\nManagementTool\n\nSubtype:\nEndpoint Management Tool\n\nKnowledge Category:\nManagement\n\nDescription:\nCentralized enterprise management platform that provides unified lifecycle management of endpoint devices including inventory discovery, OS deployment, application distribution, configuration enforcement, compliance assessment, patch management, remote control, and policy-based management across heterogeneous endpoint estates. Operates through a combination of agent-based and agentless communication channels integrating with directory services, PKI, and cloud management backends.\n\nPurpose:\nProvision of unified endpoint lifecycle management encompassing device enrollment, OS image deployment, software distribution, configuration baseline enforcement, compliance reporting, patch orchestration, remote remediation, and integration with identity and security platforms across enterprise endpoint fleets.\n\nAliases:\nUnified Endpoint Management, UEM, Mobile Device Management, MDM, Enterprise Mobility Management, EMM, Client Management Tool, CMT, Endpoint Management Platform, Systems Management Server, Desktop Management Tool, Device Management Platform\n\nKeywords:\nunified endpoint management, UEM, MDM, mobile device management, EMM, enterprise mobility management, device enrollment, DEP, device enrollment program, autopilot, zero touch provisioning, OS deployment, OSD, task sequence, imaging, WinPE, PXE boot, software distribution, application packaging, MSI, MSIX, configuration baseline, compliance policy, configuration profile, mobileconfig, Group Policy, GPO, DCM, desired configuration management, remote control, remote assistance, patch management, software update, inventory, hardware inventory, software inventory, asset management, CMDB, co-management, conditional access, endpoint compliance, certificate management, PKI integration, SCEP, NDES, cloud management gateway, CMG, management agent, client agent, agent health, heartbeat, policy refresh, wake-on-LAN, remote wipe, selective wipe, device retirement, enrollment restriction, device compliance, reporting, RBAC, role based access control, collections, device groups, boundary groups, distribution point, management point, content delivery, BranchCache, peer cache, delivery optimization\n\nRelated Entities:\nMonitoring Agent, Patch Manager, MDM Policy Engine, Group Policy, Active Directory, PKI, OS Deployment Service, Software Distribution System, Configuration Baseline, Compliance Policy Engine, Endpoint Agent, Identity Provider, Conditional Access Policy, Asset Inventory System, CMDB, Remote Control Service, Certificate Management System\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nEndpoint Manager\n\nEntity Type:\nManagementTool\n\nSubtype:\nEndpoint Management Tool\n\nKnowledge Category:\nManagement\n\nDescription:\nCentralized enterprise management platform that provides unified lifecycle management of endpoint devices including inventory discovery, OS deployment, application distribution, configuration enforcement, compliance assessment, patch management, remote control, and policy-based management across heterogeneous endpoint estates. Operates through a combination of agent-based and agentless communication channels integrating with directory services, PKI, and cloud management backends.\n\nPurpose:\nProvision of unified endpoint lifecycle management encompassing device enrollment, OS image deployment, software distribution, configuration baseline enforcement, compliance reporting, patch orchestration, remote remediation, and integration with identity and security platforms across enterprise endpoint fleets.\n\nAliases:\nUnified Endpoint Management, UEM, Mobile Device Management, MDM, Enterprise Mobility Management, EMM, Client Management Tool, CMT, Endpoint Management Platform, Systems Management Server, Desktop Management Tool, Device Management Platform\n\nKeywords:\nunified endpoint management, UEM, MDM, mobile device management, EMM, enterprise mobility management, device enrollment, DEP, device enrollment program, autopilot, zero touch provisioning, OS deployment, OSD, task sequence, imaging, WinPE, PXE boot, software distribution, application packaging, MSI, MSIX, configuration baseline, compliance policy, configuration profile, mobileconfig, Group Policy, GPO, DCM, desired configuration management, remote control, remote assistance, patch management, software update, inventory, hardware inventory, software inventory, asset management, CMDB, co-management, conditional access, endpoint compliance, certificate management, PKI integration, SCEP, NDES, cloud management gateway, CMG, management agent, client agent, agent health, heartbeat, policy refresh, wake-on-LAN, remote wipe, selective wipe, device retirement, enrollment restriction, device compliance, reporting, RBAC, role based access control, collections, device groups, boundary groups, distribution point, management point, content delivery, BranchCache, peer cache, delivery optimization\n\nRelated Entities:\nMonitoring Agent, Patch Manager, MDM Policy Engine, Group Policy, Active Directory, PKI, OS Deployment Service, Software Distribution System, Configuration Baseline, Compliance Policy Engine, Endpoint Agent, Identity Provider, Conditional Access Policy, Asset Inventory System, CMDB, Remote Control Service, Certificate Management System\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.751358,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-013",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is patch management?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-MGT-003",
+        "source": "DomainLayer",
+        "score": 0.740956
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nPatch Manager\n\nEntity Type:\nManagementTool\n\nSubtype:\nPatch Management Tool\n\nKnowledge Category:\nManagement\n\nDescription:\nEnterprise software component responsible for the systematic discovery, acquisition, testing, scheduling, deployment, and verification of patches across operating systems, applications, firmware, and drivers on managed endpoint fleets. Integrates with vulnerability management platforms to prioritize patch deployment based on CVE severity, exploitability, and asset criticality. Maintains patch compliance state records and supports rollback capabilities for failed deployments.\n\nPurpose:\nSystematic orchestration of the endpoint patch lifecycle encompassing vulnerability-driven patch prioritization, patch acquisition from authoritative sources, controlled staging and testing, scheduled deployment across endpoint groups, installation verification, compliance state reporting, and rollback management for OS, application, driver, and firmware updates.\n\nAliases:\nPatch Management System, Software Update Management, Update Management Tool, Patch Orchestration Platform, Vulnerability Remediation Manager, Software Patching Tool, OS Update Manager, Patch Deployment Tool, Patch Compliance Manager\n\nKeywords:\npatch management, software update, OS patch, security patch, cumulative update, hotfix, service pack, patch Tuesday, out-of-band patch, zero-day patch, firmware update, driver update, BIOS update, UEFI update, patch catalog, WSUS, Windows Server Update Services, Windows Update, Windows Update for Business, WUfB, SUG, software update group, patch baseline, patch ring, deployment ring, phased deployment, patch testing, pilot group, staging environment, patch scheduling, maintenance window, reboot management, forced reboot, reboot suppression, patch compliance, missing patch, patch gap, patch SLA, CVE, Common Vulnerabilities and Exposures, CVSS, vulnerability severity, patch prioritization, vulnerability scanner integration, patch verification, patch rollback, uninstall patch, patch history, patch audit, patch report, third party patching, application patching, Linux patching, RPM update, APT update, YUM update, DNF update, macOS update, softwareupdate, delta patch, full patch, patch download, patch cache, content distribution, BranchCache, delivery optimization, peer-to-peer patching, patch agent, patch scan, patch detection\n\nRelated Entities:\nEndpoint Manager, Monitoring Agent, Vulnerability Management Platform, CVE Database, WSUS, Windows Update, OS Update Service, Firmware Update Utility, Driver Update Service, Deployment Ring Policy, Maintenance Window Policy, Patch Compliance Reporting, SIEM, Change Management System, Software Distribution System, Asset Inventory System\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nPatch Manager\n\nEntity Type:\nManagementTool\n\nSubtype:\nPatch Management Tool\n\nKnowledge Category:\nManagement\n\nDescription:\nEnterprise software component responsible for the systematic discovery, acquisition, testing, scheduling, deployment, and verification of patches across operating systems, applications, firmware, and drivers on managed endpoint fleets. Integrates with vulnerability management platforms to prioritize patch deployment based on CVE severity, exploitability, and asset criticality. Maintains patch compliance state records and supports rollback capabilities for failed deployments.\n\nPurpose:\nSystematic orchestration of the endpoint patch lifecycle encompassing vulnerability-driven patch prioritization, patch acquisition from authoritative sources, controlled staging and testing, scheduled deployment across endpoint groups, installation verification, compliance state reporting, and rollback management for OS, application, driver, and firmware updates.\n\nAliases:\nPatch Management System, Software Update Management, Update Management Tool, Patch Orchestration Platform, Vulnerability Remediation Manager, Software Patching Tool, OS Update Manager, Patch Deployment Tool, Patch Compliance Manager\n\nKeywords:\npatch management, software update, OS patch, security patch, cumulative update, hotfix, service pack, patch Tuesday, out-of-band patch, zero-day patch, firmware update, driver update, BIOS update, UEFI update, patch catalog, WSUS, Windows Server Update Services, Windows Update, Windows Update for Business, WUfB, SUG, software update group, patch baseline, patch ring, deployment ring, phased deployment, patch testing, pilot group, staging environment, patch scheduling, maintenance window, reboot management, forced reboot, reboot suppression, patch compliance, missing patch, patch gap, patch SLA, CVE, Common Vulnerabilities and Exposures, CVSS, vulnerability severity, patch prioritization, vulnerability scanner integration, patch verification, patch rollback, uninstall patch, patch history, patch audit, patch report, third party patching, application patching, Linux patching, RPM update, APT update, YUM update, DNF update, macOS update, softwareupdate, delta patch, full patch, patch download, patch cache, content distribution, BranchCache, delivery optimization, peer-to-peer patching, patch agent, patch scan, patch detection\n\nRelated Entities:\nEndpoint Manager, Monitoring Agent, Vulnerability Management Platform, CVE Database, WSUS, Windows Update, OS Update Service, Firmware Update Utility, Driver Update Service, Deployment Ring Policy, Maintenance Window Policy, Patch Compliance Reporting, SIEM, Change Management System, Software Distribution System, Asset Inventory System\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.740956,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-014",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is a monitoring agent?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-MGT-002",
+        "source": "DomainLayer",
+        "score": 0.703891
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-SEC-004",
+        "source": "DomainLayer",
+        "score": 0.634843
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-SEC-003",
+        "source": "DomainLayer",
+        "score": 0.620855
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nMonitoring Agent\n\nEntity Type:\nManagementTool\n\nSubtype:\nMonitoring Agent\n\nKnowledge Category:\nManagement\n\nDescription:\nLightweight software agent deployed on managed endpoints that continuously collects operational telemetry including system performance metrics, resource utilization, process state, event log data, service health, hardware sensor readings, and application availability indicators. Transmits collected data to centralized monitoring platforms for aggregation, threshold alerting, trend analysis, and capacity planning. May operate in conjunction with security telemetry pipelines and SIEM integrations.\n\nPurpose:\nContinuous collection and forwarding of endpoint operational telemetry encompassing performance counters, resource utilization metrics, event log streams, service availability states, hardware health indicators, and application performance data to centralized monitoring and observability platforms for alerting, dashboarding, and capacity management.\n\nAliases:\nEndpoint Monitoring Agent, System Monitoring Agent, Telemetry Agent, Performance Monitoring Agent, Infrastructure Agent, Observability Agent, Health Monitoring Agent, Remote Monitoring Agent, RMM Agent, Remote Monitoring and Management Agent, APM Agent, Node Exporter\n\nKeywords:\nmonitoring agent, telemetry, performance counter, metric collection, CPU utilization, memory utilization, disk I/O, network throughput, event log, Windows Event Log, syslog, journald, service health, process monitoring, uptime, availability, threshold alerting, alerting rule, heartbeat, agent health check, SNMP, WMI, Windows Management Instrumentation, WMI provider, ETW, Event Tracing for Windows, eBPF, perf, sysstat, hardware sensor, IPMI, BMC, temperature monitoring, fan speed, power consumption, SMART data, application performance monitoring, APM, real user monitoring, distributed tracing, log forwarding, log aggregation, SIEM integration, time series database, TSDB, Prometheus, metrics endpoint, scrape interval, push gateway, pull model, push model, agent configuration, agent deployment, agent update, RMM, remote monitoring and management, capacity planning, baseline performance, anomaly detection, dashboard, observability, OpenTelemetry, OTLP\n\nRelated Entities:\nEndpoint Manager, Patch Manager, SIEM, Log Aggregation Platform, Alerting Engine, Time Series Database, WMI, ETW, eBPF, syslog, Hardware Sensor Interface, IPMI, BMC, Application Performance Monitoring, OpenTelemetry, EDR Agent, OS Event Log\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nMonitoring Agent\n\nEntity Type:\nManagementTool\n\nSubtype:\nMonitoring Agent\n\nKnowledge Category:\nManagement\n\nDescription:\nLightweight software agent deployed on managed endpoints that continuously collects operational telemetry including system performance metrics, resource utilization, process state, event log data, service health, hardware sensor readings, and application availability indicators. Transmits collected data to centralized monitoring platforms for aggregation, threshold alerting, trend analysis, and capacity planning. May operate in conjunction with security telemetry pipelines and SIEM integrations.\n\nPurpose:\nContinuous collection and forwarding of endpoint operational telemetry encompassing performance counters, resource utilization metrics, event log streams, service availability states, hardware health indicators, and application performance data to centralized monitoring and observability platforms for alerting, dashboarding, and capacity management.\n\nAliases:\nEndpoint Monitoring Agent, System Monitoring Agent, Telemetry Agent, Performance Monitoring Agent, Infrastructure Agent, Observability Agent, Health Monitoring Agent, Remote Monitoring Agent, RMM Agent, Remote Monitoring and Management Agent, APM Agent, Node Exporter\n\nKeywords:\nmonitoring agent, telemetry, performance counter, metric collection, CPU utilization, memory utilization, disk I/O, network throughput, event log, Windows Event Log, syslog, journald, service health, process monitoring, uptime, availability, threshold alerting, alerting rule, heartbeat, agent health check, SNMP, WMI, Windows Management Instrumentation, WMI provider, ETW, Event Tracing for Windows, eBPF, perf, sysstat, hardware sensor, IPMI, BMC, temperature monitoring, fan speed, power consumption, SMART data, application performance monitoring, APM, real user monitoring, distributed tracing, log forwarding, log aggregation, SIEM integration, time series database, TSDB, Prometheus, metrics endpoint, scrape interval, push gateway, pull model, push model, agent configuration, agent deployment, agent update, RMM, remote monitoring and management, capacity planning, baseline performance, anomaly detection, dashboard, observability, OpenTelemetry, OTLP\n\nRelated Entities:\nEndpoint Manager, Patch Manager, SIEM, Log Aggregation Platform, Alerting Engine, Time Series Database, WMI, ETW, eBPF, syslog, Hardware Sensor Interface, IPMI, BMC, Application Performance Monitoring, OpenTelemetry, EDR Agent, OS Event Log\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nEDR Agent\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nSecurity Agent\n\nKnowledge Category:\nSecurity\n\nDescription:\nEndpoint Detection and Response (EDR) agent that collects telemetry (process, file, network, registry, and memory activity) and provides analysis, hunting, and containment capabilities.\n\nPurpose:\nEnable detection, investigation, and response to advanced threats by aggregating telemetry, applying behavioral analytics, and supporting containment or remediation actions.\n\nAliases:\nNone documented\n\nKeywords:\nKernel Sensor, Process Telemetry Collector, File System Activity Monitor, Network Activity Monitor, Registry Activity Monitor, Memory Forensics Module, Threat Intelligence Integration, Automated Response Engine, Behavioral Analytics Engine, Isolation and Containment Module\n\nRelated Entities:\nAntivirus, Host Intrusion Detection System, Extended Detection and Response Agent, User and Entity Behavior Analytics Agent, Security Information and Event Management Forwarder, File Integrity Monitoring Agent\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nAntivirus\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nSecurity Agent\n\nKnowledge Category:\nSecurity\n\nDescription:\nEndpoint security agent that performs signature-based and heuristic scanning, and other detection techniques to identify and mitigate known malware and suspicious files.\n\nPurpose:\nDetect and mitigate known malicious software via signature updates, heuristic analysis, and scanning engines while integrating with endpoint management and update services.\n\nAliases:\nNone documented\n\nKeywords:\nSignature-Based Detection Engine, Heuristic Analysis Engine, Behavioral Detection Engine, Real-Time File System Scanner, On-Demand Scanner, Quarantine Manager, Threat Definition Update Service, Boot Sector Scanner, Email Attachment Scanner, Web Content Scanner, Script Execution Monitor, Exploit Prevention Module\n\nRelated Entities:\nEDR Agent, Anti-Malware Engine, Host Intrusion Prevention System, Application Whitelisting Agent, File Integrity Monitoring Agent, Data Loss Prevention Agent\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.653196,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-015",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What happens during Power-On Self-Test?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-001",
+        "source": "DomainLayer",
+        "score": 0.539542
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-003",
+        "source": "DomainLayer",
+        "score": 0.504416
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nBIOS\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLegacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.\n\nPurpose:\nHardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.\n\nAliases:\nBasic Input/Output System, Legacy BIOS, System BIOS, ROM BIOS, PC BIOS, Traditional BIOS\n\nKeywords:\nPOST, Power-On Self-Test, MBR, Master Boot Record, INT 13h, CMOS, 16-bit real mode, non-volatile memory, boot sequence, hardware initialization, IRQ, DMA, legacy boot, CSM, Compatibility Support Module, flash chip, SPI ROM, firmware update, BIOS setup utility, BIOS version, BIOS password\n\nRelated Entities:\nUEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nBIOS\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLegacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.\n\nPurpose:\nHardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.\n\nAliases:\nBasic Input/Output System, Legacy BIOS, System BIOS, ROM BIOS, PC BIOS, Traditional BIOS\n\nKeywords:\nPOST, Power-On Self-Test, MBR, Master Boot Record, INT 13h, CMOS, 16-bit real mode, non-volatile memory, boot sequence, hardware initialization, IRQ, DMA, legacy boot, CSM, Compatibility Support Module, flash chip, SPI ROM, firmware update, BIOS setup utility, BIOS version, BIOS password\n\nRelated Entities:\nUEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nEmbedded Controller Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nPlatform Control Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLow-level firmware executing on a dedicated embedded microcontroller within an endpoint device, independent of the main CPU. Manages board-level hardware functions including power sequencing, thermal regulation, battery management, keyboard input, fan control, and lid state detection. Operates autonomously even when the main system is powered off.\n\nPurpose:\nAutonomous management of board-level hardware subsystems including power delivery, thermal policy enforcement, battery charge control, keyboard matrix scanning, and hardware event signaling to the main platform firmware.\n\nAliases:\nEC Firmware, Embedded Controller, EC, Board Management Firmware, System Management Controller Firmware, Keyboard Controller Firmware, KBC Firmware\n\nKeywords:\nembedded controller, EC, power sequencing, thermal management, battery management, fan control, keyboard matrix, lid switch, S-states, ACPI, SMBus, I2C, SPI, LPC bus, power button, wake events, EC firmware update, microcontroller, battery charging, smart battery, charge control, dGPU mux, USB-C power delivery, PD controller, GPIO, firmware flashing\n\nRelated Entities:\nUEFI, BIOS, ACPI, TPM, Battery Management System, Thermal Management Subsystem, USB Power Delivery Controller, Platform Power Management, Firmware Update Utility\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh"
+    ],
+    "confidence": {
+      "level": "LOW",
+      "score": 0.521979,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-016",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is an operating system bootloader?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-004",
+        "source": "DomainLayer",
+        "score": 0.636546
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-007",
+        "source": "DomainLayer",
+        "score": 0.61977
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-002",
+        "source": "DomainLayer",
+        "score": 0.616691
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-005",
+        "source": "DomainLayer",
+        "score": 0.615846
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-001",
+        "source": "DomainLayer",
+        "score": 0.615189
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nLinux\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nOpen-source, POSIX-compliant operating system kernel and ecosystem built on the monolithic Linux kernel with loadable module support, providing hardware abstraction, process scheduling, memory management, virtual file system, and networking subsystems. Distributed in numerous vendor-maintained and community-maintained distributions targeting enterprise servers, cloud workloads, developer endpoints, and embedded systems.\n\nPurpose:\nProvision of a stable, customizable, open-source OS platform for enterprise server, cloud, and endpoint workloads, supporting diverse hardware architectures, containerization, kernel-level security enforcement, and flexible deployment models across distribution variants.\n\nAliases:\nLinux OS, GNU/Linux, Linux Kernel, Linux Platform, Linux Distribution, Linux Distro, Open Source OS\n\nKeywords:\nLinux kernel, monolithic kernel, LKM, Loadable Kernel Module, POSIX, ELF, systemd, init system, GNU, glibc, ext4, XFS, Btrfs, VFS, Virtual File System, SELinux, Security Enhanced Linux, AppArmor, seccomp, cgroups, namespaces, eBPF, kernel module signing, DKMS, Dynamic Kernel Module Support, udev, udev rules, dmesg, sysfs, procfs, devfs, iptables, nftables, netfilter, LUKS, dm-crypt, PAM, Pluggable Authentication Modules, SSH, sudo, rpm, deb, package manager, container, Docker, OCI, Kubernetes, KVM, QEMU, UEFI boot, GRUB, Linux kernel version, LTS kernel, audit framework\n\nRelated Entities:\nUbuntu, RHEL, Linux Kernel, SELinux, AppArmor, UEFI, GRUB Bootloader, Secure Boot, LUKS, systemd, eBPF, Kernel Module Signing, PAM, cgroups, Container Runtime, TPM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nLinux\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nOpen-source, POSIX-compliant operating system kernel and ecosystem built on the monolithic Linux kernel with loadable module support, providing hardware abstraction, process scheduling, memory management, virtual file system, and networking subsystems. Distributed in numerous vendor-maintained and community-maintained distributions targeting enterprise servers, cloud workloads, developer endpoints, and embedded systems.\n\nPurpose:\nProvision of a stable, customizable, open-source OS platform for enterprise server, cloud, and endpoint workloads, supporting diverse hardware architectures, containerization, kernel-level security enforcement, and flexible deployment models across distribution variants.\n\nAliases:\nLinux OS, GNU/Linux, Linux Kernel, Linux Platform, Linux Distribution, Linux Distro, Open Source OS\n\nKeywords:\nLinux kernel, monolithic kernel, LKM, Loadable Kernel Module, POSIX, ELF, systemd, init system, GNU, glibc, ext4, XFS, Btrfs, VFS, Virtual File System, SELinux, Security Enhanced Linux, AppArmor, seccomp, cgroups, namespaces, eBPF, kernel module signing, DKMS, Dynamic Kernel Module Support, udev, udev rules, dmesg, sysfs, procfs, devfs, iptables, nftables, netfilter, LUKS, dm-crypt, PAM, Pluggable Authentication Modules, SSH, sudo, rpm, deb, package manager, container, Docker, OCI, Kubernetes, KVM, QEMU, UEFI boot, GRUB, Linux kernel version, LTS kernel, audit framework\n\nRelated Entities:\nUbuntu, RHEL, Linux Kernel, SELinux, AppArmor, UEFI, GRUB Bootloader, Secure Boot, LUKS, systemd, eBPF, Kernel Module Signing, PAM, cgroups, Container Runtime, TPM\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nmacOS\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Family\n\nKnowledge Category:\nOperating System\n\nDescription:\nApple-developed proprietary Unix-based operating system built on the XNU hybrid kernel combining Mach microkernel and BSD subsystems, providing a POSIX-compliant execution environment with a hardware-integrated security architecture including Apple Silicon Secure Enclave, System Integrity Protection, Gatekeeper, Transparency Consent and Control, FileVault full-disk encryption, and a signed kernel extension and system extension model.\n\nPurpose:\nProvision of a hardware-integrated, security-enforced POSIX-compliant enterprise endpoint platform with mandatory code signing, system integrity enforcement, hardware-rooted trust, privacy access controls, and enterprise management integration via MDM and configuration profile frameworks.\n\nAliases:\nMac OS X, OS X, macOS Ventura, macOS Sonoma, macOS Sequoia, Apple macOS, Darwin, macOS Platform, Apple Desktop OS\n\nKeywords:\nXNU kernel, Mach kernel, BSD, POSIX, macOS version, System Integrity Protection, SIP, Gatekeeper, Notarization, code signing, kernel extension, kext, System Extension, DriverKit, EndpointSecurity framework, Transparency Consent and Control, TCC, FileVault, APFS, Apple File System, Secure Enclave, Apple Silicon, T2 chip, Activation Lock, MDM, Mobile Device Management, Configuration Profile, mobileconfig, Apple Business Manager, ABM, ABM DEP, Device Enrollment Program, ADE, Automated Device Enrollment, Rosetta 2, Universal Binary, Homebrew, PKG, DMG, launchd, launchctl, plist, macOS update, softwareupdate, macOS release, Ventura, Sonoma, Sequoia, Monterey, Jamf, MDM enrollment, supervised mode, Accessibility API, UAMDM, User Approved MDM\n\nRelated Entities:\nXNU Kernel, Secure Enclave, System Integrity Protection, Gatekeeper, FileVault, DriverKit, EndpointSecurity Framework, TCC, MDM Configuration Profile, Apple Business Manager, UEFI, Secure Boot, TPM Equivalent, APFS, Code Signing, Kernel Extension, System Extension\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nUEFI\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nModern pre-boot firmware specification and runtime environment that replaces legacy BIOS, operating in 32-bit or 64-bit protected mode with support for GPT partition tables, network stack, cryptographic services, and a modular driver model. Provides a standardized interface between platform firmware and operating systems.\n\nPurpose:\nPlatform hardware initialization, Secure Boot enforcement, GPT-based boot management, provision of UEFI runtime services, and extensible pre-OS execution environment for drivers and applications.\n\nAliases:\nUnified Extensible Firmware Interface, UEFI BIOS, EFI, Extensible Firmware Interface, UEFI Firmware, UEFI Platform Firmware\n\nKeywords:\nSecure Boot, GPT, GUID Partition Table, EFI System Partition, ESP, DXE, Driver Execution Environment, PEI, Pre-EFI Initialization, BDS, Boot Device Select, UEFI Shell, NVRAM, Boot Manager, MOK, Machine Owner Key, Platform Key, Key Exchange Key, db, dbx, Signature Database, TPM integration, Measured Boot, ACPI, SMBIOS, firmware update, capsule update, UEFI variable, runtime services, boot services, network boot, PXE, HTTP Boot, UEFI driver\n\nRelated Entities:\nBIOS, Secure Boot, TPM, GPT, EFI System Partition, OS Bootloader, Measured Boot, ACPI, SMBIOS, Embedded Controller Firmware, Firmware Update Utility, CSM\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nUbuntu\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Distribution\n\nKnowledge Category:\nOperating System\n\nDescription:\nDebian-derived Linux distribution following a time-based release model with regular releases every six months and Long Term Support releases every two years providing five-year maintenance windows. Packages the Linux kernel with APT package management, systemd init system, Snap application delivery, and default desktop and server configurations targeting developer, enterprise endpoint, and cloud deployments.\n\nPurpose:\nProvision of a stable, commercially supported Debian-based Linux distribution with predictable release cadence, extended LTS security maintenance, cloud and container optimization, and enterprise support subscriptions for endpoint and server deployments.\n\nAliases:\nUbuntu Linux, Ubuntu LTS, Ubuntu Desktop, Ubuntu Server, Ubuntu Pro, Canonical Ubuntu, Ubuntu Focal, Ubuntu Jammy, Ubuntu Noble\n\nKeywords:\nUbuntu, Debian, APT, Advanced Package Tool, dpkg, deb package, LTS, Long Term Support, Ubuntu Pro, Snap, snapd, Snapcraft, systemd, GNOME, Wayland, X11, linux-image, linux-headers, kernel version, HWE, Hardware Enablement Stack, DKMS, AppArmor, UFW, Uncomplicated Firewall, LUKS, Ubuntu Security Notices, USN, Livepatch, kernel live patching, landscape, ubuntu-advantage, pro-client, cloud-init, netplan, Ubuntu release codename, focal, jammy, noble, EOL, end of life, MAAS, Juju, multipass, WSL, container, LXC, LXD\n\nRelated Entities:\nLinux, Debian, Linux Kernel, APT Package Manager, AppArmor, LUKS, systemd, UEFI, Secure Boot, GRUB Bootloader, Snap Package Manager, DKMS, Ubuntu Pro, Kernel Live Patching, Hardware Enablement Stack\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nBIOS\n\nEntity Type:\nFirmware\n\nSubtype:\nPre-Boot Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nLegacy pre-boot firmware embedded in non-volatile memory that initializes hardware components during Power-On Self-Test (POST) and provides runtime services to the operating system via interrupt-based interfaces. Operates in 16-bit real mode with a 1MB addressable memory limit.\n\nPurpose:\nHardware initialization, POST execution, boot device enumeration, and provision of low-level runtime services to the OS and bootloader via software interrupts.\n\nAliases:\nBasic Input/Output System, Legacy BIOS, System BIOS, ROM BIOS, PC BIOS, Traditional BIOS\n\nKeywords:\nPOST, Power-On Self-Test, MBR, Master Boot Record, INT 13h, CMOS, 16-bit real mode, non-volatile memory, boot sequence, hardware initialization, IRQ, DMA, legacy boot, CSM, Compatibility Support Module, flash chip, SPI ROM, firmware update, BIOS setup utility, BIOS version, BIOS password\n\nRelated Entities:\nUEFI, MBR, POST, CMOS, CSM, Embedded Controller Firmware, OS Bootloader, Hardware Abstraction Layer, Secure Boot, Firmware Update Utility\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical"
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.620808,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-017",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What is BitLocker?",
+    "route": "DOMAIN",
+    "retrieved_sources": [
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-SEC-002",
+        "source": "DomainLayer",
+        "score": 0.522881
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-FW-004",
+        "source": "DomainLayer",
+        "score": 0.502783
+      },
+      {
+        "collection": "kb_domain_layer",
+        "source_id": "DOMAIN-DOC-OS-002",
+        "source": "DomainLayer",
+        "score": 0.502598
+      }
+    ],
+    "summary": "Domain Knowledge Entity\n\nName:\nSecure Boot\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nBoot Security Feature\n\nKnowledge Category:\nSecurity\n\nDescription:\nPre-boot integrity enforcement mechanism that validates signatures of bootloader and firmware components against authorized keys and signature stores to help ensure platform boot integrity.\n\nPurpose:\nEnforce verification of pre-OS images and boot components to reduce the risk of unauthorized or tampered boot software executing on the platform.\n\nAliases:\nNone documented\n\nKeywords:\nPlatform Key, Key Exchange Key, Authorized Signature Database, Forbidden Signature Database, Machine Owner Key, Secure Boot Policy, Secure Boot Audit Mode, Secure Boot Setup Mode, Bootloader Signing, Kernel Module Signing, Option ROM Validation, Secure Boot Certificate Management\n\nRelated Entities:\nTPM, TPM Measured Boot, Boot Guard, UEFI Signature Database, Firmware Integrity Verification, Platform Key Management, Early Launch Anti-Malware\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+    "detailed_explanation": [
+      "Domain Knowledge Entity\n\nName:\nSecure Boot\n\nEntity Type:\nSecurityComponent\n\nSubtype:\nBoot Security Feature\n\nKnowledge Category:\nSecurity\n\nDescription:\nPre-boot integrity enforcement mechanism that validates signatures of bootloader and firmware components against authorized keys and signature stores to help ensure platform boot integrity.\n\nPurpose:\nEnforce verification of pre-OS images and boot components to reduce the risk of unauthorized or tampered boot software executing on the platform.\n\nAliases:\nNone documented\n\nKeywords:\nPlatform Key, Key Exchange Key, Authorized Signature Database, Forbidden Signature Database, Machine Owner Key, Secure Boot Policy, Secure Boot Audit Mode, Secure Boot Setup Mode, Bootloader Signing, Kernel Module Signing, Option ROM Validation, Secure Boot Certificate Management\n\nRelated Entities:\nTPM, TPM Measured Boot, Boot Guard, UEFI Signature Database, Firmware Integrity Verification, Platform Key Management, Early Launch Anti-Malware\n\nCompatibility Relevance:\nCritical\n\nValidation Priority:\nCritical",
+      "Domain Knowledge Entity\n\nName:\nStorage Firmware\n\nEntity Type:\nFirmware\n\nSubtype:\nStorage Device Firmware\n\nKnowledge Category:\nFirmware\n\nDescription:\nFirmware embedded within storage devices including HDDs, SSDs, NVMe drives, and storage controllers that manages media access, error correction, wear leveling, encryption operations, and interface protocol compliance. Executes on the device's internal processor, independent of the host operating system.\n\nPurpose:\nManagement of storage media access, interface protocol execution, hardware-based encryption, error correction, wear leveling, bad block management, and performance optimization independent of the host operating system.\n\nAliases:\nDrive Firmware, HDD Firmware, SSD Firmware, NVMe Firmware, Disk Firmware, Storage Controller Firmware, RAID Controller Firmware\n\nKeywords:\nNVMe, SATA, SAS, ATA, ATA Security, Self-Encrypting Drive, SED, TCG Opal, TCG Enterprise, eDrive, IEEE 1667, S.M.A.R.T, wear leveling, bad block management, ECC, error correction code, NAND flash, FTL, Flash Translation Layer, drive firmware update, DRAM cache, over-provisioning, sanitize command, secure erase, TRIM, UNMAP, storage encryption, storage controller, host-managed SMR, device-managed SMR, ZNS\n\nRelated Entities:\nUEFI, NVMe Driver, SATA Controller, Storage Controller Driver, Self-Encrypting Drive, TCG Opal, BitLocker, Full Disk Encryption, Firmware Update Utility, RAID Controller\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh",
+      "Domain Knowledge Entity\n\nName:\nWindows 10\n\nEntity Type:\nOperatingSystem\n\nSubtype:\nOperating System Version\n\nKnowledge Category:\nOperating System\n\nDescription:\nSpecific major release of the Windows NT-based operating system introducing the Universal Windows Platform, servicing branch model, Windows as a Service delivery, WDDM 2.x graphics model, and enhanced security features including Credential Guard, Device Guard, and Windows Hello. Delivered through semi-annual feature update and monthly cumulative update servicing channels.\n\nPurpose:\nProvision of an enterprise endpoint execution environment with servicing branch management, hardware compatibility across a broad device ecosystem, enterprise security baseline features, and transition path to modern management via MDM and co-management frameworks.\n\nAliases:\nWin10, Windows 10 OS, Windows 10 Enterprise, Windows 10 Pro, Windows 10 LTSC, Windows 10 SAC, WaaS Windows 10\n\nKeywords:\nWindows 10, Windows as a Service, WaaS, feature update, cumulative update, servicing branch, Semi-Annual Channel, SAC, LTSC, Long Term Servicing Channel, build number, OS version, 1903, 1909, 2004, 20H2, 21H1, 21H2, 22H2, Universal Windows Platform, UWP, WDDM 2.0, Credential Guard, Device Guard, Windows Hello, BitLocker, Secure Boot, TPM 1.2, TPM 2.0, UEFI, CBS, Component Based Servicing, Windows Update, WSUS, Intune, SCCM, co-management, MDM, Windows Defender Antivirus, Windows Defender Firewall, AppLocker, WDAC, Windows Defender Application Control, driver compatibility, WHQL, hardware compatibility list, HCL, end of support, EOS\n\nRelated Entities:\nWindows, Windows 11, Windows NT Kernel, Windows Update, WSUS, LTSC, MDM Policy Engine, Group Policy, BitLocker, Credential Guard, WDAC, TPM, Secure Boot, UEFI, WHQL Driver Signing, Windows Defender\n\nCompatibility Relevance:\nHigh\n\nValidation Priority:\nHigh"
+    ],
+    "confidence": {
+      "level": "LOW",
+      "score": 0.50942,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "DOM-018",
+    "category": "DOMAIN",
+    "expected_route": "DOMAIN"
+  },
+  {
+    "question": "What firmware versions are supported?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.701792
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.695621
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000386",
+        "source": "CompatibilityLayer",
+        "score": 0.689382
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000392",
+        "source": "CompatibilityLayer",
+        "score": 0.683092
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000364",
+        "source": "CompatibilityLayer",
+        "score": 0.675677
+      }
+    ],
+    "summary": "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+    "detailed_explanation": [
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+      "firmware REQUIRES firmware 8.2.0. Status: pending_review.",
+      "firmware 8.2.0 REQUIRES firmware 8.2.1. Status: pending_review.",
+      "System Firmware 8.2.1 DEPENDS_ON Platform Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.689113,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-001",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "What causes non-compliance?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.576786
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000400",
+        "source": "CompatibilityLayer",
+        "score": 0.576695
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.573981
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000383",
+        "source": "CompatibilityLayer",
+        "score": 0.571661
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000376",
+        "source": "CompatibilityLayer",
+        "score": 0.570639
+      }
+    ],
+    "summary": "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES Driver Pack 12.5.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "firmware firmware installed  REQUIRES_FIX_IN firmware 8.2.1. Status: pending_review.",
+      "unknown unknown installed  REQUIRES Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "LOW",
+      "score": 0.573952,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-002",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "What are the compatibility requirements?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.731152
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000360",
+        "source": "CompatibilityLayer",
+        "score": 0.72604
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000364",
+        "source": "CompatibilityLayer",
+        "score": 0.72463
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.718034
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.716478
+      }
+    ],
+    "summary": "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+      "System Firmware 8.2.1 DEPENDS_ON Platform Driver Pack 12.5.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.723267,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-003",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which software conflicts exist?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.659382
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000362",
+        "source": "CompatibilityLayer",
+        "score": 0.635803
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.631719
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000373",
+        "source": "CompatibilityLayer",
+        "score": 0.616671
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000369",
+        "source": "CompatibilityLayer",
+        "score": 0.607388
+      }
+    ],
+    "summary": "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "Security Agent and Enterprise OS 2025.2 REQUIRES_FIX_IN Enterprise OS 2025.2. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+      "Enterprise OS 2025.2 and Driver Pack 12.4.2 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.630192,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-004",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which drivers depend on firmware versions?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000364",
+        "source": "CompatibilityLayer",
+        "score": 0.714982
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000380",
+        "source": "CompatibilityLayer",
+        "score": 0.688072
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.68221
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.682196
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.680431
+      }
+    ],
+    "summary": "System Firmware 8.2.1 DEPENDS_ON Platform Driver Pack 12.5.0. Status: pending_review.",
+    "detailed_explanation": [
+      "System Firmware 8.2.1 DEPENDS_ON Platform Driver Pack 12.5.0. Status: pending_review.",
+      "firmware 8.0.0 MUST_PRECEDE firmware 8.2.1. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.689578,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-005",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which BIOS and firmware versions are incompatible?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.785526
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000373",
+        "source": "CompatibilityLayer",
+        "score": 0.784954
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000397",
+        "source": "CompatibilityLayer",
+        "score": 0.745319
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.738568
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000380",
+        "source": "CompatibilityLayer",
+        "score": 0.732342
+      }
+    ],
+    "summary": "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+    "detailed_explanation": [
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+      "bios 6.4.2 DEPENDS_ON firmware 8.2.0. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review.",
+      "firmware 8.0.0 MUST_PRECEDE firmware 8.2.1. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.757342,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-006",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which driver pack is required for Enterprise OS 2026.1?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000360",
+        "source": "CompatibilityLayer",
+        "score": 0.791772
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000365",
+        "source": "CompatibilityLayer",
+        "score": 0.769479
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.758242
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000381",
+        "source": "CompatibilityLayer",
+        "score": 0.754864
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000369",
+        "source": "CompatibilityLayer",
+        "score": 0.735617
+      }
+    ],
+    "summary": "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+      "Enterprise OS 2025.2 and Enterprise OS 2026.1 REQUIRES Platform Driver Pack 12.5.0. Status: needs_clarification.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review.",
+      "Enterprise OS 2026.1 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review.",
+      "Enterprise OS 2025.2 and Driver Pack 12.4.2 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.761995,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-007",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "What minimum version is required for Security Agent 4.8.3?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000394",
+        "source": "CompatibilityLayer",
+        "score": 0.820702
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000388",
+        "source": "CompatibilityLayer",
+        "score": 0.813629
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000366",
+        "source": "CompatibilityLayer",
+        "score": 0.80103
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000377",
+        "source": "CompatibilityLayer",
+        "score": 0.781268
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000378",
+        "source": "CompatibilityLayer",
+        "score": 0.759187
+      }
+    ],
+    "summary": "Security Agent REQUIRES Security Agent 4.8.3. Status: pending_review.",
+    "detailed_explanation": [
+      "Security Agent REQUIRES Security Agent 4.8.3. Status: pending_review.",
+      "Security Agent REQUIRES Security Agent 4.8.3. Status: pending_review.",
+      "Security Agent 4.8.3 REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "unknown unknown installed  DEPENDS_ON Security Agent 4.8.3. Status: pending_review.",
+      "Security Agent 4.7.x REQUIRES Security Agent 31 July 2026. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.795163,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-008",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which Endpoint Management Agent version is required?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000389",
+        "source": "CompatibilityLayer",
+        "score": 0.823322
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000366",
+        "source": "CompatibilityLayer",
+        "score": 0.822484
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000395",
+        "source": "CompatibilityLayer",
+        "score": 0.802899
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000372",
+        "source": "CompatibilityLayer",
+        "score": 0.77028
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000368",
+        "source": "CompatibilityLayer",
+        "score": 0.730939
+      }
+    ],
+    "summary": "Endpoint Management Agent REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Endpoint Management Agent REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Security Agent 4.8.3 REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Endpoint Mgmt Agent REQUIRES Endpoint Mgmt Agent 3.7.1. Status: pending_review.",
+      "Security Agent 4.8.3 and Endpoint Management Agent INCOMPATIBLE_WITH Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Endpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program SUPPORTS Unspecified component 3.7.1. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.789985,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-009",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "What update order must be followed for BIOS and firmware?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000380",
+        "source": "CompatibilityLayer",
+        "score": 0.779343
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000401",
+        "source": "CompatibilityLayer",
+        "score": 0.776295
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000397",
+        "source": "CompatibilityLayer",
+        "score": 0.751962
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000379",
+        "source": "CompatibilityLayer",
+        "score": 0.738342
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.727468
+      }
+    ],
+    "summary": "firmware 8.0.0 MUST_PRECEDE firmware 8.2.1. Status: pending_review.",
+    "detailed_explanation": [
+      "firmware 8.0.0 MUST_PRECEDE firmware 8.2.1. Status: pending_review.",
+      "firmware 7.9.0 MUST_PRECEDE Step 1. Status: pending_review.",
+      "bios 6.4.2 DEPENDS_ON firmware 8.2.0. Status: pending_review.",
+      "bios 6.2.0 MUST_PRECEDE bios 6.4.2. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.754682,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-010",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "What remediation is recommended for unsupported component versions?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.654169
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.649579
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.639967
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000372",
+        "source": "CompatibilityLayer",
+        "score": 0.638602
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.637426
+      }
+    ],
+    "summary": "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+    "detailed_explanation": [
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "Security Agent 4.8.3 and Endpoint Management Agent INCOMPATIBLE_WITH Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.643949,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-011",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which known compatibility issues are fixed by upgrading?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.698153
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000376",
+        "source": "CompatibilityLayer",
+        "score": 0.663883
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000360",
+        "source": "CompatibilityLayer",
+        "score": 0.662653
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.654872
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000381",
+        "source": "CompatibilityLayer",
+        "score": 0.643265
+      }
+    ],
+    "summary": "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+    "detailed_explanation": [
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "unknown unknown installed  REQUIRES Driver Pack 12.5.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "Enterprise OS 2026.1 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.664565,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-012",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which rule describes support for SIEM connectors?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000368",
+        "source": "CompatibilityLayer",
+        "score": 0.757772
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.659609
+      }
+    ],
+    "summary": "Endpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program SUPPORTS Unspecified component 3.7.1. Status: pending_review.",
+    "detailed_explanation": [
+      "Endpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program SUPPORTS Unspecified component 3.7.1. Status: pending_review.",
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.708691,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-013",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "What readiness requirements apply before an Enterprise OS migration?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000399",
+        "source": "CompatibilityLayer",
+        "score": 0.748064
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000381",
+        "source": "CompatibilityLayer",
+        "score": 0.729454
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000396",
+        "source": "CompatibilityLayer",
+        "score": 0.721141
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000390",
+        "source": "CompatibilityLayer",
+        "score": 0.707798
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000369",
+        "source": "CompatibilityLayer",
+        "score": 0.699755
+      }
+    ],
+    "summary": "Enterprise OS Enterprise OS migration DEPENDS_ON driver pack current. Status: pending_review.",
+    "detailed_explanation": [
+      "Enterprise OS Enterprise OS migration DEPENDS_ON driver pack current. Status: pending_review.",
+      "Enterprise OS 2026.1 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review.",
+      "Enterprise OS REQUIRES Enterprise OS 2026.1. Status: pending_review.",
+      "Enterprise OS REQUIRES Enterprise OS 2025.2. Status: pending_review.",
+      "Enterprise OS 2025.2 and Driver Pack 12.4.2 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.721243,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-014",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which compatibility rules have critical compliance impact?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000390",
+        "source": "CompatibilityLayer",
+        "score": 0.764497
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000386",
+        "source": "CompatibilityLayer",
+        "score": 0.7493
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000377",
+        "source": "CompatibilityLayer",
+        "score": 0.748537
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000399",
+        "source": "CompatibilityLayer",
+        "score": 0.747949
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000388",
+        "source": "CompatibilityLayer",
+        "score": 0.746394
+      }
+    ],
+    "summary": "Enterprise OS REQUIRES Enterprise OS 2025.2. Status: pending_review.",
+    "detailed_explanation": [
+      "Enterprise OS REQUIRES Enterprise OS 2025.2. Status: pending_review.",
+      "firmware REQUIRES firmware 8.2.0. Status: pending_review.",
+      "unknown unknown installed  DEPENDS_ON Security Agent 4.8.3. Status: pending_review.",
+      "Enterprise OS Enterprise OS migration DEPENDS_ON driver pack current. Status: pending_review.",
+      "Security Agent REQUIRES Security Agent 4.8.3. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.751335,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-015",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "What exact or minimum version constraints apply to Driver Pack?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000376",
+        "source": "CompatibilityLayer",
+        "score": 0.792668
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000387",
+        "source": "CompatibilityLayer",
+        "score": 0.788264
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000393",
+        "source": "CompatibilityLayer",
+        "score": 0.78612
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.779934
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000400",
+        "source": "CompatibilityLayer",
+        "score": 0.759769
+      }
+    ],
+    "summary": "unknown unknown installed  REQUIRES Driver Pack 12.5.0. Status: pending_review.",
+    "detailed_explanation": [
+      "unknown unknown installed  REQUIRES Driver Pack 12.5.0. Status: pending_review.",
+      "Driver Pack REQUIRES Driver Pack 12.5.0. Status: pending_review.",
+      "Driver Pack REQUIRES Driver Pack 12.5.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.781351,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-016",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Are any exceptions documented for compatibility requirements?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.736471
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.719878
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.706573
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000399",
+        "source": "CompatibilityLayer",
+        "score": 0.70367
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.700933
+      }
+    ],
+    "summary": "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review.",
+      "Enterprise OS Enterprise OS migration DEPENDS_ON driver pack current. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.713505,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-017",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "Which Enterprise OS versions are supported by Platform Driver Pack 12.5.0?",
+    "route": "COMPATIBILITY",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000365",
+        "source": "CompatibilityLayer",
+        "score": 0.832842
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000360",
+        "source": "CompatibilityLayer",
+        "score": 0.772823
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.77074
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000369",
+        "source": "CompatibilityLayer",
+        "score": 0.752022
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000381",
+        "source": "CompatibilityLayer",
+        "score": 0.751798
+      }
+    ],
+    "summary": "Enterprise OS 2025.2 and Enterprise OS 2026.1 REQUIRES Platform Driver Pack 12.5.0. Status: needs_clarification.",
+    "detailed_explanation": [
+      "Enterprise OS 2025.2 and Enterprise OS 2026.1 REQUIRES Platform Driver Pack 12.5.0. Status: needs_clarification.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review.",
+      "Enterprise OS 2025.2 and Driver Pack 12.4.2 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review.",
+      "Enterprise OS 2026.1 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.776045,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "COM-018",
+    "category": "COMPATIBILITY",
+    "expected_route": "COMPATIBILITY"
+  },
+  {
+    "question": "How does firmware impact compliance?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000383",
+        "source": "CompatibilityLayer",
+        "score": 0.752741
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000386",
+        "source": "CompatibilityLayer",
+        "score": 0.750095
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000392",
+        "source": "CompatibilityLayer",
+        "score": 0.731588
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.728286
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.705805
+      }
+    ],
+    "summary": "firmware firmware installed  REQUIRES_FIX_IN firmware 8.2.1. Status: pending_review.",
+    "detailed_explanation": [
+      "firmware firmware installed  REQUIRES_FIX_IN firmware 8.2.1. Status: pending_review.",
+      "firmware REQUIRES firmware 8.2.0. Status: pending_review.",
+      "firmware 8.2.0 REQUIRES firmware 8.2.1. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.733703,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-001",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How do drivers affect compatibility?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.728886
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000360",
+        "source": "CompatibilityLayer",
+        "score": 0.687887
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000376",
+        "source": "CompatibilityLayer",
+        "score": 0.6821
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.674958
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000364",
+        "source": "CompatibilityLayer",
+        "score": 0.674783
+      }
+    ],
+    "summary": "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+      "unknown unknown installed  REQUIRES Driver Pack 12.5.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review.",
+      "System Firmware 8.2.1 DEPENDS_ON Platform Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.689723,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-002",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "What dependencies exist between operating systems and firmware?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.708946
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.707158
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000373",
+        "source": "CompatibilityLayer",
+        "score": 0.705438
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000364",
+        "source": "CompatibilityLayer",
+        "score": 0.701377
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000397",
+        "source": "CompatibilityLayer",
+        "score": 0.688084
+      }
+    ],
+    "summary": "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+    "detailed_explanation": [
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+      "System Firmware 8.2.1 DEPENDS_ON Platform Driver Pack 12.5.0. Status: pending_review.",
+      "bios 6.4.2 DEPENDS_ON firmware 8.2.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.702201,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-003",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How does BIOS affect firmware compatibility?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000373",
+        "source": "CompatibilityLayer",
+        "score": 0.78758
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.760953
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000397",
+        "source": "CompatibilityLayer",
+        "score": 0.757136
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000401",
+        "source": "CompatibilityLayer",
+        "score": 0.750936
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.746594
+      }
+    ],
+    "summary": "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+    "detailed_explanation": [
+      "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+      "bios 6.4.2 DEPENDS_ON firmware 8.2.0. Status: pending_review.",
+      "firmware 7.9.0 MUST_PRECEDE Step 1. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.76064,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-004",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How can a security agent version affect compliance?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000388",
+        "source": "CompatibilityLayer",
+        "score": 0.794425
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000377",
+        "source": "CompatibilityLayer",
+        "score": 0.789242
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000394",
+        "source": "CompatibilityLayer",
+        "score": 0.78794
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000384",
+        "source": "CompatibilityLayer",
+        "score": 0.756257
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000366",
+        "source": "CompatibilityLayer",
+        "score": 0.754968
+      }
+    ],
+    "summary": "Security Agent REQUIRES Security Agent 4.8.3. Status: pending_review.",
+    "detailed_explanation": [
+      "Security Agent REQUIRES Security Agent 4.8.3. Status: pending_review.",
+      "unknown unknown installed  DEPENDS_ON Security Agent 4.8.3. Status: pending_review.",
+      "Security Agent REQUIRES Security Agent 4.8.3. Status: pending_review.",
+      "Security Agent REQUIRES_FIX_IN Security Agent 4.8.3. Status: pending_review.",
+      "Security Agent 4.8.3 REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.776566,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-005",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "What relationship exists between endpoint management and compatibility requirements?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000389",
+        "source": "CompatibilityLayer",
+        "score": 0.772105
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000366",
+        "source": "CompatibilityLayer",
+        "score": 0.764232
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000395",
+        "source": "CompatibilityLayer",
+        "score": 0.756032
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000372",
+        "source": "CompatibilityLayer",
+        "score": 0.751603
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000368",
+        "source": "CompatibilityLayer",
+        "score": 0.732803
+      }
+    ],
+    "summary": "Endpoint Management Agent REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Endpoint Management Agent REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Security Agent 4.8.3 REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Endpoint Mgmt Agent REQUIRES Endpoint Mgmt Agent 3.7.1. Status: pending_review.",
+      "Security Agent 4.8.3 and Endpoint Management Agent INCOMPATIBLE_WITH Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Endpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program SUPPORTS Unspecified component 3.7.1. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.755355,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-006",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How does an operating system version influence driver compatibility?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000360",
+        "source": "CompatibilityLayer",
+        "score": 0.739108
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.724426
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.722494
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000365",
+        "source": "CompatibilityLayer",
+        "score": 0.719095
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000381",
+        "source": "CompatibilityLayer",
+        "score": 0.71294
+      }
+    ],
+    "summary": "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review.",
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "Enterprise OS 2025.2 and Enterprise OS 2026.1 REQUIRES Platform Driver Pack 12.5.0. Status: needs_clarification.",
+      "Enterprise OS 2026.1 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.723613,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-007",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How do firmware updates affect BIOS upgrade readiness?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000401",
+        "source": "CompatibilityLayer",
+        "score": 0.761085
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000397",
+        "source": "CompatibilityLayer",
+        "score": 0.7588
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000380",
+        "source": "CompatibilityLayer",
+        "score": 0.753222
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000373",
+        "source": "CompatibilityLayer",
+        "score": 0.731365
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000379",
+        "source": "CompatibilityLayer",
+        "score": 0.720258
+      }
+    ],
+    "summary": "firmware 7.9.0 MUST_PRECEDE Step 1. Status: pending_review.",
+    "detailed_explanation": [
+      "firmware 7.9.0 MUST_PRECEDE Step 1. Status: pending_review.",
+      "bios 6.4.2 DEPENDS_ON firmware 8.2.0. Status: pending_review.",
+      "firmware 8.0.0 MUST_PRECEDE firmware 8.2.1. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+      "bios 6.2.0 MUST_PRECEDE bios 6.4.2. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.744946,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-008",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "What is the relationship between driver packs and Enterprise OS compliance?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000399",
+        "source": "CompatibilityLayer",
+        "score": 0.798113
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000365",
+        "source": "CompatibilityLayer",
+        "score": 0.792619
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000369",
+        "source": "CompatibilityLayer",
+        "score": 0.789309
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000360",
+        "source": "CompatibilityLayer",
+        "score": 0.7859
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000371",
+        "source": "CompatibilityLayer",
+        "score": 0.781532
+      }
+    ],
+    "summary": "Enterprise OS Enterprise OS migration DEPENDS_ON driver pack current. Status: pending_review.",
+    "detailed_explanation": [
+      "Enterprise OS Enterprise OS migration DEPENDS_ON driver pack current. Status: pending_review.",
+      "Enterprise OS 2025.2 and Enterprise OS 2026.1 REQUIRES Platform Driver Pack 12.5.0. Status: needs_clarification.",
+      "Enterprise OS 2025.2 and Driver Pack 12.4.2 DEPENDS_ON Driver Pack 12.5.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.4.0. Status: pending_review.",
+      "Enterprise OS 2026.1 REQUIRES Driver Pack 12.0.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.789495,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-009",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How do known firmware issues influence compatibility decisions?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.754515
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000373",
+        "source": "CompatibilityLayer",
+        "score": 0.735886
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.731585
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000392",
+        "source": "CompatibilityLayer",
+        "score": 0.723274
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000401",
+        "source": "CompatibilityLayer",
+        "score": 0.71908
+      }
+    ],
+    "summary": "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+    "detailed_explanation": [
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+      "firmware 8.2.0 REQUIRES firmware 8.2.1. Status: pending_review.",
+      "firmware 7.9.0 MUST_PRECEDE Step 1. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.732868,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-010",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How does component version management prevent incompatible combinations?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000375",
+        "source": "CompatibilityLayer",
+        "score": 0.691818
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000362",
+        "source": "CompatibilityLayer",
+        "score": 0.670256
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.669001
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000370",
+        "source": "CompatibilityLayer",
+        "score": 0.659067
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000372",
+        "source": "CompatibilityLayer",
+        "score": 0.65574
+      }
+    ],
+    "summary": "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Driver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0. Status: pending_review.",
+      "Security Agent and Enterprise OS 2025.2 REQUIRES_FIX_IN Enterprise OS 2025.2. Status: pending_review.",
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0. Status: pending_review.",
+      "Security Agent 4.8.3 and Endpoint Management Agent INCOMPATIBLE_WITH Endpoint Management Agent 3.7.0. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.669176,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-011",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "What dependencies between BIOS and firmware must be checked for compliance?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000397",
+        "source": "CompatibilityLayer",
+        "score": 0.796629
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000363",
+        "source": "CompatibilityLayer",
+        "score": 0.788765
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000373",
+        "source": "CompatibilityLayer",
+        "score": 0.774745
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000380",
+        "source": "CompatibilityLayer",
+        "score": 0.7683
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000401",
+        "source": "CompatibilityLayer",
+        "score": 0.762981
+      }
+    ],
+    "summary": "bios 6.4.2 DEPENDS_ON firmware 8.2.0. Status: pending_review.",
+    "detailed_explanation": [
+      "bios 6.4.2 DEPENDS_ON firmware 8.2.0. Status: pending_review.",
+      "System BIOS 6.4.2 REQUIRES System Firmware 8.2.0. Status: pending_review.",
+      "bios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0. Status: pending_review.",
+      "firmware 8.0.0 MUST_PRECEDE firmware 8.2.1. Status: pending_review.",
+      "firmware 7.9.0 MUST_PRECEDE Step 1. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.778284,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-012",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How does an endpoint management agent affect security agent compatibility?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000366",
+        "source": "CompatibilityLayer",
+        "score": 0.820978
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000372",
+        "source": "CompatibilityLayer",
+        "score": 0.811681
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000389",
+        "source": "CompatibilityLayer",
+        "score": 0.783898
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000395",
+        "source": "CompatibilityLayer",
+        "score": 0.764347
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000384",
+        "source": "CompatibilityLayer",
+        "score": 0.760567
+      }
+    ],
+    "summary": "Security Agent 4.8.3 REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+    "detailed_explanation": [
+      "Security Agent 4.8.3 REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Security Agent 4.8.3 and Endpoint Management Agent INCOMPATIBLE_WITH Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Endpoint Management Agent REQUIRES Endpoint Management Agent 3.7.0. Status: pending_review.",
+      "Endpoint Mgmt Agent REQUIRES Endpoint Mgmt Agent 3.7.1. Status: pending_review.",
+      "Security Agent REQUIRES_FIX_IN Security Agent 4.8.3. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "HIGH",
+      "score": 0.788294,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-013",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  },
+  {
+    "question": "How does upgrade sequencing affect system compatibility and compliance?",
+    "route": "HYBRID",
+    "retrieved_sources": [
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000374",
+        "source": "CompatibilityLayer",
+        "score": 0.738533
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000380",
+        "source": "CompatibilityLayer",
+        "score": 0.727729
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000401",
+        "source": "CompatibilityLayer",
+        "score": 0.726181
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000379",
+        "source": "CompatibilityLayer",
+        "score": 0.718226
+      },
+      {
+        "collection": "kb_compatibility_layer",
+        "source_id": "COMPAT-DOC-RCAND-000396",
+        "source": "CompatibilityLayer",
+        "score": 0.718106
+      }
+    ],
+    "summary": "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+    "detailed_explanation": [
+      "unknown unknown installed  REQUIRES System Firmware 8.2.1. Status: pending_review.",
+      "firmware 8.0.0 MUST_PRECEDE firmware 8.2.1. Status: pending_review.",
+      "firmware 7.9.0 MUST_PRECEDE Step 1. Status: pending_review.",
+      "bios 6.2.0 MUST_PRECEDE bios 6.4.2. Status: pending_review.",
+      "Enterprise OS REQUIRES Enterprise OS 2026.1. Status: pending_review."
+    ],
+    "confidence": {
+      "level": "MEDIUM",
+      "score": 0.725755,
+      "method": "mean cosine similarity of grounded retrieved sources"
+    },
+    "answered": true,
+    "grounded_only": true,
+    "errors": [],
+    "question_id": "HYB-014",
+    "category": "HYBRID",
+    "expected_route": "HYBRID"
+  }
+]

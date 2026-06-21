@@ -1,0 +1,26 @@
+{
+  "collection_name": "kb_compatibility_layer",
+  "created": true,
+  "existing_collection_preserved": false,
+  "expected_vector_size": 768,
+  "actual_vector_size": 768,
+  "expected_distance": "Cosine",
+  "actual_distance": "cosine",
+  "payload_enabled": true,
+  "payload_indexed_fields": [
+    "confidence",
+    "document_id",
+    "layer",
+    "object",
+    "predicate",
+    "rule_id",
+    "rule_type",
+    "source",
+    "status",
+    "subject"
+  ],
+  "configuration_valid": true,
+  "payload_schema_valid": true,
+  "status": "READY",
+  "checked_at": "2026-06-21T07:52:59.346322+00:00"
+}

@@ -1,0 +1,632 @@
+﻿[
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000360",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCustomers upgrading to Enterprise OS 2026.1 should be aware that Driver Pack versions prior to 12.4.0 were not validated against this release and may exhibit reduced peripheral stability, particularly with USB-C docking accessories and external display adapters. Fleets that have not yet standardized on the current Driver Pack baseline are encouraged to complete that upgrade ahead of any OS migration work.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEnterprise OS 2026.1\n\nPredicate:\nREQUIRES\n\nObject:\nDriver Pack 12.4.0\n\nRelationship:\nEnterprise OS 2026.1 REQUIRES Driver Pack 12.4.0.\n\nRequirements:\nDriver Pack must be at least 12.4.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be at least 12.4.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Driver Pack to version 12.4.0 or later before migrating to Enterprise OS 2026.1 to ensure peripheral stability.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Warning.\n\nEvidence:\nCustomers upgrading to Enterprise OS 2026.1 should be aware that Driver Pack versions prior to 12.4.0 were not validated against this release and may exhibit reduced peripheral stability, particularly with USB-C docking accessories and external display adapters. Fleets that have not yet standardized on the current Driver Pack baseline are encouraged to complete that upgrade ahead of any OS migration work. Source document DOC-CA114A84AE60, chunk CHUNK-000377, page 1.\n\nConfidence:\n0.9. The text explicitly states that versions prior to 12.4.0 were not validated and may exhibit stability issues with the specified OS release.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000360",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Enterprise OS 2026.1",
+                         "predicate":  "REQUIRES",
+                         "object":  "Driver Pack 12.4.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.9",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000361",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nSeparately, field reports indicate that ProBook and Enterprise Laptop Series units shipped with System Firmware versions in the 8.1.x line may report inaccurate battery health percentages following extended sleep cycles. While this does not affect charging safety, IT administrators managing large laptop fleets may wish to prioritize the firmware refresh for these device classes during the v6.4.2 maintenance cycle rather than treating it as a routine, lower-priority update.\n\nRule Type:\nKnown Issue Fixed\n\nSubject:\nProBook and Enterprise Laptop Series and System Firmware 8.1.x\n\nPredicate:\nREQUIRES_FIX_IN\n\nObject:\nSystem Firmware v6.4.2\n\nRelationship:\nProBook and Enterprise Laptop Series and System Firmware 8.1.x REQUIRES_FIX_IN System Firmware v6.4.2.\n\nRequirements:\nSystem Firmware must be at least v6.4.2.\n\nDependencies:\nThe compliant state depends on: System Firmware must be at least v6.4.2.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate System Firmware to version v6.4.2 or later for ProBook and Enterprise Laptop Series units on firmware 8.1.x.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Info.\n\nEvidence:\nSeparately, field reports indicate that ProBook and Enterprise Laptop Series units shipped with System Firmware versions in the 8.1.x line may report inaccurate battery health percentages following extended sleep cycles. While this does not affect charging safety, IT administrators managing large laptop fleets may wish to prioritize the firmware refresh for these device classes during the v6.4.2 maintenance cycle rather than treating it as a routine, lower-priority update. Source document DOC-CA114A84AE60, chunk CHUNK-000378, page 1.\n\nConfidence:\n0.7. The text suggests prioritizing a firmware refresh to v6.4.2 to resolve a known issue with battery health reporting in versions 8.1.x",
+        "metadata":  {
+                         "rule_id":  "RCAND-000361",
+                         "rule_type":  "known_issue_fixed",
+                         "subject":  "ProBook and Enterprise Laptop Series and System Firmware 8.1.x",
+                         "predicate":  "REQUIRES_FIX_IN",
+                         "object":  "System Firmware v6.4.2",
+                         "status":  "pending_review",
+                         "confidence":  "0.7",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000362",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nIt has also been observed that Security Agent deployments paired with Enterprise OS builds older than 2025.2 can produce inconsistent telemetry reporting to centralized management consoles, even when all other components meet published minimums. Affected environments should treat this as a signal to revisit their OS upgrade timeline rather than assuming the Security Agent installation itself is at fault.\n\nRule Type:\nKnown Issue Fixed\n\nSubject:\nSecurity Agent and Enterprise OS 2025.2\n\nPredicate:\nREQUIRES_FIX_IN\n\nObject:\nEnterprise OS 2025.2\n\nRelationship:\nSecurity Agent and Enterprise OS 2025.2 REQUIRES_FIX_IN Enterprise OS 2025.2.\n\nRequirements:\nEnterprise OS must be at least 2025.2.\n\nDependencies:\nThe compliant state depends on: Enterprise OS must be at least 2025.2.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Enterprise OS to version 2025.2 or newer to ensure consistent telemetry reporting.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Warning.\n\nEvidence:\nIt has also been observed that Security Agent deployments paired with Enterprise OS builds older than 2025.2 can produce inconsistent telemetry reporting to centralized management consoles, even when all other components meet published minimums. Affected environments should treat this as a signal to revisit their OS upgrade timeline rather than assuming the Security Agent installation itself is at fault. Source document DOC-CA114A84AE60, chunk CHUNK-000379, page 1.\n\nConfidence:\n0.9. The text explicitly states that builds older than 2025.2 produce inconsistent telemetry reporting.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000362",
+                         "rule_type":  "known_issue_fixed",
+                         "subject":  "Security Agent and Enterprise OS 2025.2",
+                         "predicate":  "REQUIRES_FIX_IN",
+                         "object":  "Enterprise OS 2025.2",
+                         "status":  "pending_review",
+                         "confidence":  "0.9",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000363",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nSystem BIOS 6.4.2 requires System Firmware 8.2.0 or later.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nSystem BIOS 6.4.2\n\nPredicate:\nREQUIRES\n\nObject:\nSystem Firmware 8.2.0\n\nRelationship:\nSystem BIOS 6.4.2 REQUIRES System Firmware 8.2.0.\n\nRequirements:\nSystem Firmware must be at least 8.2.0.\n\nDependencies:\nThe compliant state depends on: System Firmware must be at least 8.2.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nEnsure System Firmware is updated to version 8.2.0 or later before installing System BIOS 6.4.2.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nSystem BIOS 6.4.2 requires System Firmware 8.2.0 or later. Source document DOC-CA114A84AE60, chunk CHUNK-000385, page 1.\n\nConfidence:\n1.0. The text explicitly states a requirement for a minimum firmware version given a specific BIOS version.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000363",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "System BIOS 6.4.2",
+                         "predicate":  "REQUIRES",
+                         "object":  "System Firmware 8.2.0",
+                         "status":  "pending_review",
+                         "confidence":  "1.0",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000364",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nSystem Firmware 8.2.1 supports Platform Driver Pack 12.5.0 and later.\n\nRule Type:\nReadiness Requirement\n\nSubject:\nSystem Firmware 8.2.1\n\nPredicate:\nDEPENDS_ON\n\nObject:\nPlatform Driver Pack 12.5.0\n\nRelationship:\nSystem Firmware 8.2.1 DEPENDS_ON Platform Driver Pack 12.5.0.\n\nRequirements:\nPlatform Driver Pack must be at least 12.5.0.\n\nDependencies:\nThe compliant state depends on: Platform Driver Pack must be at least 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nEnsure Platform Driver Pack 12.5.0 or later is installed when using System Firmware 8.2.1.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Info.\n\nEvidence:\nSystem Firmware 8.2.1 supports Platform Driver Pack 12.5.0 and later. Source document DOC-CA114A84AE60, chunk CHUNK-000386, page 1.\n\nConfidence:\n0.95. The text explicitly states a version support requirement between system firmware and the driver pack.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000364",
+                         "rule_type":  "readiness_requirement",
+                         "subject":  "System Firmware 8.2.1",
+                         "predicate":  "DEPENDS_ON",
+                         "object":  "Platform Driver Pack 12.5.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000365",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nPlatform Driver Pack 12.5.0 supports Enterprise OS 2025.2 and 2026.1.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEnterprise OS 2025.2 and Enterprise OS 2026.1\n\nPredicate:\nREQUIRES\n\nObject:\nPlatform Driver Pack 12.5.0\n\nRelationship:\nEnterprise OS 2025.2 and Enterprise OS 2026.1 REQUIRES Platform Driver Pack 12.5.0.\n\nRequirements:\nPlatform Driver Pack must be exactly 12.5.0.\n\nDependencies:\nThe compliant state depends on: Platform Driver Pack must be exactly 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUse Platform Driver Pack 12.5.0 for Enterprise OS 2025.2 or 2026.1.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Info.\n\nEvidence:\nPlatform Driver Pack 12.5.0 supports Enterprise OS 2025.2 and 2026.1. Source document DOC-CA114A84AE60, chunk CHUNK-000387, page 1.\n\nConfidence:\n0.3. Explicit support statement for specific OS versions and driver pack version. [AUTO-FLAGGED: extracted value not found verbatim in source chunk text - verify before approving.]",
+        "metadata":  {
+                         "rule_id":  "RCAND-000365",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Enterprise OS 2025.2 and Enterprise OS 2026.1",
+                         "predicate":  "REQUIRES",
+                         "object":  "Platform Driver Pack 12.5.0",
+                         "status":  "needs_clarification",
+                         "confidence":  "0.3",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000366",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nSecurity Agent 4.8.3 requires Endpoint Management Agent 3.7.0 or later.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nSecurity Agent 4.8.3\n\nPredicate:\nREQUIRES\n\nObject:\nEndpoint Management Agent 3.7.0\n\nRelationship:\nSecurity Agent 4.8.3 REQUIRES Endpoint Management Agent 3.7.0.\n\nRequirements:\nEndpoint Management Agent must be at least 3.7.0.\n\nDependencies:\nThe compliant state depends on: Endpoint Management Agent must be at least 3.7.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nEnsure Endpoint Management Agent is updated to version 3.7.0 or later.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nSecurity Agent 4.8.3 requires Endpoint Management Agent 3.7.0 or later. Source document DOC-CA114A84AE60, chunk CHUNK-000388, page 1.\n\nConfidence:\n1.0. The text explicitly states a version requirement for the Endpoint Management Agent when using Security Agent 4.8.3.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000366",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Security Agent 4.8.3",
+                         "predicate":  "REQUIRES",
+                         "object":  "Endpoint Management Agent 3.7.0",
+                         "status":  "pending_review",
+                         "confidence":  "1.0",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000367",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nEdgeStation Workstations require NIC Firmware 4.2.0 or later when deployed with Platform Driver Pack 12.5.0. This requirement does not apply to ProBook Series, Enterprise Laptop Series, or ComputeNode Servers, which do not ship with the same onboard NIC controller and are exempt from this requirement.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEdgeStation Workstations and Platform Driver Pack 12.5.0\n\nPredicate:\nREQUIRES\n\nObject:\nNIC Firmware 4.2.0\n\nRelationship:\nEdgeStation Workstations and Platform Driver Pack 12.5.0 REQUIRES NIC Firmware 4.2.0.\n\nRequirements:\nNIC Firmware must be at least 4.2.0.\n\nDependencies:\nThe compliant state depends on: NIC Firmware must be at least 4.2.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate NIC Firmware to 4.2.0 or later when using Platform Driver Pack 12.5.0 on EdgeStation Workstations.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nEdgeStation Workstations require NIC Firmware 4.2.0 or later when deployed with Platform Driver Pack 12.5.0. This requirement does not apply to ProBook Series, Enterprise Laptop Series, or ComputeNode Servers, which do not ship with the same onboard NIC controller and are exempt from this requirement. Source document DOC-CA114A84AE60, chunk CHUNK-000390, page 1.\n\nConfidence:\n1.0. Explicit requirement stated in the text with clear version constraints and listed exceptions.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000367",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "EdgeStation Workstations and Platform Driver Pack 12.5.0",
+                         "predicate":  "REQUIRES",
+                         "object":  "NIC Firmware 4.2.0",
+                         "status":  "pending_review",
+                         "confidence":  "1.0",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000368",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nEndpoint Management Agent 3.7.1 supports integration with third-party SIEM connectors certified under the ACME Partner Program. This is a tested-but-optional configuration and is not required for standard compliance.\n\nRule Type:\nFeature Support Added\n\nSubject:\nEndpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program\n\nPredicate:\nSUPPORTS\n\nObject:\nUnspecified component 3.7.1\n\nRelationship:\nEndpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program SUPPORTS Unspecified component 3.7.1.\n\nRequirements:\nUnspecified component 3.7.1 must be installed 3.7.1.\n\nDependencies:\nThe compliant state depends on: Unspecified component 3.7.1 must be installed 3.7.1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nEnsure SIEM connectors are certified under the ACME Partner Program for integration with Endpoint Management Agent 3.7.1.\n\nCompliance Impact:\nThe feature is unavailable when the stated support requirement is not met; enforcement follows the Info severity classification.\n\nEvidence:\nEndpoint Management Agent 3.7.1 supports integration with third-party SIEM connectors certified under the ACME Partner Program. This is a tested-but-optional configuration and is not required for standard compliance. Source document DOC-CA114A84AE60, chunk CHUNK-000391, page 1.\n\nConfidence:\n0.9. The text explicitly states support for integration between the specific agent version and certified connectors.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000368",
+                         "rule_type":  "feature_support_added",
+                         "subject":  "Endpoint Management Agent 3.7.1 and third-party SIEM connectors certified under the ACME Partner Program",
+                         "predicate":  "SUPPORTS",
+                         "object":  "Unspecified component 3.7.1",
+                         "status":  "pending_review",
+                         "confidence":  "0.9",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000369",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nField Note (Engineering): Several EdgeStation fleets running Enterprise OS 2025.2 have continued operating on Driver Pack 12.4.2 without reported incident and may defer the 12.5.0 upgrade until their next scheduled maintenance window, pending formal certification.\n\nRule Type:\nReadiness Requirement\n\nSubject:\nEnterprise OS 2025.2 and Driver Pack 12.4.2\n\nPredicate:\nDEPENDS_ON\n\nObject:\nDriver Pack 12.5.0\n\nRelationship:\nEnterprise OS 2025.2 and Driver Pack 12.4.2 DEPENDS_ON Driver Pack 12.5.0.\n\nRequirements:\nDriver Pack must be at least 12.5.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be at least 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade to Driver Pack 12.5.0 during the next scheduled maintenance window.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Info.\n\nEvidence:\nField Note (Engineering): Several EdgeStation fleets running Enterprise OS 2025.2 have continued operating on Driver Pack 12.4.2 without reported incident and may defer the 12.5.0 upgrade until their next scheduled maintenance window, pending formal certification. Source document DOC-CA114A84AE60, chunk CHUNK-000394, page 1.\n\nConfidence:\n0.6. The text describes a tolerated state (deferring an upgrade) rather than a strict requirement, implying a general requirement for version 12.5.0 that is currently being waived for specific fleets.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000369",
+                         "rule_type":  "readiness_requirement",
+                         "subject":  "Enterprise OS 2025.2 and Driver Pack 12.4.2",
+                         "predicate":  "DEPENDS_ON",
+                         "object":  "Driver Pack 12.5.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.6",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000370",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUNSUP-001 Firmware versions earlier than 8.0.0 are not supported with BIOS 6.4.2.\n\nRule Type:\nIncompatible Combination\n\nSubject:\nbios 6.4.2 and firmware 8.0.0\n\nPredicate:\nINCOMPATIBLE_WITH\n\nObject:\nUnspecified component 8.0.0\n\nRelationship:\nbios 6.4.2 and firmware 8.0.0 INCOMPATIBLE_WITH Unspecified component 8.0.0.\n\nRequirements:\nUnspecified component 8.0.0 must be earlier than 8.0.0.\n\nDependencies:\nThe compliant state depends on: Unspecified component 8.0.0 must be earlier than 8.0.0.\n\nConflicts:\nThe documented condition combination conflicts with the permitted configuration: bios 6.4.2 and firmware 8.0.0.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade firmware to version 8.0.0 or later when using BIOS 6.4.2.\n\nCompliance Impact:\nThe simultaneous prohibited configuration is non-compliant. Impact severity: Critical.\n\nEvidence:\nUNSUP-001 Firmware versions earlier than 8.0.0 are not supported with BIOS 6.4.2. Source document DOC-CA114A84AE60, chunk CHUNK-000395, page 1.\n\nConfidence:\n0.95. The text explicitly states that firmware versions earlier than 8.0.0 are not supported with a specific BIOS version.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000370",
+                         "rule_type":  "incompatible_combination",
+                         "subject":  "bios 6.4.2 and firmware 8.0.0",
+                         "predicate":  "INCOMPATIBLE_WITH",
+                         "object":  "Unspecified component 8.0.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000371",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUNSUP-002 Driver Pack versions earlier than 12.0.0 are not supported on Enterprise OS 2026.1.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEnterprise OS 2026.1\n\nPredicate:\nREQUIRES\n\nObject:\nDriver Pack 12.0.0\n\nRelationship:\nEnterprise OS 2026.1 REQUIRES Driver Pack 12.0.0.\n\nRequirements:\nDriver Pack must be at least 12.0.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be at least 12.0.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate Driver Pack to version 12.0.0 or later when using Enterprise OS 2026.1.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nUNSUP-002 Driver Pack versions earlier than 12.0.0 are not supported on Enterprise OS 2026.1. Source document DOC-CA114A84AE60, chunk CHUNK-000396, page 1.\n\nConfidence:\n0.95. The text explicitly states that versions earlier than 12.0.0 are not supported for the specified OS.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000371",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Enterprise OS 2026.1",
+                         "predicate":  "REQUIRES",
+                         "object":  "Driver Pack 12.0.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000372",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUNSUP-003 Security Agent 4.8.3 is not supported with Endpoint Management Agent versions earlier than 3.7.0.\n\nRule Type:\nIncompatible Combination\n\nSubject:\nSecurity Agent 4.8.3 and Endpoint Management Agent\n\nPredicate:\nINCOMPATIBLE_WITH\n\nObject:\nEndpoint Management Agent 3.7.0\n\nRelationship:\nSecurity Agent 4.8.3 and Endpoint Management Agent INCOMPATIBLE_WITH Endpoint Management Agent 3.7.0.\n\nRequirements:\nEndpoint Management Agent must be at least 3.7.0.\n\nDependencies:\nThe compliant state depends on: Endpoint Management Agent must be at least 3.7.0.\n\nConflicts:\nThe documented condition combination conflicts with the permitted configuration: Security Agent 4.8.3 and Endpoint Management Agent.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Endpoint Management Agent to version 3.7.0 or later.\n\nCompliance Impact:\nThe simultaneous prohibited configuration is non-compliant. Impact severity: Critical.\n\nEvidence:\nUNSUP-003 Security Agent 4.8.3 is not supported with Endpoint Management Agent versions earlier than 3.7.0. Source document DOC-CA114A84AE60, chunk CHUNK-000397, page 1.\n\nConfidence:\n0.95. The text explicitly states that Security Agent 4.8.3 is not supported with Endpoint Management Agent versions earlier than 3.7.0.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000372",
+                         "rule_type":  "incompatible_combination",
+                         "subject":  "Security Agent 4.8.3 and Endpoint Management Agent",
+                         "predicate":  "INCOMPATIBLE_WITH",
+                         "object":  "Endpoint Management Agent 3.7.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000373",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nSystems running BIOS 6.4.2 with Firmware earlier than 8.2.0 may experience intermittent boot delays.\n\nRule Type:\nIncompatible Combination\n\nSubject:\nbios 6.4.2 and firmware 8.2.0\n\nPredicate:\nINCOMPATIBLE_WITH\n\nObject:\nfirmware 8.2.0\n\nRelationship:\nbios 6.4.2 and firmware 8.2.0 INCOMPATIBLE_WITH firmware 8.2.0.\n\nRequirements:\nfirmware must be at least 8.2.0.\n\nDependencies:\nThe compliant state depends on: firmware must be at least 8.2.0.\n\nConflicts:\nThe documented condition combination conflicts with the permitted configuration: bios 6.4.2 and firmware 8.2.0.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate Firmware to version 8.2.0 or later to avoid intermittent boot delays when running BIOS 6.4.2.\n\nCompliance Impact:\nThe simultaneous prohibited configuration is non-compliant. Impact severity: Warning.\n\nEvidence:\nSystems running BIOS 6.4.2 with Firmware earlier than 8.2.0 may experience intermittent boot delays. Source document DOC-CA114A84AE60, chunk CHUNK-000398, page 1.\n\nConfidence:\n0.95. The text explicitly describes a negative outcome (intermittent boot delays) based on a specific combination of BIOS and Firmware versions.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000373",
+                         "rule_type":  "incompatible_combination",
+                         "subject":  "bios 6.4.2 and firmware 8.2.0",
+                         "predicate":  "INCOMPATIBLE_WITH",
+                         "object":  "firmware 8.2.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000374",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nWorkaround: Upgrade System Firmware to version 8.2.1 or later.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nunknown unknown installed \n\nPredicate:\nREQUIRES\n\nObject:\nSystem Firmware 8.2.1\n\nRelationship:\nunknown unknown installed  REQUIRES System Firmware 8.2.1.\n\nRequirements:\nSystem Firmware must be at least 8.2.1.\n\nDependencies:\nThe compliant state depends on: System Firmware must be at least 8.2.1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade System Firmware to version 8.2.1 or later.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nWorkaround: Upgrade System Firmware to version 8.2.1 or later. Source document DOC-CA114A84AE60, chunk CHUNK-000399, page 1.\n\nConfidence:\n0.95. The text explicitly states a workaround requirement to upgrade to version 8.2.1 or later, and the section title indicates a [HIGH] severity issue.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000374",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "unknown unknown installed ",
+                         "predicate":  "REQUIRES",
+                         "object":  "System Firmware 8.2.1",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000375",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nDevices running Driver Pack 12.3.0 may experience network adapter instability on Enterprise OS 2026.1.\n\nRule Type:\nIncompatible Combination\n\nSubject:\nDriver Pack 12.3.0 and Enterprise OS 2026.1\n\nPredicate:\nINCOMPATIBLE_WITH\n\nObject:\nUnspecified component 12.3.0\n\nRelationship:\nDriver Pack 12.3.0 and Enterprise OS 2026.1 INCOMPATIBLE_WITH Unspecified component 12.3.0.\n\nRequirements:\nUnspecified component 12.3.0 must be installed 12.3.0.\n\nDependencies:\nThe compliant state depends on: Unspecified component 12.3.0 must be installed 12.3.0.\n\nConflicts:\nThe documented condition combination conflicts with the permitted configuration: Driver Pack 12.3.0 and Enterprise OS 2026.1.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate Driver Pack to a version newer than 12.3.0 if using Enterprise OS 2026.1.\n\nCompliance Impact:\nThe simultaneous prohibited configuration is non-compliant. Impact severity: Warning.\n\nEvidence:\nDevices running Driver Pack 12.3.0 may experience network adapter instability on Enterprise OS 2026.1. Source document DOC-CA114A84AE60, chunk CHUNK-000400, page 1.\n\nConfidence:\n0.95. The text explicitly describes a known instability issue when these two specific versions are combined.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000375",
+                         "rule_type":  "incompatible_combination",
+                         "subject":  "Driver Pack 12.3.0 and Enterprise OS 2026.1",
+                         "predicate":  "INCOMPATIBLE_WITH",
+                         "object":  "Unspecified component 12.3.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000376",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUpgrade Driver Pack to version 12.5.0 or later.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nunknown unknown installed \n\nPredicate:\nREQUIRES\n\nObject:\nDriver Pack 12.5.0\n\nRelationship:\nunknown unknown installed  REQUIRES Driver Pack 12.5.0.\n\nRequirements:\nDriver Pack must be at least 12.5.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be at least 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Driver Pack to version 12.5.0 or later.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Warning.\n\nEvidence:\nUpgrade Driver Pack to version 12.5.0 or later. Source document DOC-CA114A84AE60, chunk CHUNK-000401, page 1.\n\nConfidence:\n0.95. The text explicitly states a version requirement for the Driver Pack.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000376",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "unknown unknown installed ",
+                         "predicate":  "REQUIRES",
+                         "object":  "Driver Pack 12.5.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000377",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUpgrade Security Agent to version 4.8.3.\n\nRule Type:\nReadiness Requirement\n\nSubject:\nunknown unknown installed \n\nPredicate:\nDEPENDS_ON\n\nObject:\nSecurity Agent 4.8.3\n\nRelationship:\nunknown unknown installed  DEPENDS_ON Security Agent 4.8.3.\n\nRequirements:\nSecurity Agent must be at least 4.8.3.\n\nDependencies:\nThe compliant state depends on: Security Agent must be at least 4.8.3.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Security Agent to version 4.8.3.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Info.\n\nEvidence:\nUpgrade Security Agent to version 4.8.3. Source document DOC-CA114A84AE60, chunk CHUNK-000403, page 1.\n\nConfidence:\n0.9. The text explicitly instructs to upgrade the Security Agent to a specific version, implying a minimum requirement for a specific fix or feature.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000377",
+                         "rule_type":  "readiness_requirement",
+                         "subject":  "unknown unknown installed ",
+                         "predicate":  "DEPENDS_ON",
+                         "object":  "Security Agent 4.8.3",
+                         "status":  "pending_review",
+                         "confidence":  "0.9",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000378",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nLifecycle Notice: Security Agent 4.7.x reaches end-of-support on 31 July 2026. After this date, security patches and signature updates will no longer be provided for that branch, independent of any compatibility status described elsewhere in this document.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nSecurity Agent 4.7.x\n\nPredicate:\nREQUIRES\n\nObject:\nSecurity Agent 31 July 2026\n\nRelationship:\nSecurity Agent 4.7.x REQUIRES Security Agent 31 July 2026.\n\nRequirements:\nSecurity Agent must be earlier than 31 July 2026.\n\nDependencies:\nThe compliant state depends on: Security Agent must be earlier than 31 July 2026.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Security Agent to a version newer than 4.7.x before 31 July 2026 to continue receiving security patches.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Warning.\n\nEvidence:\nLifecycle Notice: Security Agent 4.7.x reaches end-of-support on 31 July 2026. After this date, security patches and signature updates will no longer be provided for that branch, independent of any compatibility status described elsewhere in this document. Source document DOC-CA114A84AE60, chunk CHUNK-000404, page 1.\n\nConfidence:\n0.95. The text explicitly states the end-of-support date for a specific agent version.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000378",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Security Agent 4.7.x",
+                         "predicate":  "REQUIRES",
+                         "object":  "Security Agent 31 July 2026",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000379",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUpgrade BIOS versions earlier than 6.2.0 directly to version 6.4.2.\n\nRule Type:\nUpdate Order Constraint\n\nSubject:\nbios 6.2.0\n\nPredicate:\nMUST_PRECEDE\n\nObject:\nbios 6.4.2\n\nRelationship:\nbios 6.2.0 MUST_PRECEDE bios 6.4.2.\n\nRequirements:\nbios must be exactly 6.4.2.\n\nDependencies:\nThe compliant state depends on: bios must be exactly 6.4.2.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade BIOS versions earlier than 6.2.0 directly to version 6.4.2.\n\nCompliance Impact:\nAttempting the dependent update before its prerequisite is satisfied is non-compliant. Impact severity: Warning.\n\nEvidence:\nUpgrade BIOS versions earlier than 6.2.0 directly to version 6.4.2. Source document DOC-CA114A84AE60, chunk CHUNK-000405, page 1.\n\nConfidence:\n0.95. The text explicitly provides a specific upgrade path for versions earlier than 6.2.0.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000379",
+                         "rule_type":  "update_order_constraint",
+                         "subject":  "bios 6.2.0",
+                         "predicate":  "MUST_PRECEDE",
+                         "object":  "bios 6.4.2",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000380",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUpgrade Firmware versions earlier than 8.0.0 to version 8.2.1 before upgrading BIOS.\n\nRule Type:\nUpdate Order Constraint\n\nSubject:\nfirmware 8.0.0\n\nPredicate:\nMUST_PRECEDE\n\nObject:\nfirmware 8.2.1\n\nRelationship:\nfirmware 8.0.0 MUST_PRECEDE firmware 8.2.1.\n\nRequirements:\nfirmware must be exactly 8.2.1.\n\nDependencies:\nThe compliant state depends on: firmware must be exactly 8.2.1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade firmware to version 8.2.1 before proceeding with BIOS upgrade if current firmware is earlier than 8.0.0.\n\nCompliance Impact:\nAttempting the dependent update before its prerequisite is satisfied is non-compliant. Impact severity: Critical.\n\nEvidence:\nUpgrade Firmware versions earlier than 8.0.0 to version 8.2.1 before upgrading BIOS. Source document DOC-CA114A84AE60, chunk CHUNK-000406, page 1.\n\nConfidence:\n0.95. The text explicitly states a mandatory update sequence (firmware must be upgraded to a specific version before the BIOS upgrade).",
+        "metadata":  {
+                         "rule_id":  "RCAND-000380",
+                         "rule_type":  "update_order_constraint",
+                         "subject":  "firmware 8.0.0",
+                         "predicate":  "MUST_PRECEDE",
+                         "object":  "firmware 8.2.1",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000381",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nUpgrade Driver Pack versions earlier than 12.5.0 before migrating to Enterprise OS 2026.1.\n\nRule Type:\nReadiness Requirement\n\nSubject:\nEnterprise OS 2026.1\n\nPredicate:\nDEPENDS_ON\n\nObject:\nDriver Pack 12.5.0\n\nRelationship:\nEnterprise OS 2026.1 DEPENDS_ON Driver Pack 12.5.0.\n\nRequirements:\nDriver Pack must be at least 12.5.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be at least 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Driver Pack to version 12.5.0 or later before migrating to Enterprise OS 2026.1.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nUpgrade Driver Pack versions earlier than 12.5.0 before migrating to Enterprise OS 2026.1. Source document DOC-CA114A84AE60, chunk CHUNK-000407, page 1.\n\nConfidence:\n0.95. The text explicitly states that Driver Pack versions earlier than 12.5.0 must be upgraded before migrating to the specified OS version.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000381",
+                         "rule_type":  "readiness_requirement",
+                         "subject":  "Enterprise OS 2026.1",
+                         "predicate":  "DEPENDS_ON",
+                         "object":  "Driver Pack 12.5.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000382",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCVE / ID: SEC-2026-001 | Description: Privilege Escalation Vulnerability | Fixed In: BIOS Version 6.4.2\n\nRule Type:\nKnown Issue Fixed\n\nSubject:\nunknown unknown installed \n\nPredicate:\nREQUIRES_FIX_IN\n\nObject:\nSystem BIOS 6.4.2\n\nRelationship:\nunknown unknown installed  REQUIRES_FIX_IN System BIOS 6.4.2.\n\nRequirements:\nSystem BIOS must be at least 6.4.2.\n\nDependencies:\nThe compliant state depends on: System BIOS must be at least 6.4.2.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate BIOS to version 6.4.2 or later to fix Privilege Escalation Vulnerability SEC-2026-001.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCVE / ID: SEC-2026-001 | Description: Privilege Escalation Vulnerability | Fixed In: BIOS Version 6.4.2 Source document DOC-CA114A84AE60, chunk CHUNK-000408, page 1.\n\nConfidence:\n0.95. Explicitly states that the vulnerability is fixed in BIOS version 6.4.2, implying a requirement to be at or above this version for security.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000382",
+                         "rule_type":  "known_issue_fixed",
+                         "subject":  "unknown unknown installed ",
+                         "predicate":  "REQUIRES_FIX_IN",
+                         "object":  "System BIOS 6.4.2",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000383",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCVE / ID: SEC-2026-002 | Description: Firmware Authentication Validation Issue | Fixed In: Firmware Version 8.2.1\n\nRule Type:\nKnown Issue Fixed\n\nSubject:\nfirmware firmware installed \n\nPredicate:\nREQUIRES_FIX_IN\n\nObject:\nfirmware 8.2.1\n\nRelationship:\nfirmware firmware installed  REQUIRES_FIX_IN firmware 8.2.1.\n\nRequirements:\nfirmware must be at least 8.2.1.\n\nDependencies:\nThe compliant state depends on: firmware must be at least 8.2.1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate firmware to version 8.2.1 or later to fix Firmware Authentication Validation Issue (SEC-2026-002).\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCVE / ID: SEC-2026-002 | Description: Firmware Authentication Validation Issue | Fixed In: Firmware Version 8.2.1 Source document DOC-CA114A84AE60, chunk CHUNK-000409, page 1.\n\nConfidence:\n0.95. Explicitly states that a security issue (CVE SEC-2026-002) is fixed in Firmware Version 8.2.1, implying a requirement to be at or above this version to resolve the vulnerability.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000383",
+                         "rule_type":  "known_issue_fixed",
+                         "subject":  "firmware firmware installed ",
+                         "predicate":  "REQUIRES_FIX_IN",
+                         "object":  "firmware 8.2.1",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000384",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCVE / ID: SEC-2026-003 | Description: Endpoint Agent Token Exposure | Fixed In: Security Agent Version 4.8.3\n\nRule Type:\nKnown Issue Fixed\n\nSubject:\nSecurity Agent\n\nPredicate:\nREQUIRES_FIX_IN\n\nObject:\nSecurity Agent 4.8.3\n\nRelationship:\nSecurity Agent REQUIRES_FIX_IN Security Agent 4.8.3.\n\nRequirements:\nSecurity Agent must be at least 4.8.3.\n\nDependencies:\nThe compliant state depends on: Security Agent must be at least 4.8.3.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate Security Agent to version 4.8.3 or later to resolve Endpoint Agent Token Exposure (SEC-2026-003).\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCVE / ID: SEC-2026-003 | Description: Endpoint Agent Token Exposure | Fixed In: Security Agent Version 4.8.3 Source document DOC-CA114A84AE60, chunk CHUNK-000410, page 1.\n\nConfidence:\n0.95. The text explicitly states a security vulnerability is fixed in a specific version of the Security Agent.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000384",
+                         "rule_type":  "known_issue_fixed",
+                         "subject":  "Security Agent",
+                         "predicate":  "REQUIRES_FIX_IN",
+                         "object":  "Security Agent 4.8.3",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000385",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nComponent: BIOS | Minimum Version: 6.4.2 | Current Release: 6.4.2\n\nRule Type:\nMin Version Constraint\n\nSubject:\nunknown unknown installed \n\nPredicate:\nREQUIRES\n\nObject:\nBIOS 6.4.2\n\nRelationship:\nunknown unknown installed  REQUIRES BIOS 6.4.2.\n\nRequirements:\nBIOS must be at least 6.4.2.\n\nDependencies:\nThe compliant state depends on: BIOS must be at least 6.4.2.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate BIOS to version 6.4.2 or later.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nComponent: BIOS | Minimum Version: 6.4.2 | Current Release: 6.4.2 Source document DOC-CA114A84AE60, chunk CHUNK-000412, page 1.\n\nConfidence:\n0.95. The text explicitly lists a \u0027Minimum Version\u0027 for the BIOS component.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000385",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "unknown unknown installed ",
+                         "predicate":  "REQUIRES",
+                         "object":  "BIOS 6.4.2",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000386",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nComponent: Firmware | Minimum Version: 8.2.0 | Current Release: 8.2.1\n\nRule Type:\nMin Version Constraint\n\nSubject:\nfirmware\n\nPredicate:\nREQUIRES\n\nObject:\nfirmware 8.2.0\n\nRelationship:\nfirmware REQUIRES firmware 8.2.0.\n\nRequirements:\nfirmware must be at least 8.2.0.\n\nDependencies:\nThe compliant state depends on: firmware must be at least 8.2.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate firmware to version 8.2.0 or later.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nComponent: Firmware | Minimum Version: 8.2.0 | Current Release: 8.2.1 Source document DOC-CA114A84AE60, chunk CHUNK-000413, page 1.\n\nConfidence:\n0.95. The text explicitly lists a \u0027Minimum Version\u0027 for the Firmware component in a compliance validation section.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000386",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "firmware",
+                         "predicate":  "REQUIRES",
+                         "object":  "firmware 8.2.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000387",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nComponent: Driver Pack | Minimum Version: 12.5.0 | Current Release: 12.5.0\n\nRule Type:\nMin Version Constraint\n\nSubject:\nDriver Pack\n\nPredicate:\nREQUIRES\n\nObject:\nDriver Pack 12.5.0\n\nRelationship:\nDriver Pack REQUIRES Driver Pack 12.5.0.\n\nRequirements:\nDriver Pack must be at least 12.5.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be at least 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate Driver Pack to version 12.5.0 or later.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nComponent: Driver Pack | Minimum Version: 12.5.0 | Current Release: 12.5.0 Source document DOC-CA114A84AE60, chunk CHUNK-000414, page 1.\n\nConfidence:\n0.95. The text explicitly lists a \u0027Minimum Version\u0027 for the Driver Pack component in a Compliance Validation Rules section.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000387",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Driver Pack",
+                         "predicate":  "REQUIRES",
+                         "object":  "Driver Pack 12.5.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000388",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nComponent: Security Agent | Minimum Version: 4.8.3 | Current Release: 4.8.3\n\nRule Type:\nMin Version Constraint\n\nSubject:\nSecurity Agent\n\nPredicate:\nREQUIRES\n\nObject:\nSecurity Agent 4.8.3\n\nRelationship:\nSecurity Agent REQUIRES Security Agent 4.8.3.\n\nRequirements:\nSecurity Agent must be at least 4.8.3.\n\nDependencies:\nThe compliant state depends on: Security Agent must be at least 4.8.3.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpdate Security Agent to version 4.8.3 or later.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nComponent: Security Agent | Minimum Version: 4.8.3 | Current Release: 4.8.3 Source document DOC-CA114A84AE60, chunk CHUNK-000415, page 1.\n\nConfidence:\n0.95. The text explicitly lists a Minimum Version for the Security Agent in a Compliance Validation Rules section.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000388",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Security Agent",
+                         "predicate":  "REQUIRES",
+                         "object":  "Security Agent 4.8.3",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000389",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nComponent: Endpoint Management Agent | Minimum Version: 3.7.0 | Current Release: 3.7.1\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEndpoint Management Agent\n\nPredicate:\nREQUIRES\n\nObject:\nEndpoint Management Agent 3.7.0\n\nRelationship:\nEndpoint Management Agent REQUIRES Endpoint Management Agent 3.7.0.\n\nRequirements:\nEndpoint Management Agent must be at least 3.7.0.\n\nDependencies:\nThe compliant state depends on: Endpoint Management Agent must be at least 3.7.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Endpoint Management Agent to version 3.7.0 or higher.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nComponent: Endpoint Management Agent | Minimum Version: 3.7.0 | Current Release: 3.7.1 Source document DOC-CA114A84AE60, chunk CHUNK-000416, page 1.\n\nConfidence:\n0.95. The text explicitly defines a minimum version requirement for the specified component in a compliance validation table.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000389",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Endpoint Management Agent",
+                         "predicate":  "REQUIRES",
+                         "object":  "Endpoint Management Agent 3.7.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000390",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nComponent: Enterprise OS | Minimum Version: 2025.2 | Current Release: 2026.1\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEnterprise OS\n\nPredicate:\nREQUIRES\n\nObject:\nEnterprise OS 2025.2\n\nRelationship:\nEnterprise OS REQUIRES Enterprise OS 2025.2.\n\nRequirements:\nEnterprise OS must be at least 2025.2.\n\nDependencies:\nThe compliant state depends on: Enterprise OS must be at least 2025.2.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nEnsure Enterprise OS version is 2025.2 or higher.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nComponent: Enterprise OS | Minimum Version: 2025.2 | Current Release: 2026.1 Source document DOC-CA114A84AE60, chunk CHUNK-000417, page 1.\n\nConfidence:\n0.95. The text explicitly lists a \u0027Minimum Version\u0027 for the Enterprise OS component in a Compliance Validation Rules section.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000390",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Enterprise OS",
+                         "predicate":  "REQUIRES",
+                         "object":  "Enterprise OS 2025.2",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000391",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCondition: BIOS version below 6.4.2 | Action Required: Upgrade BIOS to version 6.4.2\n\nRule Type:\nMin Version Constraint\n\nSubject:\nbios 6.4.2\n\nPredicate:\nREQUIRES\n\nObject:\nbios 6.4.2\n\nRelationship:\nbios 6.4.2 REQUIRES bios 6.4.2.\n\nRequirements:\nbios must be at least 6.4.2.\n\nDependencies:\nThe compliant state depends on: bios must be at least 6.4.2.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade BIOS to version 6.4.2\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCondition: BIOS version below 6.4.2 | Action Required: Upgrade BIOS to version 6.4.2 Source document DOC-CA114A84AE60, chunk CHUNK-000418, page 1.\n\nConfidence:\n0.95. The text explicitly states a condition based on a BIOS version and a required action to upgrade to a specific version.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000391",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "bios 6.4.2",
+                         "predicate":  "REQUIRES",
+                         "object":  "bios 6.4.2",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000392",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCondition: Firmware version below 8.2.0 | Action Required: Upgrade Firmware to version 8.2.1\n\nRule Type:\nMin Version Constraint\n\nSubject:\nfirmware 8.2.0\n\nPredicate:\nREQUIRES\n\nObject:\nfirmware 8.2.1\n\nRelationship:\nfirmware 8.2.0 REQUIRES firmware 8.2.1.\n\nRequirements:\nfirmware must be at least 8.2.1.\n\nDependencies:\nThe compliant state depends on: firmware must be at least 8.2.1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Firmware to version 8.2.1\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCondition: Firmware version below 8.2.0 | Action Required: Upgrade Firmware to version 8.2.1 Source document DOC-CA114A84AE60, chunk CHUNK-000419, page 1.\n\nConfidence:\n0.95. The text explicitly defines a condition (version below 8.2.0) and a mandatory action (Upgrade to 8.2.1).",
+        "metadata":  {
+                         "rule_id":  "RCAND-000392",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "firmware 8.2.0",
+                         "predicate":  "REQUIRES",
+                         "object":  "firmware 8.2.1",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000393",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCondition: Driver Pack version below 12.5.0 | Action Required: Upgrade Driver Pack to version 12.5.0\n\nRule Type:\nMin Version Constraint\n\nSubject:\nDriver Pack\n\nPredicate:\nREQUIRES\n\nObject:\nDriver Pack 12.5.0\n\nRelationship:\nDriver Pack REQUIRES Driver Pack 12.5.0.\n\nRequirements:\nDriver Pack must be at least 12.5.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be at least 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Driver Pack to version 12.5.0\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCondition: Driver Pack version below 12.5.0 | Action Required: Upgrade Driver Pack to version 12.5.0 Source document DOC-CA114A84AE60, chunk CHUNK-000420, page 1.\n\nConfidence:\n0.95. The text explicitly states a condition (version below 12.5.0) and a required action (upgrade to 12.5.0).",
+        "metadata":  {
+                         "rule_id":  "RCAND-000393",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Driver Pack",
+                         "predicate":  "REQUIRES",
+                         "object":  "Driver Pack 12.5.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000394",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCondition: Security Agent version below 4.8.3 | Action Required: Upgrade Security Agent to version 4.8.3\n\nRule Type:\nMin Version Constraint\n\nSubject:\nSecurity Agent\n\nPredicate:\nREQUIRES\n\nObject:\nSecurity Agent 4.8.3\n\nRelationship:\nSecurity Agent REQUIRES Security Agent 4.8.3.\n\nRequirements:\nSecurity Agent must be at least 4.8.3.\n\nDependencies:\nThe compliant state depends on: Security Agent must be at least 4.8.3.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Security Agent to version 4.8.3\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCondition: Security Agent version below 4.8.3 | Action Required: Upgrade Security Agent to version 4.8.3 Source document DOC-CA114A84AE60, chunk CHUNK-000421, page 1.\n\nConfidence:\n0.95. The text explicitly states a condition based on a version below 4.8.3 and a required action to upgrade to 4.8.3.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000394",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Security Agent",
+                         "predicate":  "REQUIRES",
+                         "object":  "Security Agent 4.8.3",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000395",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCondition: Endpoint Mgmt Agent below 3.7.0 | Action Required: Upgrade Endpoint Management Agent to version 3.7.1\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEndpoint Mgmt Agent\n\nPredicate:\nREQUIRES\n\nObject:\nEndpoint Mgmt Agent 3.7.1\n\nRelationship:\nEndpoint Mgmt Agent REQUIRES Endpoint Mgmt Agent 3.7.1.\n\nRequirements:\nEndpoint Mgmt Agent must be at least 3.7.1.\n\nDependencies:\nThe compliant state depends on: Endpoint Mgmt Agent must be at least 3.7.1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Endpoint Management Agent to version 3.7.1\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Warning.\n\nEvidence:\nCondition: Endpoint Mgmt Agent below 3.7.0 | Action Required: Upgrade Endpoint Management Agent to version 3.7.1 Source document DOC-CA114A84AE60, chunk CHUNK-000422, page 1.\n\nConfidence:\n0.95. The text explicitly states a condition (version below 3.7.0) and a required action (upgrade to 3.7.1).",
+        "metadata":  {
+                         "rule_id":  "RCAND-000395",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Endpoint Mgmt Agent",
+                         "predicate":  "REQUIRES",
+                         "object":  "Endpoint Mgmt Agent 3.7.1",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000396",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nCondition: Enterprise OS below 2025.2 | Action Required: Upgrade Enterprise OS to version 2026.1\n\nRule Type:\nMin Version Constraint\n\nSubject:\nEnterprise OS\n\nPredicate:\nREQUIRES\n\nObject:\nEnterprise OS 2026.1\n\nRelationship:\nEnterprise OS REQUIRES Enterprise OS 2026.1.\n\nRequirements:\nEnterprise OS must be at least 2026.1.\n\nDependencies:\nThe compliant state depends on: Enterprise OS must be at least 2026.1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Enterprise OS to version 2026.1\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nCondition: Enterprise OS below 2025.2 | Action Required: Upgrade Enterprise OS to version 2026.1 Source document DOC-CA114A84AE60, chunk CHUNK-000423, page 1.\n\nConfidence:\n0.95. The text explicitly defines a condition (OS below 2025.2) and a required action (Upgrade to 2026.1), creating a clear version constraint.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000396",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "Enterprise OS",
+                         "predicate":  "REQUIRES",
+                         "object":  "Enterprise OS 2026.1",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000397",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nBecause BIOS 6.4.2 requires Firmware 8.2.0 or later (COMP-001), firmware must be brought current before the BIOS upgrade is attempted.\n\nRule Type:\nReadiness Requirement\n\nSubject:\nbios 6.4.2\n\nPredicate:\nDEPENDS_ON\n\nObject:\nfirmware 8.2.0\n\nRelationship:\nbios 6.4.2 DEPENDS_ON firmware 8.2.0.\n\nRequirements:\nfirmware must be at least 8.2.0.\n\nDependencies:\nThe compliant state depends on: firmware must be at least 8.2.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade firmware to version 8.2.0 or later before attempting to upgrade BIOS to 6.4.2.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nBecause BIOS 6.4.2 requires Firmware 8.2.0 or later (COMP-001), firmware must be brought current before the BIOS upgrade is attempted. Source document DOC-CA114A84AE60, chunk CHUNK-000426, page 1.\n\nConfidence:\n0.95. The text explicitly states that BIOS 6.4.2 requires Firmware 8.2.0 or later.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000397",
+                         "rule_type":  "readiness_requirement",
+                         "subject":  "bios 6.4.2",
+                         "predicate":  "DEPENDS_ON",
+                         "object":  "firmware 8.2.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.95",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000398",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nValidation checkpoint: confirm firmware reports version 8.2.1 and the device completes a full reboot cycle without exhibiting the boot-delay symptoms described in KI-001.\n\nRule Type:\nReadiness Requirement\n\nSubject:\nfirmware 8.2.1\n\nPredicate:\nDEPENDS_ON\n\nObject:\nReboot Cycle completes a full reboot cycle without exhibiting boot-delay symptoms described in KI-001\n\nRelationship:\nfirmware 8.2.1 DEPENDS_ON Reboot Cycle completes a full reboot cycle without exhibiting boot-delay symptoms described in KI-001.\n\nRequirements:\nReboot Cycle must be installed completes a full reboot cycle without exhibiting boot-delay symptoms described in KI-001.\n\nDependencies:\nThe compliant state depends on: Reboot Cycle must be installed completes a full reboot cycle without exhibiting boot-delay symptoms described in KI-001.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nEnsure firmware is version 8.2.1 and verify a full reboot cycle without KI-001 symptoms.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nValidation checkpoint: confirm firmware reports version 8.2.1 and the device completes a full reboot cycle without exhibiting the boot-delay symptoms described in KI-001. Source document DOC-CA114A84AE60, chunk CHUNK-000427, page 1.\n\nConfidence:\n0.3. The text explicitly states a validation checkpoint requiring a specific firmware version and a successful reboot behavior as a condition for validation. [AUTO-FLAGGED: extracted value not found verbatim in source chunk text - verify before approving.]",
+        "metadata":  {
+                         "rule_id":  "RCAND-000398",
+                         "rule_type":  "readiness_requirement",
+                         "subject":  "firmware 8.2.1",
+                         "predicate":  "DEPENDS_ON",
+                         "object":  "Reboot Cycle completes a full reboot cycle without exhibiting boot-delay symptoms described in KI-001",
+                         "status":  "needs_clarification",
+                         "confidence":  "0.3",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000399",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nPer REC-003, the driver pack must be current before any Enterprise OS migration is attempted.\n\nRule Type:\nReadiness Requirement\n\nSubject:\nEnterprise OS Enterprise OS migration\n\nPredicate:\nDEPENDS_ON\n\nObject:\ndriver pack current\n\nRelationship:\nEnterprise OS Enterprise OS migration DEPENDS_ON driver pack current.\n\nRequirements:\ndriver pack must be exactly current.\n\nDependencies:\nThe compliant state depends on: driver pack must be exactly current.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nEnsure the driver pack is updated to the current version before attempting Enterprise OS migration.\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Critical.\n\nEvidence:\nPer REC-003, the driver pack must be current before any Enterprise OS migration is attempted. Source document DOC-CA114A84AE60, chunk CHUNK-000430, page 1.\n\nConfidence:\n0.9. Explicitly states the driver pack must be current before OS migration.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000399",
+                         "rule_type":  "readiness_requirement",
+                         "subject":  "Enterprise OS Enterprise OS migration",
+                         "predicate":  "DEPENDS_ON",
+                         "object":  "driver pack current",
+                         "status":  "pending_review",
+                         "confidence":  "0.9",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000400",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nValidation checkpoint: confirm Driver Pack reports version 12.5.0 and the absence of the network adapter instability described in KI-002.\n\nRule Type:\nMin Version Constraint\n\nSubject:\nunknown unknown installed \n\nPredicate:\nREQUIRES\n\nObject:\nDriver Pack 12.5.0\n\nRelationship:\nunknown unknown installed  REQUIRES Driver Pack 12.5.0.\n\nRequirements:\nDriver Pack must be exactly 12.5.0.\n\nDependencies:\nThe compliant state depends on: Driver Pack must be exactly 12.5.0.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nUpgrade Platform Driver Pack to version 12.5.0\n\nCompliance Impact:\nA system that matches the conditions but does not meet the requirements is non-compliant. Impact severity: Info.\n\nEvidence:\nValidation checkpoint: confirm Driver Pack reports version 12.5.0 and the absence of the network adapter instability described in KI-002. Source document DOC-CA114A84AE60, chunk CHUNK-000431, page 1.\n\nConfidence:\n0.9. The text explicitly requires confirming that the Driver Pack reports version 12.5.0 as a validation checkpoint.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000400",
+                         "rule_type":  "min_version_constraint",
+                         "subject":  "unknown unknown installed ",
+                         "predicate":  "REQUIRES",
+                         "object":  "Driver Pack 12.5.0",
+                         "status":  "pending_review",
+                         "confidence":  "0.9",
+                         "source":  "CompatibilityLayer"
+                     }
+    },
+    {
+        "document_id":  "COMPAT-DOC-RCAND-000401",
+        "document_type":  "compatibility_rule",
+        "text":  "Compatibility Rule\n\nRule Description:\nDevices that skip Step 1 and attempt the BIOS upgrade directly against Firmware 7.9.0 may encounter installation failures or the boot-delay condition described in KI-001.\n\nRule Type:\nUpdate Order Constraint\n\nSubject:\nfirmware 7.9.0\n\nPredicate:\nMUST_PRECEDE\n\nObject:\nStep 1\n\nRelationship:\nfirmware 7.9.0 MUST_PRECEDE Step 1.\n\nRequirements:\nStep 1 must be installed Step 1.\n\nDependencies:\nThe compliant state depends on: Step 1 must be installed Step 1.\n\nConflicts:\nNo conflicts documented.\n\nExceptions:\nNo exceptions documented.\n\nRemediation:\nPerform Step 1 before attempting the BIOS upgrade if currently on Firmware 7.9.0.\n\nCompliance Impact:\nAttempting the dependent update before its prerequisite is satisfied is non-compliant. Impact severity: Critical.\n\nEvidence:\nDevices that skip Step 1 and attempt the BIOS upgrade directly against Firmware 7.9.0 may encounter installation failures or the boot-delay condition described in KI-001. Source document DOC-CA114A84AE60, chunk CHUNK-000434, page 1.\n\nConfidence:\n0.9. The text explicitly warns that skipping Step 1 before upgrading from Firmware 7.9.0 may lead to installation failures or boot delays.",
+        "metadata":  {
+                         "rule_id":  "RCAND-000401",
+                         "rule_type":  "update_order_constraint",
+                         "subject":  "firmware 7.9.0",
+                         "predicate":  "MUST_PRECEDE",
+                         "object":  "Step 1",
+                         "status":  "pending_review",
+                         "confidence":  "0.9",
+                         "source":  "CompatibilityLayer"
+                     }
+    }
+]

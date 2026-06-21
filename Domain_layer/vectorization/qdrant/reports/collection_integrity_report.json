@@ -1,0 +1,11 @@
+{
+  "collection_name": "kb_domain_layer",
+  "expected_vector_count": 24,
+  "vector_count": 24,
+  "embedding_dimension": 768,
+  "distance": "cosine",
+  "payload_text_present": true,
+  "failed_vectors": 0,
+  "status": "READY_FOR_RETRIEVAL",
+  "checked_at": "2026-06-21T08:12:01.001711+00:00"
+}

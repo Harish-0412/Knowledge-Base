@@ -1,0 +1,62 @@
+[
+  {
+    "test_id": "RET-001",
+    "query": "What firmware version is required?"
+  },
+  {
+    "test_id": "RET-002",
+    "query": "Which operating systems are supported?"
+  },
+  {
+    "test_id": "RET-003",
+    "query": "Show incompatible software combinations."
+  },
+  {
+    "test_id": "RET-004",
+    "query": "What causes a device to become non-compliant?"
+  },
+  {
+    "test_id": "RET-005",
+    "query": "Which drivers depend on firmware?"
+  },
+  {
+    "test_id": "RET-006",
+    "query": "What BIOS and firmware versions cannot be used together?"
+  },
+  {
+    "test_id": "RET-007",
+    "query": "Which component must be upgraded before an operating system migration?"
+  },
+  {
+    "test_id": "RET-008",
+    "query": "Find minimum version requirements for security agents."
+  },
+  {
+    "test_id": "RET-009",
+    "query": "Which known issues are fixed by upgrading?"
+  },
+  {
+    "test_id": "RET-010",
+    "query": "What update order must administrators follow?"
+  },
+  {
+    "test_id": "RET-011",
+    "query": "Which configurations have critical compliance impact?"
+  },
+  {
+    "test_id": "RET-012",
+    "query": "What remediation is recommended for unsupported component versions?"
+  },
+  {
+    "test_id": "RET-013",
+    "query": "Which endpoint management agent version is required?"
+  },
+  {
+    "test_id": "RET-014",
+    "query": "What platform driver pack versions are compatible?"
+  },
+  {
+    "test_id": "RET-015",
+    "query": "Which compatibility rules describe feature support?"
+  }
+]
