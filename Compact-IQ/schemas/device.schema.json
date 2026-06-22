@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Device",
+  "type": "object",
+  "required": [
+    "device_id",
+    "inventory_snapshot_id",
+    "hostname",
+    "device_type",
+    "manufacturer",
+    "model",
+    "components",
+    "readiness"
+  ],
+  "properties": {
+    "device_id": {
+      "type": "string",
+      "pattern": "^DEV-[0-9]{6}$"
+    },
+    "inventory_snapshot_id": {
+      "type": "string",
+      "pattern": "^INV-[0-9]{6}$"
+    },
+    "hostname": {
+      "type": "string"
+    },
+    "serial_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "asset_tag": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "device_type": {
+      "type": "string",
+      "enum": [
+        "server",
+        "laptop",
+        "workstation",
+        "desktop"
+      ]
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "model_normalized": {
+      "type": "string"
+    },
+    "department": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "owner_team": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "environment": {
+      "type": "string",
+      "enum": [
+        "production",
+        "staging",
+        "office",
+        "lab",
+        "development"
+      ]
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "retired",
+        "maintenance",
+        "unknown"
+      ]
+    },
+    "last_seen_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "$ref": "device_component.schema.json"
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "required": [
+        "agent_health",
+        "pending_reboot",
+        "disk_free_gb",
+        "network_reachable"
+      ],
+      "properties": {
+        "agent_health": {
+          "type": "string",
+          "enum": [
+            "healthy",
+            "degraded",
+            "unhealthy",
+            "unknown"
+          ]
+        },
+        "pending_reboot": {
+          "type": "boolean"
+        },
+        "disk_free_gb": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "battery_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "ac_power_connected": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "bitlocker_suspended": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "maintenance_window_available": {
+          "type": "boolean"
+        },
+        "network_reachable": {
+          "type": "boolean"
+        },
+        "last_seen_within_hours": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

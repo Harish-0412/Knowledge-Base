@@ -1,0 +1,84 @@
+{
+  "rule_id": "RULE-000001",
+  "candidate_id": "RCAND-000001",
+  "source_document_id": "DOC-000001",
+  "source_chunk_id": "CHUNK-000044",
+  "source_page": 4,
+  "source_excerpt": "Corrected an issue where VMware ESXi 5.1.x, QLE24xx cards stop responding during disk I/O when Intel Xeon E5-2400 V2 family processors is used.",
+  "rule_type": "known_issue_fixed",
+  "condition_logic": "AND",
+  "conditions": [
+    {
+      "condition_id": "COND-000001",
+      "component_type": "os",
+      "component_name": "VMware ESXi",
+      "component_family": null,
+      "vendor": "VMware",
+      "operator": "matches",
+      "value_raw": "VMware ESXi 5.1.x",
+      "value_normalized": "vmware_esxi_5_1_x",
+      "version_raw": "5.1.x",
+      "version_normalized": "5.1.x",
+      "version_scheme": "wildcard",
+      "metadata": {}
+    },
+    {
+      "condition_id": "COND-000002",
+      "component_type": "hba",
+      "component_name": "QLogic QLE24xx",
+      "component_family": "QLE24xx",
+      "vendor": "QLogic",
+      "operator": "installed",
+      "value_raw": "QLogic QLE24xx",
+      "value_normalized": "qlogic_qle24xx",
+      "version_raw": null,
+      "version_normalized": null,
+      "version_scheme": null,
+      "metadata": {}
+    },
+    {
+      "condition_id": "COND-000003",
+      "component_type": "cpu",
+      "component_name": "Intel Xeon",
+      "component_family": "E5-2400 V2",
+      "vendor": "Intel",
+      "operator": "installed",
+      "value_raw": "Intel Xeon E5-2400 V2 family",
+      "value_normalized": "intel_xeon_e5_2400_v2",
+      "version_raw": null,
+      "version_normalized": null,
+      "version_scheme": null,
+      "metadata": {}
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "REQ-000001",
+      "component_type": "bios",
+      "component_name": "System BIOS",
+      "component_family": null,
+      "operator": ">=",
+      "value_raw": null,
+      "value_normalized": null,
+      "version_raw": "02.04.02",
+      "version_normalized": "2.4.2",
+      "version_scheme": "semantic",
+      "requirement_kind": "min_version",
+      "metadata": {}
+    }
+  ],
+  "exceptions": [],
+  "severity": "critical",
+  "confidence_score": 0.7,
+  "review_status": "approved",
+  "reviewed_by": "endpoint_engineer",
+  "reviewed_at": "2026-06-19T10:20:00Z",
+  "normalized_at": "2026-06-19T10:20:10Z",
+  "remediation_hint": "Update BIOS to 02.04.02 or later before rollout.",
+  "tags": [
+    "bios",
+    "vmware",
+    "hba",
+    "cpu"
+  ]
+}

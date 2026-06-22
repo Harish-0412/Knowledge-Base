@@ -1,0 +1,465 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ApprovedRule",
+  "type": "object",
+  "required": [
+    "rule_id",
+    "candidate_id",
+    "source_document_id",
+    "source_chunk_id",
+    "rule_type",
+    "condition_logic",
+    "conditions",
+    "requirements",
+    "severity",
+    "review_status",
+    "reviewed_by",
+    "reviewed_at",
+    "normalized_at"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^RCAND-[0-9]{6}$"
+    },
+    "source_document_id": {
+      "type": "string",
+      "pattern": "^DOC-[0-9]{6}$"
+    },
+    "source_chunk_id": {
+      "type": "string",
+      "pattern": "^CHUNK-[0-9]{6}$"
+    },
+    "source_page": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "source_excerpt": {
+      "type": "string"
+    },
+    "rule_type": {
+      "type": "string",
+      "enum": [
+        "min_version_constraint",
+        "max_version_constraint",
+        "exact_version_constraint",
+        "incompatible_combination",
+        "feature_support_added",
+        "known_issue_fixed",
+        "deprecated_after",
+        "update_order_constraint",
+        "readiness_requirement"
+      ]
+    },
+    "condition_logic": {
+      "type": "string",
+      "enum": [
+        "AND",
+        "OR"
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "condition_id",
+          "component_type",
+          "operator"
+        ],
+        "properties": {
+          "condition_id": {
+            "type": "string"
+          },
+          "component_type": {
+            "type": "string",
+            "enum": [
+              "bios",
+              "cpu",
+              "os",
+              "firmware",
+              "driver",
+              "agent",
+              "management_tool",
+              "hba",
+              "raid_controller",
+              "network_adapter",
+              "storage_controller",
+              "virtualization_feature",
+              "tpm",
+              "model",
+              "device_type",
+              "hardware_revision",
+              "readiness",
+              "unknown"
+            ]
+          },
+          "component_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "component_family": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "vendor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "operator": {
+            "type": "string",
+            "enum": [
+              "installed",
+              "exists",
+              "not_exists",
+              "==",
+              "!=",
+              ">=",
+              "<=",
+              ">",
+              "<",
+              "matches",
+              "in",
+              "not_in"
+            ]
+          },
+          "value_raw": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "value_normalized": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "version_raw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version_normalized": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version_scheme": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "requirement_id",
+          "component_type",
+          "operator",
+          "requirement_kind"
+        ],
+        "properties": {
+          "requirement_id": {
+            "type": "string"
+          },
+          "component_type": {
+            "type": "string",
+            "enum": [
+              "bios",
+              "cpu",
+              "os",
+              "firmware",
+              "driver",
+              "agent",
+              "management_tool",
+              "hba",
+              "raid_controller",
+              "network_adapter",
+              "storage_controller",
+              "virtualization_feature",
+              "tpm",
+              "model",
+              "device_type",
+              "hardware_revision",
+              "readiness",
+              "unknown"
+            ]
+          },
+          "component_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "component_family": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "operator": {
+            "type": "string",
+            "enum": [
+              "installed",
+              "exists",
+              "not_exists",
+              "==",
+              "!=",
+              ">=",
+              "<=",
+              ">",
+              "<",
+              "matches",
+              "in",
+              "not_in"
+            ]
+          },
+          "value_raw": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "value_normalized": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "version_raw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version_normalized": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version_scheme": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "requirement_kind": {
+            "type": "string",
+            "enum": [
+              "min_version",
+              "max_version",
+              "exact_version",
+              "not_allowed",
+              "required_present",
+              "update_before",
+              "readiness"
+            ]
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "condition_id",
+          "component_type",
+          "operator"
+        ],
+        "properties": {
+          "condition_id": {
+            "type": "string"
+          },
+          "component_type": {
+            "type": "string",
+            "enum": [
+              "bios",
+              "cpu",
+              "os",
+              "firmware",
+              "driver",
+              "agent",
+              "management_tool",
+              "hba",
+              "raid_controller",
+              "network_adapter",
+              "storage_controller",
+              "virtualization_feature",
+              "tpm",
+              "model",
+              "device_type",
+              "hardware_revision",
+              "readiness",
+              "unknown"
+            ]
+          },
+          "component_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "component_family": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "vendor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "operator": {
+            "type": "string",
+            "enum": [
+              "installed",
+              "exists",
+              "not_exists",
+              "==",
+              "!=",
+              ">=",
+              "<=",
+              ">",
+              "<",
+              "matches",
+              "in",
+              "not_in"
+            ]
+          },
+          "value_raw": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "value_normalized": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "version_raw": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version_normalized": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version_scheme": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "info",
+        "warning",
+        "critical",
+        "blocker"
+      ]
+    },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "confidence_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "pending_review",
+        "approved",
+        "edited",
+        "rejected",
+        "needs_clarification"
+      ]
+    },
+    "remediation_hint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rule_id": {
+      "type": "string",
+      "pattern": "^RULE-[0-9]{6}$"
+    },
+    "reviewed_by": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "normalized_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

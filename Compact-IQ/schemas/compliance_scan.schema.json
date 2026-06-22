@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ComplianceScan",
+  "type": "object",
+  "required": [
+    "scan_id",
+    "inventory_snapshot_id",
+    "ruleset_version",
+    "scan_started_at",
+    "status",
+    "summary"
+  ],
+  "properties": {
+    "scan_id": {
+      "type": "string",
+      "pattern": "^SCAN-[0-9]{6}$"
+    },
+    "inventory_snapshot_id": {
+      "type": "string",
+      "pattern": "^INV-[0-9]{6}$"
+    },
+    "ruleset_version": {
+      "type": "string"
+    },
+    "scan_started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scan_completed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "queued",
+        "running",
+        "completed",
+        "failed"
+      ]
+    },
+    "summary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

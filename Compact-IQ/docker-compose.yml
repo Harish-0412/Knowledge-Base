@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: compatiq_docintel_postgres
+    environment:
+      POSTGRES_DB: compatiq_docintel
+      POSTGRES_USER: compatiq
+      POSTGRES_PASSWORD: compatiq
+    ports:
+      - "55432:5432"
+    volumes:
+      - compatiq_docintel_pgdata:/var/lib/postgresql/data
+
+volumes:
+  compatiq_docintel_pgdata:

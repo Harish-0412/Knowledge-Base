@@ -1,0 +1,46 @@
+{
+  "scan_id": "SCAN-000001",
+  "device_id": "DEV-000015",
+  "compatibility_status": "critical",
+  "readiness_status": "ready",
+  "score": 58,
+  "applicable_rule_count": 1,
+  "violation_count": 1,
+  "readiness_failure_count": 0,
+  "rollout_recommendation": "safe_after_remediation",
+  "violations": [
+    {
+      "violation_id": "VIO-000001",
+      "scan_id": "SCAN-000001",
+      "device_id": "DEV-000015",
+      "rule_id": "RULE-000001",
+      "severity": "critical",
+      "violation_type": "requirement_failed",
+      "observed_component_type": "bios",
+      "observed_value_raw": "02.00.21",
+      "observed_value_normalized": "2.0.21",
+      "expected_component_type": "bios",
+      "expected_operator": ">=",
+      "expected_value_raw": "02.04.02",
+      "expected_value_normalized": "2.4.2",
+      "message": "BIOS 02.00.21 is below required version 02.04.02.",
+      "root_cause_candidate": "BIOS version is below the minimum required version.",
+      "source_chunk_id": "CHUNK-000044",
+      "remediation_steps": [
+        {
+          "step_id": "REM-000001",
+          "order": 1,
+          "action_type": "update_component",
+          "target_component_type": "bios",
+          "from_version": "02.00.21",
+          "to_version": "02.04.02 or later",
+          "reason": "Required before this configuration is considered compatible.",
+          "is_simulated": true
+        }
+      ]
+    }
+  ],
+  "readiness_failures": [],
+  "root_cause_summary": "BIOS version is below the minimum required version.",
+  "generated_at": "2026-06-19T11:00:15Z"
+}

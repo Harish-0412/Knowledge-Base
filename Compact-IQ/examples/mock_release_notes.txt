@@ -1,0 +1,3 @@
+Product A 1.0 is compatible with Product B 2.0.
+
+Product A 1.0 requires Plugin C version 3.2 or later.

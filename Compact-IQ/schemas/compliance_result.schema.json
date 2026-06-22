@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ComplianceResult",
+  "type": "object",
+  "required": [
+    "scan_id",
+    "device_id",
+    "compatibility_status",
+    "readiness_status",
+    "score",
+    "violations",
+    "readiness_failures",
+    "rollout_recommendation",
+    "generated_at"
+  ],
+  "properties": {
+    "scan_id": {
+      "type": "string",
+      "pattern": "^SCAN-[0-9]{6}$"
+    },
+    "device_id": {
+      "type": "string",
+      "pattern": "^DEV-[0-9]{6}$"
+    },
+    "compatibility_status": {
+      "type": "string",
+      "enum": [
+        "compliant",
+        "warning",
+        "critical",
+        "blocked",
+        "unknown"
+      ]
+    },
+    "readiness_status": {
+      "type": "string",
+      "enum": [
+        "ready",
+        "not_ready",
+        "unknown"
+      ]
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "applicable_rule_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "violation_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "readiness_failure_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rollout_recommendation": {
+      "type": "string",
+      "enum": [
+        "safe_for_ring_1",
+        "safe_after_remediation",
+        "blocked",
+        "needs_review"
+      ]
+    },
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "violation_id",
+          "scan_id",
+          "device_id",
+          "rule_id",
+          "severity",
+          "violation_type",
+          "message"
+        ],
+        "properties": {
+          "violation_id": {
+            "type": "string",
+            "pattern": "^VIO-[0-9]{6}$"
+          },
+          "scan_id": {
+            "type": "string",
+            "pattern": "^SCAN-[0-9]{6}$"
+          },
+          "device_id": {
+            "type": "string",
+            "pattern": "^DEV-[0-9]{6}$"
+          },
+          "rule_id": {
+            "type": "string",
+            "pattern": "^RULE-[0-9]{6}$"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "info",
+              "warning",
+              "critical",
+              "blocker"
+            ]
+          },
+          "violation_type": {
+            "type": "string",
+            "enum": [
+              "requirement_failed",
+              "incompatible_combination",
+              "missing_data",
+              "readiness_failed",
+              "unknown"
+            ]
+          },
+          "observed_component_type": {
+            "type": "string",
+            "enum": [
+              "bios",
+              "cpu",
+              "os",
+              "firmware",
+              "driver",
+              "agent",
+              "management_tool",
+              "hba",
+              "raid_controller",
+              "network_adapter",
+              "storage_controller",
+              "virtualization_feature",
+              "tpm",
+              "model",
+              "device_type",
+              "hardware_revision",
+              "readiness",
+              "unknown"
+            ]
+          },
+          "observed_value_raw": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "observed_value_normalized": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "expected_component_type": {
+            "type": "string",
+            "enum": [
+              "bios",
+              "cpu",
+              "os",
+              "firmware",
+              "driver",
+              "agent",
+              "management_tool",
+              "hba",
+              "raid_controller",
+              "network_adapter",
+              "storage_controller",
+              "virtualization_feature",
+              "tpm",
+              "model",
+              "device_type",
+              "hardware_revision",
+              "readiness",
+              "unknown"
+            ]
+          },
+          "expected_operator": {
+            "type": "string",
+            "enum": [
+              "installed",
+              "exists",
+              "not_exists",
+              "==",
+              "!=",
+              ">=",
+              "<=",
+              ">",
+              "<",
+              "matches",
+              "in",
+              "not_in"
+            ]
+          },
+          "expected_value_raw": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "expected_value_normalized": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          },
+          "message": {
+            "type": "string"
+          },
+          "root_cause_candidate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_chunk_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^CHUNK-[0-9]{6}$"
+          },
+          "remediation_steps": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "readiness_failures": {
+      "type": "array"
+    },
+    "root_cause_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

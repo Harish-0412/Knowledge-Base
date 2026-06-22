@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DocumentChunk",
+  "type": "object",
+  "required": [
+    "chunk_id",
+    "document_id",
+    "text",
+    "extraction_method",
+    "quality_score",
+    "created_at"
+  ],
+  "properties": {
+    "chunk_id": {
+      "type": "string",
+      "pattern": "^CHUNK-[0-9]{6}$"
+    },
+    "document_id": {
+      "type": "string",
+      "pattern": "^DOC-[0-9]{6}$"
+    },
+    "page_number": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "chunk_type": {
+      "type": "string",
+      "enum": [
+        "release_note_bullet",
+        "table_row",
+        "table_group",
+        "paragraph",
+        "section",
+        "footnote",
+        "ocr_block",
+        "manual"
+      ]
+    },
+    "section_title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "extraction_method": {
+      "type": "string",
+      "enum": [
+        "pymupdf",
+        "docling",
+        "chandra_ocr",
+        "txt_loader",
+        "csv_loader",
+        "manual"
+      ]
+    },
+    "quality_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "bbox": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "number"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

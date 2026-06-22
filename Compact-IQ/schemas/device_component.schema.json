@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DeviceComponent",
+  "type": "object",
+  "required": [
+    "component_instance_id",
+    "device_id",
+    "component_type",
+    "component_name",
+    "status"
+  ],
+  "properties": {
+    "component_instance_id": {
+      "type": "string",
+      "pattern": "^COMP-[0-9]{6}$"
+    },
+    "device_id": {
+      "type": "string",
+      "pattern": "^DEV-[0-9]{6}$"
+    },
+    "component_type": {
+      "type": "string",
+      "enum": [
+        "bios",
+        "cpu",
+        "os",
+        "firmware",
+        "driver",
+        "agent",
+        "management_tool",
+        "hba",
+        "raid_controller",
+        "network_adapter",
+        "storage_controller",
+        "virtualization_feature",
+        "tpm",
+        "model",
+        "device_type",
+        "hardware_revision",
+        "readiness",
+        "unknown"
+      ]
+    },
+    "component_name": {
+      "type": "string"
+    },
+    "component_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vendor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version_raw": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version_normalized": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version_scheme": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "value_raw": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "null"
+      ]
+    },
+    "value_normalized": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "installed",
+        "missing",
+        "unknown",
+        "disabled"
+      ]
+    },
+    "install_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "last_updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

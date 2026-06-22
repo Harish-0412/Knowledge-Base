@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Document",
+  "type": "object",
+  "required": [
+    "document_id",
+    "filename",
+    "source_type",
+    "document_status",
+    "uploaded_at"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "pattern": "^DOC-[0-9]{6}$"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "pdf",
+        "txt",
+        "docx",
+        "csv",
+        "xlsx",
+        "json",
+        "html"
+      ]
+    },
+    "vendor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "platform": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "document_status": {
+      "type": "string",
+      "enum": [
+        "uploaded",
+        "profiled",
+        "extracted",
+        "rules_extracted",
+        "reviewed",
+        "archived"
+      ]
+    },
+    "uploaded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

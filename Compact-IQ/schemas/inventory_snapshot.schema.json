@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InventorySnapshot",
+  "type": "object",
+  "required": [
+    "inventory_snapshot_id",
+    "source_name",
+    "generated_at",
+    "device_count",
+    "devices"
+  ],
+  "properties": {
+    "inventory_snapshot_id": {
+      "type": "string",
+      "pattern": "^INV-[0-9]{6}$"
+    },
+    "source_name": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "device_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "devices": {
+      "type": "array"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}
